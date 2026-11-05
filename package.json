@@ -1,0 +1,8 @@
+{
+  "name": "prob-com",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  }
+}

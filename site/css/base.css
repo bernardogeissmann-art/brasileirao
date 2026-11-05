@@ -1,0 +1,179 @@
+/* base.css
+   Regras gerais que valem para todas as páginas: o "zerar" dos estilos do navegador,
+   o texto padrão, a largura do conteúdo, o topo com o menu e o rodapé. */
+
+/* box-sizing: border-box faz a largura de uma caixa já incluir o espaço interno. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--fonte);
+  font-size: 1rem;              /* 1rem = tamanho padrão do texto (16px) */
+  line-height: 1.45;
+  color: var(--cor-tinta);
+  background: var(--cor-papel);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+/* Garante que um elemento marcado como "hidden" (escondido) suma mesmo que
+   outra regra diga como ele deve aparecer. */
+[hidden] {
+  display: none !important;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+:focus-visible {
+  outline: 3px solid var(--cor-foco);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Texto que só leitores de tela (usados por pessoas cegas) "enxergam". */
+.so-leitor {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* Limita a largura do conteúdo e centraliza. min() escolhe o menor dos dois valores. */
+.largura {
+  width: min(100% - 2 * var(--margem), var(--largura-max));
+  margin-inline: auto;
+}
+
+
+/* ---------- Topo: marca + menu de abas ---------- */
+
+.topo {
+  background: var(--cor-tinta);
+  color: var(--cor-papel);
+}
+
+.topo__interno {
+  display: flex;               /* coloca os itens lado a lado */
+  flex-wrap: wrap;             /* deixa quebrar a linha se não couber */
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 24px;
+  padding-block: 14px;
+}
+
+.marca {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.1em;
+  font-size: 1.3rem;
+  font-weight: 900;
+  font-stretch: var(--largura-larga);
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* O "ponto" do Prob.com vira uma bolinha verde-limão. */
+.marca__bola {
+  display: inline-block;
+  width: 0.42em;
+  height: 0.42em;
+  border-radius: 50%;
+  background: var(--cor-limao);
+  transform: translateY(0.16em);
+}
+
+/* As abas ficam numa linha que rola para o lado se não couberem (bom para o celular
+   e para quando houver muitas abas). */
+.abas {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.abas::-webkit-scrollbar {
+  display: none;
+}
+
+.aba {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  padding: 8px 14px;
+  border-radius: 999px;        /* cantos totalmente redondos: formato de pílula */
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: rgba(244, 241, 234, 0.78);
+}
+
+a.aba:hover {
+  color: var(--cor-papel);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* A aba da página atual fica destacada em verde-limão. */
+.aba[aria-current="page"] {
+  background: var(--cor-limao);
+  color: var(--cor-tinta);
+}
+
+.aba--em-breve {
+  color: rgba(244, 241, 234, 0.5);
+  cursor: default;
+}
+
+.aba__selo {
+  margin-left: 6px;
+  padding: 1px 6px;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* No celular, o menu ocupa a largura toda, numa linha própria embaixo da marca. */
+@media (max-width: 639px) {
+  .abas {
+    width: calc(100% + 2 * var(--margem));
+    margin-inline: calc(-1 * var(--margem));
+    padding-inline: var(--margem);
+  }
+}
+
+
+/* ---------- Rodapé ---------- */
+
+.rodape {
+  margin-top: 56px;
+  padding: 28px 0 44px;
+  border-top: 1px solid var(--cor-linha);
+  color: var(--cor-tinta-suave);
+  font-size: 0.88rem;
+}
+
+.rodape__interno {
+  display: grid;
+  gap: 6px;
+}
+
+.rodape__marca {
+  margin-bottom: 6px;
+  color: var(--cor-tinta);
+}

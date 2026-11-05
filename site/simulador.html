@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simulador · Prob.com</title>
+  <meta name="description" content="Dê seus palpites nos jogos que faltam do Brasileirão 2026 e veja a tabela e as chances mudarem.">
+  <meta name="theme-color" content="#14161a">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2314161a'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23c8f03c'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap">
+
+  <!-- As mesmas peças da página principal, mais o layout próprio do simulador. -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/componentes.css">
+  <link rel="stylesheet" href="css/simulador.css">
+
+  <script type="module" src="js/simulador.js"></script>
+</head>
+<body>
+  <header class="topo" id="topo"></header>
+
+  <main>
+    <section class="abertura abertura--compacta">
+      <div class="largura">
+        <p class="abertura__chapeu" id="chapeu">Simulador · Brasileirão Série A 2026</p>
+        <h1 class="abertura__titulo">E <span class="leva">se</span>…?</h1>
+        <p class="abertura__texto">Dê o seu palpite nos jogos que faltam. A tabela muda na hora, e as chances são recalculadas com 10.000 simulações dos outros jogos.</p>
+      </div>
+    </section>
+
+    <!-- data-vista diz qual painel aparece no celular: "jogos" ou "tabela". -->
+    <div class="largura simulador__corpo" id="corpo" data-vista="jogos">
+
+      <!-- No celular: botões para alternar entre os jogos e a tabela. -->
+      <div class="alternador" role="group" aria-label="O que mostrar">
+        <button type="button" class="alternador__botao" data-ver="jogos" aria-pressed="true">Jogos</button>
+        <button type="button" class="alternador__botao" data-ver="tabela" aria-pressed="false">
+          Tabela e chances<span class="alternador__aviso" id="aviso-tabela" hidden><span class="so-leitor"> (atualizada)</span></span>
+        </button>
+      </div>
+
+      <section class="painel painel--jogos" aria-labelledby="titulo-jogos">
+        <div class="painel__topo">
+          <h2 class="titulo-secao" id="titulo-jogos">Jogos que faltam</h2>
+          <div class="painel__acoes">
+            <span class="painel__resumo" id="contador">Nenhum palpite</span>
+            <button type="button" class="botao" id="limpar-tudo" disabled>Limpar palpites</button>
+          </div>
+        </div>
+        <div id="rodadas"></div>
+      </section>
+
+      <section class="painel painel--tabela" aria-labelledby="titulo-tabela">
+        <div class="painel__topo">
+          <h2 class="titulo-secao" id="titulo-tabela">Tabela com seus palpites</h2>
+          <p class="estado-calculo" id="estado" aria-live="polite"></p>
+        </div>
+        <div class="painel__legenda" id="legenda"></div>
+        <div class="tabela-chances">
+          <div id="cabecalho-colunas"></div>
+          <ol class="lista-times" id="lista-times"></ol>
+        </div>
+        <p class="nota">
+          A tabela já inclui os seus palpites. Embaixo de cada chance aparece quanto ela mudou em relação
+          ao cenário sem palpites, em p.p. (pontos percentuais: de 40% para 52% são +12 p.p.), e o tracinho
+          na barra marca onde ela estava. Os jogos sem palpite continuam sendo sorteados pelo modelo, e a
+          força dos times não muda com os palpites.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="rodape" id="rodape"></footer>
+</body>
+</html>

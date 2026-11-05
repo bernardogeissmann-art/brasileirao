@@ -1,0 +1,146 @@
+# atualizar-e-publicar.yml
+# "Receita" que o GitHub Actions segue sozinho, num computador emprestado do GitHub:
+#   1) todo dia de madrugada: baixa os jogos, confere os dados e estima o modelo;
+#   2) se tudo passou: guarda os dados novos no repositório, roda os testes e publica o site;
+#   3) se algo falhou: não publica e abre um aviso (issue) no repositório.
+#
+# YAML é um formato de texto em que o recuo (os espaços no começo da linha) indica
+# o que está dentro do quê. Use sempre espaços, nunca TAB.
+
+name: Atualizar dados e publicar o site
+
+# ---------------------------------------------------------------------------
+# QUANDO RODAR
+# ---------------------------------------------------------------------------
+on:
+  schedule:
+    # Formato "minuto hora dia mês dia-da-semana", no horário UTC.
+    # "0 7 * * *" = todo dia às 07:00 UTC = 04:00 de Brasília (depois dos jogos da noite).
+    - cron: "0 7 * * *"
+  # Cria o botão "Run workflow" na aba Actions, para rodar na hora que você quiser.
+  workflow_dispatch:
+  # Quando você mandar mudanças no código para a branch main, o site é republicado
+  # (sem baixar dados novos).
+  push:
+    branches: [main]
+
+# Nunca rodar duas vezes ao mesmo tempo: se uma execução começar enquanto outra
+# ainda está rodando, a nova espera a anterior terminar.
+concurrency:
+  group: atualizar-e-publicar
+  cancel-in-progress: false
+
+jobs:
+  # -------------------------------------------------------------------------
+  # TAREFA 1: baixar, conferir e guardar os dados
+  # -------------------------------------------------------------------------
+  atualizar:
+    name: Baixar e conferir os dados
+    # No "push" (mudança de código) esta tarefa é pulada: só publicamos.
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest          # o computador emprestado usa Linux
+    permissions:
+      contents: write               # permite fazer commit dos dados novos
+    steps:
+      - name: Pegar o código do repositório
+        uses: actions/checkout@v7
+
+      - name: Instalar o Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Baixar jogos e escudos
+        # A chave vem do "secret" do repositório. O GitHub esconde o valor nos registros (logs).
+        env:
+          FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
+        run: python scripts/baixar_jogos.py
+
+      - name: Conferir os dados (380 jogos, 20 times, placares completos)
+        # Se a conferência falhar, a tarefa para aqui: nada é guardado nem publicado.
+        run: python scripts/conferir_dados.py
+
+      - name: Estimar o modelo
+        run: python scripts/estimar_modelo.py
+
+      - name: Guardar os dados novos no repositório
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/jogos.json data/modelo.json assets/escudos
+          if git diff --cached --quiet; then
+            echo "Nada mudou nos dados."
+          else
+            git commit -m "Atualiza dados do Brasileirão (automático)"
+            git push
+          fi
+
+  # -------------------------------------------------------------------------
+  # TAREFA 2: testar e publicar o site no GitHub Pages
+  # -------------------------------------------------------------------------
+  publicar:
+    name: Testar e publicar o site
+    needs: atualizar                # espera a tarefa 1 terminar
+    # Roda se a tarefa 1 deu certo, ou se ela foi pulada (no caso do "push").
+    if: ${{ !cancelled() && (needs.atualizar.result == 'success' || needs.atualizar.result == 'skipped') }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write                  # permite publicar no GitHub Pages
+      id-token: write               # exigido pelo GitHub Pages para confirmar quem está publicando
+    environment:
+      name: github-pages
+      url: ${{ steps.publicacao.outputs.page_url }}
+    steps:
+      - name: Pegar o código (já com os dados novos)
+        uses: actions/checkout@v7
+        with:
+          ref: main
+
+      - name: Instalar o Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: "24"
+
+      - name: Rodar os testes da simulação
+        # Se algum teste falhar, o site não é publicado.
+        run: npm test
+
+      - name: Montar a pasta do site
+        # Só vai para a internet o que o site usa (nada de scripts, .env etc.).
+        run: |
+          mkdir -p _site/data
+          cp index.html _site/
+          cp -r site assets _site/
+          cp data/jogos.json data/modelo.json _site/data/
+
+      - name: Preparar o GitHub Pages
+        uses: actions/configure-pages@v6
+
+      - name: Enviar a pasta do site
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+      - name: Publicar
+        id: publicacao
+        uses: actions/deploy-pages@v5
+
+  # -------------------------------------------------------------------------
+  # TAREFA 3: avisar se algo deu errado
+  # -------------------------------------------------------------------------
+  avisar:
+    name: Avisar que algo falhou
+    needs: [atualizar, publicar]
+    if: ${{ failure() }}            # só roda se alguma tarefa anterior falhou
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write                 # permite abrir uma issue (um aviso) no repositório
+    steps:
+      - name: Abrir um aviso no repositório
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create --repo "${{ github.repository }}" \
+            --title "A atualização automática falhou" \
+            --body "O site NÃO foi atualizado. Veja o que aconteceu: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"

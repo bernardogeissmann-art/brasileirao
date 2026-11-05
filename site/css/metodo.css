@@ -1,0 +1,287 @@
+/* metodo.css
+   Layout da página "O Método": um texto em coluna estreita (fácil de ler),
+   dividido em passos numerados, com os exemplos em cards.
+   As peças (gráfico de gols, barra de resultado, botões) vêm de componentes.css. */
+
+.artigo {
+  width: min(100% - 2 * var(--margem), 760px);
+  margin: 0 auto;
+  padding-top: 32px;
+  font-size: 1.04rem;
+  line-height: 1.6;
+}
+
+.artigo p + p,
+.artigo .exemplo + p {
+  margin-top: 12px;
+}
+
+.artigo .exemplo + p {
+  margin-top: 18px;
+}
+
+/* ---------- "Em uma frase" ---------- */
+
+.em-uma-frase {
+  padding: 22px 24px;
+  border-left: 6px solid var(--cor-limao);
+  border-radius: var(--canto-m);
+  background: var(--cor-tinta);
+  color: var(--cor-papel);
+}
+
+.em-uma-frase__rotulo {
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cor-limao);
+}
+
+.em-uma-frase__texto {
+  margin-top: 8px;
+  font-size: 1.2rem;
+  line-height: 1.45;
+}
+
+/* ---------- Passos ---------- */
+
+.passo {
+  margin-top: 48px;
+}
+
+.passo__numero {
+  font-size: 3.2rem;
+  font-weight: 900;
+  font-stretch: var(--largura-larga);
+  line-height: 1;
+}
+
+/* Número só com o contorno, nos navegadores que sabem desenhar isso. */
+@supports (-webkit-text-stroke: 1px) {
+  .passo__numero {
+    color: transparent;
+    -webkit-text-stroke: 2px var(--cor-tinta);
+  }
+}
+
+.passo__titulo {
+  margin: 6px 0 14px;
+  font-size: 1.55rem;
+  font-weight: 800;
+  font-stretch: var(--largura-media);
+  line-height: 1.15;
+}
+
+.subtitulo {
+  margin: 26px 0 8px;
+  font-size: 1.08rem;
+  font-weight: 800;
+}
+
+.lista {
+  display: grid;
+  gap: 10px;
+  margin: 12px 0;
+  padding-left: 22px;
+}
+
+.lista li::marker {
+  color: var(--cor-tinta-apagada);
+}
+
+/* ---------- Fichas com números do modelo ---------- */
+
+/* As três fichas ficam lado a lado, também no celular. */
+.fichas {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin: 20px 0 6px;
+}
+
+.ficha {
+  padding: 12px;
+  border-radius: var(--canto-m);
+  background: var(--cor-cartao);
+  box-shadow: var(--sombra-cartao);
+}
+
+.ficha__rotulo {
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cor-tinta-suave);
+}
+
+.artigo .ficha__valor {
+  margin-top: 4px;
+  font-size: clamp(1.5rem, 6vw, 2rem);
+  font-weight: 800;
+  font-stretch: var(--largura-estreita);
+  line-height: 1.1;
+}
+
+.artigo .ficha__nota {
+  margin-top: 2px;
+  font-size: 0.88rem;
+  color: var(--cor-tinta-suave);
+}
+
+/* ---------- Fórmula ---------- */
+
+.formula {
+  display: grid;
+  gap: 12px;
+  margin: 18px 0;
+  padding: 18px;
+  border: 1px dashed var(--cor-tinta-apagada);
+  border-radius: var(--canto-m);
+}
+
+.formula__linha {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  line-height: 1.2;
+}
+
+.artigo .formula__linha + .formula__linha {
+  margin-top: 0;
+}
+
+.formula__resultado {
+  font-weight: 800;
+}
+
+.formula__sinal {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--cor-tinta-suave);
+}
+
+.formula__item {
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: var(--cor-cartao);
+  box-shadow: var(--sombra-cartao);
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.formula__item--casa {
+  background: var(--cor-limao);
+}
+
+/* ---------- Exemplo e demonstração ---------- */
+
+.exemplo {
+  margin-top: 18px;
+  padding: 18px;
+  border-radius: var(--canto-g);
+  background: var(--cor-cartao);
+  box-shadow: var(--sombra-cartao);
+}
+
+.exemplo__escolha {
+  display: grid;
+  gap: 6px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.exemplo__conta {
+  display: grid;
+  gap: 6px;
+  margin-top: 14px;
+  font-variant-numeric: tabular-nums;
+}
+
+.exemplo__graficos {
+  display: grid;
+  gap: 28px;
+  margin-bottom: 8px;
+}
+
+@media (min-width: 640px) {
+  .exemplo__graficos {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.exemplo__resultado {
+  margin-top: 12px;
+}
+
+.exemplo .legenda {
+  margin-top: 10px;
+}
+
+.artigo .exemplo__nota {
+  margin-top: 14px;
+  font-size: 0.95rem;
+}
+
+.demonstracao__botoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 14px 0;
+}
+
+.demonstracao__placar {
+  display: grid;
+  gap: 2px;
+  min-height: 72px;
+  margin-bottom: 14px;
+  padding: 12px 14px;
+  border-radius: var(--canto-m);
+  background: var(--cor-papel);
+}
+
+.demonstracao__rotulo,
+.demonstracao__total {
+  font-size: 0.78rem;
+  color: var(--cor-tinta-suave);
+}
+
+.demonstracao__jogo {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.demonstracao__jogo b {
+  font-stretch: var(--largura-estreita);
+  font-variant-numeric: tabular-nums;
+}
+
+.demonstracao__vazio {
+  align-self: center;
+  color: var(--cor-tinta-suave);
+}
+
+.demonstracao__comparacao {
+  display: grid;
+  gap: 12px;
+}
+
+/* ---------- Seções finais ---------- */
+
+.secao-final {
+  margin-top: 48px;
+  padding-top: 28px;
+  border-top: 1px solid var(--cor-linha);
+}
+
+.secao-final .titulo-secao {
+  margin-bottom: 12px;
+}
+
+.chamadas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}

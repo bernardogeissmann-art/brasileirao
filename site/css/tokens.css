@@ -1,0 +1,54 @@
+/* tokens.css
+   As "peças básicas" do visual: cores, fontes, espaços e cantos.
+   Tudo aqui é uma variável (começa com --). As outras folhas de estilo usam
+   var(--nome) em vez de repetir o valor. Para mudar uma cor no site inteiro,
+   basta mudar aqui. */
+
+:root {
+  /* ---------- Superfícies e tinta ---------- */
+  --cor-papel: #f4f1ea;          /* fundo da página: um branco quente, de papel */
+  --cor-cartao: #fffdf8;         /* fundo dos cards */
+  --cor-tinta: #14161a;          /* texto principal e a faixa escura do topo */
+  --cor-tinta-suave: #4b4f58;    /* texto secundário */
+  --cor-tinta-apagada: #868a93;  /* detalhes sem importância (ex.: o traço de 0%) */
+  --cor-linha: #e4dfd4;          /* linhas finas de separação */
+  --cor-limao: #c8f03c;          /* a cor da marca: verde-limão de placar eletrônico */
+  --cor-foco: #2e5bdb;           /* contorno de quem navega pelo teclado */
+
+  /* ---------- Cores das categorias de chance ----------
+     Testadas com o validador de paletas para daltonismo (todos os pares).
+     O dourado tem contraste baixo sozinho, por isso toda barra mostra o número ao lado. */
+  --cor-titulo: #c99400;
+  --cor-libertadores: #2e5bdb;
+  --cor-sulamericana: #169cae;
+  --cor-rebaixamento: #c8302c;
+
+  /* ---------- Resultado de um jogo (escala divergente) ----------
+     Dois lados opostos (mandante e visitante) e um cinza neutro no meio (empate).
+     Também testadas para daltonismo; o cinza é neutro de propósito. */
+  --cor-mandante: #6250d6;
+  --cor-empate: #aaa497;
+  --cor-visitante: #d95926;
+
+  /* ---------- Tipografia ----------
+     Archivo é uma fonte "variável": a mesma família pode ficar larga (125%)
+     para títulos com cara de camisa de futebol, ou estreita (80%) para números. */
+  --fonte: "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --largura-larga: 125%;
+  --largura-media: 110%;
+  --largura-estreita: 85%;
+
+  /* ---------- Espaços, cantos e sombra ---------- */
+  --margem: 16px;                /* espaço nas laterais da tela */
+  --largura-max: 1160px;         /* largura máxima do conteúdo no computador */
+  --canto-m: 12px;
+  --canto-g: 18px;
+  --sombra-cartao: 0 1px 0 rgba(20, 22, 26, 0.04), 0 8px 20px -14px rgba(20, 22, 26, 0.35);
+}
+
+/* Em telas maiores, mais respiro nas laterais. */
+@media (min-width: 720px) {
+  :root {
+    --margem: 32px;
+  }
+}

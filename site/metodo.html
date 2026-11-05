@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>O Método · Prob.com</title>
+  <meta name="description" content="Como o Prob.com calcula as chances do Brasileirão: força de ataque e defesa, distribuição de Poisson e 10.000 simulações, explicados de forma simples.">
+  <meta name="theme-color" content="#14161a">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2314161a'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23c8f03c'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/componentes.css">
+  <link rel="stylesheet" href="css/metodo.css">
+
+  <script type="module" src="js/metodo.js"></script>
+</head>
+<body>
+  <header class="topo" id="topo"></header>
+
+  <main>
+    <section class="abertura abertura--compacta">
+      <div class="largura">
+        <p class="abertura__chapeu">Como funciona</p>
+        <h1 class="abertura__titulo">O <span class="leva">método</span>.</h1>
+        <p class="abertura__texto">Sem bola de cristal: só os resultados do campeonato, um pouco de estatística e muitas simulações. Veja, passo a passo, de onde vêm as porcentagens do site.</p>
+      </div>
+    </section>
+
+    <!-- Os trechos com data-valor="..." são preenchidos pelo metodo.js com os números do modelo. -->
+    <article class="artigo">
+
+      <section class="em-uma-frase" aria-label="Resumo">
+        <p class="em-uma-frase__rotulo">Em uma frase</p>
+        <p class="em-uma-frase__texto">
+          Medimos o <strong>ataque</strong> e a <strong>defesa</strong> de cada time com os jogos que já
+          aconteceram, usamos isso para imaginar <strong>10.000 finais diferentes</strong> para o campeonato
+          e <strong>contamos</strong> em quantos deles cada coisa acontece.
+        </p>
+      </section>
+
+      <!-- PASSO 1 -->
+      <section class="passo" aria-labelledby="passo-1">
+        <p class="passo__numero" aria-hidden="true">01</p>
+        <h2 class="passo__titulo" id="passo-1">Medir a força de cada time</h2>
+        <p>Cada time recebe duas notas, calculadas só com os resultados do Brasileirão 2026:</p>
+        <ul class="lista">
+          <li><strong>Ataque:</strong> quantos gols o time costuma marcar, comparado com a média do campeonato. A nota 1,00 é a média; 1,30 quer dizer 30% acima da média.</li>
+          <li><strong>Defesa:</strong> quantos gols o time costuma sofrer. Aqui, <em>quanto menor, melhor</em>: uma defesa 0,70 sofre 30% menos gols que uma defesa 1,00.</li>
+        </ul>
+        <p>E o campeonato inteiro recebe um <strong>fator casa</strong>: quanto a mais um time marca jogando no seu estádio.</p>
+
+        <div class="fichas">
+          <div class="ficha">
+            <p class="ficha__rotulo">Melhor ataque</p>
+            <p class="ficha__valor" data-valor="ataque-valor">…</p>
+            <p class="ficha__nota" data-valor="ataque-time">&nbsp;</p>
+          </div>
+          <div class="ficha">
+            <p class="ficha__rotulo">Melhor defesa</p>
+            <p class="ficha__valor" data-valor="defesa-valor">…</p>
+            <p class="ficha__nota" data-valor="defesa-time">&nbsp;</p>
+          </div>
+          <div class="ficha">
+            <p class="ficha__rotulo">Fator casa</p>
+            <p class="ficha__valor" data-valor="fator-casa">…</p>
+            <p class="ficha__nota"><span data-valor="fator-casa-pct">…</span> gols jogando em casa</p>
+          </div>
+        </div>
+
+        <h3 class="subtitulo">Como as notas são escolhidas?</h3>
+        <p>
+          O computador procura as notas que tornam os placares que <em>de fato aconteceram</em> os mais
+          prováveis possíveis. Em estatística, isso se chama <strong>máxima verossimilhança</strong>.
+          Hoje, a conta usa os <span data-valor="jogos-usados">…</span> jogos já disputados.
+        </p>
+        <p>
+          A conta leva em conta quem cada time enfrentou: golear adversários fortes vale mais do que golear
+          só os fracos. E, para que as notas tenham uma referência, a média de todos os ataques é sempre 1,00.
+        </p>
+      </section>
+
+      <!-- PASSO 2 -->
+      <section class="passo" aria-labelledby="passo-2">
+        <p class="passo__numero" aria-hidden="true">02</p>
+        <h2 class="passo__titulo" id="passo-2">Calcular quantos gols esperar em cada jogo</h2>
+        <p>Com as notas, a média de gols de cada lado de um jogo é uma multiplicação:</p>
+
+        <div class="formula">
+          <p class="formula__linha">
+            <span class="formula__resultado">Gols do mandante</span><span class="formula__sinal">=</span>
+            <span class="formula__item">Ataque do mandante</span><span class="formula__sinal">×</span>
+            <span class="formula__item">Defesa do visitante</span><span class="formula__sinal">×</span>
+            <span class="formula__item formula__item--casa">Fator casa</span>
+          </p>
+          <p class="formula__linha">
+            <span class="formula__resultado">Gols do visitante</span><span class="formula__sinal">=</span>
+            <span class="formula__item">Ataque do visitante</span><span class="formula__sinal">×</span>
+            <span class="formula__item">Defesa do mandante</span>
+          </p>
+        </div>
+
+        <!-- O EXEMPLO: um jogo de verdade, escolhido na lista. -->
+        <div class="exemplo" id="exemplo">
+          <label class="exemplo__escolha">
+            <span>Veja num jogo de verdade:</span>
+            <select id="jogo-exemplo" class="seletor"><option>Carregando os jogos…</option></select>
+          </label>
+          <p class="exemplo__conta" id="exemplo-conta"></p>
+        </div>
+      </section>
+
+      <!-- PASSO 3 -->
+      <section class="passo" aria-labelledby="passo-3">
+        <p class="passo__numero" aria-hidden="true">03</p>
+        <h2 class="passo__titulo" id="passo-3">Transformar a média em chances</h2>
+        <p>
+          Uma média de 1,8 gol não quer dizer que sairão 1,8 gol, já que ninguém marca um pedaço de gol.
+          Quer dizer que, se aquele jogo fosse disputado muitas e muitas vezes, a média seria 1,8.
+        </p>
+        <p>
+          Para saber a chance de cada número de gols, usamos a <strong>distribuição de Poisson</strong>:
+          uma fórmula clássica para contar coisas que acontecem poucas vezes e a qualquer momento,
+          como gols num jogo ou ligações numa central de atendimento. Você informa a média e ela diz
+          a chance de sair 0, 1, 2, 3... gols.
+        </p>
+
+        <div class="exemplo">
+          <div class="exemplo__graficos" id="exemplo-graficos"></div>
+          <h3 class="subtitulo">Juntando os dois lados</h3>
+          <p>Combinando as chances de gols de cada time, sai a chance de cada resultado:</p>
+          <div class="exemplo__resultado" id="exemplo-resultado"></div>
+          <p class="exemplo__nota" id="exemplo-placar"></p>
+        </div>
+      </section>
+
+      <!-- PASSO 4 -->
+      <section class="passo" aria-labelledby="passo-4">
+        <p class="passo__numero" aria-hidden="true">04</p>
+        <h2 class="passo__titulo" id="passo-4">Jogar o resto do campeonato 10.000 vezes</h2>
+        <p>
+          Sabendo as chances de cada jogo, o computador "joga" todas as partidas que faltam, sorteando
+          os placares como quem joga dados viciados de acordo com essas chances. No fim, monta a tabela
+          final. Cada rodada desse sorteio completo é uma <strong>simulação</strong>: um final possível
+          para o campeonato.
+        </p>
+        <p>
+          Fazemos isso <strong>10.000 vezes</strong> e contamos. Se um time termina campeão em 8.100
+          dessas simulações, a chance de título dele é de 81%. Esse jeito de calcular com sorteios
+          repetidos se chama <strong>método de Monte Carlo</strong>, nome que vem do famoso cassino.
+        </p>
+
+        <div class="exemplo demonstracao">
+          <h3 class="subtitulo">Experimente você mesmo</h3>
+          <p>Sorteie placares para o jogo escolhido acima e veja as contagens se aproximarem das chances calculadas.</p>
+          <div class="demonstracao__botoes">
+            <button type="button" class="botao" id="sortear-1">Sortear 1 placar</button>
+            <button type="button" class="botao" id="sortear-1000">Sortear 1.000</button>
+            <button type="button" class="botao botao--texto" id="zerar">Recomeçar</button>
+          </div>
+          <div class="demonstracao__placar" id="demo-placar" aria-live="polite"></div>
+          <div class="demonstracao__comparacao" id="demo-comparacao"></div>
+        </div>
+
+        <p>
+          Quanto mais sorteios, mais perto as contagens chegam das chances de verdade. Com 10.000
+          simulações, as porcentagens do site mudam no máximo cerca de 1 ponto de uma visita para outra.
+          E tudo isso roda no seu próprio navegador, em menos de meio segundo.
+        </p>
+      </section>
+
+      <!-- PASSO 5 -->
+      <section class="passo" aria-labelledby="passo-5">
+        <p class="passo__numero" aria-hidden="true">05</p>
+        <h2 class="passo__titulo" id="passo-5">Seguir as regras do campeonato</h2>
+        <p>A tabela de cada simulação segue o regulamento do Brasileirão 2026, da CBF.</p>
+        <ul class="lista">
+          <li><strong>Empate em pontos:</strong> vence quem tiver mais vitórias, depois o maior saldo de gols, depois mais gols marcados e, por fim, o confronto direto (só quando o empate é entre dois times). Cartões não dá para prever, então nesse caso a ordem é sorteada.</li>
+          <li><strong>Vagas:</strong> do 1º ao 4º, Libertadores direto na fase de grupos; o 5º, fase preliminar da Libertadores; do 6º ao 11º, Sul-Americana; do 17º ao 20º, rebaixamento.</li>
+          <li>As vagas podem "descer" se o campeão ou o vice da Copa do Brasil já estiver classificado pelo Brasileirão. Isso o modelo não prevê.</li>
+        </ul>
+      </section>
+
+      <!-- LIMITAÇÕES -->
+      <section class="secao-final" aria-labelledby="limites">
+        <h2 class="titulo-secao" id="limites">O que o modelo não sabe</h2>
+        <ul class="lista lista--avisos">
+          <li><strong>Só olha os placares.</strong> Não sabe de lesões, suspensões, troca de técnico, elenco reserva ou motivação.</li>
+          <li><strong>Todo jogo vale o mesmo.</strong> Um jogo de fevereiro pesa tanto quanto o de ontem; um time que melhorou muito nas últimas semanas aparece com a força média da temporada.</li>
+          <li><strong>A força não muda durante a simulação.</strong> O time é o mesmo do começo ao fim do que falta do campeonato.</li>
+          <li><strong>Os gols de um lado não mudam os do outro.</strong> Na vida real, quem sai perdendo se lança ao ataque. Por isso o modelo prevê um pouco menos empates do que acontecem: nos jogos deste campeonato, seriam <span data-valor="empates-esperados">…</span> empates esperados, e houve <span data-valor="empates-reais">…</span>.</li>
+          <li><strong>Chance não é certeza.</strong> 20% de chance acontece, em média, uma vez a cada cinco. Surpresas fazem parte do futebol.</li>
+        </ul>
+      </section>
+
+      <section class="secao-final" aria-labelledby="conferencia">
+        <h2 class="titulo-secao" id="conferencia">Como conferimos as contas</h2>
+        <ul class="lista">
+          <li>A tabela que o site monta com os placares é comparada com a classificação oficial.</li>
+          <li>Testes automáticos verificam, por exemplo, que as chances de título somam 100% e que, com todos os jogos preenchidos no simulador, tudo vira 0% ou 100%.</li>
+          <li>Os dados são conferidos todos os dias antes de publicar: 380 jogos, 20 times e nenhum jogo encerrado sem placar. Se algo não bater, o site não é atualizado.</li>
+        </ul>
+      </section>
+
+      <section class="secao-final" aria-labelledby="fontes">
+        <h2 class="titulo-secao" id="fontes">De onde vêm os dados</h2>
+        <ul class="lista">
+          <li>Resultados, calendário e escudos: football-data.org, atualizados todo dia de madrugada.</li>
+          <li>Critérios de desempate e vagas: Regulamento Específico do Brasileirão Série A 2026, da CBF.</li>
+          <li>Inspiração: projeto Probabilidades no Futebol, do Departamento de Matemática da UFMG. O modelo e o código deste site são próprios.</li>
+        </ul>
+        <div class="chamadas">
+          <a class="botao" href="index.html">Ver as chances de hoje</a>
+          <a class="botao botao--claro" href="simulador.html">Abrir o simulador</a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="rodape" id="rodape"></footer>
+</body>
+</html>

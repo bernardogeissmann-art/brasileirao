@@ -1,0 +1,902 @@
+/* componentes.css
+   Peças reaproveitáveis: abertura escura, barra de chance, card de time, cabeçalho das
+   colunas, legenda, cartão de destaque, card de jogo, rodada, botões e mensagens.
+   Cada peça tem um nome de classe e as suas partes usam "nome__parte"
+   (ex.: .card-time__nome), para não misturar estilos. */
+
+
+/* ========== ABERTURA (a faixa escura no começo de cada página) ========== */
+
+.abertura {
+  position: relative;
+  overflow: hidden;
+  padding: 26px 0 34px;
+  background: var(--cor-tinta);
+  color: var(--cor-papel);
+}
+
+/* Desenho discreto do círculo central do campo, ao fundo. */
+.abertura::before {
+  content: "";
+  position: absolute;
+  top: -140px;
+  right: -160px;
+  width: 440px;
+  aspect-ratio: 1;              /* mesma altura e largura */
+  border: 2px solid rgba(255, 255, 255, 0.07);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.abertura .largura {
+  position: relative;           /* fica por cima do desenho do campo */
+}
+
+.abertura__chapeu {
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(244, 241, 234, 0.7);
+}
+
+.abertura__titulo {
+  margin-top: 12px;
+  /* clamp(mínimo, ideal, máximo): o título cresce com a tela, mas sem passar dos limites. */
+  font-size: clamp(2.3rem, 10.5vw, 5.8rem);
+  font-weight: 900;
+  font-stretch: var(--largura-larga);
+  line-height: 0.9;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.abertura__titulo .leva {
+  color: var(--cor-limao);
+}
+
+/* Palavra só com o contorno das letras, "vazada". */
+@supports (-webkit-text-stroke: 1px) {
+  .abertura__titulo .vazado {
+    color: transparent;
+    -webkit-text-stroke: 2px var(--cor-papel);
+  }
+}
+
+.abertura__texto {
+  max-width: 40ch;              /* ch = largura de um caractere: linhas curtas, fáceis de ler */
+  margin-top: 14px;
+  font-size: 1.02rem;
+  color: rgba(244, 241, 234, 0.82);
+}
+
+/* Versão mais baixa da abertura, para páginas de ferramenta (ex.: simulador). */
+.abertura--compacta {
+  padding: 20px 0 24px;
+}
+
+.abertura--compacta .abertura__titulo {
+  font-size: clamp(2rem, 8vw, 3.6rem);
+}
+
+
+/* ========== TÍTULO DE SEÇÃO E NOTA ========== */
+
+.titulo-secao {
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-stretch: var(--largura-media);
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+.nota {
+  margin-top: 14px;
+  font-size: 0.82rem;
+  color: var(--cor-tinta-suave);
+}
+
+
+/* ========== BARRA DE CHANCE ==========
+   Uma barra de 0% a 100%. A cor vem da categoria (título, Libertadores...).
+   O "trilho" (parte vazia) é um tom bem claro da mesma cor.
+   A largura da parte cheia vem da variável --valor (de 0 a 1), definida no HTML.
+   No simulador, um tracinho (--base) marca a chance sem palpites. */
+
+.barra-chance {
+  --cor: var(--cor-tinta);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas:
+    "rotulo valor"
+    "trilho trilho";
+  align-items: center;
+  gap: 5px 8px;
+}
+
+.barra-chance--titulo { --cor: var(--cor-titulo); }
+.barra-chance--libertadores { --cor: var(--cor-libertadores); }
+.barra-chance--sulamericana { --cor: var(--cor-sulamericana); }
+.barra-chance--rebaixamento { --cor: var(--cor-rebaixamento); }
+
+.barra-chance__rotulo {
+  grid-area: rotulo;
+  overflow: hidden;
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: var(--cor-tinta-suave);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* O número fica sempre em cor de texto, nunca na cor da barra (fica mais legível). */
+.barra-chance__valor {
+  grid-area: valor;
+  min-width: 2.7em;
+  font-size: 0.92rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;   /* números com a mesma largura, alinhados */
+  text-align: right;
+}
+
+.barra-chance__valor.zero {
+  color: var(--cor-tinta-apagada);
+  font-weight: 500;
+}
+
+.barra-chance__trilho {
+  grid-area: trilho;
+  position: relative;
+  display: block;
+  height: 8px;
+  overflow: hidden;
+  border-radius: 4px;
+  /* color-mix mistura 16% da cor da categoria com o fundo do card. */
+  background: color-mix(in srgb, var(--cor) 16%, var(--cor-cartao));
+}
+
+.barra-chance__preenchimento {
+  display: block;
+  width: calc(var(--valor) * 100%);
+  height: 100%;
+  border-radius: 0 4px 4px 0;   /* reto no começo, arredondado na ponta */
+  background: var(--cor);
+  transition: width 0.35s ease;  /* a barra "anda" suavemente quando a chance muda */
+}
+
+/* Uma chance pequena (ex.: 0,3%) ainda aparece como um tracinho. */
+.barra-chance__preenchimento.tem-valor {
+  min-width: 3px;
+}
+
+/* Tracinho que marca onde estava a chance sem palpites. */
+.barra-chance__marca {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc(var(--base) * 100% - 1px);
+  width: 2px;
+  background: var(--cor-tinta);
+  opacity: 0.55;
+}
+
+/* "+12 p.p.": linha própria, embaixo da barra, alinhada à direita. */
+.barra-chance__variacao {
+  grid-column: 1 / -1;
+  font-size: 0.72rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  color: var(--cor-tinta-suave);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .barra-chance__preenchimento {
+    transition: none;
+  }
+}
+
+
+/* ========== TABELA DE CHANCES (lista de cards de time) ==========
+   "container" faz as peças de dentro se ajustarem à largura da TABELA, e não da tela.
+   Assim o mesmo card funciona com a tabela ocupando a tela toda ou só metade. */
+
+.tabela-chances {
+  container: tabela / inline-size;
+}
+
+.lista-times {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Enquanto as chances são recalculadas, as barras ficam um pouco apagadas. */
+.lista-times.recalculando .card-time__chances {
+  opacity: 0.45;
+  transition: opacity 0.2s;
+}
+
+
+/* ========== CARD DE TIME ==========
+   Tabela estreita: posição, escudo, nome e pontos em cima; as 4 barras embaixo.
+   Tabela média (a partir de 640px): cards em duas colunas.
+   Tabela larga (a partir de 900px): cada time numa linha, alinhado como uma tabela. */
+
+.card-time {
+  --cor-zona: transparent;
+  position: relative;
+  display: grid;
+  grid-template-columns: 26px 36px minmax(0, 1fr) auto;
+  grid-template-areas:
+    "posicao escudo nome    pontos"
+    "posicao escudo numeros pontos"
+    "chances chances chances chances";
+  align-items: center;
+  column-gap: 10px;
+  padding: 12px 14px 12px 18px;
+  overflow: hidden;
+  border-radius: var(--canto-m);
+  background: var(--cor-cartao);
+  box-shadow: var(--sombra-cartao);
+}
+
+/* A faixa colorida à esquerda mostra em que zona o time está na tabela. */
+.card-time::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 5px;
+  background: var(--fundo-zona, var(--cor-zona));
+}
+
+.card-time[data-zona="titulo"] { --cor-zona: var(--cor-titulo); }
+.card-time[data-zona="libertadores"] { --cor-zona: var(--cor-libertadores); }
+.card-time[data-zona="sulamericana"] { --cor-zona: var(--cor-sulamericana); }
+.card-time[data-zona="rebaixamento"] { --cor-zona: var(--cor-rebaixamento); }
+/* O 5º vai para a fase preliminar da Libertadores: mesma cor, mas listrada. */
+.card-time[data-zona="preliminar"] {
+  --fundo-zona: repeating-linear-gradient(
+    45deg,
+    var(--cor-libertadores) 0 3px,
+    color-mix(in srgb, var(--cor-libertadores) 30%, var(--cor-cartao)) 3px 6px
+  );
+}
+
+.card-time__posicao {
+  grid-area: posicao;
+  font-size: 1.05rem;
+  font-weight: 800;
+  font-stretch: var(--largura-estreita);
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+}
+
+.card-time__escudo {
+  grid-area: escudo;
+  width: 36px;
+  height: 36px;
+  object-fit: contain;          /* encaixa o escudo sem deformar */
+}
+
+.escudo-vazio {
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--cor-linha);
+  font-size: 0.6rem;
+  font-weight: 800;
+}
+
+.card-time__nome {
+  grid-area: nome;
+  min-width: 0;
+  font-size: 1.02rem;
+  font-weight: 700;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+.card-time__pontos {
+  grid-area: pontos;
+  line-height: 1;
+  text-align: right;
+}
+
+.card-time__pontos b {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 800;
+  font-stretch: var(--largura-estreita);
+  font-variant-numeric: tabular-nums;
+}
+
+.card-time__pontos-rotulo {
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cor-tinta-suave);
+}
+
+.card-time__numeros {
+  grid-area: numeros;
+  display: flex;
+  gap: 10px;
+  font-size: 0.82rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--cor-tinta-suave);
+}
+
+.numero b {
+  font-weight: 650;
+  color: var(--cor-tinta);
+}
+
+.card-time__chances {
+  grid-area: chances;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 9px 18px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--cor-linha);
+}
+
+
+/* ========== CABEÇALHO DAS COLUNAS (só na tabela larga) ========== */
+
+.cabecalho-colunas {
+  display: none;
+}
+
+.coluna-chance::before {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-right: 6px;
+  border-radius: 2px;
+  background: var(--cor);
+}
+
+.coluna-chance--titulo { --cor: var(--cor-titulo); }
+.coluna-chance--libertadores { --cor: var(--cor-libertadores); }
+.coluna-chance--sulamericana { --cor: var(--cor-sulamericana); }
+.coluna-chance--rebaixamento { --cor: var(--cor-rebaixamento); }
+
+
+/* ========== TAMANHOS DA TABELA ========== */
+
+@container tabela (min-width: 640px) and (max-width: 899px) {
+  .lista-times {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@container tabela (min-width: 900px) {
+  /* A mesma "grade" de colunas para o cabeçalho e para todos os cards. */
+  .card-time,
+  .cabecalho-colunas {
+    grid-template-columns: 30px 34px minmax(140px, 1.4fr) 48px 34px 34px 46px repeat(4, minmax(92px, 1fr));
+    column-gap: 12px;
+  }
+
+  .cabecalho-colunas {
+    display: grid;
+    align-items: end;
+    padding: 0 16px 8px 20px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--cor-tinta-suave);
+  }
+
+  .cabecalho-colunas .numerica {
+    text-align: right;
+  }
+
+  .lista-times {
+    gap: 6px;
+  }
+
+  .card-time {
+    grid-template-areas: none;
+    padding: 10px 16px 10px 20px;
+  }
+
+  /* "display: contents" faz as partes de dentro virarem colunas da grade do card. */
+  .card-time__numeros,
+  .card-time__chances {
+    display: contents;
+  }
+
+  .card-time > *,
+  .card-time__numeros > *,
+  .card-time__chances > * {
+    grid-area: auto;
+  }
+
+  .card-time__pontos b {
+    font-size: 1.2rem;
+  }
+
+  .card-time__pontos-rotulo,
+  .numero__rotulo {
+    display: none;
+  }
+
+  .numero {
+    text-align: right;
+  }
+
+  .barra-chance {
+    grid-template-areas: "trilho valor";
+  }
+
+  /* Na tabela larga o nome da categoria já está no cabeçalho: escondemos da tela,
+     mas mantemos para leitores de tela. */
+  .barra-chance__rotulo {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+}
+
+
+/* ========== LEGENDA ========== */
+
+.legenda {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.82rem;
+  color: var(--cor-tinta-suave);
+}
+
+.legenda li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legenda__cor {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  background: var(--cor);
+}
+
+
+/* ========== CARTÃO DE DESTAQUE (usado sobre o fundo escuro) ========== */
+
+.destaque {
+  padding: 14px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--canto-m);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.destaque__rotulo {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cor-limao);
+}
+
+.destaque__corpo {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+/* O escudo fica num círculo claro, para escudos escuros não sumirem no fundo preto. */
+.destaque__escudo {
+  width: 44px;
+  height: 44px;
+  padding: 6px;
+  border-radius: 50%;
+  background: var(--cor-papel);
+  object-fit: contain;
+}
+
+.destaque__time {
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.destaque__valor {
+  font-size: 1.9rem;
+  font-weight: 800;
+  font-stretch: var(--largura-estreita);
+  line-height: 1;
+  text-align: right;
+}
+
+.destaque__complemento {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.72rem;
+  font-weight: 500;
+  font-stretch: 100%;
+  color: rgba(244, 241, 234, 0.7);
+}
+
+
+/* ========== BOTÕES ========== */
+
+.botao {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 16px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--cor-tinta);
+  color: var(--cor-papel);
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background: #2a2d33;
+}
+
+.botao:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+a.botao {
+  text-decoration: none;
+}
+
+/* Botão claro, com contorno. */
+.botao--claro {
+  border: 2px solid var(--cor-tinta);
+  background: transparent;
+  color: var(--cor-tinta);
+}
+
+.botao--claro:hover {
+  background: var(--cor-cartao);
+}
+
+/* Lista de opções (select). */
+.seletor {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid var(--cor-linha);
+  border-radius: 10px;
+  background: var(--cor-papel);
+  color: var(--cor-tinta);
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.seletor:focus {
+  border-color: var(--cor-tinta);
+  outline: none;
+}
+
+/* Botão discreto, só texto sublinhado. */
+.botao--texto {
+  padding: 4px 2px;
+  background: none;
+  color: var(--cor-tinta-suave);
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.botao--texto:hover {
+  background: none;
+  color: var(--cor-tinta);
+}
+
+
+/* ========== RODADA E CARD DE JOGO (simulador) ========== */
+
+.rodada + .rodada {
+  margin-top: 22px;
+}
+
+.rodada__topo {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.rodada__titulo {
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.lista-jogos {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card-jogo {
+  padding: 10px 12px 12px;
+  border: 2px solid transparent;
+  border-radius: var(--canto-m);
+  background: var(--cor-cartao);
+  box-shadow: var(--sombra-cartao);
+}
+
+/* Jogo com palpite completo: contorno verde-limão. Só um lado preenchido: tracejado. */
+.card-jogo.preenchido {
+  border-color: var(--cor-limao);
+}
+
+.card-jogo.incompleto {
+  border-color: var(--cor-linha);
+  border-style: dashed;
+}
+
+.card-jogo__data {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 0.74rem;
+  color: var(--cor-tinta-suave);
+}
+
+.card-jogo__selo {
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: var(--cor-linha);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Cada linha: escudo | nome do time | campo de gols */
+.card-jogo__linha {
+  display: grid;
+  grid-template-columns: 26px minmax(0, 1fr) 44px;
+  align-items: center;
+  gap: 10px;
+  cursor: text;
+}
+
+.card-jogo__linha + .card-jogo__linha {
+  margin-top: 6px;
+}
+
+.card-jogo__nome {
+  font-size: 0.98rem;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.card-jogo__casa {
+  margin-left: 8px;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cor-tinta-apagada);
+}
+
+.card-jogo__escudo {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+.card-jogo__gols {
+  width: 44px;
+  height: 40px;                 /* 44 x 40: tamanho bom para o dedo no celular */
+  padding: 0;
+  border: 2px solid var(--cor-linha);
+  border-radius: 10px;
+  background: var(--cor-papel);
+  color: var(--cor-tinta);
+  font: inherit;
+  font-size: 1.3rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+}
+
+.card-jogo__gols:focus {
+  border-color: var(--cor-tinta);
+  outline: none;
+  background: var(--cor-cartao);
+}
+
+
+/* ========== GRÁFICO DE GOLS (colunas de 0 a 5+ gols) ==========
+   A altura de cada coluna vem de --altura (de 0 a 1; a coluna mais alta vale 1). */
+
+.colunas-gols {
+  margin: 0;
+}
+
+.colunas-gols__titulo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.colunas-gols__escudo {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.colunas-gols__media {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--cor-tinta-suave);
+}
+
+.colunas-gols__grade {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: end;
+  gap: 6px;
+  height: 150px;
+  border-bottom: 1px solid var(--cor-tinta-apagada);   /* a linha de base */
+}
+
+.colunas-gols__coluna {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.colunas-gols__valor {
+  margin-bottom: 4px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.colunas-gols__barra {
+  width: min(100%, 24px);       /* colunas finas: no máximo 24px */
+  height: calc(var(--altura) * 100px);
+  min-height: 2px;
+  border-radius: 4px 4px 0 0;   /* arredondada em cima, reta na base */
+  background: var(--cor-tinta);
+}
+
+/* Os números do eixo: mesma grade de 6 colunas, logo abaixo da linha de base. */
+.colunas-gols__eixo {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 6px;
+  margin-top: 6px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.colunas-gols__legenda-eixo {
+  margin-top: 2px;
+  font-size: 0.74rem;
+  color: var(--cor-tinta-suave);
+  text-align: center;
+}
+
+
+/* ========== BARRA DE RESULTADO (mandante | empate | visitante) ========== */
+
+.barra-resultado {
+  display: grid;
+  gap: 6px;
+}
+
+.barra-resultado__rotulo {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--cor-tinta-suave);
+}
+
+.barra-resultado__barra {
+  display: flex;
+  gap: 2px;                     /* um fio do fundo separa as partes */
+  height: 28px;
+}
+
+.barra-resultado__parte {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  padding-left: 8px;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  transition: flex-grow 0.3s ease;
+}
+
+.barra-resultado__parte--mandante { background: var(--cor-mandante); }
+.barra-resultado__parte--empate { background: var(--cor-empate); color: var(--cor-tinta); }
+.barra-resultado__parte--visitante { background: var(--cor-visitante); }
+
+@media (prefers-reduced-motion: reduce) {
+  .barra-resultado__parte {
+    transition: none;
+  }
+}
+
+
+/* ========== MENSAGENS (carregando / erro) ========== */
+
+.mensagem {
+  padding: 36px 20px;
+  border-radius: var(--canto-m);
+  background: var(--cor-cartao);
+  color: var(--cor-tinta-suave);
+  text-align: center;
+}
+
+.mensagem--erro {
+  border-left: 5px solid var(--cor-rebaixamento);
+  text-align: left;
+}
+
+.mensagem--erro code {
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: var(--cor-papel);
+  font-size: 0.9em;
+}
+
+.mensagem--carregando::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 6px;
+  margin: 14px auto 0;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--cor-linha) 0 30%, var(--cor-limao) 30% 60%, var(--cor-linha) 60%);
+  background-size: 300% 100%;
+  animation: carregando 1.1s linear infinite;
+}
+
+@keyframes carregando {
+  from { background-position: 100% 0; }
+  to { background-position: 0 0; }
+}
+
+/* Quem pede menos movimento no sistema não vê a animação. */
+@media (prefers-reduced-motion: reduce) {
+  .mensagem--carregando::after {
+    animation: none;
+  }
+}

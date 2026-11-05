@@ -11,6 +11,7 @@
 # Nada aqui precisa ser instalado à parte.
 # ---------------------------------------------------------------------------
 import json              # lê e escreve arquivos JSON (um formato de texto para guardar dados)
+import os                # lê as "variáveis de ambiente" (é por elas que o GitHub entrega a chave)
 import re                # "expressões regulares": busca e troca de padrões dentro de textos
 import sys               # permite encerrar o programa mostrando uma mensagem de erro
 import unicodedata       # ajuda a tirar acentos ("São Paulo" vira "Sao Paulo")
@@ -60,7 +61,13 @@ STATUS_DISPUTADO = {"FINISHED", "AWARDED"}
 # ---------------------------------------------------------------------------
 
 def ler_chave_api():
-    """Lê a chave da API guardada no arquivo .env."""
+    """Lê a chave da API: primeiro de uma variável de ambiente (é assim no GitHub Actions,
+    que entrega o "secret" desse jeito) e, se não houver, do arquivo .env (no seu computador)."""
+    # os.environ.get busca uma variável de ambiente; devolve "" se ela não existir.
+    chave = os.environ.get("FOOTBALL_DATA_API_KEY", "").strip()
+    if chave:
+        return chave
+
     # Se o arquivo .env não existe, encerra o programa explicando o que fazer.
     if not ARQUIVO_ENV.exists():
         sys.exit("Erro: não achei o arquivo .env. Copie o .env.example para .env "
@@ -103,8 +110,8 @@ def baixar_dados(chave):
     # HTTPError: o site respondeu, mas com um código de erro.
     except urllib.error.HTTPError as erro:
         if erro.code in (400, 401, 403):
-            sys.exit("Erro: a API recusou a chave. Confira se a chave no .env "
-                     "está certa e sem espaços.")
+            sys.exit("Erro: a API recusou a chave. Confira se a chave (no .env ou no secret "
+                     "FOOTBALL_DATA_API_KEY do GitHub) está certa e sem espaços.")
         if erro.code == 429:
             sys.exit("Erro: muitos pedidos seguidos (o limite grátis é 10 por minuto). "
                      "Espere um minuto e tente de novo.")

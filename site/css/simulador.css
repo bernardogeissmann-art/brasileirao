@@ -1,0 +1,123 @@
+/* simulador.css
+   Layout da página do simulador. As peças (card de jogo, card de time, barras)
+   vêm de componentes.css.
+   - Celular e tablet: um painel por vez (jogos OU tabela), com botões para alternar.
+   - Computador (a partir de 1100px): os dois painéis lado a lado. */
+
+.simulador__corpo {
+  padding-top: 20px;
+}
+
+/* ---------- Alternador (só no celular e tablet) ---------- */
+
+.alternador {
+  position: sticky;             /* fica grudado no topo ao rolar a página */
+  top: 0;
+  z-index: 5;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  margin: 0 calc(-1 * var(--margem)) 16px;
+  padding: 8px var(--margem);
+  background: color-mix(in srgb, var(--cor-papel) 92%, transparent);
+  backdrop-filter: blur(6px);   /* desfoca o que passa por trás */
+}
+
+.alternador__botao {
+  position: relative;
+  padding: 10px 12px;
+  border: 1px solid var(--cor-linha);
+  border-radius: 999px;
+  background: var(--cor-cartao);
+  color: var(--cor-tinta-suave);
+  font: inherit;
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.alternador__botao[aria-pressed="true"] {
+  border-color: var(--cor-tinta);
+  background: var(--cor-tinta);
+  color: var(--cor-papel);
+}
+
+/* Bolinha que avisa que a tabela mudou enquanto você olhava os jogos. */
+.alternador__aviso {
+  position: absolute;
+  top: 8px;
+  right: 14px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--cor-limao);
+  box-shadow: 0 0 0 2px var(--cor-tinta);
+}
+
+/* ---------- Painéis ---------- */
+
+.painel__topo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 16px;
+  margin-bottom: 14px;
+}
+
+.painel__acoes {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.painel__resumo {
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--cor-tinta-suave);
+}
+
+.painel__legenda {
+  margin-bottom: 14px;
+}
+
+.estado-calculo {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--cor-tinta-suave);
+}
+
+/* A tabela do simulador fica sempre no formato de cards, para caber a variação (+12 p.p.). */
+.painel--tabela .tabela-chances {
+  max-width: 860px;
+}
+
+/* Celular e tablet: mostra só o painel escolhido no alternador. */
+@media (max-width: 1099px) {
+  .simulador__corpo[data-vista="jogos"] .painel--tabela,
+  .simulador__corpo[data-vista="tabela"] .painel--jogos {
+    display: none;
+  }
+}
+
+/* Computador: dois painéis lado a lado; a tabela fica parada enquanto você rola os jogos. */
+@media (min-width: 1100px) {
+  .alternador {
+    display: none;
+  }
+
+  .simulador__corpo {
+    display: grid;
+    grid-template-columns: minmax(360px, 420px) minmax(0, 1fr);
+    align-items: start;
+    gap: 32px;
+  }
+
+  .painel--tabela {
+    position: sticky;
+    top: 16px;
+    max-height: calc(100vh - 32px);   /* 100vh = altura da tela */
+    overflow-y: auto;                 /* a tabela rola sozinha, se for maior que a tela */
+    padding: 0 6px 16px 0;
+  }
+}

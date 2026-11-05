@@ -11,6 +11,11 @@ venv/
 .DS_Store
 Thumbs.db
 
-# Editores
+# Editores e ferramentas
 .vscode/
 .idea/
+.claude/
+
+# Pasta montada pelo GitHub Actions na hora de publicar
+_site/
+node_modules/
