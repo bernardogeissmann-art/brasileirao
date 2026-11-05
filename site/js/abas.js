@@ -4,10 +4,21 @@
 //   id:       nome interno da aba (cada página diz qual é a sua)
 //   rotulo:   o texto que aparece no menu
 //   endereco: o arquivo da página
-//   emBreve:  true enquanto a página ainda não existe (a aba aparece, mas sem link)
+//   itens:    (opcional) transforma a aba num menu suspenso com estas opções;
+//             cada opção pode ter um "simbolo" (imagem mostrada ao lado do nome)
 
 export const ABAS = [
   { id: "inicio", rotulo: "Início", endereco: "index.html" },
   { id: "simulador", rotulo: "Simulador", endereco: "simulador.html" },
+  { id: "meu-time", rotulo: "Meu Time", endereco: "meu-time.html" },
+  {
+    id: "estaduais",
+    rotulo: "Estaduais",
+    // Para acrescentar um campeonato estadual, basta uma linha nova aqui.
+    itens: [
+      { id: "catarinense", rotulo: "Campeonato Catarinense", endereco: "catarinense.html", simbolo: "assets/simbolos/catarinense.png" },
+      { id: "gaucho", rotulo: "Campeonato Gaúcho", endereco: "gaucho.html", simbolo: "assets/simbolos/gaucho.png" },
+    ],
+  },
   { id: "metodo", rotulo: "O Método", endereco: "metodo.html" },
 ];

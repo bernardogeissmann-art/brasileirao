@@ -1,0 +1,1257 @@
+{
+ "competicao": "Campeonato Gaúcho Série A (Gauchão)",
+ "temporada": 2026,
+ "dados_baixados_em": "2026-11-04T22:28:17-03:00",
+ "calculado_em": "2026-11-05T01:36:03.105Z",
+ "simulacoes": 10000,
+ "momentos": [
+  {
+   "id": "inicio",
+   "rotulo": "Antes do 1º jogo",
+   "curto": "Início",
+   "ate": null,
+   "times": {
+    "avenida": {
+     "quartas": 0.6691,
+     "semifinal": 0.3389,
+     "final": 0.1685,
+     "titulo": 0.0875,
+     "farroupilha": 0.0797,
+     "rebaixamento": 0.1648
+    },
+    "caxias": {
+     "quartas": 0.6656,
+     "semifinal": 0.3306,
+     "final": 0.1647,
+     "titulo": 0.0815,
+     "farroupilha": 0.0837,
+     "rebaixamento": 0.1683
+    },
+    "gremio": {
+     "quartas": 0.6699,
+     "semifinal": 0.3315,
+     "final": 0.1624,
+     "titulo": 0.0837,
+     "farroupilha": 0.0905,
+     "rebaixamento": 0.1648
+    },
+    "guarany": {
+     "quartas": 0.6596,
+     "semifinal": 0.3322,
+     "final": 0.1709,
+     "titulo": 0.0865,
+     "farroupilha": 0.0818,
+     "rebaixamento": 0.1639
+    },
+    "inter-sm": {
+     "quartas": 0.6642,
+     "semifinal": 0.3293,
+     "final": 0.1688,
+     "titulo": 0.0822,
+     "farroupilha": 0.0844,
+     "rebaixamento": 0.1662
+    },
+    "internacional": {
+     "quartas": 0.6742,
+     "semifinal": 0.3403,
+     "final": 0.1635,
+     "titulo": 0.0806,
+     "farroupilha": 0.0837,
+     "rebaixamento": 0.1661
+    },
+    "juventude": {
+     "quartas": 0.6739,
+     "semifinal": 0.3333,
+     "final": 0.1681,
+     "titulo": 0.0862,
+     "farroupilha": 0.0836,
+     "rebaixamento": 0.1617
+    },
+    "monsoon": {
+     "quartas": 0.6712,
+     "semifinal": 0.3401,
+     "final": 0.1655,
+     "titulo": 0.0802,
+     "farroupilha": 0.0814,
+     "rebaixamento": 0.1646
+    },
+    "novo-hamburgo": {
+     "quartas": 0.6664,
+     "semifinal": 0.3312,
+     "final": 0.1688,
+     "titulo": 0.0817,
+     "farroupilha": 0.0849,
+     "rebaixamento": 0.1666
+    },
+    "sao-jose": {
+     "quartas": 0.6673,
+     "semifinal": 0.3336,
+     "final": 0.1705,
+     "titulo": 0.0902,
+     "farroupilha": 0.0809,
+     "rebaixamento": 0.1647
+    },
+    "sao-luiz": {
+     "quartas": 0.6559,
+     "semifinal": 0.3217,
+     "final": 0.1588,
+     "titulo": 0.0784,
+     "farroupilha": 0.0825,
+     "rebaixamento": 0.1805
+    },
+    "ypiranga": {
+     "quartas": 0.6627,
+     "semifinal": 0.3373,
+     "final": 0.1695,
+     "titulo": 0.0813,
+     "farroupilha": 0.0829,
+     "rebaixamento": 0.1678
+    }
+   }
+  },
+  {
+   "id": "rodada-1",
+   "rotulo": "Após a 1ª rodada",
+   "curto": "R1",
+   "ate": "2026-01-11T19:00:00-03:00",
+   "times": {
+    "avenida": {
+     "quartas": 0.258,
+     "semifinal": 0.0736,
+     "final": 0.0112,
+     "titulo": 0.0027,
+     "farroupilha": 0.0088,
+     "rebaixamento": 0.6206
+    },
+    "caxias": {
+     "quartas": 0.6532,
+     "semifinal": 0.2924,
+     "final": 0.1389,
+     "titulo": 0.0568,
+     "farroupilha": 0.0911,
+     "rebaixamento": 0.137
+    },
+    "gremio": {
+     "quartas": 0.9726,
+     "semifinal": 0.681,
+     "final": 0.5119,
+     "titulo": 0.3791,
+     "farroupilha": 0.1634,
+     "rebaixamento": 0.0016
+    },
+    "guarany": {
+     "quartas": 0.7008,
+     "semifinal": 0.3474,
+     "final": 0.1438,
+     "titulo": 0.06,
+     "farroupilha": 0.0782,
+     "rebaixamento": 0.1292
+    },
+    "inter-sm": {
+     "quartas": 0.6197,
+     "semifinal": 0.2791,
+     "final": 0.1393,
+     "titulo": 0.0577,
+     "farroupilha": 0.0851,
+     "rebaixamento": 0.152
+    },
+    "internacional": {
+     "quartas": 0.9348,
+     "semifinal": 0.5268,
+     "final": 0.2725,
+     "titulo": 0.126,
+     "farroupilha": 0.1207,
+     "rebaixamento": 0.0244
+    },
+    "juventude": {
+     "quartas": 0.7092,
+     "semifinal": 0.3517,
+     "final": 0.1477,
+     "titulo": 0.0598,
+     "farroupilha": 0.0784,
+     "rebaixamento": 0.1294
+    },
+    "monsoon": {
+     "quartas": 0.6482,
+     "semifinal": 0.2848,
+     "final": 0.1319,
+     "titulo": 0.0546,
+     "farroupilha": 0.0914,
+     "rebaixamento": 0.1357
+    },
+    "novo-hamburgo": {
+     "quartas": 0.4679,
+     "semifinal": 0.1806,
+     "final": 0.0728,
+     "titulo": 0.0261,
+     "farroupilha": 0.049,
+     "rebaixamento": 0.262
+    },
+    "sao-jose": {
+     "quartas": 0.6964,
+     "semifinal": 0.3451,
+     "final": 0.1462,
+     "titulo": 0.0635,
+     "farroupilha": 0.0777,
+     "rebaixamento": 0.137
+    },
+    "sao-luiz": {
+     "quartas": 0.7008,
+     "semifinal": 0.3554,
+     "final": 0.1526,
+     "titulo": 0.0626,
+     "farroupilha": 0.0713,
+     "rebaixamento": 0.1302
+    },
+    "ypiranga": {
+     "quartas": 0.6384,
+     "semifinal": 0.2821,
+     "final": 0.1312,
+     "titulo": 0.0511,
+     "farroupilha": 0.0849,
+     "rebaixamento": 0.1409
+    }
+   }
+  },
+  {
+   "id": "rodada-2",
+   "rotulo": "Após a 2ª rodada",
+   "curto": "R2",
+   "ate": "2026-01-15T19:00:00-03:00",
+   "times": {
+    "avenida": {
+     "quartas": 0.094,
+     "semifinal": 0.0135,
+     "final": 0.0015,
+     "titulo": 0.0001,
+     "farroupilha": 0.001,
+     "rebaixamento": 0.833
+    },
+    "caxias": {
+     "quartas": 0.9226,
+     "semifinal": 0.5267,
+     "final": 0.2833,
+     "titulo": 0.1377,
+     "farroupilha": 0.1233,
+     "rebaixamento": 0.0105
+    },
+    "gremio": {
+     "quartas": 0.8883,
+     "semifinal": 0.5187,
+     "final": 0.2825,
+     "titulo": 0.1469,
+     "farroupilha": 0.1255,
+     "rebaixamento": 0.0138
+    },
+    "guarany": {
+     "quartas": 0.5262,
+     "semifinal": 0.1949,
+     "final": 0.072,
+     "titulo": 0.0254,
+     "farroupilha": 0.0508,
+     "rebaixamento": 0.1604
+    },
+    "inter-sm": {
+     "quartas": 0.686,
+     "semifinal": 0.3297,
+     "final": 0.1386,
+     "titulo": 0.0579,
+     "farroupilha": 0.0781,
+     "rebaixamento": 0.098
+    },
+    "internacional": {
+     "quartas": 0.998,
+     "semifinal": 0.6675,
+     "final": 0.4665,
+     "titulo": 0.3138,
+     "farroupilha": 0.1705,
+     "rebaixamento": 0
+    },
+    "juventude": {
+     "quartas": 0.6684,
+     "semifinal": 0.2631,
+     "final": 0.1041,
+     "titulo": 0.0372,
+     "farroupilha": 0.0737,
+     "rebaixamento": 0.099
+    },
+    "monsoon": {
+     "quartas": 0.271,
+     "semifinal": 0.0838,
+     "final": 0.0166,
+     "titulo": 0.0038,
+     "farroupilha": 0.0098,
+     "rebaixamento": 0.4854
+    },
+    "novo-hamburgo": {
+     "quartas": 0.6096,
+     "semifinal": 0.2585,
+     "final": 0.0958,
+     "titulo": 0.0359,
+     "farroupilha": 0.0611,
+     "rebaixamento": 0.1137
+    },
+    "sao-jose": {
+     "quartas": 0.9619,
+     "semifinal": 0.5305,
+     "final": 0.2923,
+     "titulo": 0.144,
+     "farroupilha": 0.143,
+     "rebaixamento": 0.008
+    },
+    "sao-luiz": {
+     "quartas": 0.7515,
+     "semifinal": 0.3305,
+     "final": 0.1422,
+     "titulo": 0.0607,
+     "farroupilha": 0.1023,
+     "rebaixamento": 0.0688
+    },
+    "ypiranga": {
+     "quartas": 0.6225,
+     "semifinal": 0.2826,
+     "final": 0.1046,
+     "titulo": 0.0366,
+     "farroupilha": 0.0609,
+     "rebaixamento": 0.1094
+    }
+   }
+  },
+  {
+   "id": "rodada-3",
+   "rotulo": "Após a 3ª rodada",
+   "curto": "R3",
+   "ate": "2026-01-18T19:00:00-03:00",
+   "times": {
+    "avenida": {
+     "quartas": 0.1249,
+     "semifinal": 0.0238,
+     "final": 0.0012,
+     "titulo": 0.0001,
+     "farroupilha": 0.0015,
+     "rebaixamento": 0.6632
+    },
+    "caxias": {
+     "quartas": 0.9914,
+     "semifinal": 0.5852,
+     "final": 0.3255,
+     "titulo": 0.1477,
+     "farroupilha": 0.1604,
+     "rebaixamento": 0.0002
+    },
+    "gremio": {
+     "quartas": 0.9962,
+     "semifinal": 0.7384,
+     "final": 0.5493,
+     "titulo": 0.3845,
+     "farroupilha": 0.1598,
+     "rebaixamento": 0.0001
+    },
+    "guarany": {
+     "quartas": 0.4151,
+     "semifinal": 0.1114,
+     "final": 0.0171,
+     "titulo": 0.0025,
+     "farroupilha": 0.017,
+     "rebaixamento": 0.1901
+    },
+    "inter-sm": {
+     "quartas": 0.2688,
+     "semifinal": 0.0713,
+     "final": 0.0195,
+     "titulo": 0.0064,
+     "farroupilha": 0.0213,
+     "rebaixamento": 0.2551
+    },
+    "internacional": {
+     "quartas": 0.9967,
+     "semifinal": 0.6672,
+     "final": 0.3471,
+     "titulo": 0.1528,
+     "farroupilha": 0.1207,
+     "rebaixamento": 0.0004
+    },
+    "juventude": {
+     "quartas": 0.9805,
+     "semifinal": 0.4873,
+     "final": 0.1951,
+     "titulo": 0.074,
+     "farroupilha": 0.1251,
+     "rebaixamento": 0.0027
+    },
+    "monsoon": {
+     "quartas": 0.0801,
+     "semifinal": 0.0117,
+     "final": 0.0016,
+     "titulo": 0.0002,
+     "farroupilha": 0.0013,
+     "rebaixamento": 0.6005
+    },
+    "novo-hamburgo": {
+     "quartas": 0.7103,
+     "semifinal": 0.2213,
+     "final": 0.0756,
+     "titulo": 0.0282,
+     "farroupilha": 0.0783,
+     "rebaixamento": 0.0492
+    },
+    "sao-jose": {
+     "quartas": 0.992,
+     "semifinal": 0.5855,
+     "final": 0.2985,
+     "titulo": 0.1448,
+     "farroupilha": 0.1456,
+     "rebaixamento": 0.0014
+    },
+    "sao-luiz": {
+     "quartas": 0.4908,
+     "semifinal": 0.1248,
+     "final": 0.0162,
+     "titulo": 0.0026,
+     "farroupilha": 0.0172,
+     "rebaixamento": 0.2326
+    },
+    "ypiranga": {
+     "quartas": 0.9532,
+     "semifinal": 0.3721,
+     "final": 0.1533,
+     "titulo": 0.0562,
+     "farroupilha": 0.1518,
+     "rebaixamento": 0.0045
+    }
+   }
+  },
+  {
+   "id": "rodada-4",
+   "rotulo": "Após a 4ª rodada",
+   "curto": "R4",
+   "ate": "2026-01-22T21:30:00-03:00",
+   "times": {
+    "avenida": {
+     "quartas": 0.4893,
+     "semifinal": 0.1197,
+     "final": 0.0191,
+     "titulo": 0.0029,
+     "farroupilha": 0.0579,
+     "rebaixamento": 0.243
+    },
+    "caxias": {
+     "quartas": 0.9942,
+     "semifinal": 0.7258,
+     "final": 0.3562,
+     "titulo": 0.1369,
+     "farroupilha": 0.1213,
+     "rebaixamento": 0.0005
+    },
+    "gremio": {
+     "quartas": 1,
+     "semifinal": 0.8762,
+     "final": 0.7217,
+     "titulo": 0.5561,
+     "farroupilha": 0.0927,
+     "rebaixamento": 0
+    },
+    "guarany": {
+     "quartas": 0.1153,
+     "semifinal": 0.0249,
+     "final": 0.0026,
+     "titulo": 0.0004,
+     "farroupilha": 0.0114,
+     "rebaixamento": 0.4697
+    },
+    "inter-sm": {
+     "quartas": 0.1751,
+     "semifinal": 0.0338,
+     "final": 0.0082,
+     "titulo": 0.0025,
+     "farroupilha": 0.0166,
+     "rebaixamento": 0.5261
+    },
+    "internacional": {
+     "quartas": 0.9999,
+     "semifinal": 0.7547,
+     "final": 0.4414,
+     "titulo": 0.1738,
+     "farroupilha": 0.1336,
+     "rebaixamento": 0
+    },
+    "juventude": {
+     "quartas": 0.996,
+     "semifinal": 0.6337,
+     "final": 0.2591,
+     "titulo": 0.0784,
+     "farroupilha": 0.145,
+     "rebaixamento": 0.0009
+    },
+    "monsoon": {
+     "quartas": 0.7043,
+     "semifinal": 0.1201,
+     "final": 0.0217,
+     "titulo": 0.003,
+     "farroupilha": 0.0704,
+     "rebaixamento": 0.1524
+    },
+    "novo-hamburgo": {
+     "quartas": 0.3306,
+     "semifinal": 0.0675,
+     "final": 0.017,
+     "titulo": 0.0053,
+     "farroupilha": 0.0465,
+     "rebaixamento": 0.2684
+    },
+    "sao-jose": {
+     "quartas": 0.7705,
+     "semifinal": 0.3017,
+     "final": 0.0889,
+     "titulo": 0.0284,
+     "farroupilha": 0.1371,
+     "rebaixamento": 0.0668
+    },
+    "sao-luiz": {
+     "quartas": 0.629,
+     "semifinal": 0.1653,
+     "final": 0.0255,
+     "titulo": 0.0038,
+     "farroupilha": 0.0605,
+     "rebaixamento": 0.1903
+    },
+    "ypiranga": {
+     "quartas": 0.7958,
+     "semifinal": 0.1766,
+     "final": 0.0386,
+     "titulo": 0.0085,
+     "farroupilha": 0.107,
+     "rebaixamento": 0.0819
+    }
+   }
+  },
+  {
+   "id": "rodada-5",
+   "rotulo": "Após a 5ª rodada",
+   "curto": "R5",
+   "ate": "2026-01-26T19:00:00-03:00",
+   "times": {
+    "avenida": {
+     "quartas": 0.2734,
+     "semifinal": 0.037,
+     "final": 0.0053,
+     "titulo": 0.001,
+     "farroupilha": 0.0254,
+     "rebaixamento": 0.3513
+    },
+    "caxias": {
+     "quartas": 1,
+     "semifinal": 0.708,
+     "final": 0.2986,
+     "titulo": 0.1216,
+     "farroupilha": 0.1219,
+     "rebaixamento": 0
+    },
+    "gremio": {
+     "quartas": 1,
+     "semifinal": 0.8634,
+     "final": 0.5875,
+     "titulo": 0.3581,
+     "farroupilha": 0.0796,
+     "rebaixamento": 0
+    },
+    "guarany": {
+     "quartas": 0.1892,
+     "semifinal": 0.0253,
+     "final": 0.0023,
+     "titulo": 0.0005,
+     "farroupilha": 0.0157,
+     "rebaixamento": 0.391
+    },
+    "inter-sm": {
+     "quartas": 0.044,
+     "semifinal": 0.0064,
+     "final": 0.0009,
+     "titulo": 0.0003,
+     "farroupilha": 0.0038,
+     "rebaixamento": 0.628
+    },
+    "internacional": {
+     "quartas": 1,
+     "semifinal": 0.8417,
+     "final": 0.5631,
+     "titulo": 0.298,
+     "farroupilha": 0.0904,
+     "rebaixamento": 0
+    },
+    "juventude": {
+     "quartas": 1,
+     "semifinal": 0.6509,
+     "final": 0.3114,
+     "titulo": 0.1452,
+     "farroupilha": 0.1717,
+     "rebaixamento": 0
+    },
+    "monsoon": {
+     "quartas": 0.6454,
+     "semifinal": 0.103,
+     "final": 0.0123,
+     "titulo": 0.0018,
+     "farroupilha": 0.0376,
+     "rebaixamento": 0.1982
+    },
+    "novo-hamburgo": {
+     "quartas": 0.3779,
+     "semifinal": 0.08,
+     "final": 0.0186,
+     "titulo": 0.0065,
+     "farroupilha": 0.0564,
+     "rebaixamento": 0.1907
+    },
+    "sao-jose": {
+     "quartas": 0.998,
+     "semifinal": 0.3673,
+     "final": 0.1389,
+     "titulo": 0.0523,
+     "farroupilha": 0.2282,
+     "rebaixamento": 0.0005
+    },
+    "sao-luiz": {
+     "quartas": 0.5394,
+     "semifinal": 0.0778,
+     "final": 0.0135,
+     "titulo": 0.0027,
+     "farroupilha": 0.0445,
+     "rebaixamento": 0.2206
+    },
+    "ypiranga": {
+     "quartas": 0.9327,
+     "semifinal": 0.2392,
+     "final": 0.0476,
+     "titulo": 0.012,
+     "farroupilha": 0.1248,
+     "rebaixamento": 0.0197
+    }
+   }
+  },
+  {
+   "id": "rodada-6",
+   "rotulo": "Após a 6ª rodada",
+   "curto": "R6",
+   "ate": "2026-01-31T16:30:00-03:00",
+   "times": {
+    "avenida": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0,
+     "rebaixamento": 0.4866
+    },
+    "caxias": {
+     "quartas": 1,
+     "semifinal": 0.7312,
+     "final": 0.2555,
+     "titulo": 0.0985,
+     "farroupilha": 0.0882,
+     "rebaixamento": 0
+    },
+    "gremio": {
+     "quartas": 1,
+     "semifinal": 0.7712,
+     "final": 0.4664,
+     "titulo": 0.2434,
+     "farroupilha": 0.1273,
+     "rebaixamento": 0
+    },
+    "guarany": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0,
+     "rebaixamento": 0.5133
+    },
+    "inter-sm": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0,
+     "rebaixamento": 0.5103
+    },
+    "internacional": {
+     "quartas": 1,
+     "semifinal": 0.8947,
+     "final": 0.6746,
+     "titulo": 0.4045,
+     "farroupilha": 0.0564,
+     "rebaixamento": 0
+    },
+    "juventude": {
+     "quartas": 1,
+     "semifinal": 0.6419,
+     "final": 0.3441,
+     "titulo": 0.1629,
+     "farroupilha": 0.1708,
+     "rebaixamento": 0
+    },
+    "monsoon": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0,
+     "rebaixamento": 0.4898
+    },
+    "novo-hamburgo": {
+     "quartas": 1,
+     "semifinal": 0.2288,
+     "final": 0.0626,
+     "titulo": 0.027,
+     "farroupilha": 0.1764,
+     "rebaixamento": 0
+    },
+    "sao-jose": {
+     "quartas": 1,
+     "semifinal": 0.3581,
+     "final": 0.1331,
+     "titulo": 0.0494,
+     "farroupilha": 0.1902,
+     "rebaixamento": 0
+    },
+    "sao-luiz": {
+     "quartas": 1,
+     "semifinal": 0.1053,
+     "final": 0.0193,
+     "titulo": 0.0036,
+     "farroupilha": 0.0773,
+     "rebaixamento": 0
+    },
+    "ypiranga": {
+     "quartas": 1,
+     "semifinal": 0.2688,
+     "final": 0.0444,
+     "titulo": 0.0107,
+     "farroupilha": 0.1134,
+     "rebaixamento": 0
+    }
+   }
+  },
+  {
+   "id": "quartas-1",
+   "rotulo": "Após as quartas",
+   "curto": "QF",
+   "ate": "2026-02-09T20:00:00-03:00",
+   "times": {
+    "avenida": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0,
+     "rebaixamento": 0.2074
+    },
+    "caxias": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0.3237,
+     "rebaixamento": 0
+    },
+    "gremio": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0.5703,
+     "titulo": 0.3078,
+     "farroupilha": 0,
+     "rebaixamento": 0
+    },
+    "guarany": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0,
+     "rebaixamento": 0.7267
+    },
+    "inter-sm": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0,
+     "rebaixamento": 0.5123
+    },
+    "internacional": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0.7896,
+     "titulo": 0.4377,
+     "farroupilha": 0,
+     "rebaixamento": 0
+    },
+    "juventude": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0.4297,
+     "titulo": 0.1963,
+     "farroupilha": 0,
+     "rebaixamento": 0
+    },
+    "monsoon": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0,
+     "rebaixamento": 0.5536
+    },
+    "novo-hamburgo": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0.249,
+     "rebaixamento": 0
+    },
+    "sao-jose": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0.3038,
+     "rebaixamento": 0
+    },
+    "sao-luiz": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0.1235,
+     "rebaixamento": 0
+    },
+    "ypiranga": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0.2104,
+     "titulo": 0.0582,
+     "farroupilha": 0,
+     "rebaixamento": 0
+    }
+   }
+  },
+  {
+   "id": "semifinal-1",
+   "rotulo": "Após a ida das semifinais",
+   "curto": "SF ida",
+   "ate": "2026-02-15T20:30:00-03:00",
+   "times": {
+    "avenida": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0,
+     "rebaixamento": 0.2757
+    },
+    "caxias": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0.3279,
+     "rebaixamento": 0
+    },
+    "gremio": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0.4542,
+     "titulo": 0.187,
+     "farroupilha": 0,
+     "rebaixamento": 0
+    },
+    "guarany": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0,
+     "rebaixamento": 0.712
+    },
+    "inter-sm": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0,
+     "rebaixamento": 0.4886
+    },
+    "internacional": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0.9975,
+     "titulo": 0.6176,
+     "farroupilha": 0,
+     "rebaixamento": 0
+    },
+    "juventude": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0.5458,
+     "titulo": 0.1951,
+     "farroupilha": 0,
+     "rebaixamento": 0
+    },
+    "monsoon": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0,
+     "rebaixamento": 0.5237
+    },
+    "novo-hamburgo": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0.3958,
+     "rebaixamento": 0
+    },
+    "sao-jose": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0.1549,
+     "rebaixamento": 0
+    },
+    "sao-luiz": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0.1214,
+     "rebaixamento": 0
+    },
+    "ypiranga": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0.0025,
+     "titulo": 0.0003,
+     "farroupilha": 0,
+     "rebaixamento": 0
+    }
+   }
+  },
+  {
+   "id": "semifinal-2",
+   "rotulo": "Após as semifinais",
+   "curto": "SF",
+   "ate": "2026-02-22T18:00:00-03:00",
+   "times": {
+    "avenida": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0,
+     "rebaixamento": 0.3211
+    },
+    "caxias": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0,
+     "rebaixamento": 0
+    },
+    "gremio": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 1,
+     "titulo": 0.3779,
+     "farroupilha": 0,
+     "rebaixamento": 0
+    },
+    "guarany": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0,
+     "rebaixamento": 0.1398
+    },
+    "inter-sm": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0,
+     "rebaixamento": 0.9277
+    },
+    "internacional": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 1,
+     "titulo": 0.6221,
+     "farroupilha": 0,
+     "rebaixamento": 0
+    },
+    "juventude": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0,
+     "rebaixamento": 0
+    },
+    "monsoon": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0,
+     "rebaixamento": 0.6114
+    },
+    "novo-hamburgo": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0.4739,
+     "rebaixamento": 0
+    },
+    "sao-jose": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0.1629,
+     "rebaixamento": 0
+    },
+    "sao-luiz": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0.3632,
+     "rebaixamento": 0
+    },
+    "ypiranga": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0,
+     "rebaixamento": 0
+    }
+   }
+  },
+  {
+   "id": "final-1",
+   "rotulo": "Após a ida da final",
+   "curto": "F ida",
+   "ate": "2026-03-01T18:00:00-03:00",
+   "times": {
+    "avenida": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0,
+     "rebaixamento": 0.1833
+    },
+    "caxias": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0,
+     "rebaixamento": 0
+    },
+    "gremio": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 1,
+     "titulo": 0.9379,
+     "farroupilha": 0,
+     "rebaixamento": 0
+    },
+    "guarany": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0,
+     "rebaixamento": 0
+    },
+    "inter-sm": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0,
+     "rebaixamento": 1
+    },
+    "internacional": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 1,
+     "titulo": 0.0621,
+     "farroupilha": 0,
+     "rebaixamento": 0
+    },
+    "juventude": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0,
+     "rebaixamento": 0
+    },
+    "monsoon": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0,
+     "rebaixamento": 0.8167
+    },
+    "novo-hamburgo": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0.6844,
+     "rebaixamento": 0
+    },
+    "sao-jose": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0,
+     "rebaixamento": 0
+    },
+    "sao-luiz": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0.3156,
+     "rebaixamento": 0
+    },
+    "ypiranga": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0,
+     "rebaixamento": 0
+    }
+   }
+  },
+  {
+   "id": "final-2",
+   "rotulo": "Fim do campeonato",
+   "curto": "Fim",
+   "ate": "2026-03-08T18:00:00-03:00",
+   "times": {
+    "avenida": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0,
+     "rebaixamento": 1
+    },
+    "caxias": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0,
+     "rebaixamento": 0
+    },
+    "gremio": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 1,
+     "titulo": 1,
+     "farroupilha": 0,
+     "rebaixamento": 0
+    },
+    "guarany": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0,
+     "rebaixamento": 0
+    },
+    "inter-sm": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0,
+     "rebaixamento": 1
+    },
+    "internacional": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 1,
+     "titulo": 0,
+     "farroupilha": 0,
+     "rebaixamento": 0
+    },
+    "juventude": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0,
+     "rebaixamento": 0
+    },
+    "monsoon": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0,
+     "rebaixamento": 0
+    },
+    "novo-hamburgo": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0,
+     "rebaixamento": 0
+    },
+    "sao-jose": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0,
+     "rebaixamento": 0
+    },
+    "sao-luiz": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 1,
+     "rebaixamento": 0
+    },
+    "ypiranga": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0,
+     "titulo": 0,
+     "farroupilha": 0,
+     "rebaixamento": 0
+    }
+   }
+  }
+ ]
+}

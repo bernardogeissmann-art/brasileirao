@@ -1,0 +1,710 @@
+{
+  "competicao": "Campeonato Gaúcho Série A (Gauchão)",
+  "temporada": 2026,
+  "dados_baixados_em": "2026-11-04T22:28:17-03:00",
+  "estimado_em": "2026-11-04T22:30:20-03:00",
+  "parametros": {
+    "forca_prior": 3,
+    "gols_por_jogo_prior": 2.5,
+    "fator_casa_prior": 1.25,
+    "forca_prior_casa": 6
+  },
+  "momentos": [
+    {
+      "id": "inicio",
+      "rotulo": "Antes do 1º jogo",
+      "curto": "Início",
+      "ate": null,
+      "jogos_usados": 0,
+      "fator_casa": 1.25,
+      "times": {
+        "avenida": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "caxias": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "gremio": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "guarany": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "inter-sm": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "internacional": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "juventude": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "monsoon": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "novo-hamburgo": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "sao-jose": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "sao-luiz": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "ypiranga": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        }
+      }
+    },
+    {
+      "id": "rodada-1",
+      "rotulo": "Após a 1ª rodada",
+      "curto": "R1",
+      "ate": "2026-01-11T19:00:00-03:00",
+      "jogos_usados": 6,
+      "fator_casa": 1.0849901917242977,
+      "times": {
+        "avenida": {
+          "ataque": 0.7857887899377448,
+          "defesa": 1.5368640190261493
+        },
+        "caxias": {
+          "ataque": 0.9985496600566969,
+          "defesa": 0.9898492713487668
+        },
+        "gremio": {
+          "ataque": 1.5254382137009517,
+          "defesa": 0.7916744886428079
+        },
+        "guarany": {
+          "ataque": 0.9824902435338326,
+          "defesa": 1.006028975773043
+        },
+        "inter-sm": {
+          "ataque": 0.7969302144659404,
+          "defesa": 0.7916744886428079
+        },
+        "internacional": {
+          "ataque": 1.1643846211293318,
+          "defesa": 1.006028975773043
+        },
+        "juventude": {
+          "ataque": 0.9824902435338326,
+          "defesa": 1.006028975773043
+        },
+        "monsoon": {
+          "ataque": 0.9985496600566969,
+          "defesa": 0.9898492713487668
+        },
+        "novo-hamburgo": {
+          "ataque": 0.9985496600566969,
+          "defesa": 1.173106070403716
+        },
+        "sao-jose": {
+          "ataque": 0.7857887899377448,
+          "defesa": 0.8028993644333593
+        },
+        "sao-luiz": {
+          "ataque": 0.9824902435338326,
+          "defesa": 1.006028975773043
+        },
+        "ypiranga": {
+          "ataque": 0.9985496600566969,
+          "defesa": 0.9898492713487668
+        }
+      }
+    },
+    {
+      "id": "rodada-2",
+      "rotulo": "Após a 2ª rodada",
+      "curto": "R2",
+      "ate": "2026-01-15T19:00:00-03:00",
+      "jogos_usados": 12,
+      "fator_casa": 0.9392718269902711,
+      "times": {
+        "avenida": {
+          "ataque": 0.6287275143634772,
+          "defesa": 1.8629967462977657
+        },
+        "caxias": {
+          "ataque": 1.253422521360576,
+          "defesa": 0.9161615118140531
+        },
+        "gremio": {
+          "ataque": 1.2838313206630183,
+          "defesa": 0.9134348051978124
+        },
+        "guarany": {
+          "ataque": 0.9181570231662272,
+          "defesa": 1.0731223347884027
+        },
+        "inter-sm": {
+          "ataque": 0.680614754565755,
+          "defesa": 0.6493613826592678
+        },
+        "internacional": {
+          "ataque": 1.6291326657719045,
+          "defesa": 0.8484655830953409
+        },
+        "juventude": {
+          "ataque": 0.9808420520768724,
+          "defesa": 1.0258822185034693
+        },
+        "monsoon": {
+          "ataque": 0.8215050530134115,
+          "defesa": 1.4821707960814472
+        },
+        "novo-hamburgo": {
+          "ataque": 1.0390231944560622,
+          "defesa": 1.1078285954165978
+        },
+        "sao-jose": {
+          "ataque": 0.8844098370265251,
+          "defesa": 0.626513001787318
+        },
+        "sao-luiz": {
+          "ataque": 0.8870499008173731,
+          "defesa": 0.8339643377982298
+        },
+        "ypiranga": {
+          "ataque": 0.9932841627187978,
+          "defesa": 1.0539201971549614
+        }
+      }
+    },
+    {
+      "id": "rodada-3",
+      "rotulo": "Após a 3ª rodada",
+      "curto": "R3",
+      "ate": "2026-01-18T19:00:00-03:00",
+      "jogos_usados": 18,
+      "fator_casa": 1.1640139627382329,
+      "times": {
+        "avenida": {
+          "ataque": 0.5047760666634759,
+          "defesa": 1.353770574452576
+        },
+        "caxias": {
+          "ataque": 1.4805597642733281,
+          "defesa": 0.9321298676756854
+        },
+        "gremio": {
+          "ataque": 1.8803281848513564,
+          "defesa": 0.7886365036894235
+        },
+        "guarany": {
+          "ataque": 0.9565224042504019,
+          "defesa": 1.355627369561091
+        },
+        "inter-sm": {
+          "ataque": 0.5240977223490951,
+          "defesa": 0.7085865467319122
+        },
+        "internacional": {
+          "ataque": 1.600780877542432,
+          "defesa": 1.022187628835836
+        },
+        "juventude": {
+          "ataque": 1.065070549856181,
+          "defesa": 0.8682495709398181
+        },
+        "monsoon": {
+          "ataque": 0.5721884595567577,
+          "defesa": 1.2644483310341919
+        },
+        "novo-hamburgo": {
+          "ataque": 0.9023393206662711,
+          "defesa": 0.893687844611533
+        },
+        "sao-jose": {
+          "ataque": 0.734742879534045,
+          "defesa": 0.452925483658504
+        },
+        "sao-luiz": {
+          "ataque": 0.7251571573145792,
+          "defesa": 1.2191616098968874
+        },
+        "ypiranga": {
+          "ataque": 1.0534366131420758,
+          "defesa": 0.8766954663532444
+        }
+      }
+    },
+    {
+      "id": "rodada-4",
+      "rotulo": "Após a 4ª rodada",
+      "curto": "R4",
+      "ate": "2026-01-22T21:30:00-03:00",
+      "jogos_usados": 24,
+      "fator_casa": 1.3270382938351113,
+      "times": {
+        "avenida": {
+          "ataque": 0.8421674667188861,
+          "defesa": 1.0988356246321365
+        },
+        "caxias": {
+          "ataque": 1.405812353941692,
+          "defesa": 0.8149326144678829
+        },
+        "gremio": {
+          "ataque": 1.8486146767624785,
+          "defesa": 0.5697947791951297
+        },
+        "guarany": {
+          "ataque": 0.8404311570684194,
+          "defesa": 1.202315852434043
+        },
+        "inter-sm": {
+          "ataque": 0.4505153048614583,
+          "defesa": 0.7298189759392806
+        },
+        "internacional": {
+          "ataque": 1.6306867157793565,
+          "defesa": 0.8736410002696233
+        },
+        "juventude": {
+          "ataque": 0.9859389214522697,
+          "defesa": 0.6892537603229157
+        },
+        "monsoon": {
+          "ataque": 0.8090774348223275,
+          "defesa": 1.1329130259654943
+        },
+        "novo-hamburgo": {
+          "ataque": 0.7546548001942519,
+          "defesa": 0.8477195258847035
+        },
+        "sao-jose": {
+          "ataque": 0.7303509876044321,
+          "defesa": 0.6237297160234313
+        },
+        "sao-luiz": {
+          "ataque": 0.772628219364629,
+          "defesa": 1.0477487337895401
+        },
+        "ypiranga": {
+          "ataque": 0.9291219614298002,
+          "defesa": 1.087024200681559
+        }
+      }
+    },
+    {
+      "id": "rodada-5",
+      "rotulo": "Após a 5ª rodada",
+      "curto": "R5",
+      "ate": "2026-01-26T19:00:00-03:00",
+      "jogos_usados": 30,
+      "fator_casa": 1.462571147770712,
+      "times": {
+        "avenida": {
+          "ataque": 0.7834743897337539,
+          "defesa": 1.1121957355007317
+        },
+        "caxias": {
+          "ataque": 1.2651526092981582,
+          "defesa": 0.8089421129998887
+        },
+        "gremio": {
+          "ataque": 1.8204054718748013,
+          "defesa": 0.8243720330260019
+        },
+        "guarany": {
+          "ataque": 0.7901831148602959,
+          "defesa": 1.140076349779816
+        },
+        "inter-sm": {
+          "ataque": 0.393916104163328,
+          "defesa": 0.7068060082053775
+        },
+        "internacional": {
+          "ataque": 1.7948399429960953,
+          "defesa": 0.906418513843082
+        },
+        "juventude": {
+          "ataque": 1.0935588895048067,
+          "defesa": 0.6387627469355309
+        },
+        "monsoon": {
+          "ataque": 0.7369545679562759,
+          "defesa": 1.2298176463992758
+        },
+        "novo-hamburgo": {
+          "ataque": 0.7715013530893704,
+          "defesa": 0.7990502006629107
+        },
+        "sao-jose": {
+          "ataque": 0.7071981673034832,
+          "defesa": 0.543880955730413
+        },
+        "sao-luiz": {
+          "ataque": 0.830240030543416,
+          "defesa": 1.1394805016740917
+        },
+        "ypiranga": {
+          "ataque": 1.012575358676215,
+          "defesa": 1.1109034266367566
+        }
+      }
+    },
+    {
+      "id": "rodada-6",
+      "rotulo": "Após a 6ª rodada",
+      "curto": "R6",
+      "ate": "2026-01-31T16:30:00-03:00",
+      "jogos_usados": 36,
+      "fator_casa": 1.4732809334348391,
+      "times": {
+        "avenida": {
+          "ataque": 0.7323018455516794,
+          "defesa": 1.1406475231214699
+        },
+        "caxias": {
+          "ataque": 1.1097708758246838,
+          "defesa": 0.7574534926503111
+        },
+        "gremio": {
+          "ataque": 1.759052979553782,
+          "defesa": 0.8318339168994554
+        },
+        "guarany": {
+          "ataque": 0.7285002845792439,
+          "defesa": 1.1993911178497627
+        },
+        "inter-sm": {
+          "ataque": 0.4287993010648273,
+          "defesa": 0.6538906636974126
+        },
+        "internacional": {
+          "ataque": 1.7678509160647706,
+          "defesa": 0.7510604478962287
+        },
+        "juventude": {
+          "ataque": 1.10476575960519,
+          "defesa": 0.5694665582427926
+        },
+        "monsoon": {
+          "ataque": 0.8163930355775622,
+          "defesa": 1.3135301824449768
+        },
+        "novo-hamburgo": {
+          "ataque": 0.8464344746001272,
+          "defesa": 0.736442887219103
+        },
+        "sao-jose": {
+          "ataque": 0.7310518625295954,
+          "defesa": 0.5550581251556965
+        },
+        "sao-luiz": {
+          "ataque": 0.9349123146875653,
+          "defesa": 1.1989896362879426
+        },
+        "ypiranga": {
+          "ataque": 1.0401663503609715,
+          "defesa": 1.1203487440127975
+        }
+      }
+    },
+    {
+      "id": "quartas-1",
+      "rotulo": "Após as quartas",
+      "curto": "QF",
+      "ate": "2026-02-09T20:00:00-03:00",
+      "jogos_usados": 44,
+      "fator_casa": 1.3837735743018291,
+      "times": {
+        "avenida": {
+          "ataque": 0.8628205378225239,
+          "defesa": 1.2978439628174623
+        },
+        "caxias": {
+          "ataque": 0.9212979102559171,
+          "defesa": 0.8391537960637954
+        },
+        "gremio": {
+          "ataque": 1.5657171516201724,
+          "defesa": 0.7769484749065966
+        },
+        "guarany": {
+          "ataque": 0.6647047244234114,
+          "defesa": 1.2899696860845227
+        },
+        "inter-sm": {
+          "ataque": 0.45813092758973734,
+          "defesa": 0.7108505876548438
+        },
+        "internacional": {
+          "ataque": 1.8084371255509097,
+          "defesa": 0.8535605164181571
+        },
+        "juventude": {
+          "ataque": 1.3242060612686264,
+          "defesa": 0.7682299513816017
+        },
+        "monsoon": {
+          "ataque": 0.7077515097351268,
+          "defesa": 1.2229941138911586
+        },
+        "novo-hamburgo": {
+          "ataque": 0.7274773707398123,
+          "defesa": 0.6881548317702673
+        },
+        "sao-jose": {
+          "ataque": 0.899395882619485,
+          "defesa": 0.7768493002533203
+        },
+        "sao-luiz": {
+          "ataque": 0.996175046577119,
+          "defesa": 1.3071248253338354
+        },
+        "ypiranga": {
+          "ataque": 1.0638857517971585,
+          "defesa": 0.9844458215554731
+        }
+      }
+    },
+    {
+      "id": "semifinal-1",
+      "rotulo": "Após a ida das semifinais",
+      "curto": "SF ida",
+      "ate": "2026-02-15T20:30:00-03:00",
+      "jogos_usados": 48,
+      "fator_casa": 1.3154313622784817,
+      "times": {
+        "avenida": {
+          "ataque": 0.8203761316772328,
+          "defesa": 1.3474552220122153
+        },
+        "caxias": {
+          "ataque": 0.9113169674461947,
+          "defesa": 0.8713866657118559
+        },
+        "gremio": {
+          "ataque": 1.4889230766736838,
+          "defesa": 0.7916171219360881
+        },
+        "guarany": {
+          "ataque": 0.6600757098673705,
+          "defesa": 1.3442531937762154
+        },
+        "inter-sm": {
+          "ataque": 0.4591108375740768,
+          "defesa": 0.7354146952660204
+        },
+        "internacional": {
+          "ataque": 1.8548839907425267,
+          "defesa": 0.7960246827818758
+        },
+        "juventude": {
+          "ataque": 1.2773181569225334,
+          "defesa": 0.7467466277151709
+        },
+        "monsoon": {
+          "ataque": 0.7078886774595019,
+          "defesa": 1.2318854360405598
+        },
+        "novo-hamburgo": {
+          "ataque": 0.8765082472157264,
+          "defesa": 0.811566298111295
+        },
+        "sao-jose": {
+          "ataque": 1.0003409323553938,
+          "defesa": 0.9798380250682492
+        },
+        "sao-luiz": {
+          "ataque": 0.9798217789883047,
+          "defesa": 1.3576364697187164
+        },
+        "ypiranga": {
+          "ataque": 0.9634354930774556,
+          "defesa": 1.100484504256038
+        }
+      }
+    },
+    {
+      "id": "semifinal-2",
+      "rotulo": "Após as semifinais",
+      "curto": "SF",
+      "ate": "2026-02-22T18:00:00-03:00",
+      "jogos_usados": 54,
+      "fator_casa": 1.2878122288530296,
+      "times": {
+        "avenida": {
+          "ataque": 0.7968171657734261,
+          "defesa": 1.3555163526339449
+        },
+        "caxias": {
+          "ataque": 0.8572695959179485,
+          "defesa": 0.8878097616757404
+        },
+        "gremio": {
+          "ataque": 1.4787546826830424,
+          "defesa": 0.7800070954688331
+        },
+        "guarany": {
+          "ataque": 0.8235341780673501,
+          "defesa": 1.4223475124509501
+        },
+        "inter-sm": {
+          "ataque": 0.49148944803721967,
+          "defesa": 0.91906920028588
+        },
+        "internacional": {
+          "ataque": 1.8932359998698738,
+          "defesa": 0.7650893491519041
+        },
+        "juventude": {
+          "ataque": 1.233666887533518,
+          "defesa": 0.7590490399017616
+        },
+        "monsoon": {
+          "ataque": 0.6964125890661546,
+          "defesa": 1.2206510732825229
+        },
+        "novo-hamburgo": {
+          "ataque": 0.8748007040300066,
+          "defesa": 0.8230412871957373
+        },
+        "sao-jose": {
+          "ataque": 0.9767114400029725,
+          "defesa": 1.0136386431910205
+        },
+        "sao-luiz": {
+          "ataque": 0.9651337134744318,
+          "defesa": 1.3348365888709999
+        },
+        "ypiranga": {
+          "ataque": 0.912173595544056,
+          "defesa": 1.1917713584031737
+        }
+      }
+    },
+    {
+      "id": "final-1",
+      "rotulo": "Após a ida da final",
+      "curto": "F ida",
+      "ate": "2026-03-01T18:00:00-03:00",
+      "jogos_usados": 59,
+      "fator_casa": 1.2957829851525728,
+      "times": {
+        "avenida": {
+          "ataque": 0.7867936015533581,
+          "defesa": 1.291110617911439
+        },
+        "caxias": {
+          "ataque": 0.8531470248892484,
+          "defesa": 0.9006658276107393
+        },
+        "gremio": {
+          "ataque": 1.5666567866891143,
+          "defesa": 0.7006385985627188
+        },
+        "guarany": {
+          "ataque": 0.7955046868015406,
+          "defesa": 1.3893490100263164
+        },
+        "inter-sm": {
+          "ataque": 0.5051935996221844,
+          "defesa": 0.9563574660082262
+        },
+        "internacional": {
+          "ataque": 1.7919785894199955,
+          "defesa": 0.8584989610687889
+        },
+        "juventude": {
+          "ataque": 1.2353330313164708,
+          "defesa": 0.7370240385549525
+        },
+        "monsoon": {
+          "ataque": 0.7059591208104529,
+          "defesa": 1.2514291796267232
+        },
+        "novo-hamburgo": {
+          "ataque": 0.9471346039774362,
+          "defesa": 0.8245851431928404
+        },
+        "sao-jose": {
+          "ataque": 0.9690451475987482,
+          "defesa": 1.0654464537852173
+        },
+        "sao-luiz": {
+          "ataque": 0.9509276633265559,
+          "defesa": 1.3265270963896654
+        },
+        "ypiranga": {
+          "ataque": 0.8923261439948944,
+          "defesa": 1.2190737018458773
+        }
+      }
+    },
+    {
+      "id": "final-2",
+      "rotulo": "Fim do campeonato",
+      "curto": "Fim",
+      "ate": "2026-03-08T18:00:00-03:00",
+      "jogos_usados": 64,
+      "fator_casa": 1.326322869131389,
+      "times": {
+        "avenida": {
+          "ataque": 0.7474817156039003,
+          "defesa": 1.2265134860610705
+        },
+        "caxias": {
+          "ataque": 0.87417168417566,
+          "defesa": 0.8746726177438677
+        },
+        "gremio": {
+          "ataque": 1.5724596676908138,
+          "defesa": 0.65302087841024
+        },
+        "guarany": {
+          "ataque": 0.7661183180660651,
+          "defesa": 1.4237876115588124
+        },
+        "inter-sm": {
+          "ataque": 0.47768171451676755,
+          "defesa": 0.8794999515862939
+        },
+        "internacional": {
+          "ataque": 1.812046713069316,
+          "defesa": 0.8179013702100898
+        },
+        "juventude": {
+          "ataque": 1.262269616264592,
+          "defesa": 0.7228158016694456
+        },
+        "monsoon": {
+          "ataque": 0.754530549211919,
+          "defesa": 1.1811087431737368
+        },
+        "novo-hamburgo": {
+          "ataque": 0.8581372603271664,
+          "defesa": 0.8114400222276765
+        },
+        "sao-jose": {
+          "ataque": 0.987575386726223,
+          "defesa": 1.0590811951797987
+        },
+        "sao-luiz": {
+          "ataque": 0.9818830431185227,
+          "defesa": 1.1977550994208936
+        },
+        "ypiranga": {
+          "ataque": 0.9056443312290544,
+          "defesa": 1.1891849308770173
+        }
+      }
+    }
+  ]
+}

@@ -60,6 +60,8 @@ img {
 /* ---------- Topo: marca + menu de abas ---------- */
 
 .topo {
+  position: relative;           /* referência para posicionar o painel do menu suspenso */
+  z-index: 10;
   background: var(--cor-tinta);
   color: var(--cor-papel);
 }
@@ -121,31 +123,96 @@ img {
   color: rgba(244, 241, 234, 0.78);
 }
 
-a.aba:hover {
+.aba:hover {
   color: var(--cor-papel);
   background: rgba(255, 255, 255, 0.08);
 }
 
-/* A aba da página atual fica destacada em verde-limão. */
-.aba[aria-current="page"] {
+/* Botão que abre um menu suspenso (ex.: "Estaduais"). */
+.aba--grupo {
+  gap: 6px;
+  border: 0;
+  background: none;
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* A aba da página atual fica destacada em verde-limão
+   (no menu suspenso, o botão fica destacado quando a página atual é uma das opções).
+   Esta regra precisa vir DEPOIS da .aba--grupo: quando duas regras têm a mesma força,
+   vale a última. Se viesse antes, o "background: none" do botão apagaria o verde. */
+.aba[aria-current="page"],
+.aba--ativa,
+.aba--ativa:hover {
   background: var(--cor-limao);
   color: var(--cor-tinta);
 }
 
-.aba--em-breve {
-  color: rgba(244, 241, 234, 0.5);
-  cursor: default;
+.aba__seta {
+  font-size: 0.8em;
+  transition: transform 0.2s ease;
 }
 
-.aba__selo {
-  margin-left: 6px;
-  padding: 1px 6px;
-  border: 1px solid currentColor;
-  border-radius: 999px;
-  font-size: 0.66rem;
+.aba--grupo[aria-expanded="true"] .aba__seta {
+  transform: rotate(180deg);
+}
+
+/* O painel que abre embaixo do botão, com as opções. */
+.menu-abas {
+  position: absolute;
+  z-index: 20;
+  width: min(300px, calc(100vw - 24px));
+  padding: 8px;
+  border: 1px solid var(--cor-linha);
+  border-radius: var(--canto-m);
+  background: var(--cor-cartao);
+  color: var(--cor-tinta);
+  box-shadow: 0 18px 40px -16px rgba(20, 22, 26, 0.55);
+}
+
+.menu-abas__titulo {
+  padding: 6px 10px 8px;
+  font-size: 0.7rem;
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
+  color: var(--cor-tinta-suave);
+}
+
+.menu-abas__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--cor-tinta);
+}
+
+.menu-abas__item:hover {
+  background: var(--cor-papel);
+}
+
+.menu-abas__item[aria-current="page"] {
+  background: color-mix(in srgb, var(--cor-limao) 35%, var(--cor-cartao));
+}
+
+.menu-abas__simbolo {
+  flex: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  object-fit: contain;
+  background: #ffffff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .aba__seta {
+    transition: none;
+  }
 }
 
 /* No celular, o menu ocupa a largura toda, numa linha própria embaixo da marca. */

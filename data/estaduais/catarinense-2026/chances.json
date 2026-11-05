@@ -1,0 +1,1361 @@
+{
+ "competicao": "Campeonato Catarinense Série A",
+ "temporada": 2026,
+ "dados_baixados_em": "2026-11-04T22:26:18-03:00",
+ "calculado_em": "2026-11-05T01:36:00.517Z",
+ "simulacoes": 10000,
+ "momentos": [
+  {
+   "id": "inicio",
+   "rotulo": "Antes do 1º jogo",
+   "curto": "Início",
+   "ate": null,
+   "times": {
+    "avai": {
+     "quartas": 0.6689,
+     "semifinal": 0.3314,
+     "final": 0.1631,
+     "titulo": 0.082,
+     "copaDoBrasil": 0.2465,
+     "rebaixamento": 0.2454
+    },
+    "barra": {
+     "quartas": 0.6664,
+     "semifinal": 0.3354,
+     "final": 0.1637,
+     "titulo": 0.081,
+     "copaDoBrasil": 0.2517,
+     "rebaixamento": 0.2528
+    },
+    "brusque": {
+     "quartas": 0.6623,
+     "semifinal": 0.3328,
+     "final": 0.1683,
+     "titulo": 0.0883,
+     "copaDoBrasil": 0.248,
+     "rebaixamento": 0.2588
+    },
+    "camboriu": {
+     "quartas": 0.6598,
+     "semifinal": 0.3259,
+     "final": 0.1622,
+     "titulo": 0.0789,
+     "copaDoBrasil": 0.2479,
+     "rebaixamento": 0.2546
+    },
+    "carlos-renaux": {
+     "quartas": 0.6614,
+     "semifinal": 0.3336,
+     "final": 0.1698,
+     "titulo": 0.0853,
+     "copaDoBrasil": 0.2529,
+     "rebaixamento": 0.253
+    },
+    "chapecoense": {
+     "quartas": 0.6645,
+     "semifinal": 0.3355,
+     "final": 0.1682,
+     "titulo": 0.0824,
+     "copaDoBrasil": 0.245,
+     "rebaixamento": 0.2508
+    },
+    "concordia": {
+     "quartas": 0.6651,
+     "semifinal": 0.3381,
+     "final": 0.1735,
+     "titulo": 0.0863,
+     "copaDoBrasil": 0.2558,
+     "rebaixamento": 0.2486
+    },
+    "criciuma": {
+     "quartas": 0.6679,
+     "semifinal": 0.3261,
+     "final": 0.1669,
+     "titulo": 0.0827,
+     "copaDoBrasil": 0.2492,
+     "rebaixamento": 0.2498
+    },
+    "figueirense": {
+     "quartas": 0.6645,
+     "semifinal": 0.3273,
+     "final": 0.1584,
+     "titulo": 0.0798,
+     "copaDoBrasil": 0.2405,
+     "rebaixamento": 0.2516
+    },
+    "joinville": {
+     "quartas": 0.6771,
+     "semifinal": 0.3399,
+     "final": 0.1702,
+     "titulo": 0.0848,
+     "copaDoBrasil": 0.2565,
+     "rebaixamento": 0.2441
+    },
+    "marcilio-dias": {
+     "quartas": 0.6668,
+     "semifinal": 0.3319,
+     "final": 0.1648,
+     "titulo": 0.0834,
+     "copaDoBrasil": 0.2501,
+     "rebaixamento": 0.2499
+    },
+    "santa-catarina": {
+     "quartas": 0.6753,
+     "semifinal": 0.3421,
+     "final": 0.1709,
+     "titulo": 0.0851,
+     "copaDoBrasil": 0.2559,
+     "rebaixamento": 0.2406
+    }
+   }
+  },
+  {
+   "id": "rodada-1",
+   "rotulo": "Após a 1ª rodada",
+   "curto": "R1",
+   "ate": "2026-01-08T19:00:00-03:00",
+   "times": {
+    "avai": {
+     "quartas": 0.8054,
+     "semifinal": 0.3951,
+     "final": 0.223,
+     "titulo": 0.1143,
+     "copaDoBrasil": 0.334,
+     "rebaixamento": 0.1141
+    },
+    "barra": {
+     "quartas": 0.6315,
+     "semifinal": 0.288,
+     "final": 0.108,
+     "titulo": 0.0483,
+     "copaDoBrasil": 0.1726,
+     "rebaixamento": 0.2954
+    },
+    "brusque": {
+     "quartas": 0.5653,
+     "semifinal": 0.2594,
+     "final": 0.1397,
+     "titulo": 0.068,
+     "copaDoBrasil": 0.2048,
+     "rebaixamento": 0.2875
+    },
+    "camboriu": {
+     "quartas": 0.589,
+     "semifinal": 0.2689,
+     "final": 0.1422,
+     "titulo": 0.0649,
+     "copaDoBrasil": 0.2156,
+     "rebaixamento": 0.2706
+    },
+    "carlos-renaux": {
+     "quartas": 0.4932,
+     "semifinal": 0.1981,
+     "final": 0.0747,
+     "titulo": 0.0273,
+     "copaDoBrasil": 0.1144,
+     "rebaixamento": 0.4343
+    },
+    "chapecoense": {
+     "quartas": 0.7117,
+     "semifinal": 0.3563,
+     "final": 0.1531,
+     "titulo": 0.0677,
+     "copaDoBrasil": 0.2293,
+     "rebaixamento": 0.2175
+    },
+    "concordia": {
+     "quartas": 0.8561,
+     "semifinal": 0.4646,
+     "final": 0.2822,
+     "titulo": 0.1583,
+     "copaDoBrasil": 0.4138,
+     "rebaixamento": 0.0782
+    },
+    "criciuma": {
+     "quartas": 0.495,
+     "semifinal": 0.1844,
+     "final": 0.059,
+     "titulo": 0.0193,
+     "copaDoBrasil": 0.0918,
+     "rebaixamento": 0.4449
+    },
+    "figueirense": {
+     "quartas": 0.9479,
+     "semifinal": 0.604,
+     "final": 0.3026,
+     "titulo": 0.1646,
+     "copaDoBrasil": 0.4585,
+     "rebaixamento": 0.0312
+    },
+    "joinville": {
+     "quartas": 0.3172,
+     "semifinal": 0.1075,
+     "final": 0.0491,
+     "titulo": 0.0152,
+     "copaDoBrasil": 0.0715,
+     "rebaixamento": 0.5484
+    },
+    "marcilio-dias": {
+     "quartas": 0.867,
+     "semifinal": 0.5045,
+     "final": 0.3116,
+     "titulo": 0.1837,
+     "copaDoBrasil": 0.4551,
+     "rebaixamento": 0.0664
+    },
+    "santa-catarina": {
+     "quartas": 0.7207,
+     "semifinal": 0.3692,
+     "final": 0.1548,
+     "titulo": 0.0684,
+     "copaDoBrasil": 0.2386,
+     "rebaixamento": 0.2115
+    }
+   }
+  },
+  {
+   "id": "rodada-2",
+   "rotulo": "Após a 2ª rodada",
+   "curto": "R2",
+   "ate": "2026-01-11T19:30:00-03:00",
+   "times": {
+    "avai": {
+     "quartas": 0.6369,
+     "semifinal": 0.2524,
+     "final": 0.1187,
+     "titulo": 0.048,
+     "copaDoBrasil": 0.1809,
+     "rebaixamento": 0.2249
+    },
+    "barra": {
+     "quartas": 0.7983,
+     "semifinal": 0.3648,
+     "final": 0.1478,
+     "titulo": 0.0595,
+     "copaDoBrasil": 0.2217,
+     "rebaixamento": 0.1499
+    },
+    "brusque": {
+     "quartas": 0.7344,
+     "semifinal": 0.3477,
+     "final": 0.1734,
+     "titulo": 0.0804,
+     "copaDoBrasil": 0.2729,
+     "rebaixamento": 0.1499
+    },
+    "camboriu": {
+     "quartas": 0.8868,
+     "semifinal": 0.5047,
+     "final": 0.3014,
+     "titulo": 0.1693,
+     "copaDoBrasil": 0.4432,
+     "rebaixamento": 0.0461
+    },
+    "carlos-renaux": {
+     "quartas": 0.2221,
+     "semifinal": 0.0652,
+     "final": 0.0205,
+     "titulo": 0.005,
+     "copaDoBrasil": 0.0319,
+     "rebaixamento": 0.6977
+    },
+    "chapecoense": {
+     "quartas": 0.417,
+     "semifinal": 0.1446,
+     "final": 0.0482,
+     "titulo": 0.0158,
+     "copaDoBrasil": 0.0738,
+     "rebaixamento": 0.493
+    },
+    "concordia": {
+     "quartas": 0.7839,
+     "semifinal": 0.4173,
+     "final": 0.2286,
+     "titulo": 0.1174,
+     "copaDoBrasil": 0.3397,
+     "rebaixamento": 0.118
+    },
+    "criciuma": {
+     "quartas": 0.7725,
+     "semifinal": 0.308,
+     "final": 0.1177,
+     "titulo": 0.0425,
+     "copaDoBrasil": 0.1769,
+     "rebaixamento": 0.1787
+    },
+    "figueirense": {
+     "quartas": 0.9964,
+     "semifinal": 0.6934,
+     "final": 0.3911,
+     "titulo": 0.238,
+     "copaDoBrasil": 0.5737,
+     "rebaixamento": 0.0019
+    },
+    "joinville": {
+     "quartas": 0.1645,
+     "semifinal": 0.0484,
+     "final": 0.0178,
+     "titulo": 0.0057,
+     "copaDoBrasil": 0.0289,
+     "rebaixamento": 0.6974
+    },
+    "marcilio-dias": {
+     "quartas": 0.7935,
+     "semifinal": 0.4295,
+     "final": 0.2424,
+     "titulo": 0.1311,
+     "copaDoBrasil": 0.3623,
+     "rebaixamento": 0.1052
+    },
+    "santa-catarina": {
+     "quartas": 0.7937,
+     "semifinal": 0.424,
+     "final": 0.1924,
+     "titulo": 0.0873,
+     "copaDoBrasil": 0.2941,
+     "rebaixamento": 0.1373
+    }
+   }
+  },
+  {
+   "id": "rodada-3",
+   "rotulo": "Após a 3ª rodada",
+   "curto": "R3",
+   "ate": "2026-01-15T20:30:00-03:00",
+   "times": {
+    "avai": {
+     "quartas": 0.8647,
+     "semifinal": 0.3298,
+     "final": 0.1511,
+     "titulo": 0.0577,
+     "copaDoBrasil": 0.232,
+     "rebaixamento": 0.0711
+    },
+    "barra": {
+     "quartas": 0.6002,
+     "semifinal": 0.2379,
+     "final": 0.0945,
+     "titulo": 0.0375,
+     "copaDoBrasil": 0.1455,
+     "rebaixamento": 0.2708
+    },
+    "brusque": {
+     "quartas": 0.9723,
+     "semifinal": 0.565,
+     "final": 0.3161,
+     "titulo": 0.1591,
+     "copaDoBrasil": 0.4604,
+     "rebaixamento": 0.0121
+    },
+    "camboriu": {
+     "quartas": 0.9912,
+     "semifinal": 0.6577,
+     "final": 0.4189,
+     "titulo": 0.262,
+     "copaDoBrasil": 0.6008,
+     "rebaixamento": 0.0018
+    },
+    "carlos-renaux": {
+     "quartas": 0.0494,
+     "semifinal": 0.0121,
+     "final": 0.0033,
+     "titulo": 0.0012,
+     "copaDoBrasil": 0.0052,
+     "rebaixamento": 0.8655
+    },
+    "chapecoense": {
+     "quartas": 0.828,
+     "semifinal": 0.3735,
+     "final": 0.1563,
+     "titulo": 0.0684,
+     "copaDoBrasil": 0.244,
+     "rebaixamento": 0.0994
+    },
+    "concordia": {
+     "quartas": 0.5631,
+     "semifinal": 0.2083,
+     "final": 0.0908,
+     "titulo": 0.0366,
+     "copaDoBrasil": 0.1379,
+     "rebaixamento": 0.2869
+    },
+    "criciuma": {
+     "quartas": 0.6057,
+     "semifinal": 0.22,
+     "final": 0.0769,
+     "titulo": 0.0275,
+     "copaDoBrasil": 0.117,
+     "rebaixamento": 0.2826
+    },
+    "figueirense": {
+     "quartas": 0.9696,
+     "semifinal": 0.5747,
+     "final": 0.2759,
+     "titulo": 0.1394,
+     "copaDoBrasil": 0.419,
+     "rebaixamento": 0.014
+    },
+    "joinville": {
+     "quartas": 0.0645,
+     "semifinal": 0.0164,
+     "final": 0.0065,
+     "titulo": 0.0018,
+     "copaDoBrasil": 0.0092,
+     "rebaixamento": 0.7972
+    },
+    "marcilio-dias": {
+     "quartas": 0.5442,
+     "semifinal": 0.2228,
+     "final": 0.1023,
+     "titulo": 0.043,
+     "copaDoBrasil": 0.1604,
+     "rebaixamento": 0.2751
+    },
+    "santa-catarina": {
+     "quartas": 0.9471,
+     "semifinal": 0.5818,
+     "final": 0.3074,
+     "titulo": 0.1658,
+     "copaDoBrasil": 0.4686,
+     "rebaixamento": 0.0235
+    }
+   }
+  },
+  {
+   "id": "rodada-4",
+   "rotulo": "Após a 4ª rodada",
+   "curto": "R4",
+   "ate": "2026-01-19T19:30:00-03:00",
+   "times": {
+    "avai": {
+     "quartas": 0.9991,
+     "semifinal": 0.5593,
+     "final": 0.341,
+     "titulo": 0.1874,
+     "copaDoBrasil": 0.4964,
+     "rebaixamento": 0.0003
+    },
+    "barra": {
+     "quartas": 0.2344,
+     "semifinal": 0.0837,
+     "final": 0.0266,
+     "titulo": 0.0091,
+     "copaDoBrasil": 0.04,
+     "rebaixamento": 0.5353
+    },
+    "brusque": {
+     "quartas": 1,
+     "semifinal": 0.5948,
+     "final": 0.3616,
+     "titulo": 0.1993,
+     "copaDoBrasil": 0.5202,
+     "rebaixamento": 0
+    },
+    "camboriu": {
+     "quartas": 0.9971,
+     "semifinal": 0.5516,
+     "final": 0.344,
+     "titulo": 0.1919,
+     "copaDoBrasil": 0.5044,
+     "rebaixamento": 0.0006
+    },
+    "carlos-renaux": {
+     "quartas": 0.0308,
+     "semifinal": 0.0094,
+     "final": 0.0028,
+     "titulo": 0.0005,
+     "copaDoBrasil": 0.0039,
+     "rebaixamento": 0.8063
+    },
+    "chapecoense": {
+     "quartas": 0.9713,
+     "semifinal": 0.4998,
+     "final": 0.2024,
+     "titulo": 0.0893,
+     "copaDoBrasil": 0.3196,
+     "rebaixamento": 0.0133
+    },
+    "concordia": {
+     "quartas": 0.5283,
+     "semifinal": 0.1379,
+     "final": 0.0487,
+     "titulo": 0.0154,
+     "copaDoBrasil": 0.0761,
+     "rebaixamento": 0.3303
+    },
+    "criciuma": {
+     "quartas": 0.9418,
+     "semifinal": 0.4366,
+     "final": 0.1745,
+     "titulo": 0.0728,
+     "copaDoBrasil": 0.2738,
+     "rebaixamento": 0.0257
+    },
+    "figueirense": {
+     "quartas": 0.8292,
+     "semifinal": 0.3335,
+     "final": 0.1125,
+     "titulo": 0.0383,
+     "copaDoBrasil": 0.1774,
+     "rebaixamento": 0.0919
+    },
+    "joinville": {
+     "quartas": 0.0374,
+     "semifinal": 0.0084,
+     "final": 0.002,
+     "titulo": 0,
+     "copaDoBrasil": 0.003,
+     "rebaixamento": 0.8181
+    },
+    "marcilio-dias": {
+     "quartas": 0.4381,
+     "semifinal": 0.148,
+     "final": 0.0617,
+     "titulo": 0.0224,
+     "copaDoBrasil": 0.0973,
+     "rebaixamento": 0.375
+    },
+    "santa-catarina": {
+     "quartas": 0.9925,
+     "semifinal": 0.637,
+     "final": 0.3222,
+     "titulo": 0.1736,
+     "copaDoBrasil": 0.4879,
+     "rebaixamento": 0.0032
+    }
+   }
+  },
+  {
+   "id": "rodada-5",
+   "rotulo": "Após a 5ª rodada",
+   "curto": "R5",
+   "ate": "2026-01-22T21:30:00-03:00",
+   "times": {
+    "avai": {
+     "quartas": 1,
+     "semifinal": 0.5714,
+     "final": 0.3298,
+     "titulo": 0.177,
+     "copaDoBrasil": 0.4835,
+     "rebaixamento": 0
+    },
+    "barra": {
+     "quartas": 0.6422,
+     "semifinal": 0.2427,
+     "final": 0.0909,
+     "titulo": 0.0349,
+     "copaDoBrasil": 0.141,
+     "rebaixamento": 0.2081
+    },
+    "brusque": {
+     "quartas": 1,
+     "semifinal": 0.6157,
+     "final": 0.3623,
+     "titulo": 0.1964,
+     "copaDoBrasil": 0.5231,
+     "rebaixamento": 0
+    },
+    "camboriu": {
+     "quartas": 1,
+     "semifinal": 0.4806,
+     "final": 0.2497,
+     "titulo": 0.1286,
+     "copaDoBrasil": 0.3852,
+     "rebaixamento": 0
+    },
+    "carlos-renaux": {
+     "quartas": 0.095,
+     "semifinal": 0.0314,
+     "final": 0.0093,
+     "titulo": 0.0036,
+     "copaDoBrasil": 0.0152,
+     "rebaixamento": 0.6811
+    },
+    "chapecoense": {
+     "quartas": 0.9546,
+     "semifinal": 0.4533,
+     "final": 0.2084,
+     "titulo": 0.0957,
+     "copaDoBrasil": 0.322,
+     "rebaixamento": 0.0172
+    },
+    "concordia": {
+     "quartas": 1,
+     "semifinal": 0.3323,
+     "final": 0.1237,
+     "titulo": 0.0437,
+     "copaDoBrasil": 0.1902,
+     "rebaixamento": 0
+    },
+    "criciuma": {
+     "quartas": 1,
+     "semifinal": 0.5732,
+     "final": 0.2713,
+     "titulo": 0.1364,
+     "copaDoBrasil": 0.4139,
+     "rebaixamento": 0
+    },
+    "figueirense": {
+     "quartas": 0.3313,
+     "semifinal": 0.0993,
+     "final": 0.0305,
+     "titulo": 0.0101,
+     "copaDoBrasil": 0.0467,
+     "rebaixamento": 0.4125
+    },
+    "joinville": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 0.8918
+    },
+    "marcilio-dias": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 0.7807
+    },
+    "santa-catarina": {
+     "quartas": 0.9769,
+     "semifinal": 0.6001,
+     "final": 0.3241,
+     "titulo": 0.1736,
+     "copaDoBrasil": 0.4792,
+     "rebaixamento": 0.0086
+    }
+   }
+  },
+  {
+   "id": "rodada-6",
+   "rotulo": "Após a 6ª rodada",
+   "curto": "R6",
+   "ate": "2026-01-25T18:00:00-03:00",
+   "times": {
+    "avai": {
+     "quartas": 1,
+     "semifinal": 0.462,
+     "final": 0.2027,
+     "titulo": 0.0892,
+     "copaDoBrasil": 0.3047,
+     "rebaixamento": 0
+    },
+    "barra": {
+     "quartas": 1,
+     "semifinal": 0.4322,
+     "final": 0.2206,
+     "titulo": 0.1012,
+     "copaDoBrasil": 0.3407,
+     "rebaixamento": 0
+    },
+    "brusque": {
+     "quartas": 1,
+     "semifinal": 0.7806,
+     "final": 0.3817,
+     "titulo": 0.1942,
+     "copaDoBrasil": 0.5645,
+     "rebaixamento": 0
+    },
+    "camboriu": {
+     "quartas": 1,
+     "semifinal": 0.538,
+     "final": 0.2534,
+     "titulo": 0.1223,
+     "copaDoBrasil": 0.3837,
+     "rebaixamento": 0
+    },
+    "carlos-renaux": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 0.8711
+    },
+    "chapecoense": {
+     "quartas": 1,
+     "semifinal": 0.6756,
+     "final": 0.4219,
+     "titulo": 0.2426,
+     "copaDoBrasil": 0.6042,
+     "rebaixamento": 0
+    },
+    "concordia": {
+     "quartas": 1,
+     "semifinal": 0.2194,
+     "final": 0.0458,
+     "titulo": 0.0112,
+     "copaDoBrasil": 0.0724,
+     "rebaixamento": 0
+    },
+    "criciuma": {
+     "quartas": 1,
+     "semifinal": 0.3244,
+     "final": 0.1506,
+     "titulo": 0.0671,
+     "copaDoBrasil": 0.2513,
+     "rebaixamento": 0
+    },
+    "figueirense": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 0.6496
+    },
+    "joinville": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 0.9701
+    },
+    "marcilio-dias": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 0.5092
+    },
+    "santa-catarina": {
+     "quartas": 1,
+     "semifinal": 0.5678,
+     "final": 0.3233,
+     "titulo": 0.1722,
+     "copaDoBrasil": 0.4785,
+     "rebaixamento": 0
+    }
+   }
+  },
+  {
+   "id": "quartas-1",
+   "rotulo": "Após a ida das quartas",
+   "curto": "QF ida",
+   "ate": "2026-02-01T18:00:00-03:00",
+   "times": {
+    "avai": {
+     "quartas": 1,
+     "semifinal": 0.8439,
+     "final": 0.3985,
+     "titulo": 0.1726,
+     "copaDoBrasil": 0.5518,
+     "rebaixamento": 0
+    },
+    "barra": {
+     "quartas": 1,
+     "semifinal": 0.3606,
+     "final": 0.1761,
+     "titulo": 0.0751,
+     "copaDoBrasil": 0.2933,
+     "rebaixamento": 0
+    },
+    "brusque": {
+     "quartas": 1,
+     "semifinal": 0.7535,
+     "final": 0.3279,
+     "titulo": 0.1693,
+     "copaDoBrasil": 0.5269,
+     "rebaixamento": 0
+    },
+    "camboriu": {
+     "quartas": 1,
+     "semifinal": 0.1561,
+     "final": 0.0613,
+     "titulo": 0.0251,
+     "copaDoBrasil": 0.145,
+     "rebaixamento": 0
+    },
+    "carlos-renaux": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 0.871
+    },
+    "chapecoense": {
+     "quartas": 1,
+     "semifinal": 0.9059,
+     "final": 0.5854,
+     "titulo": 0.3496,
+     "copaDoBrasil": 0.7609,
+     "rebaixamento": 0
+    },
+    "concordia": {
+     "quartas": 1,
+     "semifinal": 0.2465,
+     "final": 0.0435,
+     "titulo": 0.0098,
+     "copaDoBrasil": 0.0784,
+     "rebaixamento": 0
+    },
+    "criciuma": {
+     "quartas": 1,
+     "semifinal": 0.0941,
+     "final": 0.0432,
+     "titulo": 0.0168,
+     "copaDoBrasil": 0.1256,
+     "rebaixamento": 0
+    },
+    "figueirense": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 0.6512
+    },
+    "joinville": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 0.97
+    },
+    "marcilio-dias": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 0.5078
+    },
+    "santa-catarina": {
+     "quartas": 1,
+     "semifinal": 0.6394,
+     "final": 0.3641,
+     "titulo": 0.1817,
+     "copaDoBrasil": 0.5181,
+     "rebaixamento": 0
+    }
+   }
+  },
+  {
+   "id": "quartas-2",
+   "rotulo": "Após as quartas",
+   "curto": "QF",
+   "ate": "2026-02-08T19:00:00-03:00",
+   "times": {
+    "avai": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0.0839,
+     "rebaixamento": 0
+    },
+    "barra": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0.5447,
+     "titulo": 0.2617,
+     "copaDoBrasil": 0.6902,
+     "rebaixamento": 0
+    },
+    "brusque": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0.3988,
+     "titulo": 0.1908,
+     "copaDoBrasil": 0.5894,
+     "rebaixamento": 0
+    },
+    "camboriu": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0.4553,
+     "titulo": 0.2044,
+     "copaDoBrasil": 0.6068,
+     "rebaixamento": 0
+    },
+    "carlos-renaux": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 0.8222
+    },
+    "chapecoense": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0.6012,
+     "titulo": 0.3431,
+     "copaDoBrasil": 0.7721,
+     "rebaixamento": 0
+    },
+    "concordia": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0.0217,
+     "rebaixamento": 0
+    },
+    "criciuma": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0.1021,
+     "rebaixamento": 0
+    },
+    "figueirense": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 0.8678
+    },
+    "joinville": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 0.9981
+    },
+    "marcilio-dias": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 0.3119
+    },
+    "santa-catarina": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0.1338,
+     "rebaixamento": 0
+    }
+   }
+  },
+  {
+   "id": "semifinal-1",
+   "rotulo": "Após a ida das semifinais",
+   "curto": "SF ida",
+   "ate": "2026-02-15T17:00:00-03:00",
+   "times": {
+    "avai": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0.1639,
+     "rebaixamento": 0
+    },
+    "barra": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0.6169,
+     "titulo": 0.3127,
+     "copaDoBrasil": 0.7338,
+     "rebaixamento": 0
+    },
+    "brusque": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0.6733,
+     "titulo": 0.3387,
+     "copaDoBrasil": 0.7844,
+     "rebaixamento": 0
+    },
+    "camboriu": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0.3831,
+     "titulo": 0.1731,
+     "copaDoBrasil": 0.5496,
+     "rebaixamento": 0
+    },
+    "carlos-renaux": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 0.9464
+    },
+    "chapecoense": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0.3267,
+     "titulo": 0.1755,
+     "copaDoBrasil": 0.6105,
+     "rebaixamento": 0
+    },
+    "concordia": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0.0202,
+     "rebaixamento": 0
+    },
+    "criciuma": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0.1002,
+     "rebaixamento": 0
+    },
+    "figueirense": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 0.9131
+    },
+    "joinville": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 0.9806
+    },
+    "marcilio-dias": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 0.1599
+    },
+    "santa-catarina": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0.0374,
+     "rebaixamento": 0
+    }
+   }
+  },
+  {
+   "id": "semifinal-2",
+   "rotulo": "Após as semifinais",
+   "curto": "SF",
+   "ate": "2026-02-22T18:00:00-03:00",
+   "times": {
+    "avai": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0.2999,
+     "rebaixamento": 0
+    },
+    "barra": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 1,
+     "titulo": 0.4651,
+     "copaDoBrasil": 1,
+     "rebaixamento": 0
+    },
+    "brusque": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0.3011,
+     "rebaixamento": 0
+    },
+    "camboriu": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0.2551,
+     "rebaixamento": 0
+    },
+    "carlos-renaux": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 0.976
+    },
+    "chapecoense": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 1,
+     "titulo": 0.5349,
+     "copaDoBrasil": 1,
+     "rebaixamento": 0
+    },
+    "concordia": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0.02,
+     "rebaixamento": 0
+    },
+    "criciuma": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0.1239,
+     "rebaixamento": 0
+    },
+    "figueirense": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 0.9996
+    },
+    "joinville": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 1
+    },
+    "marcilio-dias": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 0.0244
+    },
+    "santa-catarina": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 0
+    }
+   }
+  },
+  {
+   "id": "final-1",
+   "rotulo": "Após a ida da final",
+   "curto": "F ida",
+   "ate": "2026-03-01T18:00:00-03:00",
+   "times": {
+    "avai": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 0
+    },
+    "barra": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 1,
+     "titulo": 0.8685,
+     "copaDoBrasil": 1,
+     "rebaixamento": 0
+    },
+    "brusque": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 0
+    },
+    "camboriu": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0.4379,
+     "rebaixamento": 0
+    },
+    "carlos-renaux": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 0.9349
+    },
+    "chapecoense": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 1,
+     "titulo": 0.1315,
+     "copaDoBrasil": 1,
+     "rebaixamento": 0
+    },
+    "concordia": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 0
+    },
+    "criciuma": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0.5621,
+     "rebaixamento": 0
+    },
+    "figueirense": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 0.9813
+    },
+    "joinville": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 1
+    },
+    "marcilio-dias": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 0.0838
+    },
+    "santa-catarina": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 0
+    }
+   }
+  },
+  {
+   "id": "final-2",
+   "rotulo": "Fim do campeonato",
+   "curto": "Fim",
+   "ate": "2026-03-08T18:00:00-03:00",
+   "times": {
+    "avai": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 0
+    },
+    "barra": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 1,
+     "titulo": 1,
+     "copaDoBrasil": 1,
+     "rebaixamento": 0
+    },
+    "brusque": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 0
+    },
+    "camboriu": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 0
+    },
+    "carlos-renaux": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 1
+    },
+    "chapecoense": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 1,
+     "titulo": 0,
+     "copaDoBrasil": 1,
+     "rebaixamento": 0
+    },
+    "concordia": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 0
+    },
+    "criciuma": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 1,
+     "rebaixamento": 0
+    },
+    "figueirense": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 1
+    },
+    "joinville": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 1
+    },
+    "marcilio-dias": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 0
+    },
+    "santa-catarina": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "copaDoBrasil": 0,
+     "rebaixamento": 0
+    }
+   }
+  }
+ ]
+}

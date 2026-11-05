@@ -20,8 +20,10 @@ import urllib.request    # faz pedidos a sites, ou seja, baixa os dados
 from datetime import datetime, timedelta, timezone  # datas, horas e fusos horários
 from pathlib import Path  # monta caminhos de arquivos (funciona igual no Windows e no Mac)
 
-# Este "import" é diferente: traz funções de um arquivo nosso, o scripts/escudos.py.
+# Estes "import" são diferentes: trazem funções de arquivos nossos (scripts/escudos.py
+# e scripts/estadios.py).
 import escudos
+import estadios
 
 # ---------------------------------------------------------------------------
 # 2) CONSTANTES
@@ -51,6 +53,12 @@ FUSO_BRASILIA = timezone(timedelta(hours=-3))
 # FINISHED = terminou; AWARDED = resultado decidido fora de campo (ex.: W.O.).
 # Jogos em andamento, adiados ou ainda não jogados contam como "restantes".
 STATUS_DISPUTADO = {"FINISHED", "AWARDED"}
+
+# Nomes curtos que a API escreve de um jeito estranho -> como queremos mostrar no site.
+NOMES_CORRIGIDOS = {
+    "Mineiro": "Atlético Mineiro",
+    "Paranaense": "Athletico Paranaense",
+}
 
 
 # ---------------------------------------------------------------------------
@@ -139,8 +147,11 @@ def registrar_time(times, time_api):
     """Guarda as informações de um time no dicionário "times" e devolve o id dele."""
     # Usa o nome curto ("Flamengo"); se a API não tiver, usa o nome completo.
     # .get() busca um campo e devolve None (vazio) se ele não existir.
-    nome = time_api.get("shortName") or time_api["name"]
-    id_time = criar_id(nome)
+    nome_api = time_api.get("shortName") or time_api["name"]
+    # O id continua vindo do nome da API (assim os arquivos de escudo e os dados antigos
+    # não mudam); só o nome que aparece no site é corrigido, quando preciso.
+    id_time = criar_id(nome_api)
+    nome = NOMES_CORRIGIDOS.get(nome_api, nome_api)
 
     # Segurança: se dois times diferentes gerarem o mesmo id, para tudo,
     # porque isso misturaria os resultados dos dois.
@@ -270,10 +281,15 @@ def main():
     # o caminho de cada escudo (ex.: "assets/escudos/flamengo.svg").
     print("Baixando os escudos dos times...")
     problemas_escudos = escudos.baixar_escudos(dados["times"])
+    # O estádio de cada jogo vem da ESPN. Se der problema, os jogos só ficam sem estádio.
+    print("Buscando o estádio de cada jogo...")
+    avisos_estadios = estadios.anotar_estadios(dados)
     salvar(dados)
     print(f"Jogos salvos em {ARQUIVO_SAIDA}")
     imprimir_resumo(dados)
     escudos.imprimir_resultado(dados["times"], problemas_escudos)
+    for aviso in avisos_estadios:
+        print(f"Aviso sobre estádios: {aviso}")
 
 
 # Esta linha quer dizer: "se este arquivo foi rodado diretamente, execute main()".

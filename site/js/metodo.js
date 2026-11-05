@@ -6,11 +6,11 @@
 
 import { carregarDados, chancesDoJogo, chancesAcumuladas, sortearGols } from "./simulacao.js";
 import {
-  montarCabecalho, montarRodape, colunasGols, barraResultado, legendaResultado, formatarDataJogo, escaparHtml,
+  instalarCabecalho, montarRodape, colunasGols, barraResultado, legendaResultado, formatarDataJogo, escaparHtml,
   formatarGols,
 } from "./componentes.js";
 
-document.getElementById("topo").innerHTML = montarCabecalho("metodo");
+instalarCabecalho(document.getElementById("topo"), "metodo");
 document.getElementById("rodape").innerHTML = montarRodape(null);
 
 const seletor = document.getElementById("jogo-exemplo");

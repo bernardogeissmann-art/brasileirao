@@ -189,11 +189,13 @@ test("chances de um jogo isolado somam 100% e batem com o Python nos empates", (
   const c = chancesDoJogo(jogo, dados.modelo);
   quaseIgual(c.vitoriaM + c.empate + c.vitoriaV, 1, "vitória + empate + derrota");
   quaseIgual(c.golsM.reduce((a, b) => a + b, 0), 1, "chances de gols do mandante");
-  // O estimar_modelo.py calculou 80,6 empates esperados nos 332 jogos disputados.
+  // O estimar_modelo.py também calcula os empates esperados nos jogos disputados
+  // (e guarda no modelo.json). O JavaScript tem que chegar ao mesmo número.
   const empatesEsperados = dados.jogos.jogos
     .filter((j) => j.disputado)
     .reduce((soma, j) => soma + chancesDoJogo(j, dados.modelo).empate, 0);
-  assert.ok(Math.abs(empatesEsperados - 80.6) < 0.1, `empates esperados: ${empatesEsperados}`);
+  assert.ok(Math.abs(empatesEsperados - dados.modelo.empates_esperados) < 1e-6,
+    `empates esperados: JavaScript ${empatesEsperados}, Python ${dados.modelo.empates_esperados}`);
 });
 
 test("jogo já disputado não pode ser fixado", () => {

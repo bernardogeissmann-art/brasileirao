@@ -7,7 +7,7 @@
 
 import { carregarDados, simular, tabelaAtual, N_SIMULACOES_PADRAO } from "./simulacao.js";
 import {
-  montarCabecalho, montarRodape, cardTime, cartaoDestaque, mensagem, legendaCategorias, cabecalhoColunas,
+  instalarCabecalho, montarRodape, cardTime, cartaoDestaque, mensagem, legendaCategorias, cabecalhoColunas,
 } from "./componentes.js";
 
 // document.getElementById pega um elemento da página pelo seu id="...".
@@ -19,7 +19,7 @@ const lista = document.getElementById("lista-times");
 const nota = document.getElementById("nota");
 
 // innerHTML troca o conteúdo de um elemento pelo HTML que montamos.
-topo.innerHTML = montarCabecalho("inicio");
+instalarCabecalho(topo, "inicio");
 rodape.innerHTML = montarRodape(null);
 document.getElementById("legenda").innerHTML = legendaCategorias();
 document.getElementById("cabecalho-colunas").innerHTML = cabecalhoColunas();

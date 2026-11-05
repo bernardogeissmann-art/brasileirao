@@ -17,6 +17,9 @@ on:
     # Formato "minuto hora dia mês dia-da-semana", no horário UTC.
     # "0 7 * * *" = todo dia às 07:00 UTC = 04:00 de Brasília (depois dos jogos da noite).
     - cron: "0 7 * * *"
+    # Página Meu Time (texto e notícias): quartas e domingos às 23h de Brasília.
+    # 23h de Brasília = 02h UTC do dia seguinte, por isso segunda (1) e quinta (4).
+    - cron: "0 2 * * 1,4"
   # Cria o botão "Run workflow" na aba Actions, para rodar na hora que você quiser.
   workflow_dispatch:
   # Quando você mandar mudanças no código para a branch main, o site é republicado
@@ -63,11 +66,28 @@ jobs:
       - name: Estimar o modelo
         run: python scripts/estimar_modelo.py
 
+      - name: Instalar o Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: "24"
+
+      - name: Instalar as bibliotecas do Node (como a da IA)
+        # "npm ci" instala exatamente as versões anotadas no package-lock.json.
+        run: npm ci
+
+      - name: Atualizar a página Meu Time (texto e notícias)
+        # Só às quartas e domingos às 23h, ou quando você clicar em "Run workflow".
+        if: github.event.schedule == '0 2 * * 1,4' || github.event_name == 'workflow_dispatch'
+        # A chave da IA também vem de um "secret". Sem ela, o texto sai com as frases prontas.
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/meu_time/atualizar_meu_time.js
+
       - name: Guardar os dados novos no repositório
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/jogos.json data/modelo.json assets/escudos
+          git add data/jogos.json data/modelo.json data/meu-time.json assets/escudos
           if git diff --cached --quiet; then
             echo "Nada mudou nos dados."
           else
@@ -102,7 +122,10 @@ jobs:
         with:
           node-version: "24"
 
-      - name: Rodar os testes da simulação
+      - name: Instalar as bibliotecas do Node
+        run: npm ci
+
+      - name: Rodar os testes
         # Se algum teste falhar, o site não é publicado.
         run: npm test
 
@@ -112,7 +135,8 @@ jobs:
           mkdir -p _site/data
           cp index.html _site/
           cp -r site assets _site/
-          cp data/jogos.json data/modelo.json _site/data/
+          cp data/jogos.json data/modelo.json data/meu-time.json data/cores-times.json _site/data/
+          cp -r data/estaduais _site/data/
 
       - name: Preparar o GitHub Pages
         uses: actions/configure-pages@v6

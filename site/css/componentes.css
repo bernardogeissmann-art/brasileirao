@@ -118,6 +118,9 @@
 .barra-chance--libertadores { --cor: var(--cor-libertadores); }
 .barra-chance--sulamericana { --cor: var(--cor-sulamericana); }
 .barra-chance--rebaixamento { --cor: var(--cor-rebaixamento); }
+/* Estaduais: avançar de fase (quartas, semifinal, final) e vaga em copa. */
+.barra-chance--avanco { --cor: var(--cor-tinta-suave); }
+.barra-chance--copa { --cor: var(--cor-sulamericana); }
 
 .barra-chance__rotulo {
   grid-area: rotulo;
@@ -256,6 +259,7 @@
 .card-time[data-zona="libertadores"] { --cor-zona: var(--cor-libertadores); }
 .card-time[data-zona="sulamericana"] { --cor-zona: var(--cor-sulamericana); }
 .card-time[data-zona="rebaixamento"] { --cor-zona: var(--cor-rebaixamento); }
+.card-time[data-zona="avanco"] { --cor-zona: var(--cor-tinta-suave); }
 /* O 5º vai para a fase preliminar da Libertadores: mesma cor, mas listrada. */
 .card-time[data-zona="preliminar"] {
   --fundo-zona: repeating-linear-gradient(
@@ -281,11 +285,13 @@
   object-fit: contain;          /* encaixa o escudo sem deformar */
 }
 
+/* No lugar de um escudo que falta: a sigla do time num círculo. */
 .escudo-vazio {
   display: grid;
   place-items: center;
   border-radius: 50%;
   background: var(--cor-linha);
+  color: var(--cor-tinta);
   font-size: 0.6rem;
   font-weight: 800;
 }
@@ -343,6 +349,12 @@
   margin-top: 10px;
   padding-top: 10px;
   border-top: 1px solid var(--cor-linha);
+}
+
+
+/* Com mais de 4 chances (estaduais), as barras se arrumam em quantas colunas couberem. */
+.lista-times--varias .card-time__chances {
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 }
 
 
@@ -478,6 +490,19 @@
 
 /* ========== CARTÃO DE DESTAQUE (usado sobre o fundo escuro) ========== */
 
+/* A grade com os cartões: um embaixo do outro no celular, três lado a lado na tela grande. */
+.destaques {
+  display: grid;
+  gap: 10px;
+  margin-top: 26px;
+}
+
+@media (min-width: 760px) {
+  .destaques {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .destaque {
   padding: 14px 16px;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -493,13 +518,19 @@
   color: var(--cor-limao);
 }
 
+/* Escudo | nome | número na primeira linha; a frase explicativa na segunda, com a largura toda. */
 .destaque__corpo {
   display: grid;
   grid-template-columns: 44px minmax(0, 1fr) auto;
+  grid-template-areas:
+    "escudo time valor"
+    "nota   nota nota";
   align-items: center;
-  gap: 12px;
+  gap: 8px 12px;
   margin-top: 10px;
 }
+
+.destaque__corpo > .destaque__escudo { grid-area: escudo; }
 
 /* O escudo fica num círculo claro, para escudos escuros não sumirem no fundo preto. */
 .destaque__escudo {
@@ -512,26 +543,29 @@
 }
 
 .destaque__time {
+  grid-area: time;
   font-size: 1.05rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
 .destaque__valor {
+  grid-area: valor;
   font-size: 1.9rem;
   font-weight: 800;
   font-stretch: var(--largura-estreita);
   line-height: 1;
   text-align: right;
+  white-space: nowrap;
 }
 
 .destaque__complemento {
-  display: block;
-  margin-top: 4px;
-  font-size: 0.72rem;
-  font-weight: 500;
-  font-stretch: 100%;
-  color: rgba(244, 241, 234, 0.7);
+  grid-area: nota;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.82rem;
+  line-height: 1.4;
+  color: rgba(244, 241, 234, 0.78);
 }
 
 
@@ -696,13 +730,14 @@ a.botao {
   line-height: 1.15;
 }
 
+/* Linha embaixo do nome do mandante: "Casa – Estádio ...". */
 .card-jogo__casa {
-  margin-left: 8px;
-  font-size: 0.66rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--cor-tinta-apagada);
+  display: block;
+  margin-top: 2px;
+  font-size: 0.74rem;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--cor-tinta-suave);
 }
 
 .card-jogo__escudo {
@@ -850,6 +885,256 @@ a.botao {
 
 @media (prefers-reduced-motion: reduce) {
   .barra-resultado__parte {
+    transition: none;
+  }
+}
+
+
+/* ========== GRÁFICO DE LINHAS (evolução das chances) ========== */
+
+.grafico {
+  position: relative;
+}
+
+.grafico__svg {
+  display: block;
+  overflow: visible;
+  font-family: var(--fonte);
+  touch-action: pan-y;          /* deixa rolar a página com o dedo por cima do gráfico */
+}
+
+.grafico__grade {
+  stroke: var(--cor-linha);
+  stroke-width: 1;
+}
+
+.grafico__eixo {
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  fill: var(--cor-tinta-suave);
+}
+
+.grafico__marcado {
+  fill: var(--cor-limao);
+  opacity: 0.35;
+}
+
+.grafico__area {
+  fill: transparent;
+}
+
+.grafico__linha-fundo {
+  fill: none;
+  stroke: #cfc9bc;
+  stroke-width: 1.5;
+  stroke-linejoin: round;
+}
+
+/* Ao passar o mouse na faixa de clique, a linha cinza correspondente escurece. */
+.grafico__linha-fundo:has(+ .grafico__alvo:hover) {
+  stroke: var(--cor-tinta-suave);
+  stroke-width: 2;
+}
+
+.grafico__alvo {
+  fill: none;
+  stroke: transparent;
+  stroke-width: 12;
+  cursor: pointer;
+  pointer-events: stroke;
+}
+
+.grafico__linha {
+  fill: none;
+  stroke-width: 2.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.grafico__ponto {
+  stroke: var(--cor-cartao);
+  stroke-width: 2;
+}
+
+.grafico__rotulo-fim {
+  font-size: 12px;
+  font-weight: 700;
+  fill: var(--cor-tinta);
+}
+
+.grafico__rotulo-fim--valor {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.grafico__mira {
+  stroke: var(--cor-tinta-apagada);
+  stroke-width: 1;
+  pointer-events: none;
+}
+
+.grafico__dica {
+  position: absolute;
+  top: 8px;
+  display: grid;
+  gap: 3px;
+  min-width: 160px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: var(--cor-tinta);
+  color: var(--cor-papel);
+  font-size: 0.78rem;
+  pointer-events: none;
+  box-shadow: 0 8px 20px -10px rgba(0, 0, 0, 0.5);
+}
+
+.grafico__dica-linha {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  font-variant-numeric: tabular-nums;
+}
+
+.grafico__dica-linha--destaque {
+  color: var(--cor-limao);
+}
+
+
+/* ========== BOTÕES SEGMENTADOS (escolher uma opção entre várias) ========== */
+
+.segmentado {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.segmentado__botao {
+  padding: 7px 12px;
+  border: 1px solid var(--cor-linha);
+  border-radius: 999px;
+  background: var(--cor-cartao);
+  color: var(--cor-tinta-suave);
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.segmentado__botao[aria-pressed="true"] {
+  border-color: var(--cor-tinta);
+  background: var(--cor-tinta);
+  color: var(--cor-papel);
+}
+
+
+/* ========== CONTROLE DE MOMENTO (linha do tempo do campeonato) ========== */
+
+.momento {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px 12px;
+  padding: 14px 16px;
+  border-radius: var(--canto-m);
+  background: var(--cor-cartao);
+  box-shadow: var(--sombra-cartao);
+}
+
+.momento__rotulo {
+  grid-column: 1 / -1;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.momento__rotulo small {
+  margin-left: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--cor-tinta-suave);
+}
+
+.momento__passo {
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--cor-tinta);
+  color: var(--cor-papel);
+  font: inherit;
+  font-size: 1.2rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.momento__passo:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.momento__trilho {
+  width: 100%;
+  accent-color: var(--cor-tinta);   /* cor do controle deslizante do navegador */
+}
+
+
+/* ========== ANEL DE CHANCE ==========
+   O SVG é girado -90° para o anel começar no topo (como um relógio). O tamanho do arco
+   colorido vem de stroke-dashoffset, calculado no componentes.js. */
+
+.anel {
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  margin: 0;
+  text-align: center;
+}
+
+.anel__grafico {
+  position: relative;
+  width: 92px;
+  height: 92px;
+}
+
+.anel__svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.anel__trilho {
+  fill: none;
+  stroke: color-mix(in srgb, var(--cor-anel) 14%, #ffffff);
+  stroke-width: 8;
+}
+
+.anel__valor {
+  fill: none;
+  stroke: var(--cor-anel);
+  stroke-width: 8;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.6s ease;
+}
+
+.anel__numero {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 1.15rem;
+  font-weight: 800;
+  font-stretch: var(--largura-estreita);
+  font-variant-numeric: tabular-nums;
+}
+
+.anel__rotulo {
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--cor-tinta-suave);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .anel__valor {
     transition: none;
   }
 }

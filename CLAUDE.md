@@ -8,10 +8,21 @@ O usuário nunca programou antes, então todo código e explicação devem ser p
 
 - Um script em **Python** baixa os dados do campeonato e estima um modelo de Poisson (ataque α e defesa β por time, mais um fator casa h), usando máxima verossimilhança.
 - Esse modelo é usado para rodar uma **simulação de Monte Carlo** — isso é feito em **JavaScript**, direto no navegador do usuário.
-- O site tem duas páginas:
-  - **Página principal**: mostra as probabilidades calculadas (título, rebaixamento, etc).
-  - **Página de simulador**: o usuário pode fixar resultados de jogos específicos e ver a tabela e as probabilidades mudarem em tempo real.
+- Páginas do site (o menu fica em `site/js/abas.js`):
+  - **Início**: mostra as probabilidades calculadas (título, rebaixamento, etc).
+  - **Simulador**: o usuário pode fixar resultados de jogos específicos e ver a tabela e as probabilidades mudarem em tempo real.
+  - **Meu Time**: página personalizada com as cores do clube escolhido. O texto "Situação atual" e as
+    notícias são gerados por `scripts/meu_time/atualizar_meu_time.js` (quartas e domingos, 23h) e ficam em
+    `data/meu-time.json`; as cores dos clubes ficam em `data/cores-times.json`. O texto é escrito por IA
+    (Claude, da Anthropic) em `scripts/meu_time/texto_ia.js`, com a chave `ANTHROPIC_API_KEY` (no `.env` e nos
+    secrets do GitHub). Sem chave, ou se a IA falhar, usa as frases prontas de `scripts/meu_time/texto.js`.
+  - **Estaduais** (menu suspenso): Catarinense e Gaúcho. Para um novo estadual, acrescentar uma linha em `abas.js`.
+  - **O Método**: explica o modelo para o grande público.
 - Inspirado no projeto "Probabilidades no Futebol" da UFMG, mas com modelo e código próprios.
+- Estaduais (Catarinense e Gaúcho): cada edição tem o seu formato em `site/js/estaduais/<campeonato>-<ano>.js`,
+  seguindo o regulamento (REC) daquele ano. As chances de cada "momento" (rodada, fase do mata-mata) são
+  calculadas com o mesmo motor do site, no Node.js, e guardadas em `data/estaduais/<campeonato>-<ano>/chances.json`.
+  Ordem para atualizar: `baixar_<campeonato>.py` → `estimar_estadual.py` → `calcular_chances.js`.
 
 ## Regras para trabalhar neste projeto
 
@@ -21,7 +32,8 @@ O usuário nunca programou antes, então todo código e explicação devem ser p
 
 ## Estrutura de pastas
 
-- `data/` — dados baixados ou gerados (ex.: resultados de jogos, tabelas).
-- `scripts/` — scripts em Python (coleta de dados, estimação do modelo).
+- `data/` — dados baixados ou gerados (ex.: resultados de jogos, tabelas). Estaduais em `data/estaduais/`.
+- `scripts/` — scripts em Python (coleta de dados, estimação do modelo). Estaduais em `scripts/estaduais/`.
 - `site/` — arquivos do site (HTML, CSS, JavaScript da simulação e das páginas).
-- `assets/escudos/` — imagens dos escudos dos times.
+- `assets/escudos/` — imagens dos escudos dos times (Brasileirão), com subpastas `catarinense/` e `gaucho/`.
+- `testes/` — testes automáticos (`npm test`; antes, uma vez, `npm install` para baixar as bibliotecas do Node).

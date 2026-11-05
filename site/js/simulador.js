@@ -7,7 +7,7 @@
 
 import { carregarDados, tabelaAtual } from "./simulacao.js";
 import {
-  montarCabecalho, montarRodape, cardTime, mensagem, legendaCategorias, cabecalhoColunas, secaoRodada,
+  instalarCabecalho, montarRodape, cardTime, mensagem, legendaCategorias, cabecalhoColunas, secaoRodada,
 } from "./componentes.js";
 
 // ---------------------------------------------------------------------------
@@ -22,7 +22,7 @@ const botaoLimparTudo = document.getElementById("limpar-tudo");
 const estado = document.getElementById("estado");
 const avisoTabela = document.getElementById("aviso-tabela");
 
-document.getElementById("topo").innerHTML = montarCabecalho("simulador");
+instalarCabecalho(document.getElementById("topo"), "simulador");
 document.getElementById("rodape").innerHTML = montarRodape(null);
 document.getElementById("legenda").innerHTML = legendaCategorias();
 document.getElementById("cabecalho-colunas").innerHTML = cabecalhoColunas();

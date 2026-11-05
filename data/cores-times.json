@@ -1,0 +1,25 @@
+{
+  "_explicacao": "Cores de cada clube para a página Meu Time. principal e secundaria: as cores do clube. texto: versão da cor que dá para ler sobre o branco. grafico: cor usada em barras e anéis (visível sobre o branco).",
+  "times": {
+    "paranaense":     { "principal": "#C8102E", "secundaria": "#000000", "texto": "#B00E28", "grafico": "#C8102E" },
+    "mineiro":        { "principal": "#000000", "secundaria": "#FFFFFF", "texto": "#000000", "grafico": "#1F1F1F" },
+    "bahia":          { "principal": "#0055A4", "secundaria": "#E30613", "texto": "#0055A4", "grafico": "#0055A4" },
+    "botafogo":       { "principal": "#000000", "secundaria": "#FFFFFF", "texto": "#000000", "grafico": "#1F1F1F" },
+    "bragantino":     { "principal": "#D50032", "secundaria": "#1A2A4F", "texto": "#B8002B", "grafico": "#D50032" },
+    "chapecoense":    { "principal": "#00843D", "secundaria": "#FFFFFF", "texto": "#006B32", "grafico": "#00843D" },
+    "corinthians":    { "principal": "#000000", "secundaria": "#FFFFFF", "texto": "#000000", "grafico": "#1F1F1F" },
+    "coritiba":       { "principal": "#00543C", "secundaria": "#FFFFFF", "texto": "#00543C", "grafico": "#00543C" },
+    "cruzeiro":       { "principal": "#0033A0", "secundaria": "#FFFFFF", "texto": "#0033A0", "grafico": "#0033A0" },
+    "flamengo":       { "principal": "#C8102E", "secundaria": "#000000", "texto": "#B00E28", "grafico": "#C8102E" },
+    "fluminense":     { "principal": "#870A28", "secundaria": "#00613C", "texto": "#870A28", "grafico": "#870A28" },
+    "gremio":         { "principal": "#0D80BF", "secundaria": "#000000", "texto": "#0A6699", "grafico": "#0D80BF" },
+    "internacional":  { "principal": "#E30613", "secundaria": "#FFFFFF", "texto": "#C10510", "grafico": "#E30613" },
+    "mirassol":       { "principal": "#F5C400", "secundaria": "#00843D", "texto": "#006B32", "grafico": "#00843D" },
+    "palmeiras":      { "principal": "#006437", "secundaria": "#FFFFFF", "texto": "#006437", "grafico": "#006437" },
+    "clube-do-remo":  { "principal": "#002F6C", "secundaria": "#FFFFFF", "texto": "#002F6C", "grafico": "#002F6C" },
+    "santos":         { "principal": "#000000", "secundaria": "#FFFFFF", "texto": "#000000", "grafico": "#1F1F1F" },
+    "sao-paulo":      { "principal": "#E2001A", "secundaria": "#000000", "texto": "#C10016", "grafico": "#E2001A" },
+    "vasco-da-gama":  { "principal": "#000000", "secundaria": "#E30613", "texto": "#000000", "grafico": "#1F1F1F" },
+    "vitoria":        { "principal": "#C8102E", "secundaria": "#000000", "texto": "#B00E28", "grafico": "#C8102E" }
+  }
+}

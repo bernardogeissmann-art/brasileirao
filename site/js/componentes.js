@@ -103,10 +103,28 @@ function escudo(time, classe) {
 // ---------------------------------------------------------------------------
 
 // Topo com a marca e o menu. "abaAtual" é o id da página em que estamos.
-export function montarCabecalho(abaAtual) {
+// Abas com "itens" viram um botão que abre um painel com as opções (menu suspenso).
+// O painel fica fora da faixa de abas porque, no celular, essa faixa rola para o lado
+// e cortaria qualquer coisa que saísse dela.
+function montarCabecalho(abaAtual) {
+  const paineis = [];
   const itens = ABAS.map((aba) => {
-    if (aba.emBreve) {
-      return `<span class="aba aba--em-breve" aria-disabled="true">${escaparHtml(aba.rotulo)}<span class="aba__selo">em breve</span></span>`;
+    if (aba.itens) {
+      const dentro = aba.itens.some((item) => item.id === abaAtual);
+      const opcoes = aba.itens.map((item) => {
+        const simbolo = item.simbolo
+          ? `<img class="menu-abas__simbolo" src="${new URL(`../../${item.simbolo}`, import.meta.url)}" alt="" width="32" height="32">`
+          : "";
+        const atual = item.id === abaAtual ? ' aria-current="page"' : "";
+        return `<a class="menu-abas__item" href="${item.endereco}"${atual}>${simbolo}<span>${escaparHtml(item.rotulo)}</span></a>`;
+      }).join("");
+      paineis.push(`
+        <div class="menu-abas" id="menu-${aba.id}" hidden>
+          <p class="menu-abas__titulo">${escaparHtml(aba.rotulo)}</p>
+          ${opcoes}
+        </div>`);
+      return `<button type="button" class="aba aba--grupo${dentro ? " aba--ativa" : ""}" aria-expanded="false"
+        aria-controls="menu-${aba.id}">${escaparHtml(aba.rotulo)}<span class="aba__seta" aria-hidden="true">▾</span></button>`;
     }
     const atual = aba.id === abaAtual ? ' aria-current="page"' : "";
     return `<a class="aba" href="${aba.endereco}"${atual}>${escaparHtml(aba.rotulo)}</a>`;
@@ -116,7 +134,54 @@ export function montarCabecalho(abaAtual) {
     <div class="largura topo__interno">
       <a class="marca" href="index.html" aria-label="Prob.com, página inicial">Prob<span class="marca__bola" aria-hidden="true"></span>com</a>
       <nav class="abas" aria-label="Seções do site">${itens}</nav>
-    </div>`;
+    </div>
+    ${paineis.join("")}`;
+}
+
+// Coloca o topo na página e faz os menus suspensos funcionarem.
+//   elemento: o <header> da página
+//   abaAtual: o id da página em que estamos
+export function instalarCabecalho(elemento, abaAtual) {
+  elemento.innerHTML = montarCabecalho(abaAtual);
+
+  // No celular a faixa de abas rola para o lado: já começa mostrando a aba da página atual.
+  const faixa = elemento.querySelector(".abas");
+  const ativa = faixa.querySelector('[aria-current="page"], .aba--ativa');
+  if (ativa && faixa.scrollWidth > faixa.clientWidth) {
+    faixa.scrollLeft = ativa.offsetLeft - faixa.offsetLeft - (faixa.clientWidth - ativa.offsetWidth) / 2;
+  }
+
+  for (const botao of elemento.querySelectorAll(".aba--grupo")) {
+    const painel = document.getElementById(botao.getAttribute("aria-controls"));
+
+    const fechar = () => {
+      botao.setAttribute("aria-expanded", "false");
+      painel.hidden = true;
+    };
+    const abrir = () => {
+      botao.setAttribute("aria-expanded", "true");
+      painel.hidden = false;
+      // Põe o painel logo abaixo do botão, sem deixar que saia da tela.
+      const topo = elemento.getBoundingClientRect();
+      const caixa = botao.getBoundingClientRect();
+      const maximo = document.documentElement.clientWidth - painel.offsetWidth - 12;
+      painel.style.left = `${Math.max(12, Math.min(caixa.left, maximo)) - topo.left}px`;
+      painel.style.top = `${caixa.bottom - topo.top + 8}px`;
+    };
+
+    botao.addEventListener("click", () => (painel.hidden ? abrir() : fechar()));
+    // Clique fora do botão e do painel: fecha.
+    document.addEventListener("click", (evento) => {
+      if (!painel.hidden && !painel.contains(evento.target) && !botao.contains(evento.target)) fechar();
+    });
+    // Tecla Esc: fecha e devolve o foco ao botão.
+    document.addEventListener("keydown", (evento) => {
+      if (evento.key === "Escape" && !painel.hidden) { fechar(); botao.focus(); }
+    });
+    // Se a faixa de abas rolar ou a tela mudar de tamanho, o painel fecha (sairia do lugar).
+    elemento.querySelector(".abas").addEventListener("scroll", fechar);
+    window.addEventListener("resize", fechar);
+  }
 }
 
 // Rodapé com o crédito e a data da última atualização dos dados.
@@ -140,10 +205,17 @@ export function mensagem(html, tipo) {
 // TABELA DE CHANCES
 // ---------------------------------------------------------------------------
 
-// Legenda com as cores das 4 categorias.
-export function legendaCategorias() {
-  const itens = CATEGORIAS.map(({ campo, rotulo, faixa }) =>
-    `<li><span class="legenda__cor barra-chance--${campo}"></span>${rotulo}${faixa ? ` (${faixa})` : ""}</li>`);
+// Legenda com as cores das categorias. Categorias com a mesma cor aparecem uma vez só,
+// com os nomes juntos (ex.: "Quartas, Semifinal, Final").
+export function legendaCategorias(categorias = CATEGORIAS) {
+  const porCor = new Map();
+  for (const { campo, rotulo, faixa, classe } of categorias) {
+    const cor = classe ?? campo;
+    if (!porCor.has(cor)) porCor.set(cor, []);
+    porCor.get(cor).push(faixa ? `${rotulo} (${faixa})` : rotulo);
+  }
+  const itens = [...porCor].map(([cor, nomes]) =>
+    `<li><span class="legenda__cor barra-chance--${cor}"></span>${nomes.join(", ")}</li>`);
   return `<ul class="legenda" aria-label="Cores das categorias">${itens.join("")}</ul>`;
 }
 
@@ -190,14 +262,16 @@ export function barraChance({ rotulo, valor, categoria, nomeTime, base }) {
 //   time:    a ficha do time no jogos.json (nome, escudo...)
 //   chances: o resultado da simulação para este time
 //   base:    (opcional) o resultado sem palpites, para mostrar quanto mudou
-export function cardTime({ linha, time, chances, base }) {
+//   categorias: (opcional) quais chances mostrar; o padrão são as 4 do Brasileirão
+//   zona: (opcional) a cor da faixa lateral; o padrão são as zonas do Brasileirão
+export function cardTime({ linha, time, chances, base, categorias = CATEGORIAS, zona }) {
   const nome = escaparHtml(time.nome);
-  const barras = CATEGORIAS.map(({ campo, rotulo }) => barraChance({
-    rotulo, valor: chances[campo], categoria: campo, nomeTime: time.nome, base: base?.[campo],
+  const barras = categorias.map(({ campo, rotulo, classe }) => barraChance({
+    rotulo, valor: chances[campo], categoria: classe ?? campo, nomeTime: time.nome, base: base?.[campo],
   })).join("");
 
   return `
-    <li class="card-time" data-zona="${zonaDaPosicao(linha.posicao)}">
+    <li class="card-time" data-zona="${zona ?? zonaDaPosicao(linha.posicao)}">
       <span class="card-time__posicao"><span class="so-leitor">Posição </span>${linha.posicao}</span>
       ${escudo(time, "card-time__escudo")}
       <strong class="card-time__nome">${nome}</strong>
@@ -211,7 +285,27 @@ export function cardTime({ linha, time, chances, base }) {
     </li>`;
 }
 
-// Cartão de destaque: um rótulo, um time e um número grande.
+// Anel de chance: um círculo que vai se completando conforme a chance (0% vazio, 100% cheio),
+// com o número no meio e o nome embaixo. "cor" é a cor do anel (ex.: a cor do clube).
+export function anelChance({ rotulo, valor, cor }) {
+  const raio = 34;
+  const volta = 2 * Math.PI * raio;   // o comprimento do círculo inteiro
+  return `
+    <figure class="anel" style="--cor-anel: ${cor}">
+      <div class="anel__grafico">
+        <svg class="anel__svg" viewBox="0 0 84 84" aria-hidden="true">
+          <circle class="anel__trilho" cx="42" cy="42" r="${raio}"></circle>
+          <circle class="anel__valor" cx="42" cy="42" r="${raio}"
+            stroke-dasharray="${volta.toFixed(2)}" stroke-dashoffset="${(volta * (1 - valor)).toFixed(2)}"></circle>
+        </svg>
+        <span class="anel__numero">${formatarChance(valor)}</span>
+      </div>
+      <figcaption class="anel__rotulo">${escaparHtml(rotulo)}<span class="so-leitor">: ${formatarChancePrecisa(valor)} de chance</span></figcaption>
+    </figure>`;
+}
+
+// Cartão de destaque: um rótulo, um time, um número grande e, embaixo, uma frase
+// explicando o número (numa linha própria, com a largura toda do cartão).
 export function cartaoDestaque({ rotulo, time, valor, complemento }) {
   return `
     <article class="destaque">
@@ -219,7 +313,8 @@ export function cartaoDestaque({ rotulo, time, valor, complemento }) {
       <div class="destaque__corpo">
         ${escudo(time, "destaque__escudo")}
         <p class="destaque__time">${escaparHtml(time.nome)}</p>
-        <p class="destaque__valor">${formatarChance(valor)}<span class="destaque__complemento">${complemento}</span></p>
+        <p class="destaque__valor">${formatarChance(valor)}</p>
+        <p class="destaque__complemento">${complemento}</p>
       </div>
     </article>`;
 }
@@ -305,14 +400,16 @@ export function legendaResultado(nomeMandante, nomeVisitante) {
 // ---------------------------------------------------------------------------
 
 // Card de um jogo, no formato de placar de aplicativo: mandante em cima, visitante
-// embaixo, cada um com o seu campo de gols à direita.
+// embaixo, cada um com o seu campo de gols à direita. Embaixo do mandante aparece o
+// estádio do jogo ("Casa – Estádio ..."), quando a fonte informa.
 // inputmode="numeric" abre o teclado de números no celular.
 export function cardJogo(jogo, times) {
   const adiado = jogo.status_fonte === "POSTPONED" ? `<span class="card-jogo__selo">adiado</span>` : "";
+  const casa = `<span class="card-jogo__casa">Casa${jogo.estadio ? ` – ${escaparHtml(jogo.estadio)}` : ""}</span>`;
   const linha = (lado, time) => `
     <label class="card-jogo__linha">
       ${escudo(time, "card-jogo__escudo")}
-      <span class="card-jogo__nome">${escaparHtml(time.nome)}${lado === "mandante" ? '<span class="card-jogo__casa">casa</span>' : ""}</span>
+      <span class="card-jogo__nome">${escaparHtml(time.nome)}${lado === "mandante" ? casa : ""}</span>
       <input class="card-jogo__gols" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="2"
         autocomplete="off" enterkeyhint="next" data-lado="${lado}">
       <span class="so-leitor"> gols</span>

@@ -1,0 +1,495 @@
+/* meu-time.css
+   Página Meu Time. O branco é a cor principal; as cores do clube entram nos detalhes.
+   As cores vêm de variáveis colocadas no <body> pelo meu-time.js:
+     --time-1:       cor principal do clube
+     --time-2:       cor secundária
+     --time-texto:   versão da cor que dá para ler sobre o branco
+     --time-grafico: cor de barras e anéis
+   Valores padrão (antes de escolher um time): tons neutros do site. */
+
+.pagina-meu-time {
+  --time-1: var(--cor-tinta);
+  --time-2: var(--cor-limao);
+  --time-texto: var(--cor-tinta);
+  --time-grafico: var(--cor-tinta);
+  --time-claro: color-mix(in srgb, var(--time-grafico) 10%, #ffffff);
+  background: #ffffff;
+}
+
+
+/* ---------- Escolha do time ---------- */
+
+.escolha {
+  padding: 30px 0 10px;
+}
+
+.escolha__chapeu {
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cor-tinta-suave);
+}
+
+.escolha__titulo {
+  margin-top: 8px;
+  font-size: clamp(2rem, 8vw, 3.4rem);
+  font-weight: 900;
+  font-stretch: var(--largura-larga);
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.escolha__texto {
+  margin-top: 10px;
+  color: var(--cor-tinta-suave);
+}
+
+.escolha__grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 10px;
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.escolha__time {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--cor-linha);
+  border-radius: var(--canto-m);
+  background: #ffffff;
+  color: var(--cor-tinta);
+  font: inherit;
+  font-size: 0.92rem;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+}
+
+.escolha__time:hover {
+  border-color: var(--cor-tinta);
+  box-shadow: var(--sombra-cartao);
+}
+
+.escolha__time img {
+  flex: none;
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+
+/* ---------- Capa (topo da página do time) ---------- */
+
+.capa {
+  position: relative;
+  border-bottom: 1px solid var(--cor-linha);
+}
+
+/* Faixa listrada nas cores do clube, como um cachecol. */
+.capa__faixas {
+  height: 14px;
+  background: repeating-linear-gradient(-45deg, var(--time-1) 0 18px, var(--time-2) 18px 36px);
+}
+
+.capa__conteudo {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 14px 22px;
+  padding: 24px 0 26px;
+}
+
+.capa__escudo {
+  width: 104px;
+  height: 104px;
+  padding: 10px;
+  border: 4px solid var(--time-1);
+  border-radius: 50%;
+  background: #ffffff;
+  object-fit: contain;
+  box-shadow: 0 10px 24px -14px rgba(0, 0, 0, 0.4);
+}
+
+.capa__chapeu {
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cor-tinta-suave);
+}
+
+.capa__nome {
+  margin-top: 4px;
+  font-size: clamp(1.9rem, 7vw, 3.4rem);
+  font-weight: 900;
+  font-stretch: var(--largura-media);
+  line-height: 1;
+  color: var(--time-texto);
+  overflow-wrap: anywhere;
+}
+
+.capa__resumo {
+  margin-top: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--cor-tinta-suave);
+}
+
+.capa__trocar {
+  grid-column: 1 / -1;
+  justify-self: start;
+  padding: 7px 14px;
+  font-size: 0.82rem;
+}
+
+@media (min-width: 720px) {
+  .capa__conteudo {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+  }
+
+  .capa__escudo {
+    width: 140px;
+    height: 140px;
+    padding: 14px;
+  }
+
+  .capa__trocar {
+    grid-column: auto;
+    align-self: start;
+  }
+}
+
+
+/* ---------- Blocos (as três seções) ---------- */
+
+.meu-time {
+  padding-bottom: 10px;
+}
+
+.bloco {
+  margin-top: 34px;
+}
+
+.bloco__titulo {
+  margin-bottom: 14px;
+  font-size: 1.35rem;
+  font-weight: 800;
+  font-stretch: var(--largura-media);
+  text-transform: uppercase;
+}
+
+/* Tracinho na cor do clube embaixo de cada título. */
+.bloco__titulo::after {
+  content: "";
+  display: block;
+  width: 44px;
+  height: 4px;
+  margin-top: 6px;
+  border-radius: 2px;
+  background: var(--time-grafico);
+}
+
+.bloco__nota {
+  margin-top: 10px;
+  font-size: 0.82rem;
+  color: var(--cor-tinta-suave);
+}
+
+.situacao {
+  max-width: 70ch;
+  padding: 18px 20px;
+  border-left: 5px solid var(--time-grafico);
+  border-radius: 0 var(--canto-m) var(--canto-m) 0;
+  background: var(--time-claro);
+  font-size: 1.06rem;
+  line-height: 1.65;
+}
+
+
+/* ---------- Chances (anéis) ---------- */
+
+.chances {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px 10px;
+  margin-bottom: 18px;
+  padding: 20px 12px;
+  border: 1px solid var(--cor-linha);
+  border-radius: var(--canto-g);
+}
+
+@media (min-width: 640px) {
+  .chances {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
+/* ---------- Cartões de números ---------- */
+
+.painel-numeros {
+  display: grid;
+  gap: 14px;
+}
+
+@media (min-width: 900px) {
+  .painel-numeros {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.cartao-mt {
+  padding: 16px 18px;
+  border: 1px solid var(--cor-linha);
+  border-top: 4px solid var(--time-grafico);
+  border-radius: var(--canto-m);
+  background: #ffffff;
+}
+
+.cartao-mt__titulo {
+  margin-bottom: 12px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cor-tinta-suave);
+}
+
+/* Posição: número grande + pedacinho da tabela em volta do time. */
+.posicao {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 16px;
+}
+
+.posicao__numero {
+  font-size: 3.4rem;
+  font-weight: 900;
+  font-stretch: var(--largura-estreita);
+  line-height: 1;
+  color: var(--time-texto);
+}
+
+.posicao__numero small {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--cor-tinta-suave);
+}
+
+.mini-tabela {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.88rem;
+}
+
+.mini-tabela li {
+  display: grid;
+  grid-template-columns: 26px 22px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 8px;
+  border-radius: 8px;
+  font-variant-numeric: tabular-nums;
+}
+
+.mini-tabela img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.mini-tabela .eu {
+  background: var(--time-claro);
+  font-weight: 800;
+}
+
+/* Números da temporada. */
+.numeros {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 16px;
+  margin: 0;
+}
+
+.numeros div {
+  min-width: 0;
+}
+
+.numeros dt {
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--cor-tinta-suave);
+}
+
+.numeros dd {
+  margin: 2px 0 0;
+  font-size: 1.3rem;
+  font-weight: 800;
+  font-stretch: var(--largura-estreita);
+  font-variant-numeric: tabular-nums;
+}
+
+.numeros dd small {
+  display: block;
+  font-size: 0.74rem;
+  font-weight: 500;
+  font-stretch: 100%;
+  color: var(--cor-tinta-suave);
+}
+
+/* Últimos e próximos jogos. */
+.jogos-mt {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.jogo-mt {
+  display: grid;
+  grid-template-columns: auto 28px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px;
+}
+
+.jogo-mt__escudo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.jogo-mt__adversario {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.jogo-mt__detalhe {
+  display: block;
+  font-size: 0.76rem;
+  font-weight: 500;
+  color: var(--cor-tinta-suave);
+}
+
+.jogo-mt__placar {
+  font-size: 1.05rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* Letra do resultado: V (vitória), E (empate), D (derrota). Cor + letra, nunca só a cor. */
+.resultado {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.resultado--V { background: #0b8a0b; }
+.resultado--E { background: #8a8f98; }
+.resultado--D { background: #c8302c; }
+
+.jogo-mt__data {
+  min-width: 46px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--cor-tinta-suave);
+}
+
+/* Chances do próximo jogo: barrinha vitória | empate | derrota. */
+.jogo-mt__chances {
+  grid-column: 1 / -1;
+}
+
+.mini-chances {
+  display: flex;
+  gap: 2px;
+  height: 8px;
+  margin-top: 2px;
+}
+
+.mini-chances span {
+  border-radius: 3px;
+}
+
+.mini-chances .v { background: var(--time-grafico); }
+.mini-chances .e { background: #c9c4b8; }
+.mini-chances .d { background: #e3ded3; }
+
+.mini-chances__texto {
+  margin-top: 4px;
+  font-size: 0.76rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--cor-tinta-suave);
+}
+
+
+/* ---------- Notícias ---------- */
+
+.noticias {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 900px) {
+  .noticias {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.noticia {
+  display: grid;
+  gap: 6px;
+  height: 100%;
+  padding: 14px 16px;
+  border: 1px solid var(--cor-linha);
+  border-radius: var(--canto-m);
+  background: #ffffff;
+  color: var(--cor-tinta);
+  text-decoration: none;
+}
+
+.noticia:hover {
+  border-color: var(--time-grafico);
+  box-shadow: var(--sombra-cartao);
+}
+
+.noticia__veiculo {
+  justify-self: start;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--time-claro);
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--time-texto);
+}
+
+.noticia__titulo {
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.noticia__data {
+  font-size: 0.76rem;
+  color: var(--cor-tinta-suave);
+}

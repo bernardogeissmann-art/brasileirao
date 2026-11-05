@@ -1,0 +1,768 @@
+{
+  "competicao": "Campeonato Catarinense Série A",
+  "temporada": 2026,
+  "dados_baixados_em": "2026-11-04T22:26:18-03:00",
+  "estimado_em": "2026-11-04T22:30:20-03:00",
+  "parametros": {
+    "forca_prior": 3,
+    "gols_por_jogo_prior": 2.5,
+    "fator_casa_prior": 1.25,
+    "forca_prior_casa": 6
+  },
+  "momentos": [
+    {
+      "id": "inicio",
+      "rotulo": "Antes do 1º jogo",
+      "curto": "Início",
+      "ate": null,
+      "jogos_usados": 0,
+      "fator_casa": 1.25,
+      "times": {
+        "avai": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "barra": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "brusque": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "camboriu": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "carlos-renaux": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "chapecoense": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "concordia": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "criciuma": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "figueirense": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "joinville": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "marcilio-dias": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "santa-catarina": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        }
+      }
+    },
+    {
+      "id": "rodada-1",
+      "rotulo": "Após a 1ª rodada",
+      "curto": "R1",
+      "ate": "2026-01-08T19:00:00-03:00",
+      "jogos_usados": 6,
+      "fator_casa": 1.2240335371057895,
+      "times": {
+        "avai": {
+          "ataque": 1.062654688725003,
+          "defesa": 1.2083896397854261
+        },
+        "barra": {
+          "ataque": 0.9614193818179042,
+          "defesa": 1.3356303615233749
+        },
+        "brusque": {
+          "ataque": 0.9614193818179042,
+          "defesa": 1.1622805009276262
+        },
+        "camboriu": {
+          "ataque": 1.108591296298212,
+          "defesa": 1.3356303615233749
+        },
+        "carlos-renaux": {
+          "ataque": 0.777945664838758,
+          "defesa": 1.2083896397854261
+        },
+        "chapecoense": {
+          "ataque": 0.924734012866092,
+          "defesa": 1.2083896397854261
+        },
+        "concordia": {
+          "ataque": 0.9614193818179042,
+          "defesa": 0.9777850327232365
+        },
+        "criciuma": {
+          "ataque": 0.8055063743615174,
+          "defesa": 1.3356303615233749
+        },
+        "figueirense": {
+          "ataque": 1.2483457512816973,
+          "defesa": 1.3356303615233749
+        },
+        "joinville": {
+          "ataque": 1.062654688725003,
+          "defesa": 1.5690219078528016
+        },
+        "marcilio-dias": {
+          "ataque": 1.062654688725003,
+          "defesa": 1.0124255615962845
+        },
+        "santa-catarina": {
+          "ataque": 1.062654688725003,
+          "defesa": 1.3933672053330555
+        }
+      }
+    },
+    {
+      "id": "rodada-2",
+      "rotulo": "Após a 2ª rodada",
+      "curto": "R2",
+      "ate": "2026-01-11T19:30:00-03:00",
+      "jogos_usados": 12,
+      "fator_casa": 1.4791101422670705,
+      "times": {
+        "avai": {
+          "ataque": 1.1625193427409681,
+          "defesa": 1.00840451703642
+        },
+        "barra": {
+          "ataque": 0.8877861991100922,
+          "defesa": 0.7940050508179033
+        },
+        "brusque": {
+          "ataque": 0.9645998893201411,
+          "defesa": 0.7342145651767473
+        },
+        "camboriu": {
+          "ataque": 1.3460615397099471,
+          "defesa": 0.8402386741470812
+        },
+        "carlos-renaux": {
+          "ataque": 0.6696573664262437,
+          "defesa": 0.8601669487206978
+        },
+        "chapecoense": {
+          "ataque": 0.816020412456092,
+          "defesa": 0.9151839193712762
+        },
+        "concordia": {
+          "ataque": 0.7931483329620639,
+          "defesa": 0.5402178154414676
+        },
+        "criciuma": {
+          "ataque": 0.9808573039052103,
+          "defesa": 0.9716634441765036
+        },
+        "figueirense": {
+          "ataque": 1.389778743458473,
+          "defesa": 0.8318513469208842
+        },
+        "joinville": {
+          "ataque": 0.9952450994023683,
+          "defesa": 1.1069173589615449
+        },
+        "marcilio-dias": {
+          "ataque": 0.9499649650777767,
+          "defesa": 0.6081509009123514
+        },
+        "santa-catarina": {
+          "ataque": 1.0443608054306235,
+          "defesa": 0.8188928339412179
+        }
+      }
+    },
+    {
+      "id": "rodada-3",
+      "rotulo": "Após a 3ª rodada",
+      "curto": "R3",
+      "ate": "2026-01-15T20:30:00-03:00",
+      "jogos_usados": 18,
+      "fator_casa": 1.4278526664976812,
+      "times": {
+        "avai": {
+          "ataque": 1.1842666093975065,
+          "defesa": 0.9462993352672339
+        },
+        "barra": {
+          "ataque": 0.8300762476441143,
+          "defesa": 0.7257187816050726
+        },
+        "brusque": {
+          "ataque": 1.112435397721285,
+          "defesa": 0.6722085792753213
+        },
+        "camboriu": {
+          "ataque": 1.3567896108832072,
+          "defesa": 0.6731508296440928
+        },
+        "carlos-renaux": {
+          "ataque": 0.5171430076640945,
+          "defesa": 0.754184430137149
+        },
+        "chapecoense": {
+          "ataque": 1.1218176804687716,
+          "defesa": 0.8686049789549477
+        },
+        "concordia": {
+          "ataque": 0.8384440517754299,
+          "defesa": 0.7315519238293341
+        },
+        "criciuma": {
+          "ataque": 0.8370967184065741,
+          "defesa": 0.8207521172377075
+        },
+        "figueirense": {
+          "ataque": 1.4575096215496992,
+          "defesa": 0.9538619542851318
+        },
+        "joinville": {
+          "ataque": 0.7939044006318265,
+          "defesa": 0.962162896014892
+        },
+        "marcilio-dias": {
+          "ataque": 0.8198360740211873,
+          "defesa": 0.6309143051545466
+        },
+        "santa-catarina": {
+          "ataque": 1.1306805798363049,
+          "defesa": 0.6586914639625218
+        }
+      }
+    },
+    {
+      "id": "rodada-4",
+      "rotulo": "Após a 4ª rodada",
+      "curto": "R4",
+      "ate": "2026-01-19T19:30:00-03:00",
+      "jogos_usados": 24,
+      "fator_casa": 1.434818250906747,
+      "times": {
+        "avai": {
+          "ataque": 1.2649273955048967,
+          "defesa": 0.7278312530746373
+        },
+        "barra": {
+          "ataque": 0.7128056236385932,
+          "defesa": 0.7515659504707137
+        },
+        "brusque": {
+          "ataque": 1.1130823867164743,
+          "defesa": 0.6263330901778651
+        },
+        "camboriu": {
+          "ataque": 1.3345414021721929,
+          "defesa": 0.7459802865068781
+        },
+        "carlos-renaux": {
+          "ataque": 0.5890079751557443,
+          "defesa": 0.7551987040075561
+        },
+        "chapecoense": {
+          "ataque": 1.0717196459736573,
+          "defesa": 0.8117248161640229
+        },
+        "concordia": {
+          "ataque": 0.8736617745369005,
+          "defesa": 0.9536670774018592
+        },
+        "criciuma": {
+          "ataque": 1.1098253064129178,
+          "defesa": 0.8791727311436062
+        },
+        "figueirense": {
+          "ataque": 1.1853177091413079,
+          "defesa": 1.0733954737793794
+        },
+        "joinville": {
+          "ataque": 0.8221864373637698,
+          "defesa": 1.1451424464830178
+        },
+        "marcilio-dias": {
+          "ataque": 0.6930569804018173,
+          "defesa": 0.6503037251654473
+        },
+        "santa-catarina": {
+          "ataque": 1.2298673629817285,
+          "defesa": 0.7450170195719714
+        }
+      }
+    },
+    {
+      "id": "rodada-5",
+      "rotulo": "Após a 5ª rodada",
+      "curto": "R5",
+      "ate": "2026-01-22T21:30:00-03:00",
+      "jogos_usados": 30,
+      "fator_casa": 1.307190312300646,
+      "times": {
+        "avai": {
+          "ataque": 1.2659305827181835,
+          "defesa": 0.7707851903467824
+        },
+        "barra": {
+          "ataque": 0.7643973411221864,
+          "defesa": 0.7254665154627159
+        },
+        "brusque": {
+          "ataque": 1.1370807697717784,
+          "defesa": 0.6700488377065287
+        },
+        "camboriu": {
+          "ataque": 1.3140903365907985,
+          "defesa": 0.8737846837612768
+        },
+        "carlos-renaux": {
+          "ataque": 0.6289161079396889,
+          "defesa": 0.7085321554335074
+        },
+        "chapecoense": {
+          "ataque": 1.0948592733396096,
+          "defesa": 0.814120388962013
+        },
+        "concordia": {
+          "ataque": 0.8623794394513732,
+          "defesa": 0.847569933565783
+        },
+        "criciuma": {
+          "ataque": 1.2656152496374302,
+          "defesa": 0.8701201137567871
+        },
+        "figueirense": {
+          "ataque": 1.0423817722155295,
+          "defesa": 1.1092212845952831
+        },
+        "joinville": {
+          "ataque": 0.7460789479366111,
+          "defesa": 1.2065949796735542
+        },
+        "marcilio-dias": {
+          "ataque": 0.6192777012332361,
+          "defesa": 0.7241336481832279
+        },
+        "santa-catarina": {
+          "ataque": 1.2589924780435753,
+          "defesa": 0.7726643764153259
+        }
+      }
+    },
+    {
+      "id": "rodada-6",
+      "rotulo": "Após a 6ª rodada",
+      "curto": "R6",
+      "ate": "2026-01-25T18:00:00-03:00",
+      "jogos_usados": 36,
+      "fator_casa": 1.4344085323088787,
+      "times": {
+        "avai": {
+          "ataque": 1.102152758052612,
+          "defesa": 0.939296366075495
+        },
+        "barra": {
+          "ataque": 1.0131155604103097,
+          "defesa": 0.8065329770236827
+        },
+        "brusque": {
+          "ataque": 1.1818564410209287,
+          "defesa": 0.8435584570094523
+        },
+        "camboriu": {
+          "ataque": 1.1016004987805394,
+          "defesa": 0.8688762426453407
+        },
+        "carlos-renaux": {
+          "ataque": 0.6823203342635498,
+          "defesa": 1.0956357747624432
+        },
+        "chapecoense": {
+          "ataque": 1.2911302143148666,
+          "defesa": 0.8096321610184178
+        },
+        "concordia": {
+          "ataque": 0.8178899514745086,
+          "defesa": 1.2211118265437606
+        },
+        "criciuma": {
+          "ataque": 1.214600696699006,
+          "defesa": 1.1078432974789985
+        },
+        "figueirense": {
+          "ataque": 0.8699917847999226,
+          "defesa": 1.1084996363468658
+        },
+        "joinville": {
+          "ataque": 0.6143355687052782,
+          "defesa": 1.5431959328613456
+        },
+        "marcilio-dias": {
+          "ataque": 0.9124897086953677,
+          "defesa": 0.8657429313316046
+        },
+        "santa-catarina": {
+          "ataque": 1.1985164827831112,
+          "defesa": 0.8132462832066842
+        }
+      }
+    },
+    {
+      "id": "quartas-1",
+      "rotulo": "Após a ida das quartas",
+      "curto": "QF ida",
+      "ate": "2026-02-01T18:00:00-03:00",
+      "jogos_usados": 40,
+      "fator_casa": 1.4022070740803299,
+      "times": {
+        "avai": {
+          "ataque": 1.1798199133854599,
+          "defesa": 0.900068043694083
+        },
+        "barra": {
+          "ataque": 1.0320589978147396,
+          "defesa": 0.8235874823188051
+        },
+        "brusque": {
+          "ataque": 1.0646877208493757,
+          "defesa": 0.7651877575586122
+        },
+        "camboriu": {
+          "ataque": 1.0613092600989358,
+          "defesa": 0.9378847918521176
+        },
+        "carlos-renaux": {
+          "ataque": 0.699986384982776,
+          "defesa": 1.125466464510936
+        },
+        "chapecoense": {
+          "ataque": 1.3682820846413488,
+          "defesa": 0.7949184218628097
+        },
+        "concordia": {
+          "ataque": 0.7368742760785729,
+          "defesa": 1.1050503408181085
+        },
+        "criciuma": {
+          "ataque": 1.2249405672511924,
+          "defesa": 1.1762027938137958
+        },
+        "figueirense": {
+          "ataque": 0.8910503969524064,
+          "defesa": 1.1452688498863457
+        },
+        "joinville": {
+          "ataque": 0.6069005543486666,
+          "defesa": 1.5287790296307477
+        },
+        "marcilio-dias": {
+          "ataque": 0.9038668198548976,
+          "defesa": 0.8537624892253648
+        },
+        "santa-catarina": {
+          "ataque": 1.2302230237416278,
+          "defesa": 0.8207600013929999
+        }
+      }
+    },
+    {
+      "id": "quartas-2",
+      "rotulo": "Após as quartas",
+      "curto": "QF",
+      "ate": "2026-02-08T19:00:00-03:00",
+      "jogos_usados": 47,
+      "fator_casa": 1.3011326616848462,
+      "times": {
+        "avai": {
+          "ataque": 1.1596297422453896,
+          "defesa": 0.967229975589377
+        },
+        "barra": {
+          "ataque": 1.0224070617102845,
+          "defesa": 0.7177270006312847
+        },
+        "brusque": {
+          "ataque": 1.0956657879143632,
+          "defesa": 0.8537653652947935
+        },
+        "camboriu": {
+          "ataque": 1.1439359249990297,
+          "defesa": 0.8966957466010239
+        },
+        "carlos-renaux": {
+          "ataque": 0.6804166420009471,
+          "defesa": 1.0261461117380826
+        },
+        "chapecoense": {
+          "ataque": 1.2104433389146378,
+          "defesa": 0.7214732084800272
+        },
+        "concordia": {
+          "ataque": 0.8195346680253333,
+          "defesa": 1.1361168321806943
+        },
+        "criciuma": {
+          "ataque": 1.1385724659824077,
+          "defesa": 1.015976448957437
+        },
+        "figueirense": {
+          "ataque": 0.7269630240339989,
+          "defesa": 1.0451585258950113
+        },
+        "joinville": {
+          "ataque": 0.697691644033064,
+          "defesa": 1.7981425859384887
+        },
+        "marcilio-dias": {
+          "ataque": 1.1841370921809462,
+          "defesa": 1.0374126311690202
+        },
+        "santa-catarina": {
+          "ataque": 1.1206026079595979,
+          "defesa": 0.81478939074494
+        }
+      }
+    },
+    {
+      "id": "semifinal-1",
+      "rotulo": "Após a ida das semifinais",
+      "curto": "SF ida",
+      "ate": "2026-02-15T17:00:00-03:00",
+      "jogos_usados": 54,
+      "fator_casa": 1.3334353574916034,
+      "times": {
+        "avai": {
+          "ataque": 1.2203266161230597,
+          "defesa": 0.9378954865504661
+        },
+        "barra": {
+          "ataque": 1.0236688434718713,
+          "defesa": 0.7014597553424106
+        },
+        "brusque": {
+          "ataque": 1.0668833845492174,
+          "defesa": 0.7697965982596264
+        },
+        "camboriu": {
+          "ataque": 1.1279273876704994,
+          "defesa": 0.8942650229897118
+        },
+        "carlos-renaux": {
+          "ataque": 0.6299122962023231,
+          "defesa": 1.105006799941462
+        },
+        "chapecoense": {
+          "ataque": 1.1441729323538303,
+          "defesa": 0.6978269500058676
+        },
+        "concordia": {
+          "ataque": 0.8862270320273032,
+          "defesa": 1.1842358719877333
+        },
+        "criciuma": {
+          "ataque": 1.196878416053676,
+          "defesa": 1.0608912666887755
+        },
+        "figueirense": {
+          "ataque": 0.6829815112404604,
+          "defesa": 0.9785311876233127
+        },
+        "joinville": {
+          "ataque": 0.8365634322468806,
+          "defesa": 1.7301108895949673
+        },
+        "marcilio-dias": {
+          "ataque": 1.0840597125290037,
+          "defesa": 0.9962315001594597
+        },
+        "santa-catarina": {
+          "ataque": 1.1003984355318739,
+          "defesa": 0.8699649914041495
+        }
+      }
+    },
+    {
+      "id": "semifinal-2",
+      "rotulo": "Após as semifinais",
+      "curto": "SF",
+      "ate": "2026-02-22T18:00:00-03:00",
+      "jogos_usados": 59,
+      "fator_casa": 1.4526216528012317,
+      "times": {
+        "avai": {
+          "ataque": 1.2937579436283628,
+          "defesa": 0.8459442590953541
+        },
+        "barra": {
+          "ataque": 1.0905182395085364,
+          "defesa": 0.6340214178800019
+        },
+        "brusque": {
+          "ataque": 1.0114396840708904,
+          "defesa": 0.8336878586667682
+        },
+        "camboriu": {
+          "ataque": 1.0870595883242342,
+          "defesa": 0.9467876412624913
+        },
+        "carlos-renaux": {
+          "ataque": 0.6558840354691955,
+          "defesa": 1.0648833221229204
+        },
+        "chapecoense": {
+          "ataque": 1.2274832560004518,
+          "defesa": 0.6293062629578584
+        },
+        "concordia": {
+          "ataque": 0.8646704667255384,
+          "defesa": 1.138762787546733
+        },
+        "criciuma": {
+          "ataque": 1.195897856796332,
+          "defesa": 1.0035409621375786
+        },
+        "figueirense": {
+          "ataque": 0.6280178337091907,
+          "defesa": 0.936986459574326
+        },
+        "joinville": {
+          "ataque": 0.8401505715661566,
+          "defesa": 1.67802031652571
+        },
+        "marcilio-dias": {
+          "ataque": 1.074259703808428,
+          "defesa": 0.8911372876818359
+        },
+        "santa-catarina": {
+          "ataque": 1.0308608203926832,
+          "defesa": 0.911749288448789
+        }
+      }
+    },
+    {
+      "id": "final-1",
+      "rotulo": "Após a ida da final",
+      "curto": "F ida",
+      "ate": "2026-03-01T18:00:00-03:00",
+      "jogos_usados": 65,
+      "fator_casa": 1.484187333190416,
+      "times": {
+        "avai": {
+          "ataque": 1.2197467802638369,
+          "defesa": 0.8025087415331242
+        },
+        "barra": {
+          "ataque": 1.1981413820773896,
+          "defesa": 0.65747959857102
+        },
+        "brusque": {
+          "ataque": 0.8887875349436625,
+          "defesa": 0.803108001176707
+        },
+        "camboriu": {
+          "ataque": 1.0590615022175534,
+          "defesa": 0.8487388114331978
+        },
+        "carlos-renaux": {
+          "ataque": 0.709712712664539,
+          "defesa": 1.0857075244107481
+        },
+        "chapecoense": {
+          "ataque": 1.2551096521134653,
+          "defesa": 0.7462287967455867
+        },
+        "concordia": {
+          "ataque": 0.8129962544478002,
+          "defesa": 1.2215282936673184
+        },
+        "criciuma": {
+          "ataque": 1.2749575441521328,
+          "defesa": 0.8955178210677025
+        },
+        "figueirense": {
+          "ataque": 0.7265395259037817,
+          "defesa": 0.8931346335084192
+        },
+        "joinville": {
+          "ataque": 0.7647680570835516,
+          "defesa": 1.6979634170423943
+        },
+        "marcilio-dias": {
+          "ataque": 1.059526112269014,
+          "defesa": 0.9146213857882064
+        },
+        "santa-catarina": {
+          "ataque": 1.0306529418632735,
+          "defesa": 0.9225455445725231
+        }
+      }
+    },
+    {
+      "id": "final-2",
+      "rotulo": "Fim do campeonato",
+      "curto": "Fim",
+      "ate": "2026-03-08T18:00:00-03:00",
+      "jogos_usados": 70,
+      "fator_casa": 1.4712486079027782,
+      "times": {
+        "avai": {
+          "ataque": 1.1800320796847685,
+          "defesa": 0.7924130218897496
+        },
+        "barra": {
+          "ataque": 1.1640883665123403,
+          "defesa": 0.6603318920017159
+        },
+        "brusque": {
+          "ataque": 0.8644152532278632,
+          "defesa": 0.8006238855443385
+        },
+        "camboriu": {
+          "ataque": 1.06792158264962,
+          "defesa": 0.8596083656343098
+        },
+        "carlos-renaux": {
+          "ataque": 0.8831253717143155,
+          "defesa": 1.1838252385951402
+        },
+        "chapecoense": {
+          "ataque": 1.2537109220014528,
+          "defesa": 0.718834995768848
+        },
+        "concordia": {
+          "ataque": 0.7810769009127823,
+          "defesa": 1.2039432367886196
+        },
+        "criciuma": {
+          "ataque": 1.314426267415999,
+          "defesa": 0.9557899708044475
+        },
+        "figueirense": {
+          "ataque": 0.7842676230552104,
+          "defesa": 1.1196793794779625
+        },
+        "joinville": {
+          "ataque": 0.6810410461497896,
+          "defesa": 1.6165325258159624
+        },
+        "marcilio-dias": {
+          "ataque": 0.975218961380257,
+          "defesa": 0.8431812503226714
+        },
+        "santa-catarina": {
+          "ataque": 1.050675625295602,
+          "defesa": 0.9591018605899014
+        }
+      }
+    }
+  ]
+}

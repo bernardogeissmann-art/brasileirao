@@ -188,7 +188,7 @@ def comparar_com_realidade(jogos, ataque, defesa, h):
 # SALVAR E MOSTRAR
 # ---------------------------------------------------------------------------
 
-def salvar(dados, ataque, defesa, h, log_v, jogos):
+def salvar(dados, ataque, defesa, h, log_v, jogos, comparacao):
     """Grava os parâmetros em data/modelo.json."""
     modelo = {
         "descricao": ("gols_mandante ~ Poisson(ataque_mandante * defesa_visitante * fator_casa); "
@@ -200,6 +200,8 @@ def salvar(dados, ataque, defesa, h, log_v, jogos):
         "jogos_usados": len(jogos),
         "fator_casa": h,
         "log_verossimilhanca": log_v,
+        # Guardado para os testes conferirem que o JavaScript faz a mesma conta.
+        "empates_esperados": comparacao["empates_esperados"],
         "times": {
             t: {
                 "nome": dados["times"][t]["nome"],
@@ -262,7 +264,7 @@ def main():
     log_v = log_verossimilhanca(jogos, ataque, defesa, h)
     comparacao = comparar_com_realidade(jogos, ataque, defesa, h)
 
-    salvar(dados, ataque, defesa, h, log_v, jogos)
+    salvar(dados, ataque, defesa, h, log_v, jogos, comparacao)
     imprimir(dados, ataque, defesa, h, voltas, jogos, comparacao)
     print()
     print(f"Parâmetros salvos em {ARQUIVO_MODELO}")

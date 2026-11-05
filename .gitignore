@@ -19,3 +19,6 @@ Thumbs.db
 # Pasta montada pelo GitHub Actions na hora de publicar
 _site/
 node_modules/
+
+# Regulamentos em PDF baixados para consulta (grandes; ficam só no seu computador)
+/*.pdf

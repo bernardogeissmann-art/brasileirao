@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meu Time · Prob.com</title>
+  <meta name="description" content="A página do seu time no Brasileirão 2026: momento, estatísticas, chances e notícias.">
+  <meta name="theme-color" content="#14161a">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2314161a'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23c8f03c'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/componentes.css">
+  <link rel="stylesheet" href="css/meu-time.css">
+
+  <script type="module" src="js/meu-time.js"></script>
+</head>
+<!-- As cores do clube escolhido entram como variáveis (--time-...) no <body>, pelo meu-time.js. -->
+<body class="pagina-meu-time">
+  <header class="topo" id="topo"></header>
+
+  <main>
+    <!-- 1) Escolha do time: aparece na primeira visita ou ao clicar em "Trocar de time". -->
+    <section class="escolha" id="escolha" hidden aria-labelledby="titulo-escolha">
+      <div class="largura">
+        <p class="escolha__chapeu">Meu Time</p>
+        <h1 class="escolha__titulo" id="titulo-escolha">Qual é o seu time?</h1>
+        <p class="escolha__texto">Escolha e a página fica com a cara dele. Dá para trocar quando quiser.</p>
+        <ul class="escolha__grade" id="escolha-grade"></ul>
+      </div>
+    </section>
+
+    <!-- 2) A página do time escolhido. -->
+    <div id="pagina-time" hidden>
+      <section class="capa">
+        <div class="capa__faixas" aria-hidden="true"></div>
+        <div class="largura capa__conteudo">
+          <img class="capa__escudo" id="capa-escudo" src="" alt="" width="128" height="128">
+          <div class="capa__textos">
+            <p class="capa__chapeu">Meu Time · Brasileirão 2026</p>
+            <h1 class="capa__nome" id="capa-nome"></h1>
+            <p class="capa__resumo" id="capa-resumo"></p>
+          </div>
+          <button type="button" class="botao botao--claro capa__trocar" id="trocar">Trocar de time</button>
+        </div>
+      </section>
+
+      <div class="largura meu-time">
+        <section class="bloco" aria-labelledby="titulo-situacao">
+          <h2 class="bloco__titulo" id="titulo-situacao">Situação atual</h2>
+          <p class="situacao" id="situacao-texto"></p>
+          <p class="bloco__nota" id="situacao-data"></p>
+        </section>
+
+        <section class="bloco" aria-labelledby="titulo-numeros">
+          <h2 class="bloco__titulo" id="titulo-numeros">Estatísticas e desempenho</h2>
+          <div class="chances" id="chances"></div>
+          <div class="painel-numeros">
+            <article class="cartao-mt">
+              <h3 class="cartao-mt__titulo">Posição na tabela</h3>
+              <div id="posicao"></div>
+            </article>
+            <article class="cartao-mt">
+              <h3 class="cartao-mt__titulo">Números da temporada</h3>
+              <dl class="numeros" id="numeros"></dl>
+            </article>
+            <article class="cartao-mt">
+              <h3 class="cartao-mt__titulo">Últimos jogos</h3>
+              <ol class="jogos-mt" id="ultimos"></ol>
+            </article>
+            <article class="cartao-mt">
+              <h3 class="cartao-mt__titulo">Próximos jogos</h3>
+              <ol class="jogos-mt" id="proximos"></ol>
+            </article>
+          </div>
+        </section>
+
+        <section class="bloco" aria-labelledby="titulo-noticias">
+          <h2 class="bloco__titulo" id="titulo-noticias">Notícias recentes</h2>
+          <ul class="noticias" id="noticias"></ul>
+          <p class="bloco__nota">Notícias do Globo Esporte, do UOL Esporte e da ESPN, atualizadas às quartas e aos domingos.</p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="rodape" id="rodape"></footer>
+</body>
+</html>
