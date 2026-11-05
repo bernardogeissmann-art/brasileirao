@@ -1,4 +1,4 @@
-# ProbaBR
+# Prob.com
 
 Site de probabilidades do Brasileirão Série A 2026. Projeto pessoal, sem fins comerciais.
 
