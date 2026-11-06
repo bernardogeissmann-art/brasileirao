@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-06T05:11:54.880Z",
+ "gerado_em": "2026-11-06T05:44:50.531Z",
  "times": {
   "bahia": {
    "texto": "Nem lá, nem cá: o Bahia fez 7 dos últimos 15 pontos possíveis. No último jogo, perdeu para o Cruzeiro por 3 a 2 fora de casa. Em 6º lugar, com 53 pontos, a briga pela Libertadores está aberta: 43% de chance pelas nossas contas. Nos últimos 5 jogos, foram 7 gols marcados e 9 sofridos: tudo bem equilibrado. Nos bastidores, a notícia que mais chama atenção é “Willian José continua fora do Bahia depois de compartilhar vídeo com críticas ao Nordeste”, segundo o Globo Esporte. Agora o desafio é o Grêmio, fora de casa, quarta, 18/11. Jogo difícil: o modelo dá 37% de chance de vitória.",
@@ -43,7 +43,22 @@
     }
    ],
    "texto_em": "2026-11-06T04:55:53.105Z",
-   "noticias_em": "2026-11-06T05:10:22.330Z"
+   "noticias_em": "2026-11-06T05:10:22.330Z",
+   "videos": {
+    "UULFcqRCjHozEb9CQHwf_cffdQ": [
+     "q1Ylk44NgWs",
+     "NFy1MqSfpGY",
+     "7WpQe0MpLfs",
+     "dhGMX22ViWM",
+     "AaHylpVhtfc",
+     "9voGhYXBWPQ",
+     "FpAJjScEQkk",
+     "K_8G4g5yvKI",
+     "8668J5Rc1-s",
+     "LMpYLEoyyEM"
+    ]
+   },
+   "videos_em": "2026-11-06T05:44:29.000Z"
   },
   "botafogo": {
    "texto": "Nem lá, nem cá: o Botafogo fez 7 dos últimos 15 pontos possíveis. No último jogo, venceu o Atlético Mineiro por 1 a 0 em casa. Em 11º lugar, com 42 pontos, o Botafogo está numa zona tranquila da tabela, longe das brigas de cima e de baixo. Nos últimos 5 jogos, foram 4 gols marcados e 6 sofridos: tudo bem equilibrado. Nos bastidores, a notícia que mais chama atenção é “Entenda a fala enigmática de Tite e o motivo da irritação do treinador do Botafogo durante a semana”, segundo o Globo Esporte. Agora o desafio é o Corinthians, fora de casa, quarta, 18/11. Jogo difícil: o modelo dá 27% de chance de vitória.",
@@ -87,7 +102,22 @@
     }
    ],
    "noticias_em": "2026-11-06T05:10:24.146Z",
-   "texto_em": "2026-11-06T05:11:54.874Z"
+   "texto_em": "2026-11-06T05:11:54.874Z",
+   "videos": {
+    "UULFFxjZDrLCOCHkUCu632AmMQ": [
+     "V-MqjpKK04o",
+     "0f_k4lI6e6o",
+     "hljKjSll2-o",
+     "tWAzoJOAptU",
+     "ZD46aQ7Eawk",
+     "Z4HeDbfFN2E",
+     "5rij1_Uk4kg",
+     "8pZCkai1hd8",
+     "CXlCAkB3yqA",
+     "zqpECVhS6hQ"
+    ]
+   },
+   "videos_em": "2026-11-06T05:44:29.606Z"
   },
   "bragantino": {
    "texto": "O momento do Bragantino é bom, com 10 pontos conquistados nos últimos cinco jogos. No último jogo, venceu o Santos por 2 a 1 em casa. Em 8º lugar, com 47 pontos, a vaga na Sul-Americana é o objetivo mais realista: 97% de chance. O ataque está afiado, com 10 gols em 5 jogos. Nos bastidores, a notícia que mais chama atenção é “Bragantino renova contrato de promessa da base com multa de mais de R$ 360 milhões”, segundo o Globo Esporte. Agora o desafio é o Vitória, fora de casa, quinta, 19/11. Jogo difícil: o modelo dá 38% de chance de vitória.",
@@ -175,7 +205,22 @@
     }
    ],
    "noticias_em": "2026-11-06T05:10:26.850Z",
-   "texto_em": "2026-11-06T05:11:54.874Z"
+   "texto_em": "2026-11-06T05:11:54.874Z",
+   "videos": {
+    "UULF5of5voGUqec9K9JqL9al4Q": [
+     "74aSWQwAaLU",
+     "XTjmgvWCPUE",
+     "zesOUUIdNgU",
+     "3bMpasBD888",
+     "h3nBLyz0H0c",
+     "ASh7ppCGrPE",
+     "t5hVO7ClHpc",
+     "kjgyj7F89V0",
+     "b-nmZag0pGI",
+     "oYlUfDNBjLk"
+    ]
+   },
+   "videos_em": "2026-11-06T05:44:29.832Z"
   },
   "clube-do-remo": {
    "texto": "O Remo anda devendo, com apenas 5 dos últimos 15 pontos possíveis. No último jogo, perdeu para o Palmeiras por 6 a 1 fora de casa. A situação é delicada: 19º lugar, com 29 pontos e mais de 99% de risco de rebaixamento. Nos últimos 5 jogos, foram 4 gols marcados e 9 sofridos: tudo bem equilibrado. Nos bastidores, a notícia que mais chama atenção é “Palmeiras resolve no 1º tempo, massacra o Remo e continua caça ao Flamengo”, segundo o UOL Esporte. Agora o desafio é a Chapecoense, em casa, quarta, 18/11, e o Remo chega como favorito: 59% de chance de vitória.",
@@ -219,7 +264,22 @@
     }
    ],
    "noticias_em": "2026-11-06T05:10:28.693Z",
-   "texto_em": "2026-11-06T05:11:54.874Z"
+   "texto_em": "2026-11-06T05:11:54.874Z",
+   "videos": {
+    "UULFsLGx5V5iv-JHbG10oDZOcw": [
+     "tRv1zybmY00",
+     "m-nymXbUbcs",
+     "2xu11hnOxys",
+     "uOvx3xY4QAs",
+     "JjmFE_0drKc",
+     "lWOa7SpgcMo",
+     "EUQKEgPcT_M",
+     "AQRhKvDJ7B0",
+     "PfNEP-I3__Y",
+     "QndF3M3jdW8"
+    ]
+   },
+   "videos_em": "2026-11-06T05:44:30.257Z"
   },
   "corinthians": {
    "texto": "A fase não é das melhores para o Corinthians: só 5 pontos nos últimos cinco jogos. No último jogo, ficou no 0 a 0 com o São Paulo fora de casa. Em 17º lugar, com 37 pontos, o sinal de alerta está ligado: 44% de risco de cair. Nos últimos 5 jogos, foram 6 gols marcados e 8 sofridos: tudo bem equilibrado. Fora de campo, o assunto da semana é: “Conmebol rejeita recurso do Corinthians, e Seedorf não poderá assinar súmula como técnico” (Globo Esporte). Agora o desafio é o Botafogo, em casa, quarta, 18/11, num jogo equilibrado: 46% de chance de vitória pelo modelo.",
@@ -263,7 +323,34 @@
     }
    ],
    "noticias_em": "2026-11-06T05:10:30.629Z",
-   "texto_em": "2026-11-06T05:11:54.874Z"
+   "texto_em": "2026-11-06T05:11:54.874Z",
+   "videos": {
+    "UULFwpyuvmJ_mOrebYbUPXtaBQ": [
+     "TYwF_o_BpsY",
+     "PjMLPyIhLd0",
+     "ENJp26Vi6yo",
+     "bIpYGh2EgYg",
+     "_UMo9NkN-8c",
+     "Z93q-M7h-yU",
+     "BXJo461ZZD4",
+     "9O7Xz7tmBTg",
+     "sR8fTO7z_fE",
+     "k1R6bL1VMPA"
+    ],
+    "UULFqRraVICLr0asn90cAvkIZQ": [
+     "sP-kzCw2bjU",
+     "DM0V59Ee3V8",
+     "0vFhcMoDFWA",
+     "E9HCL7iPP3Q",
+     "Aq6Iyr76hi0",
+     "FGOUeQ57RTs",
+     "LzFkeOhPG1k",
+     "qwRMAa3NEe8",
+     "YfMZdfJgIcg",
+     "Hg9Up3lNhVw"
+    ]
+   },
+   "videos_em": "2026-11-06T05:44:32.602Z"
   },
   "coritiba": {
    "texto": "O Coritiba anda devendo, com apenas 4 dos últimos 15 pontos possíveis. No último jogo, perdeu para o Internacional por 1 a 0 fora de casa. Em 12º lugar, com 42 pontos, o Coritiba está numa zona tranquila da tabela, longe das brigas de cima e de baixo. O ataque anda travado, com só 3 gols em 5 jogos. Nos bastidores, a notícia que mais chama atenção é “Coritiba vive clima de cobrança na reta final do Brasileiro, e organizada pede saídas: \"Série A é obrigação\"”, segundo o Globo Esporte. Agora o desafio é o Santos, em casa, quarta, 18/11. Jogo difícil: o modelo dá 37% de chance de vitória.",
@@ -307,7 +394,22 @@
     }
    ],
    "noticias_em": "2026-11-06T05:10:32.508Z",
-   "texto_em": "2026-11-06T05:11:54.874Z"
+   "texto_em": "2026-11-06T05:11:54.874Z",
+   "videos": {
+    "UULFbCD35_3aBxTYcpm8M2LviA": [
+     "iKcmlI-kor0",
+     "0MN6YbOxOCA",
+     "YBFE9hvP0Rw",
+     "yJ_37WWIl04",
+     "vB6H853xY9Y",
+     "KTF1RoWo754",
+     "kj-CbWj7yPg",
+     "otif7C8vfg8",
+     "p0mclcFpv3I",
+     "7vb9mde3c6s"
+    ]
+   },
+   "videos_em": "2026-11-06T05:44:33.755Z"
   },
   "cruzeiro": {
    "texto": "O Cruzeiro está embalado: fez 12 dos últimos 15 pontos possíveis. No último jogo, venceu o Bahia por 3 a 2 em casa. São 4 vitórias seguidas. Em 3º lugar, com 60 pontos, a vaga na Libertadores está bem encaminhada: mais de 99% de chance. O ataque está afiado, com 11 gols em 5 jogos. Nos bastidores, a notícia que mais chama atenção é “Escalação do Cruzeiro: Artur Jorge terá quatro mudanças para duelo direto com Bahia; veja provável time”, segundo o Globo Esporte. Agora o desafio é o Palmeiras, em casa, quarta, 18/11. Pedreira: o modelo dá só 23% de chance de vitória.",
@@ -351,7 +453,34 @@
     }
    ],
    "texto_em": "2026-11-06T04:55:53.105Z",
-   "noticias_em": "2026-11-06T05:10:34.410Z"
+   "noticias_em": "2026-11-06T05:10:34.410Z",
+   "videos": {
+    "UULFy7aeNy60EVhMwBziYsET-A": [
+     "-Z9BJpTxku0",
+     "kRU8cFQaIV0",
+     "-_w1iqscPLI",
+     "26V0b4dfrdg",
+     "FmPI5U8bI2o",
+     "ZetVkCXFUlg",
+     "aGOY1Pbekw4",
+     "kz2mnZ7vgwM",
+     "kP91xgdUP1g",
+     "Siii4oXmYgQ"
+    ],
+    "UULFqifkpdmE1z3VhfQoJzwpJQ": [
+     "3io-L2yP7e8",
+     "qym7mpnpr3o",
+     "-FswAeGd4s4",
+     "MHRAD9LdjYw",
+     "Lj4Tzy33e68",
+     "Iu_X4kI5fLI",
+     "OZbMyl2rHJo",
+     "Aa8njv5rcCI",
+     "wmuAulNaXYk",
+     "xEUkNvYHJ68"
+    ]
+   },
+   "videos_em": "2026-11-06T05:44:35.117Z"
   },
   "flamengo": {
    "texto": "Fase de ouro para o Flamengo, que venceu 5 dos últimos cinco jogos. No último jogo, venceu o Grêmio por 3 a 1 em casa. Já são 11 jogos sem perder. Na tabela, o Flamengo está em 1º lugar, com 76 pontos, e o título está bem vivo: 83% de chance pelas nossas simulações. O ataque está afiado, com 14 gols em 5 jogos. Nos bastidores, a notícia que mais chama atenção é “A conta do Flamengo para ser campeão do Brasileirão e como título pode acontecer na casa do Palmeiras”, segundo a ESPN. Agora o desafio é o Athletico, em casa, quarta, 18/11, e o Flamengo chega como favorito: 70% de chance de vitória.",
@@ -395,7 +524,34 @@
     }
    ],
    "noticias_em": "2026-11-06T05:10:36.277Z",
-   "texto_em": "2026-11-06T05:11:54.874Z"
+   "texto_em": "2026-11-06T05:11:54.874Z",
+   "videos": {
+    "UULF084Mraf1n0rUIhz0V3sZfg": [
+     "hBWgvvN5vDY",
+     "zDLc8J4ki5A",
+     "YoMLyFVVLpA",
+     "X5SMbquqJsI",
+     "G5m14xj35hI",
+     "aWiKpjw0GII",
+     "9mZ5C64kSvg",
+     "bF04UuM1Flw",
+     "kQ_64Nl2feo",
+     "vBInXNdj4os"
+    ],
+    "UULFOH0UtunvcOtBYvmHfHK3Nw": [
+     "tQVg7-4mYEo",
+     "Hk4qjN0XKz8",
+     "6IrRvOWSuDU",
+     "kX-UijvhEjw",
+     "GmSz7B0mWg4",
+     "4FGKdk8lenA",
+     "GlYi4tEvuX0",
+     "x5ZNJZTZcvw",
+     "byoOxaRzwoQ",
+     "dzUeIT20lqw"
+    ]
+   },
+   "videos_em": "2026-11-06T05:44:36.854Z"
   },
   "fluminense": {
    "texto": "O Fluminense vive uma fase de altos e baixos: 6 pontos nos últimos cinco jogos. No último jogo, venceu o Internacional por 2 a 1 em casa. Em 4º lugar, com 54 pontos, a vaga na Libertadores está bem encaminhada: 82% de chance. Nos últimos 5 jogos, foram 8 gols marcados e 6 sofridos: tudo bem equilibrado. Fora de campo, o assunto da semana é: “Escalação do Fluminense: Marcão tem desfalque na defesa e deve mudar o meio-campo” (Globo Esporte). Agora o desafio é o Vitória, fora de casa, sexta, 06/11, num jogo equilibrado: 42% de chance de vitória pelo modelo.",
@@ -439,7 +595,34 @@
     }
    ],
    "noticias_em": "2026-11-06T05:10:38.015Z",
-   "texto_em": "2026-11-06T05:11:54.874Z"
+   "texto_em": "2026-11-06T05:11:54.874Z",
+   "videos": {
+    "UULFccH-KOg311lpEtTCy-3TTA": [
+     "6qC9WQnalck",
+     "LLv-KZ-nyUM",
+     "zQrbWGbcIPs",
+     "eOW_T0BC0D0",
+     "Z1c7znGAG2U",
+     "VUXwtohYvAQ",
+     "jCYqQtkDjo0",
+     "DqE7KVJjFyY",
+     "_Vz-ke2bzdg",
+     "eXHuuKJl7gA"
+    ],
+    "UULFAAPXtnzlg9krw6MtNbfR-g": [
+     "wWGqzXtJr5Y",
+     "GK2t1D-F120",
+     "4ZMqmK87-IE",
+     "Hnk1D1N7dII",
+     "pURw6BgFG6U",
+     "hCPBMwnsPw8",
+     "vKQyLP1-DCs",
+     "MXJ-9LFdsTA",
+     "W3YqqSLOH78",
+     "rn-iJhafWsw"
+    ]
+   },
+   "videos_em": "2026-11-06T05:44:38.513Z"
   },
   "gremio": {
    "texto": "Nem lá, nem cá: o Grêmio fez 7 dos últimos 15 pontos possíveis. No último jogo, perdeu para o Flamengo por 3 a 1 fora de casa. A situação é delicada: 18º lugar, com 37 pontos e 58% de risco de rebaixamento. Nos últimos 5 jogos, foram 7 gols marcados e 8 sofridos: tudo bem equilibrado. Nos bastidores, a notícia que mais chama atenção é “Atlético-MG x Grêmio: onde assistir ao vivo, horário, palpite e prováveis escalações da semifinal da Copa do Brasil”, segundo a ESPN. Agora o desafio é o Bahia, em casa, quarta, 18/11. Jogo difícil: o modelo dá 37% de chance de vitória.",
@@ -483,7 +666,46 @@
     }
    ],
    "noticias_em": "2026-11-06T05:10:39.913Z",
-   "texto_em": "2026-11-06T05:11:54.874Z"
+   "texto_em": "2026-11-06T05:11:54.874Z",
+   "videos": {
+    "UULFBOGYcnvM-9iI-8d-DUEeMw": [
+     "LeC5YLCYg-M",
+     "cddOIPQtx98",
+     "l_I0xWzxCMo",
+     "PR1EwhIeBy8",
+     "U455AID2o0Q",
+     "ZUnBHxenrxI",
+     "Tf2kKOwKxfk",
+     "NcqHUDfUsLc",
+     "ic8GesuX3Wk",
+     "gIpRF1JuN9U"
+    ],
+    "PLPHfc2-RJLdyFGB6AGcYxWBNsso0qq4Zt": [
+     "Unb4nDQWvk0",
+     "H1DVNxahYIo",
+     "QGknLy-xlss",
+     "F6LYVxAb9Vg",
+     "GqEUl_4aPNc",
+     "VdNXwie2k_k",
+     "qyL3qJmFrzc",
+     "jlx4DDuaA14",
+     "lWGyndn5LMM",
+     "zTZy8KFMUbM"
+    ],
+    "UULFHKbUAiKHsWCCZrkDY_PZ8Q": [
+     "bQmqiXzl66Y",
+     "np8wGyHuLmM",
+     "qKxU2ZoR23s",
+     "HkPYyy4yVmg",
+     "qUWFXT_Qcxs",
+     "dQmpYwC2FSY",
+     "vQqVZzDdXLM",
+     "vRxJrVUXq10",
+     "cDoVxjDdi0Q",
+     "K1NjCXpzI8U"
+    ]
+   },
+   "videos_em": "2026-11-06T05:44:41.037Z"
   },
   "internacional": {
    "texto": "Nem lá, nem cá: o Internacional fez 7 dos últimos 15 pontos possíveis. No último jogo, venceu o Coritiba por 1 a 0 em casa. Em 16º lugar, com 38 pontos, o sinal de alerta está ligado: 37% de risco de cair. Nos últimos 5 jogos, foram 6 gols marcados e 5 sofridos: tudo bem equilibrado. Nos bastidores, a notícia que mais chama atenção é “Alan Patrick é absolvido no STJD, mas presidente do Inter é suspenso por 30 dias”, segundo o Globo Esporte. Agora o desafio é o Vasco, fora de casa, quinta, 19/11. Jogo difícil: o modelo dá 28% de chance de vitória.",
@@ -527,7 +749,34 @@
     }
    ],
    "noticias_em": "2026-11-06T05:10:41.789Z",
-   "texto_em": "2026-11-06T05:11:54.874Z"
+   "texto_em": "2026-11-06T05:11:54.874Z",
+   "videos": {
+    "UULFBgSy_cNIoGYnyLjmKHQOAg": [
+     "D6-TyPzkDTs",
+     "IFGJmeq_JP4",
+     "KatXpyKwLA4",
+     "PhKFroOQM-k",
+     "XZHTETkXdPQ",
+     "_jsJa9AUzAo",
+     "BGY1XKwMy_k",
+     "dQLjdAA9AWY",
+     "JAplLPluMXU",
+     "OOYXbwfB4zk"
+    ],
+    "UULFkoqa3e5oFNkEGvgrxLAmrQ": [
+     "_LrUEI89BOA",
+     "3P98kiOQQws",
+     "uconABrKO6A",
+     "lX0fmA4DEw0",
+     "1Q9C3I41RDI",
+     "sJPaY9WLv2g",
+     "Kvp51-Vii8s",
+     "FFU_ceJ4WQA",
+     "QnqvPprqgzk",
+     "HjvEJLeTYhw"
+    ]
+   },
+   "videos_em": "2026-11-06T05:44:42.444Z"
   },
   "mineiro": {
    "texto": "Nem lá, nem cá: o Atlético Mineiro fez 6 dos últimos 15 pontos possíveis. No último jogo, perdeu para o Botafogo por 1 a 0 fora de casa. São 3 derrotas seguidas. Em 7º lugar, com 50 pontos, a vaga na Sul-Americana é o objetivo mais realista: 88% de chance. Nos últimos 5 jogos, foram 5 gols marcados e 6 sofridos: tudo bem equilibrado. Nos bastidores, a notícia que mais chama atenção é “Afastado do dia a dia do Atlético-MG, dono da SAF faz balanço e fala sobre o ano”, segundo o Globo Esporte. Agora o desafio é o Mirassol, fora de casa, sábado, 14/11. Jogo difícil: o modelo dá 36% de chance de vitória.",
@@ -571,7 +820,22 @@
     }
    ],
    "noticias_em": "2026-11-06T05:10:43.703Z",
-   "texto_em": "2026-11-06T05:11:54.874Z"
+   "texto_em": "2026-11-06T05:11:54.874Z",
+   "videos": {
+    "UULF0BhAOfmm1tJaJkPyTM9D_g": [
+     "UhA6Fv-OTk4",
+     "H8gZJ0NQC-s",
+     "7HiT_jfswLs",
+     "wtEkKt7j5pU",
+     "GcvQ95mke-c",
+     "wXONAkWdqzI",
+     "_eqk-aZIW4E",
+     "mUVSi_ULXP0",
+     "JaP88fT8piQ",
+     "m3rrXCGSBFM"
+    ]
+   },
+   "videos_em": "2026-11-06T05:44:43.679Z"
   },
   "mirassol": {
    "texto": "O Mirassol vive uma fase de altos e baixos: 7 pontos nos últimos cinco jogos. No último jogo, venceu a Chapecoense por 2 a 1 fora de casa. Em 14º lugar, com 40 pontos, o sinal de alerta está ligado: 21% de risco de cair. Nos últimos 5 jogos, foram 5 gols marcados e 5 sofridos: tudo bem equilibrado. Fora de campo, o assunto da semana é: “STJD suspende Bruno Santos, do Mirassol, por quatro jogos pela expulsão contra o Corinthians” (Globo Esporte). Agora o desafio é o Atlético Mineiro, em casa, sábado, 14/11. Jogo difícil: o modelo dá 36% de chance de vitória.",
@@ -615,7 +879,22 @@
     }
    ],
    "noticias_em": "2026-11-06T05:10:44.587Z",
-   "texto_em": "2026-11-06T05:11:54.874Z"
+   "texto_em": "2026-11-06T05:11:54.874Z",
+   "videos": {
+    "UULFiz7EFM1alBWxE2hM8k4f4Q": [
+     "dBxUjjdNdwU",
+     "p04kBwdxAxY",
+     "fMASBHD8eoI",
+     "msQ-4-2OcU4",
+     "ZvfW9zgkWdg",
+     "IVxKkP4KpCo",
+     "J5feKFXEbfw",
+     "AwzX_HuSg_0",
+     "MDLRri_kIH4",
+     "OSRunAg7wRQ"
+    ]
+   },
+   "videos_em": "2026-11-06T05:44:43.886Z"
   },
   "palmeiras": {
    "texto": "Fase de ouro para o Palmeiras, que venceu 4 dos últimos cinco jogos. No último jogo, venceu o Remo por 6 a 1 em casa. Já são 11 jogos sem perder. Em 2º lugar, com 73 pontos, o Palmeiras ainda sonha com o título (17% de chance) e já garantiu a vaga na Libertadores. O ataque está afiado, com 14 gols em 5 jogos, e a defesa vem segura, com só 2 gols sofridos. Fora de campo, o assunto da semana é: “Evangelista diz por que pediu mão em lance polêmico de Palmeiras x Vasco” (ESPN). Agora o desafio é o Cruzeiro, fora de casa, quarta, 18/11, num jogo equilibrado: 53% de chance de vitória pelo modelo.",
@@ -659,7 +938,22 @@
     }
    ],
    "noticias_em": "2026-11-06T05:10:46.515Z",
-   "texto_em": "2026-11-06T05:11:54.874Z"
+   "texto_em": "2026-11-06T05:11:54.874Z",
+   "videos": {
+    "UULFBKc-rPDivvwFiWdG-81wxw": [
+     "flkDTgTdvGg",
+     "Mt1kE2y3Jpo",
+     "fbsX3gAlYZQ",
+     "OQLgF3J_t-Q",
+     "wx7hZ5N7jcw",
+     "TwOvZfA8cBs",
+     "jLAHwfbVImA",
+     "0VLSSegPzDk",
+     "WBaszW66SkU",
+     "HZ-gZeuKew0"
+    ]
+   },
+   "videos_em": "2026-11-06T05:44:45.947Z"
   },
   "paranaense": {
    "texto": "A fase não é das melhores para o Athletico: só 4 pontos nos últimos cinco jogos. No último jogo, perdeu para o Vasco por 3 a 1 em casa. Já são 4 jogos sem vencer. Em 5º lugar, com 54 pontos, a vaga na Libertadores está bem encaminhada: 61% de chance. Nos últimos 5 jogos, foram 6 gols marcados e 9 sofridos: tudo bem equilibrado. Fora de campo, o assunto da semana é: “Athletico-PR é denunciado no STJD por gesto racista de torcedor contra atletas do Vasco” (Globo Esporte). Agora o desafio é o Flamengo, fora de casa, quarta, 18/11. Pedreira: o modelo dá só 12% de chance de vitória.",
@@ -703,7 +997,34 @@
     }
    ],
    "noticias_em": "2026-11-06T05:10:48.416Z",
-   "texto_em": "2026-11-06T05:11:54.874Z"
+   "texto_em": "2026-11-06T05:11:54.874Z",
+   "videos": {
+    "UULF1MwZRE5_wAu1Pe8pWcZtyQ": [
+     "3-ytmoXsfSo",
+     "EQu7MiiNMnU",
+     "RBD4Y2eTWy0",
+     "uAxcgrlVs2E",
+     "kDN6nh7jzWM",
+     "a3xn6oY05nY",
+     "dAwCIBTdJz8",
+     "0VWpD_k-08c",
+     "VoLTLMc8pxU",
+     "ioDj7zjiAm0"
+    ],
+    "UULFUN1ASH969TSwnuUUU56TmA": [
+     "bT_QuI8cTTA",
+     "MqLjiqHRcRc",
+     "DVKF88S-ofs",
+     "wRg8Z51C_3I",
+     "jlO3-AlVriE",
+     "ira3m9QyDMo",
+     "AfRBT93kbB8",
+     "vBAomcAtXjQ",
+     "kT72fqyMPQc",
+     "ZBV1v_491Uc"
+    ]
+   },
+   "videos_em": "2026-11-06T05:44:47.433Z"
   },
   "santos": {
    "texto": "A fase não é das melhores para o Santos: só 5 pontos nos últimos cinco jogos. No último jogo, perdeu para o Bragantino por 2 a 1 fora de casa. Já são 3 jogos sem vencer. Em 9º lugar, com 47 pontos, a vaga na Sul-Americana é o objetivo mais realista: 96% de chance. Nos últimos 5 jogos, foram 5 gols marcados e 6 sofridos: tudo bem equilibrado. Fora de campo, o assunto da semana é: “Eleição no Santos: Wladimir Mattos abre mão de candidatura e vai apoiar chapa de Ivan Luduvice” (Globo Esporte). Agora o desafio é o Coritiba, fora de casa, quarta, 18/11. Jogo difícil: o modelo dá 38% de chance de vitória.",
@@ -747,7 +1068,34 @@
     }
    ],
    "noticias_em": "2026-11-06T05:10:50.115Z",
-   "texto_em": "2026-11-06T05:11:54.874Z"
+   "texto_em": "2026-11-06T05:11:54.874Z",
+   "videos": {
+    "UULF-6BRAVobi7q0paklYjgW3Q": [
+     "jX-MBXGZ4V4",
+     "AdjFHmuD7pI",
+     "TRt2ZZyUbpo",
+     "pljW3JfhEaE",
+     "ahGtc629PEw",
+     "98bmDzpTdkI",
+     "Epw3JYuQ2nE",
+     "KJbKYxIlHoI",
+     "fU0Pwon8D88",
+     "QpSBeNF_VpM"
+    ],
+    "UULF0uRT_armQXqds_rjTjqJ0g": [
+     "NGx4a6eu2l8",
+     "4NjLXGfbO2c",
+     "DtFJ8Q68jhE",
+     "_rVRggp9fVo",
+     "p_jT1dhOZjs",
+     "ElgoPPIBRSA",
+     "4CoCz0b3eCw",
+     "1P-Jf3byhuY",
+     "wpZaGhgNRuo",
+     "1fsWDloLc5c"
+    ]
+   },
+   "videos_em": "2026-11-06T05:44:49.394Z"
   },
   "sao-paulo": {
    "texto": "Nem lá, nem cá: o São Paulo fez 8 dos últimos 15 pontos possíveis. No último jogo, ficou no 0 a 0 com o Corinthians em casa. Já são 3 jogos sem vencer. Em 10º lugar, com 44 pontos, a vaga na Sul-Americana é o objetivo mais realista: 81% de chance. Nos últimos 5 jogos, foram 6 gols marcados e 5 sofridos: tudo bem equilibrado. Nos bastidores, a notícia que mais chama atenção é “São Paulo paga agente de Galoppo e aguarda fim de transfer ban na Fifa”, segundo o Globo Esporte. Agora o desafio é o Fluminense, em casa, quinta, 19/11. Jogo difícil: o modelo dá 40% de chance de vitória.",
@@ -791,7 +1139,22 @@
     }
    ],
    "noticias_em": "2026-11-06T05:10:51.967Z",
-   "texto_em": "2026-11-06T05:11:54.874Z"
+   "texto_em": "2026-11-06T05:11:54.874Z",
+   "videos": {
+    "UULFX3zTAsEoZ61rQMYb_08Tow": [
+     "Dqd9fQIWCg8",
+     "qw_sqjUJT9o",
+     "zQOQrX6rOok",
+     "wSGo-2mSefM",
+     "kv_7S3p5vY8",
+     "532W5mokvuI",
+     "sh5OWkIaIXE",
+     "7yeEW7PN06Y",
+     "bz5JLyiJQ2Y",
+     "N7uz0l-IeFY"
+    ]
+   },
+   "videos_em": "2026-11-06T05:44:49.861Z"
   },
   "vasco-da-gama": {
    "texto": "Nem lá, nem cá: o Vasco fez 7 dos últimos 15 pontos possíveis. No último jogo, venceu o Athletico por 3 a 1 fora de casa. Em 13º lugar, com 41 pontos, a vaga na Sul-Americana é o objetivo mais realista: 54% de chance. Nos últimos 5 jogos, foram 7 gols marcados e 8 sofridos: tudo bem equilibrado. Nos bastidores, a notícia que mais chama atenção é “Athletico-PR é denunciado no STJD por gesto racista de torcedor contra atletas do Vasco”, segundo o Globo Esporte. Agora o desafio é a Chapecoense, fora de casa, sábado, 14/11, num jogo equilibrado: 47% de chance de vitória pelo modelo.",
@@ -879,7 +1242,34 @@
     }
    ],
    "noticias_em": "2026-11-06T05:10:55.374Z",
-   "texto_em": "2026-11-06T05:11:54.874Z"
+   "texto_em": "2026-11-06T05:11:54.874Z",
+   "videos": {
+    "UULFJrrx7FDDj1n4srLwoAK0WA": [
+     "p8ntZeavgrQ",
+     "SYSsez2_Cjw",
+     "y15upFlXcOs",
+     "HvEkr7-PzvQ",
+     "bDZuJx8B2oY",
+     "sc2qdXRYl9Y",
+     "P37PdAT8R10",
+     "HYelUXU3XrQ",
+     "3A224V0RlYc",
+     "pL_ac8Ce0fA"
+    ],
+    "UULFT2ACrmb364amkLW8L8IhBA": [
+     "PYNboZtHaU4",
+     "A64eXIXC-RA",
+     "DVn2zhvO6LA",
+     "WkKRR7uuo9Y",
+     "pIxANAbqwOw",
+     "n4pzsBv2y0o",
+     "cdr0sk-khto",
+     "2hSmjXqw3VI",
+     "QNXOX0-aWeE",
+     "1t3xs9C8TQU"
+    ]
+   },
+   "videos_em": "2026-11-06T05:44:50.531Z"
   }
  }
 }
