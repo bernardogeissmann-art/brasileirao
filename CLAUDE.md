@@ -9,20 +9,29 @@ O usuário nunca programou antes, então todo código e explicação devem ser p
 - Um script em **Python** baixa os dados do campeonato e estima um modelo de Poisson (ataque α e defesa β por time, mais um fator casa h), usando máxima verossimilhança.
 - Esse modelo é usado para rodar uma **simulação de Monte Carlo** — isso é feito em **JavaScript**, direto no navegador do usuário.
 - Páginas do site (o menu fica em `site/js/abas.js`):
-  - **Início**: mostra as probabilidades calculadas (título, rebaixamento, etc).
+  - **Início**: mostra as probabilidades calculadas (título, rebaixamento, etc). No fim, a seção **Jogos do dia**
+    (lógica em `site/js/jogos-do-dia.js`, cartão em `componentes.js`): os jogos de hoje (ou do próximo dia com jogo),
+    com chances do modelo, posição, sequência recente e onde assistir. Os canais vêm do ge.globo, lidos por
+    `scripts/transmissoes.py` (chamado pelo `baixar_jogos.py`) e guardados no campo `transmissao` do `jogos.json`.
   - **Simulador**: o usuário pode fixar resultados de jogos específicos e ver a tabela e as probabilidades mudarem em tempo real.
   - **Meu Time**: página personalizada com as cores do clube escolhido. O texto "Situação atual" e as
     notícias são gerados por `scripts/meu_time/atualizar_meu_time.js` (quartas e domingos, 23h) e ficam em
     `data/meu-time.json`; as cores dos clubes ficam em `data/cores-times.json`. O texto é escrito por IA
     (Claude, da Anthropic) em `scripts/meu_time/texto_ia.js`, com a chave `ANTHROPIC_API_KEY` (no `.env` e nos
     secrets do GitHub). Sem chave, ou se a IA falhar, usa as frases prontas de `scripts/meu_time/texto.js`.
-  - **Estaduais** (menu suspenso): Catarinense e Gaúcho. Para um novo estadual, acrescentar uma linha em `abas.js`.
+  - **Estaduais** (menu suspenso): Catarinense, Gaúcho, Paranaense e Paulista. Para um novo estadual, acrescentar
+    uma linha em `abas.js` (com o símbolo em `assets/simbolos/`).
   - **O Método**: explica o modelo para o grande público.
 - Inspirado no projeto "Probabilidades no Futebol" da UFMG, mas com modelo e código próprios.
-- Estaduais (Catarinense e Gaúcho): cada edição tem o seu formato em `site/js/estaduais/<campeonato>-<ano>.js`,
-  seguindo o regulamento (REC) daquele ano. As chances de cada "momento" (rodada, fase do mata-mata) são
-  calculadas com o mesmo motor do site, no Node.js, e guardadas em `data/estaduais/<campeonato>-<ano>/chances.json`.
+- Estaduais (Catarinense, Gaúcho, Paranaense e Paulista): cada edição tem o seu formato em
+  `site/js/estaduais/<campeonato>-<ano>.js` (registrado em `formatos.js`), seguindo o regulamento (REC) daquele ano.
+  As chances de cada "momento" (rodada, fase do mata-mata) são calculadas com o mesmo motor do site, no Node.js, e
+  guardadas em `data/estaduais/<campeonato>-<ano>/chances.json`.
   Ordem para atualizar: `baixar_<campeonato>.py` → `estimar_estadual.py` → `calcular_chances.js`.
+  Fontes dos jogos: Catarinense no sisgol da FCF; Gaúcho e Paulista na ESPN (leitor comum em `scripts/estaduais/espn.py`);
+  Paranaense no site da Federação Paranaense (pênaltis anotados à mão no script, porque o site não mostra).
+  Clubes que também estão no Brasileirão usam o mesmo escudo de lá (`comum.copiar_escudos_do_brasileirao`).
+  O teste de cada estadual confere que, com todos os jogos reais, a simulação reproduz o que aconteceu.
 
 ## Regras para trabalhar neste projeto
 

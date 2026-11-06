@@ -1,0 +1,768 @@
+{
+  "competicao": "Campeonato Paranaense",
+  "temporada": 2026,
+  "dados_baixados_em": "2026-11-05T21:05:09-03:00",
+  "estimado_em": "2026-11-05T21:05:24-03:00",
+  "parametros": {
+    "forca_prior": 3,
+    "gols_por_jogo_prior": 2.5,
+    "fator_casa_prior": 1.25,
+    "forca_prior_casa": 6
+  },
+  "momentos": [
+    {
+      "id": "inicio",
+      "rotulo": "Antes do 1º jogo",
+      "curto": "Início",
+      "ate": null,
+      "jogos_usados": 0,
+      "fator_casa": 1.25,
+      "times": {
+        "andraus": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "athletico": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "azuriz": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "cascavel": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "cianorte": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "coritiba": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "foz-do-iguacu": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "galo-maringa": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "londrina": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "maringa": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "operario": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "sao-joseense": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        }
+      }
+    },
+    {
+      "id": "rodada-1",
+      "rotulo": "Após a 1ª rodada",
+      "curto": "R1",
+      "ate": "2026-01-08T20:30:00-03:00",
+      "jogos_usados": 6,
+      "fator_casa": 1.255999602815927,
+      "times": {
+        "andraus": {
+          "ataque": 0.9163662779808422,
+          "defesa": 1.4242908251998307
+        },
+        "athletico": {
+          "ataque": 1.0990974679409806,
+          "defesa": 1.1874943945571104
+        },
+        "azuriz": {
+          "ataque": 0.807372698329484,
+          "defesa": 1.0060064254001795
+        },
+        "cascavel": {
+          "ataque": 0.7763155496896722,
+          "defesa": 1.0462525483846477
+        },
+        "cianorte": {
+          "ataque": 1.1732279864281112,
+          "defesa": 1.5992025295455645
+        },
+        "coritiba": {
+          "ataque": 1.048242593751386,
+          "defesa": 1.5992025295455645
+        },
+        "foz-do-iguacu": {
+          "ataque": 1.2340734208588915,
+          "defesa": 1.3583893625526484
+        },
+        "galo-maringa": {
+          "ataque": 0.807372698329484,
+          "defesa": 1.3583893625526484
+        },
+        "londrina": {
+          "ataque": 1.048242593751386,
+          "defesa": 1.0462525483846477
+        },
+        "maringa": {
+          "ataque": 1.2340734208588915,
+          "defesa": 1.5203545687883078
+        },
+        "operario": {
+          "ataque": 0.807372698329484,
+          "defesa": 1.3583893625526484
+        },
+        "sao-joseense": {
+          "ataque": 1.048242593751386,
+          "defesa": 1.0462525483846477
+        }
+      }
+    },
+    {
+      "id": "rodada-2",
+      "rotulo": "Após a 2ª rodada",
+      "curto": "R2",
+      "ate": "2026-01-11T18:30:00-03:00",
+      "jogos_usados": 12,
+      "fator_casa": 1.303217334717456,
+      "times": {
+        "andraus": {
+          "ataque": 1.0631478462164357,
+          "defesa": 1.078419087313998
+        },
+        "athletico": {
+          "ataque": 1.0895167181075314,
+          "defesa": 0.9229405647429783
+        },
+        "azuriz": {
+          "ataque": 0.8394458777684921,
+          "defesa": 0.7997056709533404
+        },
+        "cascavel": {
+          "ataque": 0.7873572629538398,
+          "defesa": 0.7498840321818424
+        },
+        "cianorte": {
+          "ataque": 1.1571168889564407,
+          "defesa": 1.3580231932696005
+        },
+        "coritiba": {
+          "ataque": 1.1671876968195887,
+          "defesa": 1.5192628824110828
+        },
+        "foz-do-iguacu": {
+          "ataque": 1.224052848958277,
+          "defesa": 1.1794803632342987
+        },
+        "galo-maringa": {
+          "ataque": 0.6537757659226501,
+          "defesa": 1.2701183412201886
+        },
+        "londrina": {
+          "ataque": 1.1523147775019047,
+          "defesa": 1.0260320654597674
+        },
+        "maringa": {
+          "ataque": 1.2428309296672433,
+          "defesa": 1.3275398284799127
+        },
+        "operario": {
+          "ataque": 0.7345357053942776,
+          "defesa": 1.1064208363214754
+        },
+        "sao-joseense": {
+          "ataque": 0.8887176817333201,
+          "defesa": 1.0664350135783498
+        }
+      }
+    },
+    {
+      "id": "rodada-3",
+      "rotulo": "Após a 3ª rodada",
+      "curto": "R3",
+      "ate": "2026-01-15T20:00:00-03:00",
+      "jogos_usados": 18,
+      "fator_casa": 1.2586333028568712,
+      "times": {
+        "andraus": {
+          "ataque": 1.2258341774994477,
+          "defesa": 1.0081613863106111
+        },
+        "athletico": {
+          "ataque": 1.215745690633515,
+          "defesa": 0.7749398903528797
+        },
+        "azuriz": {
+          "ataque": 0.6693886919707676,
+          "defesa": 0.8979302490480525
+        },
+        "cascavel": {
+          "ataque": 0.7912594499681977,
+          "defesa": 0.6822701504474059
+        },
+        "cianorte": {
+          "ataque": 1.1002599995780593,
+          "defesa": 1.1223883808671522
+        },
+        "coritiba": {
+          "ataque": 1.1180056097574618,
+          "defesa": 1.1726457238792338
+        },
+        "foz-do-iguacu": {
+          "ataque": 1.0992063038131932,
+          "defesa": 1.4159628773618695
+        },
+        "galo-maringa": {
+          "ataque": 0.9388976997924253,
+          "defesa": 1.0283440801235726
+        },
+        "londrina": {
+          "ataque": 1.3721867431085684,
+          "defesa": 0.8582857064180036
+        },
+        "maringa": {
+          "ataque": 1.04332473833689,
+          "defesa": 1.249793239867547
+        },
+        "operario": {
+          "ataque": 0.6665807684794449,
+          "defesa": 1.0939420033674516
+        },
+        "sao-joseense": {
+          "ataque": 0.7593101270620302,
+          "defesa": 0.7763015359611452
+        }
+      }
+    },
+    {
+      "id": "rodada-4",
+      "rotulo": "Após a 4ª rodada",
+      "curto": "R4",
+      "ate": "2026-01-18T18:30:00-03:00",
+      "jogos_usados": 24,
+      "fator_casa": 1.3132889835506278,
+      "times": {
+        "andraus": {
+          "ataque": 1.1388472582637237,
+          "defesa": 1.1627805356831444
+        },
+        "athletico": {
+          "ataque": 1.0032157341904675,
+          "defesa": 0.755520746139552
+        },
+        "azuriz": {
+          "ataque": 0.7050001132777024,
+          "defesa": 0.7012911917829956
+        },
+        "cascavel": {
+          "ataque": 0.7994101799704183,
+          "defesa": 0.7864085246379685
+        },
+        "cianorte": {
+          "ataque": 1.223721977618201,
+          "defesa": 1.159187265970335
+        },
+        "coritiba": {
+          "ataque": 1.176936524181182,
+          "defesa": 0.9392964775035727
+        },
+        "foz-do-iguacu": {
+          "ataque": 1.3429970113490628,
+          "defesa": 1.2942898706945867
+        },
+        "galo-maringa": {
+          "ataque": 0.846390541118583,
+          "defesa": 0.9777678631848374
+        },
+        "londrina": {
+          "ataque": 1.4775283777503565,
+          "defesa": 0.7185736976409136
+        },
+        "maringa": {
+          "ataque": 0.9489842934937318,
+          "defesa": 1.2003560407451606
+        },
+        "operario": {
+          "ataque": 0.6112189038427269,
+          "defesa": 1.079583918147772
+        },
+        "sao-joseense": {
+          "ataque": 0.7257490849438432,
+          "defesa": 0.6952852091330224
+        }
+      }
+    },
+    {
+      "id": "rodada-5",
+      "rotulo": "Após a 5ª rodada",
+      "curto": "R5",
+      "ate": "2026-01-21T20:30:00-03:00",
+      "jogos_usados": 30,
+      "fator_casa": 1.17504582420675,
+      "times": {
+        "andraus": {
+          "ataque": 1.037171762966794,
+          "defesa": 1.7791195269548603
+        },
+        "athletico": {
+          "ataque": 0.9383098026123355,
+          "defesa": 1.0384832207604993
+        },
+        "azuriz": {
+          "ataque": 0.7854477619740788,
+          "defesa": 0.8173009937835078
+        },
+        "cascavel": {
+          "ataque": 0.7199425741880346,
+          "defesa": 1.0724675117453537
+        },
+        "cianorte": {
+          "ataque": 1.1708614376169275,
+          "defesa": 1.4124855215771888
+        },
+        "coritiba": {
+          "ataque": 1.0017857790871494,
+          "defesa": 1.048691814904735
+        },
+        "foz-do-iguacu": {
+          "ataque": 1.2587411717938086,
+          "defesa": 1.5382223292073816
+        },
+        "galo-maringa": {
+          "ataque": 0.7838575914496898,
+          "defesa": 1.393569614403489
+        },
+        "londrina": {
+          "ataque": 1.6936461812661736,
+          "defesa": 0.8451273475582296
+        },
+        "maringa": {
+          "ataque": 1.1796036238368912,
+          "defesa": 1.320475493022945
+        },
+        "operario": {
+          "ataque": 0.7408991410545614,
+          "defesa": 1.1969565998095313
+        },
+        "sao-joseense": {
+          "ataque": 0.6897331721535568,
+          "defesa": 0.7003440583062903
+        }
+      }
+    },
+    {
+      "id": "rodada-6",
+      "rotulo": "Após a 6ª rodada",
+      "curto": "R6",
+      "ate": "2026-01-24T16:00:00-03:00",
+      "jogos_usados": 36,
+      "fator_casa": 1.216162398795597,
+      "times": {
+        "andraus": {
+          "ataque": 0.9452178666477559,
+          "defesa": 1.5859964858161222
+        },
+        "athletico": {
+          "ataque": 1.1804574584076735,
+          "defesa": 1.0191445187844268
+        },
+        "azuriz": {
+          "ataque": 0.8471930465733313,
+          "defesa": 0.7283218629435163
+        },
+        "cascavel": {
+          "ataque": 0.7530067292375932,
+          "defesa": 1.024647119491667
+        },
+        "cianorte": {
+          "ataque": 1.1234486385415885,
+          "defesa": 1.102022973255814
+        },
+        "coritiba": {
+          "ataque": 1.0337461868893822,
+          "defesa": 1.0161654045649762
+        },
+        "foz-do-iguacu": {
+          "ataque": 1.2737088569238135,
+          "defesa": 1.4526887773619603
+        },
+        "galo-maringa": {
+          "ataque": 0.8264916162150963,
+          "defesa": 1.5783046561198277
+        },
+        "londrina": {
+          "ataque": 1.5241181876336656,
+          "defesa": 0.7035119027163456
+        },
+        "maringa": {
+          "ataque": 1.101514543114968,
+          "defesa": 1.130909234365542
+        },
+        "operario": {
+          "ataque": 0.7308620636589273,
+          "defesa": 1.1041296350590046
+        },
+        "sao-joseense": {
+          "ataque": 0.6602348061562051,
+          "defesa": 0.7035119027163456
+        }
+      }
+    },
+    {
+      "id": "quartas-1",
+      "rotulo": "Após a ida das quartas",
+      "curto": "QF ida",
+      "ate": "2026-02-03T20:00:00-03:00",
+      "jogos_usados": 41,
+      "fator_casa": 1.2305726705568398,
+      "times": {
+        "andraus": {
+          "ataque": 0.9155377183119205,
+          "defesa": 1.5305356144249918
+        },
+        "athletico": {
+          "ataque": 1.3608406858869913,
+          "defesa": 0.9446720183699034
+        },
+        "azuriz": {
+          "ataque": 0.750938947005261,
+          "defesa": 0.8155682992714655
+        },
+        "cascavel": {
+          "ataque": 0.7574392543380531,
+          "defesa": 1.0703764108615457
+        },
+        "cianorte": {
+          "ataque": 0.9890523104164435,
+          "defesa": 1.0658510008060196
+        },
+        "coritiba": {
+          "ataque": 0.9876217510269756,
+          "defesa": 0.8802913112092151
+        },
+        "foz-do-iguacu": {
+          "ataque": 1.1770582934637601,
+          "defesa": 1.7398339677108203
+        },
+        "galo-maringa": {
+          "ataque": 0.7106778497845849,
+          "defesa": 1.7618918648758168
+        },
+        "londrina": {
+          "ataque": 1.5113992231706852,
+          "defesa": 0.7750642074311621
+        },
+        "maringa": {
+          "ataque": 1.3341941650505,
+          "defesa": 1.0767887851684337
+        },
+        "operario": {
+          "ataque": 0.8133399983377083,
+          "defesa": 0.9983785704208393
+        },
+        "sao-joseense": {
+          "ataque": 0.6918998032071162,
+          "defesa": 0.7269730564771095
+        }
+      }
+    },
+    {
+      "id": "quartas-2",
+      "rotulo": "Após as quartas",
+      "curto": "QF",
+      "ate": "2026-02-08T18:30:00-03:00",
+      "jogos_usados": 47,
+      "fator_casa": 1.1718512057116395,
+      "times": {
+        "andraus": {
+          "ataque": 0.8352290222839646,
+          "defesa": 1.54261976125149
+        },
+        "athletico": {
+          "ataque": 1.4140854338485858,
+          "defesa": 0.9388298473721044
+        },
+        "azuriz": {
+          "ataque": 0.6941271498561904,
+          "defesa": 0.9175001722958951
+        },
+        "cascavel": {
+          "ataque": 0.7499625170796677,
+          "defesa": 0.9847548186182452
+        },
+        "cianorte": {
+          "ataque": 0.9480204638718112,
+          "defesa": 1.126297582851505
+        },
+        "coritiba": {
+          "ataque": 1.0503232625447598,
+          "defesa": 0.8323356255747946
+        },
+        "foz-do-iguacu": {
+          "ataque": 1.166842717880567,
+          "defesa": 1.8181828438347014
+        },
+        "galo-maringa": {
+          "ataque": 0.6713600935146826,
+          "defesa": 1.7398175962504387
+        },
+        "londrina": {
+          "ataque": 1.5160120825473284,
+          "defesa": 0.8306643057608741
+        },
+        "maringa": {
+          "ataque": 1.301237556512136,
+          "defesa": 1.0361415873779736
+        },
+        "operario": {
+          "ataque": 0.9227748599562827,
+          "defesa": 0.9489458213769438
+        },
+        "sao-joseense": {
+          "ataque": 0.730024840104024,
+          "defesa": 0.7136253879933415
+        }
+      }
+    },
+    {
+      "id": "semifinal-1",
+      "rotulo": "Após a ida das semifinais",
+      "curto": "SF ida",
+      "ate": "2026-02-15T18:30:00-03:00",
+      "jogos_usados": 50,
+      "fator_casa": 1.1679583112700833,
+      "times": {
+        "andraus": {
+          "ataque": 0.8375061991435577,
+          "defesa": 1.6109835651237143
+        },
+        "athletico": {
+          "ataque": 1.428831245010313,
+          "defesa": 0.9768756055518192
+        },
+        "azuriz": {
+          "ataque": 0.6780596860842707,
+          "defesa": 0.9238099101141011
+        },
+        "cascavel": {
+          "ataque": 0.7717542035522889,
+          "defesa": 1.0062127043360585
+        },
+        "cianorte": {
+          "ataque": 0.9229496288085384,
+          "defesa": 1.1346017385342877
+        },
+        "coritiba": {
+          "ataque": 1.101688935797049,
+          "defesa": 0.9249963005137701
+        },
+        "foz-do-iguacu": {
+          "ataque": 1.1339576528197954,
+          "defesa": 1.8125383872406189
+        },
+        "galo-maringa": {
+          "ataque": 0.6668367149282777,
+          "defesa": 1.7706497038712203
+        },
+        "londrina": {
+          "ataque": 1.497293754710905,
+          "defesa": 0.9082051862552887
+        },
+        "maringa": {
+          "ataque": 1.2679810346890408,
+          "defesa": 1.0422784185427685
+        },
+        "operario": {
+          "ataque": 0.9856836975222354,
+          "defesa": 1.0391314581232982
+        },
+        "sao-joseense": {
+          "ataque": 0.7074572469337285,
+          "defesa": 0.7221031740245398
+        }
+      }
+    },
+    {
+      "id": "semifinal-2",
+      "rotulo": "Após as semifinais",
+      "curto": "SF",
+      "ate": "2026-02-22T16:00:00-03:00",
+      "jogos_usados": 52,
+      "fator_casa": 1.1453426999193752,
+      "times": {
+        "andraus": {
+          "ataque": 0.8542560652612315,
+          "defesa": 1.6545695285278834
+        },
+        "athletico": {
+          "ataque": 1.345665364141597,
+          "defesa": 0.950494074234448
+        },
+        "azuriz": {
+          "ataque": 0.6831949240058242,
+          "defesa": 0.9335393185373089
+        },
+        "cascavel": {
+          "ataque": 0.7583913419563986,
+          "defesa": 0.9962788970440268
+        },
+        "cianorte": {
+          "ataque": 0.9261834806256299,
+          "defesa": 1.1521357949078783
+        },
+        "coritiba": {
+          "ataque": 1.151742027502531,
+          "defesa": 1.0098435390351488
+        },
+        "foz-do-iguacu": {
+          "ataque": 1.1244682835121458,
+          "defesa": 1.830733862066237
+        },
+        "galo-maringa": {
+          "ataque": 0.6804606727353416,
+          "defesa": 1.821569759296307
+        },
+        "londrina": {
+          "ataque": 1.4573830602357336,
+          "defesa": 0.8041509858661284
+        },
+        "maringa": {
+          "ataque": 1.2456387009625318,
+          "defesa": 1.0319123920908098
+        },
+        "operario": {
+          "ataque": 1.0628840902334424,
+          "defesa": 1.1014095285377343
+        },
+        "sao-joseense": {
+          "ataque": 0.7097319888275921,
+          "defesa": 0.7240861651148689
+        }
+      }
+    },
+    {
+      "id": "final-1",
+      "rotulo": "Após a ida da final",
+      "curto": "F ida",
+      "ate": "2026-02-28T16:00:00-03:00",
+      "jogos_usados": 53,
+      "fator_casa": 1.1571753255497441,
+      "times": {
+        "andraus": {
+          "ataque": 0.8622121566067021,
+          "defesa": 1.6403105189784724
+        },
+        "athletico": {
+          "ataque": 1.3717492526172168,
+          "defesa": 0.9500406869202647
+        },
+        "azuriz": {
+          "ataque": 0.7002218595951598,
+          "defesa": 0.9329050337300925
+        },
+        "cascavel": {
+          "ataque": 0.7638994004624209,
+          "defesa": 0.9837831308061776
+        },
+        "cianorte": {
+          "ataque": 0.932413469480213,
+          "defesa": 1.1379495179491426
+        },
+        "coritiba": {
+          "ataque": 1.1788530574869787,
+          "defesa": 1.0075153233839043
+        },
+        "foz-do-iguacu": {
+          "ataque": 1.1337294885537124,
+          "defesa": 1.806106428266605
+        },
+        "galo-maringa": {
+          "ataque": 0.6845816887989487,
+          "defesa": 1.805844838196816
+        },
+        "londrina": {
+          "ataque": 1.381084303837546,
+          "defesa": 0.7267129947348131
+        },
+        "maringa": {
+          "ataque": 1.2568732274811176,
+          "defesa": 1.0197040161582616
+        },
+        "operario": {
+          "ataque": 1.010549563647195,
+          "defesa": 0.9907349400016615
+        },
+        "sao-joseense": {
+          "ataque": 0.7238325314327895,
+          "defesa": 0.7242065574419363
+        }
+      }
+    },
+    {
+      "id": "final-2",
+      "rotulo": "Fim do campeonato",
+      "curto": "Fim",
+      "ate": "2026-03-07T16:00:00-03:00",
+      "jogos_usados": 54,
+      "fator_casa": 1.1492555204057082,
+      "times": {
+        "andraus": {
+          "ataque": 0.8673688905030652,
+          "defesa": 1.6428892290013046
+        },
+        "athletico": {
+          "ataque": 1.392392043557901,
+          "defesa": 0.957813420964576
+        },
+        "azuriz": {
+          "ataque": 0.7140822139926425,
+          "defesa": 0.9393103866580889
+        },
+        "cascavel": {
+          "ataque": 0.7683469958254417,
+          "defesa": 0.9813344633633981
+        },
+        "cianorte": {
+          "ataque": 0.9367764671940492,
+          "defesa": 1.1363298160630544
+        },
+        "coritiba": {
+          "ataque": 1.2018429550332752,
+          "defesa": 1.013550363698475
+        },
+        "foz-do-iguacu": {
+          "ataque": 1.1413738478772266,
+          "defesa": 1.8005607295813184
+        },
+        "galo-maringa": {
+          "ataque": 0.6882886628682788,
+          "defesa": 1.8095344112252627
+        },
+        "londrina": {
+          "ataque": 1.3131207103016689,
+          "defesa": 0.6791457963110549
+        },
+        "maringa": {
+          "ataque": 1.2657465612959145,
+          "defesa": 1.0173910025563293
+        },
+        "operario": {
+          "ataque": 0.9756343680117285,
+          "defesa": 0.9054021738303761
+        },
+        "sao-joseense": {
+          "ataque": 0.7350262835388084,
+          "defesa": 0.7308689556633927
+        }
+      }
+    }
+  ]
+}

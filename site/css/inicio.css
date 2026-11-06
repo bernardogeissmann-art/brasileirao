@@ -22,3 +22,21 @@
     justify-content: flex-end;
   }
 }
+
+/* Seção "Jogos do dia", no fim da página. */
+.jogos-do-dia {
+  padding-top: 40px;
+}
+
+.jogos-do-dia__topo {
+  margin-bottom: 16px;
+}
+
+.jogos-do-dia__data {
+  margin: 6px 0 0;
+  color: var(--cor-tinta-suave);
+}
+
+.jogos-do-dia .legenda {
+  margin-top: 14px;
+}

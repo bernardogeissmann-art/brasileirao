@@ -1,0 +1,976 @@
+{
+  "competicao": "Campeonato Paulista Série A1 (Paulistão)",
+  "temporada": 2026,
+  "dados_baixados_em": "2026-11-05T20:53:15-03:00",
+  "estimado_em": "2026-11-05T20:58:48-03:00",
+  "parametros": {
+    "forca_prior": 3,
+    "gols_por_jogo_prior": 2.5,
+    "fator_casa_prior": 1.25,
+    "forca_prior_casa": 6
+  },
+  "momentos": [
+    {
+      "id": "inicio",
+      "rotulo": "Antes do 1º jogo",
+      "curto": "Início",
+      "ate": null,
+      "jogos_usados": 0,
+      "fator_casa": 1.25,
+      "times": {
+        "botafogo-sp": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "bragantino": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "capivariano": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "corinthians": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "guarani": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "mirassol": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "noroeste": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "novorizontino": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "palmeiras": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "ponte-preta": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "portuguesa": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "primavera": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "santos": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "sao-bernardo": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "sao-paulo": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "velo-clube": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        }
+      }
+    },
+    {
+      "id": "rodada-1",
+      "rotulo": "Após a 1ª rodada",
+      "curto": "R1",
+      "ate": "2026-01-11T20:30:00-03:00",
+      "jogos_usados": 8,
+      "fator_casa": 1.5690978840343617,
+      "times": {
+        "botafogo-sp": {
+          "ataque": 0.8238665533605716,
+          "defesa": 0.5839111449856594
+        },
+        "bragantino": {
+          "ataque": 1.0519272471476804,
+          "defesa": 0.5839111449856594
+        },
+        "capivariano": {
+          "ataque": 0.8238665533605716,
+          "defesa": 1.1272426862103522
+        },
+        "corinthians": {
+          "ataque": 1.3140924337876523,
+          "defesa": 0.6305132356757117
+        },
+        "guarani": {
+          "ataque": 0.962143545474108,
+          "defesa": 0.8050503441312463
+        },
+        "mirassol": {
+          "ataque": 1.3140924337876523,
+          "defesa": 0.6305132356757117
+        },
+        "noroeste": {
+          "ataque": 0.7629734560155511,
+          "defesa": 0.8050503441312463
+        },
+        "novorizontino": {
+          "ataque": 1.0519272471476804,
+          "defesa": 0.8760141729713541
+        },
+        "palmeiras": {
+          "ataque": 1.0519272471476804,
+          "defesa": 0.5839111449856594
+        },
+        "ponte-preta": {
+          "ataque": 0.8238665533605716,
+          "defesa": 1.0056879588660708
+        },
+        "portuguesa": {
+          "ataque": 0.7629734560155511,
+          "defesa": 0.8050503441312463
+        },
+        "primavera": {
+          "ataque": 1.0519272471476804,
+          "defesa": 0.7363379877182689
+        },
+        "santos": {
+          "ataque": 1.1446528582254816,
+          "defesa": 0.8050503441312463
+        },
+        "sao-bernardo": {
+          "ataque": 1.4729231586454445,
+          "defesa": 0.6305132356757117
+        },
+        "sao-paulo": {
+          "ataque": 0.8238665533605716,
+          "defesa": 1.0056879588660708
+        },
+        "velo-clube": {
+          "ataque": 0.7629734560155511,
+          "defesa": 0.6305132356757117
+        }
+      }
+    },
+    {
+      "id": "rodada-2",
+      "rotulo": "Após a 2ª rodada",
+      "curto": "R2",
+      "ate": "2026-01-15T21:45:00-03:00",
+      "jogos_usados": 16,
+      "fator_casa": 2.056181856694961,
+      "times": {
+        "botafogo-sp": {
+          "ataque": 0.8382569023698664,
+          "defesa": 0.5519895824086123
+        },
+        "bragantino": {
+          "ataque": 1.3593828433711552,
+          "defesa": 0.3852685873229886
+        },
+        "capivariano": {
+          "ataque": 0.8042162885744507,
+          "defesa": 0.8857739465688277
+        },
+        "corinthians": {
+          "ataque": 1.1493991358734241,
+          "defesa": 0.7401796469561115
+        },
+        "guarani": {
+          "ataque": 0.7995397706590166,
+          "defesa": 0.7100615315797482
+        },
+        "mirassol": {
+          "ataque": 1.3915629929639244,
+          "defesa": 0.7260158358886514
+        },
+        "noroeste": {
+          "ataque": 0.919617571015465,
+          "defesa": 0.6439726420887326
+        },
+        "novorizontino": {
+          "ataque": 1.1808698638880344,
+          "defesa": 0.6548434137446328
+        },
+        "palmeiras": {
+          "ataque": 1.0044148109152782,
+          "defesa": 0.4245539160529686
+        },
+        "ponte-preta": {
+          "ataque": 0.6423015090696217,
+          "defesa": 0.8963082918255618
+        },
+        "portuguesa": {
+          "ataque": 0.6255018705020177,
+          "defesa": 0.6817594817552628
+        },
+        "primavera": {
+          "ataque": 1.349607264894855,
+          "defesa": 0.6479810203499365
+        },
+        "santos": {
+          "ataque": 1.0486284416583687,
+          "defesa": 0.6305561737293818
+        },
+        "sao-bernardo": {
+          "ataque": 1.2753582920683353,
+          "defesa": 0.5567515140658292
+        },
+        "sao-paulo": {
+          "ataque": 0.8188971157384217,
+          "defesa": 0.6808337198417104
+        },
+        "velo-clube": {
+          "ataque": 0.792445326437766,
+          "defesa": 0.43562409693074816
+        }
+      }
+    },
+    {
+      "id": "rodada-3",
+      "rotulo": "Após a 3ª rodada",
+      "curto": "R3",
+      "ate": "2026-01-18T20:30:00-03:00",
+      "jogos_usados": 24,
+      "fator_casa": 1.983736058682387,
+      "times": {
+        "botafogo-sp": {
+          "ataque": 0.7618617469201643,
+          "defesa": 0.9467273743763112
+        },
+        "bragantino": {
+          "ataque": 1.6502260950837182,
+          "defesa": 0.41909622486611336
+        },
+        "capivariano": {
+          "ataque": 0.8426668305791715,
+          "defesa": 0.9056764957179113
+        },
+        "corinthians": {
+          "ataque": 0.9971413732660122,
+          "defesa": 0.8080423053900927
+        },
+        "guarani": {
+          "ataque": 0.6944098597419147,
+          "defesa": 0.7336912747092023
+        },
+        "mirassol": {
+          "ataque": 1.161545050851482,
+          "defesa": 0.73678795538911
+        },
+        "noroeste": {
+          "ataque": 0.9219556771749543,
+          "defesa": 0.6412418285306642
+        },
+        "novorizontino": {
+          "ataque": 1.5685996915071792,
+          "defesa": 0.8320280496750613
+        },
+        "palmeiras": {
+          "ataque": 0.9235153283586123,
+          "defesa": 0.4057041391321367
+        },
+        "ponte-preta": {
+          "ataque": 0.5249495637975289,
+          "defesa": 1.0721308833382779
+        },
+        "portuguesa": {
+          "ataque": 0.8360462412771023,
+          "defesa": 0.6991839969364411
+        },
+        "primavera": {
+          "ataque": 1.4365542253033954,
+          "defesa": 1.0927522136324241
+        },
+        "santos": {
+          "ataque": 1.0340525079388834,
+          "defesa": 0.6893852886114844
+        },
+        "sao-bernardo": {
+          "ataque": 1.1651420235626369,
+          "defesa": 0.677266422768765
+        },
+        "sao-paulo": {
+          "ataque": 0.8582666143235631,
+          "defesa": 0.7436647027049929
+        },
+        "velo-clube": {
+          "ataque": 0.6230671703136809,
+          "defesa": 0.677733905978638
+        }
+      }
+    },
+    {
+      "id": "rodada-4",
+      "rotulo": "Após a 4ª rodada",
+      "curto": "R4",
+      "ate": "2026-01-22T21:30:00-03:00",
+      "jogos_usados": 32,
+      "fator_casa": 1.9601810396841877,
+      "times": {
+        "botafogo-sp": {
+          "ataque": 0.6877985327610032,
+          "defesa": 0.8652956668506526
+        },
+        "bragantino": {
+          "ataque": 1.561925886231904,
+          "defesa": 0.3415628695041957
+        },
+        "capivariano": {
+          "ataque": 0.8929092883184958,
+          "defesa": 0.8437032821312698
+        },
+        "corinthians": {
+          "ataque": 0.9948243088947568,
+          "defesa": 0.7705961832293158
+        },
+        "guarani": {
+          "ataque": 0.7735178281241292,
+          "defesa": 0.6344680901029364
+        },
+        "mirassol": {
+          "ataque": 0.9714255693329059,
+          "defesa": 0.6502843815840731
+        },
+        "noroeste": {
+          "ataque": 0.8904512211864768,
+          "defesa": 0.7043202884285171
+        },
+        "novorizontino": {
+          "ataque": 1.9200864246020992,
+          "defesa": 0.7875313227473815
+        },
+        "palmeiras": {
+          "ataque": 0.8405985122500474,
+          "defesa": 0.5990566825812663
+        },
+        "ponte-preta": {
+          "ataque": 0.44450918851253646,
+          "defesa": 1.0564697395710756
+        },
+        "portuguesa": {
+          "ataque": 1.077173045396858,
+          "defesa": 0.7722655249112219
+        },
+        "primavera": {
+          "ataque": 1.3502916475659552,
+          "defesa": 1.0138971365782234
+        },
+        "santos": {
+          "ataque": 0.9622673130068673,
+          "defesa": 0.6975783934048876
+        },
+        "sao-bernardo": {
+          "ataque": 1.1096601673829336,
+          "defesa": 0.5910987509797699
+        },
+        "sao-paulo": {
+          "ataque": 0.9874420326928812,
+          "defesa": 0.9863200360099906
+        },
+        "velo-clube": {
+          "ataque": 0.5351190337401497,
+          "defesa": 0.7133801575022755
+        }
+      }
+    },
+    {
+      "id": "rodada-5",
+      "rotulo": "Após a 5ª rodada",
+      "curto": "R5",
+      "ate": "2026-01-26T20:00:00-03:00",
+      "jogos_usados": 40,
+      "fator_casa": 1.7236774159538797,
+      "times": {
+        "botafogo-sp": {
+          "ataque": 0.6194558804492689,
+          "defesa": 0.8816545123772468
+        },
+        "bragantino": {
+          "ataque": 1.4535631078132758,
+          "defesa": 0.3087201203051522
+        },
+        "capivariano": {
+          "ataque": 0.7692645444513595,
+          "defesa": 1.0227553935115619
+        },
+        "corinthians": {
+          "ataque": 0.9955515472432566,
+          "defesa": 0.8065817227149833
+        },
+        "guarani": {
+          "ataque": 0.8414448957849324,
+          "defesa": 0.6199933954346236
+        },
+        "mirassol": {
+          "ataque": 1.3182238258718693,
+          "defesa": 0.6019902713465484
+        },
+        "noroeste": {
+          "ataque": 0.947474134172364,
+          "defesa": 0.9569041457501551
+        },
+        "novorizontino": {
+          "ataque": 1.8418505388232957,
+          "defesa": 0.7888412286307115
+        },
+        "palmeiras": {
+          "ataque": 1.0184192752878158,
+          "defesa": 0.7033133290569988
+        },
+        "ponte-preta": {
+          "ataque": 0.5437853476290708,
+          "defesa": 1.3186077994068013
+        },
+        "portuguesa": {
+          "ataque": 0.9056396698604117,
+          "defesa": 0.9007539702131709
+        },
+        "primavera": {
+          "ataque": 1.4866970274931366,
+          "defesa": 1.033186052620505
+        },
+        "santos": {
+          "ataque": 0.9249131728200063,
+          "defesa": 0.6438882527973167
+        },
+        "sao-bernardo": {
+          "ataque": 0.9109861622251579,
+          "defesa": 0.9735794816594505
+        },
+        "sao-paulo": {
+          "ataque": 0.9610660560247496,
+          "defesa": 1.1555867879026407
+        },
+        "velo-clube": {
+          "ataque": 0.46166481405002907,
+          "defesa": 0.8249384121110293
+        }
+      }
+    },
+    {
+      "id": "rodada-6",
+      "rotulo": "Após a 6ª rodada",
+      "curto": "R6",
+      "ate": "2026-02-05T20:30:00-03:00",
+      "jogos_usados": 48,
+      "fator_casa": 1.7726153571899543,
+      "times": {
+        "botafogo-sp": {
+          "ataque": 0.6327798983127254,
+          "defesa": 0.8103453031188652
+        },
+        "bragantino": {
+          "ataque": 1.3702428737514223,
+          "defesa": 0.35025363308014384
+        },
+        "capivariano": {
+          "ataque": 0.741957038164278,
+          "defesa": 1.0555806916676422
+        },
+        "corinthians": {
+          "ataque": 1.1190084510060063,
+          "defesa": 0.7468223331115904
+        },
+        "guarani": {
+          "ataque": 0.7596757322232276,
+          "defesa": 0.5773268867809497
+        },
+        "mirassol": {
+          "ataque": 1.2685450207982205,
+          "defesa": 0.5791352716367597
+        },
+        "noroeste": {
+          "ataque": 1.0197427668824557,
+          "defesa": 0.8891423878613162
+        },
+        "novorizontino": {
+          "ataque": 1.8423968703519715,
+          "defesa": 0.7356570865321463
+        },
+        "palmeiras": {
+          "ataque": 0.9579839393861479,
+          "defesa": 0.6916426030779415
+        },
+        "ponte-preta": {
+          "ataque": 0.5216893714954713,
+          "defesa": 1.1862879342935055
+        },
+        "portuguesa": {
+          "ataque": 1.0070473819975718,
+          "defesa": 0.7753661701330754
+        },
+        "primavera": {
+          "ataque": 1.4054111369628417,
+          "defesa": 1.1071291338022093
+        },
+        "santos": {
+          "ataque": 0.8257657223292566,
+          "defesa": 0.69388184468571
+        },
+        "sao-bernardo": {
+          "ataque": 0.9957665468578256,
+          "defesa": 0.8291274986956285
+        },
+        "sao-paulo": {
+          "ataque": 1.0961720153650172,
+          "defesa": 1.0336411956681737
+        },
+        "velo-clube": {
+          "ataque": 0.43581523411556056,
+          "defesa": 0.8359440360635941
+        }
+      }
+    },
+    {
+      "id": "rodada-7",
+      "rotulo": "Após a 7ª rodada",
+      "curto": "R7",
+      "ate": "2026-02-08T20:30:00-03:00",
+      "jogos_usados": 56,
+      "fator_casa": 1.7038302820982447,
+      "times": {
+        "botafogo-sp": {
+          "ataque": 0.7785327098473628,
+          "defesa": 0.7632639571648344
+        },
+        "bragantino": {
+          "ataque": 1.3687463749126427,
+          "defesa": 0.40973560162275113
+        },
+        "capivariano": {
+          "ataque": 0.7631273177308122,
+          "defesa": 1.0038701374325172
+        },
+        "corinthians": {
+          "ataque": 1.0356270930112286,
+          "defesa": 0.7668570826055676
+        },
+        "guarani": {
+          "ataque": 0.6828378275106012,
+          "defesa": 0.7043751144915402
+        },
+        "mirassol": {
+          "ataque": 1.1561684343306755,
+          "defesa": 0.606326902429203
+        },
+        "noroeste": {
+          "ataque": 1.0132267536434296,
+          "defesa": 0.9866030284075358
+        },
+        "novorizontino": {
+          "ataque": 1.807043271856144,
+          "defesa": 0.770195381972598
+        },
+        "palmeiras": {
+          "ataque": 0.9942616375301256,
+          "defesa": 0.6163868904016279
+        },
+        "ponte-preta": {
+          "ataque": 0.4808460887780444,
+          "defesa": 1.2250755435019725
+        },
+        "portuguesa": {
+          "ataque": 1.0045848714128225,
+          "defesa": 0.7631179010782108
+        },
+        "primavera": {
+          "ataque": 1.366649032856117,
+          "defesa": 1.1186169692563794
+        },
+        "santos": {
+          "ataque": 0.9336820344263871,
+          "defesa": 0.7007371671087429
+        },
+        "sao-bernardo": {
+          "ataque": 1.0118000178746973,
+          "defesa": 0.8160593078186159
+        },
+        "sao-paulo": {
+          "ataque": 1.109799672298305,
+          "defesa": 1.0383493135912951
+        },
+        "velo-clube": {
+          "ataque": 0.49306686198060445,
+          "defesa": 0.8482147707766752
+        }
+      }
+    },
+    {
+      "id": "rodada-8",
+      "rotulo": "Após a 8ª rodada",
+      "curto": "R8",
+      "ate": "2026-02-15T20:30:00-03:00",
+      "jogos_usados": 64,
+      "fator_casa": 1.6662246086889578,
+      "times": {
+        "botafogo-sp": {
+          "ataque": 0.6403009064979952,
+          "defesa": 0.8198571982947487
+        },
+        "bragantino": {
+          "ataque": 1.4003402567871006,
+          "defesa": 0.37180769078434917
+        },
+        "capivariano": {
+          "ataque": 0.7653523936108696,
+          "defesa": 0.9585718485274126
+        },
+        "corinthians": {
+          "ataque": 1.017661537299936,
+          "defesa": 0.6750255043844667
+        },
+        "guarani": {
+          "ataque": 0.6877425994056248,
+          "defesa": 0.7161626757296485
+        },
+        "mirassol": {
+          "ataque": 1.0900542542070486,
+          "defesa": 0.7239199347661645
+        },
+        "noroeste": {
+          "ataque": 1.1079945231330959,
+          "defesa": 1.0689226773474303
+        },
+        "novorizontino": {
+          "ataque": 1.664843388201683,
+          "defesa": 0.8571212903208808
+        },
+        "palmeiras": {
+          "ataque": 0.9619022187360983,
+          "defesa": 0.6800153107883492
+        },
+        "ponte-preta": {
+          "ataque": 0.4806003870139946,
+          "defesa": 1.301448076123894
+        },
+        "portuguesa": {
+          "ataque": 1.037676959353548,
+          "defesa": 0.7579725282790831
+        },
+        "primavera": {
+          "ataque": 1.3733425984228462,
+          "defesa": 1.297376860096147
+        },
+        "santos": {
+          "ataque": 1.2771168672097364,
+          "defesa": 0.699062012396156
+        },
+        "sao-bernardo": {
+          "ataque": 0.8978479035108112,
+          "defesa": 0.8566439226989572
+        },
+        "sao-paulo": {
+          "ataque": 1.1242506478851377,
+          "defesa": 1.0690586572883487
+        },
+        "velo-clube": {
+          "ataque": 0.47297255872447436,
+          "defesa": 1.1581047323317235
+        }
+      }
+    },
+    {
+      "id": "quartas-1",
+      "rotulo": "Após as quartas",
+      "curto": "QF",
+      "ate": "2026-02-22T20:30:00-03:00",
+      "jogos_usados": 68,
+      "fator_casa": 1.647123139827447,
+      "times": {
+        "botafogo-sp": {
+          "ataque": 0.6245971996612026,
+          "defesa": 0.8342428314245109
+        },
+        "bragantino": {
+          "ataque": 1.3028134550950936,
+          "defesa": 0.47937400790182866
+        },
+        "capivariano": {
+          "ataque": 0.7291218336232578,
+          "defesa": 1.1186762084390491
+        },
+        "corinthians": {
+          "ataque": 1.0187467002059531,
+          "defesa": 0.67350999812033
+        },
+        "guarani": {
+          "ataque": 0.6879112582684992,
+          "defesa": 0.7152617781705766
+        },
+        "mirassol": {
+          "ataque": 1.073880865110515,
+          "defesa": 0.7243182506648013
+        },
+        "noroeste": {
+          "ataque": 1.067948278815066,
+          "defesa": 1.0999013643521824
+        },
+        "novorizontino": {
+          "ataque": 1.6602524204611806,
+          "defesa": 0.8672935133601777
+        },
+        "palmeiras": {
+          "ataque": 1.1359277524756033,
+          "defesa": 0.6561848531543913
+        },
+        "ponte-preta": {
+          "ataque": 0.47951805832140987,
+          "defesa": 1.3181241233748024
+        },
+        "portuguesa": {
+          "ataque": 1.0238259045234688,
+          "defesa": 0.7700420533679767
+        },
+        "primavera": {
+          "ataque": 1.3595245548390111,
+          "defesa": 1.3071816101657259
+        },
+        "santos": {
+          "ataque": 1.257119455356187,
+          "defesa": 0.6992682123500691
+        },
+        "sao-bernardo": {
+          "ataque": 0.8776720339043727,
+          "defesa": 0.8707426806702758
+        },
+        "sao-paulo": {
+          "ataque": 1.2342159836923026,
+          "defesa": 0.9886251531067983
+        },
+        "velo-clube": {
+          "ataque": 0.46692424564687723,
+          "defesa": 1.1898775015953407
+        }
+      }
+    },
+    {
+      "id": "semifinal-1",
+      "rotulo": "Após as semifinais",
+      "curto": "SF",
+      "ate": "2026-03-01T20:30:00-03:00",
+      "jogos_usados": 70,
+      "fator_casa": 1.657120927275299,
+      "times": {
+        "botafogo-sp": {
+          "ataque": 0.6260363982811271,
+          "defesa": 0.8310162242771653
+        },
+        "bragantino": {
+          "ataque": 1.3189279127739901,
+          "defesa": 0.4772563339777815
+        },
+        "capivariano": {
+          "ataque": 0.7309183063996832,
+          "defesa": 1.1145576694799852
+        },
+        "corinthians": {
+          "ataque": 0.9616472924217107,
+          "defesa": 0.6225458974837575
+        },
+        "guarani": {
+          "ataque": 0.6889417257984982,
+          "defesa": 0.7115592284955581
+        },
+        "mirassol": {
+          "ataque": 1.0804924343957605,
+          "defesa": 0.7181300563001668
+        },
+        "noroeste": {
+          "ataque": 1.0676540246521158,
+          "defesa": 1.0872495637968174
+        },
+        "novorizontino": {
+          "ataque": 1.6064742618299974,
+          "defesa": 0.809302812421581
+        },
+        "palmeiras": {
+          "ataque": 1.1525015691785623,
+          "defesa": 0.6679161703058307
+        },
+        "ponte-preta": {
+          "ataque": 0.48057952724423963,
+          "defesa": 1.3170528878616705
+        },
+        "portuguesa": {
+          "ataque": 1.0274952211539568,
+          "defesa": 0.7642306143264544
+        },
+        "primavera": {
+          "ataque": 1.372224245576416,
+          "defesa": 1.3021817867556007
+        },
+        "santos": {
+          "ataque": 1.2795257930898114,
+          "defesa": 0.7000867450510109
+        },
+        "sao-bernardo": {
+          "ataque": 0.8874060374262336,
+          "defesa": 0.8704953644981578
+        },
+        "sao-paulo": {
+          "ataque": 1.2496880213702353,
+          "defesa": 0.9888271419354363
+        },
+        "velo-clube": {
+          "ataque": 0.46948722840766116,
+          "defesa": 1.1831700786506905
+        }
+      }
+    },
+    {
+      "id": "final-1",
+      "rotulo": "Após a ida da final",
+      "curto": "F ida",
+      "ate": "2026-03-04T20:00:00-03:00",
+      "jogos_usados": 71,
+      "fator_casa": 1.6736533544801633,
+      "times": {
+        "botafogo-sp": {
+          "ataque": 0.6318193526463478,
+          "defesa": 0.8297416669376833
+        },
+        "bragantino": {
+          "ataque": 1.3242289893077532,
+          "defesa": 0.4723037338673744
+        },
+        "capivariano": {
+          "ataque": 0.7343094993899569,
+          "defesa": 1.104775330874686
+        },
+        "corinthians": {
+          "ataque": 0.9715375305351263,
+          "defesa": 0.6186122136771802
+        },
+        "guarani": {
+          "ataque": 0.6930281240463053,
+          "defesa": 0.7102914516062897
+        },
+        "mirassol": {
+          "ataque": 1.091702276350306,
+          "defesa": 0.7149650267805908
+        },
+        "noroeste": {
+          "ataque": 1.0696160319790289,
+          "defesa": 1.0745817800920974
+        },
+        "novorizontino": {
+          "ataque": 1.5472464061945084,
+          "defesa": 0.774332537805697
+        },
+        "palmeiras": {
+          "ataque": 1.1234544317908026,
+          "defesa": 0.6085411686385505
+        },
+        "ponte-preta": {
+          "ataque": 0.4803527741233908,
+          "defesa": 1.3014134927327605
+        },
+        "portuguesa": {
+          "ataque": 1.035400324359102,
+          "defesa": 0.7555464389336026
+        },
+        "primavera": {
+          "ataque": 1.379820511642996,
+          "defesa": 1.2928162871037394
+        },
+        "santos": {
+          "ataque": 1.2964769417124808,
+          "defesa": 0.7002967960026736
+        },
+        "sao-bernardo": {
+          "ataque": 0.8908585386888503,
+          "defesa": 0.8656316180576323
+        },
+        "sao-paulo": {
+          "ataque": 1.2613540752662162,
+          "defesa": 0.9817260262064472
+        },
+        "velo-clube": {
+          "ataque": 0.4687941919668285,
+          "defesa": 1.1680786044260023
+        }
+      }
+    },
+    {
+      "id": "final-2",
+      "rotulo": "Fim do campeonato",
+      "curto": "Fim",
+      "ate": "2026-03-08T20:30:00-03:00",
+      "jogos_usados": 72,
+      "fator_casa": 1.6378387577491627,
+      "times": {
+        "botafogo-sp": {
+          "ataque": 0.6320782260045151,
+          "defesa": 0.84168384781741
+        },
+        "bragantino": {
+          "ataque": 1.316698492074988,
+          "defesa": 0.48035263975970427
+        },
+        "capivariano": {
+          "ataque": 0.7354737856670301,
+          "defesa": 1.1152291922365982
+        },
+        "corinthians": {
+          "ataque": 0.9710144611315639,
+          "defesa": 0.6291881204107673
+        },
+        "guarani": {
+          "ataque": 0.6922679829863243,
+          "defesa": 0.718828204596816
+        },
+        "mirassol": {
+          "ataque": 1.086570703985861,
+          "defesa": 0.7220823113386436
+        },
+        "noroeste": {
+          "ataque": 1.0682050664833205,
+          "defesa": 1.0920535967863738
+        },
+        "novorizontino": {
+          "ataque": 1.5206908865257742,
+          "defesa": 0.8334837947867786
+        },
+        "palmeiras": {
+          "ataque": 1.1810932277203738,
+          "defesa": 0.5924784421672051
+        },
+        "ponte-preta": {
+          "ataque": 0.48098137442794253,
+          "defesa": 1.3188416621618488
+        },
+        "portuguesa": {
+          "ataque": 1.0389110507797297,
+          "defesa": 0.7645855501877654
+        },
+        "primavera": {
+          "ataque": 1.3719859021249772,
+          "defesa": 1.3112487905008163
+        },
+        "santos": {
+          "ataque": 1.2837073784043618,
+          "defesa": 0.7102200177801826
+        },
+        "sao-bernardo": {
+          "ataque": 0.8881332315230417,
+          "defesa": 0.8815615362100275
+        },
+        "sao-paulo": {
+          "ataque": 1.264071738623818,
+          "defesa": 0.9885579615073663
+        },
+        "velo-clube": {
+          "ataque": 0.468116491536378,
+          "defesa": 1.1867868168405118
+        }
+      }
+    }
+  ]
+}

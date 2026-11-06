@@ -1185,3 +1185,196 @@ a.botao {
     animation: none;
   }
 }
+
+
+/* ---------- Jogos do dia: cartão de um confronto ---------- */
+
+.lista-confrontos {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 720px) {
+  .lista-confrontos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .lista-confrontos {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.confronto {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+  padding: 14px 16px 16px;
+  border: 1px solid var(--cor-linha);
+  border-radius: var(--canto-g);
+  background: var(--cor-cartao);
+  box-shadow: var(--sombra-cartao);
+}
+
+.confronto__topo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 10px;
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--cor-tinta-suave);
+}
+
+.confronto__hora {
+  font-size: 1.25rem;
+  font-weight: 900;
+  font-stretch: var(--largura-estreita);
+  font-variant-numeric: tabular-nums;
+  color: var(--cor-tinta);
+}
+
+.confronto__selo {
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--cor-papel);
+  font-weight: 700;
+  color: var(--cor-tinta);
+}
+
+.confronto__selo--agora {
+  background: var(--cor-limao);
+}
+
+.confronto__info {
+  min-width: 0;
+}
+
+.confronto__time {
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 10px;
+}
+
+.confronto__escudo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.confronto__nome {
+  display: grid;
+  min-width: 0;
+  line-height: 1.2;
+}
+
+.confronto__nome strong {
+  overflow-wrap: anywhere;   /* nome comprido quebra a linha em vez de sumir */
+}
+
+.confronto__nome small {
+  font-size: 0.76rem;
+  color: var(--cor-tinta-suave);
+  font-variant-numeric: tabular-nums;
+}
+
+.confronto__placar {
+  min-width: 1.4em;
+  font-size: 1.3rem;
+  font-weight: 900;
+  text-align: right;
+}
+
+.confronto__previsao {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px 12px;
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--cor-tinta-suave);
+}
+
+.confronto__previsao b {
+  color: var(--cor-tinta);
+  font-variant-numeric: tabular-nums;
+}
+
+.confronto__onde {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 8px;
+  padding-top: 10px;
+  border-top: 1px solid var(--cor-linha);
+}
+
+.confronto__onde-rotulo {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--cor-tinta-suave);
+}
+
+.canais {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.canal {
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--cor-tinta);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--cor-papel);
+}
+
+.canal--vazio {
+  background: var(--cor-papel);
+  font-weight: 500;
+  color: var(--cor-tinta-suave);
+}
+
+/* Sequência recente: V (verde), E (cinza), D (vermelho), sempre com a letra escrita. */
+.forma {
+  display: flex;
+  gap: 3px;
+}
+
+.forma__item {
+  display: grid;
+  place-items: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 5px;
+  font-size: 0.66rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.forma__item--V { background: #0b8a0b; }
+.forma__item--E { background: #8a8f98; }
+.forma__item--D { background: var(--cor-rebaixamento); }
+
+/* Celular bem estreito: a sequência desce para baixo do nome, para o nome caber. */
+@media (max-width: 380px) {
+  .confronto__time {
+    grid-template-columns: 32px minmax(0, 1fr) auto;
+  }
+
+  .confronto__time .forma {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}

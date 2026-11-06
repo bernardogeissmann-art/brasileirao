@@ -32,13 +32,35 @@ const REAL = {
     farroupilha: ["sao-luiz"],
     rebaixamento: ["avenida", "inter-sm"],
   },
+  "paulista-2026": {
+    titulo: ["palmeiras"],
+    final: ["novorizontino", "palmeiras"],
+    semifinal: ["corinthians", "novorizontino", "palmeiras", "sao-paulo"],
+    quartas: ["bragantino", "capivariano", "corinthians", "novorizontino", "palmeiras", "portuguesa", "santos", "sao-paulo"],
+    rebaixamento: ["ponte-preta", "velo-clube"],
+  },
+  "paranaense-2026": {
+    titulo: ["operario"],
+    final: ["londrina", "operario"],
+    semifinal: ["athletico", "coritiba", "londrina", "operario"],
+    quartas: ["athletico", "azuriz", "cianorte", "coritiba", "foz-do-iguacu", "londrina", "operario", "sao-joseense"],
+    rebaixamento: ["andraus", "galo-maringa"],
+  },
+};
+
+// Como é a 1ª fase de cada campeonato: grupo -> [quantos times, quantos jogos cada um faz].
+const PRIMEIRA_FASE = {
+  "catarinense-2026": { A: [6, 6], B: [6, 6] },
+  "gaucho-2026": { A: [6, 6], B: [6, 6] },
+  "paulista-2026": { A: [16, 8] },
+  "paranaense-2026": { A: [6, 6], B: [6, 6] },
 };
 
 for (const [campeonato, real] of Object.entries(REAL)) {
   const dados = ler(campeonato, "jogos.json");
   const modelos = ler(campeonato, "modelos.json");
   const formato = FORMATOS[campeonato];
-  const fim = modelos.momentos.find((m) => m.id === "final-2");
+  const fim = modelos.momentos[modelos.momentos.length - 1];   // o último momento: fim do campeonato
 
   test(`${campeonato}: com todos os jogos reais, reproduz o que aconteceu (100%)`, () => {
     const r = simularMomento(dados, fim, formato, { n: 300, semente: 5 });
@@ -61,11 +83,12 @@ for (const [campeonato, real] of Object.entries(REAL)) {
     }
   });
 
-  test(`${campeonato}: a tabela da 1ª fase no fim tem 6 times por grupo e 6 jogos cada`, () => {
-    for (const grupo of ["A", "B"]) {
+  test(`${campeonato}: a tabela da 1ª fase no fim tem o número certo de times e de jogos`, () => {
+    assert.equal(fim.id, "final-2", "o último momento deveria ser o fim do campeonato");
+    for (const [grupo, [nTimes, nJogos]] of Object.entries(PRIMEIRA_FASE[campeonato])) {
       const tabela = tabelaDoGrupo(dados, fim, grupo);
-      assert.equal(tabela.length, 6);
-      for (const linha of tabela) assert.equal(linha.jogos, 6, `${linha.id} jogos`);
+      assert.equal(tabela.length, nTimes, `grupo ${grupo}`);
+      for (const linha of tabela) assert.equal(linha.jogos, nJogos, `${linha.id} jogos`);
     }
   });
 }

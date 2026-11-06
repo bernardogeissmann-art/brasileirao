@@ -9,14 +9,13 @@
 # Para outro ano (ex.: 2027), troque ANO e MESES abaixo e confira a lista TIMES.
 
 import sys
-from datetime import datetime
 
 import comum
+import espn
 
 ANO = 2026
 MESES = ["01", "02", "03"]           # meses em que o campeonato acontece
 LIGA_ESPN = "bra.camp.gaucho"
-URL_MES = "https://site.api.espn.com/apis/site/v2/sports/soccer/{liga}/scoreboard?dates={ano}{mes}"
 PASTA_DADOS = comum.PASTA_PROJETO / "data" / "estaduais" / f"gaucho-{ANO}"
 PASTA_ESCUDOS = comum.PASTA_PROJETO / "assets" / "escudos" / "gaucho"
 TOTAL_JOGOS = 64
@@ -58,61 +57,10 @@ FASES = {
 }
 
 
-def baixar_eventos():
-    eventos = []
-    for mes in MESES:
-        resposta = comum.baixar_json(URL_MES.format(liga=LIGA_ESPN, ano=ANO, mes=mes))
-        eventos += resposta.get("events", [])
-    return eventos
-
-
-def ler_jogos(eventos):
-    jogos = []
-    escudos = {}
-    for evento in eventos:
-        competicao = evento["competitions"][0]
-        lados = {c["homeAway"]: c for c in competicao["competitors"]}
-        casa, fora = lados["home"], lados["away"]
-        siglas = [casa["team"]["abbreviation"], fora["team"]["abbreviation"]]
-        for sigla, lado in zip(siglas, (casa, fora)):
-            if sigla not in TIMES:
-                sys.exit(f"Erro: time desconhecido na ESPN: {sigla} ({lado['team']['displayName']}). "
-                         "Atualize a lista TIMES.")
-            escudos[TIMES[sigla][0]] = lado["team"].get("logo")
-
-        slug = evento["season"]["slug"]
-        if slug not in FASES:
-            sys.exit(f"Erro: fase desconhecida na ESPN: '{slug}'. Atualize a lista FASES.")
-        fase = FASES[slug]
-        mandante, visitante = TIMES[siglas[0]][0], TIMES[siglas[1]][0]
-        disputado = bool(competicao["status"]["type"].get("completed"))
-        # A ESPN dá a hora em UTC ("2026-01-10T22:00Z"); convertemos para Brasília.
-        data = datetime.fromisoformat(evento["date"].replace("Z", "+00:00")).astimezone(comum.FUSO_BRASILIA)
-        mata_mata = fase not in ("primeira-fase", "quadrangular")
-        jogos.append({
-            "id": f"gau{ANO}-{evento['id']}",
-            "numero": int(evento["id"]),
-            "fase": fase,
-            "rodada": None,
-            "confronto": f"{fase}-{'-'.join(sorted([mandante, visitante]))}" if mata_mata else None,
-            "data": data.isoformat(),
-            "mandante": mandante,
-            "visitante": visitante,
-            "disputado": disputado,
-            "gols_mandante": int(casa["score"]) if disputado else None,
-            "gols_visitante": int(fora["score"]) if disputado else None,
-            "penaltis_mandante": casa.get("shootoutScore"),
-            "penaltis_visitante": fora.get("shootoutScore"),
-        })
-    comum.numerar_rodadas([j for j in jogos if j["fase"] == "primeira-fase"])
-    comum.numerar_rodadas([j for j in jogos if j["fase"] == "quadrangular"])
-    comum.numerar_pernas([j for j in jogos if j["confronto"]])
-    return sorted(jogos, key=lambda j: j["data"]), escudos
-
-
 def main():
     print("Baixando os jogos da ESPN...")
-    jogos, escudos = ler_jogos(baixar_eventos())
+    eventos = espn.baixar_eventos(LIGA_ESPN, ANO, MESES)
+    jogos, escudos = espn.ler_jogos(eventos, TIMES, FASES, "gau", ANO, fases_de_pontos=("primeira-fase", "quadrangular"))
     times = {id_: {"nome": nome, "sigla": sigla, "grupo": grupo} for (id_, nome, sigla, grupo) in TIMES.values()}
 
     print("Baixando os escudos...")

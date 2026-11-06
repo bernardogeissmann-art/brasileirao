@@ -3,12 +3,15 @@
 //   1) desenha o topo e o rodapé;
 //   2) carrega os dados (jogos.json e modelo.json);
 //   3) roda as 10.000 simulações no navegador;
-//   4) monta os destaques e a lista de times com as chances.
+//   4) monta os destaques e a lista de times com as chances;
+//   5) monta a seção "Jogos do dia", no fim da página.
 
-import { carregarDados, simular, tabelaAtual, N_SIMULACOES_PADRAO } from "./simulacao.js";
+import { carregarDados, simular, tabelaAtual, chancesDoJogo, N_SIMULACOES_PADRAO } from "./simulacao.js";
 import {
   instalarCabecalho, montarRodape, cardTime, cartaoDestaque, mensagem, legendaCategorias, cabecalhoColunas,
+  cardConfronto, legendaResultado,
 } from "./componentes.js";
+import { escolherJogosDoDia, formaRecente, situacaoDoJogo } from "./jogos-do-dia.js";
 
 // document.getElementById pega um elemento da página pelo seu id="...".
 const topo = document.getElementById("topo");
@@ -41,6 +44,7 @@ async function iniciar() {
   const restantes = jogos.jogos.filter((jogo) => !jogo.disputado).length;
   chapeu.textContent = `Brasileirão Série A ${jogos.temporada} · faltam ${restantes} de ${jogos.jogos.length} jogos`;
   rodape.innerHTML = montarRodape(jogos.baixado_em);
+  montarJogosDoDia(dados);   // não depende da simulação: aparece logo
 
   // Dá um instante para o navegador desenhar a mensagem "Simulando..." antes da conta pesada.
   await new Promise((pronto) => setTimeout(pronto, 30));
@@ -92,13 +96,51 @@ function montarDestaques(chances, times) {
     .join("");
 }
 
+// A seção "Jogos do dia": os jogos de hoje (ou, se hoje não tiver, os do próximo dia com jogo),
+// cada um com as chances do modelo, a fase dos times e onde assistir.
+function montarJogosDoDia({ jogos, modelo }) {
+  const lista = document.getElementById("jogos-do-dia");
+  const titulo = document.getElementById("jogos-do-dia-data");
+  const agora = new Date();
+  const escolha = escolherJogosDoDia(jogos.jogos, agora);
+  if (!escolha) {
+    titulo.textContent = "";
+    lista.innerHTML = mensagem("O Brasileirão terminou: não há mais jogos.", "carregando");
+    return;
+  }
+
+  // "quinta-feira, 5 de novembro"
+  const dataPorExtenso = new Intl.DateTimeFormat("pt-BR", { timeZone: "UTC", weekday: "long", day: "numeric", month: "long" })
+    .format(new Date(`${escolha.dia}T12:00:00Z`));
+  const quantos = escolha.jogos.length === 1 ? "1 jogo" : `${escolha.jogos.length} jogos`;
+  titulo.textContent = escolha.eHoje
+    ? `Hoje, ${dataPorExtenso} · ${quantos}`
+    : `Hoje não tem jogo do Brasileirão. Próximo dia de jogos: ${dataPorExtenso} · ${quantos}`;
+
+  const tabela = new Map(tabelaAtual(jogos).map((linha) => [linha.id, linha]));
+  lista.innerHTML = escolha.jogos.map((jogo) => cardConfronto({
+    jogo,
+    times: jogos.times,
+    tabela,
+    forma: { mandante: formaRecente(jogos.jogos, jogo.mandante), visitante: formaRecente(jogos.jogos, jogo.visitante) },
+    chances: chancesDoJogo(jogo, modelo),
+    situacao: situacaoDoJogo(jogo, agora),
+  })).join("");
+
+  document.getElementById("jogos-do-dia-legenda").innerHTML = legendaResultado("mandante", "visitante");
+  document.getElementById("jogos-do-dia-nota").textContent =
+    "As chances de cada jogo vêm do mesmo modelo das simulações (ataque e defesa de cada time, mais o fator casa). " +
+    "Os quadradinhos mostram os últimos 5 jogos de cada time (V = vitória, E = empate, D = derrota), do mais antigo ao mais recente. " +
+    "Onde assistir: canais informados pelo ge.globo na atualização da madrugada; podem mudar.";
+}
+
 function mostrarErro(erro) {
   console.error(erro);
   lista.innerHTML = mensagem(
     `<strong>Não consegui carregar os dados.</strong><br>
      Se você abriu o arquivo com dois cliques, o navegador bloqueia a leitura dos dados.
      Abra pelo servidor local: na pasta do projeto, rode
-     <code>python -m http.server 8000 --bind 127.0.0.1</code> e acesse
+     <code>python scripts/servidor_local.py</code> e acesse
      <code>http://localhost:8000/site/</code>.`,
     "erro");
 }

@@ -1,0 +1,1205 @@
+{
+ "competicao": "Campeonato Paranaense",
+ "temporada": 2026,
+ "dados_baixados_em": "2026-11-05T21:05:09-03:00",
+ "calculado_em": "2026-11-06T00:05:27.853Z",
+ "simulacoes": 10000,
+ "momentos": [
+  {
+   "id": "inicio",
+   "rotulo": "Antes do 1º jogo",
+   "curto": "Início",
+   "ate": null,
+   "times": {
+    "andraus": {
+     "quartas": 0.6713,
+     "semifinal": 0.3285,
+     "final": 0.1667,
+     "titulo": 0.0848,
+     "rebaixamento": 0.1641
+    },
+    "athletico": {
+     "quartas": 0.6637,
+     "semifinal": 0.3291,
+     "final": 0.1633,
+     "titulo": 0.081,
+     "rebaixamento": 0.1692
+    },
+    "azuriz": {
+     "quartas": 0.6588,
+     "semifinal": 0.3301,
+     "final": 0.1651,
+     "titulo": 0.0809,
+     "rebaixamento": 0.1678
+    },
+    "cascavel": {
+     "quartas": 0.6606,
+     "semifinal": 0.3365,
+     "final": 0.1683,
+     "titulo": 0.0852,
+     "rebaixamento": 0.1682
+    },
+    "cianorte": {
+     "quartas": 0.6754,
+     "semifinal": 0.342,
+     "final": 0.1718,
+     "titulo": 0.0832,
+     "rebaixamento": 0.1609
+    },
+    "coritiba": {
+     "quartas": 0.6646,
+     "semifinal": 0.3292,
+     "final": 0.1641,
+     "titulo": 0.0808,
+     "rebaixamento": 0.1668
+    },
+    "foz-do-iguacu": {
+     "quartas": 0.6707,
+     "semifinal": 0.3339,
+     "final": 0.1649,
+     "titulo": 0.0824,
+     "rebaixamento": 0.166
+    },
+    "galo-maringa": {
+     "quartas": 0.6673,
+     "semifinal": 0.34,
+     "final": 0.1666,
+     "titulo": 0.0827,
+     "rebaixamento": 0.1652
+    },
+    "londrina": {
+     "quartas": 0.6704,
+     "semifinal": 0.3377,
+     "final": 0.1694,
+     "titulo": 0.0867,
+     "rebaixamento": 0.1719
+    },
+    "maringa": {
+     "quartas": 0.669,
+     "semifinal": 0.3313,
+     "final": 0.1654,
+     "titulo": 0.0831,
+     "rebaixamento": 0.1632
+    },
+    "operario": {
+     "quartas": 0.6626,
+     "semifinal": 0.3302,
+     "final": 0.1657,
+     "titulo": 0.0826,
+     "rebaixamento": 0.1662
+    },
+    "sao-joseense": {
+     "quartas": 0.6656,
+     "semifinal": 0.3315,
+     "final": 0.1687,
+     "titulo": 0.0866,
+     "rebaixamento": 0.1705
+    }
+   }
+  },
+  {
+   "id": "rodada-1",
+   "rotulo": "Após a 1ª rodada",
+   "curto": "R1",
+   "ate": "2026-01-08T20:30:00-03:00",
+   "times": {
+    "andraus": {
+     "quartas": 0.5884,
+     "semifinal": 0.2788,
+     "final": 0.1274,
+     "titulo": 0.0437,
+     "rebaixamento": 0.2614
+    },
+    "athletico": {
+     "quartas": 0.7976,
+     "semifinal": 0.3988,
+     "final": 0.198,
+     "titulo": 0.1278,
+     "rebaixamento": 0.0665
+    },
+    "azuriz": {
+     "quartas": 0.8278,
+     "semifinal": 0.4946,
+     "final": 0.2825,
+     "titulo": 0.126,
+     "rebaixamento": 0.0887
+    },
+    "cascavel": {
+     "quartas": 0.3141,
+     "semifinal": 0.1267,
+     "final": 0.0524,
+     "titulo": 0.0254,
+     "rebaixamento": 0.3017
+    },
+    "cianorte": {
+     "quartas": 0.7738,
+     "semifinal": 0.4277,
+     "final": 0.2333,
+     "titulo": 0.0907,
+     "rebaixamento": 0.1333
+    },
+    "coritiba": {
+     "quartas": 0.5942,
+     "semifinal": 0.2821,
+     "final": 0.1318,
+     "titulo": 0.0433,
+     "rebaixamento": 0.2516
+    },
+    "foz-do-iguacu": {
+     "quartas": 0.7994,
+     "semifinal": 0.3974,
+     "final": 0.1933,
+     "titulo": 0.1187,
+     "rebaixamento": 0.0663
+    },
+    "galo-maringa": {
+     "quartas": 0.6055,
+     "semifinal": 0.2589,
+     "final": 0.1127,
+     "titulo": 0.0324,
+     "rebaixamento": 0.2604
+    },
+    "londrina": {
+     "quartas": 0.7967,
+     "semifinal": 0.4338,
+     "final": 0.2284,
+     "titulo": 0.1504,
+     "rebaixamento": 0.0651
+    },
+    "maringa": {
+     "quartas": 0.5035,
+     "semifinal": 0.2115,
+     "final": 0.0904,
+     "titulo": 0.0535,
+     "rebaixamento": 0.1895
+    },
+    "operario": {
+     "quartas": 0.6103,
+     "semifinal": 0.2579,
+     "final": 0.1123,
+     "titulo": 0.0315,
+     "rebaixamento": 0.2551
+    },
+    "sao-joseense": {
+     "quartas": 0.7887,
+     "semifinal": 0.4318,
+     "final": 0.2375,
+     "titulo": 0.1566,
+     "rebaixamento": 0.0604
+    }
+   }
+  },
+  {
+   "id": "rodada-2",
+   "rotulo": "Após a 2ª rodada",
+   "curto": "R2",
+   "ate": "2026-01-11T18:30:00-03:00",
+   "times": {
+    "andraus": {
+     "quartas": 0.9328,
+     "semifinal": 0.5583,
+     "final": 0.311,
+     "titulo": 0.1443,
+     "rebaixamento": 0.0333
+    },
+    "athletico": {
+     "quartas": 0.8534,
+     "semifinal": 0.485,
+     "final": 0.2696,
+     "titulo": 0.1677,
+     "rebaixamento": 0.041
+    },
+    "azuriz": {
+     "quartas": 0.8995,
+     "semifinal": 0.5415,
+     "final": 0.311,
+     "titulo": 0.1538,
+     "rebaixamento": 0.0475
+    },
+    "cascavel": {
+     "quartas": 0.6755,
+     "semifinal": 0.3361,
+     "final": 0.1708,
+     "titulo": 0.0926,
+     "rebaixamento": 0.11
+    },
+    "cianorte": {
+     "quartas": 0.7536,
+     "semifinal": 0.376,
+     "final": 0.1798,
+     "titulo": 0.0704,
+     "rebaixamento": 0.1348
+    },
+    "coritiba": {
+     "quartas": 0.5846,
+     "semifinal": 0.2424,
+     "final": 0.0978,
+     "titulo": 0.0342,
+     "rebaixamento": 0.255
+    },
+    "foz-do-iguacu": {
+     "quartas": 0.7777,
+     "semifinal": 0.3777,
+     "final": 0.1836,
+     "titulo": 0.1006,
+     "rebaixamento": 0.064
+    },
+    "galo-maringa": {
+     "quartas": 0.268,
+     "semifinal": 0.0737,
+     "final": 0.0222,
+     "titulo": 0.0055,
+     "rebaixamento": 0.5482
+    },
+    "londrina": {
+     "quartas": 0.7729,
+     "semifinal": 0.4137,
+     "final": 0.2136,
+     "titulo": 0.1242,
+     "rebaixamento": 0.0642
+    },
+    "maringa": {
+     "quartas": 0.4625,
+     "semifinal": 0.2036,
+     "final": 0.087,
+     "titulo": 0.0462,
+     "rebaixamento": 0.185
+    },
+    "operario": {
+     "quartas": 0.5615,
+     "semifinal": 0.2081,
+     "final": 0.0782,
+     "titulo": 0.0255,
+     "rebaixamento": 0.2945
+    },
+    "sao-joseense": {
+     "quartas": 0.458,
+     "semifinal": 0.1839,
+     "final": 0.0754,
+     "titulo": 0.035,
+     "rebaixamento": 0.2225
+    }
+   }
+  },
+  {
+   "id": "rodada-3",
+   "rotulo": "Após a 3ª rodada",
+   "curto": "R3",
+   "ate": "2026-01-15T20:00:00-03:00",
+   "times": {
+    "andraus": {
+     "quartas": 0.9418,
+     "semifinal": 0.6,
+     "final": 0.3689,
+     "titulo": 0.1638,
+     "rebaixamento": 0.0219
+    },
+    "athletico": {
+     "quartas": 0.9845,
+     "semifinal": 0.6458,
+     "final": 0.3624,
+     "titulo": 0.2414,
+     "rebaixamento": 0.0045
+    },
+    "azuriz": {
+     "quartas": 0.4572,
+     "semifinal": 0.1787,
+     "final": 0.0707,
+     "titulo": 0.0194,
+     "rebaixamento": 0.3048
+    },
+    "cascavel": {
+     "quartas": 0.7673,
+     "semifinal": 0.3216,
+     "final": 0.139,
+     "titulo": 0.0745,
+     "rebaixamento": 0.0816
+    },
+    "cianorte": {
+     "quartas": 0.7034,
+     "semifinal": 0.3589,
+     "final": 0.171,
+     "titulo": 0.0566,
+     "rebaixamento": 0.1315
+    },
+    "coritiba": {
+     "quartas": 0.8645,
+     "semifinal": 0.4199,
+     "final": 0.1977,
+     "titulo": 0.0635,
+     "rebaixamento": 0.0566
+    },
+    "foz-do-iguacu": {
+     "quartas": 0.4553,
+     "semifinal": 0.1048,
+     "final": 0.0276,
+     "titulo": 0.0106,
+     "rebaixamento": 0.2667
+    },
+    "galo-maringa": {
+     "quartas": 0.7404,
+     "semifinal": 0.356,
+     "final": 0.1642,
+     "titulo": 0.0557,
+     "rebaixamento": 0.1228
+    },
+    "londrina": {
+     "quartas": 0.9861,
+     "semifinal": 0.6588,
+     "final": 0.3736,
+     "titulo": 0.2621,
+     "rebaixamento": 0.0026
+    },
+    "maringa": {
+     "quartas": 0.2099,
+     "semifinal": 0.0551,
+     "final": 0.0171,
+     "titulo": 0.0063,
+     "rebaixamento": 0.384
+    },
+    "operario": {
+     "quartas": 0.2927,
+     "semifinal": 0.0865,
+     "final": 0.0275,
+     "titulo": 0.0049,
+     "rebaixamento": 0.4484
+    },
+    "sao-joseense": {
+     "quartas": 0.5969,
+     "semifinal": 0.2139,
+     "final": 0.0803,
+     "titulo": 0.0412,
+     "rebaixamento": 0.1746
+    }
+   }
+  },
+  {
+   "id": "rodada-4",
+   "rotulo": "Após a 4ª rodada",
+   "curto": "R4",
+   "ate": "2026-01-18T18:30:00-03:00",
+   "times": {
+    "andraus": {
+     "quartas": 0.6547,
+     "semifinal": 0.2935,
+     "final": 0.1354,
+     "titulo": 0.0421,
+     "rebaixamento": 0.1525
+    },
+    "athletico": {
+     "quartas": 0.919,
+     "semifinal": 0.5019,
+     "final": 0.2172,
+     "titulo": 0.1281,
+     "rebaixamento": 0.0207
+    },
+    "azuriz": {
+     "quartas": 0.8744,
+     "semifinal": 0.4196,
+     "final": 0.1961,
+     "titulo": 0.0699,
+     "rebaixamento": 0.0517
+    },
+    "cascavel": {
+     "quartas": 0.4353,
+     "semifinal": 0.1517,
+     "final": 0.0553,
+     "titulo": 0.025,
+     "rebaixamento": 0.2061
+    },
+    "cianorte": {
+     "quartas": 0.8805,
+     "semifinal": 0.4438,
+     "final": 0.2214,
+     "titulo": 0.0719,
+     "rebaixamento": 0.0459
+    },
+    "coritiba": {
+     "quartas": 0.9966,
+     "semifinal": 0.6076,
+     "final": 0.3537,
+     "titulo": 0.14,
+     "rebaixamento": 0.001
+    },
+    "foz-do-iguacu": {
+     "quartas": 0.8705,
+     "semifinal": 0.3334,
+     "final": 0.0996,
+     "titulo": 0.0511,
+     "rebaixamento": 0.0387
+    },
+    "galo-maringa": {
+     "quartas": 0.5212,
+     "semifinal": 0.2151,
+     "final": 0.088,
+     "titulo": 0.0262,
+     "rebaixamento": 0.2371
+    },
+    "londrina": {
+     "quartas": 0.9999,
+     "semifinal": 0.7322,
+     "final": 0.5248,
+     "titulo": 0.3938,
+     "rebaixamento": 0
+    },
+    "maringa": {
+     "quartas": 0.0464,
+     "semifinal": 0.0091,
+     "final": 0.0027,
+     "titulo": 0.0009,
+     "rebaixamento": 0.5209
+    },
+    "operario": {
+     "quartas": 0.0726,
+     "semifinal": 0.0204,
+     "final": 0.0054,
+     "titulo": 0.0013,
+     "rebaixamento": 0.6346
+    },
+    "sao-joseense": {
+     "quartas": 0.7289,
+     "semifinal": 0.2717,
+     "final": 0.1004,
+     "titulo": 0.0497,
+     "rebaixamento": 0.0908
+    }
+   }
+  },
+  {
+   "id": "rodada-5",
+   "rotulo": "Após a 5ª rodada",
+   "curto": "R5",
+   "ate": "2026-01-21T20:30:00-03:00",
+   "times": {
+    "andraus": {
+     "quartas": 0.2715,
+     "semifinal": 0.076,
+     "final": 0.0224,
+     "titulo": 0.0029,
+     "rebaixamento": 0.4544
+    },
+    "athletico": {
+     "quartas": 0.6864,
+     "semifinal": 0.2266,
+     "final": 0.0766,
+     "titulo": 0.0403,
+     "rebaixamento": 0.0951
+    },
+    "azuriz": {
+     "quartas": 1,
+     "semifinal": 0.6194,
+     "final": 0.3361,
+     "titulo": 0.1104,
+     "rebaixamento": 0
+    },
+    "cascavel": {
+     "quartas": 0.0277,
+     "semifinal": 0.0029,
+     "final": 0.0012,
+     "titulo": 0.0004,
+     "rebaixamento": 0.431
+    },
+    "cianorte": {
+     "quartas": 0.8719,
+     "semifinal": 0.3966,
+     "final": 0.1997,
+     "titulo": 0.0512,
+     "rebaixamento": 0.0632
+    },
+    "coritiba": {
+     "quartas": 1,
+     "semifinal": 0.6257,
+     "final": 0.3439,
+     "titulo": 0.105,
+     "rebaixamento": 0
+    },
+    "foz-do-iguacu": {
+     "quartas": 1,
+     "semifinal": 0.3778,
+     "final": 0.0778,
+     "titulo": 0.0372,
+     "rebaixamento": 0
+    },
+    "galo-maringa": {
+     "quartas": 0.2348,
+     "semifinal": 0.0676,
+     "final": 0.0226,
+     "titulo": 0.0036,
+     "rebaixamento": 0.503
+    },
+    "londrina": {
+     "quartas": 1,
+     "semifinal": 0.8228,
+     "final": 0.6561,
+     "titulo": 0.5326,
+     "rebaixamento": 0
+    },
+    "maringa": {
+     "quartas": 0.2859,
+     "semifinal": 0.0447,
+     "final": 0.0233,
+     "titulo": 0.0118,
+     "rebaixamento": 0.2293
+    },
+    "operario": {
+     "quartas": 0.6218,
+     "semifinal": 0.2147,
+     "final": 0.0753,
+     "titulo": 0.0134,
+     "rebaixamento": 0.224
+    },
+    "sao-joseense": {
+     "quartas": 1,
+     "semifinal": 0.5252,
+     "final": 0.165,
+     "titulo": 0.0912,
+     "rebaixamento": 0
+    }
+   }
+  },
+  {
+   "id": "rodada-6",
+   "rotulo": "Após a 6ª rodada",
+   "curto": "R6",
+   "ate": "2026-01-24T16:00:00-03:00",
+   "times": {
+    "andraus": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0.5961
+    },
+    "athletico": {
+     "quartas": 1,
+     "semifinal": 0.6396,
+     "final": 0.2117,
+     "titulo": 0.1171,
+     "rebaixamento": 0
+    },
+    "azuriz": {
+     "quartas": 1,
+     "semifinal": 0.684,
+     "final": 0.3744,
+     "titulo": 0.1403,
+     "rebaixamento": 0
+    },
+    "cascavel": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0.4039
+    },
+    "cianorte": {
+     "quartas": 1,
+     "semifinal": 0.5035,
+     "final": 0.2632,
+     "titulo": 0.0876,
+     "rebaixamento": 0
+    },
+    "coritiba": {
+     "quartas": 1,
+     "semifinal": 0.4965,
+     "final": 0.2591,
+     "titulo": 0.0846,
+     "rebaixamento": 0
+    },
+    "foz-do-iguacu": {
+     "quartas": 1,
+     "semifinal": 0.3604,
+     "final": 0.0784,
+     "titulo": 0.0366,
+     "rebaixamento": 0
+    },
+    "galo-maringa": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0.7613
+    },
+    "londrina": {
+     "quartas": 1,
+     "semifinal": 0.7596,
+     "final": 0.5991,
+     "titulo": 0.464,
+     "rebaixamento": 0
+    },
+    "maringa": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0.2387
+    },
+    "operario": {
+     "quartas": 1,
+     "semifinal": 0.316,
+     "final": 0.1033,
+     "titulo": 0.0187,
+     "rebaixamento": 0
+    },
+    "sao-joseense": {
+     "quartas": 1,
+     "semifinal": 0.2404,
+     "final": 0.1108,
+     "titulo": 0.0511,
+     "rebaixamento": 0
+    }
+   }
+  },
+  {
+   "id": "quartas-1",
+   "rotulo": "Após a ida das quartas",
+   "curto": "QF ida",
+   "ate": "2026-02-03T20:00:00-03:00",
+   "times": {
+    "andraus": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0.581
+    },
+    "athletico": {
+     "quartas": 1,
+     "semifinal": 0.9985,
+     "final": 0.4566,
+     "titulo": 0.2987,
+     "rebaixamento": 0
+    },
+    "azuriz": {
+     "quartas": 1,
+     "semifinal": 0.0956,
+     "final": 0.0423,
+     "titulo": 0.0129,
+     "rebaixamento": 0
+    },
+    "cascavel": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0.419
+    },
+    "cianorte": {
+     "quartas": 1,
+     "semifinal": 0.17,
+     "final": 0.092,
+     "titulo": 0.0267,
+     "rebaixamento": 0
+    },
+    "coritiba": {
+     "quartas": 1,
+     "semifinal": 0.83,
+     "final": 0.5163,
+     "titulo": 0.1856,
+     "rebaixamento": 0
+    },
+    "foz-do-iguacu": {
+     "quartas": 1,
+     "semifinal": 0.0015,
+     "final": 0.0002,
+     "titulo": 0.0001,
+     "rebaixamento": 0
+    },
+    "galo-maringa": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 1
+    },
+    "londrina": {
+     "quartas": 1,
+     "semifinal": 0.7101,
+     "final": 0.4437,
+     "titulo": 0.3382,
+     "rebaixamento": 0
+    },
+    "maringa": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "operario": {
+     "quartas": 1,
+     "semifinal": 0.9044,
+     "final": 0.3494,
+     "titulo": 0.0872,
+     "rebaixamento": 0
+    },
+    "sao-joseense": {
+     "quartas": 1,
+     "semifinal": 0.2899,
+     "final": 0.0995,
+     "titulo": 0.0506,
+     "rebaixamento": 0
+    }
+   }
+  },
+  {
+   "id": "quartas-2",
+   "rotulo": "Após as quartas",
+   "curto": "QF",
+   "ate": "2026-02-08T18:30:00-03:00",
+   "times": {
+    "andraus": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0.8572
+    },
+    "athletico": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0.406,
+     "titulo": 0.253,
+     "rebaixamento": 0
+    },
+    "azuriz": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "cascavel": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0.1428
+    },
+    "cianorte": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "coritiba": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0.6046,
+     "titulo": 0.2324,
+     "rebaixamento": 0
+    },
+    "foz-do-iguacu": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "galo-maringa": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 1
+    },
+    "londrina": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0.594,
+     "titulo": 0.4049,
+     "rebaixamento": 0
+    },
+    "maringa": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "operario": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0.3954,
+     "titulo": 0.1097,
+     "rebaixamento": 0
+    },
+    "sao-joseense": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    }
+   }
+  },
+  {
+   "id": "semifinal-1",
+   "rotulo": "Após a ida das semifinais",
+   "curto": "SF ida",
+   "ate": "2026-02-15T18:30:00-03:00",
+   "times": {
+    "andraus": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 1
+    },
+    "athletico": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0.5095,
+     "titulo": 0.3197,
+     "rebaixamento": 0
+    },
+    "azuriz": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "cascavel": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "cianorte": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "coritiba": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0.612,
+     "titulo": 0.2387,
+     "rebaixamento": 0
+    },
+    "foz-do-iguacu": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "galo-maringa": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 1
+    },
+    "londrina": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0.4905,
+     "titulo": 0.3285,
+     "rebaixamento": 0
+    },
+    "maringa": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "operario": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0.388,
+     "titulo": 0.1131,
+     "rebaixamento": 0
+    },
+    "sao-joseense": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    }
+   }
+  },
+  {
+   "id": "semifinal-2",
+   "rotulo": "Após as semifinais",
+   "curto": "SF",
+   "ate": "2026-02-22T16:00:00-03:00",
+   "times": {
+    "andraus": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 1
+    },
+    "athletico": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "azuriz": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "cascavel": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "cianorte": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "coritiba": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "foz-do-iguacu": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "galo-maringa": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 1
+    },
+    "londrina": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 1,
+     "titulo": 0.7557,
+     "rebaixamento": 0
+    },
+    "maringa": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "operario": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 1,
+     "titulo": 0.2443,
+     "rebaixamento": 0
+    },
+    "sao-joseense": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    }
+   }
+  },
+  {
+   "id": "final-1",
+   "rotulo": "Após a ida da final",
+   "curto": "F ida",
+   "ate": "2026-02-28T16:00:00-03:00",
+   "times": {
+    "andraus": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 1
+    },
+    "athletico": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "azuriz": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "cascavel": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "cianorte": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "coritiba": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "foz-do-iguacu": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "galo-maringa": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 1
+    },
+    "londrina": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 1,
+     "titulo": 0.702,
+     "rebaixamento": 0
+    },
+    "maringa": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "operario": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 1,
+     "titulo": 0.298,
+     "rebaixamento": 0
+    },
+    "sao-joseense": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    }
+   }
+  },
+  {
+   "id": "final-2",
+   "rotulo": "Fim do campeonato",
+   "curto": "Fim",
+   "ate": "2026-03-07T16:00:00-03:00",
+   "times": {
+    "andraus": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 1
+    },
+    "athletico": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "azuriz": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "cascavel": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "cianorte": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "coritiba": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "foz-do-iguacu": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "galo-maringa": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 1
+    },
+    "londrina": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 1,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "maringa": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "operario": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 1,
+     "titulo": 1,
+     "rebaixamento": 0
+    },
+    "sao-joseense": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    }
+   }
+  }
+ ]
+}

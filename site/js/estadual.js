@@ -60,7 +60,7 @@ async function iniciar() {
     console.error(erro);
     $("grupos").innerHTML = `<ol class="lista-times">${mensagem(
       `<strong>Não consegui carregar os dados.</strong><br>Abra o site pelo servidor local:
-       <code>python -m http.server 8000 --bind 127.0.0.1</code>.`, "erro")}</ol>`;
+       <code>python scripts/servidor_local.py</code>.`, "erro")}</ol>`;
     return;
   }
   $("rodape").innerHTML = montarRodape(dados.baixado_em);
@@ -238,10 +238,25 @@ function desenharMomento() {
   $("momento-anterior").disabled = estado.momento === 0;
   $("momento-proximo").disabled = estado.momento === chances.momentos.length - 1;
 
+  // Cada grupo da 1ª fase vira um bloco com a sua tabela. Um campeonato de tabela única
+  // (ex.: a fase de liga do Paulista 2026) é dividido em duas metades, para ficar lado a lado
+  // na tela grande, do mesmo jeito que os grupos A e B dos outros estaduais.
   const grupos = [...new Set(Object.values(dados.times).map((t) => t.grupo))].sort();
-  $("grupos").innerHTML = grupos.map((grupo) => {
+  const blocos = [];
+  for (const grupo of grupos) {
     const tabela = tabelaDoGrupo(dados, momento, grupo);
-    const cards = tabela.map((linha) => cardTime({
+    const titulo = formato.tituloGrupo ? formato.tituloGrupo(grupo) : `Grupo ${grupo}`;
+    if (grupos.length === 1 && tabela.length > 8) {
+      const metade = Math.ceil(tabela.length / 2);
+      blocos.push({ titulo: `${titulo} · 1º ao ${metade}º`, linhas: tabela.slice(0, metade) });
+      blocos.push({ titulo: `${titulo} · ${metade + 1}º ao ${tabela.length}º`, linhas: tabela.slice(metade) });
+    } else {
+      blocos.push({ titulo, linhas: tabela });
+    }
+  }
+
+  $("grupos").innerHTML = blocos.map(({ titulo, linhas }) => {
+    const cards = linhas.map((linha) => cardTime({
       linha,
       time: dados.times[linha.id],
       chances: momento.times[linha.id],
@@ -249,8 +264,8 @@ function desenharMomento() {
       zona: formato.zona(linha.posicao),
     })).join("");
     return `
-      <section class="grupo" aria-label="Grupo ${grupo}">
-        <h3 class="grupo__titulo">Grupo ${grupo}</h3>
+      <section class="grupo" aria-label="${escaparHtml(titulo)}">
+        <h3 class="grupo__titulo">${escaparHtml(titulo)}</h3>
         <div class="tabela-chances"><ol class="lista-times lista-times--varias">${cards}</ol></div>
       </section>`;
   }).join("");

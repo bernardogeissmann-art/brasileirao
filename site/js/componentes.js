@@ -396,6 +396,91 @@ export function legendaResultado(nomeMandante, nomeVisitante) {
 
 
 // ---------------------------------------------------------------------------
+// JOGOS DO DIA (página principal)
+// ---------------------------------------------------------------------------
+
+// A sequência recente de um time em quadradinhos: V (verde), E (cinza), D (vermelho).
+// A letra vai escrita dentro, para não depender só da cor.
+function formaRecente(forma) {
+  if (forma.length === 0) return "";
+  const nomes = { V: "vitória", E: "empate", D: "derrota" };
+  const itens = forma.map((r) => `<span class="forma__item forma__item--${r}" aria-hidden="true">${r}</span>`).join("");
+  return `<span class="forma" title="Últimos jogos, do mais antigo ao mais recente">${itens}<span class="so-leitor">Últimos jogos: ${forma.map((r) => nomes[r]).join(", ")}</span></span>`;
+}
+
+// Cartão de um confronto do dia: horário, estádio, os dois times (com posição, pontos e
+// sequência recente), as chances do jogo pelo modelo e onde assistir.
+//   jogo:      o jogo, do jogos.json
+//   times:     os times do jogos.json
+//   tabela:    Map id -> linha da tabela atual (posição, pontos...)
+//   forma:     { mandante: ["V", ...], visitante: [...] }
+//   chances:   o que chancesDoJogo() devolve (vitória, empate, placar mais provável...)
+//   situacao:  "antes", "andamento", "aguardando" ou "encerrado" (veja jogos-do-dia.js)
+export function cardConfronto({ jogo, times, tabela, forma, chances, situacao }) {
+  const hora = new Intl.DateTimeFormat("pt-BR", { timeZone: "America/Sao_Paulo", hour: "2-digit", minute: "2-digit" })
+    .format(new Date(jogo.data));
+  const selo = {
+    antes: `<span class="confronto__hora">${hora}</span>`,
+    andamento: `<span class="confronto__selo confronto__selo--agora">Começou às ${hora}</span>`,
+    aguardando: `<span class="confronto__selo">Começou às ${hora} · placar na próxima atualização</span>`,
+    encerrado: `<span class="confronto__selo">Encerrado</span>`,
+  }[situacao];
+
+  const linhaTime = (lado) => {
+    const id = jogo[lado];
+    const time = times[id];
+    const linha = tabela.get(id);
+    const placar = situacao === "encerrado" ? `<b class="confronto__placar">${jogo[`gols_${lado}`]}</b>` : "";
+    return `
+      <div class="confronto__time">
+        ${escudo(time, "confronto__escudo")}
+        <span class="confronto__nome">
+          <strong>${escaparHtml(time.nome)}</strong>
+          <small>${linha.posicao}º · ${linha.pontos} pts${lado === "mandante" ? " · em casa" : ""}</small>
+        </span>
+        ${formaRecente(forma[lado])}
+        ${placar}
+      </div>`;
+  };
+
+  // As chances só fazem sentido antes do jogo acabar.
+  let previsao = "";
+  if (situacao !== "encerrado") {
+    const { placarMaisProvavel: p } = chances;
+    const umaCasa = (n) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+    previsao = `
+      ${barraResultado({ nomeMandante: times[jogo.mandante].nome, nomeVisitante: times[jogo.visitante].nome,
+        vitoriaM: chances.vitoriaM, empate: chances.empate, vitoriaV: chances.vitoriaV })}
+      <p class="confronto__previsao">
+        <span>Placar mais provável <b>${p.gols_mandante} × ${p.gols_visitante}</b></span>
+        <span>Gols esperados <b>${umaCasa(chances.mediaM)} × ${umaCasa(chances.mediaV)}</b></span>
+      </p>`;
+  }
+
+  // Onde assistir: os canais vêm do ge.globo (escapados, porque vêm de fora).
+  const semInformacao = situacao === "antes" ? "ainda não divulgado" : "não informado";
+  const canais = jogo.transmissao?.length
+    ? jogo.transmissao.map((c) => `<li class="canal">${escaparHtml(c)}</li>`).join("")
+    : `<li class="canal canal--vazio">${semInformacao}</li>`;
+
+  return `
+    <li class="confronto">
+      <p class="confronto__topo">
+        ${selo}
+        <span class="confronto__info">Rodada ${jogo.rodada}${jogo.estadio ? ` · ${escaparHtml(jogo.estadio)}` : ""}</span>
+      </p>
+      ${linhaTime("mandante")}
+      ${linhaTime("visitante")}
+      ${previsao}
+      <div class="confronto__onde">
+        <span class="confronto__onde-rotulo">Onde assistir</span>
+        <ul class="canais">${canais}</ul>
+      </div>
+    </li>`;
+}
+
+
+// ---------------------------------------------------------------------------
 // SIMULADOR: JOGOS E RODADAS
 // ---------------------------------------------------------------------------
 

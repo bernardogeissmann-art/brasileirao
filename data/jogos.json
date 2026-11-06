@@ -2,7 +2,7 @@
   "fonte": "football-data.org",
   "competicao": "Campeonato Brasileiro Série A",
   "temporada": 2026,
-  "baixado_em": "2026-11-05T02:08:42-03:00",
+  "baixado_em": "2026-11-05T21:03:05-03:00",
   "times": {
     "bahia": {
       "nome": "Bahia",
@@ -156,7 +156,8 @@
       "gols_mandante": 2,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Arena MRV"
+      "estadio": "Arena MRV",
+      "transmissao": null
     },
     {
       "id": 554744,
@@ -168,7 +169,8 @@
       "gols_mandante": 0,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Couto Pereira"
+      "estadio": "Estádio Couto Pereira",
+      "transmissao": null
     },
     {
       "id": 554746,
@@ -180,7 +182,8 @@
       "gols_mandante": 0,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio José Pinheiro Borda (Beira-Rio)"
+      "estadio": "Estádio José Pinheiro Borda (Beira-Rio)",
+      "transmissao": null
     },
     {
       "id": 554749,
@@ -192,7 +195,8 @@
       "gols_mandante": 2,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Manoel Barradas (Barradão)"
+      "estadio": "Estádio Manoel Barradas (Barradão)",
+      "transmissao": null
     },
     {
       "id": 554745,
@@ -204,7 +208,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Mário Filho (Maracanã)"
+      "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
+      "transmissao": null
     },
     {
       "id": 554742,
@@ -216,7 +221,8 @@
       "gols_mandante": 4,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Arena Condá"
+      "estadio": "Arena Condá",
+      "transmissao": null
     },
     {
       "id": 554743,
@@ -228,7 +234,8 @@
       "gols_mandante": 1,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Urbano Caldeira (Vila Belmiro)"
+      "estadio": "Estádio Urbano Caldeira (Vila Belmiro)",
+      "transmissao": null
     },
     {
       "id": 554748,
@@ -240,7 +247,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Cícero Pompeu de Toledo (Morumbi)"
+      "estadio": "Estádio Cícero Pompeu de Toledo (Morumbi)",
+      "transmissao": null
     },
     {
       "id": 554747,
@@ -252,7 +260,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio José Maria de Campos Maia (Maião)"
+      "estadio": "Estádio José Maria de Campos Maia (Maião)",
+      "transmissao": null
     },
     {
       "id": 554741,
@@ -264,7 +273,8 @@
       "gols_mandante": 4,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Nilton Santos (Engenhão)"
+      "estadio": "Estádio Nilton Santos (Engenhão)",
+      "transmissao": null
     },
     {
       "id": 554752,
@@ -276,7 +286,8 @@
       "gols_mandante": 1,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Cícero de Souza Marques"
+      "estadio": "Estádio Cícero de Souza Marques",
+      "transmissao": null
     },
     {
       "id": 554754,
@@ -288,7 +299,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Mário Filho (Maracanã)"
+      "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
+      "transmissao": null
     },
     {
       "id": 554757,
@@ -300,7 +312,8 @@
       "gols_mandante": 2,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Edgar Proença (Mangueirão)"
+      "estadio": "Estádio Jornalista Edgar Proença (Mangueirão)",
+      "transmissao": null
     },
     {
       "id": 554758,
@@ -312,7 +325,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Urbano Caldeira (Vila Belmiro)"
+      "estadio": "Estádio Urbano Caldeira (Vila Belmiro)",
+      "transmissao": null
     },
     {
       "id": 554755,
@@ -324,7 +338,8 @@
       "gols_mandante": 5,
       "gols_visitante": 3,
       "status_fonte": "FINISHED",
-      "estadio": "Arena do Grêmio"
+      "estadio": "Arena do Grêmio",
+      "transmissao": null
     },
     {
       "id": 554756,
@@ -336,7 +351,8 @@
       "gols_mandante": 5,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Arena Barueri"
+      "estadio": "Arena Barueri",
+      "transmissao": null
     },
     {
       "id": 554751,
@@ -348,7 +364,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Arena Fonte Nova"
+      "estadio": "Arena Fonte Nova",
+      "transmissao": null
     },
     {
       "id": 554759,
@@ -360,7 +377,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio São Januário"
+      "estadio": "Estádio São Januário",
+      "transmissao": null
     },
     {
       "id": 554753,
@@ -372,7 +390,8 @@
       "gols_mandante": 1,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Governador Magalhães Pinto (Mineirão)"
+      "estadio": "Estádio Governador Magalhães Pinto (Mineirão)",
+      "transmissao": null
     },
     {
       "id": 554750,
@@ -384,7 +403,8 @@
       "gols_mandante": 0,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)"
+      "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)",
+      "transmissao": null
     },
     {
       "id": 554769,
@@ -396,7 +416,8 @@
       "gols_mandante": 1,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Manoel Barradas (Barradão)"
+      "estadio": "Estádio Manoel Barradas (Barradão)",
+      "transmissao": null
     },
     {
       "id": 554762,
@@ -408,7 +429,8 @@
       "gols_mandante": 3,
       "gols_visitante": 3,
       "status_fonte": "FINISHED",
-      "estadio": "Arena Condá"
+      "estadio": "Arena Condá",
+      "transmissao": null
     },
     {
       "id": 554766,
@@ -420,7 +442,8 @@
       "gols_mandante": 2,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio José Maria de Campos Maia (Maião)"
+      "estadio": "Estádio José Maria de Campos Maia (Maião)",
+      "transmissao": null
     },
     {
       "id": 554761,
@@ -432,7 +455,8 @@
       "gols_mandante": 3,
       "gols_visitante": 3,
       "status_fonte": "FINISHED",
-      "estadio": "Arena MRV"
+      "estadio": "Arena MRV",
+      "transmissao": null
     },
     {
       "id": 554767,
@@ -444,7 +468,8 @@
       "gols_mandante": 2,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Cícero Pompeu de Toledo (Morumbi)"
+      "estadio": "Estádio Cícero Pompeu de Toledo (Morumbi)",
+      "transmissao": null
     },
     {
       "id": 554768,
@@ -456,7 +481,8 @@
       "gols_mandante": 0,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio São Januário"
+      "estadio": "Estádio São Januário",
+      "transmissao": null
     },
     {
       "id": 554760,
@@ -468,7 +494,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)"
+      "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)",
+      "transmissao": null
     },
     {
       "id": 554764,
@@ -480,7 +507,8 @@
       "gols_mandante": 1,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Mário Filho (Maracanã)"
+      "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
+      "transmissao": null
     },
     {
       "id": 554763,
@@ -492,7 +520,8 @@
       "gols_mandante": 2,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Neo Química Arena (Itaquerão)"
+      "estadio": "Neo Química Arena (Itaquerão)",
+      "transmissao": null
     },
     {
       "id": 554765,
@@ -504,7 +533,8 @@
       "gols_mandante": 1,
       "gols_visitante": 3,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio José Pinheiro Borda (Beira-Rio)"
+      "estadio": "Estádio José Pinheiro Borda (Beira-Rio)",
+      "transmissao": null
     },
     {
       "id": 554772,
@@ -516,7 +546,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Cícero de Souza Marques"
+      "estadio": "Estádio Cícero de Souza Marques",
+      "transmissao": null
     },
     {
       "id": 554778,
@@ -528,7 +559,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Edgar Proença (Mangueirão)"
+      "estadio": "Estádio Jornalista Edgar Proença (Mangueirão)",
+      "transmissao": null
     },
     {
       "id": 554773,
@@ -540,7 +572,8 @@
       "gols_mandante": 0,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Couto Pereira"
+      "estadio": "Estádio Couto Pereira",
+      "transmissao": null
     },
     {
       "id": 554774,
@@ -552,7 +585,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Governador Magalhães Pinto (Mineirão)"
+      "estadio": "Estádio Governador Magalhães Pinto (Mineirão)",
+      "transmissao": null
     },
     {
       "id": 554776,
@@ -564,7 +598,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Arena do Grêmio"
+      "estadio": "Arena do Grêmio",
+      "transmissao": null
     },
     {
       "id": 554777,
@@ -576,7 +611,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Arena Barueri"
+      "estadio": "Arena Barueri",
+      "transmissao": null
     },
     {
       "id": 554779,
@@ -588,7 +624,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Urbano Caldeira (Vila Belmiro)"
+      "estadio": "Estádio Urbano Caldeira (Vila Belmiro)",
+      "transmissao": null
     },
     {
       "id": 554770,
@@ -600,7 +637,8 @@
       "gols_mandante": 2,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Arena Fonte Nova"
+      "estadio": "Arena Fonte Nova",
+      "transmissao": null
     },
     {
       "id": 554771,
@@ -612,7 +650,8 @@
       "gols_mandante": 0,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Nilton Santos (Engenhão)"
+      "estadio": "Estádio Nilton Santos (Engenhão)",
+      "transmissao": null
     },
     {
       "id": 554775,
@@ -624,7 +663,8 @@
       "gols_mandante": 2,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Mário Filho (Maracanã)"
+      "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
+      "transmissao": null
     },
     {
       "id": 554786,
@@ -636,7 +676,8 @@
       "gols_mandante": 2,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio José Maria de Campos Maia (Maião)"
+      "estadio": "Estádio José Maria de Campos Maia (Maião)",
+      "transmissao": null
     },
     {
       "id": 554781,
@@ -648,7 +689,8 @@
       "gols_mandante": 1,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Arena MRV"
+      "estadio": "Arena MRV",
+      "transmissao": null
     },
     {
       "id": 554782,
@@ -660,7 +702,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Arena Fonte Nova"
+      "estadio": "Arena Fonte Nova",
+      "transmissao": null
     },
     {
       "id": 554783,
@@ -672,7 +715,8 @@
       "gols_mandante": 0,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Neo Química Arena (Itaquerão)"
+      "estadio": "Neo Química Arena (Itaquerão)",
+      "transmissao": null
     },
     {
       "id": 554784,
@@ -684,7 +728,8 @@
       "gols_mandante": 2,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Mário Filho (Maracanã)"
+      "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
+      "transmissao": null
     },
     {
       "id": 554787,
@@ -696,7 +741,8 @@
       "gols_mandante": 0,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Edgar Proença (Mangueirão)"
+      "estadio": "Estádio Jornalista Edgar Proença (Mangueirão)",
+      "transmissao": null
     },
     {
       "id": 554789,
@@ -708,7 +754,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio São Januário"
+      "estadio": "Estádio São Januário",
+      "transmissao": null
     },
     {
       "id": 554788,
@@ -720,7 +767,8 @@
       "gols_mandante": 2,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio do Canindé"
+      "estadio": "Estádio do Canindé",
+      "transmissao": null
     },
     {
       "id": 554785,
@@ -732,7 +780,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Arena do Grêmio"
+      "estadio": "Arena do Grêmio",
+      "transmissao": null
     },
     {
       "id": 554780,
@@ -744,7 +793,8 @@
       "gols_mandante": 4,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)"
+      "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)",
+      "transmissao": null
     },
     {
       "id": 554799,
@@ -756,7 +806,8 @@
       "gols_mandante": 2,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Manoel Barradas (Barradão)"
+      "estadio": "Estádio Manoel Barradas (Barradão)",
+      "transmissao": null
     },
     {
       "id": 554790,
@@ -768,7 +819,8 @@
       "gols_mandante": 0,
       "gols_visitante": 3,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Nilton Santos (Engenhão)"
+      "estadio": "Estádio Nilton Santos (Engenhão)",
+      "transmissao": null
     },
     {
       "id": 554795,
@@ -780,7 +832,8 @@
       "gols_mandante": 3,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Mário Filho (Maracanã)"
+      "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
+      "transmissao": null
     },
     {
       "id": 554796,
@@ -792,7 +845,8 @@
       "gols_mandante": 0,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio José Pinheiro Borda (Beira-Rio)"
+      "estadio": "Estádio José Pinheiro Borda (Beira-Rio)",
+      "transmissao": null
     },
     {
       "id": 554798,
@@ -804,7 +858,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Urbano Caldeira (Vila Belmiro)"
+      "estadio": "Estádio Urbano Caldeira (Vila Belmiro)",
+      "transmissao": null
     },
     {
       "id": 554793,
@@ -816,7 +871,8 @@
       "gols_mandante": 1,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Couto Pereira"
+      "estadio": "Estádio Couto Pereira",
+      "transmissao": null
     },
     {
       "id": 554797,
@@ -828,7 +884,8 @@
       "gols_mandante": 1,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Nubank Parque"
+      "estadio": "Nubank Parque",
+      "transmissao": null
     },
     {
       "id": 554791,
@@ -840,7 +897,8 @@
       "gols_mandante": 1,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Cícero de Souza Marques"
+      "estadio": "Estádio Cícero de Souza Marques",
+      "transmissao": null
     },
     {
       "id": 554794,
@@ -852,7 +910,8 @@
       "gols_mandante": 3,
       "gols_visitante": 3,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Governador Magalhães Pinto (Mineirão)"
+      "estadio": "Estádio Governador Magalhães Pinto (Mineirão)",
+      "transmissao": null
     },
     {
       "id": 554792,
@@ -864,7 +923,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Arena Condá"
+      "estadio": "Arena Condá",
+      "transmissao": null
     },
     {
       "id": 554802,
@@ -876,7 +936,8 @@
       "gols_mandante": 2,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Arena Fonte Nova"
+      "estadio": "Arena Fonte Nova",
+      "transmissao": null
     },
     {
       "id": 554807,
@@ -888,7 +949,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Nubank Parque"
+      "estadio": "Nubank Parque",
+      "transmissao": null
     },
     {
       "id": 554800,
@@ -900,7 +962,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)"
+      "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)",
+      "transmissao": null
     },
     {
       "id": 554801,
@@ -912,7 +975,8 @@
       "gols_mandante": 1,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Arena MRV"
+      "estadio": "Arena MRV",
+      "transmissao": null
     },
     {
       "id": 554806,
@@ -924,7 +988,8 @@
       "gols_mandante": 0,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio José Maria de Campos Maia (Maião)"
+      "estadio": "Estádio José Maria de Campos Maia (Maião)",
+      "transmissao": null
     },
     {
       "id": 554808,
@@ -936,7 +1001,8 @@
       "gols_mandante": 1,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Urbano Caldeira (Vila Belmiro)"
+      "estadio": "Estádio Urbano Caldeira (Vila Belmiro)",
+      "transmissao": null
     },
     {
       "id": 554809,
@@ -948,7 +1014,8 @@
       "gols_mandante": 3,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Mário Filho (Maracanã)"
+      "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
+      "transmissao": null
     },
     {
       "id": 554805,
@@ -960,7 +1027,8 @@
       "gols_mandante": 2,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Arena do Grêmio"
+      "estadio": "Arena do Grêmio",
+      "transmissao": null
     },
     {
       "id": 554804,
@@ -972,7 +1040,8 @@
       "gols_mandante": 3,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Mário Filho (Maracanã)"
+      "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
+      "transmissao": null
     },
     {
       "id": 554803,
@@ -984,7 +1053,8 @@
       "gols_mandante": 0,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Arena Condá"
+      "estadio": "Arena Condá",
+      "transmissao": null
     },
     {
       "id": 554811,
@@ -996,7 +1066,8 @@
       "gols_mandante": 1,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Cícero de Souza Marques"
+      "estadio": "Estádio Cícero de Souza Marques",
+      "transmissao": null
     },
     {
       "id": 554814,
@@ -1008,7 +1079,8 @@
       "gols_mandante": 1,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Mário Filho (Maracanã)"
+      "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
+      "transmissao": null
     },
     {
       "id": 554817,
@@ -1020,7 +1092,8 @@
       "gols_mandante": 0,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Cícero Pompeu de Toledo (Morumbi)"
+      "estadio": "Estádio Cícero Pompeu de Toledo (Morumbi)",
+      "transmissao": null
     },
     {
       "id": 554810,
@@ -1032,7 +1105,8 @@
       "gols_mandante": 2,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)"
+      "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)",
+      "transmissao": null
     },
     {
       "id": 554813,
@@ -1044,7 +1118,8 @@
       "gols_mandante": 0,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Governador Magalhães Pinto (Mineirão)"
+      "estadio": "Estádio Governador Magalhães Pinto (Mineirão)",
+      "transmissao": null
     },
     {
       "id": 554816,
@@ -1056,7 +1131,8 @@
       "gols_mandante": 4,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Edgar Proença (Mangueirão)"
+      "estadio": "Estádio Jornalista Edgar Proença (Mangueirão)",
+      "transmissao": null
     },
     {
       "id": 554818,
@@ -1068,7 +1144,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio São Januário"
+      "estadio": "Estádio São Januário",
+      "transmissao": null
     },
     {
       "id": 554815,
@@ -1080,7 +1157,8 @@
       "gols_mandante": 2,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio José Pinheiro Borda (Beira-Rio)"
+      "estadio": "Estádio José Pinheiro Borda (Beira-Rio)",
+      "transmissao": null
     },
     {
       "id": 554819,
@@ -1092,7 +1170,8 @@
       "gols_mandante": 1,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Manoel Barradas (Barradão)"
+      "estadio": "Estádio Manoel Barradas (Barradão)",
+      "transmissao": null
     },
     {
       "id": 554812,
@@ -1104,7 +1183,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Neo Química Arena (Itaquerão)"
+      "estadio": "Neo Química Arena (Itaquerão)",
+      "transmissao": null
     },
     {
       "id": 554821,
@@ -1116,7 +1196,8 @@
       "gols_mandante": 3,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Nilton Santos (Engenhão)"
+      "estadio": "Estádio Nilton Santos (Engenhão)",
+      "transmissao": null
     },
     {
       "id": 554827,
@@ -1128,7 +1209,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio José Pinheiro Borda (Beira-Rio)"
+      "estadio": "Estádio José Pinheiro Borda (Beira-Rio)",
+      "transmissao": null
     },
     {
       "id": 554820,
@@ -1140,7 +1222,8 @@
       "gols_mandante": 3,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Arena Fonte Nova"
+      "estadio": "Arena Fonte Nova",
+      "transmissao": null
     },
     {
       "id": 554825,
@@ -1152,7 +1235,8 @@
       "gols_mandante": 3,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Governador Magalhães Pinto (Mineirão)"
+      "estadio": "Estádio Governador Magalhães Pinto (Mineirão)",
+      "transmissao": null
     },
     {
       "id": 554824,
@@ -1164,7 +1248,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Couto Pereira"
+      "estadio": "Estádio Couto Pereira",
+      "transmissao": null
     },
     {
       "id": 554826,
@@ -1176,7 +1261,8 @@
       "gols_mandante": 3,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Mário Filho (Maracanã)"
+      "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
+      "transmissao": null
     },
     {
       "id": 554823,
@@ -1188,7 +1274,8 @@
       "gols_mandante": 0,
       "gols_visitante": 4,
       "status_fonte": "FINISHED",
-      "estadio": "Arena Condá"
+      "estadio": "Arena Condá",
+      "transmissao": null
     },
     {
       "id": 554829,
@@ -1200,7 +1287,8 @@
       "gols_mandante": 2,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Urbano Caldeira (Vila Belmiro)"
+      "estadio": "Estádio Urbano Caldeira (Vila Belmiro)",
+      "transmissao": null
     },
     {
       "id": 554822,
@@ -1212,7 +1300,8 @@
       "gols_mandante": 3,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Cícero de Souza Marques"
+      "estadio": "Estádio Cícero de Souza Marques",
+      "transmissao": null
     },
     {
       "id": 554828,
@@ -1224,7 +1313,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Arena Barueri"
+      "estadio": "Arena Barueri",
+      "transmissao": null
     },
     {
       "id": 554838,
@@ -1236,7 +1326,8 @@
       "gols_mandante": 4,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Cícero Pompeu de Toledo (Morumbi)"
+      "estadio": "Estádio Cícero Pompeu de Toledo (Morumbi)",
+      "transmissao": null
     },
     {
       "id": 554834,
@@ -1248,7 +1339,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Couto Pereira"
+      "estadio": "Estádio Couto Pereira",
+      "transmissao": null
     },
     {
       "id": 554839,
@@ -1260,7 +1352,8 @@
       "gols_mandante": 1,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio São Januário"
+      "estadio": "Estádio São Januário",
+      "transmissao": null
     },
     {
       "id": 554832,
@@ -1272,7 +1365,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Arena Condá"
+      "estadio": "Arena Condá",
+      "transmissao": null
     },
     {
       "id": 554830,
@@ -1284,7 +1378,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Arena MRV"
+      "estadio": "Arena MRV",
+      "transmissao": null
     },
     {
       "id": 554835,
@@ -1296,7 +1391,8 @@
       "gols_mandante": 3,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Mário Filho (Maracanã)"
+      "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
+      "transmissao": null
     },
     {
       "id": 554831,
@@ -1308,7 +1404,8 @@
       "gols_mandante": 1,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Arena Fonte Nova"
+      "estadio": "Arena Fonte Nova",
+      "transmissao": null
     },
     {
       "id": 554833,
@@ -1320,7 +1417,8 @@
       "gols_mandante": 0,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Neo Química Arena (Itaquerão)"
+      "estadio": "Neo Química Arena (Itaquerão)",
+      "transmissao": null
     },
     {
       "id": 554837,
@@ -1332,7 +1430,8 @@
       "gols_mandante": 0,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio José Maria de Campos Maia (Maião)"
+      "estadio": "Estádio José Maria de Campos Maia (Maião)",
+      "transmissao": null
     },
     {
       "id": 554836,
@@ -1344,7 +1443,8 @@
       "gols_mandante": 0,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Arena do Grêmio"
+      "estadio": "Arena do Grêmio",
+      "transmissao": null
     },
     {
       "id": 554847,
@@ -1356,7 +1456,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Edgar Proença (Mangueirão)"
+      "estadio": "Estádio Jornalista Edgar Proença (Mangueirão)",
+      "transmissao": null
     },
     {
       "id": 554849,
@@ -1368,7 +1469,8 @@
       "gols_mandante": 2,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Manoel Barradas (Barradão)"
+      "estadio": "Estádio Manoel Barradas (Barradão)",
+      "transmissao": null
     },
     {
       "id": 554846,
@@ -1380,7 +1482,8 @@
       "gols_mandante": 1,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio José Maria de Campos Maia (Maião)"
+      "estadio": "Estádio José Maria de Campos Maia (Maião)",
+      "transmissao": null
     },
     {
       "id": 554848,
@@ -1392,7 +1495,8 @@
       "gols_mandante": 1,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Urbano Caldeira (Vila Belmiro)"
+      "estadio": "Estádio Urbano Caldeira (Vila Belmiro)",
+      "transmissao": null
     },
     {
       "id": 554845,
@@ -1404,7 +1508,8 @@
       "gols_mandante": 0,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio José Pinheiro Borda (Beira-Rio)"
+      "estadio": "Estádio José Pinheiro Borda (Beira-Rio)",
+      "transmissao": null
     },
     {
       "id": 554840,
@@ -1416,7 +1521,8 @@
       "gols_mandante": 2,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)"
+      "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)",
+      "transmissao": null
     },
     {
       "id": 554841,
@@ -1428,7 +1534,8 @@
       "gols_mandante": 2,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Nilton Santos (Engenhão)"
+      "estadio": "Estádio Nilton Santos (Engenhão)",
+      "transmissao": null
     },
     {
       "id": 554844,
@@ -1440,7 +1547,8 @@
       "gols_mandante": 1,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Mário Filho (Maracanã)"
+      "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
+      "transmissao": null
     },
     {
       "id": 554842,
@@ -1452,7 +1560,8 @@
       "gols_mandante": 0,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Neo Química Arena (Itaquerão)"
+      "estadio": "Neo Química Arena (Itaquerão)",
+      "transmissao": null
     },
     {
       "id": 554843,
@@ -1464,7 +1573,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Governador Magalhães Pinto (Mineirão)"
+      "estadio": "Estádio Governador Magalhães Pinto (Mineirão)",
+      "transmissao": null
     },
     {
       "id": 554851,
@@ -1476,7 +1586,8 @@
       "gols_mandante": 1,
       "gols_visitante": 4,
       "status_fonte": "FINISHED",
-      "estadio": "Arena Condá"
+      "estadio": "Arena Condá",
+      "transmissao": null
     },
     {
       "id": 554858,
@@ -1488,7 +1599,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio São Januário"
+      "estadio": "Estádio São Januário",
+      "transmissao": null
     },
     {
       "id": 554859,
@@ -1500,7 +1612,8 @@
       "gols_mandante": 0,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Manoel Barradas (Barradão)"
+      "estadio": "Estádio Manoel Barradas (Barradão)",
+      "transmissao": null
     },
     {
       "id": 554853,
@@ -1512,7 +1625,8 @@
       "gols_mandante": 2,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Governador Magalhães Pinto (Mineirão)"
+      "estadio": "Estádio Governador Magalhães Pinto (Mineirão)",
+      "transmissao": null
     },
     {
       "id": 554855,
@@ -1524,7 +1638,8 @@
       "gols_mandante": 1,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio José Pinheiro Borda (Beira-Rio)"
+      "estadio": "Estádio José Pinheiro Borda (Beira-Rio)",
+      "transmissao": null
     },
     {
       "id": 554852,
@@ -1536,7 +1651,8 @@
       "gols_mandante": 2,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Couto Pereira"
+      "estadio": "Estádio Couto Pereira",
+      "transmissao": null
     },
     {
       "id": 554857,
@@ -1548,7 +1664,8 @@
       "gols_mandante": 2,
       "gols_visitante": 3,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Urbano Caldeira (Vila Belmiro)"
+      "estadio": "Estádio Urbano Caldeira (Vila Belmiro)",
+      "transmissao": null
     },
     {
       "id": 554850,
@@ -1560,7 +1677,8 @@
       "gols_mandante": 4,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Cícero de Souza Marques"
+      "estadio": "Estádio Cícero de Souza Marques",
+      "transmissao": null
     },
     {
       "id": 554856,
@@ -1572,7 +1690,8 @@
       "gols_mandante": 1,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Nubank Parque"
+      "estadio": "Nubank Parque",
+      "transmissao": null
     },
     {
       "id": 554854,
@@ -1584,7 +1703,8 @@
       "gols_mandante": 2,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Mário Filho (Maracanã)"
+      "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
+      "transmissao": null
     },
     {
       "id": 554862,
@@ -1596,7 +1716,8 @@
       "gols_mandante": 2,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Arena Fonte Nova"
+      "estadio": "Arena Fonte Nova",
+      "transmissao": null
     },
     {
       "id": 554863,
@@ -1608,7 +1729,8 @@
       "gols_mandante": 2,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Mané Garrincha"
+      "estadio": "Estádio Mané Garrincha",
+      "transmissao": null
     },
     {
       "id": 554868,
@@ -1620,7 +1742,8 @@
       "gols_mandante": 0,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Evandro Almeida (Baenão)"
+      "estadio": "Estádio Evandro Almeida (Baenão)",
+      "transmissao": null
     },
     {
       "id": 554869,
@@ -1632,7 +1755,8 @@
       "gols_mandante": 1,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Brinco de Ouro da Princesa"
+      "estadio": "Estádio Brinco de Ouro da Princesa",
+      "transmissao": null
     },
     {
       "id": 554865,
@@ -1644,7 +1768,8 @@
       "gols_mandante": 1,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Neo Química Arena (Itaquerão)"
+      "estadio": "Neo Química Arena (Itaquerão)",
+      "transmissao": null
     },
     {
       "id": 554867,
@@ -1656,7 +1781,8 @@
       "gols_mandante": 1,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Arena do Grêmio"
+      "estadio": "Arena do Grêmio",
+      "transmissao": null
     },
     {
       "id": 554860,
@@ -1668,7 +1794,8 @@
       "gols_mandante": 3,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)"
+      "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)",
+      "transmissao": null
     },
     {
       "id": 554864,
@@ -1680,7 +1807,8 @@
       "gols_mandante": 0,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Cícero de Souza Marques"
+      "estadio": "Estádio Cícero de Souza Marques",
+      "transmissao": null
     },
     {
       "id": 554861,
@@ -1692,7 +1820,8 @@
       "gols_mandante": 0,
       "gols_visitante": 4,
       "status_fonte": "FINISHED",
-      "estadio": "Arena MRV"
+      "estadio": "Arena MRV",
+      "transmissao": null
     },
     {
       "id": 554866,
@@ -1704,7 +1833,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Mário Filho (Maracanã)"
+      "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
+      "transmissao": null
     },
     {
       "id": 554871,
@@ -1716,7 +1846,8 @@
       "gols_mandante": 1,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Nilton Santos (Engenhão)"
+      "estadio": "Estádio Nilton Santos (Engenhão)",
+      "transmissao": null
     },
     {
       "id": 554877,
@@ -1728,7 +1859,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Nubank Parque"
+      "estadio": "Nubank Parque",
+      "transmissao": null
     },
     {
       "id": 554879,
@@ -1740,7 +1872,8 @@
       "gols_mandante": 4,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Manoel Barradas (Barradão)"
+      "estadio": "Estádio Manoel Barradas (Barradão)",
+      "transmissao": null
     },
     {
       "id": 554870,
@@ -1752,7 +1885,8 @@
       "gols_mandante": 0,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)"
+      "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)",
+      "transmissao": null
     },
     {
       "id": 554873,
@@ -1764,7 +1898,8 @@
       "gols_mandante": 1,
       "gols_visitante": 3,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Governador Magalhães Pinto (Mineirão)"
+      "estadio": "Estádio Governador Magalhães Pinto (Mineirão)",
+      "transmissao": null
     },
     {
       "id": 554874,
@@ -1776,7 +1911,8 @@
       "gols_mandante": 2,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Mário Filho (Maracanã)"
+      "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
+      "transmissao": null
     },
     {
       "id": 554878,
@@ -1788,7 +1924,8 @@
       "gols_mandante": 2,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Cícero de Souza Marques"
+      "estadio": "Estádio Cícero de Souza Marques",
+      "transmissao": null
     },
     {
       "id": 554872,
@@ -1800,7 +1937,8 @@
       "gols_mandante": 1,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Arena Condá"
+      "estadio": "Arena Condá",
+      "transmissao": null
     },
     {
       "id": 554875,
@@ -1812,7 +1950,8 @@
       "gols_mandante": 2,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio José Pinheiro Borda (Beira-Rio)"
+      "estadio": "Estádio José Pinheiro Borda (Beira-Rio)",
+      "transmissao": null
     },
     {
       "id": 554876,
@@ -1824,7 +1963,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio José Maria de Campos Maia (Maião)"
+      "estadio": "Estádio José Maria de Campos Maia (Maião)",
+      "transmissao": null
     },
     {
       "id": 554883,
@@ -1836,7 +1976,8 @@
       "gols_mandante": 2,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Couto Pereira"
+      "estadio": "Estádio Couto Pereira",
+      "transmissao": null
     },
     {
       "id": 554884,
@@ -1848,7 +1989,8 @@
       "gols_mandante": 2,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Mário Filho (Maracanã)"
+      "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
+      "transmissao": null
     },
     {
       "id": 554881,
@@ -1860,7 +2002,8 @@
       "gols_mandante": 1,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Arena Fonte Nova"
+      "estadio": "Arena Fonte Nova",
+      "transmissao": null
     },
     {
       "id": 554880,
@@ -1872,7 +2015,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Arena MRV"
+      "estadio": "Arena MRV",
+      "transmissao": null
     },
     {
       "id": 554887,
@@ -1884,7 +2028,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Edgar Proença (Mangueirão)"
+      "estadio": "Estádio Jornalista Edgar Proença (Mangueirão)",
+      "transmissao": null
     },
     {
       "id": 554882,
@@ -1896,7 +2041,8 @@
       "gols_mandante": 3,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Neo Química Arena (Itaquerão)"
+      "estadio": "Neo Química Arena (Itaquerão)",
+      "transmissao": null
     },
     {
       "id": 554886,
@@ -1908,7 +2054,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio José Maria de Campos Maia (Maião)"
+      "estadio": "Estádio José Maria de Campos Maia (Maião)",
+      "transmissao": null
     },
     {
       "id": 554888,
@@ -1920,7 +2067,8 @@
       "gols_mandante": 2,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Urbano Caldeira (Vila Belmiro)"
+      "estadio": "Estádio Urbano Caldeira (Vila Belmiro)",
+      "transmissao": null
     },
     {
       "id": 554885,
@@ -1932,7 +2080,8 @@
       "gols_mandante": 0,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Arena do Grêmio"
+      "estadio": "Arena do Grêmio",
+      "transmissao": null
     },
     {
       "id": 554889,
@@ -1944,7 +2093,8 @@
       "gols_mandante": 1,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio São Januário"
+      "estadio": "Estádio São Januário",
+      "transmissao": null
     },
     {
       "id": 554891,
@@ -1956,7 +2106,8 @@
       "gols_mandante": 3,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Arena MRV"
+      "estadio": "Arena MRV",
+      "transmissao": null
     },
     {
       "id": 554897,
@@ -1968,7 +2119,8 @@
       "gols_mandante": 4,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio José Pinheiro Borda (Beira-Rio)"
+      "estadio": "Estádio José Pinheiro Borda (Beira-Rio)",
+      "transmissao": null
     },
     {
       "id": 554896,
@@ -1980,7 +2132,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Mário Filho (Maracanã)"
+      "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
+      "transmissao": null
     },
     {
       "id": 554898,
@@ -1992,7 +2145,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Arena Barueri"
+      "estadio": "Arena Barueri",
+      "transmissao": null
     },
     {
       "id": 554899,
@@ -2004,7 +2158,8 @@
       "gols_mandante": 0,
       "gols_visitante": 3,
       "status_fonte": "FINISHED",
-      "estadio": "Neo Química Arena (Itaquerão)"
+      "estadio": "Neo Química Arena (Itaquerão)",
+      "transmissao": null
     },
     {
       "id": 554892,
@@ -2016,7 +2171,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Arena Fonte Nova"
+      "estadio": "Arena Fonte Nova",
+      "transmissao": null
     },
     {
       "id": 554893,
@@ -2028,7 +2184,8 @@
       "gols_mandante": 3,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Nilton Santos (Engenhão)"
+      "estadio": "Estádio Nilton Santos (Engenhão)",
+      "transmissao": null
     },
     {
       "id": 554894,
@@ -2040,7 +2197,8 @@
       "gols_mandante": 2,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Cícero de Souza Marques"
+      "estadio": "Estádio Cícero de Souza Marques",
+      "transmissao": null
     },
     {
       "id": 554895,
@@ -2052,7 +2210,8 @@
       "gols_mandante": 2,
       "gols_visitante": 3,
       "status_fonte": "FINISHED",
-      "estadio": "Arena Condá"
+      "estadio": "Arena Condá",
+      "transmissao": null
     },
     {
       "id": 554890,
@@ -2064,7 +2223,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)"
+      "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)",
+      "transmissao": null
     },
     {
       "id": 554907,
@@ -2076,7 +2236,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Cícero Pompeu de Toledo (Morumbi)"
+      "estadio": "Estádio Cícero Pompeu de Toledo (Morumbi)",
+      "transmissao": null
     },
     {
       "id": 554909,
@@ -2088,7 +2249,8 @@
       "gols_mandante": 2,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Manoel Barradas (Barradão)"
+      "estadio": "Estádio Manoel Barradas (Barradão)",
+      "transmissao": null
     },
     {
       "id": 554904,
@@ -2100,7 +2262,8 @@
       "gols_mandante": 3,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Arena do Grêmio"
+      "estadio": "Arena do Grêmio",
+      "transmissao": null
     },
     {
       "id": 554905,
@@ -2112,7 +2275,8 @@
       "gols_mandante": 1,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio José Maria de Campos Maia (Maião)"
+      "estadio": "Estádio José Maria de Campos Maia (Maião)",
+      "transmissao": null
     },
     {
       "id": 554903,
@@ -2124,7 +2288,8 @@
       "gols_mandante": 0,
       "gols_visitante": 3,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Mário Filho (Maracanã)"
+      "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
+      "transmissao": null
     },
     {
       "id": 554902,
@@ -2136,7 +2301,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Governador Magalhães Pinto (Mineirão)"
+      "estadio": "Estádio Governador Magalhães Pinto (Mineirão)",
+      "transmissao": null
     },
     {
       "id": 554906,
@@ -2148,7 +2314,8 @@
       "gols_mandante": 1,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Edgar Proença (Mangueirão)"
+      "estadio": "Estádio Jornalista Edgar Proença (Mangueirão)",
+      "transmissao": null
     },
     {
       "id": 554900,
@@ -2160,7 +2327,8 @@
       "gols_mandante": 1,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Neo Química Arena (Itaquerão)"
+      "estadio": "Neo Química Arena (Itaquerão)",
+      "transmissao": null
     },
     {
       "id": 554908,
@@ -2172,7 +2340,8 @@
       "gols_mandante": 0,
       "gols_visitante": 3,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio São Januário"
+      "estadio": "Estádio São Januário",
+      "transmissao": null
     },
     {
       "id": 554901,
@@ -2184,7 +2353,8 @@
       "gols_mandante": 3,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Couto Pereira"
+      "estadio": "Estádio Couto Pereira",
+      "transmissao": null
     },
     {
       "id": 554910,
@@ -2196,7 +2366,8 @@
       "gols_mandante": 1,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)"
+      "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)",
+      "transmissao": null
     },
     {
       "id": 554914,
@@ -2208,7 +2379,8 @@
       "gols_mandante": 3,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Mário Filho (Maracanã)"
+      "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
+      "transmissao": null
     },
     {
       "id": 554911,
@@ -2220,7 +2392,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Arena Fonte Nova"
+      "estadio": "Arena Fonte Nova",
+      "transmissao": null
     },
     {
       "id": 554915,
@@ -2232,7 +2405,8 @@
       "gols_mandante": 1,
       "gols_visitante": 3,
       "status_fonte": "FINISHED",
-      "estadio": "Arena do Grêmio"
+      "estadio": "Arena do Grêmio",
+      "transmissao": null
     },
     {
       "id": 554918,
@@ -2244,7 +2418,8 @@
       "gols_mandante": 3,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Urbano Caldeira (Vila Belmiro)"
+      "estadio": "Estádio Urbano Caldeira (Vila Belmiro)",
+      "transmissao": null
     },
     {
       "id": 554912,
@@ -2256,7 +2431,8 @@
       "gols_mandante": 3,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Cícero de Souza Marques"
+      "estadio": "Estádio Cícero de Souza Marques",
+      "transmissao": null
     },
     {
       "id": 554916,
@@ -2268,7 +2444,8 @@
       "gols_mandante": 1,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Nubank Parque"
+      "estadio": "Nubank Parque",
+      "transmissao": null
     },
     {
       "id": 554919,
@@ -2280,7 +2457,8 @@
       "gols_mandante": 0,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio São Januário"
+      "estadio": "Estádio São Januário",
+      "transmissao": null
     },
     {
       "id": 554913,
@@ -2292,7 +2470,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Governador Magalhães Pinto (Mineirão)"
+      "estadio": "Estádio Governador Magalhães Pinto (Mineirão)",
+      "transmissao": null
     },
     {
       "id": 554917,
@@ -2304,7 +2483,8 @@
       "gols_mandante": 1,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Edgar Proença (Mangueirão)"
+      "estadio": "Estádio Jornalista Edgar Proença (Mangueirão)",
+      "transmissao": null
     },
     {
       "id": 554921,
@@ -2316,7 +2496,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Nilton Santos (Engenhão)"
+      "estadio": "Estádio Nilton Santos (Engenhão)",
+      "transmissao": null
     },
     {
       "id": 554929,
@@ -2328,7 +2509,8 @@
       "gols_mandante": 1,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Manoel Barradas (Barradão)"
+      "estadio": "Estádio Manoel Barradas (Barradão)",
+      "transmissao": null
     },
     {
       "id": 554925,
@@ -2340,7 +2522,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Mário Filho (Maracanã)"
+      "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
+      "transmissao": null
     },
     {
       "id": 554927,
@@ -2352,7 +2535,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio José Maria de Campos Maia (Maião)"
+      "estadio": "Estádio José Maria de Campos Maia (Maião)",
+      "transmissao": null
     },
     {
       "id": 554920,
@@ -2364,7 +2548,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Arena MRV"
+      "estadio": "Arena MRV",
+      "transmissao": null
     },
     {
       "id": 554924,
@@ -2376,7 +2561,8 @@
       "gols_mandante": 1,
       "gols_visitante": 3,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Couto Pereira"
+      "estadio": "Estádio Couto Pereira",
+      "transmissao": null
     },
     {
       "id": 554922,
@@ -2388,7 +2574,8 @@
       "gols_mandante": 0,
       "gols_visitante": 4,
       "status_fonte": "FINISHED",
-      "estadio": "Arena Condá"
+      "estadio": "Arena Condá",
+      "transmissao": null
     },
     {
       "id": 554926,
@@ -2400,7 +2587,8 @@
       "gols_mandante": 1,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio José Pinheiro Borda (Beira-Rio)"
+      "estadio": "Estádio José Pinheiro Borda (Beira-Rio)",
+      "transmissao": null
     },
     {
       "id": 554928,
@@ -2412,7 +2600,8 @@
       "gols_mandante": 1,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Cícero de Souza Marques"
+      "estadio": "Estádio Cícero de Souza Marques",
+      "transmissao": null
     },
     {
       "id": 554923,
@@ -2424,7 +2613,8 @@
       "gols_mandante": 3,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Neo Química Arena (Itaquerão)"
+      "estadio": "Neo Química Arena (Itaquerão)",
+      "transmissao": null
     },
     {
       "id": 554930,
@@ -2436,7 +2626,8 @@
       "gols_mandante": 2,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)"
+      "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)",
+      "transmissao": null
     },
     {
       "id": 554938,
@@ -2448,7 +2639,8 @@
       "gols_mandante": 2,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Urbano Caldeira (Vila Belmiro)"
+      "estadio": "Estádio Urbano Caldeira (Vila Belmiro)",
+      "transmissao": null
     },
     {
       "id": 554939,
@@ -2460,7 +2652,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio São Januário"
+      "estadio": "Estádio São Januário",
+      "transmissao": null
     },
     {
       "id": 554931,
@@ -2472,7 +2665,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Arena Fonte Nova"
+      "estadio": "Arena Fonte Nova",
+      "transmissao": null
     },
     {
       "id": 554933,
@@ -2484,7 +2678,8 @@
       "gols_mandante": 0,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Governador Magalhães Pinto (Mineirão)"
+      "estadio": "Estádio Governador Magalhães Pinto (Mineirão)",
+      "transmissao": null
     },
     {
       "id": 554932,
@@ -2496,7 +2691,8 @@
       "gols_mandante": 0,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Cícero de Souza Marques"
+      "estadio": "Estádio Cícero de Souza Marques",
+      "transmissao": null
     },
     {
       "id": 554934,
@@ -2508,7 +2704,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Mário Filho (Maracanã)"
+      "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
+      "transmissao": null
     },
     {
       "id": 554935,
@@ -2520,7 +2717,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Arena do Grêmio"
+      "estadio": "Arena do Grêmio",
+      "transmissao": null
     },
     {
       "id": 554936,
@@ -2532,7 +2730,8 @@
       "gols_mandante": 1,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Nubank Parque"
+      "estadio": "Nubank Parque",
+      "transmissao": null
     },
     {
       "id": 554937,
@@ -2544,7 +2743,8 @@
       "gols_mandante": 2,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Edgar Proença (Mangueirão)"
+      "estadio": "Estádio Jornalista Edgar Proença (Mangueirão)",
+      "transmissao": null
     },
     {
       "id": 554946,
@@ -2556,7 +2756,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio José Pinheiro Borda (Beira-Rio)"
+      "estadio": "Estádio José Pinheiro Borda (Beira-Rio)",
+      "transmissao": null
     },
     {
       "id": 554947,
@@ -2568,7 +2769,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio José Maria de Campos Maia (Maião)"
+      "estadio": "Estádio José Maria de Campos Maia (Maião)",
+      "transmissao": null
     },
     {
       "id": 554945,
@@ -2580,7 +2782,8 @@
       "gols_mandante": 0,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Mário Filho (Maracanã)"
+      "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
+      "transmissao": null
     },
     {
       "id": 554949,
@@ -2592,7 +2795,8 @@
       "gols_mandante": 0,
       "gols_visitante": 4,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Manoel Barradas (Barradão)"
+      "estadio": "Estádio Manoel Barradas (Barradão)",
+      "transmissao": null
     },
     {
       "id": 554943,
@@ -2604,7 +2808,8 @@
       "gols_mandante": 0,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Neo Química Arena (Itaquerão)"
+      "estadio": "Neo Química Arena (Itaquerão)",
+      "transmissao": null
     },
     {
       "id": 554944,
@@ -2616,7 +2821,8 @@
       "gols_mandante": 0,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Couto Pereira"
+      "estadio": "Estádio Couto Pereira",
+      "transmissao": null
     },
     {
       "id": 554941,
@@ -2628,7 +2834,8 @@
       "gols_mandante": 3,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Nilton Santos (Engenhão)"
+      "estadio": "Estádio Nilton Santos (Engenhão)",
+      "transmissao": null
     },
     {
       "id": 554948,
@@ -2640,7 +2847,8 @@
       "gols_mandante": 1,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Cícero Pompeu de Toledo (Morumbi)"
+      "estadio": "Estádio Cícero Pompeu de Toledo (Morumbi)",
+      "transmissao": null
     },
     {
       "id": 554940,
@@ -2652,7 +2860,8 @@
       "gols_mandante": 1,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Arena MRV"
+      "estadio": "Arena MRV",
+      "transmissao": null
     },
     {
       "id": 554942,
@@ -2664,7 +2873,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "TIMED",
-      "estadio": "Arena Condá"
+      "estadio": "Arena Condá",
+      "transmissao": null
     },
     {
       "id": 554956,
@@ -2676,7 +2886,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Arena do Grêmio"
+      "estadio": "Arena do Grêmio",
+      "transmissao": null
     },
     {
       "id": 554958,
@@ -2688,7 +2899,8 @@
       "gols_mandante": 2,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Edgar Proença (Mangueirão)"
+      "estadio": "Estádio Jornalista Edgar Proença (Mangueirão)",
+      "transmissao": null
     },
     {
       "id": 554953,
@@ -2700,7 +2912,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Couto Pereira"
+      "estadio": "Estádio Couto Pereira",
+      "transmissao": null
     },
     {
       "id": 554951,
@@ -2712,7 +2925,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Nilton Santos (Engenhão)"
+      "estadio": "Estádio Nilton Santos (Engenhão)",
+      "transmissao": null
     },
     {
       "id": 554954,
@@ -2724,7 +2938,8 @@
       "gols_mandante": 3,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Governador Magalhães Pinto (Mineirão)"
+      "estadio": "Estádio Governador Magalhães Pinto (Mineirão)",
+      "transmissao": null
     },
     {
       "id": 554950,
@@ -2736,7 +2951,8 @@
       "gols_mandante": 0,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Arena Fonte Nova"
+      "estadio": "Arena Fonte Nova",
+      "transmissao": null
     },
     {
       "id": 554957,
@@ -2748,7 +2964,8 @@
       "gols_mandante": 0,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Nubank Parque"
+      "estadio": "Nubank Parque",
+      "transmissao": null
     },
     {
       "id": 554952,
@@ -2760,7 +2977,8 @@
       "gols_mandante": 0,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Cícero de Souza Marques"
+      "estadio": "Estádio Cícero de Souza Marques",
+      "transmissao": null
     },
     {
       "id": 554959,
@@ -2772,7 +2990,8 @@
       "gols_mandante": 0,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Urbano Caldeira (Vila Belmiro)"
+      "estadio": "Estádio Urbano Caldeira (Vila Belmiro)",
+      "transmissao": null
     },
     {
       "id": 554955,
@@ -2784,7 +3003,8 @@
       "gols_mandante": 2,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Mário Filho (Maracanã)"
+      "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
+      "transmissao": null
     },
     {
       "id": 554964,
@@ -2796,7 +3016,8 @@
       "gols_mandante": 3,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Mário Filho (Maracanã)"
+      "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
+      "transmissao": null
     },
     {
       "id": 554960,
@@ -2808,7 +3029,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)"
+      "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)",
+      "transmissao": null
     },
     {
       "id": 554967,
@@ -2820,7 +3042,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Cícero Pompeu de Toledo (Morumbi)"
+      "estadio": "Estádio Cícero Pompeu de Toledo (Morumbi)",
+      "transmissao": null
     },
     {
       "id": 554962,
@@ -2832,7 +3055,8 @@
       "gols_mandante": 3,
       "gols_visitante": 3,
       "status_fonte": "FINISHED",
-      "estadio": "Arena Condá"
+      "estadio": "Arena Condá",
+      "transmissao": null
     },
     {
       "id": 554961,
@@ -2844,7 +3068,8 @@
       "gols_mandante": 3,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Arena MRV"
+      "estadio": "Arena MRV",
+      "transmissao": null
     },
     {
       "id": 554968,
@@ -2856,7 +3081,8 @@
       "gols_mandante": 0,
       "gols_visitante": 3,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio São Januário"
+      "estadio": "Estádio São Januário",
+      "transmissao": null
     },
     {
       "id": 554966,
@@ -2868,7 +3094,8 @@
       "gols_mandante": 1,
       "gols_visitante": 5,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio José Maria de Campos Maia (Maião)"
+      "estadio": "Estádio José Maria de Campos Maia (Maião)",
+      "transmissao": null
     },
     {
       "id": 554969,
@@ -2880,7 +3107,8 @@
       "gols_mandante": 1,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Manoel Barradas (Barradão)"
+      "estadio": "Estádio Manoel Barradas (Barradão)",
+      "transmissao": null
     },
     {
       "id": 554963,
@@ -2892,7 +3120,8 @@
       "gols_mandante": 1,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Neo Química Arena (Itaquerão)"
+      "estadio": "Neo Química Arena (Itaquerão)",
+      "transmissao": null
     },
     {
       "id": 554965,
@@ -2904,7 +3133,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio José Pinheiro Borda (Beira-Rio)"
+      "estadio": "Estádio José Pinheiro Borda (Beira-Rio)",
+      "transmissao": null
     },
     {
       "id": 554975,
@@ -2916,7 +3146,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Mário Filho (Maracanã)"
+      "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
+      "transmissao": null
     },
     {
       "id": 554976,
@@ -2928,7 +3159,8 @@
       "gols_mandante": 0,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio José Pinheiro Borda (Beira-Rio)"
+      "estadio": "Estádio José Pinheiro Borda (Beira-Rio)",
+      "transmissao": null
     },
     {
       "id": 554974,
@@ -2940,7 +3172,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Governador Magalhães Pinto (Mineirão)"
+      "estadio": "Estádio Governador Magalhães Pinto (Mineirão)",
+      "transmissao": null
     },
     {
       "id": 554971,
@@ -2952,7 +3185,8 @@
       "gols_mandante": 1,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Cícero de Souza Marques"
+      "estadio": "Estádio Cícero de Souza Marques",
+      "transmissao": null
     },
     {
       "id": 554977,
@@ -2964,7 +3198,8 @@
       "gols_mandante": 4,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Nubank Parque"
+      "estadio": "Nubank Parque",
+      "transmissao": null
     },
     {
       "id": 554979,
@@ -2976,7 +3211,8 @@
       "gols_mandante": 0,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Manoel Barradas (Barradão)"
+      "estadio": "Estádio Manoel Barradas (Barradão)",
+      "transmissao": null
     },
     {
       "id": 554972,
@@ -2988,7 +3224,8 @@
       "gols_mandante": 1,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Arena Condá"
+      "estadio": "Arena Condá",
+      "transmissao": null
     },
     {
       "id": 554978,
@@ -3000,7 +3237,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Urbano Caldeira (Vila Belmiro)"
+      "estadio": "Estádio Urbano Caldeira (Vila Belmiro)",
+      "transmissao": null
     },
     {
       "id": 554973,
@@ -3012,7 +3250,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Couto Pereira"
+      "estadio": "Estádio Couto Pereira",
+      "transmissao": null
     },
     {
       "id": 554970,
@@ -3024,7 +3263,8 @@
       "gols_mandante": 2,
       "gols_visitante": 3,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Nilton Santos (Engenhão)"
+      "estadio": "Estádio Nilton Santos (Engenhão)",
+      "transmissao": null
     },
     {
       "id": 554981,
@@ -3036,7 +3276,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Arena MRV"
+      "estadio": "Arena MRV",
+      "transmissao": null
     },
     {
       "id": 554988,
@@ -3048,7 +3289,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Cícero Pompeu de Toledo (Morumbi)"
+      "estadio": "Estádio Cícero Pompeu de Toledo (Morumbi)",
+      "transmissao": null
     },
     {
       "id": 554989,
@@ -3060,7 +3302,8 @@
       "gols_mandante": 3,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio São Januário"
+      "estadio": "Estádio São Januário",
+      "transmissao": null
     },
     {
       "id": 554980,
@@ -3072,7 +3315,8 @@
       "gols_mandante": 3,
       "gols_visitante": 3,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)"
+      "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)",
+      "transmissao": null
     },
     {
       "id": 554983,
@@ -3084,7 +3328,8 @@
       "gols_mandante": 0,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Neo Química Arena (Itaquerão)"
+      "estadio": "Neo Química Arena (Itaquerão)",
+      "transmissao": null
     },
     {
       "id": 554984,
@@ -3096,7 +3341,8 @@
       "gols_mandante": 3,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Mário Filho (Maracanã)"
+      "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
+      "transmissao": null
     },
     {
       "id": 554985,
@@ -3108,7 +3354,8 @@
       "gols_mandante": 3,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Arena do Grêmio"
+      "estadio": "Arena do Grêmio",
+      "transmissao": null
     },
     {
       "id": 554986,
@@ -3120,7 +3367,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio José Maria de Campos Maia (Maião)"
+      "estadio": "Estádio José Maria de Campos Maia (Maião)",
+      "transmissao": null
     },
     {
       "id": 554982,
@@ -3132,7 +3380,8 @@
       "gols_mandante": 3,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Arena Fonte Nova"
+      "estadio": "Arena Fonte Nova",
+      "transmissao": null
     },
     {
       "id": 554987,
@@ -3144,7 +3393,8 @@
       "gols_mandante": 2,
       "gols_visitante": 3,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Edgar Proença (Mangueirão)"
+      "estadio": "Estádio Jornalista Edgar Proença (Mangueirão)",
+      "transmissao": null
     },
     {
       "id": 554991,
@@ -3156,7 +3406,8 @@
       "gols_mandante": 2,
       "gols_visitante": 3,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Cícero de Souza Marques"
+      "estadio": "Estádio Cícero de Souza Marques",
+      "transmissao": null
     },
     {
       "id": 554998,
@@ -3168,7 +3419,8 @@
       "gols_mandante": 2,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Cícero Pompeu de Toledo (Morumbi)"
+      "estadio": "Estádio Cícero Pompeu de Toledo (Morumbi)",
+      "transmissao": null
     },
     {
       "id": 554995,
@@ -3180,7 +3432,8 @@
       "gols_mandante": 1,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Mário Filho (Maracanã)"
+      "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
+      "transmissao": null
     },
     {
       "id": 554993,
@@ -3192,7 +3445,8 @@
       "gols_mandante": 1,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Couto Pereira"
+      "estadio": "Estádio Couto Pereira",
+      "transmissao": null
     },
     {
       "id": 554994,
@@ -3204,7 +3458,8 @@
       "gols_mandante": 3,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Governador Magalhães Pinto (Mineirão)"
+      "estadio": "Estádio Governador Magalhães Pinto (Mineirão)",
+      "transmissao": null
     },
     {
       "id": 554996,
@@ -3216,7 +3471,8 @@
       "gols_mandante": 2,
       "gols_visitante": 3,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio José Pinheiro Borda (Beira-Rio)"
+      "estadio": "Estádio José Pinheiro Borda (Beira-Rio)",
+      "transmissao": null
     },
     {
       "id": 554997,
@@ -3228,7 +3484,8 @@
       "gols_mandante": 0,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Edgar Proença (Mangueirão)"
+      "estadio": "Estádio Jornalista Edgar Proença (Mangueirão)",
+      "transmissao": null
     },
     {
       "id": 554990,
@@ -3240,7 +3497,8 @@
       "gols_mandante": 0,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Nilton Santos (Engenhão)"
+      "estadio": "Estádio Nilton Santos (Engenhão)",
+      "transmissao": null
     },
     {
       "id": 554992,
@@ -3252,7 +3510,8 @@
       "gols_mandante": 1,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Neo Química Arena (Itaquerão)"
+      "estadio": "Neo Química Arena (Itaquerão)",
+      "transmissao": null
     },
     {
       "id": 554999,
@@ -3264,7 +3523,8 @@
       "gols_mandante": 1,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Manoel Barradas (Barradão)"
+      "estadio": "Estádio Manoel Barradas (Barradão)",
+      "transmissao": null
     },
     {
       "id": 555004,
@@ -3276,7 +3536,8 @@
       "gols_mandante": 3,
       "gols_visitante": 3,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Couto Pereira"
+      "estadio": "Estádio Couto Pereira",
+      "transmissao": null
     },
     {
       "id": 555000,
@@ -3288,7 +3549,8 @@
       "gols_mandante": 3,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Arena MRV"
+      "estadio": "Arena MRV",
+      "transmissao": null
     },
     {
       "id": 555006,
@@ -3300,7 +3562,8 @@
       "gols_mandante": 1,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Arena do Grêmio"
+      "estadio": "Arena do Grêmio",
+      "transmissao": null
     },
     {
       "id": 555003,
@@ -3312,7 +3575,8 @@
       "gols_mandante": 1,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Arena Condá"
+      "estadio": "Arena Condá",
+      "transmissao": null
     },
     {
       "id": 555008,
@@ -3324,7 +3588,8 @@
       "gols_mandante": 2,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Nubank Parque"
+      "estadio": "Nubank Parque",
+      "transmissao": null
     },
     {
       "id": 555002,
@@ -3336,7 +3601,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Nilton Santos (Engenhão)"
+      "estadio": "Estádio Nilton Santos (Engenhão)",
+      "transmissao": null
     },
     {
       "id": 555009,
@@ -3348,7 +3614,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Urbano Caldeira (Vila Belmiro)"
+      "estadio": "Estádio Urbano Caldeira (Vila Belmiro)",
+      "transmissao": null
     },
     {
       "id": 555007,
@@ -3360,7 +3627,8 @@
       "gols_mandante": 2,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio José Maria de Campos Maia (Maião)"
+      "estadio": "Estádio José Maria de Campos Maia (Maião)",
+      "transmissao": null
     },
     {
       "id": 555005,
@@ -3372,7 +3640,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Mário Filho (Maracanã)"
+      "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
+      "transmissao": null
     },
     {
       "id": 555001,
@@ -3384,7 +3653,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Arena Fonte Nova"
+      "estadio": "Arena Fonte Nova",
+      "transmissao": null
     },
     {
       "id": 555011,
@@ -3396,7 +3666,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Arena MRV"
+      "estadio": "Arena MRV",
+      "transmissao": null
     },
     {
       "id": 555015,
@@ -3408,7 +3679,8 @@
       "gols_mandante": 2,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio José Maria de Campos Maia (Maião)"
+      "estadio": "Estádio José Maria de Campos Maia (Maião)",
+      "transmissao": null
     },
     {
       "id": 555016,
@@ -3420,7 +3692,8 @@
       "gols_mandante": 1,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Edgar Proença (Mangueirão)"
+      "estadio": "Estádio Jornalista Edgar Proença (Mangueirão)",
+      "transmissao": null
     },
     {
       "id": 555018,
@@ -3432,7 +3705,8 @@
       "gols_mandante": 5,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio São Januário"
+      "estadio": "Estádio São Januário",
+      "transmissao": null
     },
     {
       "id": 555017,
@@ -3444,7 +3718,8 @@
       "gols_mandante": 1,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Cícero Pompeu de Toledo (Morumbi)"
+      "estadio": "Estádio Cícero Pompeu de Toledo (Morumbi)",
+      "transmissao": null
     },
     {
       "id": 555014,
@@ -3456,7 +3731,8 @@
       "gols_mandante": 0,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Arena do Grêmio"
+      "estadio": "Arena do Grêmio",
+      "transmissao": null
     },
     {
       "id": 555012,
@@ -3468,7 +3744,8 @@
       "gols_mandante": 1,
       "gols_visitante": 3,
       "status_fonte": "FINISHED",
-      "estadio": "Neo Química Arena (Itaquerão)"
+      "estadio": "Neo Química Arena (Itaquerão)",
+      "transmissao": null
     },
     {
       "id": 555019,
@@ -3480,7 +3757,8 @@
       "gols_mandante": 1,
       "gols_visitante": 3,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Manoel Barradas (Barradão)"
+      "estadio": "Estádio Manoel Barradas (Barradão)",
+      "transmissao": null
     },
     {
       "id": 555013,
@@ -3492,7 +3770,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Mário Filho (Maracanã)"
+      "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
+      "transmissao": null
     },
     {
       "id": 555010,
@@ -3504,7 +3783,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)"
+      "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)",
+      "transmissao": null
     },
     {
       "id": 555022,
@@ -3516,7 +3796,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Cícero de Souza Marques"
+      "estadio": "Estádio Cícero de Souza Marques",
+      "transmissao": null
     },
     {
       "id": 555025,
@@ -3528,7 +3809,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio José Pinheiro Borda (Beira-Rio)"
+      "estadio": "Estádio José Pinheiro Borda (Beira-Rio)",
+      "transmissao": null
     },
     {
       "id": 555027,
@@ -3540,7 +3822,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Edgar Proença (Mangueirão)"
+      "estadio": "Estádio Jornalista Edgar Proença (Mangueirão)",
+      "transmissao": null
     },
     {
       "id": 555029,
@@ -3552,7 +3835,8 @@
       "gols_mandante": 4,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Manoel Barradas (Barradão)"
+      "estadio": "Estádio Manoel Barradas (Barradão)",
+      "transmissao": null
     },
     {
       "id": 555021,
@@ -3564,7 +3848,8 @@
       "gols_mandante": 1,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Nilton Santos (Engenhão)"
+      "estadio": "Estádio Nilton Santos (Engenhão)",
+      "transmissao": null
     },
     {
       "id": 555023,
@@ -3576,7 +3861,8 @@
       "gols_mandante": 2,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Governador Magalhães Pinto (Mineirão)"
+      "estadio": "Estádio Governador Magalhães Pinto (Mineirão)",
+      "transmissao": null
     },
     {
       "id": 555028,
@@ -3588,7 +3874,8 @@
       "gols_mandante": 2,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Urbano Caldeira (Vila Belmiro)"
+      "estadio": "Estádio Urbano Caldeira (Vila Belmiro)",
+      "transmissao": null
     },
     {
       "id": 555020,
@@ -3600,7 +3887,8 @@
       "gols_mandante": 2,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)"
+      "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)",
+      "transmissao": null
     },
     {
       "id": 555024,
@@ -3612,7 +3900,8 @@
       "gols_mandante": 4,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Mário Filho (Maracanã)"
+      "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
+      "transmissao": null
     },
     {
       "id": 555026,
@@ -3624,7 +3913,8 @@
       "gols_mandante": 1,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Nubank Parque"
+      "estadio": "Nubank Parque",
+      "transmissao": null
     },
     {
       "id": 555039,
@@ -3636,7 +3926,8 @@
       "gols_mandante": 0,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio São Januário"
+      "estadio": "Estádio São Januário",
+      "transmissao": null
     },
     {
       "id": 555038,
@@ -3648,7 +3939,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Cícero Pompeu de Toledo (Morumbi)"
+      "estadio": "Estádio Cícero Pompeu de Toledo (Morumbi)",
+      "transmissao": null
     },
     {
       "id": 555030,
@@ -3660,7 +3952,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Arena MRV"
+      "estadio": "Arena MRV",
+      "transmissao": null
     },
     {
       "id": 555035,
@@ -3672,7 +3965,8 @@
       "gols_mandante": 1,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Mário Filho (Maracanã)"
+      "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
+      "transmissao": null
     },
     {
       "id": 555036,
@@ -3684,7 +3978,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Arena do Grêmio"
+      "estadio": "Arena do Grêmio",
+      "transmissao": null
     },
     {
       "id": 555037,
@@ -3696,7 +3991,8 @@
       "gols_mandante": 4,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Nubank Parque"
+      "estadio": "Nubank Parque",
+      "transmissao": null
     },
     {
       "id": 555031,
@@ -3708,7 +4004,8 @@
       "gols_mandante": 1,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Arena Fonte Nova"
+      "estadio": "Arena Fonte Nova",
+      "transmissao": null
     },
     {
       "id": 555034,
@@ -3720,7 +4017,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Couto Pereira"
+      "estadio": "Estádio Couto Pereira",
+      "transmissao": null
     },
     {
       "id": 555033,
@@ -3732,7 +4030,8 @@
       "gols_mandante": 1,
       "gols_visitante": 4,
       "status_fonte": "FINISHED",
-      "estadio": "Arena Condá"
+      "estadio": "Arena Condá",
+      "transmissao": null
     },
     {
       "id": 555032,
@@ -3744,7 +4043,8 @@
       "gols_mandante": 4,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Cícero de Souza Marques"
+      "estadio": "Estádio Cícero de Souza Marques",
+      "transmissao": null
     },
     {
       "id": 555047,
@@ -3756,7 +4056,8 @@
       "gols_mandante": 2,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio José Maria de Campos Maia (Maião)"
+      "estadio": "Estádio José Maria de Campos Maia (Maião)",
+      "transmissao": null
     },
     {
       "id": 555043,
@@ -3768,7 +4069,8 @@
       "gols_mandante": 1,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Nilton Santos (Engenhão)"
+      "estadio": "Estádio Nilton Santos (Engenhão)",
+      "transmissao": null
     },
     {
       "id": 555041,
@@ -3780,7 +4082,8 @@
       "gols_mandante": 1,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Arena MRV"
+      "estadio": "Arena MRV",
+      "transmissao": null
     },
     {
       "id": 555040,
@@ -3792,7 +4095,8 @@
       "gols_mandante": 0,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)"
+      "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)",
+      "transmissao": null
     },
     {
       "id": 555049,
@@ -3804,7 +4108,8 @@
       "gols_mandante": 1,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Cícero Pompeu de Toledo (Morumbi)"
+      "estadio": "Estádio Cícero Pompeu de Toledo (Morumbi)",
+      "transmissao": null
     },
     {
       "id": 555045,
@@ -3816,7 +4121,8 @@
       "gols_mandante": 1,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Mário Filho (Maracanã)"
+      "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
+      "transmissao": null
     },
     {
       "id": 555046,
@@ -3828,7 +4134,8 @@
       "gols_mandante": 2,
       "gols_visitante": 4,
       "status_fonte": "FINISHED",
-      "estadio": "Arena do Grêmio"
+      "estadio": "Arena do Grêmio",
+      "transmissao": null
     },
     {
       "id": 555042,
@@ -3840,7 +4147,8 @@
       "gols_mandante": 0,
       "gols_visitante": 3,
       "status_fonte": "FINISHED",
-      "estadio": "Arena Fonte Nova"
+      "estadio": "Arena Fonte Nova",
+      "transmissao": null
     },
     {
       "id": 555048,
@@ -3852,7 +4160,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Edgar Proença (Mangueirão)"
+      "estadio": "Estádio Jornalista Edgar Proença (Mangueirão)",
+      "transmissao": null
     },
     {
       "id": 555044,
@@ -3864,7 +4173,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Neo Química Arena (Itaquerão)"
+      "estadio": "Neo Química Arena (Itaquerão)",
+      "transmissao": null
     },
     {
       "id": 555052,
@@ -3876,7 +4186,8 @@
       "gols_mandante": 1,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Governador Magalhães Pinto (Mineirão)"
+      "estadio": "Estádio Governador Magalhães Pinto (Mineirão)",
+      "transmissao": null
     },
     {
       "id": 555054,
@@ -3888,7 +4199,8 @@
       "gols_mandante": 3,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio José Pinheiro Borda (Beira-Rio)"
+      "estadio": "Estádio José Pinheiro Borda (Beira-Rio)",
+      "transmissao": null
     },
     {
       "id": 555055,
@@ -3900,7 +4212,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio José Maria de Campos Maia (Maião)"
+      "estadio": "Estádio José Maria de Campos Maia (Maião)",
+      "transmissao": null
     },
     {
       "id": 555059,
@@ -3912,7 +4225,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Manoel Barradas (Barradão)"
+      "estadio": "Estádio Manoel Barradas (Barradão)",
+      "transmissao": null
     },
     {
       "id": 555056,
@@ -3924,7 +4238,8 @@
       "gols_mandante": 2,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Arena Barueri"
+      "estadio": "Arena Barueri",
+      "transmissao": null
     },
     {
       "id": 555058,
@@ -3936,7 +4251,8 @@
       "gols_mandante": 3,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio São Januário"
+      "estadio": "Estádio São Januário",
+      "transmissao": null
     },
     {
       "id": 555050,
@@ -3948,7 +4264,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Arena Condá"
+      "estadio": "Arena Condá",
+      "transmissao": null
     },
     {
       "id": 555057,
@@ -3960,7 +4277,8 @@
       "gols_mandante": 1,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Urbano Caldeira (Vila Belmiro)"
+      "estadio": "Estádio Urbano Caldeira (Vila Belmiro)",
+      "transmissao": null
     },
     {
       "id": 555051,
@@ -3972,7 +4290,8 @@
       "gols_mandante": 0,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Couto Pereira"
+      "estadio": "Estádio Couto Pereira",
+      "transmissao": null
     },
     {
       "id": 555053,
@@ -3984,7 +4303,8 @@
       "gols_mandante": 3,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Mário Filho (Maracanã)"
+      "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
+      "transmissao": null
     },
     {
       "id": 555062,
@@ -3996,7 +4316,8 @@
       "gols_mandante": 3,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Cícero de Souza Marques"
+      "estadio": "Estádio Cícero de Souza Marques",
+      "transmissao": null
     },
     {
       "id": 555065,
@@ -4008,7 +4329,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Mário Filho (Maracanã)"
+      "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
+      "transmissao": null
     },
     {
       "id": 555068,
@@ -4020,7 +4342,8 @@
       "gols_mandante": 0,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Urbano Caldeira (Vila Belmiro)"
+      "estadio": "Estádio Urbano Caldeira (Vila Belmiro)",
+      "transmissao": null
     },
     {
       "id": 555061,
@@ -4032,7 +4355,8 @@
       "gols_mandante": 3,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Arena Fonte Nova"
+      "estadio": "Arena Fonte Nova",
+      "transmissao": null
     },
     {
       "id": 555067,
@@ -4044,7 +4368,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Edgar Proença (Mangueirão)"
+      "estadio": "Estádio Jornalista Edgar Proença (Mangueirão)",
+      "transmissao": null
     },
     {
       "id": 555060,
@@ -4056,7 +4381,8 @@
       "gols_mandante": 0,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Arena MRV"
+      "estadio": "Arena MRV",
+      "transmissao": null
     },
     {
       "id": 555069,
@@ -4068,7 +4394,8 @@
       "gols_mandante": 1,
       "gols_visitante": 4,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Nilton Santos (Engenhão)"
+      "estadio": "Estádio Nilton Santos (Engenhão)",
+      "transmissao": null
     },
     {
       "id": 555066,
@@ -4080,7 +4407,8 @@
       "gols_mandante": 2,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Arena do Grêmio"
+      "estadio": "Arena do Grêmio",
+      "transmissao": null
     },
     {
       "id": 555063,
@@ -4092,7 +4420,8 @@
       "gols_mandante": 2,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Neo Química Arena (Itaquerão)"
+      "estadio": "Neo Química Arena (Itaquerão)",
+      "transmissao": null
     },
     {
       "id": 555064,
@@ -4104,7 +4433,8 @@
       "gols_mandante": 2,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Couto Pereira"
+      "estadio": "Estádio Couto Pereira",
+      "transmissao": null
     },
     {
       "id": 555072,
@@ -4116,7 +4446,8 @@
       "gols_mandante": 2,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Cícero de Souza Marques"
+      "estadio": "Estádio Cícero de Souza Marques",
+      "transmissao": null
     },
     {
       "id": 555073,
@@ -4128,7 +4459,8 @@
       "gols_mandante": 1,
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
-      "estadio": "Arena Condá"
+      "estadio": "Arena Condá",
+      "transmissao": null
     },
     {
       "id": 555076,
@@ -4140,7 +4472,8 @@
       "gols_mandante": 1,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio José Pinheiro Borda (Beira-Rio)"
+      "estadio": "Estádio José Pinheiro Borda (Beira-Rio)",
+      "transmissao": null
     },
     {
       "id": 555070,
@@ -4152,7 +4485,8 @@
       "gols_mandante": 1,
       "gols_visitante": 3,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)"
+      "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)",
+      "transmissao": null
     },
     {
       "id": 555075,
@@ -4164,7 +4498,8 @@
       "gols_mandante": 3,
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Jornalista Mário Filho (Maracanã)"
+      "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
+      "transmissao": null
     },
     {
       "id": 555071,
@@ -4176,7 +4511,8 @@
       "gols_mandante": 1,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Nilton Santos (Engenhão)"
+      "estadio": "Estádio Nilton Santos (Engenhão)",
+      "transmissao": null
     },
     {
       "id": 555078,
@@ -4188,7 +4524,8 @@
       "gols_mandante": 0,
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
-      "estadio": "Estádio Urbano Caldeira (Vila Belmiro)"
+      "estadio": "Estádio Urbano Caldeira (Vila Belmiro)",
+      "transmissao": null
     },
     {
       "id": 555077,
@@ -4199,8 +4536,9 @@
       "disputado": false,
       "gols_mandante": null,
       "gols_visitante": null,
-      "status_fonte": "TIMED",
-      "estadio": "Nubank Parque"
+      "status_fonte": "IN_PLAY",
+      "estadio": "Nubank Parque",
+      "transmissao": null
     },
     {
       "id": 555074,
@@ -4212,7 +4550,10 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "TIMED",
-      "estadio": "Estádio Governador Magalhães Pinto (Mineirão)"
+      "estadio": "Estádio Governador Magalhães Pinto (Mineirão)",
+      "transmissao": [
+        "Prime Video"
+      ]
     },
     {
       "id": 555079,
@@ -4224,7 +4565,12 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "TIMED",
-      "estadio": "Estádio Manoel Barradas (Barradão)"
+      "estadio": "Estádio Manoel Barradas (Barradão)",
+      "transmissao": [
+        "sportv",
+        "Premiere",
+        "globoplay"
+      ]
     },
     {
       "id": 555085,
@@ -4236,7 +4582,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "TIMED",
-      "estadio": "Estádio José Maria de Campos Maia (Maião)"
+      "estadio": "Estádio José Maria de Campos Maia (Maião)",
+      "transmissao": null
     },
     {
       "id": 555081,
@@ -4248,7 +4595,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "TIMED",
-      "estadio": "Estádio Couto Pereira"
+      "estadio": "Estádio Couto Pereira",
+      "transmissao": null
     },
     {
       "id": 555086,
@@ -4260,7 +4608,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "TIMED",
-      "estadio": "Estádio Jornalista Edgar Proença (Mangueirão)"
+      "estadio": "Estádio Jornalista Edgar Proença (Mangueirão)",
+      "transmissao": null
     },
     {
       "id": 555082,
@@ -4272,7 +4621,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "TIMED",
-      "estadio": "Estádio Governador Magalhães Pinto (Mineirão)"
+      "estadio": "Estádio Governador Magalhães Pinto (Mineirão)",
+      "transmissao": null
     },
     {
       "id": 555083,
@@ -4284,7 +4634,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "TIMED",
-      "estadio": "Estádio Jornalista Mário Filho (Maracanã)"
+      "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
+      "transmissao": null
     },
     {
       "id": 555080,
@@ -4296,7 +4647,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "TIMED",
-      "estadio": "Neo Química Arena (Itaquerão)"
+      "estadio": "Neo Química Arena (Itaquerão)",
+      "transmissao": null
     },
     {
       "id": 555084,
@@ -4308,7 +4660,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "TIMED",
-      "estadio": "Arena do Grêmio"
+      "estadio": "Arena do Grêmio",
+      "transmissao": null
     },
     {
       "id": 555088,
@@ -4320,7 +4673,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "TIMED",
-      "estadio": "Estádio São Januário"
+      "estadio": "Estádio São Januário",
+      "transmissao": null
     },
     {
       "id": 555089,
@@ -4332,7 +4686,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "TIMED",
-      "estadio": "Estádio Manoel Barradas (Barradão)"
+      "estadio": "Estádio Manoel Barradas (Barradão)",
+      "transmissao": null
     },
     {
       "id": 555087,
@@ -4344,7 +4699,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "TIMED",
-      "estadio": "Estádio Cícero Pompeu de Toledo (Morumbi)"
+      "estadio": "Estádio Cícero Pompeu de Toledo (Morumbi)",
+      "transmissao": null
     },
     {
       "id": 555098,
@@ -4356,7 +4712,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "TIMED",
-      "estadio": "Nubank Parque"
+      "estadio": "Nubank Parque",
+      "transmissao": null
     },
     {
       "id": 555092,
@@ -4368,7 +4725,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "TIMED",
-      "estadio": "Arena Fonte Nova"
+      "estadio": "Arena Fonte Nova",
+      "transmissao": null
     },
     {
       "id": 555095,
@@ -4380,7 +4738,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "TIMED",
-      "estadio": "Arena Condá"
+      "estadio": "Arena Condá",
+      "transmissao": null
     },
     {
       "id": 555090,
@@ -4392,7 +4751,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "TIMED",
-      "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)"
+      "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)",
+      "transmissao": null
     },
     {
       "id": 555096,
@@ -4404,7 +4764,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "TIMED",
-      "estadio": "Estádio Jornalista Mário Filho (Maracanã)"
+      "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
+      "transmissao": null
     },
     {
       "id": 555094,
@@ -4416,7 +4777,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "TIMED",
-      "estadio": "Estádio Cícero de Souza Marques"
+      "estadio": "Estádio Cícero de Souza Marques",
+      "transmissao": null
     },
     {
       "id": 555097,
@@ -4428,7 +4790,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "TIMED",
-      "estadio": "Estádio José Pinheiro Borda (Beira-Rio)"
+      "estadio": "Estádio José Pinheiro Borda (Beira-Rio)",
+      "transmissao": null
     },
     {
       "id": 555093,
@@ -4440,7 +4803,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "TIMED",
-      "estadio": "Estádio Nilton Santos (Engenhão)"
+      "estadio": "Estádio Nilton Santos (Engenhão)",
+      "transmissao": null
     },
     {
       "id": 555099,
@@ -4452,7 +4816,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "TIMED",
-      "estadio": "Estádio Cícero Pompeu de Toledo (Morumbi)"
+      "estadio": "Estádio Cícero Pompeu de Toledo (Morumbi)",
+      "transmissao": null
     },
     {
       "id": 555091,
@@ -4464,7 +4829,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "TIMED",
-      "estadio": "Arena MRV"
+      "estadio": "Arena MRV",
+      "transmissao": null
     },
     {
       "id": 555100,
@@ -4476,7 +4842,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "SCHEDULED",
-      "estadio": "Arena MRV"
+      "estadio": "Arena MRV",
+      "transmissao": null
     },
     {
       "id": 555101,
@@ -4488,7 +4855,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "SCHEDULED",
-      "estadio": "Estádio Nilton Santos (Engenhão)"
+      "estadio": "Estádio Nilton Santos (Engenhão)",
+      "transmissao": null
     },
     {
       "id": 555102,
@@ -4500,7 +4868,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "SCHEDULED",
-      "estadio": "Arena Condá"
+      "estadio": "Arena Condá",
+      "transmissao": null
     },
     {
       "id": 555103,
@@ -4512,7 +4881,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "SCHEDULED",
-      "estadio": "Neo Química Arena (Itaquerão)"
+      "estadio": "Neo Química Arena (Itaquerão)",
+      "transmissao": null
     },
     {
       "id": 555104,
@@ -4524,7 +4894,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "SCHEDULED",
-      "estadio": "Estádio Couto Pereira"
+      "estadio": "Estádio Couto Pereira",
+      "transmissao": null
     },
     {
       "id": 555105,
@@ -4536,7 +4907,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "SCHEDULED",
-      "estadio": "Estádio Jornalista Mário Filho (Maracanã)"
+      "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
+      "transmissao": null
     },
     {
       "id": 555106,
@@ -4548,7 +4920,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "SCHEDULED",
-      "estadio": "Estádio José Pinheiro Borda (Beira-Rio)"
+      "estadio": "Estádio José Pinheiro Borda (Beira-Rio)",
+      "transmissao": null
     },
     {
       "id": 555107,
@@ -4560,7 +4933,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "SCHEDULED",
-      "estadio": "Estádio José Maria de Campos Maia (Maião)"
+      "estadio": "Estádio José Maria de Campos Maia (Maião)",
+      "transmissao": null
     },
     {
       "id": 555108,
@@ -4572,7 +4946,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "SCHEDULED",
-      "estadio": "Estádio Cícero Pompeu de Toledo (Morumbi)"
+      "estadio": "Estádio Cícero Pompeu de Toledo (Morumbi)",
+      "transmissao": null
     },
     {
       "id": 555109,
@@ -4584,7 +4959,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "SCHEDULED",
-      "estadio": "Estádio Manoel Barradas (Barradão)"
+      "estadio": "Estádio Manoel Barradas (Barradão)",
+      "transmissao": null
     },
     {
       "id": 555110,
@@ -4596,7 +4972,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "SCHEDULED",
-      "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)"
+      "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)",
+      "transmissao": null
     },
     {
       "id": 555111,
@@ -4608,7 +4985,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "SCHEDULED",
-      "estadio": "Arena Fonte Nova"
+      "estadio": "Arena Fonte Nova",
+      "transmissao": null
     },
     {
       "id": 555112,
@@ -4620,7 +4998,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "SCHEDULED",
-      "estadio": "Estádio Cícero de Souza Marques"
+      "estadio": "Estádio Cícero de Souza Marques",
+      "transmissao": null
     },
     {
       "id": 555113,
@@ -4632,7 +5011,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "SCHEDULED",
-      "estadio": "Estádio Governador Magalhães Pinto (Mineirão)"
+      "estadio": "Estádio Governador Magalhães Pinto (Mineirão)",
+      "transmissao": null
     },
     {
       "id": 555114,
@@ -4644,7 +5024,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "SCHEDULED",
-      "estadio": "Estádio Jornalista Mário Filho (Maracanã)"
+      "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
+      "transmissao": null
     },
     {
       "id": 555115,
@@ -4656,7 +5037,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "SCHEDULED",
-      "estadio": "Arena do Grêmio"
+      "estadio": "Arena do Grêmio",
+      "transmissao": null
     },
     {
       "id": 555116,
@@ -4668,7 +5050,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "SCHEDULED",
-      "estadio": "Nubank Parque"
+      "estadio": "Nubank Parque",
+      "transmissao": null
     },
     {
       "id": 555117,
@@ -4680,7 +5063,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "SCHEDULED",
-      "estadio": "Estádio Evandro Almeida (Baenão)"
+      "estadio": "Estádio Evandro Almeida (Baenão)",
+      "transmissao": null
     },
     {
       "id": 555118,
@@ -4692,7 +5076,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "SCHEDULED",
-      "estadio": "Estádio Urbano Caldeira (Vila Belmiro)"
+      "estadio": "Estádio Urbano Caldeira (Vila Belmiro)",
+      "transmissao": null
     },
     {
       "id": 555119,
@@ -4704,7 +5089,8 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "SCHEDULED",
-      "estadio": "Estádio São Januário"
+      "estadio": "Estádio São Januário",
+      "transmissao": null
     }
   ]
 }

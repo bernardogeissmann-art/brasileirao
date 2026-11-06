@@ -18,6 +18,8 @@ export const ABAS = [
     itens: [
       { id: "catarinense", rotulo: "Campeonato Catarinense", endereco: "catarinense.html", simbolo: "assets/simbolos/catarinense.png" },
       { id: "gaucho", rotulo: "Campeonato Gaúcho", endereco: "gaucho.html", simbolo: "assets/simbolos/gaucho.png" },
+      { id: "paranaense", rotulo: "Campeonato Paranaense", endereco: "paranaense.html", simbolo: "assets/simbolos/paranaense.png" },
+      { id: "paulista", rotulo: "Campeonato Paulista", endereco: "paulista.html", simbolo: "assets/simbolos/paulista.png" },
     ],
   },
   { id: "metodo", rotulo: "O Método", endereco: "metodo.html" },

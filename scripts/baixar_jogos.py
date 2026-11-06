@@ -20,10 +20,11 @@ import urllib.request    # faz pedidos a sites, ou seja, baixa os dados
 from datetime import datetime, timedelta, timezone  # datas, horas e fusos horários
 from pathlib import Path  # monta caminhos de arquivos (funciona igual no Windows e no Mac)
 
-# Estes "import" são diferentes: trazem funções de arquivos nossos (scripts/escudos.py
-# e scripts/estadios.py).
+# Estes "import" são diferentes: trazem funções de arquivos nossos (scripts/escudos.py,
+# scripts/estadios.py e scripts/transmissoes.py).
 import escudos
 import estadios
+import transmissoes
 
 # ---------------------------------------------------------------------------
 # 2) CONSTANTES
@@ -284,12 +285,18 @@ def main():
     # O estádio de cada jogo vem da ESPN. Se der problema, os jogos só ficam sem estádio.
     print("Buscando o estádio de cada jogo...")
     avisos_estadios = estadios.anotar_estadios(dados)
+    # Onde assistir aos próximos jogos vem do ge.globo. Se der problema, só fica sem.
+    print("Buscando onde assistir aos próximos jogos...")
+    com_transmissao, avisos_transmissoes = transmissoes.anotar_transmissoes(dados)
     salvar(dados)
     print(f"Jogos salvos em {ARQUIVO_SAIDA}")
     imprimir_resumo(dados)
     escudos.imprimir_resultado(dados["times"], problemas_escudos)
     for aviso in avisos_estadios:
         print(f"Aviso sobre estádios: {aviso}")
+    print(f"Jogos com transmissão anotada: {com_transmissao}")
+    for aviso in avisos_transmissoes:
+        print(f"Aviso sobre transmissões: {aviso}")
 
 
 # Esta linha quer dizer: "se este arquivo foi rodado diretamente, execute main()".

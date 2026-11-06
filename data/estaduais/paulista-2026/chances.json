@@ -1,0 +1,1569 @@
+{
+ "competicao": "Campeonato Paulista Série A1 (Paulistão)",
+ "temporada": 2026,
+ "dados_baixados_em": "2026-11-05T20:53:15-03:00",
+ "calculado_em": "2026-11-05T23:58:51.075Z",
+ "simulacoes": 10000,
+ "momentos": [
+  {
+   "id": "inicio",
+   "rotulo": "Antes do 1º jogo",
+   "curto": "Início",
+   "ate": null,
+   "times": {
+    "botafogo-sp": {
+     "quartas": 0.5093,
+     "semifinal": 0.2546,
+     "final": 0.128,
+     "titulo": 0.0634,
+     "rebaixamento": 0.1185
+    },
+    "bragantino": {
+     "quartas": 0.506,
+     "semifinal": 0.2535,
+     "final": 0.129,
+     "titulo": 0.0653,
+     "rebaixamento": 0.1198
+    },
+    "capivariano": {
+     "quartas": 0.5032,
+     "semifinal": 0.2516,
+     "final": 0.1239,
+     "titulo": 0.0636,
+     "rebaixamento": 0.1246
+    },
+    "corinthians": {
+     "quartas": 0.4949,
+     "semifinal": 0.2469,
+     "final": 0.1246,
+     "titulo": 0.0644,
+     "rebaixamento": 0.1278
+    },
+    "guarani": {
+     "quartas": 0.4979,
+     "semifinal": 0.2493,
+     "final": 0.1269,
+     "titulo": 0.0638,
+     "rebaixamento": 0.1253
+    },
+    "mirassol": {
+     "quartas": 0.5007,
+     "semifinal": 0.2496,
+     "final": 0.1245,
+     "titulo": 0.0602,
+     "rebaixamento": 0.119
+    },
+    "noroeste": {
+     "quartas": 0.5034,
+     "semifinal": 0.2519,
+     "final": 0.1252,
+     "titulo": 0.0619,
+     "rebaixamento": 0.1247
+    },
+    "novorizontino": {
+     "quartas": 0.4949,
+     "semifinal": 0.2487,
+     "final": 0.1213,
+     "titulo": 0.0588,
+     "rebaixamento": 0.1283
+    },
+    "palmeiras": {
+     "quartas": 0.5061,
+     "semifinal": 0.2519,
+     "final": 0.1223,
+     "titulo": 0.0586,
+     "rebaixamento": 0.1268
+    },
+    "ponte-preta": {
+     "quartas": 0.4949,
+     "semifinal": 0.241,
+     "final": 0.1205,
+     "titulo": 0.0589,
+     "rebaixamento": 0.1272
+    },
+    "portuguesa": {
+     "quartas": 0.4962,
+     "semifinal": 0.2492,
+     "final": 0.1284,
+     "titulo": 0.0646,
+     "rebaixamento": 0.1272
+    },
+    "primavera": {
+     "quartas": 0.4947,
+     "semifinal": 0.2498,
+     "final": 0.1224,
+     "titulo": 0.0613,
+     "rebaixamento": 0.1249
+    },
+    "santos": {
+     "quartas": 0.4933,
+     "semifinal": 0.2513,
+     "final": 0.1261,
+     "titulo": 0.0658,
+     "rebaixamento": 0.1267
+    },
+    "sao-bernardo": {
+     "quartas": 0.5038,
+     "semifinal": 0.2514,
+     "final": 0.1268,
+     "titulo": 0.0619,
+     "rebaixamento": 0.1268
+    },
+    "sao-paulo": {
+     "quartas": 0.5027,
+     "semifinal": 0.2493,
+     "final": 0.1222,
+     "titulo": 0.064,
+     "rebaixamento": 0.1247
+    },
+    "velo-clube": {
+     "quartas": 0.498,
+     "semifinal": 0.25,
+     "final": 0.1279,
+     "titulo": 0.0635,
+     "rebaixamento": 0.1277
+    }
+   }
+  },
+  {
+   "id": "rodada-1",
+   "rotulo": "Após a 1ª rodada",
+   "curto": "R1",
+   "ate": "2026-01-11T20:30:00-03:00",
+   "times": {
+    "botafogo-sp": {
+     "quartas": 0.5343,
+     "semifinal": 0.2314,
+     "final": 0.0998,
+     "titulo": 0.0394,
+     "rebaixamento": 0.0434
+    },
+    "bragantino": {
+     "quartas": 0.7719,
+     "semifinal": 0.4094,
+     "final": 0.2085,
+     "titulo": 0.1057,
+     "rebaixamento": 0.0089
+    },
+    "capivariano": {
+     "quartas": 0.1134,
+     "semifinal": 0.0233,
+     "final": 0.006,
+     "titulo": 0.0014,
+     "rebaixamento": 0.3789
+    },
+    "corinthians": {
+     "quartas": 0.8949,
+     "semifinal": 0.5591,
+     "final": 0.3158,
+     "titulo": 0.1759,
+     "rebaixamento": 0.0027
+    },
+    "guarani": {
+     "quartas": 0.3941,
+     "semifinal": 0.1464,
+     "final": 0.052,
+     "titulo": 0.018,
+     "rebaixamento": 0.094
+    },
+    "mirassol": {
+     "quartas": 0.8808,
+     "semifinal": 0.5425,
+     "final": 0.3146,
+     "titulo": 0.168,
+     "rebaixamento": 0.0035
+    },
+    "noroeste": {
+     "quartas": 0.188,
+     "semifinal": 0.0539,
+     "final": 0.0154,
+     "titulo": 0.0039,
+     "rebaixamento": 0.2388
+    },
+    "novorizontino": {
+     "quartas": 0.1997,
+     "semifinal": 0.0647,
+     "final": 0.0226,
+     "titulo": 0.0084,
+     "rebaixamento": 0.2307
+    },
+    "palmeiras": {
+     "quartas": 0.8447,
+     "semifinal": 0.4671,
+     "final": 0.2406,
+     "titulo": 0.1176,
+     "rebaixamento": 0.0048
+    },
+    "ponte-preta": {
+     "quartas": 0.2067,
+     "semifinal": 0.0485,
+     "final": 0.0133,
+     "titulo": 0.0037,
+     "rebaixamento": 0.2417
+    },
+    "portuguesa": {
+     "quartas": 0.2269,
+     "semifinal": 0.0637,
+     "final": 0.0201,
+     "titulo": 0.0047,
+     "rebaixamento": 0.2104
+    },
+    "primavera": {
+     "quartas": 0.655,
+     "semifinal": 0.2958,
+     "final": 0.1243,
+     "titulo": 0.0497,
+     "rebaixamento": 0.0342
+    },
+    "santos": {
+     "quartas": 0.6787,
+     "semifinal": 0.3062,
+     "final": 0.1267,
+     "titulo": 0.0509,
+     "rebaixamento": 0.0193
+    },
+    "sao-bernardo": {
+     "quartas": 0.9337,
+     "semifinal": 0.627,
+     "final": 0.3839,
+     "titulo": 0.2362,
+     "rebaixamento": 0.0016
+    },
+    "sao-paulo": {
+     "quartas": 0.1171,
+     "semifinal": 0.0277,
+     "final": 0.0066,
+     "titulo": 0.0016,
+     "rebaixamento": 0.371
+    },
+    "velo-clube": {
+     "quartas": 0.3601,
+     "semifinal": 0.1333,
+     "final": 0.0498,
+     "titulo": 0.0149,
+     "rebaixamento": 0.1161
+    }
+   }
+  },
+  {
+   "id": "rodada-2",
+   "rotulo": "Após a 2ª rodada",
+   "curto": "R2",
+   "ate": "2026-01-15T21:45:00-03:00",
+   "times": {
+    "botafogo-sp": {
+     "quartas": 0.3002,
+     "semifinal": 0.1023,
+     "final": 0.0358,
+     "titulo": 0.0114,
+     "rebaixamento": 0.1239
+    },
+    "bragantino": {
+     "quartas": 0.9769,
+     "semifinal": 0.7533,
+     "final": 0.5436,
+     "titulo": 0.3751,
+     "rebaixamento": 0
+    },
+    "capivariano": {
+     "quartas": 0.2673,
+     "semifinal": 0.058,
+     "final": 0.0137,
+     "titulo": 0.0033,
+     "rebaixamento": 0.1449
+    },
+    "corinthians": {
+     "quartas": 0.5513,
+     "semifinal": 0.204,
+     "final": 0.0695,
+     "titulo": 0.0228,
+     "rebaixamento": 0.0316
+    },
+    "guarani": {
+     "quartas": 0.1834,
+     "semifinal": 0.0473,
+     "final": 0.0128,
+     "titulo": 0.0041,
+     "rebaixamento": 0.2396
+    },
+    "mirassol": {
+     "quartas": 0.6411,
+     "semifinal": 0.2863,
+     "final": 0.1245,
+     "titulo": 0.051,
+     "rebaixamento": 0.023
+    },
+    "noroeste": {
+     "quartas": 0.2671,
+     "semifinal": 0.0865,
+     "final": 0.028,
+     "titulo": 0.0094,
+     "rebaixamento": 0.1611
+    },
+    "novorizontino": {
+     "quartas": 0.4175,
+     "semifinal": 0.1636,
+     "final": 0.0652,
+     "titulo": 0.0245,
+     "rebaixamento": 0.0613
+    },
+    "palmeiras": {
+     "quartas": 0.9496,
+     "semifinal": 0.6176,
+     "final": 0.3533,
+     "titulo": 0.175,
+     "rebaixamento": 0.0004
+    },
+    "ponte-preta": {
+     "quartas": 0.0482,
+     "semifinal": 0.0072,
+     "final": 0.0016,
+     "titulo": 0.0002,
+     "rebaixamento": 0.5917
+    },
+    "portuguesa": {
+     "quartas": 0.0619,
+     "semifinal": 0.0125,
+     "final": 0.0032,
+     "titulo": 0.0005,
+     "rebaixamento": 0.4727
+    },
+    "primavera": {
+     "quartas": 0.8836,
+     "semifinal": 0.5334,
+     "final": 0.2703,
+     "titulo": 0.121,
+     "rebaixamento": 0.0035
+    },
+    "santos": {
+     "quartas": 0.5347,
+     "semifinal": 0.2191,
+     "final": 0.083,
+     "titulo": 0.0298,
+     "rebaixamento": 0.0464
+    },
+    "sao-bernardo": {
+     "quartas": 0.8017,
+     "semifinal": 0.4577,
+     "final": 0.2229,
+     "titulo": 0.1075,
+     "rebaixamento": 0.0088
+    },
+    "sao-paulo": {
+     "quartas": 0.4238,
+     "semifinal": 0.1352,
+     "final": 0.0407,
+     "titulo": 0.0121,
+     "rebaixamento": 0.0748
+    },
+    "velo-clube": {
+     "quartas": 0.6917,
+     "semifinal": 0.316,
+     "final": 0.1319,
+     "titulo": 0.0523,
+     "rebaixamento": 0.0163
+    }
+   }
+  },
+  {
+   "id": "rodada-3",
+   "rotulo": "Após a 3ª rodada",
+   "curto": "R3",
+   "ate": "2026-01-18T20:30:00-03:00",
+   "times": {
+    "botafogo-sp": {
+     "quartas": 0.0994,
+     "semifinal": 0.0177,
+     "final": 0.0031,
+     "titulo": 0.0001,
+     "rebaixamento": 0.4051
+    },
+    "bragantino": {
+     "quartas": 0.9996,
+     "semifinal": 0.8839,
+     "final": 0.7508,
+     "titulo": 0.5777,
+     "rebaixamento": 0
+    },
+    "capivariano": {
+     "quartas": 0.572,
+     "semifinal": 0.1731,
+     "final": 0.0409,
+     "titulo": 0.0065,
+     "rebaixamento": 0.0253
+    },
+    "corinthians": {
+     "quartas": 0.3673,
+     "semifinal": 0.1137,
+     "final": 0.0318,
+     "titulo": 0.0071,
+     "rebaixamento": 0.0679
+    },
+    "guarani": {
+     "quartas": 0.1454,
+     "semifinal": 0.0328,
+     "final": 0.0087,
+     "titulo": 0.0011,
+     "rebaixamento": 0.2335
+    },
+    "mirassol": {
+     "quartas": 0.4627,
+     "semifinal": 0.1851,
+     "final": 0.0614,
+     "titulo": 0.0203,
+     "rebaixamento": 0.0618
+    },
+    "noroeste": {
+     "quartas": 0.468,
+     "semifinal": 0.1767,
+     "final": 0.0536,
+     "titulo": 0.0154,
+     "rebaixamento": 0.0669
+    },
+    "novorizontino": {
+     "quartas": 0.8987,
+     "semifinal": 0.5669,
+     "final": 0.2442,
+     "titulo": 0.0812,
+     "rebaixamento": 0.001
+    },
+    "palmeiras": {
+     "quartas": 0.9924,
+     "semifinal": 0.7222,
+     "final": 0.4633,
+     "titulo": 0.1944,
+     "rebaixamento": 0
+    },
+    "ponte-preta": {
+     "quartas": 0.0119,
+     "semifinal": 0.0004,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0.824
+    },
+    "portuguesa": {
+     "quartas": 0.3636,
+     "semifinal": 0.1148,
+     "final": 0.0342,
+     "titulo": 0.0083,
+     "rebaixamento": 0.079
+    },
+    "primavera": {
+     "quartas": 0.5821,
+     "semifinal": 0.2191,
+     "final": 0.0588,
+     "titulo": 0.0135,
+     "rebaixamento": 0.0378
+    },
+    "santos": {
+     "quartas": 0.5744,
+     "semifinal": 0.2389,
+     "final": 0.0747,
+     "titulo": 0.0218,
+     "rebaixamento": 0.0304
+    },
+    "sao-bernardo": {
+     "quartas": 0.6055,
+     "semifinal": 0.2706,
+     "final": 0.0939,
+     "titulo": 0.0343,
+     "rebaixamento": 0.0232
+    },
+    "sao-paulo": {
+     "quartas": 0.5768,
+     "semifinal": 0.2139,
+     "final": 0.0641,
+     "titulo": 0.015,
+     "rebaixamento": 0.0332
+    },
+    "velo-clube": {
+     "quartas": 0.2802,
+     "semifinal": 0.0702,
+     "final": 0.0165,
+     "titulo": 0.0033,
+     "rebaixamento": 0.1109
+    }
+   }
+  },
+  {
+   "id": "rodada-4",
+   "rotulo": "Após a 4ª rodada",
+   "curto": "R4",
+   "ate": "2026-01-22T21:30:00-03:00",
+   "times": {
+    "botafogo-sp": {
+     "quartas": 0.1587,
+     "semifinal": 0.0269,
+     "final": 0.0065,
+     "titulo": 0.0011,
+     "rebaixamento": 0.1514
+    },
+    "bragantino": {
+     "quartas": 0.9998,
+     "semifinal": 0.8829,
+     "final": 0.7441,
+     "titulo": 0.5995,
+     "rebaixamento": 0
+    },
+    "capivariano": {
+     "quartas": 0.6707,
+     "semifinal": 0.2249,
+     "final": 0.0577,
+     "titulo": 0.01,
+     "rebaixamento": 0.0082
+    },
+    "corinthians": {
+     "quartas": 0.4689,
+     "semifinal": 0.1525,
+     "final": 0.0414,
+     "titulo": 0.0107,
+     "rebaixamento": 0.0417
+    },
+    "guarani": {
+     "quartas": 0.5162,
+     "semifinal": 0.171,
+     "final": 0.0458,
+     "titulo": 0.0099,
+     "rebaixamento": 0.0205
+    },
+    "mirassol": {
+     "quartas": 0.3189,
+     "semifinal": 0.1098,
+     "final": 0.0317,
+     "titulo": 0.0097,
+     "rebaixamento": 0.0865
+    },
+    "noroeste": {
+     "quartas": 0.2289,
+     "semifinal": 0.0624,
+     "final": 0.0155,
+     "titulo": 0.0034,
+     "rebaixamento": 0.1587
+    },
+    "novorizontino": {
+     "quartas": 0.9916,
+     "semifinal": 0.8008,
+     "final": 0.5295,
+     "titulo": 0.2084,
+     "rebaixamento": 0
+    },
+    "palmeiras": {
+     "quartas": 0.9521,
+     "semifinal": 0.5432,
+     "final": 0.2141,
+     "titulo": 0.0557,
+     "rebaixamento": 0
+    },
+    "ponte-preta": {
+     "quartas": 0.0016,
+     "semifinal": 0.0001,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0.9334
+    },
+    "portuguesa": {
+     "quartas": 0.7579,
+     "semifinal": 0.3179,
+     "final": 0.0913,
+     "titulo": 0.0209,
+     "rebaixamento": 0.0027
+    },
+    "primavera": {
+     "quartas": 0.4234,
+     "semifinal": 0.1302,
+     "final": 0.0324,
+     "titulo": 0.0062,
+     "rebaixamento": 0.0592
+    },
+    "santos": {
+     "quartas": 0.3578,
+     "semifinal": 0.1171,
+     "final": 0.0352,
+     "titulo": 0.0094,
+     "rebaixamento": 0.0655
+    },
+    "sao-bernardo": {
+     "quartas": 0.774,
+     "semifinal": 0.3753,
+     "final": 0.139,
+     "titulo": 0.0526,
+     "rebaixamento": 0.0015
+    },
+    "sao-paulo": {
+     "quartas": 0.3167,
+     "semifinal": 0.075,
+     "final": 0.0142,
+     "titulo": 0.0022,
+     "rebaixamento": 0.1014
+    },
+    "velo-clube": {
+     "quartas": 0.0628,
+     "semifinal": 0.01,
+     "final": 0.0016,
+     "titulo": 0.0003,
+     "rebaixamento": 0.3693
+    }
+   }
+  },
+  {
+   "id": "rodada-5",
+   "rotulo": "Após a 5ª rodada",
+   "curto": "R5",
+   "ate": "2026-01-26T20:00:00-03:00",
+   "times": {
+    "botafogo-sp": {
+     "quartas": 0.1203,
+     "semifinal": 0.0162,
+     "final": 0.0033,
+     "titulo": 0.0005,
+     "rebaixamento": 0.0882
+    },
+    "bragantino": {
+     "quartas": 0.9997,
+     "semifinal": 0.8652,
+     "final": 0.6897,
+     "titulo": 0.5485,
+     "rebaixamento": 0
+    },
+    "capivariano": {
+     "quartas": 0.2523,
+     "semifinal": 0.0389,
+     "final": 0.0067,
+     "titulo": 0.0008,
+     "rebaixamento": 0.008
+    },
+    "corinthians": {
+     "quartas": 0.8487,
+     "semifinal": 0.2905,
+     "final": 0.0842,
+     "titulo": 0.0192,
+     "rebaixamento": 0
+    },
+    "guarani": {
+     "quartas": 0.9161,
+     "semifinal": 0.3683,
+     "final": 0.1258,
+     "titulo": 0.0345,
+     "rebaixamento": 0
+    },
+    "mirassol": {
+     "quartas": 0.8859,
+     "semifinal": 0.4807,
+     "final": 0.218,
+     "titulo": 0.0941,
+     "rebaixamento": 0
+    },
+    "noroeste": {
+     "quartas": 0.0817,
+     "semifinal": 0.0139,
+     "final": 0.0023,
+     "titulo": 0.0005,
+     "rebaixamento": 0.1974
+    },
+    "novorizontino": {
+     "quartas": 0.9992,
+     "semifinal": 0.7755,
+     "final": 0.4611,
+     "titulo": 0.1937,
+     "rebaixamento": 0
+    },
+    "palmeiras": {
+     "quartas": 0.9991,
+     "semifinal": 0.5906,
+     "final": 0.2443,
+     "titulo": 0.0626,
+     "rebaixamento": 0
+    },
+    "ponte-preta": {
+     "quartas": 0.0003,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0.9417
+    },
+    "portuguesa": {
+     "quartas": 0.2559,
+     "semifinal": 0.0539,
+     "final": 0.0116,
+     "titulo": 0.0023,
+     "rebaixamento": 0.0111
+    },
+    "primavera": {
+     "quartas": 0.8628,
+     "semifinal": 0.3204,
+     "final": 0.1018,
+     "titulo": 0.0284,
+     "rebaixamento": 0.0004
+    },
+    "santos": {
+     "quartas": 0.4505,
+     "semifinal": 0.1358,
+     "final": 0.0418,
+     "titulo": 0.013,
+     "rebaixamento": 0.0263
+    },
+    "sao-bernardo": {
+     "quartas": 0.1607,
+     "semifinal": 0.0283,
+     "final": 0.0061,
+     "titulo": 0.0013,
+     "rebaixamento": 0.0062
+    },
+    "sao-paulo": {
+     "quartas": 0.1587,
+     "semifinal": 0.0203,
+     "final": 0.0031,
+     "titulo": 0.0006,
+     "rebaixamento": 0.133
+    },
+    "velo-clube": {
+     "quartas": 0.0081,
+     "semifinal": 0.0015,
+     "final": 0.0002,
+     "titulo": 0,
+     "rebaixamento": 0.5877
+    }
+   }
+  },
+  {
+   "id": "rodada-6",
+   "rotulo": "Após a 6ª rodada",
+   "curto": "R6",
+   "ate": "2026-02-05T20:30:00-03:00",
+   "times": {
+    "botafogo-sp": {
+     "quartas": 0.2789,
+     "semifinal": 0.0493,
+     "final": 0.0108,
+     "titulo": 0.0008,
+     "rebaixamento": 0
+    },
+    "bragantino": {
+     "quartas": 1,
+     "semifinal": 0.8043,
+     "final": 0.5859,
+     "titulo": 0.4308,
+     "rebaixamento": 0
+    },
+    "capivariano": {
+     "quartas": 0.073,
+     "semifinal": 0.0096,
+     "final": 0.0012,
+     "titulo": 0.0002,
+     "rebaixamento": 0.0222
+    },
+    "corinthians": {
+     "quartas": 0.9623,
+     "semifinal": 0.4843,
+     "final": 0.1801,
+     "titulo": 0.0573,
+     "rebaixamento": 0
+    },
+    "guarani": {
+     "quartas": 0.9411,
+     "semifinal": 0.4123,
+     "final": 0.1555,
+     "titulo": 0.0482,
+     "rebaixamento": 0
+    },
+    "mirassol": {
+     "quartas": 0.7783,
+     "semifinal": 0.375,
+     "final": 0.1589,
+     "titulo": 0.0738,
+     "rebaixamento": 0
+    },
+    "noroeste": {
+     "quartas": 0.1091,
+     "semifinal": 0.0263,
+     "final": 0.0069,
+     "titulo": 0.0019,
+     "rebaixamento": 0.0293
+    },
+    "novorizontino": {
+     "quartas": 1,
+     "semifinal": 0.8115,
+     "final": 0.5589,
+     "titulo": 0.2906,
+     "rebaixamento": 0
+    },
+    "palmeiras": {
+     "quartas": 0.9978,
+     "semifinal": 0.5145,
+     "final": 0.1996,
+     "titulo": 0.0572,
+     "rebaixamento": 0
+    },
+    "ponte-preta": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0.991
+    },
+    "portuguesa": {
+     "quartas": 0.8399,
+     "semifinal": 0.2751,
+     "final": 0.0798,
+     "titulo": 0.0226,
+     "rebaixamento": 0
+    },
+    "primavera": {
+     "quartas": 0.3189,
+     "semifinal": 0.0775,
+     "final": 0.0206,
+     "titulo": 0.0055,
+     "rebaixamento": 0.0017
+    },
+    "santos": {
+     "quartas": 0.1083,
+     "semifinal": 0.0259,
+     "final": 0.0083,
+     "titulo": 0.0025,
+     "rebaixamento": 0.0882
+    },
+    "sao-bernardo": {
+     "quartas": 0.2416,
+     "semifinal": 0.0568,
+     "final": 0.0156,
+     "titulo": 0.0038,
+     "rebaixamento": 0
+    },
+    "sao-paulo": {
+     "quartas": 0.3505,
+     "semifinal": 0.0776,
+     "final": 0.0179,
+     "titulo": 0.0048,
+     "rebaixamento": 0.0041
+    },
+    "velo-clube": {
+     "quartas": 0.0003,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0.8635
+    }
+   }
+  },
+  {
+   "id": "rodada-7",
+   "rotulo": "Após a 7ª rodada",
+   "curto": "R7",
+   "ate": "2026-02-08T20:30:00-03:00",
+   "times": {
+    "botafogo-sp": {
+     "quartas": 0.8266,
+     "semifinal": 0.3225,
+     "final": 0.0991,
+     "titulo": 0.0217,
+     "rebaixamento": 0
+    },
+    "bragantino": {
+     "quartas": 1,
+     "semifinal": 0.7995,
+     "final": 0.4669,
+     "titulo": 0.3449,
+     "rebaixamento": 0
+    },
+    "capivariano": {
+     "quartas": 0.1647,
+     "semifinal": 0.0461,
+     "final": 0.0116,
+     "titulo": 0.0012,
+     "rebaixamento": 0
+    },
+    "corinthians": {
+     "quartas": 0.7382,
+     "semifinal": 0.2719,
+     "final": 0.0943,
+     "titulo": 0.0305,
+     "rebaixamento": 0
+    },
+    "guarani": {
+     "quartas": 0.4929,
+     "semifinal": 0.1487,
+     "final": 0.0409,
+     "titulo": 0.011,
+     "rebaixamento": 0
+    },
+    "mirassol": {
+     "quartas": 0.389,
+     "semifinal": 0.1297,
+     "final": 0.056,
+     "titulo": 0.0232,
+     "rebaixamento": 0
+    },
+    "noroeste": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0.0803
+    },
+    "novorizontino": {
+     "quartas": 1,
+     "semifinal": 0.8011,
+     "final": 0.5648,
+     "titulo": 0.3456,
+     "rebaixamento": 0
+    },
+    "palmeiras": {
+     "quartas": 1,
+     "semifinal": 0.685,
+     "final": 0.3995,
+     "titulo": 0.1458,
+     "rebaixamento": 0
+    },
+    "ponte-preta": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 1
+    },
+    "portuguesa": {
+     "quartas": 1,
+     "semifinal": 0.4211,
+     "final": 0.1503,
+     "titulo": 0.0416,
+     "rebaixamento": 0
+    },
+    "primavera": {
+     "quartas": 0.0065,
+     "semifinal": 0.001,
+     "final": 0.0003,
+     "titulo": 0,
+     "rebaixamento": 0.016
+    },
+    "santos": {
+     "quartas": 0.6069,
+     "semifinal": 0.1569,
+     "final": 0.0528,
+     "titulo": 0.0185,
+     "rebaixamento": 0
+    },
+    "sao-bernardo": {
+     "quartas": 0.2128,
+     "semifinal": 0.0525,
+     "final": 0.0162,
+     "titulo": 0.0052,
+     "rebaixamento": 0
+    },
+    "sao-paulo": {
+     "quartas": 0.5624,
+     "semifinal": 0.164,
+     "final": 0.0473,
+     "titulo": 0.0108,
+     "rebaixamento": 0
+    },
+    "velo-clube": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0.9037
+    }
+   }
+  },
+  {
+   "id": "rodada-8",
+   "rotulo": "Após a 8ª rodada",
+   "curto": "R8",
+   "ate": "2026-02-15T20:30:00-03:00",
+   "times": {
+    "botafogo-sp": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "bragantino": {
+     "quartas": 1,
+     "semifinal": 0.8949,
+     "final": 0.602,
+     "titulo": 0.4675,
+     "rebaixamento": 0
+    },
+    "capivariano": {
+     "quartas": 1,
+     "semifinal": 0.2464,
+     "final": 0.0316,
+     "titulo": 0.0076,
+     "rebaixamento": 0
+    },
+    "corinthians": {
+     "quartas": 1,
+     "semifinal": 0.3984,
+     "final": 0.1539,
+     "titulo": 0.0499,
+     "rebaixamento": 0
+    },
+    "guarani": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "mirassol": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "noroeste": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "novorizontino": {
+     "quartas": 1,
+     "semifinal": 0.6806,
+     "final": 0.4987,
+     "titulo": 0.1978,
+     "rebaixamento": 0
+    },
+    "palmeiras": {
+     "quartas": 1,
+     "semifinal": 0.7536,
+     "final": 0.3235,
+     "titulo": 0.1405,
+     "rebaixamento": 0
+    },
+    "ponte-preta": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 1
+    },
+    "portuguesa": {
+     "quartas": 1,
+     "semifinal": 0.6016,
+     "final": 0.2121,
+     "titulo": 0.0677,
+     "rebaixamento": 0
+    },
+    "primavera": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "santos": {
+     "quartas": 1,
+     "semifinal": 0.3194,
+     "final": 0.1353,
+     "titulo": 0.0565,
+     "rebaixamento": 0
+    },
+    "sao-bernardo": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "sao-paulo": {
+     "quartas": 1,
+     "semifinal": 0.1051,
+     "final": 0.0429,
+     "titulo": 0.0125,
+     "rebaixamento": 0
+    },
+    "velo-clube": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 1
+    }
+   }
+  },
+  {
+   "id": "quartas-1",
+   "rotulo": "Após as quartas",
+   "curto": "QF",
+   "ate": "2026-02-22T20:30:00-03:00",
+   "times": {
+    "botafogo-sp": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "bragantino": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "capivariano": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "corinthians": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0.2946,
+     "titulo": 0.1409,
+     "rebaixamento": 0
+    },
+    "guarani": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "mirassol": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "noroeste": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "novorizontino": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0.7054,
+     "titulo": 0.4122,
+     "rebaixamento": 0
+    },
+    "palmeiras": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0.7265,
+     "titulo": 0.3528,
+     "rebaixamento": 0
+    },
+    "ponte-preta": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 1
+    },
+    "portuguesa": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "primavera": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "santos": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "sao-bernardo": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "sao-paulo": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0.2735,
+     "titulo": 0.0941,
+     "rebaixamento": 0
+    },
+    "velo-clube": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 1
+    }
+   }
+  },
+  {
+   "id": "semifinal-1",
+   "rotulo": "Após as semifinais",
+   "curto": "SF",
+   "ate": "2026-03-01T20:30:00-03:00",
+   "times": {
+    "botafogo-sp": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "bragantino": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "capivariano": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "corinthians": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "guarani": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "mirassol": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "noroeste": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "novorizontino": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 1,
+     "titulo": 0.5646,
+     "rebaixamento": 0
+    },
+    "palmeiras": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 1,
+     "titulo": 0.4354,
+     "rebaixamento": 0
+    },
+    "ponte-preta": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 1
+    },
+    "portuguesa": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "primavera": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "santos": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "sao-bernardo": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "sao-paulo": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "velo-clube": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 1
+    }
+   }
+  },
+  {
+   "id": "final-1",
+   "rotulo": "Após a ida da final",
+   "curto": "F ida",
+   "ate": "2026-03-04T20:00:00-03:00",
+   "times": {
+    "botafogo-sp": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "bragantino": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "capivariano": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "corinthians": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "guarani": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "mirassol": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "noroeste": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "novorizontino": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 1,
+     "titulo": 0.4124,
+     "rebaixamento": 0
+    },
+    "palmeiras": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 1,
+     "titulo": 0.5876,
+     "rebaixamento": 0
+    },
+    "ponte-preta": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 1
+    },
+    "portuguesa": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "primavera": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "santos": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "sao-bernardo": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "sao-paulo": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "velo-clube": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 1
+    }
+   }
+  },
+  {
+   "id": "final-2",
+   "rotulo": "Fim do campeonato",
+   "curto": "Fim",
+   "ate": "2026-03-08T20:30:00-03:00",
+   "times": {
+    "botafogo-sp": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "bragantino": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "capivariano": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "corinthians": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "guarani": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "mirassol": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "noroeste": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "novorizontino": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 1,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "palmeiras": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 1,
+     "titulo": 1,
+     "rebaixamento": 0
+    },
+    "ponte-preta": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 1
+    },
+    "portuguesa": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "primavera": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "santos": {
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "sao-bernardo": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "sao-paulo": {
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 0
+    },
+    "velo-clube": {
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0,
+     "rebaixamento": 1
+    }
+   }
+  }
+ ]
+}

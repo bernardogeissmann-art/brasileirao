@@ -100,6 +100,21 @@ def baixar_escudos(times, pasta_escudos, endereco_do_escudo):
     return problemas
 
 
+def copiar_escudos_do_brasileirao(pasta_escudos, mapa):
+    """Para os clubes que também estão no Brasileirão, copia o escudo de lá, para o site
+    mostrar o mesmo escudo em todas as páginas. "mapa" diz o id do time no estadual e no
+    Brasileirão (ex.: {"athletico": "paranaense"}). Como baixar_escudos reaproveita o que
+    já está na pasta, estes escudos não são baixados de novo."""
+    pasta_escudos.mkdir(parents=True, exist_ok=True)
+    pasta_brasileirao = PASTA_PROJETO / "assets" / "escudos"
+    for id_estadual, id_brasileirao in mapa.items():
+        if next(pasta_escudos.glob(f"{id_estadual}.*"), None):
+            continue   # já tem escudo na pasta do estadual
+        original = next(pasta_brasileirao.glob(f"{id_brasileirao}.*"), None)
+        if original:
+            (pasta_escudos / f"{id_estadual}{original.suffix}").write_bytes(original.read_bytes())
+
+
 def numerar_rodadas(jogos):
     """Numera as rodadas de uma fase em que cada time joga uma vez por rodada.
     Percorre os jogos em ordem de data; quando um time aparece pela segunda vez,

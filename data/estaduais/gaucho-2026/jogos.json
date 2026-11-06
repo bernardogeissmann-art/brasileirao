@@ -2,7 +2,7 @@
   "competicao": "Campeonato Gaúcho Série A (Gauchão)",
   "temporada": 2026,
   "fonte": "ESPN (site.api.espn.com)",
-  "baixado_em": "2026-11-04T22:28:17-03:00",
+  "baixado_em": "2026-11-05T20:52:26-03:00",
   "times": {
     "avenida": {
       "nome": "Avenida",
@@ -169,21 +169,6 @@
       "penaltis_visitante": null
     },
     {
-      "id": "gau2026-762019",
-      "numero": 762019,
-      "fase": "primeira-fase",
-      "rodada": 2,
-      "confronto": null,
-      "data": "2026-01-14T19:00:00-03:00",
-      "mandante": "inter-sm",
-      "visitante": "sao-luiz",
-      "disputado": true,
-      "gols_mandante": 0,
-      "gols_visitante": 0,
-      "penaltis_mandante": null,
-      "penaltis_visitante": null
-    },
-    {
       "id": "gau2026-762017",
       "numero": 762017,
       "fase": "primeira-fase",
@@ -195,6 +180,21 @@
       "disputado": true,
       "gols_mandante": 1,
       "gols_visitante": 1,
+      "penaltis_mandante": null,
+      "penaltis_visitante": null
+    },
+    {
+      "id": "gau2026-762019",
+      "numero": 762019,
+      "fase": "primeira-fase",
+      "rodada": 2,
+      "confronto": null,
+      "data": "2026-01-14T19:00:00-03:00",
+      "mandante": "inter-sm",
+      "visitante": "sao-luiz",
+      "disputado": true,
+      "gols_mandante": 0,
+      "gols_visitante": 0,
       "penaltis_mandante": null,
       "penaltis_visitante": null
     },
@@ -229,21 +229,6 @@
       "penaltis_visitante": null
     },
     {
-      "id": "gau2026-762021",
-      "numero": 762021,
-      "fase": "primeira-fase",
-      "rodada": 2,
-      "confronto": null,
-      "data": "2026-01-15T19:00:00-03:00",
-      "mandante": "monsoon",
-      "visitante": "internacional",
-      "disputado": true,
-      "gols_mandante": 0,
-      "gols_visitante": 4,
-      "penaltis_mandante": null,
-      "penaltis_visitante": null
-    },
-    {
       "id": "gau2026-762018",
       "numero": 762018,
       "fase": "primeira-fase",
@@ -255,6 +240,21 @@
       "disputado": true,
       "gols_mandante": 1,
       "gols_visitante": 1,
+      "penaltis_mandante": null,
+      "penaltis_visitante": null
+    },
+    {
+      "id": "gau2026-762021",
+      "numero": 762021,
+      "fase": "primeira-fase",
+      "rodada": 2,
+      "confronto": null,
+      "data": "2026-01-15T19:00:00-03:00",
+      "mandante": "monsoon",
+      "visitante": "internacional",
+      "disputado": true,
+      "gols_mandante": 0,
+      "gols_visitante": 4,
       "penaltis_mandante": null,
       "penaltis_visitante": null
     },
@@ -379,21 +379,6 @@
       "penaltis_visitante": null
     },
     {
-      "id": "gau2026-762032",
-      "numero": 762032,
-      "fase": "primeira-fase",
-      "rodada": 4,
-      "confronto": null,
-      "data": "2026-01-21T21:30:00-03:00",
-      "mandante": "avenida",
-      "visitante": "ypiranga",
-      "disputado": true,
-      "gols_mandante": 3,
-      "gols_visitante": 0,
-      "penaltis_mandante": null,
-      "penaltis_visitante": null
-    },
-    {
       "id": "gau2026-762031",
       "numero": 762031,
       "fase": "primeira-fase",
@@ -405,6 +390,21 @@
       "disputado": true,
       "gols_mandante": 0,
       "gols_visitante": 2,
+      "penaltis_mandante": null,
+      "penaltis_visitante": null
+    },
+    {
+      "id": "gau2026-762032",
+      "numero": 762032,
+      "fase": "primeira-fase",
+      "rodada": 4,
+      "confronto": null,
+      "data": "2026-01-21T21:30:00-03:00",
+      "mandante": "avenida",
+      "visitante": "ypiranga",
+      "disputado": true,
+      "gols_mandante": 3,
+      "gols_visitante": 0,
       "penaltis_mandante": null,
       "penaltis_visitante": null
     },
@@ -544,6 +544,21 @@
       "penaltis_visitante": null
     },
     {
+      "id": "gau2026-762041",
+      "numero": 762041,
+      "fase": "primeira-fase",
+      "rodada": 6,
+      "confronto": null,
+      "data": "2026-01-31T16:30:00-03:00",
+      "mandante": "ypiranga",
+      "visitante": "sao-jose",
+      "disputado": true,
+      "gols_mandante": 1,
+      "gols_visitante": 1,
+      "penaltis_mandante": null,
+      "penaltis_visitante": null
+    },
+    {
       "id": "gau2026-762042",
       "numero": 762042,
       "fase": "primeira-fase",
@@ -574,21 +589,6 @@
       "penaltis_visitante": null
     },
     {
-      "id": "gau2026-762045",
-      "numero": 762045,
-      "fase": "primeira-fase",
-      "rodada": 6,
-      "confronto": null,
-      "data": "2026-01-31T16:30:00-03:00",
-      "mandante": "monsoon",
-      "visitante": "sao-luiz",
-      "disputado": true,
-      "gols_mandante": 2,
-      "gols_visitante": 2,
-      "penaltis_mandante": null,
-      "penaltis_visitante": null
-    },
-    {
       "id": "gau2026-762044",
       "numero": 762044,
       "fase": "primeira-fase",
@@ -604,17 +604,17 @@
       "penaltis_visitante": null
     },
     {
-      "id": "gau2026-762041",
-      "numero": 762041,
+      "id": "gau2026-762045",
+      "numero": 762045,
       "fase": "primeira-fase",
       "rodada": 6,
       "confronto": null,
       "data": "2026-01-31T16:30:00-03:00",
-      "mandante": "ypiranga",
-      "visitante": "sao-jose",
+      "mandante": "monsoon",
+      "visitante": "sao-luiz",
       "disputado": true,
-      "gols_mandante": 1,
-      "gols_visitante": 1,
+      "gols_mandante": 2,
+      "gols_visitante": 2,
       "penaltis_mandante": null,
       "penaltis_visitante": null
     },
@@ -712,21 +712,6 @@
       "penaltis_visitante": null
     },
     {
-      "id": "gau2026-401858987",
-      "numero": 401858987,
-      "fase": "quadrangular",
-      "rodada": 2,
-      "confronto": null,
-      "data": "2026-02-09T20:00:00-03:00",
-      "mandante": "avenida",
-      "visitante": "guarany",
-      "disputado": true,
-      "gols_mandante": 2,
-      "gols_visitante": 1,
-      "penaltis_mandante": null,
-      "penaltis_visitante": null
-    },
-    {
       "id": "gau2026-401858937",
       "numero": 401858937,
       "fase": "quartas",
@@ -741,6 +726,21 @@
       "penaltis_mandante": null,
       "penaltis_visitante": null,
       "perna": 1
+    },
+    {
+      "id": "gau2026-401858987",
+      "numero": 401858987,
+      "fase": "quadrangular",
+      "rodada": 2,
+      "confronto": null,
+      "data": "2026-02-09T20:00:00-03:00",
+      "mandante": "avenida",
+      "visitante": "guarany",
+      "disputado": true,
+      "gols_mandante": 2,
+      "gols_visitante": 1,
+      "penaltis_mandante": null,
+      "penaltis_visitante": null
     },
     {
       "id": "gau2026-401858988",
