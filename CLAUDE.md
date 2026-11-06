@@ -23,6 +23,9 @@ O usuário nunca programou antes, então todo código e explicação devem ser p
     `data/meu-time.json`; as cores dos clubes ficam em `data/cores-times.json`. O texto é escrito por IA
     (Claude, da Anthropic) em `scripts/meu_time/texto_ia.js`, com a chave `ANTHROPIC_API_KEY` (no `.env` e nos
     secrets do GitHub). Sem chave, ou se a IA falhar, usa as frases prontas de `scripts/meu_time/texto.js`.
+    No fim da página, a seção Vídeos: o player do próprio YouTube (youtube-nocookie, lista "UULF" + código do canal =
+    últimos vídeos, sem Shorts) para os canais de cada time em `data/canais-youtube.json` (imprensa dedicada ou oficial).
+    O player se atualiza sozinho; não há script diário. Não usar os feeds RSS do YouTube: o robots.txt deles proíbe.
   - **Estaduais** (menu suspenso): Catarinense, Gaúcho, Paranaense e Paulista. Para um novo estadual, acrescentar
     uma linha em `abas.js` (com o símbolo em `assets/simbolos/`).
   - **O Método**: explica o modelo para o grande público.

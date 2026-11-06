@@ -493,3 +493,73 @@
   font-size: 0.76rem;
   color: var(--cor-tinta-suave);
 }
+
+
+/* ---------- Vídeos (caixas do YouTube) ---------- */
+
+.videos {
+  display: grid;
+  gap: 14px;
+}
+
+@media (min-width: 900px) {
+  .videos {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.video {
+  display: grid;
+  gap: 10px;
+  padding: 14px;
+  border: 1px solid var(--cor-linha);
+  border-top: 4px solid var(--time-grafico);
+  border-radius: var(--canto-m);
+  background: #ffffff;
+}
+
+.video__topo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 4px 10px;
+  margin: 0;
+}
+
+.video__nome {
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.video__tipo {
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--time-claro);
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--time-texto);
+}
+
+/* A tela do vídeo no formato 16:9 (o formato dos vídeos do YouTube). */
+.video__tela {
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  background: #0f0f0f;
+}
+
+.video__tela iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video__link {
+  justify-self: start;
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--time-texto);
+}
+

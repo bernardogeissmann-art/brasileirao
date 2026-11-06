@@ -151,3 +151,22 @@ test("com a IA de mentira: se ela se recusar ou parar no meio, dá erro (e entra
     await assert.rejects(escreverTextoComIA(ia, info(), [], "2026-11-05"), new RegExp(motivo));
   }
 });
+
+// ----- Vídeos do YouTube -----
+
+test("a lista de canais do YouTube está bem preenchida", () => {
+  const canais = JSON.parse(readFileSync(new URL("../data/canais-youtube.json", import.meta.url), "utf-8"));
+  const jogos = JSON.parse(readFileSync(new URL("../data/jogos.json", import.meta.url), "utf-8"));
+  const vistos = new Set();
+  for (const [idTime, lista] of Object.entries(canais.times)) {
+    assert.ok(jogos.times[idTime], `time desconhecido: ${idTime}`);
+    assert.ok(lista.length >= 1 && lista.length <= 3, `${idTime}: de 1 a 3 canais`);
+    for (const c of lista) {
+      assert.match(c.canal, /^UC[\w-]{22}$/, `${idTime}: código do canal ${c.nome}`);
+      assert.ok(["imprensa", "oficial"].includes(c.tipo), `${idTime}: tipo de ${c.nome}`);
+      assert.ok(c.nome && c.arroba.startsWith("@"), `${idTime}: nome e @ de ${c.nome}`);
+      assert.ok(!vistos.has(c.canal), `canal repetido: ${c.nome}`);
+      vistos.add(c.canal);
+    }
+  }
+});

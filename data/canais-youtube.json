@@ -1,0 +1,57 @@
+{
+ "explicacao": "Canais do YouTube mostrados na página Meu Time (seção Vídeos). Para cada time, uma lista de canais: nome, código do canal (começa com UC e tem 24 letras, aparece no endereço youtube.com/channel/...), o @ do canal e o tipo (imprensa = mídia dedicada ao time; oficial = canal do clube). O player do YouTube mostra sempre os vídeos mais recentes de cada canal. Para acrescentar um canal, copie uma linha e troque os dados.",
+ "conferido_em": "2026-11-05",
+ "times": {
+  "internacional": [
+   {"nome": "Alexandre Ernst", "canal": "UCBgSy_cNIoGYnyLjmKHQOAg", "arroba": "@AlexandreErnst", "tipo": "imprensa"},
+   {"nome": "Canal do Vaguinha", "canal": "UCkoqa3e5oFNkEGvgrxLAmrQ", "arroba": "@CanaldoVaguinha", "tipo": "imprensa"}
+  ],
+  "flamengo": [
+   {"nome": "Venê Casagrande", "canal": "UC084Mraf1n0rUIhz0V3sZfg", "arroba": "@VeneCasagrande", "tipo": "imprensa"},
+   {"nome": "Coluna do Fla", "canal": "UCOH0UtunvcOtBYvmHfHK3Nw", "arroba": "@ColunadoFla", "tipo": "imprensa"}
+  ],
+  "palmeiras": [
+   {"nome": "TV Palmeiras", "canal": "UCBKc-rPDivvwFiWdG-81wxw", "arroba": "@Palmeiras", "tipo": "oficial"}
+  ],
+  "corinthians": [
+   {"nome": "Meu Timão", "canal": "UCwpyuvmJ_mOrebYbUPXtaBQ", "arroba": "@MeuTimao", "tipo": "imprensa"},
+   {"nome": "Corinthians TV", "canal": "UCqRraVICLr0asn90cAvkIZQ", "arroba": "@Corinthians", "tipo": "oficial"}
+  ],
+  "sao-paulo": [
+   {"nome": "São Paulo FC", "canal": "UCX3zTAsEoZ61rQMYb_08Tow", "arroba": "@saopaulofc", "tipo": "oficial"}
+  ],
+  "gremio": [
+   {"nome": "Grêmio FBPA", "canal": "UCHKbUAiKHsWCCZrkDY_PZ8Q", "arroba": "@Gremio", "tipo": "oficial"}
+  ],
+  "botafogo": [
+   {"nome": "Botafogo TV", "canal": "UCFxjZDrLCOCHkUCu632AmMQ", "arroba": "@BotafogoTV", "tipo": "oficial"}
+  ],
+  "fluminense": [
+   {"nome": "NETFLU", "canal": "UCccH-KOg311lpEtTCy-3TTA", "arroba": "@NETFLU", "tipo": "imprensa"},
+   {"nome": "Fluminense Football Club", "canal": "UCAAPXtnzlg9krw6MtNbfR-g", "arroba": "@fluminensefc", "tipo": "oficial"}
+  ],
+  "cruzeiro": [
+   {"nome": "Cruzeiro Sports", "canal": "UCy7aeNy60EVhMwBziYsET-A", "arroba": "@CruzeiroSports", "tipo": "imprensa"},
+   {"nome": "TV Cruzeiro", "canal": "UCqifkpdmE1z3VhfQoJzwpJQ", "arroba": "@cruzeiro", "tipo": "oficial"}
+  ],
+  "mineiro": [
+   {"nome": "GaloTV", "canal": "UC0BhAOfmm1tJaJkPyTM9D_g", "arroba": "@atletico", "tipo": "oficial"}
+  ],
+  "santos": [
+   {"nome": "Diário do Peixe", "canal": "UC-6BRAVobi7q0paklYjgW3Q", "arroba": "@DiariodoPeixe", "tipo": "imprensa"},
+   {"nome": "SantosTV", "canal": "UC0uRT_armQXqds_rjTjqJ0g", "arroba": "@santosfc", "tipo": "oficial"}
+  ],
+  "paranaense": [
+   {"nome": "Athletico Paranaense", "canal": "UCUN1ASH969TSwnuUUU56TmA", "arroba": "@AthleticoParanaense", "tipo": "oficial"}
+  ],
+  "coritiba": [
+   {"nome": "TV Coxa", "canal": "UCbCD35_3aBxTYcpm8M2LviA", "arroba": "@CoritibaOficial", "tipo": "oficial"}
+  ],
+  "chapecoense": [
+   {"nome": "ChapeTv", "canal": "UC5of5voGUqec9K9JqL9al4Q", "arroba": "@ChapeTV", "tipo": "oficial"}
+  ],
+  "clube-do-remo": [
+   {"nome": "Remo TV", "canal": "UCsLGx5V5iv-JHbG10oDZOcw", "arroba": "@RemoTV", "tipo": "oficial"}
+  ]
+ }
+}

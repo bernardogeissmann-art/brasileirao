@@ -5,7 +5,8 @@
 //   3) calcula as chances do time (mesma simulação do site, com os dados do dia);
 //   4) monta a posição, os números da temporada e os últimos e próximos jogos;
 //   5) mostra o texto "Situação atual" e as notícias, que são preparados às quartas e
-//      aos domingos, às 23h (arquivo data/meu-time.json).
+//      aos domingos, às 23h (arquivo data/meu-time.json);
+//   6) mostra os últimos vídeos de canais do YouTube dedicados ao time (data/canais-youtube.json).
 
 import { carregarDados, simular, tabelaAtual, chancesDoJogo } from "./simulacao.js";
 import {
@@ -21,6 +22,7 @@ $("rodape").innerHTML = montarRodape(null);
 let dados = null;           // jogos e modelo
 let cores = {};             // cores de cada clube
 let conteudo = null;        // texto e notícias (pode não existir ainda)
+let canais = null;          // canais do YouTube de cada time (opcional)
 let chances = null;         // resultado da simulação (calculado uma vez)
 let tabela = null;          // tabela atual
 
@@ -49,6 +51,7 @@ async function iniciar() {
   }
   // O texto e as notícias são opcionais: se o arquivo ainda não existir, a página funciona sem eles.
   conteudo = await lerJson("data/meu-time.json").catch(() => null);
+  canais = await lerJson("data/canais-youtube.json").catch(() => null);
   $("rodape").innerHTML = montarRodape(dados.jogos.baixado_em);
   tabela = tabelaAtual(dados.jogos);
 
@@ -141,6 +144,7 @@ function mostrarTime(id) {
   montarNumeros(id, linha);
   montarJogos(id);
   montarNoticias(id);
+  montarVideos(id);
   window.scrollTo(0, 0);
 
   // As chances levam um instante para calcular: primeiro a página aparece, depois os anéis.
@@ -304,4 +308,33 @@ function montarNoticias(id) {
         <span class="noticia__data">${haQuantoTempo(n.data)}</span>
       </a>
     </li>`).join("") || `<li class="bloco__nota">As notícias deste time saem na próxima atualização.</li>`;
+}
+
+// D) Vídeos: uma caixa do YouTube para cada canal dedicado ao time. Cada caixa é o player
+// do próprio YouTube tocando a lista "vídeos do canal", que o YouTube mantém sempre com os
+// mais recentes: o site não guarda vídeo nenhum. O endereço youtube-nocookie.com é o "modo
+// de privacidade reforçada" do YouTube (não grava cookies de quem só abre a página).
+// loading="lazy" faz o player só carregar quando a pessoa rola a página até ele.
+function montarVideos(id) {
+  const lista = (canais?.times?.[id] ?? []).filter((c) => /^UC[\w-]{22}$/.test(c.canal));   // só códigos válidos
+  $("bloco-videos").hidden = lista.length === 0;
+  $("videos").innerHTML = lista.map((c) => {
+    // A lista "UULF" + código do canal (sem o "UC") são os vídeos do canal, sem Shorts nem lives.
+    const playlist = `UULF${c.canal.slice(2)}`;
+    const nome = escaparHtml(c.nome);
+    return `
+      <article class="video">
+        <p class="video__topo">
+          <strong class="video__nome">${nome}</strong>
+          <span class="video__tipo">${c.tipo === "oficial" ? "Canal oficial" : "Imprensa dedicada"}</span>
+        </p>
+        <div class="video__tela">
+          <iframe src="https://www.youtube-nocookie.com/embed/videoseries?list=${playlist}"
+            title="Últimos vídeos de ${nome}" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <a class="video__link" href="https://www.youtube.com/channel/${c.canal}/videos" target="_blank" rel="noopener noreferrer">
+          Ver o canal no YouTube<span aria-hidden="true"> ↗</span><span class="so-leitor"> (abre em outra aba)</span></a>
+      </article>`;
+  }).join("");
 }
