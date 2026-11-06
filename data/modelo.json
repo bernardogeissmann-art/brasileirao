@@ -1,12 +1,12 @@
 {
   "descricao": "gols_mandante ~ Poisson(ataque_mandante * defesa_visitante * fator_casa); gols_visitante ~ Poisson(ataque_visitante * defesa_mandante). Média dos ataques = 1. Defesa maior = sofre mais gols.",
   "temporada": 2026,
-  "dados_baixados_em": "2026-11-06T01:52:53-03:00",
-  "estimado_em": "2026-11-06T01:53:30-03:00",
+  "dados_baixados_em": "2026-11-06T02:09:46-03:00",
+  "estimado_em": "2026-11-06T02:10:16-03:00",
   "jogos_usados": 338,
   "fator_casa": 1.365484280681857,
   "log_verossimilhanca": -921.5644332958642,
-  "empates_esperados": 81.64943684033328,
+  "empates_esperados": 81.64943684033327,
   "times": {
     "bahia": {
       "nome": "Bahia",
