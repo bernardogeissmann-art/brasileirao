@@ -138,6 +138,19 @@ jobs:
           cp data/jogos.json data/modelo.json data/meu-time.json data/cores-times.json _site/data/
           cp -r data/estaduais _site/data/
 
+      - name: Pôr o número da versão nos endereços dos arquivos
+        # O navegador guarda uma cópia de cada arquivo por até 10 minutos. Para quem visita logo
+        # depois de uma publicação não ver uma mistura de arquivos novos e velhos, cada endereço
+        # .js e .css ganha "?v=" + o código desta versão (ex.: inicio.js?v=a7cd2be). Endereço
+        # novo = o navegador baixa de novo. Só a cópia que vai para a internet muda; o código
+        # do repositório continua igual.
+        run: |
+          VERSAO="${GITHUB_SHA::7}"
+          find _site/site \( -name '*.html' -o -name '*.js' \) -print0 \
+            | xargs -0 sed -i -E "s/\.(js|css)([\"'])/.\1?v=${VERSAO}\2/g"
+          echo "Versão $VERSAO aplicada. Exemplo:"
+          grep -m 3 -o 'js/[a-z-]*\.js?v=[0-9a-f]*' _site/site/index.html
+
       - name: Preparar o GitHub Pages
         uses: actions/configure-pages@v6
 

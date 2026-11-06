@@ -4538,7 +4538,9 @@
       "gols_visitante": null,
       "status_fonte": "IN_PLAY",
       "estadio": "Nubank Parque",
-      "transmissao": null
+      "transmissao": [
+        "Premiere"
+      ]
     },
     {
       "id": 555074,

@@ -6,7 +6,7 @@
 #   1) a página da tabela do Brasileirão traz os jogos da rodada atual, cada um com o
 #      endereço da sua página;
 #   2) a página de cada jogo traz a lista "onde assistir" (liveWatchSources).
-# Lemos poucas páginas por dia (só os jogos que ainda não começaram), com pausa entre elas.
+# Lemos poucas páginas por dia (só os jogos da rodada que ainda não acabaram), com pausa entre elas.
 #
 # Este arquivo não é rodado sozinho: o baixar_jogos.py usa a função anotar_transmissoes().
 # Se o ge mudar a página ou estiver fora do ar, os jogos só ficam sem transmissão.
@@ -87,8 +87,11 @@ def anotar_transmissoes(dados):
     avisos = []
     anotados = 0
     for jogo_ge in rodada:
-        if jogo_ge.get("jogo_ja_comecou"):
-            continue   # já começou ou acabou: não precisa mais de "onde assistir"
+        # Jogo encerrado não precisa mais de "onde assistir". Jogo em andamento precisa
+        # (quem abre o site no meio do jogo quer saber onde está passando).
+        estado = ((jogo_ge.get("transmissao") or {}).get("broadcast") or {}).get("id")
+        if estado == "ENCERRADA":
+            continue
         nomes = [jogo_ge["equipes"][lado]["nome_popular"] for lado in ("mandante", "visitante")]
         ids = [TIMES_GE.get(nome) for nome in nomes]
         if None in ids:
