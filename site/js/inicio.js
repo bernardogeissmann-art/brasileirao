@@ -12,6 +12,7 @@ import {
   instalarCabecalho, montarRodape, cardTime, cartaoDestaque, mensagem, legendaCategorias, cabecalhoColunas,
   cardConfronto, legendaResultado,
 } from "./componentes.js";
+import { lerIngressos, enderecoDoIngresso, msAteOProximoInicio } from "./ingressos.js";
 import { escolherJogosDoDia, formaRecente, situacaoComPlacar, temJogoRolando, atualizarComEspn } from "./jogos-do-dia.js";
 
 // document.getElementById pega um elemento da página pelo seu id="...".
@@ -45,7 +46,8 @@ async function iniciar() {
 
   // Antes de simular: os jogos que já acabaram, mas ainda estão sem resultado no site,
   // ganham o placar final da ESPN. Assim a tabela já sai certa.
-  const { aoVivo } = await atualizarComEspn(dados.jogos);
+  const [{ aoVivo }, lojas] = await Promise.all([atualizarComEspn(dados.jogos), lerIngressos()]);
+  ingressos = lojas;
   montarJogosDoDia(dados, aoVivo, SERIE_A);   // não depende da simulação: aparece logo
   acompanharJogosDoDia(dados, SERIE_A, () => calcularEMostrar(dados));
   iniciarSerieB();   // sem "await": a Série B aparece quando os dados dela chegarem
@@ -108,6 +110,12 @@ function montarDestaques(chances, times) {
     }))
     .join("");
 }
+
+// As lojas de ingressos de cada clube (data/ingressos.json), lidas uma vez.
+let ingressos = null;
+// Um "despertador" por lista: redesenha os cartões na hora em que um jogo começa (o botão
+// de ingressos some). Sem ele, o botão só sumiria quando a página fosse aberta de novo.
+const despertadores = new Map();
 
 // Onde fica a lista de jogos do dia de cada campeonato, e como ele é chamado nas frases.
 const SERIE_A = { lista: "jogos-do-dia", data: "jogos-do-dia-data", nome: "o Brasileirão", doNome: "do Brasileirão", notas: true };
@@ -178,7 +186,15 @@ function montarJogosDoDia({ jogos, modelo }, aoVivo, onde) {
     forma: { mandante: formaRecente(jogos.jogos, jogo.mandante), visitante: formaRecente(jogos.jogos, jogo.visitante) },
     chances: chancesDoJogo(jogo, modelo),
     estado: situacaoComPlacar(jogo, aoVivo, agora),
+    ingresso: enderecoDoIngresso(jogo, ingressos, agora),
   })).join("");
+
+  // Na hora em que o próximo destes jogos começar, redesenha (o botão de ingressos some).
+  clearTimeout(despertadores.get(onde));
+  const espera = msAteOProximoInicio(escolha.jogos, agora);
+  if (espera !== null && espera < 24 * 60 * 60 * 1000) {
+    despertadores.set(onde, setTimeout(() => montarJogosDoDia({ jogos, modelo }, aoVivo, onde), espera + 1000));
+  }
 
   if (!onde.notas) return;   // a legenda e a nota ficam só embaixo dos jogos da Série A
   document.getElementById("jogos-do-dia-legenda").innerHTML = legendaResultado("mandante", "visitante");

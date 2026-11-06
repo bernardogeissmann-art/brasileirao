@@ -1396,3 +1396,29 @@ a.botao {
     grid-row: 2;
   }
 }
+
+/* ---------- Botão "Comprar ingressos" (Jogos do dia e Meu Time) ---------- */
+
+.botao-ingresso {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  padding: 9px 16px;
+  border-radius: 999px;
+  background: var(--cor-tinta);
+  color: var(--cor-limao);
+  font-weight: 800;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.botao-ingresso:hover {
+  background: color-mix(in srgb, var(--cor-tinta) 85%, var(--cor-limao));
+}
+
+.botao-ingresso:focus-visible {
+  outline: 3px solid var(--cor-foco);
+  outline-offset: 2px;
+}

@@ -1,0 +1,250 @@
+{
+ "exemplo": true,
+ "baixado_em": "2026-11-06T10:00:00-03:00",
+ "inicio": "2026-10-08",
+ "fim": "2026-11-06",
+ "por_dia": [
+  {
+   "dia": "2026-10-08",
+   "visitas": 42
+  },
+  {
+   "dia": "2026-10-09",
+   "visitas": 38
+  },
+  {
+   "dia": "2026-10-10",
+   "visitas": 83
+  },
+  {
+   "dia": "2026-10-11",
+   "visitas": 93
+  },
+  {
+   "dia": "2026-10-12",
+   "visitas": 41
+  },
+  {
+   "dia": "2026-10-13",
+   "visitas": 45
+  },
+  {
+   "dia": "2026-10-14",
+   "visitas": 97
+  },
+  {
+   "dia": "2026-10-15",
+   "visitas": 50
+  },
+  {
+   "dia": "2026-10-16",
+   "visitas": 60
+  },
+  {
+   "dia": "2026-10-17",
+   "visitas": 104
+  },
+  {
+   "dia": "2026-10-18",
+   "visitas": 90
+  },
+  {
+   "dia": "2026-10-19",
+   "visitas": 72
+  },
+  {
+   "dia": "2026-10-20",
+   "visitas": 64
+  },
+  {
+   "dia": "2026-10-21",
+   "visitas": 96
+  },
+  {
+   "dia": "2026-10-22",
+   "visitas": 64
+  },
+  {
+   "dia": "2026-10-23",
+   "visitas": 78
+  },
+  {
+   "dia": "2026-10-24",
+   "visitas": 115
+  },
+  {
+   "dia": "2026-10-25",
+   "visitas": 106
+  },
+  {
+   "dia": "2026-10-26",
+   "visitas": 78
+  },
+  {
+   "dia": "2026-10-27",
+   "visitas": 75
+  },
+  {
+   "dia": "2026-10-28",
+   "visitas": 128
+  },
+  {
+   "dia": "2026-10-29",
+   "visitas": 91
+  },
+  {
+   "dia": "2026-10-30",
+   "visitas": 81
+  },
+  {
+   "dia": "2026-10-31",
+   "visitas": 135
+  },
+  {
+   "dia": "2026-11-01",
+   "visitas": 122
+  },
+  {
+   "dia": "2026-11-02",
+   "visitas": 94
+  },
+  {
+   "dia": "2026-11-03",
+   "visitas": 109
+  },
+  {
+   "dia": "2026-11-04",
+   "visitas": 146
+  },
+  {
+   "dia": "2026-11-05",
+   "visitas": 111
+  },
+  {
+   "dia": "2026-11-06",
+   "visitas": 96
+  }
+ ],
+ "paginas": [
+  {
+   "pagina": "/site/",
+   "titulo": "Prob.com · Chances do Brasileirão 2026",
+   "visitas": 1068
+  },
+  {
+   "pagina": "/site/simulador.html",
+   "titulo": "Simulador · Prob.com",
+   "visitas": 495
+  },
+  {
+   "pagina": "/site/meu-time.html",
+   "titulo": "Meu Time · Prob.com",
+   "visitas": 443
+  },
+  {
+   "pagina": "/site/serie-b.html",
+   "titulo": "Série B · Prob.com",
+   "visitas": 234
+  },
+  {
+   "pagina": "/site/metodo.html",
+   "titulo": "O Método · Prob.com",
+   "visitas": 156
+  },
+  {
+   "pagina": "/site/paulista.html",
+   "titulo": "Paulista · Prob.com",
+   "visitas": 104
+  },
+  {
+   "pagina": "/site/gaucho.html",
+   "titulo": "Gaúcho · Prob.com",
+   "visitas": 52
+  },
+  {
+   "pagina": "/site/catarinense.html",
+   "titulo": "Catarinense · Prob.com",
+   "visitas": 52
+  }
+ ],
+ "origens": [
+  {
+   "nome": "(acesso direto)",
+   "visitas": 1354
+  },
+  {
+   "nome": "google.com",
+   "visitas": 547
+  },
+  {
+   "nome": "whatsapp",
+   "visitas": 365
+  },
+  {
+   "nome": "x.com",
+   "visitas": 182
+  },
+  {
+   "nome": "instagram.com",
+   "visitas": 156
+  }
+ ],
+ "navegadores": [
+  {
+   "nome": "Chrome",
+   "visitas": 1510
+  },
+  {
+   "nome": "Safari",
+   "visitas": 703
+  },
+  {
+   "nome": "Samsung Internet",
+   "visitas": 208
+  },
+  {
+   "nome": "Firefox",
+   "visitas": 104
+  },
+  {
+   "nome": "Edge",
+   "visitas": 78
+  }
+ ],
+ "sistemas": [
+  {
+   "nome": "Android",
+   "visitas": 1276
+  },
+  {
+   "nome": "iOS",
+   "visitas": 755
+  },
+  {
+   "nome": "Windows",
+   "visitas": 417
+  },
+  {
+   "nome": "macOS",
+   "visitas": 130
+  },
+  {
+   "nome": "Linux",
+   "visitas": 26
+  }
+ ],
+ "telas": [
+  {
+   "nome": "Celular",
+   "visitas": 1979
+  },
+  {
+   "nome": "Computador",
+   "visitas": 521
+  },
+  {
+   "nome": "Tablet",
+   "visitas": 104
+  }
+ ]
+}

@@ -685,3 +685,14 @@
   white-space: nowrap;
 }
 
+
+/* O botão de ingressos do primeiro próximo jogo ocupa a linha inteira, embaixo do jogo. */
+.jogo-mt__ingresso {
+  grid-column: 1 / -1;
+}
+
+.jogo-mt__ingresso .botao-ingresso {
+  margin-top: 4px;
+  background: var(--time-texto, var(--cor-tinta));   /* a versão escura da cor do clube: o branco fica legível */
+  color: #fff;
+}

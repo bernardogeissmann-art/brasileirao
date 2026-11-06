@@ -5,6 +5,7 @@
 
 import { ABAS } from "./abas.js";
 import { FAIXAS } from "./simulacao.js";
+import { iniciarContador } from "./contador.js";
 
 // As 4 categorias de chance da Série A, na ordem em que aparecem em todo o site.
 export const CATEGORIAS = [
@@ -170,6 +171,7 @@ function montarCabecalho(abaAtual) {
 //   abaAtual: o id da página em que estamos
 export function instalarCabecalho(elemento, abaAtual) {
   elemento.innerHTML = montarCabecalho(abaAtual);
+  iniciarContador();   // conta a visita (todas as páginas instalam o topo; ver contador.js)
 
   // No celular a faixa de abas rola para o lado: já começa mostrando a aba da página atual.
   const faixa = elemento.querySelector(".abas");
@@ -451,7 +453,8 @@ function formaRecente(forma) {
 //   estado:    o que situacaoComPlacar() devolve (veja jogos-do-dia.js):
 //              { situacao: "antes" | "andamento" | "intervalo" | "aguardando" | "encerrado",
 //                gols: [mandante, visitante] quando há placar, minuto: "67'" quando a bola rola }
-export function cardConfronto({ jogo, times, tabela, forma, chances, estado }) {
+//   ingresso: (opcional) endereço para comprar ingressos; sem ele, não há botão
+export function cardConfronto({ jogo, times, tabela, forma, chances, estado, ingresso }) {
   const { situacao, gols, minuto } = estado;
   const temPlacar = Array.isArray(gols);
   const hora = new Intl.DateTimeFormat("pt-BR", { timeZone: "America/Sao_Paulo", hour: "2-digit", minute: "2-digit" })
@@ -508,7 +511,7 @@ export function cardConfronto({ jogo, times, tabela, forma, chances, estado }) {
     <li class="confronto">
       <p class="confronto__topo">
         ${selo}
-        <span class="confronto__info">Rodada ${jogo.rodada}${jogo.estadio ? ` · ${escaparHtml(jogo.estadio)}` : ""}</span>
+        <span class="confronto__info">${jogo.rodada ? `Rodada ${jogo.rodada}` : "Playoff"}${jogo.estadio ? ` · ${escaparHtml(jogo.estadio)}` : ""}</span>
       </p>
       ${linhaTime("mandante")}
       ${linhaTime("visitante")}
@@ -517,7 +520,17 @@ export function cardConfronto({ jogo, times, tabela, forma, chances, estado }) {
         <span class="confronto__onde-rotulo">Onde assistir</span>
         <ul class="canais">${canais}</ul>
       </div>
+      ${ingresso ? botaoIngresso(ingresso, times[jogo.mandante].nome) : ""}
     </li>`;
+}
+
+// Botão "Comprar ingressos": abre a loja de ingressos do time da casa, em outra aba.
+export function botaoIngresso(endereco, nomeMandante) {
+  return `
+      <a class="botao-ingresso" href="${escaparHtml(endereco)}" target="_blank" rel="noopener noreferrer">
+        Comprar ingressos<span class="so-leitor"> (loja de ingressos do ${escaparHtml(nomeMandante)}, abre em outra aba)</span>
+        <span aria-hidden="true">↗</span>
+      </a>`;
 }
 
 

@@ -9,11 +9,12 @@
 //   6) mostra os últimos vídeos de canais do YouTube dedicados ao time (data/canais-youtube.json);
 //   7) toca, ao vivo, as rádios que cobrem o time (data/radios.json).
 
+import { lerIngressos, enderecoDoIngresso } from "./ingressos.js";
 import { carregarDados, simular, tabelaAtual, chancesDoJogo } from "./simulacao.js";
 import { atualizarComEspn } from "./jogos-do-dia.js";
 import { entradaValida, listaDoYouTube, playerDaEntrada } from "./videos.js";
 import {
-  instalarCabecalho, montarRodape, anelChance, escaparHtml, formatarChance, formatarData, formatarDataJogo,
+  instalarCabecalho, montarRodape, anelChance, escaparHtml, formatarChance, formatarData, formatarDataJogo, botaoIngresso,
 } from "./componentes.js";
 
 const $ = (id) => document.getElementById(id);
@@ -31,6 +32,7 @@ let cores = {};             // cores de cada clube
 let conteudo = null;        // texto e notícias (pode não existir ainda)
 let canais = null;          // canais do YouTube de cada time (opcional)
 let radios = null;          // rádios de cada time (opcional)
+let ingressos = null;       // loja de ingressos de cada clube (opcional)
 let tabela = null;          // tabela atual do campeonato do time que está na tela
 
 iniciar();
@@ -63,6 +65,7 @@ async function iniciar() {
   conteudo = await lerJson("data/meu-time.json").catch(() => null);
   canais = await lerJson("data/canais-youtube.json").catch(() => null);
   radios = await lerJson("data/radios.json").catch(() => null);
+  ingressos = await lerIngressos();
   try {
     const dadosB = await carregarDados("serie-b");
     await atualizarComEspn(dadosB.jogos);
@@ -322,7 +325,9 @@ function montarJogos(id) {
     </li>`).join("") || `<li class="bloco__nota">Nenhum jogo ainda.</li>`;
 
   const proximos = todos.filter((j) => !j.disputado).sort((a, b) => a.data.localeCompare(b.data)).slice(0, 3);
-  $("proximos").innerHTML = proximos.map((j) => {
+  // Só o primeiro próximo jogo ganha o botão "Comprar ingressos" (e só até a hora do início).
+  const ingressoDoProximo = proximos[0] ? enderecoDoIngresso(proximos[0], ingressos) : null;
+  $("proximos").innerHTML = proximos.map((j, i) => {
     const c = chancesDoJogo(j, dados.modelo);
     const v = j.emCasa ? c.vitoriaM : c.vitoriaV;
     const d = j.emCasa ? c.vitoriaV : c.vitoriaM;
@@ -341,6 +346,7 @@ function montarJogos(id) {
           </div>
           <p class="mini-chances__texto" aria-hidden="true">Vitória ${formatarChance(v)} · Empate ${formatarChance(c.empate)} · Derrota ${formatarChance(d)}</p>
         </div>
+        ${i === 0 && ingressoDoProximo ? `<div class="jogo-mt__ingresso">${botaoIngresso(ingressoDoProximo, time(j.mandante).nome)}</div>` : ""}
       </li>`;
   }).join("") || `<li class="bloco__nota">A temporada do time no Brasileirão já terminou.</li>`;
 }

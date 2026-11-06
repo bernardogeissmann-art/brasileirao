@@ -1,0 +1,70 @@
+{
+ "explicacao": "Loja oficial de ingressos de cada clube, para o botão 'Comprar ingressos' (Jogos do dia e Meu Time). O botão de um jogo usa a loja do time da casa (o mandante) e some quando o jogo começa (regras em site/js/ingressos.js). Só entram endereços conferidos (que abrem e são mesmo a venda de ingressos do clube); time sem loja aqui fica sem botão. Para acrescentar um clube, copie uma linha e troque os dados (o endereço precisa começar com https://).",
+ "conferido_em": "2026-11-06",
+ "times": {
+  "flamengo": {
+   "url": "https://ingressos.flamengo.com.br",
+   "plataforma": "Futebolcard"
+  },
+  "palmeiras": {
+   "url": "https://ingressospalmeiras.com.br/",
+   "plataforma": "Ingressos Palmeiras"
+  },
+  "cruzeiro": {
+   "url": "https://ingresso.cruzeiro.com.br",
+   "plataforma": "Sócio 5 Estrelas"
+  },
+  "fluminense": {
+   "url": "https://fluminense.futebolcard.com",
+   "plataforma": "Futebolcard"
+  },
+  "mineiro": {
+   "url": "https://ingressos.galonaveia.com.br/",
+   "plataforma": "Galo na Veia"
+  },
+  "sao-paulo": {
+   "url": "https://www.spfcticket.net/",
+   "plataforma": "SPFC Ticket"
+  },
+  "botafogo": {
+   "url": "https://botafogo.ingresse.com/",
+   "plataforma": "Ingresse"
+  },
+  "vasco-da-gama": {
+   "url": "https://vasco.eleventickets.com",
+   "plataforma": "Eleven Tickets"
+  },
+  "paranaense": {
+   "url": "https://ingressos.athletico.com.br/",
+   "plataforma": "Ingressos Athletico"
+  },
+  "coritiba": {
+   "url": "https://coritiba.futebolcard.com/",
+   "plataforma": "Futebolcard"
+  },
+  "santos": {
+   "url": "https://ingressos.santosfc.com.br",
+   "plataforma": "Ingressos Santos FC"
+  },
+  "mirassol": {
+   "url": "https://mirassolfc.com.br/pages/ingressos",
+   "plataforma": "Site do clube"
+  },
+  "ceara": {
+   "url": "https://www.ingressosa.com/cearasc",
+   "plataforma": "Ingresso SA (Vozão Tickets)"
+  },
+  "goias": {
+   "url": "https://ingresso.goiasec.com.br/",
+   "plataforma": "Ingressos Goiás"
+  },
+  "juventude": {
+   "url": "https://juventudeingressos.eleventickets.com/",
+   "plataforma": "Eleven Tickets"
+  },
+  "operario-pr": {
+   "url": "https://operarioferroviario.futebolcard.com/",
+   "plataforma": "Futebolcard"
+  }
+ }
+}

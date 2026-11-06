@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Acessos · Painel do Prob.com</title>
+  <!-- Painel só para o dono do site: não é publicado (a montagem do site copia só site/, assets/ e data/). -->
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="../site/css/tokens.css">
+  <link rel="stylesheet" href="acessos.css">
+  <script type="module" src="acessos.js"></script>
+</head>
+<body>
+  <main class="painel">
+    <header class="painel__topo">
+      <p class="painel__chapeu">Painel do Prob.com · só no seu computador</p>
+      <h1>Acessos do site</h1>
+      <p class="painel__periodo" id="periodo">Carregando…</p>
+      <p class="painel__aviso" id="aviso" hidden></p>
+    </header>
+
+    <section class="destaques" id="destaques" aria-label="Resumo"></section>
+
+    <section class="cartao">
+      <h2>Visitas por dia</h2>
+      <div class="grafico-dias" id="grafico-dias"></div>
+      <details class="tabela-dias">
+        <summary>Ver os números em tabela</summary>
+        <table id="tabela-dias"><thead><tr><th>Dia</th><th>Visitas</th></tr></thead><tbody></tbody></table>
+      </details>
+    </section>
+
+    <div class="grade">
+      <section class="cartao"><h2>Páginas mais vistas</h2><ol class="barras" id="paginas"></ol></section>
+      <section class="cartao"><h2>De onde vêm as visitas</h2><ol class="barras" id="origens"></ol></section>
+      <section class="cartao"><h2>Celular ou computador</h2><ol class="barras" id="telas"></ol></section>
+      <section class="cartao"><h2>Sistemas</h2><ol class="barras" id="sistemas"></ol></section>
+      <section class="cartao"><h2>Navegadores</h2><ol class="barras" id="navegadores"></ol></section>
+    </div>
+
+    <p class="painel__rodape">Os números vêm do GoatCounter, que não usa cookies. Uma "visita" é uma pessoa
+      diferente vendo a página naquele dia. Para atualizar: <code>python scripts/painel/baixar_acessos.py</code>.</p>
+  </main>
+</body>
+</html>
