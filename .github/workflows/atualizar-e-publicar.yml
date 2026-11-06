@@ -1,6 +1,7 @@
 # atualizar-e-publicar.yml
 # "Receita" que o GitHub Actions segue sozinho, num computador emprestado do GitHub:
-#   1) todo dia de madrugada: baixa os jogos, confere os dados e estima o modelo;
+#   1) todo dia de madrugada: baixa os jogos, confere os dados, estima o modelo, busca as
+#      notícias do Meu Time, confere as rádios e reescreve o texto dos times que jogaram;
 #   2) se tudo passou: guarda os dados novos no repositório, roda os testes e publica o site;
 #   3) se algo falhou: não publica e abre um aviso (issue) no repositório.
 #
@@ -17,9 +18,8 @@ on:
     # Formato "minuto hora dia mês dia-da-semana", no horário UTC.
     # "0 7 * * *" = todo dia às 07:00 UTC = 04:00 de Brasília (depois dos jogos da noite).
     - cron: "0 7 * * *"
-    # Página Meu Time (texto e notícias): quartas e domingos às 23h de Brasília.
-    # 23h de Brasília = 02h UTC do dia seguinte, por isso segunda (1) e quinta (4).
-    - cron: "0 2 * * 1,4"
+    # O texto do Meu Time logo depois de cada jogo fica na rotina "Depois dos jogos"
+    # (depois-dos-jogos.yml).
   # Cria o botão "Run workflow" na aba Actions, para rodar na hora que você quiser.
   workflow_dispatch:
   # Quando você mandar mudanças no código para a branch main, o site é republicado
@@ -44,6 +44,11 @@ jobs:
     runs-on: ubuntu-latest          # o computador emprestado usa Linux
     permissions:
       contents: write               # permite fazer commit dos dados novos
+    # As rotinas que gravam dados no repositório (esta e a "Depois dos jogos") usam a mesma
+    # "fila": nunca duas gravando ao mesmo tempo.
+    concurrency:
+      group: dados-do-site
+      cancel-in-progress: false
     steps:
       - name: Pegar o código do repositório
         uses: actions/checkout@v7
@@ -75,23 +80,29 @@ jobs:
         # "npm ci" instala exatamente as versões anotadas no package-lock.json.
         run: npm ci
 
-      - name: Atualizar a página Meu Time (texto e notícias)
-        # Só às quartas e domingos às 23h, ou quando você clicar em "Run workflow".
-        if: github.event.schedule == '0 2 * * 1,4' || github.event_name == 'workflow_dispatch'
-        # A chave da IA também vem de um "secret". Sem ela, o texto sai com as frases prontas.
+      - name: Meu Time - notícias do dia (sem IA)
+        run: node scripts/meu_time/atualizar_noticias.js
+
+      - name: Meu Time - conferir as transmissões das rádios
+        run: python scripts/meu_time/atualizar_radios.py
+
+      - name: Meu Time - texto dos times que jogaram e ainda não ganharam texto novo
+        # Normalmente o texto já foi escrito logo depois do jogo (rotina "Depois dos jogos");
+        # aqui é a rede de segurança. A chave da IA vem de um "secret"; sem ela, frases prontas.
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: node scripts/meu_time/atualizar_meu_time.js
+        run: node scripts/meu_time/atualizar_textos.js --depois-dos-jogos
 
       - name: Guardar os dados novos no repositório
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/jogos.json data/modelo.json data/meu-time.json assets/escudos
+          git add data/jogos.json data/modelo.json data/meu-time.json data/radios.json assets/escudos
           if git diff --cached --quiet; then
             echo "Nada mudou nos dados."
           else
             git commit -m "Atualiza dados do Brasileirão (automático)"
+            git pull --rebase   # traz o que outra rotina possa ter gravado enquanto esta rodava
             git push
           fi
 

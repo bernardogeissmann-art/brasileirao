@@ -97,17 +97,26 @@ function montarDestaques(chances, times) {
 }
 
 // Mostra os Jogos do dia e, enquanto houver jogo rolando, busca o placar ao vivo de novo
-// a cada minuto (o arquivo é atualizado no site a cada ~5 minutos durante os jogos).
+// a cada minuto (direto da ESPN, pelo navegador de quem está vendo a página).
 const UM_MINUTO = 60 * 1000;
 
+// Os jogos de hoje que já começaram (ou estão para começar): só para eles vale buscar placar.
+function jogosComecados(jogos) {
+  const escolha = escolherJogosDoDia(jogos.jogos);
+  if (!escolha?.eHoje) return [];
+  const agora = Date.now();
+  return escolha.jogos.filter((j) => j.disputado || new Date(j.data).getTime() - 5 * UM_MINUTO <= agora);
+}
+
 async function acompanharJogosDoDia(dados) {
-  montarJogosDoDia(dados, await lerPlacarAoVivo());
+  const buscar = () => lerPlacarAoVivo(jogosComecados(dados.jogos), dados.jogos.times);
+  montarJogosDoDia(dados, await buscar());
   const relogio = setInterval(async () => {
     if (!temJogoRolando(dados.jogos.jogos)) {
       clearInterval(relogio);   // acabaram os jogos de agora: para de buscar
       return;
     }
-    montarJogosDoDia(dados, await lerPlacarAoVivo());
+    montarJogosDoDia(dados, await buscar());
   }, UM_MINUTO);
 }
 
@@ -148,7 +157,7 @@ function montarJogosDoDia({ jogos, modelo }, aoVivo) {
     "Os quadradinhos mostram os últimos 5 jogos de cada time (V = vitória, E = empate, D = derrota), do mais antigo ao mais recente. " +
     "Onde assistir: canais informados pelo ge.globo; podem mudar." +
     (aoVivo?.jogos && Object.keys(aoVivo.jogos).length
-      ? ` Placar ao vivo da ESPN, atualizado a cada ~5 minutos (último: ${new Intl.DateTimeFormat("pt-BR",
+      ? ` Placar ao vivo da ESPN (último: ${new Intl.DateTimeFormat("pt-BR",
         { timeZone: "America/Sao_Paulo", hour: "2-digit", minute: "2-digit" }).format(new Date(aoVivo.atualizado_em))}).`
       : "");
 }

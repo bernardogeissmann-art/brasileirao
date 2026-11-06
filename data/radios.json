@@ -1,0 +1,335 @@
+{
+ "explicacao": "Rádios da seção 'Oldschool / Old is cool' da página Meu Time. Em 'radios', cada rádio tem o número dela na RadiosNet (radios.com.br), o nome, a cidade, o endereço da transmissão (precisa começar com https) e a página dela na RadiosNet. Em 'times', a lista de rádios de cada time. O script scripts/meu_time/atualizar_radios.py confere as transmissões na RadiosNet de madrugada e troca o endereço se a rádio mudar.",
+ "radios": {
+  "ndfm-chapeco": {
+   "radiosnet": 194405,
+   "nome": "NDFM Chapecó 94.1",
+   "cidade": "Chapecó (SC)",
+   "transmissao": "https://radio01.zas.media:8050/stream",
+   "pagina": "https://www.radios.com.br/aovivo/radio-ndfm-chapeco-941-fm/194405"
+  },
+  "oeste-capital": {
+   "radiosnet": 13827,
+   "nome": "Oeste Capital FM 93.3",
+   "cidade": "Chapecó (SC)",
+   "transmissao": "https://stm10.virtualcast.com.br:8278/oestecapital",
+   "pagina": "https://www.radios.com.br/aovivo/radio-oeste-capital-933-fm/13827"
+  },
+  "super-conda": {
+   "radiosnet": 14462,
+   "nome": "Super Condá 98.9 FM",
+   "cidade": "Chapecó (SC)",
+   "transmissao": "https://stream.loopert.com/66",
+   "pagina": "https://www.radios.com.br/aovivo/radio-super-conda-989-fm/14462"
+  },
+  "gaucha": {
+   "radiosnet": 13176,
+   "nome": "Rádio Gaúcha 93.7 FM",
+   "cidade": "Porto Alegre (RS)",
+   "transmissao": "https://liverdgaupoa.rbsdirect.com.br/primary/gaucha_rbs.sdp/playlist.m3u8",
+   "pagina": "https://www.radios.com.br/aovivo/radio-gaucha-937-fm/13176"
+  },
+  "grenal": {
+   "radiosnet": 14075,
+   "nome": "Rádio Grenal 95.9 FM",
+   "cidade": "Porto Alegre (RS)",
+   "transmissao": "https://grenal.audiostream.com.br:20000/aac",
+   "pagina": "https://www.radios.com.br/aovivo/radio-grenal-959-fm/14075"
+  },
+  "tupi": {
+   "radiosnet": 14215,
+   "nome": "Super Rádio Tupi 96.5 FM",
+   "cidade": "Rio de Janeiro (RJ)",
+   "transmissao": "https://8923.brasilstream.com.br/stream",
+   "pagina": "https://www.radios.com.br/aovivo/super-radio-tupi-965-fm/14215"
+  },
+  "globo-rj": {
+   "radiosnet": 8817,
+   "nome": "Rádio Globo 98.1 FM",
+   "cidade": "Rio de Janeiro (RJ)",
+   "transmissao": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_GLOBO_RJAAC.aac?dist=radioscombr",
+   "pagina": "https://www.radios.com.br/aovivo/radio-globo-981-fm/8817"
+  },
+  "bandnews-rj": {
+   "radiosnet": 10399,
+   "nome": "BandNews FM Rio 90.3",
+   "cidade": "Rio de Janeiro (RJ)",
+   "transmissao": "https://playerservices.streamtheworld.com/api/livestream-redirect/BANDNEWSFM_RJAAC.aac?dist=RadiosNet",
+   "pagina": "https://www.radios.com.br/aovivo/radio-bandnews-rj-903-fm/10399"
+  },
+  "tmc-rio": {
+   "radiosnet": 14275,
+   "nome": "TMC 101.3 FM",
+   "cidade": "Rio de Janeiro (RJ)",
+   "transmissao": "https://playerservices.streamtheworld.com/api/livestream-redirect/RT_RJ.mp3?dist=RadiosComBr-TMC",
+   "pagina": "https://www.radios.com.br/aovivo/radio-tmc-1013-fm/14275"
+  },
+  "carioca-futebol": {
+   "radiosnet": 72111,
+   "nome": "Rádio Carioca Futebol",
+   "cidade": "Rio de Janeiro (RJ)",
+   "transmissao": "https://stm23.srvaudio.com.br:9456/stream",
+   "pagina": "https://www.radios.com.br/aovivo/radio-carioca-futebol/72111"
+  },
+  "energia-97": {
+   "radiosnet": 13065,
+   "nome": "Energia 97 FM",
+   "cidade": "São Paulo (SP)",
+   "transmissao": "https://playerservices.streamtheworld.com/api/livestream-redirect/ENERGIA_97_FM.mp3?dist=radioscombr",
+   "pagina": "https://www.radios.com.br/aovivo/radio-energia-977-fm/13065"
+  },
+  "bandeirantes-sp": {
+   "radiosnet": 10410,
+   "nome": "Rádio Bandeirantes",
+   "cidade": "São Paulo (SP)",
+   "transmissao": "https://playerservices.streamtheworld.com/api/livestream-redirect/RadioBandeirantesAAC.aac?dist=RADIOSNET",
+   "pagina": "https://www.radios.com.br/aovivo/radio-bandeirantes-1073-fm/10410"
+  },
+  "cbn-sp": {
+   "radiosnet": 8816,
+   "nome": "CBN São Paulo 90.5 FM",
+   "cidade": "São Paulo (SP)",
+   "transmissao": "https://playerservices.streamtheworld.com/api/livestream-redirect/CBN_SPAAC.aac?dist=radioscombr",
+   "pagina": "https://www.radios.com.br/aovivo/radio-cbn-sao-paulo-905-fm/8816"
+  },
+  "jovem-pan-news": {
+   "radiosnet": 8800,
+   "nome": "Jovem Pan News",
+   "cidade": "São Paulo (SP)",
+   "transmissao": "https://stream.zeno.fm/vlcraijc6yiuv",
+   "pagina": "https://www.radios.com.br/aovivo/radio-jovem-pan-news/8800"
+  },
+  "tmc-sp": {
+   "radiosnet": 8803,
+   "nome": "TMC 100.1 FM",
+   "cidade": "São Paulo (SP)",
+   "transmissao": "https://playerservices.streamtheworld.com/api/livestream-redirect/RT_SP.mp3?dist=RadiosComBr-TMC",
+   "pagina": "https://www.radios.com.br/aovivo/radio-tmc-1001-fm/8803"
+  },
+  "cbn-santos": {
+   "radiosnet": 219792,
+   "nome": "CBN Santos 97.3 FM",
+   "cidade": "Santos (SP)",
+   "transmissao": "https://cast5.fabricahost.com.br/proxy/cbnsantos/stream",
+   "pagina": "https://www.radios.com.br/aovivo/radio-cbn-santos-973-fm/219792"
+  },
+  "jovem-pan-santos": {
+   "radiosnet": 13415,
+   "nome": "Jovem Pan Santos 95.1 FM",
+   "cidade": "Santos (SP)",
+   "transmissao": "https://r18.ciclano.io/proxy/radiosa4/stream",
+   "pagina": "https://www.radios.com.br/aovivo/radio-jovem-pan-951-fm/13415"
+  },
+  "itatiaia": {
+   "radiosnet": 14,
+   "nome": "Rádio Itatiaia",
+   "cidade": "Belo Horizonte (MG)",
+   "transmissao": "https://8903.brasilstream.com.br/stream",
+   "pagina": "https://www.radios.com.br/aovivo/radio-itatiaia-610-am-957-fm/14"
+  },
+  "cbn-bh": {
+   "radiosnet": 8768,
+   "nome": "CBN BH 106.1 FM",
+   "cidade": "Belo Horizonte (MG)",
+   "transmissao": "https://playerservices.streamtheworld.com/api/livestream-redirect/CBN_BHAAC.aac?dist=radioscombr",
+   "pagina": "https://www.radios.com.br/aovivo/radio-cbn-bh-1061-fm/8768"
+  },
+  "bandnews-bh": {
+   "radiosnet": 10402,
+   "nome": "BandNews FM BH 89.5",
+   "cidade": "Belo Horizonte (MG)",
+   "transmissao": "https://playerservices.streamtheworld.com/api/livestream-redirect/BANDNEWSFM_BHAAC.aac?dist=radios.com.br",
+   "pagina": "https://www.radios.com.br/aovivo/radio-bandnews-bh-895-fm/10402"
+  },
+  "sociedade-ba": {
+   "radiosnet": 14217,
+   "nome": "Rádio Sociedade 97.9 FM",
+   "cidade": "Salvador (BA)",
+   "transmissao": "https://radio01.zas.media:8022/stream",
+   "pagina": "https://www.radios.com.br/aovivo/radio-sociedade-979-fm/14217"
+  },
+  "cbn-salvador": {
+   "radiosnet": 120034,
+   "nome": "CBN Salvador 107.9 FM",
+   "cidade": "Salvador (BA)",
+   "transmissao": "https://sv1.audiostream.com.br/radio/8030/stream",
+   "pagina": "https://www.radios.com.br/aovivo/radio-cbn-salvador-1079-fm/120034"
+  },
+  "bandnews-salvador": {
+   "radiosnet": 10403,
+   "nome": "BandNews FM Salvador 99.1",
+   "cidade": "Salvador (BA)",
+   "transmissao": "https://playerservices.streamtheworld.com/api/livestream-redirect/BANDNEWSFM_SALAAC.aac?dist=RadiosNet",
+   "pagina": "https://www.radios.com.br/aovivo/radio-bandnews-991-fm/10403"
+  },
+  "banda-b": {
+   "radiosnet": 10406,
+   "nome": "Rádio Banda B 89.7 FM",
+   "cidade": "Curitiba (PR)",
+   "transmissao": "https://ice.fabricahost.com.br/bandabctb",
+   "pagina": "https://www.radios.com.br/aovivo/radio-banda-b-897-fm/10406"
+  },
+  "tmc-curitiba": {
+   "radiosnet": 8832,
+   "nome": "TMC 100.3 FM",
+   "cidade": "Curitiba (PR)",
+   "transmissao": "https://playerservices.streamtheworld.com/api/livestream-redirect/RT_CWB.mp3?dist=RadiosComBr-TMC",
+   "pagina": "https://www.radios.com.br/aovivo/radio-tmc-1003-fm/8832"
+  },
+  "cbn-curitiba": {
+   "radiosnet": 11238,
+   "nome": "CBN Curitiba 95.1 FM",
+   "cidade": "Curitiba (PR)",
+   "transmissao": "https://ice.fabricahost.com.br/cbncuritiba",
+   "pagina": "https://www.radios.com.br/aovivo/radio-cbn-curitiba-951-fm/11238"
+  },
+  "clube-do-para": {
+   "radiosnet": 11886,
+   "nome": "Rádio Clube do Pará 106.9 FM",
+   "cidade": "Belém (PA)",
+   "transmissao": "https://carajas2.jmvstream.com/live",
+   "pagina": "https://www.radios.com.br/aovivo/radio-clube-do-para-1069-fm/11886"
+  },
+  "marajoara": {
+   "radiosnet": 18948,
+   "nome": "Super Rádio Marajoara 100.5 FM",
+   "cidade": "Belém (PA)",
+   "transmissao": "https://radio01.zas.media:8026/stream",
+   "pagina": "https://www.radios.com.br/aovivo/super-radio-marajoara-1005-fm/18948"
+  },
+  "braganca": {
+   "radiosnet": 10483,
+   "nome": "Rádio Bragança 79.7 FM",
+   "cidade": "Bragança Paulista (SP)",
+   "transmissao": "https://radio.desdobrar.com/radio/8010/radio.mp3",
+   "pagina": "https://www.radios.com.br/aovivo/radio-braganca-797-fm/10483"
+  },
+  "futebol-total": {
+   "radiosnet": 26285,
+   "nome": "Rádio Futebol Total",
+   "cidade": "Bragança Paulista (SP)",
+   "transmissao": "https://s32.maxcast.com.br:8028/live",
+   "pagina": "https://www.radios.com.br/aovivo/radio-futebol-total/26285"
+  },
+  "ts-mirassol": {
+   "radiosnet": 33699,
+   "nome": "TS Rádio Mirassol",
+   "cidade": "Mirassol (SP)",
+   "transmissao": "https://hts05.brascast.com:8612/live",
+   "pagina": "https://www.radios.com.br/aovivo/ts-radio-mirassol/33699"
+  },
+  "kairos-mirassol": {
+   "radiosnet": 140073,
+   "nome": "Rádio Kairós 94.1 FM",
+   "cidade": "Mirassol (SP)",
+   "transmissao": "https://centova2.svdns.com.br:20080/stream",
+   "pagina": "https://www.radios.com.br/aovivo/radio-kairos-941-fm/140073"
+  },
+  "cbn-rio-preto": {
+   "radiosnet": 28672,
+   "nome": "CBN Grandes Lagos 90.9 FM",
+   "cidade": "São José do Rio Preto (SP)",
+   "transmissao": "https://stm10.srvstm.com:8276/stream",
+   "pagina": "https://www.radios.com.br/aovivo/radio-cbn-grandes-lagos-909-fm/28672"
+  }
+ },
+ "times": {
+  "chapecoense": [
+   "ndfm-chapeco",
+   "oeste-capital",
+   "super-conda"
+  ],
+  "internacional": [
+   "gaucha",
+   "grenal"
+  ],
+  "gremio": [
+   "gaucha",
+   "grenal"
+  ],
+  "flamengo": [
+   "tupi",
+   "globo-rj",
+   "tmc-rio"
+  ],
+  "fluminense": [
+   "tupi",
+   "globo-rj",
+   "bandnews-rj"
+  ],
+  "vasco-da-gama": [
+   "tupi",
+   "globo-rj",
+   "carioca-futebol"
+  ],
+  "botafogo": [
+   "tupi",
+   "tmc-rio",
+   "bandnews-rj"
+  ],
+  "palmeiras": [
+   "energia-97",
+   "bandeirantes-sp",
+   "cbn-sp"
+  ],
+  "corinthians": [
+   "energia-97",
+   "bandeirantes-sp",
+   "jovem-pan-news"
+  ],
+  "sao-paulo": [
+   "cbn-sp",
+   "tmc-sp",
+   "bandeirantes-sp"
+  ],
+  "santos": [
+   "cbn-santos",
+   "jovem-pan-santos",
+   "bandeirantes-sp"
+  ],
+  "mineiro": [
+   "itatiaia",
+   "cbn-bh",
+   "bandnews-bh"
+  ],
+  "cruzeiro": [
+   "itatiaia",
+   "cbn-bh",
+   "bandnews-bh"
+  ],
+  "bahia": [
+   "sociedade-ba",
+   "cbn-salvador",
+   "bandnews-salvador"
+  ],
+  "vitoria": [
+   "sociedade-ba",
+   "cbn-salvador",
+   "bandnews-salvador"
+  ],
+  "paranaense": [
+   "banda-b",
+   "tmc-curitiba",
+   "cbn-curitiba"
+  ],
+  "coritiba": [
+   "banda-b",
+   "tmc-curitiba",
+   "cbn-curitiba"
+  ],
+  "clube-do-remo": [
+   "clube-do-para",
+   "marajoara"
+  ],
+  "bragantino": [
+   "braganca",
+   "futebol-total",
+   "cbn-sp"
+  ],
+  "mirassol": [
+   "ts-mirassol",
+   "kairos-mirassol",
+   "cbn-rio-preto"
+  ]
+ }
+}

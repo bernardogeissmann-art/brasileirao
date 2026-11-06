@@ -163,12 +163,79 @@ test("a lista de canais do YouTube está bem preenchida", () => {
     assert.ok(lista.length >= 1 && lista.length <= 3, `${idTime}: de 1 a 3 canais`);
     for (const c of lista) {
       assert.ok(["imprensa", "oficial", "destaque"].includes(c.tipo), `${idTime}: tipo de ${c.nome}`);
-      // "destaque" é um vídeo avulso (código de 11 letras); os outros são canais (código UC...).
-      const codigo = c.tipo === "destaque" ? c.video : c.canal;
-      assert.match(codigo, c.tipo === "destaque" ? /^[\w-]{11}$/ : /^UC[\w-]{22}$/, `${idTime}: código de ${c.nome}`);
+      // "destaque" é um vídeo avulso (11 letras); os outros são uma playlist (PL...) ou um canal (UC...).
+      const [codigo, regra] = c.tipo === "destaque" ? [c.video, /^[\w-]{11}$/]
+        : c.playlist ? [c.playlist, /^PL[\w-]{16,40}$/] : [c.canal, /^UC[\w-]{22}$/];
+      assert.match(codigo, regra, `${idTime}: código de ${c.nome}`);
       assert.ok(c.nome && c.arroba.startsWith("@"), `${idTime}: nome e @ de ${c.nome}`);
       assert.ok(!vistos.has(codigo), `repetido: ${c.nome}`);
       vistos.add(codigo);
     }
   }
+});
+
+// ----- Rádios -----
+
+test("a lista de rádios está bem preenchida (e só com transmissões https)", () => {
+  const { radios, times } = JSON.parse(readFileSync(new URL("../data/radios.json", import.meta.url), "utf-8"));
+  const jogos = JSON.parse(readFileSync(new URL("../data/jogos.json", import.meta.url), "utf-8"));
+  for (const [chave, r] of Object.entries(radios)) {
+    assert.ok(r.nome && r.cidade, `${chave}: nome e cidade`);
+    assert.ok(Number.isInteger(r.radiosnet), `${chave}: número na RadiosNet`);
+    assert.match(r.transmissao, /^https:\/\//, `${chave}: a transmissão precisa ter https (o site é https)`);
+    assert.match(r.pagina, /^https:\/\/www\.radios\.com\.br\/aovivo\/.+\/\d+$/, `${chave}: página na RadiosNet`);
+  }
+  for (const [idTime, lista] of Object.entries(times)) {
+    assert.ok(jogos.times[idTime], `time desconhecido: ${idTime}`);
+    assert.ok(lista.length >= 1 && lista.length <= 3, `${idTime}: de 1 a 3 rádios`);
+    for (const chave of lista) assert.ok(radios[chave], `${idTime}: rádio desconhecida ${chave}`);
+  }
+  assert.deepEqual(times.chapecoense, ["ndfm-chapeco", "oeste-capital", "super-conda"]);
+  assert.deepEqual(times.internacional, ["gaucha", "grenal"]);
+  assert.deepEqual(times.gremio, ["gaucha", "grenal"]);
+});
+
+// ----- Quando cada coisa é atualizada -----
+
+test("texto novo só para quem jogou há uns 30 minutos e ainda está com o texto de antes do jogo", async () => {
+  const { timesQuePrecisamDeTexto } = await import("../scripts/meu_time/quem_jogou.js");
+  const jogos = [
+    { data: "2026-11-05T19:30:00-03:00", mandante: "palmeiras", visitante: "clube-do-remo" },
+    { data: "2026-11-05T21:30:00-03:00", mandante: "cruzeiro", visitante: "bahia" },
+  ];
+  const meuTime = { times: { palmeiras: { texto_em: "2026-11-05T22:30:00-03:00" } } };   // já escrito depois do jogo
+  // 21h50: o jogo das 19h30 começou há 140 minutos -> Remo precisa; Palmeiras já tem texto novo.
+  assert.deepEqual(timesQuePrecisamDeTexto(jogos, meuTime, new Date("2026-11-05T21:50:00-03:00")), ["clube-do-remo"]);
+  // 23h40: o das 21h30 também já passou dos 140 minutos.
+  assert.deepEqual(timesQuePrecisamDeTexto(jogos, meuTime, new Date("2026-11-05T23:55:00-03:00")),
+    ["bahia", "clube-do-remo", "cruzeiro"]);
+  // 20h30: nenhum jogo terminou há 30 minutos ainda.
+  assert.deepEqual(timesQuePrecisamDeTexto(jogos, meuTime, new Date("2026-11-05T20:30:00-03:00")), []);
+  // Mais de 24 horas depois: fica para a rede de segurança da madrugada.
+  assert.deepEqual(timesQuePrecisamDeTexto(jogos, meuTime, new Date("2026-11-07T10:00:00-03:00")), []);
+});
+
+test("as notícias novas entram no lugar das mais velhas (no máximo 6, dos últimos 10 dias)", async () => {
+  const { juntarNoticias } = await import("../scripts/meu_time/noticias.js");
+  const n = (i, dia) => ({ titulo: `Notícia ${i}`, veiculo: "ESPN", link: `https://exemplo.com/${i}`, data: `2026-11-${dia}T10:00:00Z` });
+  const antigas = [n(1, "04"), n(2, "03"), n(3, "02"), n(4, "01"), n(5, "01"), n(6, "01")];
+  const juntas = juntarNoticias(antigas, [n(7, "05"), n(1, "04")], new Date("2026-11-05T12:00:00Z"));
+  assert.equal(juntas.length, 6);
+  assert.equal(juntas[0].titulo, "Notícia 7");                   // a nova entra em primeiro
+  assert.equal(juntas.filter((x) => x.titulo === "Notícia 1").length, 1);   // sem repetir
+  assert.deepEqual(juntarNoticias([n(1, "01")], [], new Date("2026-11-20T12:00:00Z")), []);   // velha demais sai
+});
+
+test("o texto só é reescrito quando o resultado do jogo já chegou", async () => {
+  const { escolherTimes } = await import("../scripts/meu_time/atualizar_textos.js");
+  const jogos = [
+    { data: "2026-11-05T19:30:00-03:00", mandante: "palmeiras", visitante: "clube-do-remo", disputado: true },
+    { data: "2026-11-05T21:30:00-03:00", mandante: "cruzeiro", visitante: "bahia", disputado: false },
+  ];
+  const ids = ["palmeiras", "clube-do-remo", "cruzeiro", "bahia"];
+  const agora = new Date("2026-11-05T23:59:00-03:00");
+  assert.deepEqual(escolherTimes({ times: ["palmeiras", "cruzeiro"] }, jogos, { times: {} }, ids, agora), ["palmeiras"]);
+  // Rede de segurança: quem tem resultado mais novo que o texto.
+  const conteudo = { times: { palmeiras: { texto_em: "2026-11-05T22:00:00-03:00" } } };
+  assert.deepEqual(escolherTimes({ depoisDosJogos: true }, jogos, conteudo, ids, agora), ["clube-do-remo"]);
 });

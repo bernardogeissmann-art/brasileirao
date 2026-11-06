@@ -569,3 +569,109 @@
   color: var(--time-texto);
 }
 
+
+/* ---------- Rádios (Oldschool / Old is cool) ---------- */
+
+.bloco__subtitulo {
+  margin: -6px 0 14px;
+  font-weight: 600;
+  color: var(--cor-tinta-suave);
+}
+
+.radios {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 900px) {
+  .radios {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.radio {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border: 1px solid var(--cor-linha);
+  border-radius: var(--canto-m);
+  background: #ffffff;
+}
+
+.radio[data-estado="tocando"] {
+  border-color: var(--time-grafico);
+  background: var(--time-claro);
+}
+
+/* Botão redondo de tocar/parar, na cor do clube. */
+.radio__botao {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--time-grafico);
+  cursor: pointer;
+}
+
+/* O desenho do botão, feito só com CSS: triângulo (tocar) ou quadrado (parar). */
+.radio__icone {
+  width: 0;
+  height: 0;
+  margin-left: 4px;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  border-left: 14px solid #ffffff;
+}
+
+.radio[data-estado="tocando"] .radio__icone,
+.radio[data-estado="carregando"] .radio__icone {
+  width: 14px;
+  height: 14px;
+  margin-left: 0;
+  border: 0;
+  border-radius: 2px;
+  background: #ffffff;
+}
+
+.radio[data-estado="carregando"] .radio__botao {
+  opacity: 0.7;
+}
+
+.radio__texto {
+  display: grid;
+  min-width: 0;
+  line-height: 1.25;
+}
+
+.radio__nome {
+  overflow-wrap: anywhere;
+}
+
+.radio__estado {
+  font-size: 0.78rem;
+  color: var(--cor-tinta-suave);
+}
+
+.radio[data-estado="tocando"] .radio__estado {
+  font-weight: 800;
+  color: var(--time-texto);
+}
+
+.radio[data-estado="erro"] .radio__estado {
+  color: var(--cor-rebaixamento);
+}
+
+.radio__link {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--time-texto);
+  white-space: nowrap;
+}
+

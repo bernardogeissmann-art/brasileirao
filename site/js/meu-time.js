@@ -6,7 +6,8 @@
 //   4) monta a posição, os números da temporada e os últimos e próximos jogos;
 //   5) mostra o texto "Situação atual" e as notícias, que são preparados às quartas e
 //      aos domingos, às 23h (arquivo data/meu-time.json);
-//   6) mostra os últimos vídeos de canais do YouTube dedicados ao time (data/canais-youtube.json).
+//   6) mostra os últimos vídeos de canais do YouTube dedicados ao time (data/canais-youtube.json);
+//   7) toca, ao vivo, as rádios que cobrem o time (data/radios.json).
 
 import { carregarDados, simular, tabelaAtual, chancesDoJogo } from "./simulacao.js";
 import {
@@ -23,6 +24,7 @@ let dados = null;           // jogos e modelo
 let cores = {};             // cores de cada clube
 let conteudo = null;        // texto e notícias (pode não existir ainda)
 let canais = null;          // canais do YouTube de cada time (opcional)
+let radios = null;          // rádios de cada time (opcional)
 let chances = null;         // resultado da simulação (calculado uma vez)
 let tabela = null;          // tabela atual
 
@@ -52,6 +54,7 @@ async function iniciar() {
   // O texto e as notícias são opcionais: se o arquivo ainda não existir, a página funciona sem eles.
   conteudo = await lerJson("data/meu-time.json").catch(() => null);
   canais = await lerJson("data/canais-youtube.json").catch(() => null);
+  radios = await lerJson("data/radios.json").catch(() => null);
   $("rodape").innerHTML = montarRodape(dados.jogos.baixado_em);
   tabela = tabelaAtual(dados.jogos);
 
@@ -145,6 +148,7 @@ function mostrarTime(id) {
   montarJogos(id);
   montarNoticias(id);
   montarVideos(id);
+  montarRadios(id);
   window.scrollTo(0, 0);
 
   // As chances levam um instante para calcular: primeiro a página aparece, depois os anéis.
@@ -174,10 +178,9 @@ function montarSituacao(id) {
     const autoria = doTime.autor === "ia"
       ? "Texto escrito por inteligência artificial (Claude, da Anthropic) com os números do site e as notícias abaixo; pode conter imprecisões. "
       : "";
-    $("situacao-data").textContent = `${autoria}Atualizado em ${formatarData(conteudo.gerado_em)}; ` +
-      "renovado às quartas e aos domingos, às 23h.";
+    $("situacao-data").textContent = `${autoria}Atualizado em ${formatarData(doTime.texto_em ?? conteudo.gerado_em)}.`;
   } else {
-    $("situacao-texto").textContent = "O texto deste time sai na próxima atualização, na quarta ou no domingo, às 23h.";
+    $("situacao-texto").textContent = "O texto deste time sai depois do próximo jogo.";
     $("situacao-data").textContent = "";
   }
 }
@@ -320,11 +323,13 @@ function montarNoticias(id) {
 const ROTULOS_VIDEO = { imprensa: "Imprensa dedicada", oficial: "Canal oficial", destaque: "Vídeo em destaque" };
 const CODIGO_CANAL = /^UC[\w-]{22}$/;
 const CODIGO_VIDEO = /^[\w-]{11}$/;
+const CODIGO_PLAYLIST = /^PL[\w-]{16,40}$/;
 
 function montarVideos(id) {
   // Só entradas com código válido (um canal "UC..." ou um vídeo de 11 letras).
-  const lista = (canais?.times?.[id] ?? []).filter((c) =>
-    (c.tipo === "destaque" ? CODIGO_VIDEO.test(c.video ?? "") : CODIGO_CANAL.test(c.canal ?? "")));
+  const valido = (c) => (c.tipo === "destaque" ? CODIGO_VIDEO.test(c.video ?? "")
+    : c.playlist ? CODIGO_PLAYLIST.test(c.playlist) : CODIGO_CANAL.test(c.canal ?? ""));
+  const lista = (canais?.times?.[id] ?? []).filter(valido);
   $("bloco-videos").hidden = lista.length === 0;
   $("videos").innerHTML = lista.map((c) => {
     const nome = escaparHtml(c.nome);
@@ -333,6 +338,10 @@ function montarVideos(id) {
     if (c.tipo === "destaque") {
       player = `https://www.youtube-nocookie.com/embed/${c.video}`;
       link = { endereco: `https://www.youtube.com/watch?v=${c.video}`, texto: "Ver no YouTube" };
+    } else if (c.playlist) {
+      // Uma playlist do canal (ex.: só os vídeos sobre o time, num canal que fala de dois times).
+      player = `https://www.youtube-nocookie.com/embed/videoseries?list=${c.playlist}`;
+      link = { endereco: `https://www.youtube.com/playlist?list=${c.playlist}`, texto: "Ver a playlist no YouTube" };
     } else {
       // A lista "UULF" + código do canal (sem o "UC") são os vídeos do canal, sem Shorts nem lives.
       player = `https://www.youtube-nocookie.com/embed/videoseries?list=UULF${c.canal.slice(2)}`;
@@ -354,4 +363,96 @@ function montarVideos(id) {
           ${link.texto}<span aria-hidden="true"> ↗</span><span class="so-leitor"> (abre em outra aba)</span></a>
       </article>`;
   }).join("");
+}
+
+// E) Rádios: um botão de tocar/parar para cada rádio que cobre o time. A transmissão é a da
+// própria rádio (o endereço publicado pela RadiosNet, sempre com https). Um só tocador de
+// áudio serve para todas: tocar uma rádio para a que estiver tocando.
+// Algumas rádios (ex.: a Gaúcha) transmitem no formato HLS (.m3u8). O Safari toca esse formato
+// sozinho; nos outros navegadores, carregamos na hora a biblioteca pública hls.js (só quando
+// alguém clica numa rádio assim).
+const HLS_JS = "https://cdn.jsdelivr.net/npm/hls.js@1.7.4/dist/hls.light.min.mjs";
+const audio = $("radio-audio");
+let radioTocando = null;   // a rádio que está tocando (ou null)
+let tocadorHls = null;     // o ajudante do formato HLS, quando estiver em uso
+
+$("radios").addEventListener("click", (evento) => {
+  const botao = evento.target.closest(".radio__botao");
+  if (!botao) return;
+  const chave = botao.closest(".radio").dataset.radio;
+  if (radioTocando === chave) pararRadio();
+  else tocarRadio(chave);
+});
+
+function montarRadios(id) {
+  pararRadio();   // trocou de time: para a rádio que estava tocando
+  const lista = (radios?.times?.[id] ?? [])
+    .map((chave) => ({ chave, ...radios.radios[chave] }))
+    .filter((r) => r.nome && r.transmissao?.startsWith("https://"));
+  $("bloco-radios").hidden = lista.length === 0;
+  $("radios").innerHTML = lista.map((r) => `
+    <li class="radio" data-radio="${escaparHtml(r.chave)}" data-estado="parado">
+      <button type="button" class="radio__botao" aria-pressed="false" aria-label="Ouvir ${escaparHtml(r.nome)} ao vivo">
+        <span class="radio__icone" aria-hidden="true"></span>
+      </button>
+      <span class="radio__texto">
+        <strong class="radio__nome">${escaparHtml(r.nome)}</strong>
+        <small class="radio__estado" aria-live="polite">${escaparHtml(r.cidade)}</small>
+      </span>
+      <a class="radio__link" href="${escaparHtml(r.pagina)}" target="_blank" rel="noopener noreferrer">
+        RadiosNet<span aria-hidden="true"> ↗</span><span class="so-leitor"> (abre em outra aba)</span></a>
+    </li>`).join("");
+}
+
+async function tocarRadio(chave) {
+  pararRadio();
+  const radio = radios.radios[chave];
+  radioTocando = chave;
+  marcarRadio(chave, "carregando");
+  try {
+    if (radio.transmissao.includes(".m3u8") && !audio.canPlayType("application/vnd.apple.mpegurl")) {
+      const { default: Hls } = await import(HLS_JS);
+      if (radioTocando !== chave) return;   // a pessoa já clicou em outra coisa
+      tocadorHls = new Hls();
+      tocadorHls.loadSource(radio.transmissao);
+      tocadorHls.attachMedia(audio);
+    } else {
+      audio.src = radio.transmissao;
+    }
+    await audio.play();
+    if (radioTocando === chave) marcarRadio(chave, "tocando");
+  } catch (erro) {
+    console.error(erro);
+    if (radioTocando === chave) {
+      marcarRadio(chave, "erro");
+      radioTocando = null;
+    }
+  }
+}
+
+function pararRadio() {
+  if (tocadorHls) {
+    tocadorHls.destroy();
+    tocadorHls = null;
+  }
+  audio.pause();
+  audio.removeAttribute("src");
+  audio.load();   // solta a conexão com a rádio
+  if (radioTocando) marcarRadio(radioTocando, "parado");
+  radioTocando = null;
+}
+
+// Mostra na tela o estado de uma rádio: parado, carregando, tocando ou erro.
+function marcarRadio(chave, estado) {
+  const item = document.querySelector(`.radio[data-radio="${chave}"]`);
+  if (!item) return;
+  const radio = radios.radios[chave];
+  item.dataset.estado = estado;
+  const ativo = estado === "tocando" || estado === "carregando";
+  const botao = item.querySelector(".radio__botao");
+  botao.setAttribute("aria-pressed", String(ativo));
+  botao.setAttribute("aria-label", `${ativo ? "Parar" : "Ouvir"} ${radio.nome} ao vivo`);
+  item.querySelector(".radio__estado").textContent = {
+    parado: radio.cidade, carregando: "Conectando…", tocando: "Ao vivo", erro: "Não consegui tocar agora",
+  }[estado];
 }

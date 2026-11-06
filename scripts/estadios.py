@@ -84,7 +84,12 @@ def estadios_da_espn(ano):
 
 
 def anotar_estadios(dados):
-    """Coloca o campo "estadio" em cada jogo. Devolve a lista de avisos (vazia se tudo certo)."""
+    """Coloca o campo "estadio" em cada jogo. Devolve a lista de avisos (vazia se tudo certo).
+    Também anota em cada time o nome dele na ESPN ("nome_espn"): é por esse nome que a página
+    principal acha o placar ao vivo de cada jogo, lendo a ESPN direto no navegador."""
+    for nome_espn, id_time in TIMES_ESPN.items():
+        if id_time in dados["times"]:
+            dados["times"][id_time]["nome_espn"] = nome_espn
     try:
         estadios, desconhecidos = estadios_da_espn(dados["temporada"])
     except OSError as erro:

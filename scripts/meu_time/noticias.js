@@ -108,6 +108,25 @@ function veiculoDe(endereco) {
   return VEICULOS.find((v) => endereco.includes(v.endereco))?.nome ?? null;
 }
 
+// Junta as notícias que já estavam guardadas com as novas: sem repetir (mesmo link ou mesmo
+// título), só as dos últimos 10 dias, da mais nova para a mais velha, no máximo 6.
+// Assim, se num dia sair só uma notícia nova, ela entra e a mais velha sai.
+export function juntarNoticias(antigas, novas, agora = new Date()) {
+  const limite = agora.getTime() - DIAS * 24 * 60 * 60 * 1000;
+  const links = new Set();
+  const titulos = new Set();
+  return [...novas, ...antigas]
+    .filter((n) => {
+      const titulo = n.titulo.toLowerCase();
+      if (links.has(n.link) || titulos.has(titulo)) return false;
+      links.add(n.link);
+      titulos.add(titulo);
+      return new Date(n.data).getTime() >= limite;
+    })
+    .sort((a, b) => b.data.localeCompare(a.data))
+    .slice(0, MAXIMO);
+}
+
 // Busca as notícias de um time. Devolve uma lista de { titulo, veiculo, link, data }.
 export async function buscarNoticias(idTime) {
   const limite = Date.now() - DIAS * 24 * 60 * 60 * 1000;

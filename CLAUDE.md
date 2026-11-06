@@ -13,19 +13,27 @@ O usuário nunca programou antes, então todo código e explicação devem ser p
     (lógica em `site/js/jogos-do-dia.js`, cartão em `componentes.js`): os jogos de hoje (ou do próximo dia com jogo),
     com chances do modelo, posição, sequência recente e onde assistir. Os canais vêm do ge.globo, lidos por
     `scripts/transmissoes.py` (chamado pelo `baixar_jogos.py`) e guardados no campo `transmissao` do `jogos.json`.
-    Placar ao vivo: `scripts/placar_ao_vivo.py` lê a ESPN e grava `data/ao-vivo.json` (não vai para o git; só existe
-    na cópia publicada). A rotina `.github/workflows/placar-ao-vivo.yml` roda a cada 5 minutos das 11h à meia-noite e
-    só republica quando há jogo rolando (do horário marcado até 130 minutos depois). A montagem do site publicado
+    Placar ao vivo: a própria página lê a ESPN a cada minuto enquanto há jogo (a ESPN permite leitura pelo navegador;
+    cada time do `jogos.json` guarda o `nome_espn`). Reserva: `scripts/placar_ao_vivo.py` grava `data/ao-vivo.json` a cada
+    publicação (não vai para o git). As rotinas agendadas do GitHub atrasam muito (rodam a cada ~45 min mesmo pedindo
+    5), por isso nada que precise ser rápido depende delas. A montagem do site publicado
     (com `?v=<versão>` nos endereços .js/.css/.json, contra cópias velhas no navegador) fica em `scripts/montar_site.sh`.
   - **Simulador**: o usuário pode fixar resultados de jogos específicos e ver a tabela e as probabilidades mudarem em tempo real.
-  - **Meu Time**: página personalizada com as cores do clube escolhido. O texto "Situação atual" e as
-    notícias são gerados por `scripts/meu_time/atualizar_meu_time.js` (quartas e domingos, 23h) e ficam em
-    `data/meu-time.json`; as cores dos clubes ficam em `data/cores-times.json`. O texto é escrito por IA
-    (Claude, da Anthropic) em `scripts/meu_time/texto_ia.js`, com a chave `ANTHROPIC_API_KEY` (no `.env` e nos
-    secrets do GitHub). Sem chave, ou se a IA falhar, usa as frases prontas de `scripts/meu_time/texto.js`.
-    No fim da página, a seção Vídeos: o player do próprio YouTube (youtube-nocookie, lista "UULF" + código do canal =
-    últimos vídeos, sem Shorts) para os canais de cada time em `data/canais-youtube.json` (imprensa dedicada ou oficial).
-    O player se atualiza sozinho; não há script diário. Não usar os feeds RSS do YouTube: o robots.txt deles proíbe.
+  - **Meu Time**: página personalizada com as cores do clube escolhido (cores em `data/cores-times.json`). Conteúdo
+    guardado em `data/meu-time.json` (texto, notícias e as horas de cada um). Quem atualiza (nada é gerado na visita):
+    - Notícias: toda madrugada (`scripts/meu_time/atualizar_noticias.js`, sem IA); as novas se juntam às antigas (6 mais recentes).
+    - Texto "Situação atual": escrito por IA (Claude Haiku 5.5, em `texto_ia.js`; reserva com frases prontas em `texto.js`)
+      só para os times que jogaram, ~30 min depois do fim do jogo: a rotina `.github/workflows/depois-dos-jogos.yml`
+      roda `quem_jogou.js` (de graça) e, se preciso, baixa o resultado e roda `atualizar_textos.js --times ...`.
+      De madrugada, `atualizar_textos.js --depois-dos-jogos` pega quem tiver ficado para trás. Chave `ANTHROPIC_API_KEY`
+      no `.env` e nos secrets do GitHub. `atualizar_meu_time.js` atualiza tudo de uma vez (uso manual).
+    - Vídeos: player do YouTube (youtube-nocookie) com a lista de vídeos de cada canal (`UULF` + código do canal),
+      uma playlist (`PL...`) ou um vídeo avulso, conforme `data/canais-youtube.json`. Se atualiza sozinho.
+      Não usar os feeds RSS do YouTube: o robots.txt deles proíbe.
+    - Rádios ("Oldschool / Old is cool"): player próprio (`<audio>`, e hls.js sob demanda para .m3u8) com as transmissões
+      publicadas pela RadiosNet, em `data/radios.json` (só endereços https). O player da própria RadiosNet só funciona em
+      http, por isso não serve. `scripts/meu_time/atualizar_radios.py` confere os endereços de madrugada.
+    - Não escrever na página de quanto em quanto tempo cada parte é atualizada (pedido do usuário).
   - **Estaduais** (menu suspenso): Catarinense, Gaúcho, Paranaense e Paulista. Para um novo estadual, acrescentar
     uma linha em `abas.js` (com o símbolo em `assets/simbolos/`).
   - **O Método**: explica o modelo para o grande público.

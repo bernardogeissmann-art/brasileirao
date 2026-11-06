@@ -92,3 +92,23 @@ test("só busca o placar de novo enquanto há jogo rolando", () => {
   assert.equal(temJogoRolando([JOGOS[2]], new Date("2026-11-05T23:45:00-03:00")), false);
   assert.equal(temJogoRolando([JOGOS[0]], new Date("2026-11-01T16:30:00-03:00")), false);   // já encerrado
 });
+
+test("o placar lido da ESPN vira o placar dos nossos jogos", async () => {
+  const { placaresDaEspn, situacaoNaEspn } = await import("../site/js/jogos-do-dia.js");
+  const times = { a: { nome_espn: "Time A" }, d: { nome_espn: "Time D" }, b: { nome_espn: "Time B" }, c: { nome_espn: "Time C" } };
+  const evento = (casa, fora, gc, gf, state, name, clock) => ({ competitions: [{
+    status: { type: { state, name }, displayClock: clock },
+    competitors: [{ homeAway: "home", score: String(gc), team: { displayName: casa } },
+                  { homeAway: "away", score: String(gf), team: { displayName: fora } }] }] });
+  const eventos = [
+    evento("Time A", "Time D", 2, 1, "in", "STATUS_SECOND_HALF", "67'"),
+    evento("Time B", "Time C", 0, 0, "in", "STATUS_HALFTIME", "45'"),
+    evento("Time X", "Time Y", 1, 0, "post", "STATUS_FULL_TIME", "90'"),   // não é jogo nosso
+  ];
+  const placares = placaresDaEspn(eventos, [JOGOS[2], JOGOS[3]], times);
+  assert.deepEqual(placares["3"], { gols_mandante: 2, gols_visitante: 1, situacao: "andamento", minuto: "67'" });
+  assert.deepEqual(placares["4"], { gols_mandante: 0, gols_visitante: 0, situacao: "intervalo", minuto: null });
+  assert.equal(Object.keys(placares).length, 2);
+  assert.equal(situacaoNaEspn({ type: { state: "pre" } }), "antes");
+  assert.equal(situacaoNaEspn({ type: { state: "post" } }), "encerrado");
+});

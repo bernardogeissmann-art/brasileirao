@@ -2,147 +2,167 @@
   "fonte": "football-data.org",
   "competicao": "Campeonato Brasileiro Série A",
   "temporada": 2026,
-  "baixado_em": "2026-11-05T21:03:05-03:00",
+  "baixado_em": "2026-11-06T01:52:53-03:00",
   "times": {
     "bahia": {
       "nome": "Bahia",
       "sigla": "BAH",
       "id_fonte": 1777,
       "escudo_url": "https://crests.football-data.org/1777.png",
-      "escudo": "assets/escudos/bahia.svg"
+      "escudo": "assets/escudos/bahia.svg",
+      "nome_espn": "Bahia"
     },
     "botafogo": {
       "nome": "Botafogo",
       "sigla": "BOT",
       "id_fonte": 1770,
       "escudo_url": "https://crests.football-data.org/1770.png",
-      "escudo": "assets/escudos/botafogo.svg"
+      "escudo": "assets/escudos/botafogo.svg",
+      "nome_espn": "Botafogo"
     },
     "bragantino": {
       "nome": "Bragantino",
       "sigla": "RBB",
       "id_fonte": 4286,
       "escudo_url": "https://crests.football-data.org/4286.png",
-      "escudo": "assets/escudos/bragantino.svg"
+      "escudo": "assets/escudos/bragantino.svg",
+      "nome_espn": "Red Bull Bragantino"
     },
     "chapecoense": {
       "nome": "Chapecoense",
       "sigla": "CHA",
       "id_fonte": 1772,
       "escudo_url": "https://crests.football-data.org/1772_large.png",
-      "escudo": "assets/escudos/chapecoense.png"
+      "escudo": "assets/escudos/chapecoense.png",
+      "nome_espn": "Chapecoense"
     },
     "clube-do-remo": {
       "nome": "Clube do Remo",
       "sigla": "CRE",
       "id_fonte": 4287,
       "escudo_url": "https://crests.football-data.org/4287.png",
-      "escudo": "assets/escudos/clube-do-remo.png"
+      "escudo": "assets/escudos/clube-do-remo.png",
+      "nome_espn": "Remo"
     },
     "corinthians": {
       "nome": "Corinthians",
       "sigla": "COR",
       "id_fonte": 1779,
       "escudo_url": "https://crests.football-data.org/1779.png",
-      "escudo": "assets/escudos/corinthians.svg"
+      "escudo": "assets/escudos/corinthians.svg",
+      "nome_espn": "Corinthians"
     },
     "coritiba": {
       "nome": "Coritiba",
       "sigla": "COR",
       "id_fonte": 4241,
       "escudo_url": "https://crests.football-data.org/4241.png",
-      "escudo": "assets/escudos/coritiba.svg"
+      "escudo": "assets/escudos/coritiba.svg",
+      "nome_espn": "Coritiba"
     },
     "cruzeiro": {
       "nome": "Cruzeiro",
       "sigla": "CRU",
       "id_fonte": 1771,
       "escudo_url": "https://crests.football-data.org/1771.png",
-      "escudo": "assets/escudos/cruzeiro.png"
+      "escudo": "assets/escudos/cruzeiro.png",
+      "nome_espn": "Cruzeiro"
     },
     "flamengo": {
       "nome": "Flamengo",
       "sigla": "FLA",
       "id_fonte": 1783,
       "escudo_url": "https://crests.football-data.org/1783.png",
-      "escudo": "assets/escudos/flamengo.svg"
+      "escudo": "assets/escudos/flamengo.svg",
+      "nome_espn": "Flamengo"
     },
     "fluminense": {
       "nome": "Fluminense",
       "sigla": "FLU",
       "id_fonte": 1765,
       "escudo_url": "https://crests.football-data.org/1765.png",
-      "escudo": "assets/escudos/fluminense.svg"
+      "escudo": "assets/escudos/fluminense.svg",
+      "nome_espn": "Fluminense"
     },
     "gremio": {
       "nome": "Grêmio",
       "sigla": "FBP",
       "id_fonte": 1767,
       "escudo_url": "https://crests.football-data.org/1767.png",
-      "escudo": "assets/escudos/gremio.svg"
+      "escudo": "assets/escudos/gremio.svg",
+      "nome_espn": "Grêmio"
     },
     "internacional": {
       "nome": "Internacional",
       "sigla": "SCI",
       "id_fonte": 6684,
       "escudo_url": "https://crests.football-data.org/6684.png",
-      "escudo": "assets/escudos/internacional.svg"
+      "escudo": "assets/escudos/internacional.svg",
+      "nome_espn": "Internacional"
     },
     "mineiro": {
       "nome": "Atlético Mineiro",
       "sigla": "CAM",
       "id_fonte": 1766,
       "escudo_url": "https://crests.football-data.org/1766.png",
-      "escudo": "assets/escudos/mineiro.svg"
+      "escudo": "assets/escudos/mineiro.svg",
+      "nome_espn": "Atlético-MG"
     },
     "mirassol": {
       "nome": "Mirassol",
       "sigla": "MIR",
       "id_fonte": 4364,
       "escudo_url": "https://crests.football-data.org/4364.png",
-      "escudo": "assets/escudos/mirassol.png"
+      "escudo": "assets/escudos/mirassol.png",
+      "nome_espn": "Mirassol"
     },
     "palmeiras": {
       "nome": "Palmeiras",
       "sigla": "PAL",
       "id_fonte": 1769,
       "escudo_url": "https://crests.football-data.org/1769.png",
-      "escudo": "assets/escudos/palmeiras.svg"
+      "escudo": "assets/escudos/palmeiras.svg",
+      "nome_espn": "Palmeiras"
     },
     "paranaense": {
       "nome": "Athletico Paranaense",
       "sigla": "CAP",
       "id_fonte": 1768,
       "escudo_url": "https://crests.football-data.org/1768.png",
-      "escudo": "assets/escudos/paranaense.svg"
+      "escudo": "assets/escudos/paranaense.svg",
+      "nome_espn": "Athletico-PR"
     },
     "santos": {
       "nome": "Santos",
       "sigla": "SAN",
       "id_fonte": 6685,
       "escudo_url": "https://crests.football-data.org/6685.png",
-      "escudo": "assets/escudos/santos.svg"
+      "escudo": "assets/escudos/santos.svg",
+      "nome_espn": "Santos"
     },
     "sao-paulo": {
       "nome": "São Paulo",
       "sigla": "PAU",
       "id_fonte": 1776,
       "escudo_url": "https://crests.football-data.org/1776.png",
-      "escudo": "assets/escudos/sao-paulo.svg"
+      "escudo": "assets/escudos/sao-paulo.svg",
+      "nome_espn": "São Paulo"
     },
     "vasco-da-gama": {
       "nome": "Vasco da Gama",
       "sigla": "VAS",
       "id_fonte": 1780,
       "escudo_url": "https://crests.football-data.org/1780.png",
-      "escudo": "assets/escudos/vasco-da-gama.svg"
+      "escudo": "assets/escudos/vasco-da-gama.svg",
+      "nome_espn": "Vasco da Gama"
     },
     "vitoria": {
       "nome": "Vitória",
       "sigla": "VIT",
       "id_fonte": 1782,
       "escudo_url": "https://crests.football-data.org/1782.png",
-      "escudo": "assets/escudos/vitoria.png"
+      "escudo": "assets/escudos/vitoria.png",
+      "nome_espn": "Vitória"
     }
   },
   "jogos": [
@@ -4533,14 +4553,12 @@
       "data": "2026-11-05T19:30:00-03:00",
       "mandante": "palmeiras",
       "visitante": "clube-do-remo",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "IN_PLAY",
+      "disputado": true,
+      "gols_mandante": 6,
+      "gols_visitante": 1,
+      "status_fonte": "FINISHED",
       "estadio": "Nubank Parque",
-      "transmissao": [
-        "Premiere"
-      ]
+      "transmissao": null
     },
     {
       "id": 555074,
@@ -4548,14 +4566,12 @@
       "data": "2026-11-05T21:30:00-03:00",
       "mandante": "cruzeiro",
       "visitante": "bahia",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "TIMED",
+      "disputado": true,
+      "gols_mandante": 3,
+      "gols_visitante": 2,
+      "status_fonte": "FINISHED",
       "estadio": "Estádio Governador Magalhães Pinto (Mineirão)",
-      "transmissao": [
-        "Prime Video"
-      ]
+      "transmissao": null
     },
     {
       "id": 555079,

@@ -4,7 +4,8 @@
 //   - quais jogos mostrar: os de hoje ou, se hoje não tiver jogo, os do próximo dia com jogo;
 //   - a sequência recente de cada time (V = vitória, E = empate, D = derrota);
 //   - em que pé o jogo está agora (vai começar, em andamento, já deve ter acabado);
-//   - o placar ao vivo (arquivo data/ao-vivo.json, atualizado a cada 5 minutos durante os jogos).
+//   - o placar ao vivo: lido direto da ESPN pelo navegador de quem visita (a ESPN permite isso),
+//     a cada minuto enquanto há jogo; se a ESPN falhar, vale o arquivo data/ao-vivo.json do site.
 
 const FUSO = "America/Sao_Paulo";
 const DURACAO_DE_UM_JOGO = 2 * 60 * 60 * 1000;   // ~2 horas, contando o intervalo (em milésimos)
@@ -63,9 +64,63 @@ export function situacaoDoJogo(jogo, agora = new Date()) {
   return "aguardando";
 }
 
-// Lê o placar ao vivo. O endereço ganha a hora de agora no fim (?agora=...), então nunca vem
-// de uma cópia guardada pelo navegador. Se o arquivo não existir, devolve null (sem placar).
-export async function lerPlacarAoVivo() {
+const URL_ESPN = "https://site.api.espn.com/apis/site/v2/sports/soccer/bra.1/scoreboard?dates=";
+
+// Traduz a situação do jogo na ESPN: "antes", "andamento", "intervalo" ou "encerrado".
+export function situacaoNaEspn(status) {
+  const estado = status?.type?.state;   // "pre" (antes), "in" (rolando) ou "post" (acabou)
+  if (estado === "post") return "encerrado";
+  if (estado === "in") return status.type.name === "STATUS_HALFTIME" ? "intervalo" : "andamento";
+  return "antes";
+}
+
+// Junta os jogos da ESPN com os nossos jogos (pelo par mandante x visitante). Cada time do
+// jogos.json guarda o nome dele na ESPN ("nome_espn"). Devolve { id do jogo: placar }.
+export function placaresDaEspn(eventos, jogosDoDia, times) {
+  const idPeloNome = new Map(Object.entries(times).filter(([, t]) => t.nome_espn).map(([id, t]) => [t.nome_espn, id]));
+  const jogoDoPar = new Map(jogosDoDia.map((j) => [`${j.mandante}|${j.visitante}`, j]));
+  const placares = {};
+  for (const evento of eventos) {
+    const competicao = evento.competitions?.[0];
+    if (!competicao) continue;
+    const lado = Object.fromEntries(competicao.competitors.map((c) => [c.homeAway, c]));
+    const par = `${idPeloNome.get(lado.home?.team?.displayName)}|${idPeloNome.get(lado.away?.team?.displayName)}`;
+    const jogo = jogoDoPar.get(par);
+    const situacao = situacaoNaEspn(competicao.status);
+    if (!jogo || situacao === "antes") continue;
+    placares[String(jogo.id)] = {
+      gols_mandante: Number(lado.home.score),
+      gols_visitante: Number(lado.away.score),
+      situacao,
+      minuto: situacao === "andamento" ? competicao.status.displayClock ?? null : null,
+    };
+  }
+  return placares;
+}
+
+// Placar direto da ESPN, para os jogos indicados (um pedido por dia de jogo).
+async function placarDaEspn(jogosDoDia, times) {
+  const dias = [...new Set(jogosDoDia.map((j) => diaEmBrasilia(new Date(j.data)).replaceAll("-", "")))];
+  const eventos = [];
+  for (const dia of dias) {
+    const resposta = await fetch(URL_ESPN + dia, { cache: "no-store" });
+    if (!resposta.ok) throw new Error(`ESPN respondeu com erro ${resposta.status}`);
+    eventos.push(...((await resposta.json()).events ?? []));
+  }
+  return { atualizado_em: new Date().toISOString(), fonte: "ESPN", jogos: placaresDaEspn(eventos, jogosDoDia, times) };
+}
+
+// Lê o placar ao vivo dos jogos que já começaram: primeiro direto da ESPN (o mais atualizado);
+// se não der, o arquivo do site (o endereço ganha a hora de agora no fim, ?agora=..., para
+// nunca vir de uma cópia guardada pelo navegador). Sem nenhum dos dois, devolve null.
+export async function lerPlacarAoVivo(jogosComecados = [], times = {}) {
+  if (jogosComecados.length > 0) {
+    try {
+      return await placarDaEspn(jogosComecados, times);
+    } catch (erro) {
+      console.warn("Placar da ESPN indisponível; usando o arquivo do site.", erro);
+    }
+  }
   const endereco = new URL("../../data/ao-vivo.json", import.meta.url);
   endereco.searchParams.set("agora", String(Date.now()));
   try {

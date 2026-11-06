@@ -1,0 +1,163 @@
+# depois-dos-jogos.yml
+# Texto "Situação atual" da página Meu Time logo depois de cada jogo (uns 30 minutos depois do fim).
+#   1) De 15 em 15 minutos, no horário dos jogos, confere sem gastar nada se algum time jogou
+#      e ainda está com o texto de antes do jogo (scripts/meu_time/quem_jogou.js).
+#   2) Se não houver, para por aí (leva uns segundos e não chama a IA).
+#   3) Se houver: baixa o resultado, atualiza o modelo, escreve o texto só desses times (com a
+#      IA mais leve, o Claude Haiku 5.5), guarda no repositório e republica o site.
+#
+# Observação: o GitHub não garante o horário exato das rotinas agendadas; em horários de muito
+# movimento ele atrasa ou pula rodadas. Na prática, o texto sai entre uns 30 minutos e pouco
+# mais de uma hora depois do jogo. O placar ao vivo não depende desta rotina: a página lê o
+# placar direto da ESPN, no navegador de quem está vendo.
+
+name: Depois dos jogos
+
+on:
+  schedule:
+    # A cada 15 minutos, das 15h às 5h45 UTC = das 12h às 2h45 de Brasília.
+    - cron: "*/15 15-23,0-5 * * *"
+  # Botão "Run workflow" na aba Actions, para rodar na hora.
+  workflow_dispatch:
+
+jobs:
+  # -------------------------------------------------------------------------
+  # TAREFA 1: algum time jogou e precisa de texto novo?
+  # -------------------------------------------------------------------------
+  verificar:
+    name: Conferir quem jogou
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    outputs:
+      times: ${{ steps.quem.outputs.times }}
+    steps:
+      - name: Pegar o código e os dados
+        uses: actions/checkout@v7
+        with:
+          ref: main
+
+      - name: Ver quais times jogaram e estão com o texto de antes do jogo
+        id: quem
+        # Sem a chave do football-data.org não dá para baixar o resultado: a rotina só avisa e
+        # para (sem erro, para não encher a sua caixa de e-mails de "falhou").
+        # O Node.js já vem instalado no computador do GitHub; este script não usa bibliotecas.
+        env:
+          CHAVE_FOOTBALL: ${{ secrets.FOOTBALL_DATA_API_KEY }}
+        run: |
+          if [ -z "$CHAVE_FOOTBALL" ]; then
+            echo "Falta cadastrar a chave FOOTBALL_DATA_API_KEY nos secrets: nada a fazer."
+            echo "times=" >> "$GITHUB_OUTPUT"
+          else
+            node scripts/meu_time/quem_jogou.js
+          fi
+
+  # -------------------------------------------------------------------------
+  # TAREFA 2: só se algum time jogou, baixar o resultado e escrever o texto dele
+  # -------------------------------------------------------------------------
+  atualizar:
+    name: Escrever o texto de quem jogou
+    needs: verificar
+    if: needs.verificar.outputs.times != ''
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    # A mesma "fila" da atualização da madrugada: nunca duas rotinas gravando dados ao mesmo tempo.
+    concurrency:
+      group: dados-do-site
+      cancel-in-progress: false
+    outputs:
+      escreveu: ${{ steps.guardar.outputs.escreveu }}
+    steps:
+      - name: Pegar o código e os dados
+        uses: actions/checkout@v7
+        with:
+          ref: main
+
+      - name: Instalar o Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Baixar os jogos (com o resultado de agora)
+        env:
+          FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
+        run: python scripts/baixar_jogos.py
+
+      - name: Conferir os dados
+        run: python scripts/conferir_dados.py
+
+      - name: Estimar o modelo
+        run: python scripts/estimar_modelo.py
+
+      - name: Instalar o Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: "24"
+
+      - name: Instalar as bibliotecas do Node (como a da IA)
+        run: npm ci
+
+      - name: Escrever o texto só dos times que jogaram
+        # Se o resultado de algum jogo ainda não tiver chegado, aquele time fica para a próxima rodada.
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/meu_time/atualizar_textos.js --times "${{ needs.verificar.outputs.times }}"
+
+      - name: Guardar os dados novos no repositório
+        id: guardar
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/jogos.json data/modelo.json data/meu-time.json
+          if git diff --cached --quiet; then
+            echo "Nada mudou."
+          else
+            git commit -m "Texto do Meu Time depois dos jogos (automático)"
+            git pull --rebase
+            git push
+            echo "escreveu=true" >> "$GITHUB_OUTPUT"
+          fi
+
+  # -------------------------------------------------------------------------
+  # TAREFA 3: republicar o site com os textos novos
+  # -------------------------------------------------------------------------
+  publicar:
+    name: Publicar o site
+    needs: atualizar
+    if: needs.atualizar.outputs.escreveu == 'true'
+    runs-on: ubuntu-latest
+    # A mesma "fila" da publicação normal: uma publicação nunca atropela a outra.
+    concurrency:
+      group: publicar-pages
+      cancel-in-progress: false
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.publicacao.outputs.page_url }}
+    steps:
+      - name: Pegar o código e os dados novos
+        uses: actions/checkout@v7
+        with:
+          ref: main
+
+      - name: Buscar o placar dos jogos de hoje que já começaram
+        run: python3 scripts/placar_ao_vivo.py --publicando
+
+      - name: Montar a pasta do site
+        run: bash scripts/montar_site.sh
+
+      - name: Preparar o GitHub Pages
+        uses: actions/configure-pages@v6
+
+      - name: Enviar a pasta do site
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+      - name: Publicar
+        id: publicacao
+        uses: actions/deploy-pages@v5
