@@ -11,6 +11,7 @@
 
 import { carregarDados, simular, tabelaAtual, chancesDoJogo } from "./simulacao.js";
 import { atualizarComEspn } from "./jogos-do-dia.js";
+import { entradaValida, listaDoYouTube, playerDaEntrada } from "./videos.js";
 import {
   instalarCabecalho, montarRodape, anelChance, escaparHtml, formatarChance, formatarData, formatarDataJogo,
 } from "./componentes.js";
@@ -315,40 +316,20 @@ function montarNoticias(id) {
     </li>`).join("") || `<li class="bloco__nota">As notícias deste time saem na próxima atualização.</li>`;
 }
 
-// D) Vídeos: uma caixa do YouTube para cada canal dedicado ao time. Cada caixa é o player
-// do próprio YouTube tocando a lista "vídeos do canal", que o YouTube mantém sempre com os
-// mais recentes: o site não guarda vídeo nenhum. Uma entrada do tipo "destaque" toca um
-// vídeo avulso (ex.: um vídeo sobre o time num canal que fala de outros assuntos).
-// O endereço youtube-nocookie.com é o "modo de privacidade reforçada" do YouTube (não grava
-// cookies de quem só abre a página). loading="lazy" faz o player só carregar quando a
-// pessoa rola a página até ele.
+// D) Vídeos: uma caixa do YouTube para cada canal dedicado ao time. Cada caixa toca os vídeos
+// mais recentes do canal guardados em data/meu-time.json (a lista só muda 20 horas depois de
+// cada jogo do time); sem lista guardada, toca a lista do próprio YouTube. Uma entrada do tipo
+// "destaque" toca um vídeo avulso. As regras ficam em videos.js. loading="lazy" faz o player
+// só carregar quando a pessoa rola a página até ele.
 const ROTULOS_VIDEO = { imprensa: "Imprensa dedicada", oficial: "Canal oficial", destaque: "Vídeo em destaque" };
-const CODIGO_CANAL = /^UC[\w-]{22}$/;
-const CODIGO_VIDEO = /^[\w-]{11}$/;
-const CODIGO_PLAYLIST = /^PL[\w-]{16,40}$/;
 
 function montarVideos(id) {
-  // Só entradas com código válido (um canal "UC..." ou um vídeo de 11 letras).
-  const valido = (c) => (c.tipo === "destaque" ? CODIGO_VIDEO.test(c.video ?? "")
-    : c.playlist ? CODIGO_PLAYLIST.test(c.playlist) : CODIGO_CANAL.test(c.canal ?? ""));
-  const lista = (canais?.times?.[id] ?? []).filter(valido);
+  const lista = (canais?.times?.[id] ?? []).filter(entradaValida);
+  const guardados = conteudo?.times?.[id]?.videos ?? {};
   $("bloco-videos").hidden = lista.length === 0;
   $("videos").innerHTML = lista.map((c) => {
     const nome = escaparHtml(c.nome);
-    let player;
-    let link;
-    if (c.tipo === "destaque") {
-      player = `https://www.youtube-nocookie.com/embed/${c.video}`;
-      link = { endereco: `https://www.youtube.com/watch?v=${c.video}`, texto: "Ver no YouTube" };
-    } else if (c.playlist) {
-      // Uma playlist do canal (ex.: só os vídeos sobre o time, num canal que fala de dois times).
-      player = `https://www.youtube-nocookie.com/embed/videoseries?list=${c.playlist}`;
-      link = { endereco: `https://www.youtube.com/playlist?list=${c.playlist}`, texto: "Ver a playlist no YouTube" };
-    } else {
-      // A lista "UULF" + código do canal (sem o "UC") são os vídeos do canal, sem Shorts nem lives.
-      player = `https://www.youtube-nocookie.com/embed/videoseries?list=UULF${c.canal.slice(2)}`;
-      link = { endereco: `https://www.youtube.com/channel/${c.canal}/videos`, texto: "Ver o canal no YouTube" };
-    }
+    const { player, link } = playerDaEntrada(c, guardados[listaDoYouTube(c)] ?? []);
     const titulo = c.titulo ? escaparHtml(c.titulo) : `Últimos vídeos de ${nome}`;
     return `
       <article class="video">

@@ -1,5 +1,5 @@
 {
- "explicacao": "Canais do YouTube mostrados na página Meu Time (seção Vídeos). Para cada time, uma lista de canais: nome, código do canal (começa com UC e tem 24 letras, aparece no endereço youtube.com/channel/...), o @ do canal e o tipo (imprensa = mídia dedicada ao time; oficial = canal do clube). O player do YouTube mostra sempre os vídeos mais recentes de cada canal. Em vez do canal inteiro, dá para usar uma playlist do canal (campo playlist, código que começa com PL). Também dá para pôr um vídeo avulso (tipo destaque): em vez da lista do canal, toca só aquele vídeo; o código do vídeo são as 11 letras depois de watch?v= no endereço. Para acrescentar, copie uma linha e troque os dados.",
+ "explicacao": "Canais do YouTube mostrados na página Meu Time (seção Vídeos). Para cada time, uma lista de canais: nome, código do canal (começa com UC e tem 24 letras, aparece no endereço youtube.com/channel/...), o @ do canal e o tipo (imprensa = mídia dedicada ao time; oficial = canal do clube). A página mostra os vídeos mais recentes de cada canal, guardados 20 horas depois de cada jogo do time (scripts/meu_time/atualizar_videos.js); enquanto não houver vídeos guardados, mostra a lista do próprio YouTube. Em vez do canal inteiro, dá para usar uma playlist do canal (campo playlist, código que começa com PL). Também dá para pôr um vídeo avulso (tipo destaque): em vez da lista do canal, toca só aquele vídeo; o código do vídeo são as 11 letras depois de watch?v= no endereço. Para acrescentar, copie uma linha e troque os dados.",
  "conferido_em": "2026-11-05",
  "times": {
   "internacional": [
@@ -44,6 +44,7 @@
    {"nome": "SantosTV", "canal": "UC0uRT_armQXqds_rjTjqJ0g", "arroba": "@santosfc", "tipo": "oficial"}
   ],
   "paranaense": [
+   {"nome": "Trétis TV", "canal": "UC1MwZRE5_wAu1Pe8pWcZtyQ", "arroba": "@TretisOficial", "tipo": "imprensa"},
    {"nome": "Athletico Paranaense", "canal": "UCUN1ASH969TSwnuUUU56TmA", "arroba": "@AthleticoParanaense", "tipo": "oficial"}
   ],
   "coritiba": [
@@ -55,6 +56,12 @@
   ],
   "clube-do-remo": [
    {"nome": "Remo TV", "canal": "UCsLGx5V5iv-JHbG10oDZOcw", "arroba": "@RemoTV", "tipo": "oficial"}
+  ],
+  "mirassol": [
+   {"nome": "Mirassol FC", "canal": "UCiz7EFM1alBWxE2hM8k4f4Q", "arroba": "@CanalMirassolFC", "tipo": "oficial"}
+  ],
+  "bahia": [
+   {"nome": "TV Bahêa", "canal": "UCcqRCjHozEb9CQHwf_cffdQ", "arroba": "@TvBahea", "tipo": "oficial"}
   ]
  }
 }

@@ -239,3 +239,36 @@ test("o texto só é reescrito quando o resultado do jogo já chegou", async () 
   const conteudo = { times: { palmeiras: { texto_em: "2026-11-05T22:00:00-03:00" } } };
   assert.deepEqual(escolherTimes({ depoisDosJogos: true }, jogos, conteudo, ids, agora), ["clube-do-remo"]);
 });
+
+test("vídeos novos só 20 horas depois do início do último jogo do time", async () => {
+  const { timesQuePrecisamDeVideos } = await import("../scripts/meu_time/quem_jogou.js");
+  const jogos = [
+    { data: "2026-11-05T19:30:00-03:00", mandante: "palmeiras", visitante: "clube-do-remo" },
+    { data: "2026-10-28T19:30:00-03:00", mandante: "santos", visitante: "palmeiras" },
+  ];
+  const canais = { times: {
+    palmeiras: [{ nome: "TV", canal: "UCBKc-rPDivvwFiWdG-81wxw", tipo: "oficial" }],
+    "clube-do-remo": [{ nome: "Remo TV", canal: "UCsLGx5V5iv-JHbG10oDZOcw", tipo: "oficial" }],
+    chapecoense: [{ nome: "Só um vídeo", video: "Rrr110vATC4", tipo: "destaque" }],   // nada a guardar
+  } };
+  // Vídeos guardados no dia 30 (depois do jogo do dia 28) para o Palmeiras; o Remo nunca guardou.
+  const meuTime = { times: { palmeiras: { videos_em: "2026-10-30T12:00:00-03:00" } } };
+  // Dia 6, 15h: o jogo do dia 5 começou há 19h30 -> Palmeiras ainda não; Remo sim (nunca guardou).
+  assert.deepEqual(timesQuePrecisamDeVideos(jogos, meuTime, canais, new Date("2026-11-06T15:00:00-03:00")), ["clube-do-remo"]);
+  // Dia 6, 15h30: 20 horas -> agora o Palmeiras também.
+  assert.deepEqual(timesQuePrecisamDeVideos(jogos, meuTime, canais, new Date("2026-11-06T15:30:00-03:00")),
+    ["clube-do-remo", "palmeiras"]);
+  // Depois de guardar às 15h40, nada até 20 horas depois do próximo jogo.
+  meuTime.times.palmeiras.videos_em = "2026-11-06T15:40:00-03:00";
+  assert.deepEqual(timesQuePrecisamDeVideos(jogos, meuTime, canais, new Date("2026-11-08T10:00:00-03:00")), ["clube-do-remo"]);
+});
+
+test("o player toca os vídeos guardados; sem eles, a lista do próprio YouTube", async () => {
+  const { playerDaEntrada, listaDoYouTube } = await import("../site/js/videos.js");
+  const canal = { nome: "TV", canal: "UCBKc-rPDivvwFiWdG-81wxw", tipo: "oficial" };
+  assert.equal(listaDoYouTube(canal), "UULFBKc-rPDivvwFiWdG-81wxw");
+  assert.equal(playerDaEntrada(canal).player, "https://www.youtube-nocookie.com/embed/videoseries?list=UULFBKc-rPDivvwFiWdG-81wxw");
+  assert.equal(playerDaEntrada(canal, ["aaaaaaaaaaa", "bbbbbbbbbbb", "ccccccccccc"]).player,
+    "https://www.youtube-nocookie.com/embed/aaaaaaaaaaa?playlist=bbbbbbbbbbb,ccccccccccc");
+  assert.equal(listaDoYouTube({ tipo: "destaque", video: "Rrr110vATC4" }), null);
+});

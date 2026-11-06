@@ -28,7 +28,10 @@ O usuário nunca programou antes, então todo código e explicação devem ser p
       De madrugada, `atualizar_textos.js --depois-dos-jogos` pega quem tiver ficado para trás. Chave `ANTHROPIC_API_KEY`
       no `.env` e nos secrets do GitHub. `atualizar_meu_time.js` atualiza tudo de uma vez (uso manual).
     - Vídeos: player do YouTube (youtube-nocookie) com a lista de vídeos de cada canal (`UULF` + código do canal),
-      uma playlist (`PL...`) ou um vídeo avulso, conforme `data/canais-youtube.json`. Se atualiza sozinho.
+      uma playlist (`PL...`) ou um vídeo avulso, conforme `data/canais-youtube.json`. A lista de vídeos de cada
+      time fica guardada em `data/meu-time.json` e só muda 20 horas depois do início de cada jogo dele (pedido do usuário):
+      `quem_jogou.js` decide e `atualizar_videos.js` busca na YouTube Data API (chave `YOUTUBE_API_KEY`). Sem lista
+      guardada, o player mostra a lista do próprio YouTube. Regras comuns à página e ao script em `site/js/videos.js`.
       Não usar os feeds RSS do YouTube: o robots.txt deles proíbe.
     - Rádios ("Oldschool / Old is cool"): player próprio (`<audio>`, e hls.js sob demanda para .m3u8) com as transmissões
       publicadas pela RadiosNet, em `data/radios.json` (só endereços https). O player da própria RadiosNet só funciona em
