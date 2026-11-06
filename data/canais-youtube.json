@@ -62,6 +62,10 @@
   ],
   "bahia": [
    {"nome": "TV Bahêa", "canal": "UCcqRCjHozEb9CQHwf_cffdQ", "arroba": "@TvBahea", "tipo": "oficial"}
+  ],
+  "vitoria": [
+   {"nome": "Canto Rubro-Negro", "canal": "UCJrrx7FDDj1n4srLwoAK0WA", "arroba": "@CantoRubroNegro", "tipo": "imprensa"},
+   {"nome": "TV Vitória", "canal": "UCT2ACrmb364amkLW8L8IhBA", "arroba": "@tvvitoria1899", "tipo": "oficial"}
   ]
  }
 }
