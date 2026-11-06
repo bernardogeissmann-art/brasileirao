@@ -1346,6 +1346,15 @@ a.botao {
   color: var(--cor-tinta-suave);
 }
 
+/* Cores de cada canal, parecidas com as das marcas. O texto é branco ou escuro, o que der
+   mais contraste com o fundo (todos passam de 4,5, o mínimo para ler texto pequeno com
+   facilidade). Um canal sem cor própria aqui fica com o fundo escuro padrão (.canal). */
+.canal--premiere   { background: #00a651; color: #0f171e; }   /* verde do Premiere */
+.canal--sportv     { background: #3b35c4; color: #ffffff; }   /* azul-arroxeado do sportv */
+.canal--primevideo { background: #00a8e1; color: #0f171e; }   /* azul-claro do Prime Video */
+.canal--cazetv     { background: #000000; color: #ffffff; }   /* preto da CazéTV */
+.canal--globoplay  { background: #e8124f; color: #ffffff; }   /* vermelho do globoplay */
+
 /* Sequência recente: V (verde), E (cinza), D (vermelho), sempre com a letra escrita. */
 .forma {
   display: flex;

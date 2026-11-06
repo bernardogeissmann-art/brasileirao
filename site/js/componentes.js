@@ -399,6 +399,12 @@ export function legendaResultado(nomeMandante, nomeVisitante) {
 // JOGOS DO DIA (página principal)
 // ---------------------------------------------------------------------------
 
+// "Apelido" de um canal, sem acentos, espaços nem símbolos: "Prime Video" vira "primevideo",
+// "CazéTV" vira "cazetv". Serve para dar a cada canal a sua cor (as cores ficam no componentes.css).
+function apelidoDoCanal(nome) {
+  return nome.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9]/g, "");
+}
+
 // A sequência recente de um time em quadradinhos: V (verde), E (cinza), D (vermelho).
 // A letra vai escrita dentro, para não depender só da cor.
 function formaRecente(forma) {
@@ -460,7 +466,7 @@ export function cardConfronto({ jogo, times, tabela, forma, chances, situacao })
   // Onde assistir: os canais vêm do ge.globo (escapados, porque vêm de fora).
   const semInformacao = situacao === "antes" ? "ainda não divulgado" : "não informado";
   const canais = jogo.transmissao?.length
-    ? jogo.transmissao.map((c) => `<li class="canal">${escaparHtml(c)}</li>`).join("")
+    ? jogo.transmissao.map((c) => `<li class="canal canal--${apelidoDoCanal(c)}">${escaparHtml(c)}</li>`).join("")
     : `<li class="canal canal--vazio">${semInformacao}</li>`;
 
   return `
