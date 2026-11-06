@@ -11,7 +11,7 @@ import {
   instalarCabecalho, montarRodape, cardTime, cartaoDestaque, mensagem, legendaCategorias, cabecalhoColunas,
   cardConfronto, legendaResultado,
 } from "./componentes.js";
-import { escolherJogosDoDia, formaRecente, situacaoDoJogo } from "./jogos-do-dia.js";
+import { escolherJogosDoDia, formaRecente, situacaoComPlacar, temJogoRolando, lerPlacarAoVivo } from "./jogos-do-dia.js";
 
 // document.getElementById pega um elemento da página pelo seu id="...".
 const topo = document.getElementById("topo");
@@ -44,7 +44,7 @@ async function iniciar() {
   const restantes = jogos.jogos.filter((jogo) => !jogo.disputado).length;
   chapeu.textContent = `Brasileirão Série A ${jogos.temporada} · faltam ${restantes} de ${jogos.jogos.length} jogos`;
   rodape.innerHTML = montarRodape(jogos.baixado_em);
-  montarJogosDoDia(dados);   // não depende da simulação: aparece logo
+  acompanharJogosDoDia(dados);   // não depende da simulação: aparece logo
 
   // Dá um instante para o navegador desenhar a mensagem "Simulando..." antes da conta pesada.
   await new Promise((pronto) => setTimeout(pronto, 30));
@@ -96,9 +96,24 @@ function montarDestaques(chances, times) {
     .join("");
 }
 
+// Mostra os Jogos do dia e, enquanto houver jogo rolando, busca o placar ao vivo de novo
+// a cada minuto (o arquivo é atualizado no site a cada ~5 minutos durante os jogos).
+const UM_MINUTO = 60 * 1000;
+
+async function acompanharJogosDoDia(dados) {
+  montarJogosDoDia(dados, await lerPlacarAoVivo());
+  const relogio = setInterval(async () => {
+    if (!temJogoRolando(dados.jogos.jogos)) {
+      clearInterval(relogio);   // acabaram os jogos de agora: para de buscar
+      return;
+    }
+    montarJogosDoDia(dados, await lerPlacarAoVivo());
+  }, UM_MINUTO);
+}
+
 // A seção "Jogos do dia": os jogos de hoje (ou, se hoje não tiver, os do próximo dia com jogo),
-// cada um com as chances do modelo, a fase dos times e onde assistir.
-function montarJogosDoDia({ jogos, modelo }) {
+// cada um com as chances do modelo, a fase dos times, o placar (se a bola já rolou) e onde assistir.
+function montarJogosDoDia({ jogos, modelo }, aoVivo) {
   const lista = document.getElementById("jogos-do-dia");
   const titulo = document.getElementById("jogos-do-dia-data");
   const agora = new Date();
@@ -124,14 +139,18 @@ function montarJogosDoDia({ jogos, modelo }) {
     tabela,
     forma: { mandante: formaRecente(jogos.jogos, jogo.mandante), visitante: formaRecente(jogos.jogos, jogo.visitante) },
     chances: chancesDoJogo(jogo, modelo),
-    situacao: situacaoDoJogo(jogo, agora),
+    estado: situacaoComPlacar(jogo, aoVivo, agora),
   })).join("");
 
   document.getElementById("jogos-do-dia-legenda").innerHTML = legendaResultado("mandante", "visitante");
   document.getElementById("jogos-do-dia-nota").textContent =
     "As chances de cada jogo vêm do mesmo modelo das simulações (ataque e defesa de cada time, mais o fator casa). " +
     "Os quadradinhos mostram os últimos 5 jogos de cada time (V = vitória, E = empate, D = derrota), do mais antigo ao mais recente. " +
-    "Onde assistir: canais informados pelo ge.globo na atualização da madrugada; podem mudar.";
+    "Onde assistir: canais informados pelo ge.globo; podem mudar." +
+    (aoVivo?.jogos && Object.keys(aoVivo.jogos).length
+      ? ` Placar ao vivo da ESPN, atualizado a cada ~5 minutos (último: ${new Intl.DateTimeFormat("pt-BR",
+        { timeZone: "America/Sao_Paulo", hour: "2-digit", minute: "2-digit" }).format(new Date(aoVivo.atualizado_em))}).`
+      : "");
 }
 
 function mostrarErro(erro) {

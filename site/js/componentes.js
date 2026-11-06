@@ -421,13 +421,19 @@ function formaRecente(forma) {
 //   tabela:    Map id -> linha da tabela atual (posição, pontos...)
 //   forma:     { mandante: ["V", ...], visitante: [...] }
 //   chances:   o que chancesDoJogo() devolve (vitória, empate, placar mais provável...)
-//   situacao:  "antes", "andamento", "aguardando" ou "encerrado" (veja jogos-do-dia.js)
-export function cardConfronto({ jogo, times, tabela, forma, chances, situacao }) {
+//   estado:    o que situacaoComPlacar() devolve (veja jogos-do-dia.js):
+//              { situacao: "antes" | "andamento" | "intervalo" | "aguardando" | "encerrado",
+//                gols: [mandante, visitante] quando há placar, minuto: "67'" quando a bola rola }
+export function cardConfronto({ jogo, times, tabela, forma, chances, estado }) {
+  const { situacao, gols, minuto } = estado;
+  const temPlacar = Array.isArray(gols);
   const hora = new Intl.DateTimeFormat("pt-BR", { timeZone: "America/Sao_Paulo", hour: "2-digit", minute: "2-digit" })
     .format(new Date(jogo.data));
+  const aoVivo = temPlacar ? `Ao vivo${minuto ? ` · ${escaparHtml(minuto)}` : ""}` : `Começou às ${hora}`;
   const selo = {
     antes: `<span class="confronto__hora">${hora}</span>`,
-    andamento: `<span class="confronto__selo confronto__selo--agora">Começou às ${hora}</span>`,
+    andamento: `<span class="confronto__selo confronto__selo--agora">${aoVivo}</span>`,
+    intervalo: `<span class="confronto__selo confronto__selo--agora">Intervalo</span>`,
     aguardando: `<span class="confronto__selo">Começou às ${hora} · placar na próxima atualização</span>`,
     encerrado: `<span class="confronto__selo">Encerrado</span>`,
   }[situacao];
@@ -436,7 +442,7 @@ export function cardConfronto({ jogo, times, tabela, forma, chances, situacao })
     const id = jogo[lado];
     const time = times[id];
     const linha = tabela.get(id);
-    const placar = situacao === "encerrado" ? `<b class="confronto__placar">${jogo[`gols_${lado}`]}</b>` : "";
+    const placar = temPlacar ? `<b class="confronto__placar">${Number(gols[lado === "mandante" ? 0 : 1])}</b>` : "";
     return `
       <div class="confronto__time">
         ${escudo(time, "confronto__escudo")}
@@ -449,12 +455,14 @@ export function cardConfronto({ jogo, times, tabela, forma, chances, situacao })
       </div>`;
   };
 
-  // As chances só fazem sentido antes do jogo acabar.
+  // As chances só fazem sentido antes do jogo acabar. Com a bola rolando, elas continuam
+  // na tela, mas avisando que são as de antes do jogo (o modelo não acompanha o placar).
   let previsao = "";
   if (situacao !== "encerrado") {
+    const rotulo = situacao === "antes" ? "" : `<p class="confronto__aviso">Chances antes do jogo</p>`;
     const { placarMaisProvavel: p } = chances;
     const umaCasa = (n) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
-    previsao = `
+    previsao = `${rotulo}
       ${barraResultado({ nomeMandante: times[jogo.mandante].nome, nomeVisitante: times[jogo.visitante].nome,
         vitoriaM: chances.vitoriaM, empate: chances.empate, vitoriaV: chances.vitoriaV })}
       <p class="confronto__previsao">

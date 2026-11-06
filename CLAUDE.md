@@ -13,6 +13,10 @@ O usuário nunca programou antes, então todo código e explicação devem ser p
     (lógica em `site/js/jogos-do-dia.js`, cartão em `componentes.js`): os jogos de hoje (ou do próximo dia com jogo),
     com chances do modelo, posição, sequência recente e onde assistir. Os canais vêm do ge.globo, lidos por
     `scripts/transmissoes.py` (chamado pelo `baixar_jogos.py`) e guardados no campo `transmissao` do `jogos.json`.
+    Placar ao vivo: `scripts/placar_ao_vivo.py` lê a ESPN e grava `data/ao-vivo.json` (não vai para o git; só existe
+    na cópia publicada). A rotina `.github/workflows/placar-ao-vivo.yml` roda a cada 5 minutos das 11h à meia-noite e
+    só republica quando há jogo rolando (do horário marcado até 130 minutos depois). A montagem do site publicado
+    (com `?v=<versão>` nos endereços .js/.css/.json, contra cópias velhas no navegador) fica em `scripts/montar_site.sh`.
   - **Simulador**: o usuário pode fixar resultados de jogos específicos e ver a tabela e as probabilidades mudarem em tempo real.
   - **Meu Time**: página personalizada com as cores do clube escolhido. O texto "Situação atual" e as
     notícias são gerados por `scripts/meu_time/atualizar_meu_time.js` (quartas e domingos, 23h) e ficam em

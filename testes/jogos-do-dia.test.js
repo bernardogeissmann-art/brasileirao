@@ -6,7 +6,9 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { diaEmBrasilia, escolherJogosDoDia, formaRecente, situacaoDoJogo } from "../site/js/jogos-do-dia.js";
+import {
+  diaEmBrasilia, escolherJogosDoDia, formaRecente, situacaoDoJogo, situacaoComPlacar, temJogoRolando,
+} from "../site/js/jogos-do-dia.js";
 
 const jogo = (id, data, mandante, visitante, placar = null, extra = {}) => ({
   id, data, mandante, visitante, disputado: placar !== null,
@@ -66,4 +68,27 @@ test("no jogos.json, a transmissão é uma lista de canais (ou vazia)", () => {
     assert.ok(Array.isArray(j.transmissao) && j.transmissao.length > 0, `jogo ${j.id}`);
     for (const canal of j.transmissao) assert.ok(typeof canal === "string" && canal.length > 0 && canal !== "Cartola");
   }
+});
+
+test("o placar ao vivo entra no jogo; o placar final do arquivo vale mais que ele", () => {
+  const aoVivo = { jogos: {
+    "3": { gols_mandante: 1, gols_visitante: 0, situacao: "andamento", minuto: "67'" },
+    "1": { gols_mandante: 9, gols_visitante: 9, situacao: "andamento", minuto: "10'" },
+  } };
+  const noMeio = new Date("2026-11-05T22:40:00-03:00");
+  assert.deepEqual(situacaoComPlacar(JOGOS[2], aoVivo, noMeio), { situacao: "andamento", gols: [1, 0], minuto: "67'" });
+  // O jogo 1 já tem placar final no arquivo: o "ao vivo" (velho ou errado) é ignorado.
+  assert.deepEqual(situacaoComPlacar(JOGOS[0], aoVivo, noMeio), { situacao: "encerrado", gols: [2, 0] });
+  // Sem placar ao vivo, vale só o relógio.
+  assert.deepEqual(situacaoComPlacar(JOGOS[3], null, noMeio), { situacao: "aguardando" });
+  assert.deepEqual(situacaoComPlacar(JOGOS[2], null, new Date("2026-11-05T20:00:00-03:00")), { situacao: "antes" });
+});
+
+test("só busca o placar de novo enquanto há jogo rolando", () => {
+  // Jogo das 21h30: a janela vai das 21h25 às 23h40.
+  assert.equal(temJogoRolando([JOGOS[2]], new Date("2026-11-05T21:20:00-03:00")), false);
+  assert.equal(temJogoRolando([JOGOS[2]], new Date("2026-11-05T21:26:00-03:00")), true);
+  assert.equal(temJogoRolando([JOGOS[2]], new Date("2026-11-05T23:35:00-03:00")), true);
+  assert.equal(temJogoRolando([JOGOS[2]], new Date("2026-11-05T23:45:00-03:00")), false);
+  assert.equal(temJogoRolando([JOGOS[0]], new Date("2026-11-01T16:30:00-03:00")), false);   // já encerrado
 });

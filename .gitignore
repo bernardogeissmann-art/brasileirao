@@ -22,3 +22,6 @@ node_modules/
 
 # Regulamentos em PDF baixados para consulta (grandes; ficam só no seu computador)
 /*.pdf
+
+# Placar ao vivo: só existe na cópia publicada do site (muda o tempo todo)
+data/ao-vivo.json
