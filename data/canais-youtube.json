@@ -66,6 +66,51 @@
   "vitoria": [
    {"nome": "Canto Rubro-Negro", "canal": "UCJrrx7FDDj1n4srLwoAK0WA", "arroba": "@CantoRubroNegro", "tipo": "imprensa"},
    {"nome": "TV Vitória", "canal": "UCT2ACrmb364amkLW8L8IhBA", "arroba": "@tvvitoria1899", "tipo": "oficial"}
+  ],
+  "america-mineiro": [
+   {"nome": "Coelho TV", "canal": "UCMdSMAkJFprfpEIQEAQre-g", "arroba": "@coelhotvafc", "tipo": "oficial"}
+  ],
+  "athletic": [
+   {"nome": "Athletic Club", "canal": "UCwfIxDpq3HXd4irhI7nBEjg", "arroba": "@athleticclub1909", "tipo": "oficial"}
+  ],
+  "atletico-goianiense": [
+   {"nome": "DragãoTV", "canal": "UCNhcUhri6NMKqzGju0QOUKg", "arroba": "@ACGOficial", "tipo": "oficial"}
+  ],
+  "avai": [
+   {"nome": "Avaí Play", "canal": "UCBAsbVEfTrXSkkLy9Oe9UQg", "arroba": "@AvaiPlay", "tipo": "oficial"}
+  ],
+  "botafogo-sp": [
+   {"nome": "TV Botafogo", "canal": "UC7tKVIVYaISBThf_L950pvQ", "arroba": "@TVBotafogoOficial", "tipo": "oficial"}
+  ],
+  "ceara": [
+   {"nome": "Vozão TV", "canal": "UCEnrZ1oURV4tk7POBNi-Ozw", "arroba": "@CearaSC", "tipo": "oficial"}
+  ],
+  "crb": [
+   {"nome": "CRB TV", "canal": "UCxWEfjeAzBzoW5idREGLDFQ", "arroba": "@CRBTV1912", "tipo": "oficial"}
+  ],
+  "criciuma": [
+   {"nome": "TV Tigre", "canal": "UC_ofom_8UQrjQJ28VqzitpQ", "arroba": "@tvtigre", "tipo": "oficial"}
+  ],
+  "cuiaba": [
+   {"nome": "Cuiabá Esporte Clube", "canal": "UCnvMjCptspOne0ztN7z-KHg", "arroba": "@CuiabaEC2001", "tipo": "oficial"}
+  ],
+  "fortaleza": [
+   {"nome": "TV Leão", "canal": "UCV5UiFF5AlNKW4sLXcYMG_g", "arroba": "@TVLeão", "tipo": "oficial"}
+  ],
+  "goias": [
+   {"nome": "TV Goiás", "canal": "UCDoUNRSo1gArmS2ygB2uBaA", "arroba": "@TVGoias", "tipo": "oficial"}
+  ],
+  "nautico": [
+   {"nome": "TV Timba", "canal": "UC6O4MP4sjiFSm5xYdNJTTZQ", "arroba": "@TVTimba", "tipo": "oficial"}
+  ],
+  "novorizontino": [
+   {"nome": "TV Novorizontino", "canal": "UCUQG_P8Y_POiYW7LqAldQVg", "arroba": "@TVNovorizontino", "tipo": "oficial"}
+  ],
+  "ponte-preta": [
+   {"nome": "PonTV", "canal": "UCx-3QAHIYTasV4ChAAO0UuA", "arroba": "@PonTV", "tipo": "oficial"}
+  ],
+  "sao-bernardo": [
+   {"nome": "São Bernardo Futebol Clube", "canal": "UC6KM6E-hL0A7RRosAsOKaOw", "arroba": "@saobernardofutebolclube", "tipo": "oficial"}
   ]
  }
 }

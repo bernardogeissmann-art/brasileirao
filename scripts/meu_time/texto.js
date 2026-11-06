@@ -5,9 +5,12 @@
 // ficar sempre igual, cada situação tem algumas versões, e a escolha muda a cada atualização.
 
 // Nome usado no texto (mais curto que o nome oficial, como se fala no dia a dia).
-const NOME_NO_TEXTO = { "clube-do-remo": "Remo", "vasco-da-gama": "Vasco", paranaense: "Athletico" };
+const NOME_NO_TEXTO = {
+  "clube-do-remo": "Remo", "vasco-da-gama": "Vasco", paranaense: "Athletico",
+  "america-mineiro": "América-MG", "atletico-goianiense": "Atlético-GO", "operario-pr": "Operário",
+};
 // Times que se diz "a": "a Chapecoense". Os outros são "o".
-const FEMININOS = new Set(["chapecoense"]);
+const FEMININOS = new Set(["chapecoense", "ponte-preta"]);
 
 // Formas do artigo para cada time: "o Flamengo", "do Flamengo", "ao Flamengo"...
 export function artigos(id) {
@@ -103,8 +106,12 @@ export function escreverTexto(info, noticias, dia) {
   // 3) A tabela e as chances.
   const c = info.chances;
   const onde = `${info.posicao}º lugar, com ${info.pontos} pontos`;
+  const serieB = info.campeonato === "serie-b";
+  // Série B: a briga é pelo acesso (1º e 2º sobem direto; do 3º ao 6º, playoff).
   // Primeiro, o que já está decidido (100% em todas as simulações).
-  if (c.titulo === 1) {
+  if (serieB) {
+    frases.push(fraseSerieB(c, onde, a, time));
+  } else if (c.titulo === 1) {
     frases.push(`Em ${onde}, ${a.o} ${time} já tem o título garantido. É campeão!`);
   } else if (c.rebaixamento === 1) {
     frases.push(`Em ${onde}, o rebaixamento já está confirmado, infelizmente.`);
@@ -171,8 +178,27 @@ export function escreverTexto(info, noticias, dia) {
     else if (p.vitoria > 0.25) frases.push(`${inicio}. Jogo difícil: o modelo dá ${porcento(p.vitoria)} de chance de vitória.`);
     else frases.push(`${inicio}. Pedreira: o modelo dá só ${porcento(p.vitoria)} de chance de vitória.`);
   } else {
-    frases.push(`A temporada ${a.do} ${time} no Brasileirão já terminou.`);
+    frases.push(`A temporada ${a.do} ${time} ${serieB ? "na Série B" : "no Brasileirão"} já terminou.`);
   }
 
   return frases.join(" ");
+}
+
+// A frase da tabela e das chances na Série B.
+function fraseSerieB(c, onde, a, time) {
+  if (c.titulo === 1) return `Em ${onde}, ${a.o} ${time} já é campeão da Série B e está de volta à Série A!`;
+  if (c.rebaixamento === 1) return `Em ${onde}, a queda para a Série C já está confirmada, infelizmente.`;
+  if (c.acesso_direto === 1) return `Em ${onde}, ${a.o} ${time} já garantiu o acesso à Série A.`;
+  if (c.acesso === 0 && c.rebaixamento === 0) {
+    return `Em ${onde}, ${a.o} ${time} já não briga pelo acesso nem corre risco de cair: a temporada é de transição.`;
+  }
+  if (c.acesso >= 0.6) return `Em ${onde}, o acesso está bem encaminhado: ${porcento(c.acesso)} de chance pelas nossas simulações.`;
+  if (c.acesso >= 0.15) {
+    const playoff = c.playoff >= 0.3 ? `, quase sempre passando pelo playoff (${porcento(c.playoff)} de chance de ficar entre o 3º e o 6º)` : "";
+    return `Em ${onde}, a briga pelo acesso está aberta: ${porcento(c.acesso)} de chance pelas nossas contas${playoff}.`;
+  }
+  if (c.rebaixamento >= 0.5) return `A situação é delicada: ${onde} e ${porcento(c.rebaixamento)} de risco de cair para a Série C.`;
+  if (c.rebaixamento >= 0.15) return `Em ${onde}, o sinal de alerta está ligado: ${porcento(c.rebaixamento)} de risco de cair.`;
+  if (c.playoff >= 0.15) return `Em ${onde}, a meta realista é o playoff: ${porcento(c.playoff)} de chance de terminar entre o 3º e o 6º.`;
+  return `Em ${onde}, ${a.o} ${time} está numa zona tranquila da tabela, longe das brigas de cima e de baixo.`;
 }

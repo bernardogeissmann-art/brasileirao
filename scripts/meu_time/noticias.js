@@ -10,7 +10,7 @@ const DIAS = 10;          // notícias de até 10 dias atrás
 const MAXIMO = 6;         // quantas notícias guardar por time
 
 // Endereço do feed de cada time no ge (o que vem depois de "ge.globo.com/rss/ge/").
-// Bragantino e Mirassol não têm feed próprio: as notícias do ge deles vêm do Google Notícias.
+// Bragantino, Mirassol e Novorizontino não têm feed próprio: as notícias do ge deles vêm do Google Notícias.
 const FEEDS_GE = {
   flamengo: "futebol/times/flamengo", palmeiras: "futebol/times/palmeiras", cruzeiro: "futebol/times/cruzeiro",
   fluminense: "futebol/times/fluminense", mineiro: "futebol/times/atletico-mg", "sao-paulo": "futebol/times/sao-paulo",
@@ -19,6 +19,15 @@ const FEEDS_GE = {
   bahia: "ba/futebol/times/bahia", vitoria: "ba/futebol/times/vitoria", "clube-do-remo": "pa/futebol/times/remo",
   chapecoense: "sc/futebol/times/chapecoense", internacional: "rs/futebol/times/internacional",
   gremio: "rs/futebol/times/gremio", santos: "sp/santos-e-regiao/futebol/times/santos",
+  // Série B
+  "america-mineiro": "futebol/times/america-mg", athletic: "mg/zona-da-mata-centro-oeste/futebol/times/athletic",
+  "atletico-goianiense": "go/futebol/times/atletico-go", avai: "sc/futebol/times/avai",
+  "botafogo-sp": "sp/ribeirao-preto-e-regiao/futebol/times/botafogo-sp", ceara: "ce/futebol/times/ceara",
+  crb: "al/futebol/times/crb", criciuma: "sc/futebol/times/criciuma", cuiaba: "mt/futebol/times/cuiaba",
+  fortaleza: "ce/futebol/times/fortaleza", goias: "go/futebol/times/goias", juventude: "rs/futebol/times/juventude",
+  londrina: "pr/futebol/times/londrina", nautico: "pe/futebol/times/nautico", "operario-pr": "pr/futebol/times/operario-pr",
+  "ponte-preta": "sp/campinas-e-regiao/futebol/times/ponte-preta", "sao-bernardo": "sp/futebol/times/sao-bernardo",
+  sport: "pe/futebol/times/sport", "vila-nova": "go/futebol/times/vila-nova",
 };
 
 // O que procurar no Google Notícias e quais palavras precisam aparecer no título
@@ -44,6 +53,27 @@ const BUSCAS = {
   santos: { busca: "Santos futebol", palavras: ["Santos", "Peixe"] },
   bragantino: { busca: "Bragantino", palavras: ["Bragantino", "Massa Bruta"] },
   mirassol: { busca: "Mirassol", palavras: ["Mirassol"] },
+  // Série B ("Tigre" e "Leão" ficam de fora: são apelidos de vários clubes)
+  "america-mineiro": { busca: "América-MG", palavras: ["América-MG", "América Mineiro", "Coelho"] },
+  athletic: { busca: "Athletic Club São João del-Rei", palavras: ["Athletic"] },
+  "atletico-goianiense": { busca: "Atlético-GO", palavras: ["Atlético-GO", "Atlético Goianiense", "Dragão"] },
+  avai: { busca: "Avaí", palavras: ["Avaí"] },
+  "botafogo-sp": { busca: "Botafogo-SP", palavras: ["Botafogo-SP", "Pantera"] },
+  ceara: { busca: "Ceará futebol", palavras: ["Ceará", "Vozão"] },
+  crb: { busca: "CRB futebol", palavras: ["CRB"] },
+  criciuma: { busca: "Criciúma futebol", palavras: ["Criciúma"] },
+  cuiaba: { busca: "Cuiabá futebol", palavras: ["Cuiabá", "Dourado"] },
+  fortaleza: { busca: "Fortaleza futebol", palavras: ["Fortaleza", "Leão do Pici"] },
+  goias: { busca: "Goiás futebol", palavras: ["Goiás", "Esmeraldino"] },
+  juventude: { busca: "Juventude futebol", palavras: ["Juventude"] },
+  londrina: { busca: "Londrina futebol", palavras: ["Londrina", "Tubarão"] },
+  nautico: { busca: "Náutico", palavras: ["Náutico", "Timbu"] },
+  novorizontino: { busca: "Novorizontino", palavras: ["Novorizontino"] },
+  "operario-pr": { busca: "Operário-PR", palavras: ["Operário", "Fantasma"] },
+  "ponte-preta": { busca: "Ponte Preta", palavras: ["Ponte Preta", "Macaca"] },
+  "sao-bernardo": { busca: "São Bernardo futebol", palavras: ["São Bernardo"] },
+  sport: { busca: "Sport Recife", palavras: ["Sport ", "Sport,", "Sport:", "Leão da Ilha"] },
+  "vila-nova": { busca: "Vila Nova futebol", palavras: ["Vila Nova", "Tigrão"] },
 };
 
 // Veículos aceitos (pelo endereço do site) e o nome que aparece na página.

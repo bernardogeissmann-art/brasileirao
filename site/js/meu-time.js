@@ -22,13 +22,16 @@ const CHAVE = "prob.meuTime";   // nome usado para guardar a escolha no navegado
 instalarCabecalho($("topo"), "meu-time");
 $("rodape").innerHTML = montarRodape(null);
 
-let dados = null;           // jogos e modelo
+// Os dados de cada campeonato: { "serie-a": { dados, tabela, chances }, "serie-b": {...} }.
+// A Série B é opcional: se os dados dela não carregarem, a página mostra só a Série A.
+const campeonatos = {};
+let campeonato = "serie-a";  // o campeonato do time que está na tela
+let dados = null;           // jogos, modelo e ficha do campeonato do time que está na tela
 let cores = {};             // cores de cada clube
 let conteudo = null;        // texto e notícias (pode não existir ainda)
 let canais = null;          // canais do YouTube de cada time (opcional)
 let radios = null;          // rádios de cada time (opcional)
-let chances = null;         // resultado da simulação (calculado uma vez)
-let tabela = null;          // tabela atual
+let tabela = null;          // tabela atual do campeonato do time que está na tela
 
 iniciar();
 
@@ -45,8 +48,10 @@ async function lerJson(caminho) {
 
 async function iniciar() {
   try {
-    [dados, { times: cores }] = await Promise.all([carregarDados(), lerJson("data/cores-times.json")]);
-    await atualizarComEspn(dados.jogos);   // jogos que acabaram há pouco já entram com o placar final
+    let dadosA;
+    [dadosA, { times: cores }] = await Promise.all([carregarDados("serie-a"), lerJson("data/cores-times.json")]);
+    await atualizarComEspn(dadosA.jogos);   // jogos que acabaram há pouco já entram com o placar final
+    campeonatos["serie-a"] = { dados: dadosA, tabela: tabelaAtual(dadosA.jogos), chances: null };
   } catch (erro) {
     console.error(erro);
     $("escolha").hidden = false;
@@ -58,16 +63,27 @@ async function iniciar() {
   conteudo = await lerJson("data/meu-time.json").catch(() => null);
   canais = await lerJson("data/canais-youtube.json").catch(() => null);
   radios = await lerJson("data/radios.json").catch(() => null);
-  $("rodape").innerHTML = montarRodape(dados.jogos.baixado_em);
-  tabela = tabelaAtual(dados.jogos);
+  try {
+    const dadosB = await carregarDados("serie-b");
+    await atualizarComEspn(dadosB.jogos);
+    campeonatos["serie-b"] = { dados: dadosB, tabela: tabelaAtual(dadosB.jogos), chances: null };
+  } catch (erro) {
+    console.warn("Não consegui carregar a Série B; a página mostra só a Série A.", erro);
+  }
+  $("rodape").innerHTML = montarRodape(campeonatos["serie-a"].dados.jogos.baixado_em);
 
   montarEscolha();
   $("trocar").addEventListener("click", mostrarEscolha);
 
   // Time pelo endereço (?time=flamengo) ou o que ficou guardado da última visita.
   const pedido = new URLSearchParams(location.search).get("time") ?? localStorage.getItem(CHAVE);
-  if (pedido && dados.jogos.times[pedido]) mostrarTime(pedido);
+  if (pedido && campeonatoDoTime(pedido)) mostrarTime(pedido);
   else mostrarEscolha();
+}
+
+// Em que campeonato o time joga ("serie-a" ou "serie-b"), ou null se não for de nenhum.
+function campeonatoDoTime(id) {
+  return Object.keys(campeonatos).find((nome) => campeonatos[nome].dados.jogos.times[id]) ?? null;
 }
 
 
@@ -108,12 +124,23 @@ function jogosDoTime(id) {
 // ESCOLHA DO TIME
 // ---------------------------------------------------------------------------
 
+// Duas partes: os times da Série A e, abaixo, os da Série B (se os dados dela carregaram).
 function montarEscolha() {
-  const ids = Object.keys(dados.jogos.times).sort((a, b) => time(a).nome.localeCompare(time(b).nome));
-  $("escolha-grade").innerHTML = ids.map((id) => `
+  const grade = (nome) => {
+    const times = campeonatos[nome].dados.jogos.times;
+    const ids = Object.keys(times).sort((a, b) => times[a].nome.localeCompare(times[b].nome));
+    return ids.map((id) => `
     <li><button type="button" class="escolha__time" data-time="${id}">
-      ${escudo(id, "", 34)}<span>${escaparHtml(time(id).nome)}</span></button></li>`).join("");
-  $("escolha-grade").addEventListener("click", (evento) => {
+      <img src="${new URL(`../../${times[id].escudo}`, import.meta.url)}" alt="" width="34" height="34">
+      <span>${escaparHtml(times[id].nome)}</span></button></li>`).join("");
+  };
+  $("escolha-grade").innerHTML = grade("serie-a");
+  if (campeonatos["serie-b"]) {
+    $("escolha-grade-b").innerHTML = grade("serie-b");
+    $("escolha-grade-b").hidden = false;
+    $("titulo-escolha-b").hidden = false;
+  }
+  $("escolha").addEventListener("click", (evento) => {
     const botao = evento.target.closest("[data-time]");
     if (botao) mostrarTime(botao.dataset.time);
   });
@@ -132,6 +159,9 @@ function mostrarEscolha() {
 // ---------------------------------------------------------------------------
 
 function mostrarTime(id) {
+  // Passa a usar os dados do campeonato do time (Série A ou Série B).
+  campeonato = campeonatoDoTime(id);
+  ({ dados, tabela } = campeonatos[campeonato]);
   localStorage.setItem(CHAVE, id);
   history.replaceState(null, "", `?time=${id}`);   // o endereço passa a apontar para este time
   aplicarCores(id);
@@ -143,7 +173,8 @@ function mostrarTime(id) {
   $("capa-escudo").src = enderecoEscudo(id);
   $("capa-escudo").alt = `Escudo do ${time(id).nome}`;
   $("capa-nome").textContent = time(id).nome;
-  $("capa-resumo").textContent = `${linha.posicao}º lugar · ${linha.pontos} pontos · ${linha.jogos} jogos`;
+  const naSerieB = campeonato === "serie-b" ? " na Série B" : "";
+  $("capa-resumo").textContent = `${linha.posicao}º lugar${naSerieB} · ${linha.pontos} pontos · ${linha.jogos} jogos`;
 
   montarSituacao(id);
   montarPosicao(id, linha);
@@ -190,9 +221,20 @@ function montarSituacao(id) {
 
 // B) As chances (anéis).
 function montarChances(id) {
-  chances ??= new Map(simular(dados).times.map((t) => [t.id, t]));   // calcula só na primeira vez
-  const c = chances.get(id);
+  const doCampeonato = campeonatos[campeonato];
+  doCampeonato.chances ??= new Map(simular(dados).times.map((t) => [t.id, t]));   // calcula só na primeira vez
+  const c = doCampeonato.chances.get(id);
   const cor = "var(--time-grafico)";
+  if (campeonato === "serie-b") {
+    // Série B: acesso (1º e 2º sobem direto; do 3º ao 6º, o playoff decide mais duas vagas).
+    $("chances").innerHTML = [
+      anelChance({ rotulo: "Título", valor: c.titulo, cor }),
+      anelChance({ rotulo: "Acesso", valor: c.acesso, cor }),
+      anelChance({ rotulo: "Playoff", valor: c.playoff, cor }),
+      anelChance({ rotulo: "Rebaixamento", valor: c.rebaixamento, cor: "var(--cor-rebaixamento)" }),
+    ].join("");
+    return;
+  }
   $("chances").innerHTML = [
     anelChance({ rotulo: "Título", valor: c.titulo, cor }),
     anelChance({ rotulo: "Libertadores", valor: c.libertadores, cor }),

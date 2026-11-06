@@ -63,7 +63,11 @@ export function timesQuePrecisamDeVideos(jogos, meuTime, canais, agora = new Dat
 // Rodando direto (e não importado por outro arquivo): mostra a lista e avisa o GitHub.
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const raiz = new URL("../../", import.meta.url);
-  const jogos = JSON.parse(readFileSync(new URL("data/serie-a/jogos.json", raiz), "utf-8")).jogos;
+  // Os jogos das Séries A e B juntos: os times de uma e de outra têm página no Meu Time.
+  const jogos = ["serie-a", "serie-b"].flatMap((c) => {
+    const dados = JSON.parse(readFileSync(new URL(`data/${c}/jogos.json`, raiz), "utf-8"));
+    return [...dados.jogos, ...(dados.playoff ?? [])];
+  });
   const arquivo = new URL("data/meu-time.json", raiz);
   const meuTime = existsSync(arquivo) ? JSON.parse(readFileSync(arquivo, "utf-8")) : { times: {} };
   const canais = JSON.parse(readFileSync(new URL("data/canais-youtube.json", raiz), "utf-8"));

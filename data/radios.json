@@ -231,6 +231,153 @@
    "cidade": "São José do Rio Preto (SP)",
    "transmissao": "https://stm10.srvstm.com:8276/stream",
    "pagina": "https://www.radios.com.br/aovivo/radio-cbn-grandes-lagos-909-fm/28672"
+  },
+  "verdinha": {
+   "radiosnet": 14216,
+   "nome": "Rádio Verdinha 92.5 FM",
+   "cidade": "Fortaleza (CE)",
+   "transmissao": "https://jvcs2dtro0.zoeweb.tv/z18-live/stream/playlist.m3u8",
+   "pagina": "https://www.radios.com.br/aovivo/radio-verdinha-925-fm/14216"
+  },
+  "o-povo-cbn": {
+   "radiosnet": 13205,
+   "nome": "O Povo CBN 95.5 FM",
+   "cidade": "Fortaleza (CE)",
+   "transmissao": "https://ice.fabricahost.com.br/cbnfortaleza",
+   "pagina": "https://www.radios.com.br/aovivo/radio-o-povo-cbn-955-fm/13205"
+  },
+  "jangadeiro": {
+   "radiosnet": 13520,
+   "nome": "Rádio Jangadeiro 88.9 FM",
+   "cidade": "Fortaleza (CE)",
+   "transmissao": "https://stream.zeno.fm/xuh02vfzurhvv",
+   "pagina": "https://www.radios.com.br/aovivo/radio-jangadeiro-889-fm/13520"
+  },
+  "jornal-recife": {
+   "radiosnet": 13488,
+   "nome": "Rádio Jornal 90.3 FM",
+   "cidade": "Recife (PE)",
+   "transmissao": "https://player-ne10-radiojornal-app.stream.uol.com.br/live/radiojornalrecifeapp.m3u8",
+   "pagina": "https://www.radios.com.br/aovivo/radio-jornal-de-recife-903-fm/13488"
+  },
+  "cbn-recife": {
+   "radiosnet": 11253,
+   "nome": "CBN Recife 105.7 FM",
+   "cidade": "Recife (PE)",
+   "transmissao": "https://video09.logicahost.com.br/cbnrecife/cbnrecife/playlist.m3u8",
+   "pagina": "https://www.radios.com.br/aovivo/radio-cbn-recife-1057-fm/11253"
+  },
+  "sagres": {
+   "radiosnet": 8754,
+   "nome": "Rádio Sagres 730 AM",
+   "cidade": "Goiânia (GO)",
+   "transmissao": "https://cast4.audiostream.com.br:20010/stream",
+   "pagina": "https://www.radios.com.br/aovivo/radio-sagres-730-am/8754"
+  },
+  "cbn-goiania": {
+   "radiosnet": 11268,
+   "nome": "CBN Goiânia 97.1 FM",
+   "cidade": "Goiânia (GO)",
+   "transmissao": "https://live.ojc.com.br/e9cd_3/myStream/playlist",
+   "pagina": "https://www.radios.com.br/aovivo/radio-cbn-goiania-971-fm/11268"
+  },
+  "cbn-floripa": {
+   "radiosnet": 11245,
+   "nome": "CBN Floripa 90.3 FM",
+   "cidade": "Florianópolis (SC)",
+   "transmissao": "https://playerservices.streamtheworld.com/api/livestream-redirect/CBN_FLOAAC.aac?dist=RadiosNet",
+   "pagina": "https://www.radios.com.br/aovivo/radio-cbn-floripa-903-fm/11245"
+  },
+  "som-maior": {
+   "radiosnet": 14646,
+   "nome": "Rádio Som Maior 100.7 FM",
+   "cidade": "Criciúma (SC)",
+   "transmissao": "https://cast2.youngtech.radio.br:8320/radio",
+   "pagina": "https://www.radios.com.br/aovivo/radio-som-maior-1007-fm/14646"
+  },
+  "eldorado-criciuma": {
+   "radiosnet": 13045,
+   "nome": "Rádio Eldorado 98.5 FM",
+   "cidade": "Criciúma (SC)",
+   "transmissao": "https://stream.loopert.com/306",
+   "pagina": "https://www.radios.com.br/aovivo/radio-eldorado-fm-985/13045"
+  },
+  "gaucha-serra": {
+   "radiosnet": 23222,
+   "nome": "Rádio Gaúcha Serra 102.7 FM",
+   "cidade": "Caxias do Sul (RS)",
+   "transmissao": "https://liverdgauserra.rbsdirect.com.br/primary/gau_serra.sdp/playlist.m3u8",
+   "pagina": "https://www.radios.com.br/aovivo/radio-gaucha-serra-1027-fm/23222"
+  },
+  "caxias": {
+   "radiosnet": 11224,
+   "nome": "Rádio Caxias 93.5 FM",
+   "cidade": "Caxias do Sul (RS)",
+   "transmissao": "https://stream.radiocaxias.com.br/listen/radiocaxias/radio.aac",
+   "pagina": "https://www.radios.com.br/aovivo/radio-caxias-935-fm/11224"
+  },
+  "difusora-maceio": {
+   "radiosnet": 13036,
+   "nome": "Rádio Difusora 93.3 FM",
+   "cidade": "Maceió (AL)",
+   "transmissao": "https://radio.saopaulo01.com.br/9348/stream",
+   "pagina": "https://www.radios.com.br/aovivo/radio-difusora-933-fm/13036"
+  },
+  "capital-cuiaba": {
+   "radiosnet": 33251,
+   "nome": "Rádio Capital 101.9 FM",
+   "cidade": "Cuiabá (MT)",
+   "transmissao": "https://radio.saopaulo01.com.br/8214/stream",
+   "pagina": "https://www.radios.com.br/aovivo/radio-capital-fm-1019/33251"
+  },
+  "cbn-cuiaba": {
+   "radiosnet": 175445,
+   "nome": "CBN Cuiabá 95.9 FM",
+   "cidade": "Cuiabá (MT)",
+   "transmissao": "https://streaming.livespanel.com:20850/cbncuiaba",
+   "pagina": "https://www.radios.com.br/aovivo/radio-cbn-959-fm/175445"
+  },
+  "cbn-campinas": {
+   "radiosnet": 11233,
+   "nome": "CBN Campinas 99.1 FM",
+   "cidade": "Campinas (SP)",
+   "transmissao": "https://8214.brasilstream.com.br/stream?origem=radios",
+   "pagina": "https://www.radios.com.br/aovivo/radio-cbn-campinas-991-fm/11233"
+  },
+  "cbn-ribeirao": {
+   "radiosnet": 24138,
+   "nome": "CBN Ribeirão 90.5 FM",
+   "cidade": "Ribeirão Preto (SP)",
+   "transmissao": "https://8350.brasilstream.com.br/stream",
+   "pagina": "https://www.radios.com.br/aovivo/radio-cbn-ribeirao-905-fm/24138"
+  },
+  "paiquere": {
+   "radiosnet": 13912,
+   "nome": "Rádio Paiquerê 91.7 FM",
+   "cidade": "Londrina (PR)",
+   "transmissao": "https://ice.fabricahost.com.br/paiquere917",
+   "pagina": "https://www.radios.com.br/aovivo/radio-paiquere-917-fm/13912"
+  },
+  "cbn-londrina": {
+   "radiosnet": 11277,
+   "nome": "CBN Londrina 100.9 FM",
+   "cidade": "Londrina (PR)",
+   "transmissao": "https://ice.fabricahost.com.br/cbnlondrina",
+   "pagina": "https://www.radios.com.br/aovivo/radio-cbn-londrina-1009-fm/11277"
+  },
+  "cbn-ponta-grossa": {
+   "radiosnet": 11281,
+   "nome": "CBN Ponta Grossa 105.9 FM",
+   "cidade": "Ponta Grossa (PR)",
+   "transmissao": "https://ice.fabricahost.com.br/cbnpontagrossa",
+   "pagina": "https://www.radios.com.br/aovivo/radio-cbn-ponta-grossa-1059-fm/11281"
+  },
+  "sao-joao-del-rei": {
+   "radiosnet": 14455,
+   "nome": "Rádio São João del-Rei 88.3 FM",
+   "cidade": "São João del-Rei (MG)",
+   "transmissao": "https://5a2b083e9f360.streamlock.net/rsjdhd/rsjdhd.stream/playlist.m3u8",
+   "pagina": "https://www.radios.com.br/aovivo/radio-sao-joao-del-rei-883-fm/14455"
   }
  },
  "times": {
@@ -330,6 +477,84 @@
    "ts-mirassol",
    "kairos-mirassol",
    "cbn-rio-preto"
+  ],
+  "ceara": [
+   "verdinha",
+   "o-povo-cbn",
+   "jangadeiro"
+  ],
+  "fortaleza": [
+   "verdinha",
+   "o-povo-cbn",
+   "jangadeiro"
+  ],
+  "sport": [
+   "jornal-recife",
+   "cbn-recife"
+  ],
+  "nautico": [
+   "jornal-recife",
+   "cbn-recife"
+  ],
+  "goias": [
+   "sagres",
+   "cbn-goiania"
+  ],
+  "atletico-goianiense": [
+   "sagres",
+   "cbn-goiania"
+  ],
+  "vila-nova": [
+   "sagres",
+   "cbn-goiania"
+  ],
+  "avai": [
+   "cbn-floripa"
+  ],
+  "criciuma": [
+   "som-maior",
+   "eldorado-criciuma"
+  ],
+  "juventude": [
+   "gaucha-serra",
+   "caxias",
+   "gaucha"
+  ],
+  "crb": [
+   "difusora-maceio"
+  ],
+  "cuiaba": [
+   "capital-cuiaba",
+   "cbn-cuiaba"
+  ],
+  "america-mineiro": [
+   "itatiaia",
+   "cbn-bh",
+   "bandnews-bh"
+  ],
+  "ponte-preta": [
+   "cbn-campinas"
+  ],
+  "botafogo-sp": [
+   "cbn-ribeirao"
+  ],
+  "londrina": [
+   "paiquere",
+   "cbn-londrina"
+  ],
+  "operario-pr": [
+   "cbn-ponta-grossa"
+  ],
+  "novorizontino": [
+   "cbn-rio-preto"
+  ],
+  "sao-bernardo": [
+   "bandeirantes-sp",
+   "jovem-pan-news"
+  ],
+  "athletic": [
+   "sao-joao-del-rei",
+   "itatiaia"
   ]
  }
 }

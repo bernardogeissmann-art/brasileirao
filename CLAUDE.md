@@ -27,7 +27,9 @@ O usuário nunca programou antes, então todo código e explicação devem ser p
     5), por isso nada que precise ser rápido depende delas. A montagem do site publicado
     (com `?v=<versão>` nos endereços .js/.css/.json, contra cópias velhas no navegador) fica em `scripts/montar_site.sh`.
   - **Simulador**: o usuário pode fixar resultados de jogos específicos e ver a tabela e as probabilidades mudarem em tempo real.
-  - **Meu Time**: página personalizada com as cores do clube escolhido (cores em `data/cores-times.json`). Conteúdo
+  - **Meu Time**: página personalizada com as cores do clube escolhido (cores em `data/cores-times.json`). A escolha
+    mostra os times da Série A e, abaixo, os da Série B; os arquivos de cores, conteúdo, canais e rádios valem para os
+    dois (os identificadores não se repetem). `contexto.js` carrega as duas séries e diz em qual o time joga. Conteúdo
     guardado em `data/meu-time.json` (texto, notícias e as horas de cada um). Quem atualiza (nada é gerado na visita):
     - Notícias: toda madrugada (`scripts/meu_time/atualizar_noticias.js`, sem IA); as novas se juntam às antigas (6 mais recentes).
     - Texto "Situação atual": escrito por IA (Claude Haiku 5.5, em `texto_ia.js`; reserva com frases prontas em `texto.js`)

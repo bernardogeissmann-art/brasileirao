@@ -10,6 +10,11 @@ import { readFileSync } from "node:fs";
 import { escreverTexto, porcento } from "../scripts/meu_time/texto.js";
 import { limparTitulo, eDoTime } from "../scripts/meu_time/noticias.js";
 import { montarPedido, conferirTexto, escreverTextoComIA, MODELO } from "../scripts/meu_time/texto_ia.js";
+// Os times das Séries A e B juntos (todos têm página no Meu Time).
+function timesDasDuasSeries() {
+  const ler = (c) => JSON.parse(readFileSync(new URL(`../data/${c}/jogos.json`, import.meta.url), "utf-8")).times;
+  return { ...ler("serie-a"), ...ler("serie-b") };
+}
 
 // Um time "de mentira" com tudo preenchido; cada teste muda só o que precisa.
 function info(mudancas = {}) {
@@ -73,9 +78,9 @@ test("limpeza dos títulos das notícias", () => {
   assert.equal(eDoTime("Maripán desfalca o Inter contra o Vasco", ["Internacional", "Inter "]), true);
 });
 
-test("o conteúdo gerado tem os 20 times, com texto e notícias", () => {
+test("o conteúdo gerado tem os 40 times (Séries A e B), com texto e notícias", () => {
   const conteudo = JSON.parse(readFileSync(new URL("../data/meu-time.json", import.meta.url), "utf-8"));
-  const jogos = JSON.parse(readFileSync(new URL("../data/serie-a/jogos.json", import.meta.url), "utf-8"));
+  const jogos = { times: timesDasDuasSeries() };   // os times das Séries A e B
   for (const id of Object.keys(jogos.times)) {
     const doTime = conteudo.times[id];
     assert.ok(doTime, `${id} sem conteúdo`);
@@ -156,7 +161,7 @@ test("com a IA de mentira: se ela se recusar ou parar no meio, dá erro (e entra
 
 test("a lista de canais do YouTube está bem preenchida", () => {
   const canais = JSON.parse(readFileSync(new URL("../data/canais-youtube.json", import.meta.url), "utf-8"));
-  const jogos = JSON.parse(readFileSync(new URL("../data/serie-a/jogos.json", import.meta.url), "utf-8"));
+  const jogos = { times: timesDasDuasSeries() };   // os times das Séries A e B
   const vistos = new Set();
   for (const [idTime, lista] of Object.entries(canais.times)) {
     assert.ok(jogos.times[idTime], `time desconhecido: ${idTime}`);
@@ -178,7 +183,7 @@ test("a lista de canais do YouTube está bem preenchida", () => {
 
 test("a lista de rádios está bem preenchida (e só com transmissões https)", () => {
   const { radios, times } = JSON.parse(readFileSync(new URL("../data/radios.json", import.meta.url), "utf-8"));
-  const jogos = JSON.parse(readFileSync(new URL("../data/serie-a/jogos.json", import.meta.url), "utf-8"));
+  const jogos = { times: timesDasDuasSeries() };   // os times das Séries A e B
   for (const [chave, r] of Object.entries(radios)) {
     assert.ok(r.nome && r.cidade, `${chave}: nome e cidade`);
     assert.ok(Number.isInteger(r.radiosnet), `${chave}: número na RadiosNet`);

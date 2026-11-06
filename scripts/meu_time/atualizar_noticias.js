@@ -9,9 +9,8 @@
 //     node scripts/meu_time/atualizar_noticias.js
 
 import { fileURLToPath } from "node:url";
-import { readFileSync } from "node:fs";
 import { buscarNoticias, juntarNoticias } from "./noticias.js";
-import { lerMeuTime, salvarMeuTime, RAIZ } from "./contexto.js";
+import { lerMeuTime, salvarMeuTime, jogosDeTodos } from "./contexto.js";
 
 export async function atualizarNoticias(ids, conteudo = lerMeuTime()) {
   for (const id of ids) {
@@ -25,8 +24,7 @@ export async function atualizarNoticias(ids, conteudo = lerMeuTime()) {
   salvarMeuTime(conteudo);
 }
 
-// Rodando direto (e não importado por outro arquivo): todos os times do Brasileirão.
+// Rodando direto (e não importado por outro arquivo): todos os times das Séries A e B.
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
-  const times = JSON.parse(readFileSync(new URL("data/serie-a/jogos.json", RAIZ), "utf-8")).times;
-  await atualizarNoticias(Object.keys(times));
+  await atualizarNoticias(Object.keys(jogosDeTodos().times));
 }

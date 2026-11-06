@@ -27,17 +27,44 @@ const formatoDia = new Intl.DateTimeFormat("pt-BR", { timeZone: "America/Sao_Pau
 const formatoData = new Intl.DateTimeFormat("pt-BR", { timeZone: "America/Sao_Paulo", day: "2-digit", month: "2-digit" });
 const diaDoJogo = (iso) => `${formatoDia.format(new Date(iso)).replace("-feira", "")}, ${formatoData.format(new Date(iso))}`;
 
-// Carrega jogos, modelo e chances uma vez só. Devolve os dados e a função montarInfo(id).
+// Os campeonatos com página Meu Time. Os identificadores dos times não se repetem entre eles.
+export const CAMPEONATOS = ["serie-a", "serie-b"];
+
+// Jogos, modelo, chances e tabela de um campeonato (pasta data/<campeonato>/).
+function carregarCampeonato(campeonato) {
+  const pasta = `data/${campeonato}/`;
+  const jogos = lerJson(`${pasta}jogos.json`);
+  const modelo = lerJson(`${pasta}modelo.json`);
+  const config = lerJson(`${pasta}configuracao.json`);
+  const resultado = simular({ jogos, modelo, config }, { n: 10_000, semente: 7 });
+  return {
+    campeonato, jogos, modelo,
+    chances: new Map(resultado.times.map((t) => [t.id, t])),
+    tabela: new Map(tabelaAtual(jogos).map((linha) => [linha.id, linha])),
+  };
+}
+
+// Todos os jogos e todos os times das Séries A e B juntos (para os scripts que só olham
+// horários e nomes, como o quem_jogou.js e o atualizar_noticias.js).
+export function jogosDeTodos() {
+  const lista = CAMPEONATOS.map((c) => lerJson(`data/${c}/jogos.json`));
+  return {
+    jogos: lista.flatMap((d) => [...d.jogos, ...(d.playoff ?? [])]),
+    times: Object.assign({}, ...lista.map((d) => d.times)),
+  };
+}
+
+// Carrega jogos, modelo e chances uma vez só (Séries A e B). Devolve os dados e a função montarInfo(id).
 export function carregarContexto() {
-  const jogos = lerJson("data/serie-a/jogos.json");
-  const modelo = lerJson("data/serie-a/modelo.json");
-  const times = jogos.times;
-  const resultado = simular({ jogos, modelo }, { n: 10_000, semente: 7 });
-  const chances = new Map(resultado.times.map((t) => [t.id, t]));
-  const tabela = new Map(tabelaAtual(jogos).map((linha) => [linha.id, linha]));
+  const porCampeonato = CAMPEONATOS.map(carregarCampeonato);
+  const times = Object.assign({}, ...porCampeonato.map((c) => c.jogos.times));
+  const campeonatoDe = (id) => porCampeonato.find((c) => c.jogos.times[id]);
+  // "jogos" junta os jogos dos dois campeonatos (quem jogou, quando).
+  const jogos = { times, jogos: porCampeonato.flatMap((c) => [...c.jogos.jogos, ...(c.jogos.playoff ?? [])]) };
 
   // Tudo o que o texto precisa saber de um time.
   function montarInfo(id) {
+    const { campeonato, jogos, modelo, chances, tabela } = campeonatoDe(id);
     const doTime = jogos.jogos.filter((j) => j.mandante === id || j.visitante === id);
     const disputados = doTime.filter((j) => j.disputado).sort((a, b) => b.data.localeCompare(a.data));
 
@@ -82,10 +109,10 @@ export function carregarContexto() {
     const campanha = { jogos: linha.jogos, vitorias: linha.vitorias, empates, derrotas: linha.jogos - linha.vitorias - empates,
       golsPro: linha.golsPro, golsContra: linha.golsContra };
     return {
-      id, nome: times[id].nome, posicao: linha.posicao, pontos: linha.pontos, campanha,
+      id, nome: times[id].nome, campeonato, posicao: linha.posicao, pontos: linha.pontos, campanha,
       ultimos: todos.slice(0, 5), sequencia, chances: chances.get(id), proximo,
     };
   }
 
-  return { jogos, modelo, times, montarInfo };
+  return { jogos, times, montarInfo };
 }

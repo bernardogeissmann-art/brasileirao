@@ -106,3 +106,39 @@ test("Série B: 380 jogos, 20 times, cada um com 19 jogos em casa e escudo no pr
   const nomesGe = Object.values(lerJson("../data/serie-b/configuracao.json").ge.nomes);
   assert.deepEqual([...nomesGe].sort(), [...ids].sort());
 });
+
+// ---------------------------------------------------------------------------
+// MEU TIME: os times da Série B têm a mesma página dos times da Série A.
+// ---------------------------------------------------------------------------
+
+test("Meu Time: cada time da Série B tem cores, rádios com https e conteúdo próprio", () => {
+  const ids = Object.keys(dadosB().jogos.times);
+  const cores = lerJson("../data/cores-times.json").times;
+  const radios = lerJson("../data/radios.json");
+  const canais = lerJson("../data/canais-youtube.json").times;
+  const idsA = Object.keys(lerJson("../data/serie-a/jogos.json").times);
+  for (const id of ids) {
+    assert.ok(!idsA.includes(id), `${id} não pode ter o mesmo identificador de um time da Série A`);
+    assert.match(cores[id]?.principal ?? "", /^#[0-9A-F]{6}$/i, `cor de ${id}`);
+    assert.ok(radios.times[id]?.length > 0, `rádios de ${id}`);
+    for (const chave of radios.times[id]) assert.ok(radios.radios[chave].transmissao.startsWith("https://"), chave);
+    for (const c of canais[id] ?? []) assert.match(c.canal, /^UC[\w-]{22}$/, `canal de ${id}`);
+  }
+});
+
+test("Meu Time: o texto de um time da Série B fala de acesso e da Série B", async () => {
+  const { carregarContexto } = await import("../scripts/meu_time/contexto.js");
+  const { escreverTexto } = await import("../scripts/meu_time/texto.js");
+  const { montarPedido } = await import("../scripts/meu_time/texto_ia.js");
+  const contexto = carregarContexto();
+  const tabela = tabelaAtual(dadosB().jogos);
+  const info = contexto.montarInfo(tabela[2].id);   // o 3º colocado: briga pelo acesso
+  assert.equal(info.campeonato, "serie-b");
+  assert.equal(info.posicao, 3);
+  assert.doesNotMatch(escreverTexto(info, [], "sexta, 06/11"), /Libertadores|Sul-Americana/);
+  const pedido = montarPedido(info, [], "sexta, 06/11");
+  assert.match(pedido, /Campeonato: Série B/);
+  assert.match(pedido, /acesso à Série A/);
+  // E um time da Série A continua com as chances de Libertadores.
+  assert.match(montarPedido(contexto.montarInfo("flamengo"), [], "sexta, 06/11"), /Libertadores/);
+});

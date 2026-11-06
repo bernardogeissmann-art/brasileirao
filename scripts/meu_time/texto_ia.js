@@ -20,7 +20,7 @@ import { artigos, nomeNoTexto, porcento } from "./texto.js";
 export const MODELO = "claude-haiku-5-5";
 
 // As instruções fixas: o "manual de redação" que a IA recebe antes dos dados de cada time.
-export const INSTRUCOES = `Você escreve o parágrafo "Situação atual" da página de um time no Prob.com, um site de probabilidades do Campeonato Brasileiro Série A 2026.
+export const INSTRUCOES = `Você escreve o parágrafo "Situação atual" da página de um time no Prob.com, um site de probabilidades do Campeonato Brasileiro 2026 (Séries A e B). O pedido diz em qual série o time joga.
 
 Como escrever:
 - Um único parágrafo, em português do Brasil, com 90 a 140 palavras.
@@ -52,6 +52,12 @@ export function montarPedido(info, noticias, dia) {
   const linhas = [];
 
   linhas.push(`Time: ${info.nome} (no texto, chame de "${a.o} ${time}").`);
+  if (info.campeonato === "serie-b") {
+    linhas.push("Campeonato: Série B. O 1º e o 2º sobem direto para a Série A; do 3º ao 6º jogam um playoff " +
+      "(3º x 6º e 4º x 5º, ida e volta) por mais duas vagas; os 4 últimos caem para a Série C.");
+  } else {
+    linhas.push("Campeonato: Série A.");
+  }
   linhas.push(`Data de hoje: ${dia}.`);
   linhas.push("");
 
@@ -69,8 +75,14 @@ export function montarPedido(info, noticias, dia) {
   const c = info.chances;
   linhas.push("Chances pelas simulações do site (10 mil campeonatos simulados até o fim):");
   linhas.push(`- título: ${chanceEmTexto(c.titulo, { garantido: "título já garantido" })}`);
-  linhas.push(`- vaga na Libertadores: ${chanceEmTexto(c.libertadores)}`);
-  linhas.push(`- vaga na Sul-Americana: ${chanceEmTexto(c.sulamericana)}`);
+  if (info.campeonato === "serie-b") {
+    linhas.push(`- acesso à Série A (direto ou pelo playoff): ${chanceEmTexto(c.acesso, { garantido: "acesso já garantido" })}`);
+    linhas.push(`- acesso direto (1º ou 2º): ${chanceEmTexto(c.acesso_direto)}`);
+    linhas.push(`- ir ao playoff (3º ao 6º): ${chanceEmTexto(c.playoff)}`);
+  } else {
+    linhas.push(`- vaga na Libertadores: ${chanceEmTexto(c.libertadores)}`);
+    linhas.push(`- vaga na Sul-Americana: ${chanceEmTexto(c.sulamericana)}`);
+  }
   linhas.push(`- rebaixamento: ${chanceEmTexto(c.rebaixamento, { garantido: "rebaixamento já confirmado", impossivel: "nenhum risco" })}`);
   linhas.push("");
 
@@ -106,7 +118,7 @@ export function montarPedido(info, noticias, dia) {
     }
     linhas.push(`${proximo}.`);
   } else {
-    linhas.push("Próximo jogo: nenhum. A temporada do time no Brasileirão já terminou.");
+    linhas.push(`Próximo jogo: nenhum. A temporada do time ${info.campeonato === "serie-b" ? "na Série B" : "no Brasileirão"} já terminou.`);
   }
   linhas.push("");
 
