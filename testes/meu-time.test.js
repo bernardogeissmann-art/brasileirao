@@ -162,11 +162,13 @@ test("a lista de canais do YouTube está bem preenchida", () => {
     assert.ok(jogos.times[idTime], `time desconhecido: ${idTime}`);
     assert.ok(lista.length >= 1 && lista.length <= 3, `${idTime}: de 1 a 3 canais`);
     for (const c of lista) {
-      assert.match(c.canal, /^UC[\w-]{22}$/, `${idTime}: código do canal ${c.nome}`);
-      assert.ok(["imprensa", "oficial"].includes(c.tipo), `${idTime}: tipo de ${c.nome}`);
+      assert.ok(["imprensa", "oficial", "destaque"].includes(c.tipo), `${idTime}: tipo de ${c.nome}`);
+      // "destaque" é um vídeo avulso (código de 11 letras); os outros são canais (código UC...).
+      const codigo = c.tipo === "destaque" ? c.video : c.canal;
+      assert.match(codigo, c.tipo === "destaque" ? /^[\w-]{11}$/ : /^UC[\w-]{22}$/, `${idTime}: código de ${c.nome}`);
       assert.ok(c.nome && c.arroba.startsWith("@"), `${idTime}: nome e @ de ${c.nome}`);
-      assert.ok(!vistos.has(c.canal), `canal repetido: ${c.nome}`);
-      vistos.add(c.canal);
+      assert.ok(!vistos.has(codigo), `repetido: ${c.nome}`);
+      vistos.add(codigo);
     }
   }
 });

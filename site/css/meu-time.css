@@ -532,6 +532,12 @@
   font-weight: 800;
 }
 
+.video__titulo {
+  margin: -4px 0 0;
+  font-size: 0.9rem;
+  color: var(--cor-tinta-suave);
+}
+
 .video__tipo {
   padding: 2px 8px;
   border-radius: 999px;

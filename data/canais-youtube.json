@@ -1,5 +1,5 @@
 {
- "explicacao": "Canais do YouTube mostrados na página Meu Time (seção Vídeos). Para cada time, uma lista de canais: nome, código do canal (começa com UC e tem 24 letras, aparece no endereço youtube.com/channel/...), o @ do canal e o tipo (imprensa = mídia dedicada ao time; oficial = canal do clube). O player do YouTube mostra sempre os vídeos mais recentes de cada canal. Para acrescentar um canal, copie uma linha e troque os dados.",
+ "explicacao": "Canais do YouTube mostrados na página Meu Time (seção Vídeos). Para cada time, uma lista de canais: nome, código do canal (começa com UC e tem 24 letras, aparece no endereço youtube.com/channel/...), o @ do canal e o tipo (imprensa = mídia dedicada ao time; oficial = canal do clube). O player do YouTube mostra sempre os vídeos mais recentes de cada canal. Também dá para pôr um vídeo avulso (tipo destaque): em vez da lista do canal, toca só aquele vídeo; o código do vídeo são as 11 letras depois de watch?v= no endereço. Para acrescentar, copie uma linha e troque os dados.",
  "conferido_em": "2026-11-05",
  "times": {
   "internacional": [
@@ -21,6 +21,7 @@
    {"nome": "São Paulo FC", "canal": "UCX3zTAsEoZ61rQMYb_08Tow", "arroba": "@saopaulofc", "tipo": "oficial"}
   ],
   "gremio": [
+   {"nome": "Canal do Farid", "canal": "UCBOGYcnvM-9iI-8d-DUEeMw", "arroba": "@CanaldoFarid", "tipo": "imprensa"},
    {"nome": "Grêmio FBPA", "canal": "UCHKbUAiKHsWCCZrkDY_PZ8Q", "arroba": "@Gremio", "tipo": "oficial"}
   ],
   "botafogo": [
@@ -48,6 +49,7 @@
    {"nome": "TV Coxa", "canal": "UCbCD35_3aBxTYcpm8M2LviA", "arroba": "@CoritibaOficial", "tipo": "oficial"}
   ],
   "chapecoense": [
+   {"nome": "TOGURO", "video": "Rrr110vATC4", "titulo": "História emocionante da Chapecoense", "arroba": "@TOGURO2023", "tipo": "destaque"},
    {"nome": "ChapeTv", "canal": "UC5of5voGUqec9K9JqL9al4Q", "arroba": "@ChapeTV", "tipo": "oficial"}
   ],
   "clube-do-remo": [

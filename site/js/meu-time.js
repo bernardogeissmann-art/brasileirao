@@ -312,29 +312,46 @@ function montarNoticias(id) {
 
 // D) Vídeos: uma caixa do YouTube para cada canal dedicado ao time. Cada caixa é o player
 // do próprio YouTube tocando a lista "vídeos do canal", que o YouTube mantém sempre com os
-// mais recentes: o site não guarda vídeo nenhum. O endereço youtube-nocookie.com é o "modo
-// de privacidade reforçada" do YouTube (não grava cookies de quem só abre a página).
-// loading="lazy" faz o player só carregar quando a pessoa rola a página até ele.
+// mais recentes: o site não guarda vídeo nenhum. Uma entrada do tipo "destaque" toca um
+// vídeo avulso (ex.: um vídeo sobre o time num canal que fala de outros assuntos).
+// O endereço youtube-nocookie.com é o "modo de privacidade reforçada" do YouTube (não grava
+// cookies de quem só abre a página). loading="lazy" faz o player só carregar quando a
+// pessoa rola a página até ele.
+const ROTULOS_VIDEO = { imprensa: "Imprensa dedicada", oficial: "Canal oficial", destaque: "Vídeo em destaque" };
+const CODIGO_CANAL = /^UC[\w-]{22}$/;
+const CODIGO_VIDEO = /^[\w-]{11}$/;
+
 function montarVideos(id) {
-  const lista = (canais?.times?.[id] ?? []).filter((c) => /^UC[\w-]{22}$/.test(c.canal));   // só códigos válidos
+  // Só entradas com código válido (um canal "UC..." ou um vídeo de 11 letras).
+  const lista = (canais?.times?.[id] ?? []).filter((c) =>
+    (c.tipo === "destaque" ? CODIGO_VIDEO.test(c.video ?? "") : CODIGO_CANAL.test(c.canal ?? "")));
   $("bloco-videos").hidden = lista.length === 0;
   $("videos").innerHTML = lista.map((c) => {
-    // A lista "UULF" + código do canal (sem o "UC") são os vídeos do canal, sem Shorts nem lives.
-    const playlist = `UULF${c.canal.slice(2)}`;
     const nome = escaparHtml(c.nome);
+    let player;
+    let link;
+    if (c.tipo === "destaque") {
+      player = `https://www.youtube-nocookie.com/embed/${c.video}`;
+      link = { endereco: `https://www.youtube.com/watch?v=${c.video}`, texto: "Ver no YouTube" };
+    } else {
+      // A lista "UULF" + código do canal (sem o "UC") são os vídeos do canal, sem Shorts nem lives.
+      player = `https://www.youtube-nocookie.com/embed/videoseries?list=UULF${c.canal.slice(2)}`;
+      link = { endereco: `https://www.youtube.com/channel/${c.canal}/videos`, texto: "Ver o canal no YouTube" };
+    }
+    const titulo = c.titulo ? escaparHtml(c.titulo) : `Últimos vídeos de ${nome}`;
     return `
       <article class="video">
         <p class="video__topo">
           <strong class="video__nome">${nome}</strong>
-          <span class="video__tipo">${c.tipo === "oficial" ? "Canal oficial" : "Imprensa dedicada"}</span>
+          <span class="video__tipo">${ROTULOS_VIDEO[c.tipo] ?? ""}</span>
         </p>
+        ${c.titulo ? `<p class="video__titulo">${titulo}</p>` : ""}
         <div class="video__tela">
-          <iframe src="https://www.youtube-nocookie.com/embed/videoseries?list=${playlist}"
-            title="Últimos vídeos de ${nome}" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+          <iframe src="${player}" title="${titulo}" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
             allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
-        <a class="video__link" href="https://www.youtube.com/channel/${c.canal}/videos" target="_blank" rel="noopener noreferrer">
-          Ver o canal no YouTube<span aria-hidden="true"> ↗</span><span class="so-leitor"> (abre em outra aba)</span></a>
+        <a class="video__link" href="${link.endereco}" target="_blank" rel="noopener noreferrer">
+          ${link.texto}<span aria-hidden="true"> ↗</span><span class="so-leitor"> (abre em outra aba)</span></a>
       </article>`;
   }).join("");
 }
