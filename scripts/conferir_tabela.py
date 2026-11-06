@@ -1,5 +1,5 @@
 # conferir_tabela.py
-# Calcula a tabela atual do Brasileirão a partir de data/jogos.json,
+# Calcula a tabela atual do Brasileirão a partir de data/serie-a/jogos.json,
 # para comparar com a tabela oficial e ter certeza de que os dados estão certos.
 #
 # Como rodar (depois de rodar o baixar_jogos.py):
@@ -10,15 +10,15 @@ import sys                # encerra o programa com mensagem de erro
 from pathlib import Path  # monta caminhos de arquivos
 
 # Mesma ideia do outro script: sobe duas pastas a partir deste arquivo
-# para chegar na pasta do projeto, e de lá aponta para data/jogos.json.
+# para chegar na pasta do projeto, e de lá aponta para data/serie-a/jogos.json.
 PASTA_PROJETO = Path(__file__).resolve().parent.parent
-ARQUIVO_JOGOS = PASTA_PROJETO / "data" / "jogos.json"
+ARQUIVO_JOGOS = PASTA_PROJETO / "data" / "serie-a" / "jogos.json"
 
 
 def carregar_jogos():
-    """Lê o data/jogos.json e devolve os dados."""
+    """Lê o data/serie-a/jogos.json e devolve os dados."""
     if not ARQUIVO_JOGOS.exists():
-        sys.exit("Erro: data/jogos.json não existe. Rode antes: python scripts/baixar_jogos.py")
+        sys.exit("Erro: data/serie-a/jogos.json não existe. Rode antes: python scripts/baixar_jogos.py")
     # json.loads transforma o texto do arquivo em dicionários e listas do Python.
     return json.loads(ARQUIVO_JOGOS.read_text(encoding="utf-8"))
 

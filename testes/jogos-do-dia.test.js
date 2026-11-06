@@ -62,7 +62,7 @@ test("a situação do jogo muda com o relógio", () => {
 });
 
 test("no jogos.json, a transmissão é uma lista de canais (ou vazia)", () => {
-  const dados = JSON.parse(readFileSync(new URL("../data/jogos.json", import.meta.url), "utf-8"));
+  const dados = JSON.parse(readFileSync(new URL("../data/serie-a/jogos.json", import.meta.url), "utf-8"));
   for (const j of dados.jogos) {
     if (j.transmissao == null) continue;
     assert.ok(Array.isArray(j.transmissao) && j.transmissao.length > 0, `jogo ${j.id}`);

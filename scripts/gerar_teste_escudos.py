@@ -13,7 +13,7 @@ from datetime import datetime
 from pathlib import Path
 
 PASTA_PROJETO = Path(__file__).resolve().parent.parent
-ARQUIVO_JOGOS = PASTA_PROJETO / "data" / "jogos.json"
+ARQUIVO_JOGOS = PASTA_PROJETO / "data" / "serie-a" / "jogos.json"
 ARQUIVO_PAGINA = PASTA_PROJETO / "site" / "teste_escudos.html"
 
 # Modelo da página. As três aspas permitem escrever um texto de várias linhas.
@@ -54,7 +54,7 @@ MODELO_PAGINA = """<!DOCTYPE html>
 def carregar_times():
     """Lê o jogos.json e devolve só a parte dos times."""
     if not ARQUIVO_JOGOS.exists():
-        sys.exit("Erro: data/jogos.json não existe. Rode antes: python scripts/baixar_jogos.py")
+        sys.exit("Erro: data/serie-a/jogos.json não existe. Rode antes: python scripts/baixar_jogos.py")
     dados = json.loads(ARQUIVO_JOGOS.read_text(encoding="utf-8"))
     return dados["times"]
 

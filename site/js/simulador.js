@@ -4,12 +4,20 @@
 //   2) a cada palpite, redesenha a tabela na hora (pontos, posições);
 //   3) pede ao "ajudante" (Web Worker) para recalcular as chances sem travar a página;
 //   4) mostra quanto cada chance mudou em relação ao cenário sem palpites.
+// Serve para a Série A (simulador.html) e para a Série B (serie-b.html): a página diz qual
+// campeonato é no <body data-campeonato="serie-b">. Sem isso, é a Série A.
 
 import { carregarDados, tabelaAtual } from "./simulacao.js";
 import { atualizarComEspn } from "./jogos-do-dia.js";
 import {
   instalarCabecalho, montarRodape, cardTime, mensagem, legendaCategorias, cabecalhoColunas, secaoRodada,
+  CATEGORIAS, CATEGORIAS_SERIE_B, zonaSerieB,
 } from "./componentes.js";
+
+// Qual campeonato esta página mostra, e o que muda no visual de um para o outro.
+const campeonato = document.body.dataset.campeonato ?? "serie-a";
+const serieB = campeonato === "serie-b";
+const categorias = serieB ? CATEGORIAS_SERIE_B : CATEGORIAS;
 
 // ---------------------------------------------------------------------------
 // ELEMENTOS DA PÁGINA
@@ -23,10 +31,10 @@ const botaoLimparTudo = document.getElementById("limpar-tudo");
 const estado = document.getElementById("estado");
 const avisoTabela = document.getElementById("aviso-tabela");
 
-instalarCabecalho(document.getElementById("topo"), "simulador");
+instalarCabecalho(document.getElementById("topo"), serieB ? "serie-b" : "simulador");
 document.getElementById("rodape").innerHTML = montarRodape(null);
-document.getElementById("legenda").innerHTML = legendaCategorias();
-document.getElementById("cabecalho-colunas").innerHTML = cabecalhoColunas();
+document.getElementById("legenda").innerHTML = legendaCategorias(categorias);
+document.getElementById("cabecalho-colunas").innerHTML = cabecalhoColunas(categorias);
 rodadas.innerHTML = `<ol class="lista-jogos">${mensagem("Carregando os jogos…", "carregando")}</ol>`;
 lista.innerHTML = mensagem("Calculando as chances…", "carregando");
 
@@ -65,13 +73,13 @@ iniciar();
 
 async function iniciar() {
   try {
-    dados = await carregarDados();
+    dados = await carregarDados(campeonato);
     await atualizarComEspn(dados.jogos);   // jogos que acabaram há pouco já entram com o placar final
   } catch (erro) {
     console.error(erro);
     const aviso = `<strong>Não consegui carregar os dados.</strong><br>
       Abra o site pelo servidor local: <code>python -m http.server 8000 --bind 127.0.0.1</code>
-      e acesse <code>http://localhost:8000/site/simulador.html</code>.`;
+      e acesse <code>http://localhost:8000/site/${serieB ? "serie-b" : "simulador"}.html</code>.`;
     rodadas.innerHTML = `<ol class="lista-jogos">${mensagem(aviso, "erro")}</ol>`;
     lista.innerHTML = "";
     return;
@@ -227,6 +235,8 @@ function desenharTabela() {
     time: dados.jogos.times[linha.id],
     chances: chances.get(linha.id),
     base: mostrarVariacao ? base.get(linha.id) : undefined,
+    categorias,
+    zona: serieB ? zonaSerieB(linha.posicao, dados.config.faixas) : undefined,
   })).join("");
 
   // Enquanto as chances não correspondem aos palpites atuais, as barras ficam apagadas.

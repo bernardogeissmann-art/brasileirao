@@ -1,6 +1,6 @@
 # escudos.py
 # Baixa o escudo de cada time e salva em assets/escudos/<identificador>.svg (ou .png).
-# O identificador é o mesmo usado no data/jogos.json (ex.: "sao-paulo").
+# O identificador é o mesmo usado no data/serie-a/jogos.json (ex.: "sao-paulo").
 #
 # Este arquivo não é rodado sozinho: o baixar_jogos.py usa as funções daqui.
 # (Um arquivo .py cujas funções são usadas por outro se chama "módulo".)

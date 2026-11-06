@@ -4,7 +4,8 @@
 //   2) carrega os dados (jogos.json e modelo.json);
 //   3) roda as 10.000 simulações no navegador;
 //   4) monta os destaques e a lista de times com as chances;
-//   5) monta a seção "Jogos do dia", no fim da página.
+//   5) monta a seção "Jogos do dia", no fim da página: primeiro os da Série A e, abaixo,
+//      os da Série B (com um botão para a página da Série B).
 
 import { carregarDados, simular, tabelaAtual, chancesDoJogo, N_SIMULACOES_PADRAO } from "./simulacao.js";
 import {
@@ -45,8 +46,9 @@ async function iniciar() {
   // Antes de simular: os jogos que já acabaram, mas ainda estão sem resultado no site,
   // ganham o placar final da ESPN. Assim a tabela já sai certa.
   const { aoVivo } = await atualizarComEspn(dados.jogos);
-  montarJogosDoDia(dados, aoVivo);   // não depende da simulação: aparece logo
-  acompanharJogosDoDia(dados);
+  montarJogosDoDia(dados, aoVivo, SERIE_A);   // não depende da simulação: aparece logo
+  acompanharJogosDoDia(dados, SERIE_A, () => calcularEMostrar(dados));
+  iniciarSerieB();   // sem "await": a Série B aparece quando os dados dela chegarem
 
   // Dá um instante para o navegador desenhar a mensagem "Simulando..." antes da conta pesada.
   await new Promise((pronto) => setTimeout(pronto, 30));
@@ -107,32 +109,56 @@ function montarDestaques(chances, times) {
     .join("");
 }
 
+// Onde fica a lista de jogos do dia de cada campeonato, e como ele é chamado nas frases.
+const SERIE_A = { lista: "jogos-do-dia", data: "jogos-do-dia-data", nome: "o Brasileirão", doNome: "do Brasileirão", notas: true };
+const SERIE_B = { lista: "jogos-serie-b-lista", data: "jogos-serie-b-data", nome: "a Série B", doNome: "da Série B", notas: false };
+
+// Os jogos do dia da Série B. Se os dados dela não vierem, a parte da Série B só não aparece.
+async function iniciarSerieB() {
+  try {
+    const dadosB = await carregarDados("serie-b");
+    const { aoVivo } = await atualizarComEspn(dadosB.jogos);
+    document.getElementById("jogos-serie-b").hidden = false;
+    montarJogosDoDia(dadosB, aoVivo, SERIE_B);
+    acompanharJogosDoDia(dadosB, SERIE_B);
+  } catch (erro) {
+    console.warn("Não consegui carregar os jogos da Série B.", erro);
+  }
+}
+
 // Enquanto houver jogo rolando, busca o placar ao vivo de novo a cada minuto (direto da
-// ESPN, pelo navegador de quem está vendo a página). Quando um jogo acaba, refaz a tabela.
+// ESPN, pelo navegador de quem está vendo a página). Quando um jogo acaba, "aoAcabarUmJogo"
+// (se houver) refaz a tabela.
 const UM_MINUTO = 60 * 1000;
 
-function acompanharJogosDoDia(dados) {
+function acompanharJogosDoDia(dados, onde, aoAcabarUmJogo) {
   const relogio = setInterval(async () => {
-    if (!temJogoRolando(dados.jogos.jogos)) {
+    if (!temJogoRolando(todosOsJogos(dados.jogos))) {
       clearInterval(relogio);   // acabaram os jogos de agora: para de buscar
       return;
     }
     const { aoVivo, novos } = await atualizarComEspn(dados.jogos);
-    if (novos > 0) calcularEMostrar(dados);   // algum jogo acabou agora: tabela e chances novas
-    montarJogosDoDia(dados, aoVivo);
+    if (novos > 0 && aoAcabarUmJogo) aoAcabarUmJogo();   // algum jogo acabou agora: tabela e chances novas
+    montarJogosDoDia(dados, aoVivo, onde);
   }, UM_MINUTO);
+}
+
+// Os jogos da fase de pontos corridos mais os do playoff (que só existem na Série B).
+function todosOsJogos(jogos) {
+  return [...jogos.jogos, ...(jogos.playoff ?? [])];
 }
 
 // A seção "Jogos do dia": os jogos de hoje (ou, se hoje não tiver, os do próximo dia com jogo),
 // cada um com as chances do modelo, a fase dos times, o placar (se a bola já rolou) e onde assistir.
-function montarJogosDoDia({ jogos, modelo }, aoVivo) {
-  const lista = document.getElementById("jogos-do-dia");
-  const titulo = document.getElementById("jogos-do-dia-data");
+//   onde: SERIE_A ou SERIE_B (a lista em que os jogos entram e o nome do campeonato)
+function montarJogosDoDia({ jogos, modelo }, aoVivo, onde) {
+  const lista = document.getElementById(onde.lista);
+  const titulo = document.getElementById(onde.data);
   const agora = new Date();
-  const escolha = escolherJogosDoDia(jogos.jogos, agora);
+  const escolha = escolherJogosDoDia(todosOsJogos(jogos), agora);
   if (!escolha) {
     titulo.textContent = "";
-    lista.innerHTML = mensagem("O Brasileirão terminou: não há mais jogos.", "carregando");
+    lista.innerHTML = mensagem(`${onde.nome[0].toUpperCase()}${onde.nome.slice(1)} terminou: não há mais jogos.`, "carregando");
     return;
   }
 
@@ -142,7 +168,7 @@ function montarJogosDoDia({ jogos, modelo }, aoVivo) {
   const quantos = escolha.jogos.length === 1 ? "1 jogo" : `${escolha.jogos.length} jogos`;
   titulo.textContent = escolha.eHoje
     ? `Hoje, ${dataPorExtenso} · ${quantos}`
-    : `Hoje não tem jogo do Brasileirão. Próximo dia de jogos: ${dataPorExtenso} · ${quantos}`;
+    : `Hoje não tem jogo ${onde.doNome}. Próximo dia de jogos: ${dataPorExtenso} · ${quantos}`;
 
   const tabela = new Map(tabelaAtual(jogos).map((linha) => [linha.id, linha]));
   lista.innerHTML = escolha.jogos.map((jogo) => cardConfronto({
@@ -154,6 +180,7 @@ function montarJogosDoDia({ jogos, modelo }, aoVivo) {
     estado: situacaoComPlacar(jogo, aoVivo, agora),
   })).join("");
 
+  if (!onde.notas) return;   // a legenda e a nota ficam só embaixo dos jogos da Série A
   document.getElementById("jogos-do-dia-legenda").innerHTML = legendaResultado("mandante", "visitante");
   document.getElementById("jogos-do-dia-nota").textContent =
     "As chances de cada jogo vêm do mesmo modelo das simulações (ataque e defesa de cada time, mais o fator casa). " +

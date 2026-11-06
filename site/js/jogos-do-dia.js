@@ -64,7 +64,9 @@ export function situacaoDoJogo(jogo, agora = new Date()) {
   return "aguardando";
 }
 
-const URL_ESPN = "https://site.api.espn.com/apis/site/v2/sports/soccer/bra.1/scoreboard?dates=";
+// Endereço do placar na ESPN. A "liga" vem do jogos.json (campo liga_espn):
+// "bra.1" é a Série A (o padrão) e "bra.2", a Série B.
+const urlEspn = (liga) => `https://site.api.espn.com/apis/site/v2/sports/soccer/${liga}/scoreboard?dates=`;
 
 // Traduz a situação do jogo na ESPN: "antes", "andamento", "intervalo" ou "encerrado".
 export function situacaoNaEspn(status) {
@@ -100,12 +102,12 @@ export function placaresDaEspn(eventos, jogosDoDia, times) {
 }
 
 // Placar direto da ESPN, para os jogos indicados (um pedido por dia de jogo).
-async function placarDaEspn(jogosDoDia, times) {
+async function placarDaEspn(jogosDoDia, times, liga) {
   const dias = [...new Set(jogosDoDia.map((j) => diaEmBrasilia(new Date(j.data)).replaceAll("-", "")))];
   const eventos = [];
   for (const dia of dias) {
     // Se a ESPN não responder em 8 segundos, desiste (e vale o arquivo do site).
-    const resposta = await fetch(URL_ESPN + dia, { cache: "no-store", signal: AbortSignal.timeout(8000) });
+    const resposta = await fetch(urlEspn(liga) + dia, { cache: "no-store", signal: AbortSignal.timeout(8000) });
     if (!resposta.ok) throw new Error(`ESPN respondeu com erro ${resposta.status}`);
     eventos.push(...((await resposta.json()).events ?? []));
   }
@@ -115,14 +117,16 @@ async function placarDaEspn(jogosDoDia, times) {
 // Lê o placar ao vivo dos jogos que já começaram: primeiro direto da ESPN (o mais atualizado);
 // se não der, o arquivo do site (o endereço ganha a hora de agora no fim, ?agora=..., para
 // nunca vir de uma cópia guardada pelo navegador). Sem nenhum dos dois, devolve null.
-export async function lerPlacarAoVivo(jogosComecados = [], times = {}) {
+// O arquivo do site (data/ao-vivo.json) só existe para a Série A: na Série B, sem a ESPN, fica sem placar.
+export async function lerPlacarAoVivo(jogosComecados = [], times = {}, liga = "bra.1") {
   if (jogosComecados.length > 0) {
     try {
-      return await placarDaEspn(jogosComecados, times);
+      return await placarDaEspn(jogosComecados, times, liga);
     } catch (erro) {
       console.warn("Placar da ESPN indisponível; usando o arquivo do site.", erro);
     }
   }
+  if (liga !== "bra.1") return null;
   const endereco = new URL("../../data/ao-vivo.json", import.meta.url);
   endereco.searchParams.set("agora", String(Date.now()));
   try {
@@ -161,11 +165,13 @@ export function incluirEncerrados(jogos, aoVivo) {
 
 // Atalho para as páginas: pergunta o placar dos jogos sem resultado e inclui os que já
 // acabaram. Devolve o placar ao vivo (para os cartões) e quantos jogos mudaram.
+// Na Série B, os jogos do playoff (dadosJogos.playoff) entram junto.
 export async function atualizarComEspn(dadosJogos) {
-  const pendentes = jogosSemResultado(dadosJogos.jogos);
+  const todos = [...dadosJogos.jogos, ...(dadosJogos.playoff ?? [])];
+  const pendentes = jogosSemResultado(todos);
   if (pendentes.length === 0) return { aoVivo: null, novos: 0 };   // nada para perguntar
-  const aoVivo = await lerPlacarAoVivo(pendentes, dadosJogos.times);
-  return { aoVivo, novos: incluirEncerrados(dadosJogos.jogos, aoVivo) };
+  const aoVivo = await lerPlacarAoVivo(pendentes, dadosJogos.times, dadosJogos.liga_espn ?? "bra.1");
+  return { aoVivo, novos: incluirEncerrados(todos, aoVivo) };
 }
 
 // A situação de um jogo juntando o arquivo de jogos com o placar ao vivo:

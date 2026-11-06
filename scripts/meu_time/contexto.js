@@ -29,8 +29,8 @@ const diaDoJogo = (iso) => `${formatoDia.format(new Date(iso)).replace("-feira",
 
 // Carrega jogos, modelo e chances uma vez só. Devolve os dados e a função montarInfo(id).
 export function carregarContexto() {
-  const jogos = lerJson("data/jogos.json");
-  const modelo = lerJson("data/modelo.json");
+  const jogos = lerJson("data/serie-a/jogos.json");
+  const modelo = lerJson("data/serie-a/modelo.json");
   const times = jogos.times;
   const resultado = simular({ jogos, modelo }, { n: 10_000, semente: 7 });
   const chances = new Map(resultado.times.map((t) => [t.id, t]));

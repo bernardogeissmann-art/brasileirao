@@ -1,9 +1,13 @@
 # baixar_jogos.py
-# Baixa os 380 jogos do Brasileirão Série A 2026 do site football-data.org
-# (os que já aconteceram, com placar, e os que ainda faltam) e salva em data/jogos.json.
+# Baixa os 380 jogos de um Brasileirão 2026 (os que já aconteceram, com placar, e os que
+# ainda faltam) e salva em data/<campeonato>/jogos.json. De onde vêm os jogos está na
+# ficha do campeonato (data/<campeonato>/configuracao.json):
+#   - Série A: football-data.org (precisa da chave FOOTBALL_DATA_API_KEY);
+#   - Série B: ESPN (não precisa de chave), lida pelo fonte_espn_brasileirao.py.
 #
 # Como rodar: abra o terminal na pasta do projeto e digite
-#     python scripts/baixar_jogos.py
+#     python scripts/baixar_jogos.py                         (Série A)
+#     python scripts/baixar_jogos.py --campeonato serie-b    (Série B)
 
 # ---------------------------------------------------------------------------
 # 1) FERRAMENTAS
@@ -22,8 +26,10 @@ from pathlib import Path  # monta caminhos de arquivos (funciona igual no Window
 
 # Estes "import" são diferentes: trazem funções de arquivos nossos (scripts/escudos.py,
 # scripts/estadios.py e scripts/transmissoes.py).
+import campeonatos
 import escudos
 import estadios
+import fonte_espn_brasileirao
 import transmissoes
 
 # ---------------------------------------------------------------------------
@@ -39,13 +45,10 @@ PASTA_PROJETO = Path(__file__).resolve().parent.parent
 
 # O operador "/" junta pedaços de caminho: pasta do projeto + ".env".
 ARQUIVO_ENV = PASTA_PROJETO / ".env"
-ARQUIVO_SAIDA = PASTA_PROJETO / "data" / "jogos.json"
 
-TEMPORADA = 2026
-
-# Endereço da API. "BSA" é o código do Brasileirão Série A no football-data.org.
-# O "f" antes das aspas permite colocar variáveis dentro de {chaves}.
-URL_JOGOS = f"https://api.football-data.org/v4/competitions/BSA/matches?season={TEMPORADA}"
+# Endereço da API do football-data.org. O código do campeonato ("BSA" é a Série A) e a
+# temporada vêm da ficha. As {chaves} são preenchidas depois, com .format().
+URL_JOGOS = "https://api.football-data.org/v4/competitions/{codigo}/matches?season={temporada}"
 
 # Horário de Brasília = 3 horas a menos que o horário universal (UTC).
 FUSO_BRASILIA = timezone(timedelta(hours=-3))
@@ -55,11 +58,6 @@ FUSO_BRASILIA = timezone(timedelta(hours=-3))
 # Jogos em andamento, adiados ou ainda não jogados contam como "restantes".
 STATUS_DISPUTADO = {"FINISHED", "AWARDED"}
 
-# Nomes curtos que a API escreve de um jeito estranho -> como queremos mostrar no site.
-NOMES_CORRIGIDOS = {
-    "Mineiro": "Atlético Mineiro",
-    "Paranaense": "Athletico Paranaense",
-}
 
 
 # ---------------------------------------------------------------------------
@@ -101,11 +99,11 @@ def ler_chave_api():
              "FOOTBALL_DATA_API_KEY=sua_chave")
 
 
-def baixar_dados(chave):
+def baixar_dados(chave, url):
     """Pede os jogos à API e devolve a resposta já convertida em dados do Python."""
     # Monta o pedido: o endereço + a chave no cabeçalho "X-Auth-Token",
     # que é onde o football-data.org espera recebê-la.
-    pedido = urllib.request.Request(URL_JOGOS, headers={"X-Auth-Token": chave})
+    pedido = urllib.request.Request(url, headers={"X-Auth-Token": chave})
 
     # "try" significa "tente fazer isto". Se der erro, o Python pula para
     # o "except" correspondente em vez de travar com uma mensagem confusa.
@@ -144,7 +142,7 @@ def criar_id(nome):
     return re.sub(r"[^a-z0-9]+", "-", sem_acento.lower()).strip("-")
 
 
-def registrar_time(times, time_api):
+def registrar_time(times, time_api, nomes_corrigidos):
     """Guarda as informações de um time no dicionário "times" e devolve o id dele."""
     # Usa o nome curto ("Flamengo"); se a API não tiver, usa o nome completo.
     # .get() busca um campo e devolve None (vazio) se ele não existir.
@@ -152,7 +150,7 @@ def registrar_time(times, time_api):
     # O id continua vindo do nome da API (assim os arquivos de escudo e os dados antigos
     # não mudam); só o nome que aparece no site é corrigido, quando preciso.
     id_time = criar_id(nome_api)
-    nome = NOMES_CORRIGIDOS.get(nome_api, nome_api)
+    nome = nomes_corrigidos.get(nome_api, nome_api)
 
     # Segurança: se dois times diferentes gerarem o mesmo id, para tudo,
     # porque isso misturaria os resultados dos dois.
@@ -170,15 +168,17 @@ def registrar_time(times, time_api):
     return id_time
 
 
-def organizar(dados_api):
+def organizar(dados_api, ficha):
     """Converte a resposta da API para o nosso formato, mais simples e em português."""
+    # Nomes curtos que a API escreve de um jeito estranho -> como queremos mostrar no site.
+    nomes_corrigidos = ficha.get("nomes_corrigidos", {})
     times = {}   # dicionário vazio: vai receber os times
     jogos = []   # lista vazia: vai receber os jogos
 
     # A API devolve os jogos dentro do campo "matches". Passamos por cada um.
     for partida in dados_api["matches"]:
-        mandante = registrar_time(times, partida["homeTeam"])
-        visitante = registrar_time(times, partida["awayTeam"])
+        mandante = registrar_time(times, partida["homeTeam"], nomes_corrigidos)
+        visitante = registrar_time(times, partida["awayTeam"], nomes_corrigidos)
 
         # True (verdadeiro) se o jogo já foi disputado; False (falso) se não.
         disputado = partida["status"] in STATUS_DISPUTADO
@@ -208,8 +208,8 @@ def organizar(dados_api):
 
     return {
         "fonte": "football-data.org",
-        "competicao": "Campeonato Brasileiro Série A",
-        "temporada": TEMPORADA,
+        "competicao": ficha["nome"].replace("Brasileirão", "Campeonato Brasileiro"),
+        "temporada": ficha["temporada"],
         "baixado_em": datetime.now(FUSO_BRASILIA).isoformat(timespec="seconds"),
         # sorted() coloca os times em ordem alfabética de id, para ficar fácil de achar.
         "times": dict(sorted(times.items())),
@@ -217,17 +217,17 @@ def organizar(dados_api):
     }
 
 
-def salvar(dados):
-    """Grava os dados em data/jogos.json."""
-    # Cria a pasta data/ se, por algum motivo, ela não existir.
-    ARQUIVO_SAIDA.parent.mkdir(exist_ok=True)
+def salvar(dados, arquivo):
+    """Grava os dados no jogos.json do campeonato (ex.: data/serie-a/jogos.json)."""
+    # Cria a pasta do campeonato se, por algum motivo, ela não existir.
+    arquivo.parent.mkdir(parents=True, exist_ok=True)
     # json.dumps transforma os dados em texto JSON.
     # ensure_ascii=False mantém os acentos; indent=2 deixa o arquivo legível para humanos.
     texto = json.dumps(dados, ensure_ascii=False, indent=2)
-    ARQUIVO_SAIDA.write_text(texto, encoding="utf-8")
+    arquivo.write_text(texto, encoding="utf-8")
 
 
-def imprimir_resumo(dados):
+def imprimir_resumo(dados, ficha):
     """Mostra na tela um resumo do que foi baixado."""
     times = dados["times"]
     jogos = dados["jogos"]
@@ -236,7 +236,7 @@ def imprimir_resumo(dados):
     restantes = len(jogos) - len(disputados)   # len() conta quantos itens há
 
     print()   # print() sem nada imprime uma linha em branco
-    print(f"Resumo - Brasileirão Série A {dados['temporada']}")
+    print(f"Resumo - {ficha['nome']} {dados['temporada']}")
     print(f"  Total de jogos:   {len(jogos)}")
     print(f"  Número de times:  {len(times)}")
     print(f"  Jogos disputados: {len(disputados)}")
@@ -274,26 +274,36 @@ def imprimir_resumo(dados):
 
 def main():
     """Função principal: chama as outras na ordem certa."""
-    chave = ler_chave_api()
-    print("Baixando os jogos do football-data.org...")
-    dados_api = baixar_dados(chave)
-    dados = organizar(dados_api)
+    ficha = campeonatos.ler_campeonato()   # Série A, ou a que veio depois de --campeonato
+    avisos_estadios = []
+    if ficha["fonte"]["tipo"] == "football-data":
+        chave = ler_chave_api()
+        print(f"Baixando os jogos da {ficha['nome']} do football-data.org...")
+        url = URL_JOGOS.format(codigo=ficha["fonte"]["codigo"], temporada=ficha["temporada"])
+        dados = organizar(baixar_dados(chave, url), ficha)
+    else:
+        # Na ESPN, o estádio e o nome de cada time na ESPN já vêm junto com os jogos.
+        print(f"Baixando os jogos da {ficha['nome']} da ESPN...")
+        dados, avisos_estadios = fonte_espn_brasileirao.baixar_jogos(ficha)
+    # Endereço do placar ao vivo na ESPN: a página lê por ele (bra.1 = Série A, bra.2 = Série B).
+    dados["liga_espn"] = ficha["liga_espn"]
     # Os escudos são baixados antes de salvar, para o jogos.json já guardar
     # o caminho de cada escudo (ex.: "assets/escudos/flamengo.svg").
     print("Baixando os escudos dos times...")
     problemas_escudos = escudos.baixar_escudos(dados["times"])
-    # O estádio de cada jogo vem da ESPN. Se der problema, os jogos só ficam sem estádio.
-    print("Buscando o estádio de cada jogo...")
-    avisos_estadios = estadios.anotar_estadios(dados)
+    if ficha["fonte"]["tipo"] == "football-data":
+        # O estádio de cada jogo vem da ESPN. Se der problema, os jogos só ficam sem estádio.
+        print("Buscando o estádio de cada jogo...")
+        avisos_estadios = estadios.anotar_estadios(dados)
     # Onde assistir aos próximos jogos vem do ge.globo. Se der problema, só fica sem.
     print("Buscando onde assistir aos próximos jogos...")
-    com_transmissao, avisos_transmissoes = transmissoes.anotar_transmissoes(dados)
-    salvar(dados)
-    print(f"Jogos salvos em {ARQUIVO_SAIDA}")
-    imprimir_resumo(dados)
+    com_transmissao, avisos_transmissoes = transmissoes.anotar_transmissoes(dados, ficha["ge"])
+    salvar(dados, ficha["arquivo_jogos"])
+    print(f"Jogos salvos em {ficha['arquivo_jogos']}")
+    imprimir_resumo(dados, ficha)
     escudos.imprimir_resultado(dados["times"], problemas_escudos)
     for aviso in avisos_estadios:
-        print(f"Aviso sobre estádios: {aviso}")
+        print(f"Aviso sobre estádios ou rodadas: {aviso}")
     print(f"Jogos com transmissão anotada: {com_transmissao}")
     for aviso in avisos_transmissoes:
         print(f"Aviso sobre transmissões: {aviso}")

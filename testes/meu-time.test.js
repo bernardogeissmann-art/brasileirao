@@ -75,7 +75,7 @@ test("limpeza dos títulos das notícias", () => {
 
 test("o conteúdo gerado tem os 20 times, com texto e notícias", () => {
   const conteudo = JSON.parse(readFileSync(new URL("../data/meu-time.json", import.meta.url), "utf-8"));
-  const jogos = JSON.parse(readFileSync(new URL("../data/jogos.json", import.meta.url), "utf-8"));
+  const jogos = JSON.parse(readFileSync(new URL("../data/serie-a/jogos.json", import.meta.url), "utf-8"));
   for (const id of Object.keys(jogos.times)) {
     const doTime = conteudo.times[id];
     assert.ok(doTime, `${id} sem conteúdo`);
@@ -156,7 +156,7 @@ test("com a IA de mentira: se ela se recusar ou parar no meio, dá erro (e entra
 
 test("a lista de canais do YouTube está bem preenchida", () => {
   const canais = JSON.parse(readFileSync(new URL("../data/canais-youtube.json", import.meta.url), "utf-8"));
-  const jogos = JSON.parse(readFileSync(new URL("../data/jogos.json", import.meta.url), "utf-8"));
+  const jogos = JSON.parse(readFileSync(new URL("../data/serie-a/jogos.json", import.meta.url), "utf-8"));
   const vistos = new Set();
   for (const [idTime, lista] of Object.entries(canais.times)) {
     assert.ok(jogos.times[idTime], `time desconhecido: ${idTime}`);
@@ -178,7 +178,7 @@ test("a lista de canais do YouTube está bem preenchida", () => {
 
 test("a lista de rádios está bem preenchida (e só com transmissões https)", () => {
   const { radios, times } = JSON.parse(readFileSync(new URL("../data/radios.json", import.meta.url), "utf-8"));
-  const jogos = JSON.parse(readFileSync(new URL("../data/jogos.json", import.meta.url), "utf-8"));
+  const jogos = JSON.parse(readFileSync(new URL("../data/serie-a/jogos.json", import.meta.url), "utf-8"));
   for (const [chave, r] of Object.entries(radios)) {
     assert.ok(r.nome && r.cidade, `${chave}: nome e cidade`);
     assert.ok(Number.isInteger(r.radiosnet), `${chave}: número na RadiosNet`);

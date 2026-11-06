@@ -17,17 +17,10 @@ import time
 import urllib.request
 
 CABECALHOS = {"User-Agent": "ProbCom/1.0 (projeto pessoal de estatistica)"}
-URL_TABELA = "https://ge.globo.com/futebol/brasileirao-serie-a/"
 PAUSA_ENTRE_PAGINAS = 1.0   # segundos
 
-# Nome do time no ge -> o nosso identificador (o mesmo do jogos.json).
-TIMES_GE = {
-    "Athletico-PR": "paranaense", "Atlético-MG": "mineiro", "Bahia": "bahia", "Botafogo": "botafogo",
-    "Bragantino": "bragantino", "Chapecoense": "chapecoense", "Corinthians": "corinthians", "Coritiba": "coritiba",
-    "Cruzeiro": "cruzeiro", "Flamengo": "flamengo", "Fluminense": "fluminense", "Grêmio": "gremio",
-    "Internacional": "internacional", "Mirassol": "mirassol", "Palmeiras": "palmeiras", "Remo": "clube-do-remo",
-    "Santos": "santos", "São Paulo": "sao-paulo", "Vasco": "vasco-da-gama", "Vitória": "vitoria",
-}
+# O endereço da tabela no ge e o nome de cada time lá (-> o nosso identificador) ficam na
+# ficha de cada campeonato (data/<campeonato>/configuracao.json, campo "ge").
 
 # O ge mistura propagandas dos próprios produtos na lista: estes nomes não são canais.
 NAO_SAO_CANAIS = {"Cartola"}
@@ -70,13 +63,14 @@ def canais_do_jogo(pagina):
     return canais
 
 
-def anotar_transmissoes(dados):
-    """Coloca o campo "transmissao" em cada jogo (a lista de canais, ou None quando não se sabe).
+def anotar_transmissoes(dados, ge):
+    """ge: o campo "ge" da ficha do campeonato ({"endereco": ..., "nomes": {...}}).
+    Coloca o campo "transmissao" em cada jogo (a lista de canais, ou None quando não se sabe).
     Devolve (quantos jogos ganharam transmissão, lista de avisos)."""
     for jogo in dados["jogos"]:
         jogo["transmissao"] = None
     try:
-        rodada = jogos_da_rodada(baixar_pagina(URL_TABELA))
+        rodada = jogos_da_rodada(baixar_pagina(ge["endereco"]))
     except OSError as erro:
         return 0, [f"não consegui ler a tabela do ge ({erro}); os jogos ficaram sem transmissão"]
     if not rodada:
@@ -93,9 +87,9 @@ def anotar_transmissoes(dados):
         if estado == "ENCERRADA":
             continue
         nomes = [jogo_ge["equipes"][lado]["nome_popular"] for lado in ("mandante", "visitante")]
-        ids = [TIMES_GE.get(nome) for nome in nomes]
+        ids = [ge["nomes"].get(nome) for nome in nomes]
         if None in ids:
-            avisos.append(f"time do ge que não está na lista TIMES_GE: {nomes}")
+            avisos.append(f"time do ge que não está na lista ge.nomes da ficha: {nomes}")
             continue
         jogo = por_par.get(tuple(ids))
         endereco = (jogo_ge.get("transmissao") or {}).get("url")

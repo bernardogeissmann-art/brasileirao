@@ -6,13 +6,32 @@
 import { ABAS } from "./abas.js";
 import { FAIXAS } from "./simulacao.js";
 
-// As 4 categorias de chance, na ordem em que aparecem em todo o site.
+// As 4 categorias de chance da Série A, na ordem em que aparecem em todo o site.
 export const CATEGORIAS = [
   { campo: "titulo", rotulo: "Título", faixa: "" },
   { campo: "libertadores", rotulo: "Libertadores", faixa: "1º–5º" },
   { campo: "sulamericana", rotulo: "Sul-Americana", faixa: "6º–11º" },
   { campo: "rebaixamento", rotulo: "Rebaixamento", faixa: "17º–20º" },
 ];
+
+// As 4 categorias da Série B. "classe" escolhe a cor (reaproveita as cores da Série A):
+// acesso em azul, playoff em verde-água. O acesso já inclui quem sobe pelo playoff.
+export const CATEGORIAS_SERIE_B = [
+  { campo: "titulo", rotulo: "Título", faixa: "" },
+  { campo: "acesso", rotulo: "Acesso", faixa: "1º–2º ou playoff", classe: "libertadores" },
+  { campo: "playoff", rotulo: "Playoff", faixa: "3º–6º", classe: "sulamericana" },
+  { campo: "rebaixamento", rotulo: "Rebaixamento", faixa: "17º–20º" },
+];
+
+// Zona da tabela na Série B (a faixa colorida do card), a partir das faixas da ficha.
+export function zonaSerieB(posicao, faixas) {
+  const dentro = ([de, ate]) => posicao >= de && posicao <= ate;
+  if (dentro(faixas.titulo)) return "titulo";
+  if (dentro(faixas.acesso_direto)) return "libertadores";
+  if (dentro(faixas.playoff)) return "sulamericana";
+  if (dentro(faixas.rebaixamento)) return "rebaixamento";
+  return "neutra";
+}
 
 // ---------------------------------------------------------------------------
 // AJUDANTES
@@ -102,26 +121,34 @@ function escudo(time, classe) {
 // TOPO, RODAPÉ E MENSAGENS
 // ---------------------------------------------------------------------------
 
+// Uma opção do menu suspenso (link com símbolo opcional).
+function opcaoDoMenu(item, abaAtual) {
+  const simbolo = item.simbolo
+    ? `<img class="menu-abas__simbolo" src="${new URL(`../../${item.simbolo}`, import.meta.url)}" alt="" width="32" height="32">`
+    : "";
+  const atual = item.id === abaAtual ? ' aria-current="page"' : "";
+  return `<a class="menu-abas__item" href="${item.endereco}"${atual}>${simbolo}<span>${escaparHtml(item.rotulo)}</span></a>`;
+}
+
 // Topo com a marca e o menu. "abaAtual" é o id da página em que estamos.
 // Abas com "itens" viram um botão que abre um painel com as opções (menu suspenso).
+// Abas com "secoes" também, mas o painel fica dividido em partes, cada uma com seu título.
 // O painel fica fora da faixa de abas porque, no celular, essa faixa rola para o lado
 // e cortaria qualquer coisa que saísse dela.
 function montarCabecalho(abaAtual) {
   const paineis = [];
   const itens = ABAS.map((aba) => {
-    if (aba.itens) {
-      const dentro = aba.itens.some((item) => item.id === abaAtual);
-      const opcoes = aba.itens.map((item) => {
-        const simbolo = item.simbolo
-          ? `<img class="menu-abas__simbolo" src="${new URL(`../../${item.simbolo}`, import.meta.url)}" alt="" width="32" height="32">`
-          : "";
-        const atual = item.id === abaAtual ? ' aria-current="page"' : "";
-        return `<a class="menu-abas__item" href="${item.endereco}"${atual}>${simbolo}<span>${escaparHtml(item.rotulo)}</span></a>`;
-      }).join("");
+    if (aba.itens || aba.secoes) {
+      // Sem seções, o painel é uma seção só, com o nome da própria aba como título.
+      const secoes = aba.secoes ?? [{ rotulo: aba.rotulo, itens: aba.itens }];
+      const dentro = secoes.some((secao) => secao.itens.some((item) => item.id === abaAtual));
+      const partes = secoes.map((secao) => `
+          <div class="menu-abas__secao">
+            <p class="menu-abas__titulo">${escaparHtml(secao.rotulo)}</p>
+            ${secao.itens.map((item) => opcaoDoMenu(item, abaAtual)).join("")}
+          </div>`).join("");
       paineis.push(`
-        <div class="menu-abas" id="menu-${aba.id}" hidden>
-          <p class="menu-abas__titulo">${escaparHtml(aba.rotulo)}</p>
-          ${opcoes}
+        <div class="menu-abas" id="menu-${aba.id}" hidden>${partes}
         </div>`);
       return `<button type="button" class="aba aba--grupo${dentro ? " aba--ativa" : ""}" aria-expanded="false"
         aria-controls="menu-${aba.id}">${escaparHtml(aba.rotulo)}<span class="aba__seta" aria-hidden="true">▾</span></button>`;
@@ -220,9 +247,9 @@ export function legendaCategorias(categorias = CATEGORIAS) {
 }
 
 // Cabeçalho das colunas da tabela (só aparece quando a tabela fica larga).
-export function cabecalhoColunas() {
-  const chances = CATEGORIAS.map(({ campo, rotulo }) =>
-    `<span class="coluna-chance coluna-chance--${campo}">${rotulo}</span>`).join("");
+export function cabecalhoColunas(categorias = CATEGORIAS) {
+  const chances = categorias.map(({ campo, rotulo, classe }) =>
+    `<span class="coluna-chance coluna-chance--${classe ?? campo}">${rotulo}</span>`).join("");
   return `
     <div class="cabecalho-colunas" aria-hidden="true">
       <span>#</span><span></span><span>Time</span>

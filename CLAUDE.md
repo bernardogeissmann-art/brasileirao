@@ -1,6 +1,6 @@
 # Prob.com
 
-Site de probabilidades do Brasileirão Série A 2026. Projeto pessoal, sem fins comerciais.
+Site de probabilidades do Brasileirão 2026: a Série A (foco principal e página inicial) e a Série B. Projeto pessoal, sem fins comerciais.
 
 ## O que é o projeto
 
@@ -8,6 +8,14 @@ O usuário nunca programou antes, então todo código e explicação devem ser p
 
 - Um script em **Python** baixa os dados do campeonato e estima um modelo de Poisson (ataque α e defesa β por time, mais um fator casa h), usando máxima verossimilhança.
 - Esse modelo é usado para rodar uma **simulação de Monte Carlo** — isso é feito em **JavaScript**, direto no navegador do usuário.
+- Cada Brasileirão tem uma pasta em `data/` (`data/serie-a/`, `data/serie-b/`) com `jogos.json`, `modelo.json` e a
+  ficha `configuracao.json`: fonte dos jogos, nº de times, faixas de posições, desempate, playoff, nomes no ge.globo.
+  Os scripts recebem `--campeonato serie-b` (sem nada, Série A): `baixar_jogos.py` → `conferir_dados.py` →
+  `estimar_modelo.py`. A Série A vem do football-data.org (chave `FOOTBALL_DATA_API_KEY`); a Série B, da ESPN
+  (`scripts/fonte_espn_brasileirao.py`, liga `bra.2`, sem chave; o plano grátis do football-data não tem a Série B).
+  O motor `site/js/simulacao.js` é o mesmo: lê as faixas da ficha e, na Série B, simula o playoff (REC 2026, Art. 13:
+  3º x 6º e 4º x 5º, ida e volta; pontos, saldo, melhor campanha). "acesso" = 1º/2º + vencedores do playoff.
+  A ESPN não informa a rodada da Série B: ela é calculada pela ordem dos jogos de cada time.
 - Páginas do site (o menu fica em `site/js/abas.js`):
   - **Início**: mostra as probabilidades calculadas (título, rebaixamento, etc). No fim, a seção **Jogos do dia**
     (lógica em `site/js/jogos-do-dia.js`, cartão em `componentes.js`): os jogos de hoje (ou do próximo dia com jogo),
@@ -37,8 +45,10 @@ O usuário nunca programou antes, então todo código e explicação devem ser p
       publicadas pela RadiosNet, em `data/radios.json` (só endereços https). O player da própria RadiosNet só funciona em
       http, por isso não serve. `scripts/meu_time/atualizar_radios.py` confere os endereços de madrugada.
     - Não escrever na página de quanto em quanto tempo cada parte é atualizada (pedido do usuário).
-  - **Estaduais** (menu suspenso): Catarinense, Gaúcho, Paranaense e Paulista. Para um novo estadual, acrescentar
-    uma linha em `abas.js` (com o símbolo em `assets/simbolos/`).
+  - **Campeonatos** (menu suspenso com duas seções): **Série B** (`site/serie-b.html`: a mesma página e o mesmo
+    `simulador.js` do Simulador, com `<body data-campeonato="serie-b">`; a página inicial mostra os jogos do dia
+    da Série B abaixo dos da Série A, com o botão "Ver Série B") e **Estaduais** (Catarinense, Gaúcho, Paranaense e
+    Paulista). Para um novo estadual, acrescentar uma linha em `abas.js` (com o símbolo em `assets/simbolos/`).
   - **O Método**: explica o modelo para o grande público.
 - Inspirado no projeto "Probabilidades no Futebol" da UFMG, mas com modelo e código próprios.
 - Estaduais (Catarinense, Gaúcho, Paranaense e Paulista): cada edição tem o seu formato em
@@ -59,8 +69,9 @@ O usuário nunca programou antes, então todo código e explicação devem ser p
 
 ## Estrutura de pastas
 
-- `data/` — dados baixados ou gerados (ex.: resultados de jogos, tabelas). Estaduais em `data/estaduais/`.
+- `data/` — dados baixados ou gerados (ex.: resultados de jogos, tabelas). Brasileirão em `data/serie-a/` e
+  `data/serie-b/`; estaduais em `data/estaduais/`.
 - `scripts/` — scripts em Python (coleta de dados, estimação do modelo). Estaduais em `scripts/estaduais/`.
 - `site/` — arquivos do site (HTML, CSS, JavaScript da simulação e das páginas).
-- `assets/escudos/` — imagens dos escudos dos times (Brasileirão), com subpastas `catarinense/` e `gaucho/`.
+- `assets/escudos/` — imagens dos escudos dos times (Séries A e B, pelo mesmo identificador dos dados), com subpastas `catarinense/` e `gaucho/`.
 - `testes/` — testes automáticos (`npm test`; antes, uma vez, `npm install` para baixar as bibliotecas do Node).

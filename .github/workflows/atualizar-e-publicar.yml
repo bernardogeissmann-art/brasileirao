@@ -71,6 +71,16 @@ jobs:
       - name: Estimar o modelo
         run: python scripts/estimar_modelo.py
 
+      - name: Série B (jogos da ESPN, sem chave)
+        # Baixa, confere e estima a Série B. Se algo falhar (ex.: a ESPN fora do ar), volta
+        # os arquivos da Série B para a versão anterior e segue: a Série A é publicada mesmo assim.
+        continue-on-error: true
+        run: |
+          python scripts/baixar_jogos.py --campeonato serie-b \
+            && python scripts/conferir_dados.py --campeonato serie-b \
+            && python scripts/estimar_modelo.py --campeonato serie-b \
+            || { git checkout -- data/serie-b; exit 1; }
+
       - name: Instalar o Node.js
         uses: actions/setup-node@v7
         with:
@@ -97,7 +107,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/jogos.json data/modelo.json data/meu-time.json data/radios.json assets/escudos
+          git add data/serie-a data/serie-b data/meu-time.json data/radios.json assets/escudos
           if git diff --cached --quiet; then
             echo "Nada mudou nos dados."
           else

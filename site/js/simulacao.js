@@ -1,13 +1,18 @@
 // simulacao.js
 // Simula o resto do Brasileirão milhares de vezes (método de Monte Carlo) e calcula,
-// para cada time, a chance de terminar em cada posição, de ser campeão, de ir para a
-// Libertadores ou para a Sul-Americana e de ser rebaixado.
+// para cada time, a chance de terminar em cada posição e a de cada "faixa" da tabela:
+// na Série A, título, Libertadores, Sul-Americana e rebaixamento; na Série B, título,
+// acesso (com o playoff do 3º ao 6º) e rebaixamento.
+//
+// O motor é o mesmo para os dois campeonatos. O que muda de um para o outro (faixas,
+// playoff) vem da "ficha" do campeonato: data/<campeonato>/configuracao.json.
 //
 // É um "módulo": um arquivo cujas funções outros arquivos podem usar com "import".
 // A palavra "export" na frente de uma função é o que deixa ela disponível lá fora.
 //
-// Regras de desempate e vagas: Regulamento Específico da Competição (REC) do
-// Brasileirão Série A 2026, publicado pela CBF em 16/12/2025 (Arts. 6º, 7º, 8º e 15).
+// Regras de desempate e vagas: Regulamento Específico da Competição (REC) de cada
+// campeonato. Série A 2026: CBF, 16/12/2025 (Arts. 6º, 7º, 8º e 15). Série B 2026:
+// Arts. 5º, 12 e 13. Os critérios de desempate da tabela são os mesmos nas duas.
 
 // ---------------------------------------------------------------------------
 // CONSTANTES
@@ -16,7 +21,9 @@
 
 export const N_SIMULACOES_PADRAO = 10_000;   // o "_" só separa os milhares
 
-// Faixas de posições (de, até) previstas nos Arts. 6º a 8º do REC 2026.
+// Faixas da Série A (de, até), previstas nos Arts. 6º a 8º do REC 2026. São as mesmas da
+// ficha data/serie-a/configuracao.json (um teste confere) e valem quando a simulação
+// recebe dados sem ficha.
 // As vagas podem "descer" (ex.: G5, G6) se o campeão ou o vice da Copa do Brasil,
 // ou um campeão continental, já estiver classificado pelo Brasileirão.
 // O modelo não sabe disso, então usamos a faixa básica do regulamento.
@@ -28,6 +35,11 @@ export const FAIXAS = {
   rebaixamento: [17, 20],  // os 4 últimos caem para a Série B
 };
 
+// Critérios de desempate que este motor sabe aplicar, na ordem (Série A: Art. 15;
+// Série B: Art. 12). Se a ficha de um campeonato pedir outra ordem, a simulação avisa.
+const DESEMPATE = ["vitorias", "saldo_de_gols", "gols_pro", "confronto_direto",
+  "cartoes_vermelhos", "cartoes_amarelos", "sorteio"];
+
 // Maior placar considerado para um lado. A chance de 16 gols ou mais é praticamente zero.
 const MAX_GOLS = 15;
 
@@ -38,16 +50,18 @@ const MAX_GOLS = 15;
 
 // "async" indica uma função que espera coisas demoradas (como baixar arquivos).
 // "await" é o ponto onde ela espera. Quem chama usa: const dados = await carregarDados();
-export async function carregarDados() {
+//   campeonato: o nome da pasta dos dados ("serie-a", o padrão, ou "serie-b").
+export async function carregarDados(campeonato = "serie-a") {
   // import.meta.url é o endereço deste arquivo (site/js/simulacao.js).
-  // A partir dele, "../../data/" aponta para a pasta data/ do projeto.
-  const pasta = new URL("../../data/", import.meta.url);
-  // Promise.all baixa os dois arquivos ao mesmo tempo, e espera os dois terminarem.
-  const [jogos, modelo] = await Promise.all([
+  // A partir dele, "../../data/serie-a/" aponta para a pasta dos dados da Série A.
+  const pasta = new URL(`../../data/${campeonato}/`, import.meta.url);
+  // Promise.all baixa os três arquivos ao mesmo tempo, e espera todos terminarem.
+  const [jogos, modelo, config] = await Promise.all([
     baixarJson(new URL("jogos.json", pasta)),
     baixarJson(new URL("modelo.json", pasta)),
+    baixarJson(new URL("configuracao.json", pasta)),
   ]);
-  return { jogos, modelo };
+  return { jogos, modelo, config };
 }
 
 async function baixarJson(endereco) {
@@ -335,8 +349,35 @@ function conferirFixados(fixados, jogosPorId) {
   }
 }
 
+// Confere se a ficha do campeonato pede os critérios de desempate que sabemos aplicar.
+function conferirDesempate(config) {
+  const pedido = config?.desempate;
+  if (pedido && pedido.join() !== DESEMPATE.join()) {
+    throw new Error(`Critérios de desempate não suportados: ${pedido.join(", ")}`);
+  }
+}
+
+// Joga um confronto do playoff (Série B, Art. 13): ida na casa do pior colocado, volta na
+// casa do melhor. Passa quem fizer mais pontos nos dois jogos; depois, o saldo de gols;
+// depois, a melhor posição na tabela (o "melhor"). Devolve o número do time que passou.
+//   placarDe(mandante, visitante): o placar [gols do mandante, gols do visitante] do jogo,
+//   real (se já aconteceu) ou sorteado.
+export function jogarPlayoff(melhor, pior, placarDe) {
+  const [golsPiorIda, golsMelhorIda] = placarDe(pior, melhor);
+  const [golsMelhorVolta, golsPiorVolta] = placarDe(melhor, pior);
+  const pontos = (feitos, sofridos) => (feitos > sofridos ? 3 : feitos === sofridos ? 1 : 0);
+  const diferencaPontos =
+    pontos(golsMelhorIda, golsPiorIda) + pontos(golsMelhorVolta, golsPiorVolta) -
+    pontos(golsPiorIda, golsMelhorIda) - pontos(golsPiorVolta, golsMelhorVolta);
+  const saldo = golsMelhorIda + golsMelhorVolta - golsPiorIda - golsPiorVolta;
+  if (diferencaPontos !== 0) return diferencaPontos > 0 ? melhor : pior;
+  if (saldo !== 0) return saldo > 0 ? melhor : pior;
+  return melhor;
+}
+
 // A função principal.
-//   dados: { jogos, modelo } (o conteúdo de jogos.json e modelo.json)
+//   dados: { jogos, modelo, config } (o conteúdo de jogos.json, modelo.json e
+//          configuracao.json; sem config, valem as faixas da Série A)
 //   opcoes.n: quantas simulações (padrão 10.000)
 //   opcoes.fixados: lista de { id, gols_mandante, gols_visitante } definidos pelo usuário
 //   opcoes.semente: número que fixa os sorteios (mesma semente = mesmos sorteios)
@@ -356,7 +397,10 @@ export function simular(dados, opcoes = {}) {
   const sorteioGols = comSemente ? criarSorteador(opcoes.semente) : (opcoes.sortear ?? Math.random);
   const sorteioDesempate = comSemente ? criarSorteador(opcoes.semente + 1) : (opcoes.sortear ?? Math.random);
 
-  const { jogos, modelo } = dados;
+  const { jogos, modelo, config } = dados;
+  conferirDesempate(config);
+  const faixas = config?.faixas ?? FAIXAS;
+  const playoff = config?.playoff ?? null;
   const ids = Object.keys(jogos.times);                    // ["bahia", "botafogo", ...]
   const numeroDoTime = new Map(ids.map((id, i) => [id, i])); // "bahia" -> 0, "botafogo" -> 1...
   const jogosPorId = new Map(jogos.jogos.map((jogo) => [jogo.id, jogo]));
@@ -389,6 +433,29 @@ export function simular(dados, opcoes = {}) {
   const somaPontos = new Array(ids.length).fill(0);
   const est = criarEstatisticas(ids.length);
 
+  // Playoff (só na Série B): um terceiro sorteador, só para esses jogos. Assim os sorteios
+  // da fase de pontos corridos ficam iguais aos de um campeonato sem playoff.
+  const venceuPlayoff = new Array(ids.length).fill(0);
+  let placarDoPlayoff = null;
+  if (playoff) {
+    const sorteioPlayoff = comSemente ? criarSorteador(opcoes.semente + 2) : (opcoes.sortear ?? Math.random);
+    // Jogos do playoff que já aconteceram de verdade: "mandante|visitante" -> placar.
+    const reais = new Map((jogos.playoff ?? []).filter((j) => j.disputado).map((j) =>
+      [`${numeroDoTime.get(j.mandante)}|${numeroDoTime.get(j.visitante)}`, [j.gols_mandante, j.gols_visitante]]));
+    const roletas = new Map();   // guarda as roletas de gols de cada par, para não refazer
+    placarDoPlayoff = (m, v) => {
+      const chave = `${m}|${v}`;
+      if (!roletas.has(chave)) {
+        const [mediaM, mediaV] = golsEsperados({ mandante: ids[m], visitante: ids[v] }, modelo);
+        roletas.set(chave, [chancesAcumuladas(mediaM), chancesAcumuladas(mediaV)]);
+      }
+      const [roletaM, roletaV] = roletas.get(chave);
+      // Sorteia sempre (mesmo com o placar real), para a sequência de sorteios não mudar.
+      const sorteado = [sortearGols(roletaM, sorteioPlayoff), sortearGols(roletaV, sorteioPlayoff)];
+      return reais.get(chave) ?? sorteado;
+    };
+  }
+
   // 2) As simulações: cada volta é um "final de campeonato" possível.
   for (let s = 0; s < nSimulacoes; s++) {
     copiarEstatisticas(base, est);                       // volta ao ponto de partida
@@ -406,13 +473,18 @@ export function simular(dados, opcoes = {}) {
     const tabela = montarTabela(est, sorteioDesempate);  // tabela final desta simulação
     tabela.forEach((time, posicao) => { contagem[time][posicao]++; });
     for (let t = 0; t < ids.length; t++) somaPontos[t] += est.pontos[t];
+    if (playoff) {
+      for (const [melhor, pior] of playoff.confrontos) {   // ex.: [3, 6] = 3º x 6º
+        venceuPlayoff[jogarPlayoff(tabela[melhor - 1], tabela[pior - 1], placarDoPlayoff)]++;
+      }
+    }
   }
 
   // 3) Transforma as contagens em probabilidades (de 0 a 1).
-  return resumir(ids, jogos.times, contagem, somaPontos, nSimulacoes);
+  return resumir({ ids, times: jogos.times, contagem, somaPontos, nSimulacoes, faixas, playoff, venceuPlayoff });
 }
 
-function resumir(ids, times, contagem, somaPontos, nSimulacoes) {
+function resumir({ ids, times, contagem, somaPontos, nSimulacoes, faixas, playoff, venceuPlayoff }) {
   const resultado = ids.map((id, t) => {
     // posicoes[0] é a chance de terminar em 1º, posicoes[19] a de terminar em 20º.
     const posicoes = contagem[t].map((vezes) => vezes / nSimulacoes);
@@ -421,17 +493,17 @@ function resumir(ids, times, contagem, somaPontos, nSimulacoes) {
     // de dividir evita erros de arredondamento: 100% dá exatamente 1.)
     const naFaixa = ([de, ate]) =>
       contagem[t].slice(de - 1, ate).reduce((soma, vezes) => soma + vezes, 0) / nSimulacoes;
-    return {
-      id,
-      nome: times[id].nome,
-      posicoes,
-      titulo: naFaixa(FAIXAS.titulo),
-      g4: naFaixa(FAIXAS.g4),
-      libertadores: naFaixa(FAIXAS.libertadores),
-      sulamericana: naFaixa(FAIXAS.sulamericana),
-      rebaixamento: naFaixa(FAIXAS.rebaixamento),
-      pontosMedios: somaPontos[t] / nSimulacoes,
-    };
+    const linha = { id, nome: times[id].nome, posicoes };
+    // Uma chance para cada faixa da ficha (Série A: titulo, g4, libertadores, ...).
+    for (const [nome, faixa] of Object.entries(faixas)) linha[nome] = naFaixa(faixa);
+    // Série B: "acesso" = terminar em 1º ou 2º (acesso_direto) ou vencer o playoff.
+    if (playoff) {
+      const [de, ate] = faixas[playoff.soma_com];
+      const direto = contagem[t].slice(de - 1, ate).reduce((soma, vezes) => soma + vezes, 0);
+      linha[playoff.chance] = (direto + venceuPlayoff[t]) / nSimulacoes;
+    }
+    linha.pontosMedios = somaPontos[t] / nSimulacoes;
+    return linha;
   });
   return { simulacoes: nSimulacoes, times: resultado };
 }

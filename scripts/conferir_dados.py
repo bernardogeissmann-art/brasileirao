@@ -1,5 +1,5 @@
 # conferir_dados.py
-# Confere se o data/jogos.json está completo e coerente ANTES de publicar o site.
+# Confere se o data/serie-a/jogos.json está completo e coerente ANTES de publicar o site.
 # Se algo estiver errado, lista os problemas e termina com "código de erro" 1.
 # O GitHub Actions entende esse código como falha: para tudo e não publica nada.
 #
@@ -12,8 +12,8 @@ import sys
 from collections import Counter   # Counter conta quantas vezes cada coisa aparece
 from pathlib import Path
 
-PASTA_PROJETO = Path(__file__).resolve().parent.parent
-ARQUIVO_PADRAO = PASTA_PROJETO / "data" / "jogos.json"
+import campeonatos
+
 
 TOTAL_JOGOS = 380        # 20 times, turno e returno: 20 x 19
 TOTAL_TIMES = 20
@@ -71,7 +71,11 @@ def conferir(dados):
 
 def main():
     # sys.argv é a lista do que foi digitado depois de "python": [nome do script, argumentos...].
-    arquivo = Path(sys.argv[1]) if len(sys.argv) > 1 else ARQUIVO_PADRAO
+    # Pode receber o caminho de um arquivo ou "--campeonato serie-b"; sem nada, a Série A.
+    if len(sys.argv) > 1 and sys.argv[1] != "--campeonato":
+        arquivo = Path(sys.argv[1])
+    else:
+        arquivo = campeonatos.ler_campeonato()["arquivo_jogos"]
     if not arquivo.exists():
         sys.exit(f"Erro: o arquivo {arquivo} não existe.")
     dados = json.loads(arquivo.read_text(encoding="utf-8"))

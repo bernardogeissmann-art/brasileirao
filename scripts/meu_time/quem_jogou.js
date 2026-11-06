@@ -1,6 +1,6 @@
 // quem_jogou.js
 // Descobre quais times precisam de um texto "Situação atual" novo e quais precisam de vídeos
-// novos, sem gastar nada: só olha o horário dos jogos (data/jogos.json) e a hora do último
+// novos, sem gastar nada: só olha o horário dos jogos (data/serie-a/jogos.json) e a hora do último
 // texto e dos últimos vídeos de cada time (data/meu-time.json).
 //
 // Regra: o texto de um time (e a tabela do site) é atualizado uns 120 minutos depois do início do
@@ -63,7 +63,7 @@ export function timesQuePrecisamDeVideos(jogos, meuTime, canais, agora = new Dat
 // Rodando direto (e não importado por outro arquivo): mostra a lista e avisa o GitHub.
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const raiz = new URL("../../", import.meta.url);
-  const jogos = JSON.parse(readFileSync(new URL("data/jogos.json", raiz), "utf-8")).jogos;
+  const jogos = JSON.parse(readFileSync(new URL("data/serie-a/jogos.json", raiz), "utf-8")).jogos;
   const arquivo = new URL("data/meu-time.json", raiz);
   const meuTime = existsSync(arquivo) ? JSON.parse(readFileSync(arquivo, "utf-8")) : { times: {} };
   const canais = JSON.parse(readFileSync(new URL("data/canais-youtube.json", raiz), "utf-8"));

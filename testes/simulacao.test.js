@@ -17,7 +17,7 @@ import {
 function lerJson(caminho) {
   return JSON.parse(readFileSync(new URL(caminho, import.meta.url), "utf-8"));
 }
-const dados = { jogos: lerJson("../data/jogos.json"), modelo: lerJson("../data/modelo.json") };
+const dados = { jogos: lerJson("../data/serie-a/jogos.json"), modelo: lerJson("../data/serie-a/modelo.json") };
 
 // Números com vírgula têm pequenos erros de arredondamento (ex.: 0,1 + 0,2 = 0,30000000000000004).
 // Por isso, "quase igual" aqui é: diferença menor que 0,000000001.

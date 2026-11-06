@@ -1,0 +1,34 @@
+{
+  "sobre": "Ficha do campeonato: tudo o que muda de uma competição para outra. Os scripts (baixar_jogos.py, estimar_modelo.py) e o site (simulacao.js) leem daqui.",
+  "id": "serie-a",
+  "nome": "Brasileirão Série A",
+  "temporada": 2026,
+  "numero_de_times": 20,
+  "regulamento": "Regulamento Específico da Competição (REC) do Brasileirão Série A 2026, CBF, 16/12/2025 (Arts. 6º, 7º, 8º e 15)",
+  "fonte": { "tipo": "football-data", "codigo": "BSA" },
+  "liga_espn": "bra.1",
+  "nomes_corrigidos": {
+    "Mineiro": "Atlético Mineiro",
+    "Paranaense": "Athletico Paranaense"
+  },
+  "ge": {
+    "endereco": "https://ge.globo.com/futebol/brasileirao-serie-a/",
+    "nomes": {
+      "Athletico-PR": "paranaense", "Atlético-MG": "mineiro", "Bahia": "bahia", "Botafogo": "botafogo",
+      "Bragantino": "bragantino", "Chapecoense": "chapecoense", "Corinthians": "corinthians", "Coritiba": "coritiba",
+      "Cruzeiro": "cruzeiro", "Flamengo": "flamengo", "Fluminense": "fluminense", "Grêmio": "gremio",
+      "Internacional": "internacional", "Mirassol": "mirassol", "Palmeiras": "palmeiras", "Remo": "clube-do-remo",
+      "Santos": "santos", "São Paulo": "sao-paulo", "Vasco": "vasco-da-gama", "Vitória": "vitoria"
+    }
+  },
+  "sobre_faixas": "Posições (de, até) de cada chance. As vagas podem 'descer' (G5, G6) por causa da Copa do Brasil ou de um campeão continental; o modelo usa a faixa básica do regulamento.",
+  "faixas": {
+    "titulo": [1, 1],
+    "g4": [1, 4],
+    "libertadores": [1, 5],
+    "sulamericana": [6, 11],
+    "rebaixamento": [17, 20]
+  },
+  "desempate": ["vitorias", "saldo_de_gols", "gols_pro", "confronto_direto", "cartoes_vermelhos", "cartoes_amarelos", "sorteio"],
+  "playoff": null
+}

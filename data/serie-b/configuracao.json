@@ -1,0 +1,37 @@
+{
+  "sobre": "Ficha do campeonato: tudo o que muda de uma competição para outra. Os scripts (baixar_jogos.py, estimar_modelo.py) e o site (simulacao.js) leem daqui.",
+  "id": "serie-b",
+  "nome": "Brasileirão Série B",
+  "temporada": 2026,
+  "numero_de_times": 20,
+  "regulamento": "Regulamento Específico da Competição (REC) do Brasileirão Série B 2026, CBF (Arts. 5º, 12 e 13)",
+  "fonte": { "tipo": "espn", "liga": "bra.2", "meses": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12] },
+  "liga_espn": "bra.2",
+  "nomes_corrigidos": {
+    "Operário PR": "Operário-PR"
+  },
+  "ge": {
+    "endereco": "https://ge.globo.com/futebol/brasileirao-serie-b/",
+    "nomes": {
+      "América-MG": "america-mineiro", "Athletic Club": "athletic", "Atlético-GO": "atletico-goianiense",
+      "Avaí": "avai", "Botafogo-SP": "botafogo-sp", "CRB": "crb", "Ceará": "ceara", "Criciúma": "criciuma",
+      "Cuiabá": "cuiaba", "Fortaleza": "fortaleza", "Goiás": "goias", "Juventude": "juventude",
+      "Londrina": "londrina", "Novorizontino": "novorizontino", "Náutico": "nautico", "Operário-PR": "operario-pr",
+      "Ponte Preta": "ponte-preta", "Sport": "sport", "São Bernardo": "sao-bernardo", "Vila Nova": "vila-nova"
+    }
+  },
+  "sobre_faixas": "Posições (de, até) de cada chance. 'acesso' não é uma faixa: é o 1º e o 2º (acesso_direto) mais os vencedores do playoff.",
+  "faixas": {
+    "titulo": [1, 1],
+    "acesso_direto": [1, 2],
+    "playoff": [3, 6],
+    "rebaixamento": [17, 20]
+  },
+  "desempate": ["vitorias", "saldo_de_gols", "gols_pro", "confronto_direto", "cartoes_vermelhos", "cartoes_amarelos", "sorteio"],
+  "sobre_playoff": "Art. 13: 3º x 6º e 4º x 5º, ida e volta, a volta na casa do mais bem colocado. Passa quem somar mais pontos nos dois jogos; depois, o saldo de gols; depois, quem ficou mais bem colocado na tabela.",
+  "playoff": {
+    "confrontos": [[3, 6], [4, 5]],
+    "chance": "acesso",
+    "soma_com": "acesso_direto"
+  }
+}

@@ -1,6 +1,6 @@
 # estimar_modelo.py
 # Estima a força de cada time (ataque α e defesa β) e o fator casa h
-# usando os jogos já disputados, e salva tudo em data/modelo.json.
+# usando os jogos já disputados, e salva tudo em data/<campeonato>/modelo.json.
 #
 # O modelo:
 #   gols do mandante  ~ Poisson(α_mandante · β_visitante · h)
@@ -8,7 +8,8 @@
 #   com a restrição: média dos α = 1
 #
 # Como rodar (depois do baixar_jogos.py):
-#     python scripts/estimar_modelo.py
+#     python scripts/estimar_modelo.py                         (Série A)
+#     python scripts/estimar_modelo.py --campeonato serie-b    (Série B)
 
 import json
 import math       # funções matemáticas: logaritmo, exponencial, fatorial
@@ -16,9 +17,12 @@ import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-PASTA_PROJETO = Path(__file__).resolve().parent.parent
-ARQUIVO_JOGOS = PASTA_PROJETO / "data" / "jogos.json"
-ARQUIVO_MODELO = PASTA_PROJETO / "data" / "modelo.json"
+import campeonatos   # a ficha de cada campeonato (scripts/campeonatos.py)
+
+# Os arquivos de entrada e de saída dependem do campeonato escolhido no terminal.
+FICHA = campeonatos.ler_campeonato()
+ARQUIVO_JOGOS = FICHA["arquivo_jogos"]
+ARQUIVO_MODELO = FICHA["arquivo_modelo"]
 FUSO_BRASILIA = timezone(timedelta(hours=-3))
 
 # A estimação é feita por repetição: cada "volta" melhora a estimativa.
@@ -33,9 +37,9 @@ MAX_VOLTAS = 10_000   # o "_" só separa os milhares, para facilitar a leitura
 # ---------------------------------------------------------------------------
 
 def carregar_dados():
-    """Lê o data/jogos.json."""
+    """Lê o jogos.json do campeonato."""
     if not ARQUIVO_JOGOS.exists():
-        sys.exit("Erro: data/jogos.json não existe. Rode antes: python scripts/baixar_jogos.py")
+        sys.exit(f"Erro: {ARQUIVO_JOGOS} não existe. Rode antes: python scripts/baixar_jogos.py --campeonato {FICHA['id']}")
     return json.loads(ARQUIVO_JOGOS.read_text(encoding="utf-8"))
 
 
@@ -189,7 +193,7 @@ def comparar_com_realidade(jogos, ataque, defesa, h):
 # ---------------------------------------------------------------------------
 
 def salvar(dados, ataque, defesa, h, log_v, jogos, comparacao):
-    """Grava os parâmetros em data/modelo.json."""
+    """Grava os parâmetros no modelo.json do campeonato."""
     modelo = {
         "descricao": ("gols_mandante ~ Poisson(ataque_mandante * defesa_visitante * fator_casa); "
                       "gols_visitante ~ Poisson(ataque_visitante * defesa_mandante). "

@@ -40,3 +40,14 @@
 .jogos-do-dia .legenda {
   margin-top: 14px;
 }
+
+/* Os jogos da Série B, abaixo dos da Série A. */
+.jogos-do-dia__serie-b {
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid var(--cor-linha);
+}
+
+.jogos-do-dia__acao {
+  margin: 20px 0 0;
+}

@@ -27,6 +27,6 @@ export async function atualizarNoticias(ids, conteudo = lerMeuTime()) {
 
 // Rodando direto (e não importado por outro arquivo): todos os times do Brasileirão.
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
-  const times = JSON.parse(readFileSync(new URL("data/jogos.json", RAIZ), "utf-8")).times;
+  const times = JSON.parse(readFileSync(new URL("data/serie-a/jogos.json", RAIZ), "utf-8")).times;
   await atualizarNoticias(Object.keys(times));
 }
