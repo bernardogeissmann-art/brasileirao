@@ -2,9 +2,9 @@
 // Descobre quais times precisam de um texto "Situação atual" novo, sem gastar nada: só olha
 // o horário dos jogos (data/jogos.json) e a hora do último texto de cada time (data/meu-time.json).
 //
-// Regra: o texto de um time é reescrito uns 30 minutos depois do fim do jogo dele. Um jogo
-// leva uns 110 minutos do apito inicial ao final (45 + intervalo + 45 + acréscimos); então,
-// a partir de 140 minutos depois do horário marcado, se o texto do time for de antes do
+// Regra: o texto de um time (e a tabela do site) é atualizado uns 120 minutos depois do início do
+// jogo: ele leva uns 110 minutos do apito inicial ao final (45 + intervalo + 45 + acréscimos). Então,
+// a partir de 120 minutos depois do horário marcado, se o texto do time for de antes do
 // jogo, ele precisa ser reescrito.
 //
 // Usado pelo GitHub Actions (rotina "Depois dos jogos"): se a lista vier vazia, nada é feito
@@ -15,10 +15,10 @@ import { readFileSync, appendFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 
 const MINUTO = 60 * 1000;
-export const DEPOIS_DO_INICIO = 140 * MINUTO;   // ~110 minutos de jogo + 30 de folga
+export const DEPOIS_DO_INICIO = 120 * MINUTO;   // ~110 minutos de jogo + 10 de folga
 const JANELA = 24 * 60 * MINUTO;                // jogos de até 24 horas atrás (os mais velhos ficam para a madrugada)
 
-// Os times cujo último jogo terminou há pelo menos ~30 minutos e cujo texto é de antes desse jogo.
+// Os times cujo último jogo começou há pelo menos 120 minutos e cujo texto é de antes desse jogo.
 export function timesQuePrecisamDeTexto(jogos, meuTime, agora = new Date()) {
   const precisam = new Set();
   for (const jogo of jogos) {

@@ -6,6 +6,7 @@
 //   4) mostra quanto cada chance mudou em relação ao cenário sem palpites.
 
 import { carregarDados, tabelaAtual } from "./simulacao.js";
+import { atualizarComEspn } from "./jogos-do-dia.js";
 import {
   instalarCabecalho, montarRodape, cardTime, mensagem, legendaCategorias, cabecalhoColunas, secaoRodada,
 } from "./componentes.js";
@@ -65,6 +66,7 @@ iniciar();
 async function iniciar() {
   try {
     dados = await carregarDados();
+    await atualizarComEspn(dados.jogos);   // jogos que acabaram há pouco já entram com o placar final
   } catch (erro) {
     console.error(erro);
     const aviso = `<strong>Não consegui carregar os dados.</strong><br>

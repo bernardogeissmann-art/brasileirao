@@ -11,7 +11,7 @@ import {
   instalarCabecalho, montarRodape, cardTime, cartaoDestaque, mensagem, legendaCategorias, cabecalhoColunas,
   cardConfronto, legendaResultado,
 } from "./componentes.js";
-import { escolherJogosDoDia, formaRecente, situacaoComPlacar, temJogoRolando, lerPlacarAoVivo } from "./jogos-do-dia.js";
+import { escolherJogosDoDia, formaRecente, situacaoComPlacar, temJogoRolando, atualizarComEspn } from "./jogos-do-dia.js";
 
 // document.getElementById pega um elemento da página pelo seu id="...".
 const topo = document.getElementById("topo");
@@ -40,14 +40,25 @@ async function iniciar() {
     return;
   }
 
-  const { jogos } = dados;
-  const restantes = jogos.jogos.filter((jogo) => !jogo.disputado).length;
-  chapeu.textContent = `Brasileirão Série A ${jogos.temporada} · faltam ${restantes} de ${jogos.jogos.length} jogos`;
-  rodape.innerHTML = montarRodape(jogos.baixado_em);
-  acompanharJogosDoDia(dados);   // não depende da simulação: aparece logo
+  rodape.innerHTML = montarRodape(dados.jogos.baixado_em);
+
+  // Antes de simular: os jogos que já acabaram, mas ainda estão sem resultado no site,
+  // ganham o placar final da ESPN. Assim a tabela já sai certa.
+  const { aoVivo } = await atualizarComEspn(dados.jogos);
+  montarJogosDoDia(dados, aoVivo);   // não depende da simulação: aparece logo
+  acompanharJogosDoDia(dados);
 
   // Dá um instante para o navegador desenhar a mensagem "Simulando..." antes da conta pesada.
   await new Promise((pronto) => setTimeout(pronto, 30));
+  calcularEMostrar(dados);
+}
+
+// Roda as simulações e desenha a tabela, os destaques e a nota. É chamada ao abrir a página
+// e de novo sempre que um jogo do dia acaba.
+function calcularEMostrar(dados) {
+  const { jogos } = dados;
+  const restantes = jogos.jogos.filter((jogo) => !jogo.disputado).length;
+  chapeu.textContent = `Brasileirão Série A ${jogos.temporada} · faltam ${restantes} de ${jogos.jogos.length} jogos`;
 
   const inicio = performance.now();               // marca a hora de início (em milésimos)
   const resultado = simular(dados);
@@ -96,27 +107,19 @@ function montarDestaques(chances, times) {
     .join("");
 }
 
-// Mostra os Jogos do dia e, enquanto houver jogo rolando, busca o placar ao vivo de novo
-// a cada minuto (direto da ESPN, pelo navegador de quem está vendo a página).
+// Enquanto houver jogo rolando, busca o placar ao vivo de novo a cada minuto (direto da
+// ESPN, pelo navegador de quem está vendo a página). Quando um jogo acaba, refaz a tabela.
 const UM_MINUTO = 60 * 1000;
 
-// Os jogos de hoje que já começaram (ou estão para começar): só para eles vale buscar placar.
-function jogosComecados(jogos) {
-  const escolha = escolherJogosDoDia(jogos.jogos);
-  if (!escolha?.eHoje) return [];
-  const agora = Date.now();
-  return escolha.jogos.filter((j) => j.disputado || new Date(j.data).getTime() - 5 * UM_MINUTO <= agora);
-}
-
-async function acompanharJogosDoDia(dados) {
-  const buscar = () => lerPlacarAoVivo(jogosComecados(dados.jogos), dados.jogos.times);
-  montarJogosDoDia(dados, await buscar());
+function acompanharJogosDoDia(dados) {
   const relogio = setInterval(async () => {
     if (!temJogoRolando(dados.jogos.jogos)) {
       clearInterval(relogio);   // acabaram os jogos de agora: para de buscar
       return;
     }
-    montarJogosDoDia(dados, await buscar());
+    const { aoVivo, novos } = await atualizarComEspn(dados.jogos);
+    if (novos > 0) calcularEMostrar(dados);   // algum jogo acabou agora: tabela e chances novas
+    montarJogosDoDia(dados, aoVivo);
   }, UM_MINUTO);
 }
 

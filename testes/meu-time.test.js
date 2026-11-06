@@ -197,20 +197,20 @@ test("a lista de rádios está bem preenchida (e só com transmissões https)", 
 
 // ----- Quando cada coisa é atualizada -----
 
-test("texto novo só para quem jogou há uns 30 minutos e ainda está com o texto de antes do jogo", async () => {
+test("texto novo só para quem jogou há 120 minutos ou mais e ainda está com o texto de antes do jogo", async () => {
   const { timesQuePrecisamDeTexto } = await import("../scripts/meu_time/quem_jogou.js");
   const jogos = [
     { data: "2026-11-05T19:30:00-03:00", mandante: "palmeiras", visitante: "clube-do-remo" },
     { data: "2026-11-05T21:30:00-03:00", mandante: "cruzeiro", visitante: "bahia" },
   ];
   const meuTime = { times: { palmeiras: { texto_em: "2026-11-05T22:30:00-03:00" } } };   // já escrito depois do jogo
-  // 21h50: o jogo das 19h30 começou há 140 minutos -> Remo precisa; Palmeiras já tem texto novo.
-  assert.deepEqual(timesQuePrecisamDeTexto(jogos, meuTime, new Date("2026-11-05T21:50:00-03:00")), ["clube-do-remo"]);
-  // 23h40: o das 21h30 também já passou dos 140 minutos.
+  // 21h30: o jogo das 19h30 começou há 120 minutos -> Remo precisa; Palmeiras já tem texto novo.
+  assert.deepEqual(timesQuePrecisamDeTexto(jogos, meuTime, new Date("2026-11-05T21:30:00-03:00")), ["clube-do-remo"]);
+  // 23h55: o das 21h30 também já passou dos 120 minutos.
   assert.deepEqual(timesQuePrecisamDeTexto(jogos, meuTime, new Date("2026-11-05T23:55:00-03:00")),
     ["bahia", "clube-do-remo", "cruzeiro"]);
-  // 20h30: nenhum jogo terminou há 30 minutos ainda.
-  assert.deepEqual(timesQuePrecisamDeTexto(jogos, meuTime, new Date("2026-11-05T20:30:00-03:00")), []);
+  // 21h20: o das 19h30 começou há só 110 minutos; ainda não.
+  assert.deepEqual(timesQuePrecisamDeTexto(jogos, meuTime, new Date("2026-11-05T21:20:00-03:00")), []);
   // Mais de 24 horas depois: fica para a rede de segurança da madrugada.
   assert.deepEqual(timesQuePrecisamDeTexto(jogos, meuTime, new Date("2026-11-07T10:00:00-03:00")), []);
 });

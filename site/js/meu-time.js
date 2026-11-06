@@ -10,6 +10,7 @@
 //   7) toca, ao vivo, as rádios que cobrem o time (data/radios.json).
 
 import { carregarDados, simular, tabelaAtual, chancesDoJogo } from "./simulacao.js";
+import { atualizarComEspn } from "./jogos-do-dia.js";
 import {
   instalarCabecalho, montarRodape, anelChance, escaparHtml, formatarChance, formatarData, formatarDataJogo,
 } from "./componentes.js";
@@ -44,6 +45,7 @@ async function lerJson(caminho) {
 async function iniciar() {
   try {
     [dados, { times: cores }] = await Promise.all([carregarDados(), lerJson("data/cores-times.json")]);
+    await atualizarComEspn(dados.jogos);   // jogos que acabaram há pouco já entram com o placar final
   } catch (erro) {
     console.error(erro);
     $("escolha").hidden = false;

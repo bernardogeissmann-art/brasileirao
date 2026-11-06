@@ -112,3 +112,21 @@ test("o placar lido da ESPN vira o placar dos nossos jogos", async () => {
   assert.equal(situacaoNaEspn({ type: { state: "pre" } }), "antes");
   assert.equal(situacaoNaEspn({ type: { state: "post" } }), "encerrado");
 });
+
+test("jogo que a ESPN dá como encerrado entra na tabela na hora; adiado não", async () => {
+  const { jogosSemResultado, incluirEncerrados, situacaoNaEspn } = await import("../site/js/jogos-do-dia.js");
+  const jogos = JOGOS.map((j) => ({ ...j }));   // cópia, para não mexer nos jogos dos outros testes
+  // 21h40 do dia 5: o jogo 4 (19h30) e o 3 (21h30) já começaram e estão sem resultado; o 6 foi adiado.
+  const pendentes = jogosSemResultado(jogos, new Date("2026-11-05T21:40:00-03:00"));
+  assert.deepEqual(pendentes.map((j) => j.id), [3, 4]);
+  const aoVivo = { jogos: {
+    3: { gols_mandante: 1, gols_visitante: 0, situacao: "andamento" },
+    4: { gols_mandante: 2, gols_visitante: 2, situacao: "encerrado" },
+  } };
+  assert.equal(incluirEncerrados(jogos, aoVivo), 1);   // só o 4 acabou
+  assert.equal(jogos[3].disputado, true);
+  assert.deepEqual([jogos[3].gols_mandante, jogos[3].gols_visitante], [2, 2]);
+  assert.equal(jogos[2].disputado, false);             // o 3 ainda está rolando
+  assert.equal(incluirEncerrados(jogos, aoVivo), 0);   // de novo: nada de novo
+  assert.equal(situacaoNaEspn({ type: { state: "post", name: "STATUS_POSTPONED" } }), "antes");
+});

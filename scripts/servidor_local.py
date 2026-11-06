@@ -10,10 +10,12 @@
 # Para desligar: Ctrl+C no terminal.
 
 import http.server
+import os
 from functools import partial
 from pathlib import Path
 
-PORTA = 8000
+# Porta 8000, a não ser que alguém peça outra (a variável PORT, usada quando a 8000 está ocupada).
+PORTA = int(os.environ.get("PORT", 8000))
 PASTA_PROJETO = Path(__file__).resolve().parent.parent
 
 

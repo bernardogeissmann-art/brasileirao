@@ -14,7 +14,7 @@ O usuário nunca programou antes, então todo código e explicação devem ser p
     com chances do modelo, posição, sequência recente e onde assistir. Os canais vêm do ge.globo, lidos por
     `scripts/transmissoes.py` (chamado pelo `baixar_jogos.py`) e guardados no campo `transmissao` do `jogos.json`.
     Placar ao vivo: a própria página lê a ESPN a cada minuto enquanto há jogo (a ESPN permite leitura pelo navegador;
-    cada time do `jogos.json` guarda o `nome_espn`). Reserva: `scripts/placar_ao_vivo.py` grava `data/ao-vivo.json` a cada
+    cada time do `jogos.json` guarda o `nome_espn`). Os jogos que a ESPN já dá como encerrados entram na tabela e nas chances na hora, sem esperar o GitHub (`atualizarComEspn`, usado no Início, no Simulador e no Meu Time). Reserva: `scripts/placar_ao_vivo.py` grava `data/ao-vivo.json` a cada
     publicação (não vai para o git). As rotinas agendadas do GitHub atrasam muito (rodam a cada ~45 min mesmo pedindo
     5), por isso nada que precise ser rápido depende delas. A montagem do site publicado
     (com `?v=<versão>` nos endereços .js/.css/.json, contra cópias velhas no navegador) fica em `scripts/montar_site.sh`.
@@ -23,7 +23,7 @@ O usuário nunca programou antes, então todo código e explicação devem ser p
     guardado em `data/meu-time.json` (texto, notícias e as horas de cada um). Quem atualiza (nada é gerado na visita):
     - Notícias: toda madrugada (`scripts/meu_time/atualizar_noticias.js`, sem IA); as novas se juntam às antigas (6 mais recentes).
     - Texto "Situação atual": escrito por IA (Claude Haiku 5.5, em `texto_ia.js`; reserva com frases prontas em `texto.js`)
-      só para os times que jogaram, ~30 min depois do fim do jogo: a rotina `.github/workflows/depois-dos-jogos.yml`
+      só para os times que jogaram, ~120 min depois do início do jogo: a rotina `.github/workflows/depois-dos-jogos.yml`
       roda `quem_jogou.js` (de graça) e, se preciso, baixa o resultado e roda `atualizar_textos.js --times ...`.
       De madrugada, `atualizar_textos.js --depois-dos-jogos` pega quem tiver ficado para trás. Chave `ANTHROPIC_API_KEY`
       no `.env` e nos secrets do GitHub. `atualizar_meu_time.js` atualiza tudo de uma vez (uso manual).

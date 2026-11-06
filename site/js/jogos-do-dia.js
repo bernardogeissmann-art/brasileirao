@@ -69,7 +69,8 @@ const URL_ESPN = "https://site.api.espn.com/apis/site/v2/sports/soccer/bra.1/sco
 // Traduz a situação do jogo na ESPN: "antes", "andamento", "intervalo" ou "encerrado".
 export function situacaoNaEspn(status) {
   const estado = status?.type?.state;   // "pre" (antes), "in" (rolando) ou "post" (acabou)
-  if (estado === "post") return "encerrado";
+  // Jogo adiado ou cancelado também vem como "post", mas não acabou: conta como "antes".
+  if (estado === "post") return /POSTPONED|CANCELED|SUSPENDED|DELAYED/.test(status.type.name ?? "") ? "antes" : "encerrado";
   if (estado === "in") return status.type.name === "STATUS_HALFTIME" ? "intervalo" : "andamento";
   return "antes";
 }
@@ -103,7 +104,8 @@ async function placarDaEspn(jogosDoDia, times) {
   const dias = [...new Set(jogosDoDia.map((j) => diaEmBrasilia(new Date(j.data)).replaceAll("-", "")))];
   const eventos = [];
   for (const dia of dias) {
-    const resposta = await fetch(URL_ESPN + dia, { cache: "no-store" });
+    // Se a ESPN não responder em 8 segundos, desiste (e vale o arquivo do site).
+    const resposta = await fetch(URL_ESPN + dia, { cache: "no-store", signal: AbortSignal.timeout(8000) });
     if (!resposta.ok) throw new Error(`ESPN respondeu com erro ${resposta.status}`);
     eventos.push(...((await resposta.json()).events ?? []));
   }
@@ -129,6 +131,41 @@ export async function lerPlacarAoVivo(jogosComecados = [], times = {}) {
   } catch {
     return null;
   }
+}
+
+// Os jogos que já começaram (ou começam em 5 minutos) nas últimas 24 horas e ainda estão sem
+// resultado no jogos.json: só para eles vale perguntar o placar à ESPN.
+export function jogosSemResultado(jogos, agora = new Date()) {
+  return jogos.filter((jogo) => {
+    if (jogo.disputado || jogo.status_fonte === "POSTPONED") return false;
+    const desdeOInicio = agora.getTime() - new Date(jogo.data).getTime();
+    return desdeOInicio >= -JANELA_ANTES && desdeOInicio <= 24 * 60 * MINUTO;
+  });
+}
+
+// Os jogos que a ESPN já dá como encerrados passam a contar como disputados, com o placar
+// final. Assim a tabela e as chances mudam assim que o jogo acaba, sem esperar a próxima
+// atualização do site. Muda a própria lista de jogos e devolve quantos mudaram (0 = nenhum).
+export function incluirEncerrados(jogos, aoVivo) {
+  let novos = 0;
+  for (const jogo of jogos) {
+    const placar = aoVivo?.jogos?.[String(jogo.id)];
+    if (jogo.disputado || placar?.situacao !== "encerrado") continue;
+    jogo.disputado = true;
+    jogo.gols_mandante = placar.gols_mandante;
+    jogo.gols_visitante = placar.gols_visitante;
+    novos++;
+  }
+  return novos;
+}
+
+// Atalho para as páginas: pergunta o placar dos jogos sem resultado e inclui os que já
+// acabaram. Devolve o placar ao vivo (para os cartões) e quantos jogos mudaram.
+export async function atualizarComEspn(dadosJogos) {
+  const pendentes = jogosSemResultado(dadosJogos.jogos);
+  if (pendentes.length === 0) return { aoVivo: null, novos: 0 };   // nada para perguntar
+  const aoVivo = await lerPlacarAoVivo(pendentes, dadosJogos.times);
+  return { aoVivo, novos: incluirEncerrados(dadosJogos.jogos, aoVivo) };
 }
 
 // A situação de um jogo juntando o arquivo de jogos com o placar ao vivo:

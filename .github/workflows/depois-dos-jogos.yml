@@ -1,5 +1,5 @@
 # depois-dos-jogos.yml
-# Texto "Situação atual" da página Meu Time logo depois de cada jogo (uns 30 minutos depois do fim).
+# Tabela, chances e texto "Situação atual" do Meu Time logo depois de cada jogo (uns 120 minutos depois do início).
 #   1) De 15 em 15 minutos, no horário dos jogos, confere sem gastar nada se algum time jogou
 #      e ainda está com o texto de antes do jogo (scripts/meu_time/quem_jogou.js).
 #   2) Se não houver, para por aí (leva uns segundos e não chama a IA).
@@ -7,9 +7,9 @@
 #      IA mais leve, o Claude Haiku 5.5), guarda no repositório e republica o site.
 #
 # Observação: o GitHub não garante o horário exato das rotinas agendadas; em horários de muito
-# movimento ele atrasa ou pula rodadas. Na prática, o texto sai entre uns 30 minutos e pouco
-# mais de uma hora depois do jogo. O placar ao vivo não depende desta rotina: a página lê o
-# placar direto da ESPN, no navegador de quem está vendo.
+# movimento ele atrasa ou pula rodadas. Na prática, isto roda entre uns 120 minutos e umas 3 horas
+# depois do início do jogo. O placar ao vivo e a tabela da página não dependem desta rotina: a
+# página lê o placar direto da ESPN, no navegador de quem está vendo, e põe na tabela os jogos que já acabaram.
 
 name: Depois dos jogos
 
