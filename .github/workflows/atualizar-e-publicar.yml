@@ -140,14 +140,16 @@ jobs:
 
       - name: Pôr o número da versão nos endereços dos arquivos
         # O navegador guarda uma cópia de cada arquivo por até 10 minutos. Para quem visita logo
-        # depois de uma publicação não ver uma mistura de arquivos novos e velhos, cada endereço
-        # .js e .css ganha "?v=" + o código desta versão (ex.: inicio.js?v=a7cd2be). Endereço
-        # novo = o navegador baixa de novo. Só a cópia que vai para a internet muda; o código
-        # do repositório continua igual.
+        # depois de uma publicação não ver arquivos velhos (ou uma mistura de novos e velhos),
+        # cada endereço .js, .css e .json ganha "?v=" + o código desta versão
+        # (ex.: inicio.js?v=a7cd2be). Endereço novo = o navegador baixa de novo.
+        # O código vem do commit que está indo para o ar (na atualização da madrugada, é o
+        # commit com os dados novos). Só a cópia que vai para a internet muda; o código do
+        # repositório continua igual.
         run: |
-          VERSAO="${GITHUB_SHA::7}"
+          VERSAO="$(git rev-parse --short=7 HEAD)"
           find _site/site \( -name '*.html' -o -name '*.js' \) -print0 \
-            | xargs -0 sed -i -E "s/\.(js|css)([\"'])/.\1?v=${VERSAO}\2/g"
+            | xargs -0 sed -i -E "s/\.(js|css|json)([\"'])/.\1?v=${VERSAO}\2/g"
           echo "Versão $VERSAO aplicada. Exemplo:"
           grep -m 3 -o 'js/[a-z-]*\.js?v=[0-9a-f]*' _site/site/index.html
 
