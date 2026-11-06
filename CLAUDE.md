@@ -56,7 +56,7 @@ O usuário nunca programou antes, então todo código e explicação devem ser p
   dia, em cada jogo, e some na hora do início. Leva à loja oficial do mandante, em `data/ingressos.json` (só endereços
   conferidos; clube sem loja fica sem botão).
 - Contador de acessos: GoatCounter (sem cookies), ligado em `site/js/contador.js` (código `CODIGO`; vazio = desligado;
-  não conta no localhost). Painel só local, não publicado: `painel/acessos.html`, com os números baixados por
+  não conta no localhost). Painel só local (fora do git, pedido do usuário): `painel/acessos.html`, com os números baixados por
   `scripts/painel/baixar_acessos.py` (`GOATCOUNTER_CODIGO` e `GOATCOUNTER_TOKEN` no `.env`) para `painel/dados/`
   (fora do git). Sem dados, o painel mostra `painel/exemplo-acessos.json` com aviso.
 - Inspirado no projeto "Probabilidades no Futebol" da UFMG, mas com modelo e código próprios.

@@ -31,7 +31,7 @@ from pathlib import Path
 from estadios import TIMES_ESPN   # nome do time na ESPN -> o nosso identificador
 
 PASTA_PROJETO = Path(__file__).resolve().parent.parent
-ARQUIVO_JOGOS = PASTA_PROJETO / "data" / "jogos.json"
+ARQUIVO_JOGOS = PASTA_PROJETO / "data" / "serie-a" / "jogos.json"
 ARQUIVO_SAIDA = PASTA_PROJETO / "data" / "ao-vivo.json"
 URL_DIA = "https://site.api.espn.com/apis/site/v2/sports/soccer/bra.1/scoreboard?dates={dia}"
 CABECALHOS = {"User-Agent": "ProbCom/1.0 (projeto pessoal de estatistica)"}

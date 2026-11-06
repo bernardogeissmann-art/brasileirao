@@ -26,5 +26,6 @@ node_modules/
 # Placar ao vivo: só existe na cópia publicada do site (muda o tempo todo)
 data/ao-vivo.json
 
-# Painel de acessos: os números baixados do GoatCounter ficam só no seu computador
-painel/dados/
+# Painel de acessos: fica só no seu computador (não vai para o GitHub nem para o site)
+/painel/
+/scripts/painel/
