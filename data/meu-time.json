@@ -1,10 +1,16 @@
 {
- "gerado_em": "2026-11-06T05:44:50.531Z",
+ "gerado_em": "2026-11-06T08:12:56.542Z",
  "times": {
   "bahia": {
    "texto": "Nem lá, nem cá: o Bahia fez 7 dos últimos 15 pontos possíveis. No último jogo, perdeu para o Cruzeiro por 3 a 2 fora de casa. Em 6º lugar, com 53 pontos, a briga pela Libertadores está aberta: 43% de chance pelas nossas contas. Nos últimos 5 jogos, foram 7 gols marcados e 9 sofridos: tudo bem equilibrado. Nos bastidores, a notícia que mais chama atenção é “Willian José continua fora do Bahia depois de compartilhar vídeo com críticas ao Nordeste”, segundo o Globo Esporte. Agora o desafio é o Grêmio, fora de casa, quarta, 18/11. Jogo difícil: o modelo dá 37% de chance de vitória.",
    "autor": "frases",
    "noticias": [
+    {
+     "titulo": "Análise: Bahia mantém sina de falhar em jogos decisivos com derrota em confronto direto",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/ba/futebol/times/bahia/noticia/2026/11/06/analise-bahia-mantem-sina-de-falhar-em-jogos-decisivos-com-derrota-em-confronto-direto.ghtml",
+     "data": "2026-11-06T07:00:01.000Z"
+    },
     {
      "titulo": "Ceni compara o Bahia com concorrentes e analisa derrota: \"Fizemos o mais difícil\"",
      "veiculo": "Globo Esporte",
@@ -34,16 +40,10 @@
      "veiculo": "UOL Esporte",
      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQUUkzOVY5ak1HejJxZHFXeVRSLXNEMG5rVFBnNDFQNjlCV1pJbnVVTC1KeHJNdFJKRmxBNWxjSzR5SnRvcmV2OUJXY3lVenlQU25RX0FOV3JSUjl4ekI2YkVDT3k2QndocHBuWDNjZW1ZOFFSdW1tMjFNQ29QWGI3SWdfSEIzNjltRWJ6TVo3TkhydzhTcllWUExsZjI3cHIzNWpPcW9rU0RKbU5JSGFZdlpieVR1WHRY?oc=5",
      "data": "2026-11-06T02:05:19.000Z"
-    },
-    {
-     "titulo": "Cruzeiro x Bahia (5 de nov, 2026) Estatísticas dos times",
-     "veiculo": "ESPN",
-     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxObk5YU1NmeDVlNEc3OE94UFN1anUxSEp2b3NjTE51THFsaS1xdkZPZ0NhZnJWQTlHeU9pQzR3djBNQTJVOVJvOEtnS08wRk5IS2JWSHRLQllDNkRId3V0WVNITGdzR3ZQWGpaQVd1U2pvamZuQTVlVTBObG9RRWVPX18yOWtaQ1ZDNGc?oc=5",
-     "data": "2026-11-06T00:32:44.000Z"
     }
    ],
    "texto_em": "2026-11-06T04:55:53.105Z",
-   "noticias_em": "2026-11-06T05:10:22.330Z",
+   "noticias_em": "2026-11-06T08:12:24.124Z",
    "videos": {
     "UULFcqRCjHozEb9CQHwf_cffdQ": [
      "q1Ylk44NgWs",
@@ -64,6 +64,12 @@
    "texto": "Nem lá, nem cá: o Botafogo fez 7 dos últimos 15 pontos possíveis. No último jogo, venceu o Atlético Mineiro por 1 a 0 em casa. Em 11º lugar, com 42 pontos, o Botafogo está numa zona tranquila da tabela, longe das brigas de cima e de baixo. Nos últimos 5 jogos, foram 4 gols marcados e 6 sofridos: tudo bem equilibrado. Nos bastidores, a notícia que mais chama atenção é “Entenda a fala enigmática de Tite e o motivo da irritação do treinador do Botafogo durante a semana”, segundo o Globo Esporte. Agora o desafio é o Corinthians, fora de casa, quarta, 18/11. Jogo difícil: o modelo dá 27% de chance de vitória.",
    "autor": "frases",
    "noticias": [
+    {
+     "titulo": "Convocações, afastamento e lesões: veja os motivos das ausências de Danilo no Botafogo em 2026",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/futebol/times/botafogo/noticia/2026/11/06/convocacoes-afastamento-e-lesoes-veja-os-motivos-das-ausencias-de-danilo-no-botafogo-em-2026.ghtml",
+     "data": "2026-11-06T07:00:00.000Z"
+    },
     {
      "titulo": "Entenda a fala enigmática de Tite e o motivo da irritação do treinador do Botafogo durante a semana",
      "veiculo": "Globo Esporte",
@@ -93,15 +99,9 @@
      "veiculo": "ESPN",
      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPUXpWRFMzV1RZWXZFd2EyS2I0NDFGOHVrcTJYT25FVU8zM21XaThuYVdpVVRjRDZwNnJhUHQwU2Jzd2JEekNwb3ZWMERkMmZLbFBlTUtBWjZBTXJzVFRvdkFJTHVnZG1DaTBacEJPbnJXQnNGODlzMWozR1pDQXdONlUwVlZzdUhlVE90X1dEbVNJNm9OYlJidjB5QWxjS3pKcll5WS02RDBkT1Q4aHdudXhKZ0hwNWZqb19ESnlvSVFDTURHRGFNd1FXaC1id0dPV1NXdElB?oc=5",
      "data": "2026-11-05T03:23:00.000Z"
-    },
-    {
-     "titulo": "Tite desabafa após vitória: \"Sei que não sou o técnico ideal para muitos torcedores do Botafogo\"",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/futebol/times/botafogo/noticia/2026/11/05/tite-comemora-vitoria-do-botafogo-e-enaltece-elenco.ghtml",
-     "data": "2026-11-05T03:21:59.000Z"
     }
    ],
-   "noticias_em": "2026-11-06T05:10:24.146Z",
+   "noticias_em": "2026-11-06T08:12:25.992Z",
    "texto_em": "2026-11-06T05:11:54.874Z",
    "videos": {
     "UULFFxjZDrLCOCHkUCu632AmMQ": [
@@ -160,7 +160,7 @@
      "data": "2026-11-03T01:59:00.000Z"
     }
    ],
-   "noticias_em": "2026-11-06T05:10:24.955Z",
+   "noticias_em": "2026-11-06T08:12:26.725Z",
    "texto_em": "2026-11-06T05:11:54.874Z"
   },
   "chapecoense": {
@@ -204,7 +204,7 @@
      "data": "2026-11-04T00:05:57.000Z"
     }
    ],
-   "noticias_em": "2026-11-06T05:10:26.850Z",
+   "noticias_em": "2026-11-06T08:12:28.601Z",
    "texto_em": "2026-11-06T05:11:54.874Z",
    "videos": {
     "UULF5of5voGUqec9K9JqL9al4Q": [
@@ -263,7 +263,7 @@
      "data": "2026-11-05T22:33:00.000Z"
     }
    ],
-   "noticias_em": "2026-11-06T05:10:28.693Z",
+   "noticias_em": "2026-11-06T08:12:30.470Z",
    "texto_em": "2026-11-06T05:11:54.874Z",
    "videos": {
     "UULFsLGx5V5iv-JHbG10oDZOcw": [
@@ -285,6 +285,12 @@
    "texto": "A fase não é das melhores para o Corinthians: só 5 pontos nos últimos cinco jogos. No último jogo, ficou no 0 a 0 com o São Paulo fora de casa. Em 17º lugar, com 37 pontos, o sinal de alerta está ligado: 44% de risco de cair. Nos últimos 5 jogos, foram 6 gols marcados e 8 sofridos: tudo bem equilibrado. Fora de campo, o assunto da semana é: “Conmebol rejeita recurso do Corinthians, e Seedorf não poderá assinar súmula como técnico” (Globo Esporte). Agora o desafio é o Botafogo, em casa, quarta, 18/11, num jogo equilibrado: 46% de chance de vitória pelo modelo.",
    "autor": "frases",
    "noticias": [
+    {
+     "titulo": "Vitinho ganha espaço com Seedorf no Corinthians e supera minutos dos cinco meses anteriores",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/futebol/times/corinthians/noticia/2026/11/06/vitinho-ganha-espaco-com-seedorf-no-corinthians-e-supera-minutos-dos-cinco-meses-anteriores.ghtml",
+     "data": "2026-11-06T07:00:00.000Z"
+    },
     {
      "titulo": "Conmebol rejeita recurso do Corinthians, e Seedorf não poderá assinar súmula como técnico",
      "veiculo": "Globo Esporte",
@@ -314,15 +320,9 @@
      "veiculo": "UOL Esporte",
      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOeTl3S3YxQllmMmlJazNXQ1NhcHhGbDVjZkxpYWdPSC1xMk5mRjNYOS04b1BpTnZ3SDB1cmlKZnNQWlJDYXRJVGVwdzRsZjRfdmt6eTJWWXhLWlpZQzhxRUg2OENkbG13U1VzRWVlQ09tQ3BlME1lQXJBa1VFVXJYSXVUbGp1VWk5dE1FREhJaWszRUU0OGF5UmxrSkNXazBCdWxOWXRBUjh4dE8tUnV0UjFpdUdsYUV6NE1tRTIyMGtpT3BPQ3Q5TU4xZzM0RVhHVnR6eF9CaXlfRU9BMXNaWA?oc=5",
      "data": "2026-11-05T18:19:45.000Z"
-    },
-    {
-     "titulo": "São Paulo e Corinthians empilham gols perdidos e empatam em clássico quente",
-     "veiculo": "UOL Esporte",
-     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNUmxLRlJwRUZCMzdma0h1UUZrbThvbjI4cmtkVHA1VHVpb2RvZkNZOGttV0RUZFB4bUpiMGo0NTVnMHMwQzZtVjRSYTZqeTd5eE50VUpTODA0VUdmdXVHSVZDejh0eGhMc2RTejk3Q1FocEtNblZyTkMwQzFFTVNJZVh0TXBFeWlDNGpvSXhtbmVnazJ4V2h4N2cxbmRUUDhCeHMtcG5YM0ZiWE1nS0VsWkZQVzN4VklidW5oTFQxYVo5LVBGQW1fbw?oc=5",
-     "data": "2026-11-05T07:29:34.000Z"
     }
    ],
-   "noticias_em": "2026-11-06T05:10:30.629Z",
+   "noticias_em": "2026-11-06T08:12:32.324Z",
    "texto_em": "2026-11-06T05:11:54.874Z",
    "videos": {
     "UULFwpyuvmJ_mOrebYbUPXtaBQ": [
@@ -357,6 +357,12 @@
    "autor": "frases",
    "noticias": [
     {
+     "titulo": "Coritiba deve manter Guila Bossle no comando e traça preparação durante a Data Fifa",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/pr/futebol/times/coritiba/noticia/2026/11/06/coritiba-deve-manter-guila-bossle-no-comando-e-traca-preparacao-durante-a-data-fifa.ghtml",
+     "data": "2026-11-06T07:00:00.000Z"
+    },
+    {
      "titulo": "Coritiba vive clima de cobrança na reta final do Brasileiro, e organizada pede saídas: \"Série A é obrigação\"",
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/pr/futebol/times/coritiba/noticia/2026/11/05/coritiba-vive-clima-de-cobranca-na-reta-final-do-brasileiro-e-organizada-pede-saidas-serie-a-e-obrigacao.ghtml",
@@ -385,15 +391,9 @@
      "veiculo": "ESPN",
      "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQUlNZTkZsNWc4ZTdBMVRGXy1ENFktamNvWkFiZjE1Y0lSZ2NTMDlaYlppeVl1N3NIUGRBVXBjZlFCUmlMRXNENTZDM0d2akFtM2pzMDB0ZFUwS3o4bWVYYkM5U25BYnNYNmtIS2Utd01INExnNDJkWFFLZUxYcVFyVmZNMGNDcDlXSzJIUjlkeFBCSWhDS0pZMmxDeExVX0UxQkdNNWUwVUlmQTFHX1NkaVlwaUxTRVVmVlplRHlCSGhicUtRYU5YZVN3YjJ5em1PMXhXWkxJUVB2eXJlZDJlcF8xRmdXQ3BNQ1pScFlmcVZ4cnJheUtWLUhTYVI?oc=5",
      "data": "2026-11-04T13:57:00.000Z"
-    },
-    {
-     "titulo": "Presidente do Inter critica escolha de árbitro para duelo contra o Coritiba",
-     "veiculo": "ESPN",
-     "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPSkZVSUlvLUQxTlVZWk1HU3cyazluWC1FcWtDaHZQMHZyakxvSFhSVGxnYzJSOWJvRkVZYWdfaUxpbjRjN09hU3RqRDZUanVYR1ZqWnJmZG9jS0xsblFBQWZicWotWjd1QnM0MGFTRGQ1VWtNRkU2Y3JiTHNVbnZkUE9yMXZtdmhHTU5QTFBUb2xSM3FJd3g3c3A3aVhiNEtfRklWR09RbzhuNHBObHhTSVF6ZV9ZQUUxUVVCc2k2cWE4ODRIUXpFVlItTHhscjdfamNwbTF5bjhPRFVLZGdpY3ZDMV9pQVRyTy1SOFlINFEtRUR0UjdFWWxjYWppNG5jelRQbzR5bTE?oc=5",
-     "data": "2026-11-04T12:26:00.000Z"
     }
    ],
-   "noticias_em": "2026-11-06T05:10:32.508Z",
+   "noticias_em": "2026-11-06T08:12:34.026Z",
    "texto_em": "2026-11-06T05:11:54.874Z",
    "videos": {
     "UULFbCD35_3aBxTYcpm8M2LviA": [
@@ -415,6 +415,12 @@
    "texto": "O Cruzeiro está embalado: fez 12 dos últimos 15 pontos possíveis. No último jogo, venceu o Bahia por 3 a 2 em casa. São 4 vitórias seguidas. Em 3º lugar, com 60 pontos, a vaga na Libertadores está bem encaminhada: mais de 99% de chance. O ataque está afiado, com 11 gols em 5 jogos. Nos bastidores, a notícia que mais chama atenção é “Escalação do Cruzeiro: Artur Jorge terá quatro mudanças para duelo direto com Bahia; veja provável time”, segundo o Globo Esporte. Agora o desafio é o Palmeiras, em casa, quarta, 18/11. Pedreira: o modelo dá só 23% de chance de vitória.",
    "autor": "frases",
    "noticias": [
+    {
+     "titulo": "Análise: Cruzeiro vence, encaminha Libertadores e tem decisões pela frente para 2027",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/futebol/times/cruzeiro/noticia/2026/11/06/analise-cruzeiro-vence-encaminha-libertadores-e-tem-decisoes-pela-frente-para-2027.ghtml",
+     "data": "2026-11-06T07:00:00.000Z"
+    },
     {
      "titulo": "Sem quatro titulares, Artur Jorge se rende ao elenco do Cruzeiro em vitória: \"Incansáveis\"",
      "veiculo": "Globo Esporte",
@@ -444,16 +450,10 @@
      "veiculo": "UOL Esporte",
      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQM3JhaVhmTF9VdURZdllFZGxjbldIVDFLclIzSTJnTjZDeHUxem14d3BPc0RVWXZJZjktQzJjSmY3OUl6ZXk3bWdxY2JrLUNJT2xDQkh5N0tJdHpOUmsxSjhOYzJ3MTZQbFhCTmwzVEhNcFBGVTV6TURoZlFKUUJ4d0VaRF9CUXZiR3lUczBCMU9ZSmh5ZHFiaGlqbVFHQm5wbnc?oc=5",
      "data": "2026-11-06T02:30:31.000Z"
-    },
-    {
-     "titulo": "Onde vai passar Cruzeiro x Bahia pelo Brasileirão? Como assistir ao vivo",
-     "veiculo": "UOL Esporte",
-     "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNTUVHbjV6NGU4bWlMMnhwUm1GZkFaWlJ3S2ZBVk9BTmNFRl8zak84UlQ1NVpkWkFIbko1S09VbklJc0VFM2pEU2wxZHBEeDdXazhwMHFSRWJqNE5Hd1A5RldLY0VvWlBvWVVhdVlpUHFxY0dnaTFFdWR2cjVpNkgxN3phY3M0TWxjajllNlBnV2hhLXJlNjZob1UxZXRkTWdNVXFIZ1IzZFlYNzFkNV9nQ2Y3OXRqb0tLaXNMUlo1d0x5WVN1VUV6N3RGMmFVWlRq?oc=5",
-     "data": "2026-11-05T18:30:00.000Z"
     }
    ],
    "texto_em": "2026-11-06T04:55:53.105Z",
-   "noticias_em": "2026-11-06T05:10:34.410Z",
+   "noticias_em": "2026-11-06T08:12:35.865Z",
    "videos": {
     "UULFy7aeNy60EVhMwBziYsET-A": [
      "-Z9BJpTxku0",
@@ -487,6 +487,12 @@
    "autor": "frases",
    "noticias": [
     {
+     "titulo": "Flamengo define planejamento, e Jardim pretende usar pendurados antes do jogo contra Palmeiras",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/futebol/times/flamengo/noticia/2026/11/06/flamengo-define-planejamento-e-jardim-pretende-usar-pendurados-antes-do-jogo-contra-palmeiras.ghtml",
+     "data": "2026-11-06T07:00:00.000Z"
+    },
+    {
      "titulo": "A conta do Flamengo para ser campeão do Brasileirão e como título pode acontecer na casa do Palmeiras",
      "veiculo": "ESPN",
      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPTkRTT0tqQ2p5TW53ZXg0a2t2ajMwVnl5ejlOd2dIMTYyZVB5U1dHOTdwRVltQy1ucm9KUnF6dXAtSkp3U09VUUpualVxNGRaei1uYWhsdlRzWlh5ZzVQVXgxWUl3NGZwbjdwSnJkZE9iR3pUSF9WbGVreDNuM2NpMFZHTklSVlZVLUZySXJaa3dFRE5GZWZuSnJTSGw2NzByYlB2S0RYTFJULTNuY2Z2Y29pSmZHV0prYnpNV2p0b0lLdzBwM1U3bVNjZS1BMnlrdWhvQk1PV2M1YkRjaU9sS0dlZnpKUQ?oc=5",
@@ -515,15 +521,9 @@
      "veiculo": "UOL Esporte",
      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNUWRjZzFZaWhwZ0ctX2pmYVhRd25FMVFwOVVXVmRpcFMzNWZhMGI4SU45UGNLY1FHVUlRallkWDFoT1A2S3V6ajZINXItSEV2RGdCRENOTVNwTWVzWUtkQWRIRXJrRGZDbVdrZXdlcFhLWDhtcndsZ1p1V3ZhX01IZDBVd3hudS1DTGJ2MVBLWndyTHBRd3o0MFhRZU9MVXhPX3NXSEczUjVmeHA5YlJHcWlfRUNNMm8?oc=5",
      "data": "2026-11-05T05:31:25.000Z"
-    },
-    {
-     "titulo": "Flamengo vence com dois de Pedro, se aproxima de título e complica Grêmio",
-     "veiculo": "ESPN",
-     "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNT1dNOHZHeDRjR2hQM2RacTZfbE15eUVxb0dpVWNkU3dhQ3ZlcFN5dnp2dTNWVnNBSDd2VF9mVFhnckNDYXVfejRiSy1kWGZLdEEtR3dvZlpHM0xJaXpUOVNIbkhBanI2d1dzLUxiQmpIQkdXRUwyTzVsTFY1eWg1bnVBZ3lKS0hOTnhudzFuc0xCMjFMQTZHT1F5MHI3TmlWWkJ1OEtLRDRKQmhjazhUMi1fbmt6YlVHejI0anpyNm8ybGZRQWhKRU12Zll6UQ?oc=5",
-     "data": "2026-11-05T01:31:00.000Z"
     }
    ],
-   "noticias_em": "2026-11-06T05:10:36.277Z",
+   "noticias_em": "2026-11-06T08:12:37.721Z",
    "texto_em": "2026-11-06T05:11:54.874Z",
    "videos": {
     "UULF084Mraf1n0rUIhz0V3sZfg": [
@@ -558,6 +558,12 @@
    "autor": "frases",
    "noticias": [
     {
+     "titulo": "Vitória x Fluminense: onde assistir ao vivo, horário e escalações",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/ba/futebol/brasileirao-serie-a/noticia/2026/11/06/vitoria-x-fluminense-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
+     "data": "2026-11-06T06:00:00.000Z"
+    },
+    {
      "titulo": "Escalação do Fluminense: Marcão tem desfalque na defesa e deve mudar o meio-campo",
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/futebol/times/fluminense/noticia/2026/11/05/escalacao-do-fluminense-marcao-tem-desfalque-na-defesa-e-deve-mudar-o-meio-campo.ghtml",
@@ -586,15 +592,9 @@
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/futebol/times/fluminense/noticia/2026/11/04/martinelli-avanca-em-recuperacao-no-fluminense-e-corre-em-esteira-antigravidade-entenda.ghtml",
      "data": "2026-11-04T16:08:18.000Z"
-    },
-    {
-     "titulo": "Flamengo e Fluminense vão à Justiça, chamam Vasco de 'mentiroso' e falam de estragos no Maracanã após duelo contra o Boca",
-     "veiculo": "ESPN",
-     "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5JTk5Hb081clFiVWpGQUo3OFdfaDFJVE9vd0VXdnVjX2VZeXpHSUJJRkc3UWpyZExVU0JCNXVmTjdJUEtQV21zWHRQTUo5WklSNUZ5REkxbHJNb2Rt?oc=5",
-     "data": "2026-11-04T15:57:38.000Z"
     }
    ],
-   "noticias_em": "2026-11-06T05:10:38.015Z",
+   "noticias_em": "2026-11-06T08:12:39.435Z",
    "texto_em": "2026-11-06T05:11:54.874Z",
    "videos": {
     "UULFccH-KOg311lpEtTCy-3TTA": [
@@ -629,6 +629,12 @@
    "autor": "frases",
    "noticias": [
     {
+     "titulo": "Carlos Vinicius e Weverton viram amuletos para o Grêmio na Copa do Brasil; entenda",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/rs/futebol/times/gremio/noticia/2026/11/06/carlos-vinicius-e-weverton-viram-amuletos-para-o-gremio-na-copa-do-brasil-entenda.ghtml",
+     "data": "2026-11-06T08:00:01.000Z"
+    },
+    {
      "titulo": "Atlético-MG x Grêmio: onde assistir ao vivo, horário, palpite e prováveis escalações da semifinal da Copa do Brasil",
      "veiculo": "ESPN",
      "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNeEgxcjRvT0pILWZmZnNOUFBCclUtWDYwcmI0QWJlVnhVZFR1ZS1fblNvbmZtZWQ2OHIwU2lBQVc2TVhHRmJQNmpFWUJVTjZYWXRUM0sxTUF2YTVTb3hpc0luV1VFekZWNHhXTzNXM1VKQmIxeE8tZkVZZUppMk02YWlpUlNOdzNlUkdxeUdaa0R2VUs4QjR3SFFnbE12QXZNbWxyZFowVGpHWkpYUlBWeFBPanBJUnIxbjRTLXVjdFRmRGxZaDlUZFdvdm1HNmFEV2hmSDd5eUZaY3lXWFVQVDQ2bzZuQ3JaVy13UjAteWQ?oc=5",
@@ -657,15 +663,9 @@
      "veiculo": "UOL Esporte",
      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNUWRjZzFZaWhwZ0ctX2pmYVhRd25FMVFwOVVXVmRpcFMzNWZhMGI4SU45UGNLY1FHVUlRallkWDFoT1A2S3V6ajZINXItSEV2RGdCRENOTVNwTWVzWUtkQWRIRXJrRGZDbVdrZXdlcFhLWDhtcndsZ1p1V3ZhX01IZDBVd3hudS1DTGJ2MVBLWndyTHBRd3o0MFhRZU9MVXhPX3NXSEczUjVmeHA5YlJHcWlfRUNNMm8?oc=5",
      "data": "2026-11-05T05:31:25.000Z"
-    },
-    {
-     "titulo": "Renato justifica desfalques do Grêmio por cansaço e afirma: \"Assistimos ao Flamengo jogar\"",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/rs/futebol/times/gremio/noticia/2026/11/04/renato-justifica-desfalques-do-gremio-por-cansaco-e-afirma-assistimos-o-flamengo-jogar.ghtml",
-     "data": "2026-11-05T01:40:17.000Z"
     }
    ],
-   "noticias_em": "2026-11-06T05:10:39.913Z",
+   "noticias_em": "2026-11-06T08:12:41.333Z",
    "texto_em": "2026-11-06T05:11:54.874Z",
    "videos": {
     "UULFBOGYcnvM-9iI-8d-DUEeMw": [
@@ -712,6 +712,12 @@
    "autor": "frases",
    "noticias": [
     {
+     "titulo": "Inteligência tática faz de Bruno Gomes o pilar do Inter de Eduardo Baptista; entenda",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/rs/futebol/times/internacional/noticia/2026/11/06/inteligencia-tatica-faz-de-bruno-gomes-o-pilar-do-inter-de-eduardo-baptista-entenda.ghtml",
+     "data": "2026-11-06T08:00:01.000Z"
+    },
+    {
      "titulo": "Alan Patrick é absolvido no STJD, mas presidente do Inter é suspenso por 30 dias",
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/rs/futebol/times/internacional/noticia/2026/11/05/alan-patrick-e-absolvido-no-stjd-mas-presidente-do-inter-e-suspenso-por-30-dias.ghtml",
@@ -740,15 +746,9 @@
      "veiculo": "ESPN",
      "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPSkZVSUlvLUQxTlVZWk1HU3cyazluWC1FcWtDaHZQMHZyakxvSFhSVGxnYzJSOWJvRkVZYWdfaUxpbjRjN09hU3RqRDZUanVYR1ZqWnJmZG9jS0xsblFBQWZicWotWjd1QnM0MGFTRGQ1VWtNRkU2Y3JiTHNVbnZkUE9yMXZtdmhHTU5QTFBUb2xSM3FJd3g3c3A3aVhiNEtfRklWR09RbzhuNHBObHhTSVF6ZV9ZQUUxUVVCc2k2cWE4ODRIUXpFVlItTHhscjdfamNwbTF5bjhPRFVLZGdpY3ZDMV9pQVRyTy1SOFlINFEtRUR0UjdFWWxjYWppNG5jelRQbzR5bTE?oc=5",
      "data": "2026-11-04T12:26:00.000Z"
-    },
-    {
-     "titulo": "Maripán é expulso em confusão no banco e desfalca o Inter contra o Vasco; veja vídeos",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/rs/futebol/times/internacional/noticia/2026/11/04/maripan-e-expulso-em-confusao-no-banco-e-desfalca-o-inter-contra-o-vasco-veja-videos.ghtml",
-     "data": "2026-11-04T12:00:01.000Z"
     }
    ],
-   "noticias_em": "2026-11-06T05:10:41.789Z",
+   "noticias_em": "2026-11-06T08:12:43.234Z",
    "texto_em": "2026-11-06T05:11:54.874Z",
    "videos": {
     "UULFBgSy_cNIoGYnyLjmKHQOAg": [
@@ -783,6 +783,12 @@
    "autor": "frases",
    "noticias": [
     {
+     "titulo": "Contra o Grêmio, Atlético-MG defende aproveitamento de 92% em confrontos eliminatórios na Arena MRV",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/futebol/times/atletico-mg/noticia/2026/11/06/contra-o-gremio-atletico-mg-defende-aproveitamento-de-92percent-em-confrontos-eliminatorios-na-arena-mrv.ghtml",
+     "data": "2026-11-06T07:00:00.000Z"
+    },
+    {
      "titulo": "Afastado do dia a dia do Atlético-MG, dono da SAF faz balanço e fala sobre o ano",
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/futebol/times/atletico-mg/noticia/2026/11/05/dono-do-atletico-mg-afastado-do-dia-a-dia-faz-balanco-da-saf-e-fala-sobre-ano.ghtml",
@@ -811,15 +817,9 @@
      "veiculo": "ESPN",
      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5Bb0EyNEwxQW13Q2ZTVkJuNV9wVno0QnpmLVVsZVJOa1NBQzRENmJMZUVVSWxVSi1JeFFRQl9EUUlOTno5dDdmYXFWNFRKRUdUMGYwQWNEbnpxOGZDcWc?oc=5",
      "data": "2026-11-05T02:47:26.000Z"
-    },
-    {
-     "titulo": "Comparado a Neymar, atacante estreia no time profissional do Atlético-MG aos 17 anos",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/futebol/times/atletico-mg/noticia/2026/11/04/comparado-a-neymar-atacante-estreia-no-time-profissional-do-atletico-mg-aos-17-anos.ghtml",
-     "data": "2026-11-05T02:32:43.000Z"
     }
    ],
-   "noticias_em": "2026-11-06T05:10:43.703Z",
+   "noticias_em": "2026-11-06T08:12:45.090Z",
    "texto_em": "2026-11-06T05:11:54.874Z",
    "videos": {
     "UULF0BhAOfmm1tJaJkPyTM9D_g": [
@@ -878,7 +878,7 @@
      "data": "2026-11-04T01:52:04.000Z"
     }
    ],
-   "noticias_em": "2026-11-06T05:10:44.587Z",
+   "noticias_em": "2026-11-06T08:12:45.823Z",
    "texto_em": "2026-11-06T05:11:54.874Z",
    "videos": {
     "UULFiz7EFM1alBWxE2hM8k4f4Q": [
@@ -900,6 +900,12 @@
    "texto": "Fase de ouro para o Palmeiras, que venceu 4 dos últimos cinco jogos. No último jogo, venceu o Remo por 6 a 1 em casa. Já são 11 jogos sem perder. Em 2º lugar, com 73 pontos, o Palmeiras ainda sonha com o título (17% de chance) e já garantiu a vaga na Libertadores. O ataque está afiado, com 14 gols em 5 jogos, e a defesa vem segura, com só 2 gols sofridos. Fora de campo, o assunto da semana é: “Evangelista diz por que pediu mão em lance polêmico de Palmeiras x Vasco” (ESPN). Agora o desafio é o Cruzeiro, fora de casa, quarta, 18/11, num jogo equilibrado: 53% de chance de vitória pelo modelo.",
    "autor": "frases",
    "noticias": [
+    {
+     "titulo": "Análise: Palmeiras testa mudanças, mas é implacável e atropela Remo para seguir vivo no Brasileirão",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/futebol/times/palmeiras/noticia/2026/11/06/analise-palmeiras-testa-mudancas-mas-e-implacavel-e-atropela-remo-para-seguir-vivo-no-brasileirao.ghtml",
+     "data": "2026-11-06T07:00:00.000Z"
+    },
     {
      "titulo": "Evangelista diz por que pediu mão em lance polêmico de Palmeiras x Vasco",
      "veiculo": "ESPN",
@@ -929,15 +935,9 @@
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/futebol/times/palmeiras/noticia/2026/11/05/atuacoes-do-palmeiras-jhon-arias-mauricio-e-khellven-sao-os-melhores-em-goleada-de-suas-notas.ghtml",
      "data": "2026-11-06T00:26:44.000Z"
-    },
-    {
-     "titulo": "Abel escala Palmeiras com time misto e Vitor Roque na frente contra o Remo",
-     "veiculo": "UOL Esporte",
-     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQQVZTWDB0MzFIdnVoblhLVm8xelFxdU9XeE55RVo1aDdyNDNLcV9EeElOME1GUHhkNzYzTlpEdkUyLUJhUTRKeGZVQkZ2NTVYZDNhdksyYlRwT2I3YVdyQkhCVWhjS2FMNzB3MUdaOHcxaW5tejBpTXhNUWdIc1liSXlwYUZpUVVhZk1GT2ZtdXdpVnVGT1ZMSU1fVzlUWkxkNDM1OG9NUmotc3c0OVRBQ3EzSGhMS0U4bzZselJ0Q2gyZw?oc=5",
-     "data": "2026-11-05T21:36:37.000Z"
     }
    ],
-   "noticias_em": "2026-11-06T05:10:46.515Z",
+   "noticias_em": "2026-11-06T08:12:47.687Z",
    "texto_em": "2026-11-06T05:11:54.874Z",
    "videos": {
     "UULFBKc-rPDivvwFiWdG-81wxw": [
@@ -959,6 +959,12 @@
    "texto": "A fase não é das melhores para o Athletico: só 4 pontos nos últimos cinco jogos. No último jogo, perdeu para o Vasco por 3 a 1 em casa. Já são 4 jogos sem vencer. Em 5º lugar, com 54 pontos, a vaga na Libertadores está bem encaminhada: 61% de chance. Nos últimos 5 jogos, foram 6 gols marcados e 9 sofridos: tudo bem equilibrado. Fora de campo, o assunto da semana é: “Athletico-PR é denunciado no STJD por gesto racista de torcedor contra atletas do Vasco” (Globo Esporte). Agora o desafio é o Flamengo, fora de casa, quarta, 18/11. Pedreira: o modelo dá só 12% de chance de vitória.",
    "autor": "frases",
    "noticias": [
+    {
+     "titulo": "Athletico tem pelo menos três baixas contra o Flamengo na volta da Data Fifa; veja situação",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/pr/futebol/times/athletico-pr/noticia/2026/11/06/athletico-tem-pelo-menos-tres-baixas-contra-o-flamengo-na-volta-da-data-fifa-veja-situacao.ghtml",
+     "data": "2026-11-06T07:00:00.000Z"
+    },
     {
      "titulo": "Athletico-PR é denunciado no STJD por gesto racista de torcedor contra atletas do Vasco",
      "veiculo": "Globo Esporte",
@@ -988,15 +994,9 @@
      "veiculo": "ESPN",
      "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPeEwyZDRkQlBTRUN4X3N6MVd3VlNsV3M5NDhGUXBvUFJMeU1nM1d6Vm56MWZzb2NOaG5RLUJ2eGNfenAtalZBd2p5c1VDZTY4dm1JdmYtWk9nWDRFVElDMlpaQWVqREtXT3R0OG9WUTBUV3BGNXRoRF9LZnVwSlF2elZQcWVYeDdMTnV0Ty1zT0VzWENWZmNyd3VMSWhsZnhWMVVhSWJmcVNKSGZwcVZ4YWQ4ejNZV1ZSb3VTZ01NS2NRejR5ejlHcGstUGZXa2U5U183aXZkSFluQQ?oc=5",
      "data": "2026-11-05T01:26:00.000Z"
-    },
-    {
-     "titulo": "Atuações do Athletico: Aguirre e Mycael são os piores em apagão contra o Vasco; dê as notas",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/pr/futebol/times/athletico-pr/noticia/2026/11/04/atuacoes-do-athletico-aguirre-e-mycael-sao-os-piores-em-apagao-contra-o-vasco-de-as-notas.ghtml",
-     "data": "2026-11-05T00:54:15.000Z"
     }
    ],
-   "noticias_em": "2026-11-06T05:10:48.416Z",
+   "noticias_em": "2026-11-06T08:12:49.567Z",
    "texto_em": "2026-11-06T05:11:54.874Z",
    "videos": {
     "UULF1MwZRE5_wAu1Pe8pWcZtyQ": [
@@ -1031,6 +1031,12 @@
    "autor": "frases",
    "noticias": [
     {
+     "titulo": "Neymar terá agenda cheia no Santos após Data Fifa, mas renovação fica para o fim do ano",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/sp/santos-e-regiao/futebol/times/santos/noticia/2026/11/06/neymar-tera-agenda-cheia-no-santos-apos-data-fifa-mas-renovacao-fica-para-o-fim-do-ano.ghtml",
+     "data": "2026-11-06T07:00:00.000Z"
+    },
+    {
      "titulo": "Eleição no Santos: Wladimir Mattos abre mão de candidatura e vai apoiar chapa de Ivan Luduvice",
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/sp/santos-e-regiao/futebol/times/santos/noticia/2026/11/05/wladimir-mattos-abre-mao-de-candidatura-no-santos-e-vai-apoiar-chapa-de-ivan-luduvice.ghtml",
@@ -1059,15 +1065,9 @@
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/sp/santos-e-regiao/futebol/times/santos/noticia/2026/11/04/neymar-faz-gol-de-bicicleta-em-treino-do-santos-veja-o-video.ghtml",
      "data": "2026-11-04T18:56:30.000Z"
-    },
-    {
-     "titulo": "Justiça rejeita liminar para suspender votação do estatuto que permite SAF no Santos",
-     "veiculo": "ESPN",
-     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOVElPZ3NCRzdlMVZkbGpMd1JuYVhGcDZSLTY1TzdZRGxycWk3WVl4MTItZldOeDhqeTdSQnNCOHBlSk8tYmc3anY3Zmhwamw0OGwzU1BKM094bjNTSWZKelVQQ0lwVDZxVjJOamdQQVRNcWtha0xMT0trVDI0UFh6T29ISHVxRXdGY3NMN2xQNkRTTHN4X3BreGhhT2p2V1dtYWVxdHNiZ3phaTg1TG52eGgwVEJJbWJiaFdwbnhRSnBXS3N0aFJhbQ?oc=5",
-     "data": "2026-11-04T14:56:00.000Z"
     }
    ],
-   "noticias_em": "2026-11-06T05:10:50.115Z",
+   "noticias_em": "2026-11-06T08:12:51.282Z",
    "texto_em": "2026-11-06T05:11:54.874Z",
    "videos": {
     "UULF-6BRAVobi7q0paklYjgW3Q": [
@@ -1102,6 +1102,12 @@
    "autor": "frases",
    "noticias": [
     {
+     "titulo": "São Paulo tem dificuldades para manter Artur em 2027; entenda o cenário",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/futebol/times/sao-paulo/noticia/2026/11/06/sao-paulo-tem-dificuldades-para-manter-artur-em-2027-entenda-o-cenario.ghtml",
+     "data": "2026-11-06T07:00:00.000Z"
+    },
+    {
      "titulo": "São Paulo paga agente de Galoppo e aguarda fim de transfer ban na Fifa",
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/futebol/times/sao-paulo/noticia/2026/11/05/sao-paulo-paga-agente-de-galoppo-e-aguarda-fim-de-transfer-ban-na-fifa.ghtml",
@@ -1126,19 +1132,13 @@
      "data": "2026-11-05T14:55:00.000Z"
     },
     {
-     "titulo": "Pênalti para o São Paulo? Ex-árbitros divergem sobre polêmicas no Majestoso",
+     "titulo": "'São Paulo tem quinta amarga, mas alento é que não cairá', diz Arnaldo",
      "veiculo": "UOL Esporte",
-     "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQQ1kxcTM1RE5PTWpCdHl6ZXdLTXhqSjBtLTdBT1JEczRLTV90azRnZVRDWEt1QUowdno3bEVYTEZJNTNzek41MjhhRGM0Nzk5eC1NclA2dHFvM1FiTTEyVEpXbGZSWFN2UGF5cFlVZ200OEZTVktEMjA3UTRuRG40ajBRc2hLMjJHcEMxOWV2aXlFQ3ZuZkNTMTR3NkwyQ3pjRUJDanROa3NiY0dGVkFJOWxqTGJwSk5qOTA0d2Y2dkxzajB5RnNHckVyc3VsVkQ1aWNXMkpBWlhXbUFua19z?oc=5",
-     "data": "2026-11-05T13:30:00.000Z"
-    },
-    {
-     "titulo": "São Paulo fecha Brasileiro sem vencer clássico e não bate 'conta de Crespo'",
-     "veiculo": "UOL Esporte",
-     "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPcTBlc2pOUjB0SExkc1hUTl9kMmxNUFkyTWJQOHA0aElCM2Z0MEdwS3lWS2hiNkZiUXc4bDFVLVAxbW5ybklkM1hKNUJPOXc3RmJvMUUyTk1QZTc4SlpQOEwwekNvVHZoM1EzQW1mY2I0ZXBjQ0tmVVc5QWd2V3ZPOURkaGUza05aTktUZXA0TGVYM0trZkx5dkJENkxEa3gtWS1yejkybWx4amRUdjNRUE1fTDZlWTRoeEhDY2tpeU02YnNsNzQ3UVdfVEt0bDZkLWNSTFpwek1wUVZmV2c?oc=5",
-     "data": "2026-11-05T13:30:00.000Z"
+     "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNcmwyUXA1VnpEeGV2SS01a3BNM2pGRUJGZXZRVThPOW9RR1hBcVNKYTRYLTRTWnExZjgyaF85UTUzdHBNMlJKcHZvam5BUGRiazVnTUlQSm45dm5VMVIzeFJIN29tRGJ3bFBpa08wZ0IyMks4S2JxU0dhTkRZdkRQbS1BUVRRZnViMFdab01zcE9RWUk3YkZtX3EtRjQ0M0R3bDdodE1lWVVVLUhnREZqNTY2OHRlZEF2b2JPYWVzRnN4b0FHdGVxWTNURmhEWTRMaXN6Ng?oc=5",
+     "data": "2026-11-05T13:56:09.000Z"
     }
    ],
-   "noticias_em": "2026-11-06T05:10:51.967Z",
+   "noticias_em": "2026-11-06T08:12:53.218Z",
    "texto_em": "2026-11-06T05:11:54.874Z",
    "videos": {
     "UULFX3zTAsEoZ61rQMYb_08Tow": [
@@ -1160,6 +1160,12 @@
    "texto": "Nem lá, nem cá: o Vasco fez 7 dos últimos 15 pontos possíveis. No último jogo, venceu o Athletico por 3 a 1 fora de casa. Em 13º lugar, com 41 pontos, a vaga na Sul-Americana é o objetivo mais realista: 54% de chance. Nos últimos 5 jogos, foram 7 gols marcados e 8 sofridos: tudo bem equilibrado. Nos bastidores, a notícia que mais chama atenção é “Athletico-PR é denunciado no STJD por gesto racista de torcedor contra atletas do Vasco”, segundo o Globo Esporte. Agora o desafio é a Chapecoense, fora de casa, sábado, 14/11, num jogo equilibrado: 47% de chance de vitória pelo modelo.",
    "autor": "frases",
    "noticias": [
+    {
+     "titulo": "\"Rei das cabeçadas\": Gabriel Pereira ganha confiança no Vasco às vésperas de chance como titular em decisão",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/futebol/times/vasco/noticia/2026/11/06/rei-das-cabecadas-gabriel-pereira-ganha-confianca-no-vasco-as-vesperas-de-chance-como-titular-em-decisao.ghtml",
+     "data": "2026-11-06T06:00:00.000Z"
+    },
     {
      "titulo": "Athletico-PR é denunciado no STJD por gesto racista de torcedor contra atletas do Vasco",
      "veiculo": "Globo Esporte",
@@ -1189,21 +1195,21 @@
      "veiculo": "ESPN",
      "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQcTNua2k0a0VuWGdWYllVS1BMa19GQ1E3cDFjVExzb3dWemRieHNUejBuYUljYnpOMGxGVE5LVW9OOGR4RW1STno4WWNjaVl0TEtCb3NvX0NPaG5sc0s5N2F1MXowZmd2aWs3ZDNTMi1jMl91eGRCOUZ0WjZ4NXBPbmxNVzVNN3VlVkxLaHRsZ2Y1dE5WSTlabXZINHR3b1BVMnhNZDQ5MFFUREg1TUlSVFQ2U0FxczRlUzQwaV9TcTEyenljay1rc1cwM2VLQTRhSDMySFpHcVE5cjVNd2djZUVvMFV5d3pacEFj?oc=5",
      "data": "2026-11-05T02:01:00.000Z"
-    },
-    {
-     "titulo": "Pedro Emanuel explica escolha por três zagueiros e festeja virada do Vasco: \"Equipe estava ansiosa\"",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/futebol/times/vasco/noticia/2026/11/04/pedro-emanuel-explica-escolha-por-tres-zagueiros-e-exalta-vasco-apos-virada-equipe-estava-ansiosa.ghtml",
-     "data": "2026-11-05T01:44:38.000Z"
     }
    ],
-   "noticias_em": "2026-11-06T05:10:53.689Z",
+   "noticias_em": "2026-11-06T08:12:54.870Z",
    "texto_em": "2026-11-06T05:11:54.874Z"
   },
   "vitoria": {
    "texto": "A fase não é das melhores para o Vitória: só 5 pontos nos últimos cinco jogos. No último jogo, perdeu para o Coritiba por 2 a 0 fora de casa. Já são 4 jogos sem vencer. Em 15º lugar, com 38 pontos, o sinal de alerta está ligado: 29% de risco de cair. Nos últimos 5 jogos, foram 7 gols marcados e 6 sofridos: tudo bem equilibrado. Fora de campo, o assunto da semana é: “Escalação do Vitória contra o Fluminense: veja time provável, dúvidas e desfalques após treino” (Globo Esporte). Agora o desafio é o Fluminense, em casa, sexta, 06/11. Jogo difícil: o modelo dá 31% de chance de vitória.",
    "autor": "frases",
    "noticias": [
+    {
+     "titulo": "Vitória x Fluminense: onde assistir ao vivo, horário e escalações",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/ba/futebol/brasileirao-serie-a/noticia/2026/11/06/vitoria-x-fluminense-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
+     "data": "2026-11-06T06:00:00.000Z"
+    },
     {
      "titulo": "Escalação do Vitória contra o Fluminense: veja time provável, dúvidas e desfalques após treino",
      "veiculo": "Globo Esporte",
@@ -1233,15 +1239,9 @@
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/ba/futebol/times/vitoria/noticia/2026/11/04/depois-de-demitir-jair-ventura-vitoria-recebe-negativas-em-busca-de-novo-treinador.ghtml",
      "data": "2026-11-04T17:57:30.000Z"
-    },
-    {
-     "titulo": "Vojvoda recebe contato do Vitória, mas sinaliza que não treinará mais nenhum time em 2026",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/ce/futebol/noticia/2026/11/04/vojvoda-recebe-contato-do-vitoria-mas-sinaliza-que-nao-treinara-mais-nenhum-time-em-2026.ghtml",
-     "data": "2026-11-04T17:46:21.000Z"
     }
    ],
-   "noticias_em": "2026-11-06T05:10:55.374Z",
+   "noticias_em": "2026-11-06T08:12:56.542Z",
    "texto_em": "2026-11-06T05:11:54.874Z",
    "videos": {
     "UULFJrrx7FDDj1n4srLwoAK0WA": [

@@ -2,7 +2,7 @@
   "fonte": "football-data.org",
   "competicao": "Campeonato Brasileiro Série A",
   "temporada": 2026,
-  "baixado_em": "2026-11-06T02:09:46-03:00",
+  "baixado_em": "2026-11-06T05:11:19-03:00",
   "times": {
     "bahia": {
       "nome": "Bahia",
@@ -5110,5 +5110,6 @@
       "estadio": "Estádio São Januário",
       "transmissao": null
     }
-  ]
+  ],
+  "liga_espn": "bra.1"
 }
