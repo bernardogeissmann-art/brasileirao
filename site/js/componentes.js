@@ -530,6 +530,21 @@ export function cardConfronto({ jogo, times, tabela, forma, chances, estado, ing
     </li>`;
 }
 
+// A parte de uma copa nos Jogos do dia (nos dias de jogo dela): título com o símbolo da copa,
+// a quantidade de jogos, a lista de jogos e o botão para a página da copa.
+export function blocoCopaDoDia({ id, titulo, simbolo, pagina }) {
+  const imagem = new URL(`../../assets/simbolos/${simbolo}`, import.meta.url);
+  return `
+    <div class="jogos-do-dia__copa" id="jogos-${id}">
+      <h3 class="titulo-secao jogos-do-dia__copa-titulo">
+        <img src="${imagem}" alt="" width="28" height="28">
+        ${escaparHtml(titulo)} <span class="jogos-do-dia__quantos" id="jogos-${id}-quantos"></span>
+      </h3>
+      <ol class="lista-confrontos" id="jogos-${id}-lista"></ol>
+      <p class="jogos-do-dia__acao"><a class="botao" href="${pagina}">Ver ${escaparHtml(titulo)}</a></p>
+    </div>`;
+}
+
 // Botão "Comprar ingressos": abre a loja de ingressos do time da casa, em outra aba.
 export function botaoIngresso(endereco, nomeMandante) {
   return `

@@ -9,7 +9,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { simularMomento, tabelaDoGrupo } from "../site/js/estaduais/motor.js";
 import { FORMATOS } from "../site/js/estaduais/formatos.js";
-import { copaNoDia } from "../site/js/jogos-do-dia.js";
+import { copaNoDia, copasNoDia } from "../site/js/jogos-do-dia.js";
 import {
   mataMataEmAndamento, timesNaDisputa, confrontosAtuais, campanhaDoTime, caminhoDoTime, descreverFase, diasAte,
 } from "../site/js/estaduais/mata-mata.js";
@@ -177,4 +177,18 @@ test("Na disputa: campanha, nome da fase e dias até o jogo", () => {
   assert.equal(descreverFase({ fase: "quartas", perna: 2 }), "Quartas de final · volta");
   assert.equal(diasAte("2026-11-21T19:30:00-03:00", new Date("2026-11-06T23:00:00-03:00")), 15);
   assert.equal(diasAte("2026-11-21T19:30:00-03:00", new Date("2026-11-21T08:00:00-03:00")), 0);
+});
+
+test("Jogos do dia: com várias copas, valem as que jogam no dia mais próximo", () => {
+  const libertadores = [jogo("l1", "2026-11-28T17:00:00-03:00")];
+  const copaDoBrasil = [jogo("c1", "2026-11-07T18:00:00-03:00"), jogo("c2", "2026-11-08T17:00:00-03:00")];
+  const serieB = [jogo("b1", "2026-11-07T16:00:00-03:00")];
+  // Dia 7: só a Copa do Brasil (a Série B joga no mesmo dia e aparece embaixo, na página).
+  assert.deepEqual(copasNoDia([libertadores, copaDoBrasil, SULA], [SERIE_A, serieB], new Date("2026-11-07T10:00:00-03:00")),
+    { dia: "2026-11-07", copas: [1] });
+  // Dia 21: a Sul-Americana (a Série A, no mesmo dia, aparece embaixo).
+  assert.deepEqual(copasNoDia([libertadores, [], SULA], [SERIE_A], new Date("2026-11-21T10:00:00-03:00")),
+    { dia: "2026-11-21", copas: [2] });
+  // Dia 19: a Série A joga antes de qualquer copa: dia normal.
+  assert.equal(copasNoDia([libertadores, [], SULA], [SERIE_A], new Date("2026-11-19T10:00:00-03:00")), null);
 });

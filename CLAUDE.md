@@ -52,15 +52,26 @@ O usuário nunca programou antes, então todo código e explicação devem ser p
     da Série B abaixo dos da Série A, com o botão "Ver Série B"), **Copas** (Copa Sul-Americana, ver abaixo) e
     **Estaduais** (Catarinense, Gaúcho, Paranaense e Paulista). Para um novo estadual, acrescentar uma linha em
     `abas.js` (com o símbolo em `assets/simbolos/`).
-- **Copa Sul-Americana 2026** (`site/sulamericana.html`): usa o motor e a página dos estaduais (`estadual.js`), com o
-  formato em `site/js/copas/sulamericana-2026.js` (regras do Manual de Clubes 2026: desempate por confronto direto
-  primeiro, "numeração" da CONMEBOL para o mando, chaves sorteadas, final em campo neutro com prorrogação) e os dados
-  em `data/copas/sulamericana-2026/`. Ordem: `scripts/copas/baixar_sulamericana.py` (ESPN, liga
-  `conmebol.sudamericana`; escudos em `assets/escudos/sulamericana/`; onde assistir pelo ge.globo) →
-  `estimar_estadual.py sulamericana-2026` → `calcular_chances.js sulamericana-2026` (a rotina diária do GitHub faz
-  isso). A primeira fase (março) fica de fora; os 8 que vieram da Libertadores têm grupo `LIB`. Nos dias de jogo da
-  Sula (quando o dia dela vem antes ou junto do das Séries A e B), os Jogos do dia mostram a Sula primeiro; as
-  Séries A e B só aparecem se jogarem no mesmo dia (pedido do usuário). Lógica em `copaNoDia` (`jogos-do-dia.js`). Os times da Sula não entram no Meu Time (pedido do usuário).
+- **Copas 2026** (Libertadores, Copa do Brasil e Sul-Americana; `site/libertadores.html`, `copa-do-brasil.html`,
+  `sulamericana.html`): usam o motor e a página dos estaduais (`estadual.js`), com o formato de cada uma em
+  `site/js/copas/<copa>-2026.js` (registrado em `formatos.js`) e os dados em `data/copas/<copa>-2026/`.
+  - Libertadores e Sul-Americana: regras do Manual de Clubes CONMEBOL 2026 (desempate por confronto direto primeiro,
+    "numeração" da CONMEBOL para o mando da volta, chaves sorteadas que valem até a final, final em campo neutro com
+    prorrogação). As fases preliminares ficam de fora; na Sula, os 8 que vieram da Libertadores têm grupo `LIB`.
+  - Copa do Brasil: mata-mata do começo ao fim (sem grupos: todos os times no "grupo" `CDB`), a partir da 5ª fase
+    (as quatro primeiras ficam de fora); confrontos e mandos sorteados a cada fase (antes do sorteio, a simulação
+    sorteia); pênaltis direto no empate; final em jogo único em Brasília (campo neutro, sem prorrogação). Enquanto os
+    finalistas não são conhecidos, a ESPN mostra a final com times "TBD" e ela fica fora do arquivo.
+  - Ordem para atualizar (a rotina diária do GitHub faz isso): `scripts/copas/baixar_<copa>.py` (ESPN; ferramentas
+    comuns em `scripts/copas/comum_copas.py`) → `estimar_estadual.py <copa>-2026` → `calcular_chances.js <copa>-2026`.
+    Na Libertadores e na Copa do Brasil os times saem sozinhos dos dados: clube brasileiro com o mesmo id, nome e
+    escudo do Brasileirão (e, por isso, as mesmas cores e a mesma loja de ingressos); os outros com id feito do nome
+    e país pelo estádio onde jogam em casa. A Sula tem a lista de times feita à mão.
+  - Jogos do dia: quando o dia das copas (o mais próximo entre elas) vem antes ou junto do das Séries A e B, as copas
+    desse dia aparecem primeiro (Libertadores, Copa do Brasil, Sul-Americana) e as Séries A e B só se jogarem no mesmo
+    dia (pedido do usuário). Lógica em `copasNoDia` (`jogos-do-dia.js`); a lista das copas fica em `COPAS`
+    (`inicio.js`). Nos cartões: país só em copa internacional; num jogo de volta, o placar da ida; ingressos só fora
+    de campo neutro. Os times das copas não entram no Meu Time (pedido do usuário).
 - **Na disputa** (páginas de copa/estadual enquanto o mata-mata está rolando, ou seja, a 1ª fase acabou e ainda não
   há campeão): no topo, só os times que ainda podem ser campeões (pedido do usuário). Um painel por confronto em
   aberto, com um lado para cada time nas cores do clube (`data/cores-times.json`): chance de passar de fase e de
@@ -68,7 +79,9 @@ O usuário nunca programou antes, então todo código e explicação devem ser p
   só carrega no clique). No meio, o próximo jogo (data, contagem, onde assistir, placar ao vivo da ESPN), as chances
   do jogo pelo modelo e a comparação das campanhas. O gráfico e as tabelas com todos os times ficam recolhidos em
   "Como chegamos até aqui". Lógica em `site/js/estaduais/mata-mata.js`, HTML em `site/js/componentes-duelo.js`,
-  visual em `site/css/duelo.css`; o `estadual.js` liga tudo.
+  visual em `site/css/duelo.css`; o `estadual.js` liga tudo. O painel também tem o botão "Comprar ingressos" do
+  mandante do próximo jogo (some na hora do jogo; nada em campo neutro) e passa a buscar o placar ao vivo sozinho
+  na hora do jogo.
   - **O Método**: explica o modelo para o grande público.
 - Botão "Comprar ingressos" (regras em `site/js/ingressos.js`): no Meu Time, só no primeiro próximo jogo; nos Jogos do
   dia, em cada jogo, e some na hora do início. Leva à loja oficial do mandante, em `data/ingressos.json` (só endereços

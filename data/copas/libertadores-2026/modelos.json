@@ -1,0 +1,1808 @@
+{
+  "competicao": "Copa Libertadores",
+  "temporada": 2026,
+  "dados_baixados_em": "2026-11-06T22:26:35-03:00",
+  "estimado_em": "2026-11-06T22:26:37-03:00",
+  "parametros": {
+    "forca_prior": 3,
+    "gols_por_jogo_prior": 2.5,
+    "fator_casa_prior": 1.25,
+    "forca_prior_casa": 6
+  },
+  "momentos": [
+    {
+      "id": "inicio",
+      "rotulo": "Antes do 1º jogo",
+      "curto": "Início",
+      "ate": null,
+      "jogos_usados": 0,
+      "fator_casa": 1.25,
+      "times": {
+        "always-ready": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "atletico-junior": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "barcelona-sc": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "boca-juniors": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "bolivar": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "cerro-porteno": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "coquimbo-unido": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "corinthians": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "cruzeiro": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "cusco-fc": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "deportes-tolima": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "deportivo-la-guaira": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "estudiantes-de-la-plata": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "flamengo": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "fluminense": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "independiente-del-valle": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "independiente-medellin": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "independiente-rivadavia": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "independiente-santa-fe": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "lanus": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "libertad": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "liga-de-quito": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "mirassol": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "nacional": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "palmeiras": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "penarol": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "platense": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "rosario-central": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "sporting-cristal": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "ucv-fc": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "universidad-catolica": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        },
+        "universitario": {
+          "ataque": 1.0,
+          "defesa": 1.1111111111111112
+        }
+      }
+    },
+    {
+      "id": "rodada-1",
+      "rotulo": "Após a 1ª rodada",
+      "curto": "R1",
+      "ate": "2026-04-09T23:00:00-03:00",
+      "jogos_usados": 16,
+      "fator_casa": 1.058125692296682,
+      "times": {
+        "always-ready": {
+          "ataque": 0.7874630399763367,
+          "defesa": 0.7588021163549905
+        },
+        "atletico-junior": {
+          "ataque": 1.0698262017653644,
+          "defesa": 0.7588021163549905
+        },
+        "barcelona-sc": {
+          "ataque": 0.7874630399763367,
+          "defesa": 0.7588021163549905
+        },
+        "boca-juniors": {
+          "ataque": 1.3413865428880813,
+          "defesa": 0.7499020566104314
+        },
+        "bolivar": {
+          "ataque": 0.7951814375446314,
+          "defesa": 0.7499020566104314
+        },
+        "cerro-porteno": {
+          "ataque": 0.7951814375446314,
+          "defesa": 0.7499020566104314
+        },
+        "coquimbo-unido": {
+          "ataque": 1.0698262017653644,
+          "defesa": 0.7588021163549905
+        },
+        "corinthians": {
+          "ataque": 1.3413865428880813,
+          "defesa": 0.5519776503860905
+        },
+        "cruzeiro": {
+          "ataque": 1.0825232160410005,
+          "defesa": 0.5519776503860905
+        },
+        "cusco-fc": {
+          "ataque": 0.7874630399763367,
+          "defesa": 0.9402541511527756
+        },
+        "deportes-tolima": {
+          "ataque": 0.7874630399763367,
+          "defesa": 0.5573879144064408
+        },
+        "deportivo-la-guaira": {
+          "ataque": 0.7874630399763367,
+          "defesa": 0.5573879144064408
+        },
+        "estudiantes-de-la-plata": {
+          "ataque": 1.0825232160410005,
+          "defesa": 0.7499020566104314
+        },
+        "flamengo": {
+          "ataque": 1.3413865428880813,
+          "defesa": 0.5519776503860905
+        },
+        "fluminense": {
+          "ataque": 0.7951814375446314,
+          "defesa": 0.5519776503860905
+        },
+        "independiente-del-valle": {
+          "ataque": 0.7951814375446314,
+          "defesa": 0.5519776503860905
+        },
+        "independiente-medellin": {
+          "ataque": 1.0698262017653644,
+          "defesa": 0.7588021163549905
+        },
+        "independiente-rivadavia": {
+          "ataque": 1.0698262017653644,
+          "defesa": 0.5573879144064408
+        },
+        "independiente-santa-fe": {
+          "ataque": 1.0698262017653644,
+          "defesa": 0.7588021163549905
+        },
+        "lanus": {
+          "ataque": 0.7951814375446314,
+          "defesa": 0.7499020566104314
+        },
+        "libertad": {
+          "ataque": 1.0825232160410005,
+          "defesa": 1.0908560004481134
+        },
+        "liga-de-quito": {
+          "ataque": 1.0825232160410005,
+          "defesa": 0.5519776503860905
+        },
+        "mirassol": {
+          "ataque": 1.0698262017653644,
+          "defesa": 0.5573879144064408
+        },
+        "nacional": {
+          "ataque": 1.0825232160410005,
+          "defesa": 0.7499020566104314
+        },
+        "palmeiras": {
+          "ataque": 1.0825232160410005,
+          "defesa": 0.7499020566104314
+        },
+        "penarol": {
+          "ataque": 1.0825232160410005,
+          "defesa": 0.7499020566104314
+        },
+        "platense": {
+          "ataque": 0.7874630399763367,
+          "defesa": 0.9402541511527756
+        },
+        "rosario-central": {
+          "ataque": 0.7874630399763367,
+          "defesa": 0.5573879144064408
+        },
+        "sporting-cristal": {
+          "ataque": 1.0698262017653644,
+          "defesa": 0.5573879144064408
+        },
+        "ucv-fc": {
+          "ataque": 1.5562383398236908,
+          "defesa": 0.7588021163549905
+        },
+        "universidad-catolica": {
+          "ataque": 1.0698262017653644,
+          "defesa": 0.9402541511527756
+        },
+        "universitario": {
+          "ataque": 0.7951814375446314,
+          "defesa": 0.5519776503860905
+        }
+      }
+    },
+    {
+      "id": "rodada-2",
+      "rotulo": "Após a 2ª rodada",
+      "curto": "R2",
+      "ate": "2026-04-16T21:30:00-03:00",
+      "jogos_usados": 32,
+      "fator_casa": 1.3045365452199589,
+      "times": {
+        "always-ready": {
+          "ataque": 0.6650734619131508,
+          "defesa": 0.8853421731075196
+        },
+        "atletico-junior": {
+          "ataque": 0.8174118260461348,
+          "defesa": 0.8853421731075196
+        },
+        "barcelona-sc": {
+          "ataque": 0.6144835962726569,
+          "defesa": 1.1182741675448715
+        },
+        "boca-juniors": {
+          "ataque": 1.4660977757638047,
+          "defesa": 0.7106712796138233
+        },
+        "bolivar": {
+          "ataque": 0.8487335381387312,
+          "defesa": 0.8669551559142472
+        },
+        "cerro-porteno": {
+          "ataque": 0.7981098524299486,
+          "defesa": 0.7188116531428245
+        },
+        "coquimbo-unido": {
+          "ataque": 1.1945519988618356,
+          "defesa": 0.7176760841507394
+        },
+        "corinthians": {
+          "ataque": 1.3203815137362838,
+          "defesa": 0.5403616091512939
+        },
+        "cruzeiro": {
+          "ataque": 0.9258785256826262,
+          "defesa": 0.917156769404389
+        },
+        "cusco-fc": {
+          "ataque": 0.8268343332229489,
+          "defesa": 1.0969270635248094
+        },
+        "deportes-tolima": {
+          "ataque": 0.7981098524299486,
+          "defesa": 1.0299147465767426
+        },
+        "deportivo-la-guaira": {
+          "ataque": 0.7981098524299486,
+          "defesa": 0.7463551886418807
+        },
+        "estudiantes-de-la-plata": {
+          "ataque": 1.0608106494321727,
+          "defesa": 0.8975444443985119
+        },
+        "flamengo": {
+          "ataque": 1.5771013658841935,
+          "defesa": 0.7270975718740957
+        },
+        "fluminense": {
+          "ataque": 0.8487335381387312,
+          "defesa": 0.8853421731075196
+        },
+        "independiente-del-valle": {
+          "ataque": 1.1711892677041367,
+          "defesa": 0.6938111381642151
+        },
+        "independiente-medellin": {
+          "ataque": 1.0206615878320724,
+          "defesa": 1.2227872300443254
+        },
+        "independiente-rivadavia": {
+          "ataque": 1.1945519988618356,
+          "defesa": 0.7463551886418807
+        },
+        "independiente-santa-fe": {
+          "ataque": 0.8081548286646282,
+          "defesa": 0.9863294129460262
+        },
+        "lanus": {
+          "ataque": 0.7981098524299486,
+          "defesa": 0.7678801507277616
+        },
+        "libertad": {
+          "ataque": 0.8161204898244485,
+          "defesa": 1.1753747200547007
+        },
+        "liga-de-quito": {
+          "ataque": 1.1945519988618356,
+          "defesa": 0.5848490802075972
+        },
+        "mirassol": {
+          "ataque": 0.8732111025852206,
+          "defesa": 0.8669551559142472
+        },
+        "nacional": {
+          "ataque": 1.3800700815078812,
+          "defesa": 0.8669551559142472
+        },
+        "palmeiras": {
+          "ataque": 1.1945519988618356,
+          "defesa": 0.9072793698241177
+        },
+        "penarol": {
+          "ataque": 0.9442499205369965,
+          "defesa": 1.0874664398668703
+        },
+        "platense": {
+          "ataque": 1.0429641566986652,
+          "defesa": 1.0051312109154522
+        },
+        "rosario-central": {
+          "ataque": 0.7889819633515567,
+          "defesa": 0.533991485640699
+        },
+        "sporting-cristal": {
+          "ataque": 1.0317318635209713,
+          "defesa": 0.8669551559142472
+        },
+        "ucv-fc": {
+          "ataque": 1.336602143263954,
+          "defesa": 1.2135993450867069
+        },
+        "universidad-catolica": {
+          "ataque": 1.2366353890904571,
+          "defesa": 0.9851703689306647
+        },
+        "universitario": {
+          "ataque": 0.60723967602044,
+          "defesa": 0.8853421731075196
+        }
+      }
+    },
+    {
+      "id": "rodada-3",
+      "rotulo": "Após a 3ª rodada",
+      "curto": "R3",
+      "ate": "2026-04-30T23:00:00-03:00",
+      "jogos_usados": 48,
+      "fator_casa": 1.524807884655042,
+      "times": {
+        "always-ready": {
+          "ataque": 0.5847969649158679,
+          "defesa": 0.976026608673222
+        },
+        "atletico-junior": {
+          "ataque": 0.7017002169196879,
+          "defesa": 0.9454728501872639
+        },
+        "barcelona-sc": {
+          "ataque": 0.6514071542878581,
+          "defesa": 1.196406723334994
+        },
+        "boca-juniors": {
+          "ataque": 1.206921314257852,
+          "defesa": 0.6885742054409539
+        },
+        "bolivar": {
+          "ataque": 0.8868789782583987,
+          "defesa": 0.7074678104325537
+        },
+        "cerro-porteno": {
+          "ataque": 0.7742260447284913,
+          "defesa": 0.7341517491567865
+        },
+        "coquimbo-unido": {
+          "ataque": 0.9103640882718212,
+          "defesa": 0.8913892397534157
+        },
+        "corinthians": {
+          "ataque": 1.2408442054904427,
+          "defesa": 0.47334021985583286
+        },
+        "cruzeiro": {
+          "ataque": 0.8913470465322467,
+          "defesa": 0.7358681144020707
+        },
+        "cusco-fc": {
+          "ataque": 0.6799897878484662,
+          "defesa": 1.0130320636843129
+        },
+        "deportes-tolima": {
+          "ataque": 0.993829515657814,
+          "defesa": 0.8062156352248819
+        },
+        "deportivo-la-guaira": {
+          "ataque": 0.8506252845241296,
+          "defesa": 1.0340305414238293
+        },
+        "estudiantes-de-la-plata": {
+          "ataque": 1.0367825124426904,
+          "defesa": 0.8654281958235143
+        },
+        "flamengo": {
+          "ataque": 1.505604735191101,
+          "defesa": 0.734427920834221
+        },
+        "fluminense": {
+          "ataque": 0.6875364434083518,
+          "defesa": 0.9304070677739956
+        },
+        "independiente-del-valle": {
+          "ataque": 1.3090765813514464,
+          "defesa": 0.8082752458495455
+        },
+        "independiente-medellin": {
+          "ataque": 0.9141508129531695,
+          "defesa": 1.0737994999620728
+        },
+        "independiente-rivadavia": {
+          "ataque": 1.4904519835553294,
+          "defesa": 0.8177842888686238
+        },
+        "independiente-santa-fe": {
+          "ataque": 0.830804236176627,
+          "defesa": 1.0223600552202046
+        },
+        "lanus": {
+          "ataque": 0.8112043619606247,
+          "defesa": 0.6337077021313784
+        },
+        "libertad": {
+          "ataque": 0.9703631012503896,
+          "defesa": 1.3386655618893217
+        },
+        "liga-de-quito": {
+          "ataque": 1.0284285043568198,
+          "defesa": 0.633911376192029
+        },
+        "mirassol": {
+          "ataque": 0.9863165844076273,
+          "defesa": 0.79618802180388
+        },
+        "nacional": {
+          "ataque": 1.4516693652503352,
+          "defesa": 1.2193374025938393
+        },
+        "palmeiras": {
+          "ataque": 1.1869292256673607,
+          "defesa": 0.8957665094782494
+        },
+        "penarol": {
+          "ataque": 0.8336020163350784,
+          "defesa": 1.040752265918702
+        },
+        "platense": {
+          "ataque": 1.1013313082814546,
+          "defesa": 1.0344204663005805
+        },
+        "rosario-central": {
+          "ataque": 1.0127630506287908,
+          "defesa": 0.41075866077466416
+        },
+        "sporting-cristal": {
+          "ataque": 1.0794950723375638,
+          "defesa": 0.7599853733647186
+        },
+        "ucv-fc": {
+          "ataque": 1.0765108567138117,
+          "defesa": 1.3359241600412006
+        },
+        "universidad-catolica": {
+          "ataque": 1.3173821825510703,
+          "defesa": 1.003923243697405
+        },
+        "universitario": {
+          "ataque": 0.99666646348728,
+          "defesa": 0.9622571925058768
+        }
+      }
+    },
+    {
+      "id": "rodada-4",
+      "rotulo": "Após a 4ª rodada",
+      "curto": "R4",
+      "ate": "2026-05-07T23:00:00-03:00",
+      "jogos_usados": 64,
+      "fator_casa": 1.614694649464062,
+      "times": {
+        "always-ready": {
+          "ataque": 0.9846180649371528,
+          "defesa": 0.8640522670876805
+        },
+        "atletico-junior": {
+          "ataque": 0.6189975690513649,
+          "defesa": 0.931542121509097
+        },
+        "barcelona-sc": {
+          "ataque": 0.7093097178492144,
+          "defesa": 1.0549025082928898
+        },
+        "boca-juniors": {
+          "ataque": 1.10543569471197,
+          "defesa": 0.6991184247061893
+        },
+        "bolivar": {
+          "ataque": 0.9105566783368041,
+          "defesa": 0.6834764618046114
+        },
+        "cerro-porteno": {
+          "ataque": 0.8149129241039368,
+          "defesa": 0.6309483417401859
+        },
+        "coquimbo-unido": {
+          "ataque": 0.97761537547896,
+          "defesa": 0.8569026081006098
+        },
+        "corinthians": {
+          "ataque": 1.240670309640413,
+          "defesa": 0.48984240667982804
+        },
+        "cruzeiro": {
+          "ataque": 0.8091141312355645,
+          "defesa": 0.5703480704501176
+        },
+        "cusco-fc": {
+          "ataque": 0.6982966032696679,
+          "defesa": 0.966375681803386
+        },
+        "deportes-tolima": {
+          "ataque": 1.087651315335373,
+          "defesa": 0.665907122513491
+        },
+        "deportivo-la-guaira": {
+          "ataque": 0.8760654129666053,
+          "defesa": 0.9993944377140701
+        },
+        "estudiantes-de-la-plata": {
+          "ataque": 1.047537048963924,
+          "defesa": 0.8380055388814373
+        },
+        "flamengo": {
+          "ataque": 1.6498416627628285,
+          "defesa": 0.5977414022846764
+        },
+        "fluminense": {
+          "ataque": 0.742713854595232,
+          "defesa": 0.7931226254894214
+        },
+        "independiente-del-valle": {
+          "ataque": 1.1799129441800311,
+          "defesa": 0.8306823074618493
+        },
+        "independiente-medellin": {
+          "ataque": 0.8100272334073381,
+          "defesa": 1.1316093166452406
+        },
+        "independiente-rivadavia": {
+          "ataque": 1.3968228506233265,
+          "defesa": 0.8228590637405723
+        },
+        "independiente-santa-fe": {
+          "ataque": 0.8905139238591566,
+          "defesa": 0.9598235587056094
+        },
+        "lanus": {
+          "ataque": 0.7264018393810059,
+          "defesa": 0.9097433923436443
+        },
+        "libertad": {
+          "ataque": 0.9382430479124318,
+          "defesa": 1.1999570043001913
+        },
+        "liga-de-quito": {
+          "ataque": 0.927509716782531,
+          "defesa": 0.667697172716542
+        },
+        "mirassol": {
+          "ataque": 1.0493383737219075,
+          "defesa": 0.6571421217887031
+        },
+        "nacional": {
+          "ataque": 1.354454422544105,
+          "defesa": 1.2320403246749223
+        },
+        "palmeiras": {
+          "ataque": 1.3239022458023177,
+          "defesa": 0.722595556702096
+        },
+        "penarol": {
+          "ataque": 0.8551536570913939,
+          "defesa": 0.9243008886731898
+        },
+        "platense": {
+          "ataque": 1.0301092465281037,
+          "defesa": 1.0007481594021759
+        },
+        "rosario-central": {
+          "ataque": 0.9284775048083549,
+          "defesa": 0.34913641066217893
+        },
+        "sporting-cristal": {
+          "ataque": 0.9465065525442871,
+          "defesa": 0.827371707191423
+        },
+        "ucv-fc": {
+          "ataque": 1.1664899840989544,
+          "defesa": 1.1601914623804293
+        },
+        "universidad-catolica": {
+          "ataque": 1.1900809328966213,
+          "defesa": 0.8801950671453996
+        },
+        "universitario": {
+          "ataque": 1.012719160579124,
+          "defesa": 0.9693923480422034
+        }
+      }
+    },
+    {
+      "id": "rodada-5",
+      "rotulo": "Após a 5ª rodada",
+      "curto": "R5",
+      "ate": "2026-05-21T21:30:00-03:00",
+      "jogos_usados": 80,
+      "fator_casa": 1.6250215864544162,
+      "times": {
+        "always-ready": {
+          "ataque": 0.9583617269845985,
+          "defesa": 0.9961169639554959
+        },
+        "atletico-junior": {
+          "ataque": 0.8476479269387325,
+          "defesa": 1.0609617629431518
+        },
+        "barcelona-sc": {
+          "ataque": 0.6306040317221722,
+          "defesa": 1.0819202598523012
+        },
+        "boca-juniors": {
+          "ataque": 1.0840798964770544,
+          "defesa": 0.775323000611454
+        },
+        "bolivar": {
+          "ataque": 0.8744651841565722,
+          "defesa": 0.7720301931924769
+        },
+        "cerro-porteno": {
+          "ataque": 0.8076832334325064,
+          "defesa": 0.5131762003920566
+        },
+        "coquimbo-unido": {
+          "ataque": 1.1653171938334468,
+          "defesa": 0.8450815950670656
+        },
+        "corinthians": {
+          "ataque": 1.1923296195135415,
+          "defesa": 0.5375902772244257
+        },
+        "cruzeiro": {
+          "ataque": 0.8495455590084829,
+          "defesa": 0.6018625099136066
+        },
+        "cusco-fc": {
+          "ataque": 0.7800491623922222,
+          "defesa": 1.191111778050999
+        },
+        "deportes-tolima": {
+          "ataque": 1.04199953088237,
+          "defesa": 0.8885261279246542
+        },
+        "deportivo-la-guaira": {
+          "ataque": 0.9223183811503955,
+          "defesa": 1.2173309343990306
+        },
+        "estudiantes-de-la-plata": {
+          "ataque": 0.9152494608922827,
+          "defesa": 0.7405852499591622
+        },
+        "flamengo": {
+          "ataque": 1.4585089900114354,
+          "defesa": 0.5341369016607151
+        },
+        "fluminense": {
+          "ataque": 0.8223608414324171,
+          "defesa": 0.807573251527266
+        },
+        "independiente-del-valle": {
+          "ataque": 1.251595158388575,
+          "defesa": 0.868249887875026
+        },
+        "independiente-medellin": {
+          "ataque": 1.028978270989055,
+          "defesa": 1.2588532783057529
+        },
+        "independiente-rivadavia": {
+          "ataque": 1.5388912178567395,
+          "defesa": 0.9057132174258842
+        },
+        "independiente-santa-fe": {
+          "ataque": 0.9190249091289378,
+          "defesa": 0.9941783059202858
+        },
+        "lanus": {
+          "ataque": 0.6492174480370312,
+          "defesa": 0.9726974328067629
+        },
+        "libertad": {
+          "ataque": 0.9394115912112428,
+          "defesa": 1.3204815047439153
+        },
+        "liga-de-quito": {
+          "ataque": 0.9634475598239436,
+          "defesa": 0.6418196433122714
+        },
+        "mirassol": {
+          "ataque": 1.1192903333737696,
+          "defesa": 0.6755195325791279
+        },
+        "nacional": {
+          "ataque": 1.0739093331896201,
+          "defesa": 1.1489048607878989
+        },
+        "palmeiras": {
+          "ataque": 1.0902548431293004,
+          "defesa": 0.7366474895123815
+        },
+        "penarol": {
+          "ataque": 0.8602486804327207,
+          "defesa": 0.9379779450164324
+        },
+        "platense": {
+          "ataque": 1.0057610284492131,
+          "defesa": 1.0720168101433665
+        },
+        "rosario-central": {
+          "ataque": 1.0537940717708794,
+          "defesa": 0.33431621102979586
+        },
+        "sporting-cristal": {
+          "ataque": 1.0493780245540114,
+          "defesa": 1.0685541454400205
+        },
+        "ucv-fc": {
+          "ataque": 1.0791733033219497,
+          "defesa": 1.3273649098202063
+        },
+        "universidad-catolica": {
+          "ataque": 1.1437069336323682,
+          "defesa": 0.842737483532863
+        },
+        "universitario": {
+          "ataque": 0.8833965538824128,
+          "defesa": 0.826000593173806
+        }
+      }
+    },
+    {
+      "id": "rodada-6",
+      "rotulo": "Após a 6ª rodada",
+      "curto": "R6",
+      "ate": "2026-05-28T21:30:00-03:00",
+      "jogos_usados": 96,
+      "fator_casa": 1.6345128378201814,
+      "times": {
+        "always-ready": {
+          "ataque": 1.1128100529159322,
+          "defesa": 1.1189450316385474
+        },
+        "atletico-junior": {
+          "ataque": 0.8964370888874846,
+          "defesa": 1.204262801551732
+        },
+        "barcelona-sc": {
+          "ataque": 0.6221604856159203,
+          "defesa": 1.2695364208127131
+        },
+        "boca-juniors": {
+          "ataque": 0.9308083135889909,
+          "defesa": 0.744746822813112
+        },
+        "bolivar": {
+          "ataque": 0.8447613414393558,
+          "defesa": 0.8715501082322756
+        },
+        "cerro-porteno": {
+          "ataque": 0.827808495097212,
+          "defesa": 0.4484374047982423
+        },
+        "coquimbo-unido": {
+          "ataque": 1.0964582972175336,
+          "defesa": 0.823485432344675
+        },
+        "corinthians": {
+          "ataque": 1.0670218956008812,
+          "defesa": 0.6551829328712726
+        },
+        "cruzeiro": {
+          "ataque": 1.0839129951577446,
+          "defesa": 0.5897901190854907
+        },
+        "cusco-fc": {
+          "ataque": 0.7681985502965583,
+          "defesa": 1.2174621516162343
+        },
+        "deportes-tolima": {
+          "ataque": 0.9962171088289983,
+          "defesa": 0.8049972304393551
+        },
+        "deportivo-la-guaira": {
+          "ataque": 0.9330203344040393,
+          "defesa": 1.2740221029128547
+        },
+        "estudiantes-de-la-plata": {
+          "ataque": 0.8496966572700962,
+          "defesa": 0.6779940945459735
+        },
+        "flamengo": {
+          "ataque": 1.5071170235232507,
+          "defesa": 0.5083045438089332
+        },
+        "fluminense": {
+          "ataque": 0.9201776584151713,
+          "defesa": 0.8077538912565381
+        },
+        "independiente-del-valle": {
+          "ataque": 1.3242738051889615,
+          "defesa": 0.8275918148348761
+        },
+        "independiente-medellin": {
+          "ataque": 0.9660529502548321,
+          "defesa": 1.187473782371056
+        },
+        "independiente-rivadavia": {
+          "ataque": 1.6417532697151294,
+          "defesa": 0.8561771068353835
+        },
+        "independiente-santa-fe": {
+          "ataque": 0.9350322777510061,
+          "defesa": 0.8911622131854429
+        },
+        "lanus": {
+          "ataque": 0.6385926125690801,
+          "defesa": 0.8447594852004905
+        },
+        "libertad": {
+          "ataque": 0.7663743818578905,
+          "defesa": 1.2755388658283981
+        },
+        "liga-de-quito": {
+          "ataque": 1.1074844533741044,
+          "defesa": 0.7590355159653128
+        },
+        "mirassol": {
+          "ataque": 0.9837349424048265,
+          "defesa": 0.6504052442866367
+        },
+        "nacional": {
+          "ataque": 1.0693180459867992,
+          "defesa": 1.077684687140224
+        },
+        "palmeiras": {
+          "ataque": 1.2710397329210568,
+          "defesa": 0.7679581966617892
+        },
+        "penarol": {
+          "ataque": 0.7463717643958006,
+          "defesa": 0.9366572643190989
+        },
+        "platense": {
+          "ataque": 1.1456974422205444,
+          "defesa": 0.935351952387835
+        },
+        "rosario-central": {
+          "ataque": 1.0268259611132575,
+          "defesa": 0.36555261819737567
+        },
+        "sporting-cristal": {
+          "ataque": 0.961685204126277,
+          "defesa": 1.052864678846213
+        },
+        "ucv-fc": {
+          "ataque": 1.0497578799001337,
+          "defesa": 1.1894123478207488
+        },
+        "universidad-catolica": {
+          "ataque": 1.1103193669947469,
+          "defesa": 0.6853091730159566
+        },
+        "universitario": {
+          "ataque": 0.7990796109663844,
+          "defesa": 0.7709570411023381
+        }
+      }
+    },
+    {
+      "id": "oitavas-1",
+      "rotulo": "Após a ida das oitavas",
+      "curto": "OF ida",
+      "ate": "2026-08-18T21:30:00-03:00",
+      "jogos_usados": 106,
+      "fator_casa": 1.5514958784753254,
+      "times": {
+        "always-ready": {
+          "ataque": 1.1184102464228658,
+          "defesa": 1.1456555057782456
+        },
+        "atletico-junior": {
+          "ataque": 0.8947071083248812,
+          "defesa": 1.2272235396445705
+        },
+        "barcelona-sc": {
+          "ataque": 0.5806514241011357,
+          "defesa": 1.362936867746092
+        },
+        "boca-juniors": {
+          "ataque": 0.8739336910850394,
+          "defesa": 0.796962710324016
+        },
+        "bolivar": {
+          "ataque": 0.8789811473257904,
+          "defesa": 0.9223769650040418
+        },
+        "cerro-porteno": {
+          "ataque": 0.8561222642035922,
+          "defesa": 0.4636410658609053
+        },
+        "coquimbo-unido": {
+          "ataque": 1.0860395557822944,
+          "defesa": 0.8241653243859995
+        },
+        "corinthians": {
+          "ataque": 1.0360133076253004,
+          "defesa": 0.5886524197922791
+        },
+        "cruzeiro": {
+          "ataque": 1.0364972054752748,
+          "defesa": 0.6317701336178203
+        },
+        "cusco-fc": {
+          "ataque": 0.8055741185754014,
+          "defesa": 1.1734906746210365
+        },
+        "deportes-tolima": {
+          "ataque": 0.893581751955567,
+          "defesa": 0.8193969259850766
+        },
+        "deportivo-la-guaira": {
+          "ataque": 0.9797224559858668,
+          "defesa": 1.3543085104833628
+        },
+        "estudiantes-de-la-plata": {
+          "ataque": 1.0412554336337347,
+          "defesa": 0.6217399044503624
+        },
+        "flamengo": {
+          "ataque": 1.5946880013981863,
+          "defesa": 0.5041561022553448
+        },
+        "fluminense": {
+          "ataque": 0.8561517008151573,
+          "defesa": 0.7002081964090671
+        },
+        "independiente-del-valle": {
+          "ataque": 1.3300381245990298,
+          "defesa": 0.753192665303889
+        },
+        "independiente-medellin": {
+          "ataque": 1.0143335408871963,
+          "defesa": 1.1437529039788585
+        },
+        "independiente-rivadavia": {
+          "ataque": 1.5169076980823015,
+          "defesa": 0.8053957023127922
+        },
+        "independiente-santa-fe": {
+          "ataque": 0.9580780643083165,
+          "defesa": 0.9227344674633721
+        },
+        "lanus": {
+          "ataque": 0.6397423511097754,
+          "defesa": 0.8638653625347016
+        },
+        "libertad": {
+          "ataque": 0.794376589577268,
+          "defesa": 1.3149120390067257
+        },
+        "liga-de-quito": {
+          "ataque": 1.1319508451472493,
+          "defesa": 0.7644521099997855
+        },
+        "mirassol": {
+          "ataque": 0.977421066745403,
+          "defesa": 0.6827652295288517
+        },
+        "nacional": {
+          "ataque": 1.0762907212433692,
+          "defesa": 1.1372895931803808
+        },
+        "palmeiras": {
+          "ataque": 1.288663642826667,
+          "defesa": 0.8120173230062274
+        },
+        "penarol": {
+          "ataque": 0.7638025576295455,
+          "defesa": 0.9687609515887057
+        },
+        "platense": {
+          "ataque": 1.126340729291623,
+          "defesa": 0.9557070487126499
+        },
+        "rosario-central": {
+          "ataque": 0.9744420775244279,
+          "defesa": 0.33837348784495963
+        },
+        "sporting-cristal": {
+          "ataque": 0.9606301964106677,
+          "defesa": 1.072371106998776
+        },
+        "ucv-fc": {
+          "ataque": 1.0899376471295266,
+          "defesa": 1.228973918518287
+        },
+        "universidad-catolica": {
+          "ataque": 1.0239652563233026,
+          "defesa": 0.8894661721212063
+        },
+        "universitario": {
+          "ataque": 0.8007494784542423,
+          "defesa": 0.8104283563281027
+        }
+      }
+    },
+    {
+      "id": "oitavas-2",
+      "rotulo": "Após as oitavas",
+      "curto": "OF",
+      "ate": "2026-08-25T21:30:00-03:00",
+      "jogos_usados": 112,
+      "fator_casa": 1.5511928476898378,
+      "times": {
+        "always-ready": {
+          "ataque": 1.1557591886467529,
+          "defesa": 1.172095424699604
+        },
+        "atletico-junior": {
+          "ataque": 0.9063533619134398,
+          "defesa": 1.2319082567858166
+        },
+        "barcelona-sc": {
+          "ataque": 0.57838725750973,
+          "defesa": 1.3483450486392525
+        },
+        "boca-juniors": {
+          "ataque": 0.8733432152403322,
+          "defesa": 0.7869859838465031
+        },
+        "bolivar": {
+          "ataque": 0.8815996967992653,
+          "defesa": 0.9176243777005895
+        },
+        "cerro-porteno": {
+          "ataque": 0.7957343413437898,
+          "defesa": 0.48283116591534064
+        },
+        "coquimbo-unido": {
+          "ataque": 0.9568007127594932,
+          "defesa": 0.7618227984521814
+        },
+        "corinthians": {
+          "ataque": 1.1100439427489261,
+          "defesa": 0.5435618234496827
+        },
+        "cruzeiro": {
+          "ataque": 1.075794261964709,
+          "defesa": 0.6564165675535181
+        },
+        "cusco-fc": {
+          "ataque": 0.8016658675042099,
+          "defesa": 1.1641719876137409
+        },
+        "deportes-tolima": {
+          "ataque": 0.9170996116599759,
+          "defesa": 0.9193668303072133
+        },
+        "deportivo-la-guaira": {
+          "ataque": 0.9830486654503909,
+          "defesa": 1.348521742725144
+        },
+        "estudiantes-de-la-plata": {
+          "ataque": 1.0410132515137542,
+          "defesa": 0.616804277159065
+        },
+        "flamengo": {
+          "ataque": 1.6309157396381246,
+          "defesa": 0.5336674989325036
+        },
+        "fluminense": {
+          "ataque": 0.8589681087375193,
+          "defesa": 0.6963213502930911
+        },
+        "independiente-del-valle": {
+          "ataque": 1.404654751139021,
+          "defesa": 0.780266903855939
+        },
+        "independiente-medellin": {
+          "ataque": 1.0102082005983832,
+          "defesa": 1.1341746987556727
+        },
+        "independiente-rivadavia": {
+          "ataque": 1.5238140024133977,
+          "defesa": 0.8013701238864209
+        },
+        "independiente-santa-fe": {
+          "ataque": 1.0075874541355858,
+          "defesa": 0.9062936701421717
+        },
+        "lanus": {
+          "ataque": 0.6559505778769327,
+          "defesa": 0.877118377516826
+        },
+        "libertad": {
+          "ataque": 0.7856252038261399,
+          "defesa": 1.305343359728562
+        },
+        "liga-de-quito": {
+          "ataque": 1.0580837170890427,
+          "defesa": 0.7118209684100523
+        },
+        "mirassol": {
+          "ataque": 0.9298078701699424,
+          "defesa": 0.6059614660729657
+        },
+        "nacional": {
+          "ataque": 1.0605437601404804,
+          "defesa": 1.167202565825537
+        },
+        "palmeiras": {
+          "ataque": 1.3106234057799617,
+          "defesa": 0.740584211820215
+        },
+        "penarol": {
+          "ataque": 0.8026461030778711,
+          "defesa": 0.9501821309261851
+        },
+        "platense": {
+          "ataque": 1.0814729043328881,
+          "defesa": 0.8303775325066299
+        },
+        "rosario-central": {
+          "ataque": 0.9381581410796604,
+          "defesa": 0.3594127980779955
+        },
+        "sporting-cristal": {
+          "ataque": 0.9726564931629583,
+          "defesa": 1.0762883608273721
+        },
+        "ucv-fc": {
+          "ataque": 1.0791659961566835,
+          "defesa": 1.2187535694534664
+        },
+        "universidad-catolica": {
+          "ataque": 1.0251615612312872,
+          "defesa": 0.8809256141527982
+        },
+        "universitario": {
+          "ataque": 0.7873126343593495,
+          "defesa": 0.8301058396645719
+        }
+      }
+    },
+    {
+      "id": "quartas-1",
+      "rotulo": "Após a ida das quartas",
+      "curto": "QF ida",
+      "ate": "2026-09-10T21:30:00-03:00",
+      "jogos_usados": 116,
+      "fator_casa": 1.5525493105111425,
+      "times": {
+        "always-ready": {
+          "ataque": 1.1565090533052234,
+          "defesa": 1.1896446961975584
+        },
+        "atletico-junior": {
+          "ataque": 0.9226857259137289,
+          "defesa": 1.228356193525433
+        },
+        "barcelona-sc": {
+          "ataque": 0.5828697419083744,
+          "defesa": 1.3360825848303062
+        },
+        "boca-juniors": {
+          "ataque": 0.8805220751905465,
+          "defesa": 0.7795625257185899
+        },
+        "bolivar": {
+          "ataque": 0.9124974778590583,
+          "defesa": 0.884194631259198
+        },
+        "cerro-porteno": {
+          "ataque": 0.8167812207163185,
+          "defesa": 0.4841737288677456
+        },
+        "coquimbo-unido": {
+          "ataque": 0.937103832778185,
+          "defesa": 0.7773530717123323
+        },
+        "corinthians": {
+          "ataque": 1.1098199609554384,
+          "defesa": 0.5629158518245894
+        },
+        "cruzeiro": {
+          "ataque": 1.1002683377860998,
+          "defesa": 0.6458322005708361
+        },
+        "cusco-fc": {
+          "ataque": 0.8239908945876201,
+          "defesa": 1.134006705658812
+        },
+        "deportes-tolima": {
+          "ataque": 0.8992719171217441,
+          "defesa": 0.9418312194047935
+        },
+        "deportivo-la-guaira": {
+          "ataque": 1.0174025827267994,
+          "defesa": 1.2995914031686089
+        },
+        "estudiantes-de-la-plata": {
+          "ataque": 1.07721824536778,
+          "defesa": 0.6233320321630911
+        },
+        "flamengo": {
+          "ataque": 1.6987417557303333,
+          "defesa": 0.456700425792949
+        },
+        "fluminense": {
+          "ataque": 0.9388605801411071,
+          "defesa": 0.637091154587224
+        },
+        "independiente-del-valle": {
+          "ataque": 1.3048218016467337,
+          "defesa": 0.8384798771018743
+        },
+        "independiente-medellin": {
+          "ataque": 1.0385786138926336,
+          "defesa": 1.1049042115609335
+        },
+        "independiente-rivadavia": {
+          "ataque": 1.5874924258657603,
+          "defesa": 0.7664255304170879
+        },
+        "independiente-santa-fe": {
+          "ataque": 0.9802848481532315,
+          "defesa": 0.9246913277877351
+        },
+        "lanus": {
+          "ataque": 0.6548767643724699,
+          "defesa": 0.8882492153326716
+        },
+        "libertad": {
+          "ataque": 0.7630525894991961,
+          "defesa": 1.3475814540565305
+        },
+        "liga-de-quito": {
+          "ataque": 0.9878869057173955,
+          "defesa": 0.6824067410534629
+        },
+        "mirassol": {
+          "ataque": 0.9352831887189007,
+          "defesa": 0.6211966789128259
+        },
+        "nacional": {
+          "ataque": 1.0475431485692068,
+          "defesa": 1.1792694369473695
+        },
+        "palmeiras": {
+          "ataque": 1.2810022256907165,
+          "defesa": 0.6766448727724815
+        },
+        "penarol": {
+          "ataque": 0.7807288742434384,
+          "defesa": 0.9697552109280512
+        },
+        "platense": {
+          "ataque": 1.0086450224844061,
+          "defesa": 0.8918532451463729
+        },
+        "rosario-central": {
+          "ataque": 0.9096990842569265,
+          "defesa": 0.3683231240365918
+        },
+        "sporting-cristal": {
+          "ataque": 0.9896133144824608,
+          "defesa": 1.0732131182605296
+        },
+        "ucv-fc": {
+          "ataque": 1.0484473272949972,
+          "defesa": 1.2584845908955482
+        },
+        "universidad-catolica": {
+          "ataque": 1.0299505362047592,
+          "defesa": 0.8674901963685002
+        },
+        "universitario": {
+          "ataque": 0.7775499268184112,
+          "defesa": 0.8385490906903931
+        }
+      }
+    },
+    {
+      "id": "quartas-2",
+      "rotulo": "Após as quartas",
+      "curto": "QF",
+      "ate": "2026-09-17T21:30:00-03:00",
+      "jogos_usados": 120,
+      "fator_casa": 1.5305658141983325,
+      "times": {
+        "always-ready": {
+          "ataque": 1.1510828731123288,
+          "defesa": 1.1659230418259436
+        },
+        "atletico-junior": {
+          "ataque": 0.890611563529178,
+          "defesa": 1.243080399909718
+        },
+        "barcelona-sc": {
+          "ataque": 0.5822840243951162,
+          "defesa": 1.3494835959217624
+        },
+        "boca-juniors": {
+          "ataque": 0.8787218248051932,
+          "defesa": 0.7880628139228868
+        },
+        "bolivar": {
+          "ataque": 0.8925351201056149,
+          "defesa": 0.9075185066645126
+        },
+        "cerro-porteno": {
+          "ataque": 0.7755837641000849,
+          "defesa": 0.48433780246870906
+        },
+        "coquimbo-unido": {
+          "ataque": 0.9334445278426001,
+          "defesa": 0.7739365689986596
+        },
+        "corinthians": {
+          "ataque": 1.0263961763024756,
+          "defesa": 0.588417030125366
+        },
+        "cruzeiro": {
+          "ataque": 1.0944214651397839,
+          "defesa": 0.6590876811910577
+        },
+        "cusco-fc": {
+          "ataque": 0.828235757293641,
+          "defesa": 1.153729200207629
+        },
+        "deportes-tolima": {
+          "ataque": 0.9147806129526307,
+          "defesa": 0.945666203205373
+        },
+        "deportivo-la-guaira": {
+          "ataque": 0.9940122620126343,
+          "defesa": 1.3326136248061238
+        },
+        "estudiantes-de-la-plata": {
+          "ataque": 1.0930184901640612,
+          "defesa": 0.5810855400036424
+        },
+        "flamengo": {
+          "ataque": 1.6400048790547759,
+          "defesa": 0.4817439552105848
+        },
+        "fluminense": {
+          "ataque": 0.93660711598967,
+          "defesa": 0.7041574788908044
+        },
+        "independiente-del-valle": {
+          "ataque": 1.3353697002344125,
+          "defesa": 0.7754474452817228
+        },
+        "independiente-medellin": {
+          "ataque": 1.0433605253262666,
+          "defesa": 1.124690415490795
+        },
+        "independiente-rivadavia": {
+          "ataque": 1.5354986400799944,
+          "defesa": 0.7817227792094855
+        },
+        "independiente-santa-fe": {
+          "ataque": 0.9649334989374381,
+          "defesa": 0.9429310754487246
+        },
+        "lanus": {
+          "ataque": 0.6551625399676936,
+          "defesa": 0.8747640353043065
+        },
+        "libertad": {
+          "ataque": 0.7806147974015026,
+          "defesa": 1.3418661607436482
+        },
+        "liga-de-quito": {
+          "ataque": 1.1286745863583676,
+          "defesa": 0.7547696816842588
+        },
+        "mirassol": {
+          "ataque": 0.9205677722603924,
+          "defesa": 0.5969770683785383
+        },
+        "nacional": {
+          "ataque": 1.051637076671246,
+          "defesa": 1.187127024816264
+        },
+        "palmeiras": {
+          "ataque": 1.3473321547343862,
+          "defesa": 0.813373549434189
+        },
+        "penarol": {
+          "ataque": 0.7689522956061801,
+          "defesa": 0.9891006006374464
+        },
+        "platense": {
+          "ataque": 1.065177524113971,
+          "defesa": 0.9285546248697192
+        },
+        "rosario-central": {
+          "ataque": 0.9240285957699214,
+          "defesa": 0.3737841755142268
+        },
+        "sporting-cristal": {
+          "ataque": 0.9563129309787183,
+          "defesa": 1.0860712752015251
+        },
+        "ucv-fc": {
+          "ataque": 1.071699544474287,
+          "defesa": 1.2538178883606697
+        },
+        "universidad-catolica": {
+          "ataque": 1.0378549830528276,
+          "defesa": 0.8753795181736074
+        },
+        "universitario": {
+          "ataque": 0.7810823772326055,
+          "defesa": 0.8446871157601229
+        }
+      }
+    },
+    {
+      "id": "semifinal-1",
+      "rotulo": "Após a ida das semifinais",
+      "curto": "SF ida",
+      "ate": "2026-10-15T21:30:00-03:00",
+      "jogos_usados": 122,
+      "fator_casa": 1.5230767997233159,
+      "times": {
+        "always-ready": {
+          "ataque": 1.158241442017509,
+          "defesa": 1.1638324567353862
+        },
+        "atletico-junior": {
+          "ataque": 0.9063797681374555,
+          "defesa": 1.2124015824988474
+        },
+        "barcelona-sc": {
+          "ataque": 0.5806246475112582,
+          "defesa": 1.3468640993389245
+        },
+        "boca-juniors": {
+          "ataque": 0.8773057864999713,
+          "defesa": 0.7860768659524121
+        },
+        "bolivar": {
+          "ataque": 0.8720667351949787,
+          "defesa": 0.9264333096746024
+        },
+        "cerro-porteno": {
+          "ataque": 0.7902386504078777,
+          "defesa": 0.46797012874577326
+        },
+        "coquimbo-unido": {
+          "ataque": 0.9337169282253104,
+          "defesa": 0.7780549021553388
+        },
+        "corinthians": {
+          "ataque": 1.0355221370390209,
+          "defesa": 0.5966056245296762
+        },
+        "cruzeiro": {
+          "ataque": 1.1046263974249237,
+          "defesa": 0.6668447343603117
+        },
+        "cusco-fc": {
+          "ataque": 0.8439965355169691,
+          "defesa": 1.1775425811962272
+        },
+        "deportes-tolima": {
+          "ataque": 0.9131891569856212,
+          "defesa": 0.9458487431705233
+        },
+        "deportivo-la-guaira": {
+          "ataque": 0.9706547425827516,
+          "defesa": 1.3603018169833594
+        },
+        "estudiantes-de-la-plata": {
+          "ataque": 1.0405359216323455,
+          "defesa": 0.5354523668275827
+        },
+        "flamengo": {
+          "ataque": 1.5788516247257205,
+          "defesa": 0.4421555005123786
+        },
+        "fluminense": {
+          "ataque": 0.9192160608520797,
+          "defesa": 0.7687517077021347
+        },
+        "independiente-del-valle": {
+          "ataque": 1.347754171345888,
+          "defesa": 0.7848679996367075
+        },
+        "independiente-medellin": {
+          "ataque": 1.063643584205663,
+          "defesa": 1.1497998702013408
+        },
+        "independiente-rivadavia": {
+          "ataque": 1.486760765728923,
+          "defesa": 0.7954854768812644
+        },
+        "independiente-santa-fe": {
+          "ataque": 0.9626644673821514,
+          "defesa": 0.9467270906190086
+        },
+        "lanus": {
+          "ataque": 0.6588461907547316,
+          "defesa": 0.8728662068719936
+        },
+        "libertad": {
+          "ataque": 0.7800819109419503,
+          "defesa": 1.3423867372741376
+        },
+        "liga-de-quito": {
+          "ataque": 1.1357904731147195,
+          "defesa": 0.7427888575831441
+        },
+        "mirassol": {
+          "ataque": 0.9278056464900374,
+          "defesa": 0.5956426703806043
+        },
+        "nacional": {
+          "ataque": 1.0519762006251672,
+          "defesa": 1.1904438718731698
+        },
+        "palmeiras": {
+          "ataque": 1.4431991956583854,
+          "defesa": 0.7984353431433732
+        },
+        "penarol": {
+          "ataque": 0.7670180010764112,
+          "defesa": 0.9931357584485787
+        },
+        "platense": {
+          "ataque": 1.0509134418218486,
+          "defesa": 0.9327835938439324
+        },
+        "rosario-central": {
+          "ataque": 0.9228437625354581,
+          "defesa": 0.37314479970944336
+        },
+        "sporting-cristal": {
+          "ataque": 0.9736645327816651,
+          "defesa": 1.059139780073553
+        },
+        "ucv-fc": {
+          "ataque": 1.0712119248093153,
+          "defesa": 1.2540759991259978
+        },
+        "universidad-catolica": {
+          "ataque": 1.0495122720525414,
+          "defesa": 0.885320754157843
+        },
+        "universitario": {
+          "ataque": 0.7811469239213497,
+          "defesa": 0.8468494306084354
+        }
+      }
+    },
+    {
+      "id": "semifinal-2",
+      "rotulo": "Após as semifinais",
+      "curto": "SF",
+      "ate": "2026-10-22T21:30:00-03:00",
+      "jogos_usados": 124,
+      "fator_casa": 1.5009739030406752,
+      "times": {
+        "always-ready": {
+          "ataque": 1.1524737351360197,
+          "defesa": 1.177169924560679
+        },
+        "atletico-junior": {
+          "ataque": 0.8876201006926124,
+          "defesa": 1.2644002369507077
+        },
+        "barcelona-sc": {
+          "ataque": 0.5796338319019197,
+          "defesa": 1.3503743543347857
+        },
+        "boca-juniors": {
+          "ataque": 0.8773408309647424,
+          "defesa": 0.7873355816972237
+        },
+        "bolivar": {
+          "ataque": 0.9016374917890436,
+          "defesa": 0.9086585941003745
+        },
+        "cerro-porteno": {
+          "ataque": 0.7726057949387296,
+          "defesa": 0.4931530844041312
+        },
+        "coquimbo-unido": {
+          "ataque": 0.9373945128500729,
+          "defesa": 0.7793513106217174
+        },
+        "corinthians": {
+          "ataque": 1.0546691221390274,
+          "defesa": 0.600275364834462
+        },
+        "cruzeiro": {
+          "ataque": 1.1129645981688654,
+          "defesa": 0.677749590281611
+        },
+        "cusco-fc": {
+          "ataque": 0.8593693350313268,
+          "defesa": 1.2035364319977326
+        },
+        "deportes-tolima": {
+          "ataque": 0.9141165518770183,
+          "defesa": 0.9497945378794668
+        },
+        "deportivo-la-guaira": {
+          "ataque": 1.0046407842186325,
+          "defesa": 1.335260779654085
+        },
+        "estudiantes-de-la-plata": {
+          "ataque": 1.0127685331919005,
+          "defesa": 0.48327886116321317
+        },
+        "flamengo": {
+          "ataque": 1.513911725009548,
+          "defesa": 0.42217354386538924
+        },
+        "fluminense": {
+          "ataque": 0.946620510310433,
+          "defesa": 0.6897174572223762
+        },
+        "independiente-del-valle": {
+          "ataque": 1.3575759541980565,
+          "defesa": 0.7983122607937135
+        },
+        "independiente-medellin": {
+          "ataque": 1.0838006396645157,
+          "defesa": 1.1769847193869074
+        },
+        "independiente-rivadavia": {
+          "ataque": 1.5575209151212746,
+          "defesa": 0.7833594958713193
+        },
+        "independiente-santa-fe": {
+          "ataque": 0.968493161450604,
+          "defesa": 0.943549964000086
+        },
+        "lanus": {
+          "ataque": 0.6549206405052231,
+          "defesa": 0.8826249576814753
+        },
+        "libertad": {
+          "ataque": 0.7798613282295533,
+          "defesa": 1.3499134527777321
+        },
+        "liga-de-quito": {
+          "ataque": 1.1301691253293915,
+          "defesa": 0.7650516522600895
+        },
+        "mirassol": {
+          "ataque": 0.9208597183336867,
+          "defesa": 0.601993758880886
+        },
+        "nacional": {
+          "ataque": 1.0555560883258066,
+          "defesa": 1.1974277914864457
+        },
+        "palmeiras": {
+          "ataque": 1.3224979048323173,
+          "defesa": 0.825937006797333
+        },
+        "penarol": {
+          "ataque": 0.7713093374633765,
+          "defesa": 0.9900568848507166
+        },
+        "platense": {
+          "ataque": 1.0738190317436773,
+          "defesa": 0.9307790144351173
+        },
+        "rosario-central": {
+          "ataque": 0.9233825374186229,
+          "defesa": 0.3734087830950069
+        },
+        "sporting-cristal": {
+          "ataque": 0.9531441898928515,
+          "defesa": 1.1044885782327967
+        },
+        "ucv-fc": {
+          "ataque": 1.0715705118833059,
+          "defesa": 1.260914909283892
+        },
+        "universidad-catolica": {
+          "ataque": 1.0644685310398825,
+          "defesa": 0.8954425839598434
+        },
+        "universitario": {
+          "ataque": 0.7832829263479617,
+          "defesa": 0.8512655691574508
+        }
+      }
+    }
+  ]
+}

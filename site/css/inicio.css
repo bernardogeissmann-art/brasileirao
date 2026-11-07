@@ -64,6 +64,10 @@
   color: var(--cor-tinta-suave);
 }
 
+.jogos-do-dia__copa + .jogos-do-dia__copa {
+  margin-top: 36px;
+}
+
 .jogos-do-dia__copa-titulo {
   display: flex;
   align-items: center;

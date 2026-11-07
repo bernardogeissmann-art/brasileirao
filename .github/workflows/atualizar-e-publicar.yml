@@ -90,12 +90,21 @@ jobs:
         # "npm ci" instala exatamente as versões anotadas no package-lock.json.
         run: npm ci
 
-      - name: Copa Sul-Americana (jogos da ESPN, sem chave)
-        # Baixa os jogos, estima o modelo e calcula as chances de cada momento. Se algo falhar,
-        # volta os arquivos da Sul-Americana para a versão anterior e segue (o resto é publicado).
+      - name: Copas (Libertadores, Copa do Brasil e Sul-Americana; jogos da ESPN, sem chave)
+        # Para cada copa: baixa os jogos, estima o modelo e calcula as chances de cada momento.
+        # Se algo falhar numa copa, volta os arquivos dela para a versão anterior e segue com as
+        # outras (o resto do site é publicado mesmo assim).
         continue-on-error: true
         run: |
-          python scripts/copas/baixar_sulamericana.py             && python scripts/estaduais/estimar_estadual.py sulamericana-2026             && node scripts/estaduais/calcular_chances.js sulamericana-2026             || { git checkout -- data/copas; exit 1; }
+          falhou=0
+          for copa in libertadores copa-do-brasil sulamericana; do
+            script="scripts/copas/baixar_$(echo "$copa" | tr '-' '_').py"
+            python "$script" \
+              && python scripts/estaduais/estimar_estadual.py "$copa-2026" \
+              && node scripts/estaduais/calcular_chances.js "$copa-2026" \
+              || { git checkout -- "data/copas/$copa-2026"; falhou=1; }
+          done
+          exit $falhou
 
       - name: Meu Time - notícias do dia (sem IA)
         run: node scripts/meu_time/atualizar_noticias.js

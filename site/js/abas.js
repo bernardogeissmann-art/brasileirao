@@ -26,6 +26,8 @@ export const ABAS = [
       {
         rotulo: "Copas",
         itens: [
+          { id: "libertadores", rotulo: "Copa Libertadores", endereco: "libertadores.html", simbolo: "assets/simbolos/libertadores.png" },
+          { id: "copa-do-brasil", rotulo: "Copa do Brasil", endereco: "copa-do-brasil.html", simbolo: "assets/simbolos/copa-do-brasil.png" },
           { id: "sulamericana", rotulo: "Copa Sul-Americana", endereco: "sulamericana.html", simbolo: "assets/simbolos/sulamericana.png" },
         ],
       },

@@ -71,8 +71,18 @@ export function prepararMomento(dados, momento) {
     return dados.jogos.filter((j) => j.fase === fase).map((j) => [numero.get(j.mandante), numero.get(j.visitante)]);
   }
 
+  // Os confrontos de uma fase de mata-mata como estão no arquivo de jogos (já sorteados), cada um
+  // como [quem joga em casa a ida, quem joga em casa a volta] (ou [mandante, visitante] num jogo único).
+  function confrontosDaFase(fase) {
+    const primeiroJogo = new Map();
+    for (const j of [...dados.jogos].sort((a, b) => a.data.localeCompare(b.data))) {
+      if (j.fase === fase && !primeiroJogo.has(j.confronto)) primeiroJogo.set(j.confronto, j);
+    }
+    return [...primeiroJogo.values()].map((j) => [numero.get(j.mandante), numero.get(j.visitante)]);
+  }
+
   return {
-    ids, n, numero, grupos, calendario, roleta,
+    ids, n, numero, grupos, calendario, roleta, confrontosDaFase,
     // Já houve algum jogo real desta fase neste momento? (ex.: o sorteio do mata-mata já foi feito)
     temJogosReais: (fase) => reais.has(fase),
     real: (fase, m, v) => reais.get(fase)?.[m * n + v],

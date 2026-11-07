@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Copa do Brasil 2026 · Prob.com</title>
+  <meta name="description" content="As chances de cada time na Copa do Brasil 2026, e como elas mudaram ao longo da competição.">
+  <meta name="theme-color" content="#14161a">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2314161a'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23c8f03c'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/componentes.css">
+  <link rel="stylesheet" href="css/estadual.css">
+  <link rel="stylesheet" href="css/duelo.css">
+
+  <script type="module" src="js/estadual.js"></script>
+</head>
+<!-- data-campeonato diz ao estadual.js qual campeonato mostrar (o formato em site/js/copas/). -->
+<body data-campeonato="copa-do-brasil-2026">
+  <header class="topo" id="topo"></header>
+
+  <main>
+    <section class="abertura abertura--compacta">
+      <div class="largura">
+        <p class="abertura__chapeu" id="chapeu">Copa do Brasil</p>
+        <h1 class="abertura__titulo" id="titulo">Copa do Brasil</h1>
+        <p class="abertura__texto" id="resumo">Carregando…</p>
+        <div class="destaques" id="destaques"></div>
+      </div>
+    </section>
+
+    <div class="largura estadual">
+      <section class="estadual__secao" aria-labelledby="titulo-evolucao">
+        <h2 class="titulo-secao" id="titulo-evolucao">Como as chances mudaram</h2>
+        <p class="estadual__texto">Escolha o que acompanhar e o time em destaque (ou clique numa linha cinza).</p>
+        <div class="estadual__controles">
+          <div class="segmentado" id="metricas" role="group" aria-label="O que mostrar no gráfico"></div>
+          <label class="estadual__escolha">
+            <span class="so-leitor">Time em destaque</span>
+            <select class="seletor" id="time-destaque"></select>
+          </label>
+        </div>
+        <div class="estadual__grafico grafico" id="grafico"></div>
+      </section>
+
+      <section class="estadual__secao" aria-labelledby="titulo-momento">
+        <h2 class="titulo-secao" id="titulo-momento">Os times em cada momento</h2>
+        <div class="momento" id="momento">
+          <p class="momento__rotulo" id="momento-rotulo" aria-live="polite"></p>
+          <button type="button" class="momento__passo" id="momento-anterior" aria-label="Momento anterior">‹</button>
+          <input type="range" class="momento__trilho" id="momento-trilho" min="0" max="0" value="0" aria-label="Momento do campeonato">
+          <button type="button" class="momento__passo" id="momento-proximo" aria-label="Próximo momento">›</button>
+        </div>
+        <div class="estadual__legenda" id="legenda"></div>
+        <div class="grupos" id="grupos"></div>
+        <p class="nota">A Copa do Brasil não tem fase de grupos: cada card mostra a campanha do time na copa (a partir da 5ª fase) e as chances dele em cada momento, usando só o que já tinha acontecido até ali. O modelo usa só os jogos da própria Copa do Brasil (as quatro primeiras fases ficam de fora).</p>
+      </section>
+
+      <section class="estadual__secao" aria-labelledby="titulo-regras">
+        <h2 class="titulo-secao" id="titulo-regras">Como funciona o campeonato</h2>
+        <ul class="lista-regras" id="regras"></ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="rodape" id="rodape"></footer>
+</body>
+</html>

@@ -51,6 +51,20 @@ export function copaNoDia(jogosDaCopa, outros, agora = new Date()) {
   return diasDosOutros.every((dia) => daCopa.dia <= dia) ? daCopa : null;
 }
 
+// O mesmo, para várias copas (Libertadores, Copa do Brasil, Sul-Americana): o dia das copas é o
+// mais próximo entre os dias que cada uma mostraria. Vale quando ele vem antes ou junto do dia de
+// cada um dos outros campeonatos. Devolve { dia, copas: [posição de cada copa que joga nesse dia] }
+// ou null (não é dia de copa: vale o normal).
+export function copasNoDia(listasDasCopas, outros, agora = new Date()) {
+  const dias = listasDasCopas.map((jogos) => escolherJogosDoDia(jogos, agora)?.dia ?? null);
+  const comJogo = dias.filter(Boolean).sort();
+  if (comJogo.length === 0) return null;   // as copas acabaram
+  const dia = comJogo[0];
+  const diasDosOutros = outros.map((jogos) => escolherJogosDoDia(jogos, agora)?.dia).filter(Boolean);
+  if (!diasDosOutros.every((outro) => dia <= outro)) return null;
+  return { dia, copas: dias.map((d, i) => (d === dia ? i : -1)).filter((i) => i >= 0) };
+}
+
 // Lê os dados de uma copa que usa o motor dos estaduais (ex.: data/copas/sulamericana-2026):
 // os jogos e o modelo mais recente (o último "momento" do modelos.json).
 // Devolve { jogos, modelo }, no mesmo jeito que o carregarDados() do Brasileirão.

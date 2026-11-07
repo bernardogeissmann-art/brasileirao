@@ -7,13 +7,13 @@ import { tabelaDoGrupo } from "./motor.js";
 
 // O nome de cada fase, para mostrar na tela.
 export const NOMES_DAS_FASES = {
-  "primeira-fase": "Fase de grupos", playoffs: "Playoffs", oitavas: "Oitavas de final",
+  "primeira-fase": "Fase de grupos", "quinta-fase": "5ª fase", playoffs: "Playoffs", oitavas: "Oitavas de final",
   quartas: "Quartas de final", semifinal: "Semifinal", final: "Final",
 };
 
 // Qual chance quer dizer "passou desta fase": quem vence as quartas vai à semifinal, e assim por
 // diante. Quem vence a final é campeão.
-export const DEPOIS_DA_FASE = { playoffs: "oitavas", oitavas: "quartas", quartas: "semifinal", semifinal: "final", final: "titulo" };
+export const DEPOIS_DA_FASE = { "quinta-fase": "oitavas", playoffs: "oitavas", oitavas: "quartas", quartas: "semifinal", semifinal: "final", final: "titulo" };
 
 const porData = (a, b) => a.data.localeCompare(b.data);
 
@@ -26,12 +26,14 @@ export function descreverFase(jogo) {
   return `${nome} · ${jogo.perna === 1 ? "ida" : "volta"}`;
 }
 
-// O mata-mata está rolando? Sim quando a 1ª fase já acabou e ainda não há campeão.
+// O mata-mata está rolando? Sim quando a 1ª fase já acabou e ainda não há campeão. Num campeonato
+// sem 1ª fase (a Copa do Brasil, que é mata-mata do começo ao fim), basta já ter começado.
 export function mataMataEmAndamento(dados, chances) {
   const fim = chances.momentos[chances.momentos.length - 1].times;
   const temCampeao = Object.values(fim).some((t) => t.titulo === 1);
   const primeiraFase = dados.jogos.filter((j) => j.fase === "primeira-fase");
-  return !temCampeao && primeiraFase.length > 0 && primeiraFase.every((j) => j.disputado);
+  const comecou = primeiraFase.length > 0 ? primeiraFase.every((j) => j.disputado) : dados.jogos.some((j) => j.disputado);
+  return !temCampeao && comecou;
 }
 
 // Os times que ainda podem ser campeões (chance de título acima de zero no momento mais

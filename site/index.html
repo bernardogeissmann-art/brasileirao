@@ -62,16 +62,10 @@
           <p class="jogos-do-dia__data" id="jogos-do-dia-data"></p>
         </div>
 
-        <!-- Nos dias de jogo da Copa Sul-Americana, ela vem primeiro; as Séries A e B só
-             aparecem se também jogarem nesse dia. -->
-        <div class="jogos-do-dia__copa" id="jogos-sula" hidden>
-          <h3 class="titulo-secao jogos-do-dia__copa-titulo">
-            <img src="../assets/simbolos/sulamericana.png" alt="" width="28" height="28">
-            Copa Sul-Americana <span class="jogos-do-dia__quantos" id="jogos-sula-quantos"></span>
-          </h3>
-          <ol class="lista-confrontos" id="jogos-sula-lista"></ol>
-          <p class="jogos-do-dia__acao"><a class="botao" href="sulamericana.html">Ver Copa Sul-Americana</a></p>
-        </div>
+        <!-- Nos dias de jogo das copas (Libertadores, Copa do Brasil, Sul-Americana), elas vêm
+             primeiro (o inicio.js põe aqui uma parte para cada copa que joga no dia); as Séries A
+             e B só aparecem se também jogarem nesse dia. -->
+        <div id="jogos-copas"></div>
 
         <div id="jogos-serie-a">
           <!-- Este título só aparece nos dias da Sul-Americana, para separar os dois campeonatos. -->

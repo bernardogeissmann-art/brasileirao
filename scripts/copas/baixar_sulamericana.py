@@ -3,6 +3,7 @@
 # e salva em data/copas/sulamericana-<ano>/jogos.json. Também junta os escudos em
 # assets/escudos/sulamericana/ (os clubes brasileiros usam o mesmo escudo do Brasileirão)
 # e anota onde assistir aos próximos jogos (canais informados pelo ge.globo).
+# As ferramentas comuns às copas ficam em comum_copas.py.
 #
 # Como rodar (na pasta do projeto):
 #     python scripts/copas/baixar_sulamericana.py
@@ -19,24 +20,14 @@
 # Para outro ano: troque ANO e MESES e confira as listas TIMES e FASES (a ESPN avisa time novo).
 
 import sys
-from datetime import datetime
-from pathlib import Path
 
-# Este script usa ferramentas que moram em outras pastas (scripts/ e scripts/estaduais/).
-# "sys.path" é a lista de pastas onde o Python procura os arquivos importados.
-PASTA_SCRIPTS = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(PASTA_SCRIPTS))
-sys.path.insert(0, str(PASTA_SCRIPTS / "estaduais"))
-
-import comum          # noqa: E402  (scripts/estaduais/comum.py)
-import espn           # noqa: E402  (scripts/estaduais/espn.py)
-import transmissoes   # noqa: E402  (scripts/transmissoes.py)
+import comum_copas as cc
 
 ANO = 2026
 MESES = ["04", "05", "06", "07", "08", "09", "10", "11", "12"]   # da fase de grupos à final
 LIGA_ESPN = "conmebol.sudamericana"
-PASTA_DADOS = comum.PASTA_PROJETO / "data" / "copas" / f"sulamericana-{ANO}"
-PASTA_ESCUDOS = comum.PASTA_PROJETO / "assets" / "escudos" / "sulamericana"
+PASTA_DADOS = cc.PASTA_PROJETO / "data" / "copas" / f"sulamericana-{ANO}"
+PASTA_ESCUDOS = cc.PASTA_PROJETO / "assets" / "escudos" / "sulamericana"
 TOTAL_JOGOS = 141   # 96 da fase de grupos + 16 dos playoffs + 16 das oitavas + 8 das quartas + 4 das semis + a final
 
 # Número do time na ESPN -> (id, nome para mostrar, sigla, grupo, país).
@@ -86,9 +77,6 @@ TIMES = {
     "10094": ("ucv", "UCV", "UCV", "LIB", "Venezuela"),
 }
 
-# Clubes que também estão no Brasileirão: usam o mesmo escudo de lá (o id é o mesmo).
-DO_BRASILEIRAO = {id_: id_ for (id_, _, _, _, pais) in TIMES.values() if pais == "Brasil"}
-
 # Nome da fase na ESPN -> nome da fase no nosso arquivo. "primeira-fase" é a fase de grupos
 # (o nome usado por todas as ferramentas dos estaduais para a fase com tabela).
 FASES = {
@@ -114,114 +102,27 @@ GE = {
 }
 
 
-def ler_jogos(eventos):
-    """Transforma os eventos da ESPN na nossa lista de jogos (e guarda o escudo de cada time)."""
-    jogos = []
-    escudos = {}
-    for evento in eventos:
-        slug = evento["season"]["slug"]
-        if slug in FASES_IGNORADAS:
-            continue
-        if slug not in FASES:
-            sys.exit(f"Erro: fase desconhecida na ESPN: '{slug}'. Atualize a lista FASES.")
-        fase = FASES[slug]
-        competicao = evento["competitions"][0]
-        lados = {c["homeAway"]: c for c in competicao["competitors"]}
-        casa, fora = lados["home"], lados["away"]
-        ids = []
-        for lado in (casa, fora):
-            numero = lado["team"]["id"]
-            if numero not in TIMES:
-                sys.exit(f"Erro: time desconhecido na ESPN: {numero} ({lado['team']['displayName']}). "
-                         "Atualize a lista TIMES.")
-            ids.append(TIMES[numero][0])
-            # O escudo numa versão pequena (128 x 128), como na Série B: a página carrega mais rápido.
-            escudo = f"https://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/{numero}.png&w=128&h=128"
-            escudos[TIMES[numero][0]] = (escudo, lado["team"]["displayName"])
-
-        status = competicao["status"]["type"]
-        disputado = bool(status.get("completed"))
-        # A ESPN dá a hora em UTC ("2026-11-21T22:30Z"); convertemos para Brasília.
-        data = datetime.fromisoformat(evento["date"].replace("Z", "+00:00")).astimezone(comum.FUSO_BRASILIA)
-        mandante, visitante = ids
-        mata_mata = fase != "primeira-fase"
-        jogos.append({
-            "id": f"sul{ANO}-{evento['id']}",
-            "numero": int(evento["id"]),
-            "fase": fase,
-            "rodada": None,
-            "confronto": f"{fase}-{'-'.join(sorted(ids))}" if mata_mata else None,
-            "data": data.isoformat(),
-            "mandante": mandante,
-            "visitante": visitante,
-            "neutro": fase in FASES_EM_CAMPO_NEUTRO,
-            "disputado": disputado,
-            "gols_mandante": int(casa["score"]) if disputado else None,
-            "gols_visitante": int(fora["score"]) if disputado else None,
-            "penaltis_mandante": casa.get("shootoutScore"),
-            "penaltis_visitante": fora.get("shootoutScore"),
-            # O site esconde os jogos adiados dos "Jogos do dia" (a data deles não vale mais).
-            "status_fonte": "POSTPONED" if "POSTPONED" in (status.get("name") or "") else status.get("name"),
-            "estadio": (competicao.get("venue") or {}).get("fullName"),
-        })
-    comum.numerar_rodadas([j for j in jogos if j["fase"] == "primeira-fase"])
-    comum.numerar_pernas([j for j in jogos if j["confronto"]])
-    return sorted(jogos, key=lambda j: (j["data"], j["numero"])), escudos
+def identificar(time_espn):
+    """O nosso id de um time da ESPN, pela tabela TIMES (time ainda indefinido, "TBD": fica de fora)."""
+    if "TBD" in time_espn["displayName"]:
+        return None
+    if time_espn["id"] not in TIMES:
+        sys.exit(f"Erro: time desconhecido na ESPN: {time_espn['id']} ({time_espn['displayName']}). "
+                 "Atualize a lista TIMES.")
+    return TIMES[time_espn["id"]][0]
 
 
 def main():
-    print("Baixando os jogos da ESPN...")
-    eventos = espn.baixar_eventos(LIGA_ESPN, ANO, MESES)
-    jogos, escudos = ler_jogos(eventos)
+    eventos = cc.baixar_eventos(LIGA_ESPN, ANO, MESES)
+    jogos, info = cc.ler_jogos(eventos, identificar, FASES, "sul", ANO, FASES_IGNORADAS, FASES_EM_CAMPO_NEUTRO)
     times = {id_: {"nome": nome, "sigla": sigla, "grupo": grupo, "pais": pais}
              for (id_, nome, sigla, grupo, pais) in TIMES.values()}
     # O nome de cada time na ESPN: o placar ao vivo (lido pelo navegador) encontra o jogo por ele.
-    for id_time, (_, nome_espn) in escudos.items():
-        times[id_time]["nome_espn"] = nome_espn
-
-    print("Juntando os escudos...")
-    comum.copiar_escudos_do_brasileirao(PASTA_ESCUDOS, DO_BRASILEIRAO)
-    problemas_escudos = comum.baixar_escudos(times, PASTA_ESCUDOS, lambda id_time: (escudos.get(id_time) or (None,))[0])
-
-    dados = {
-        "competicao": "Copa Sul-Americana",
-        "temporada": ANO,
-        "fonte": "ESPN (site.api.espn.com)",
-        "baixado_em": comum.agora_iso(),
-        # A "liga" da Sul-Americana na ESPN: o site usa para buscar o placar ao vivo.
-        "liga_espn": LIGA_ESPN,
-        "times": dict(sorted(times.items())),
-        "jogos": jogos,
-    }
-
-    print("Procurando onde assistir (ge.globo)...")
-    anotados, avisos = transmissoes.anotar_transmissoes(dados, GE)
-    print(f"  {anotados} jogo(s) com transmissão")
-    for aviso in avisos:
-        print(f"  aviso: {aviso}")
-
-    problemas = comum.conferir_basico(dados, TOTAL_JOGOS, len(TIMES))
-    if problemas:
-        print("Os dados NÃO foram salvos. Problemas:")
-        for p in problemas:
-            print(f"  - {p}")
-        sys.exit(1)
-    comum.salvar_json(PASTA_DADOS / "jogos.json", dados)
-
-    disputados = sum(1 for j in jogos if j["disputado"])
-    print(f"Salvo: {PASTA_DADOS / 'jogos.json'}")
-    print(f"  {len(jogos)} jogos ({disputados} disputados), {len(times)} times")
-    por_fase = {}
-    for j in jogos:
-        por_fase[j["fase"]] = por_fase.get(j["fase"], 0) + 1
-    for fase, n in por_fase.items():
-        print(f"  {fase:<22}{n:>3} jogos")
-    rodadas = sorted({j["rodada"] for j in jogos if j["fase"] == "primeira-fase"})
-    print(f"  fase de grupos em {len(rodadas)} rodadas")
-    salvos = sum(1 for t in times.values() if t["escudo"])
-    print(f"Escudos salvos em {PASTA_ESCUDOS}: {salvos} de {len(times)}")
-    for p in problemas_escudos:
-        print(f"  - {p}")
+    for id_time, i in info.items():
+        times[id_time]["nome_espn"] = i["nome_espn"]
+    cc.salvar_copa(competicao="Copa Sul-Americana", ano=ANO, liga=LIGA_ESPN, pasta_dados=PASTA_DADOS,
+                   pasta_escudos=PASTA_ESCUDOS, times=times, info=info, jogos=jogos, ge=GE,
+                   total_jogos=TOTAL_JOGOS, total_times=len(TIMES))
 
 
 if __name__ == "__main__":

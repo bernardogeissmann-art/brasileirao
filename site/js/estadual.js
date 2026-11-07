@@ -25,6 +25,7 @@ import { painelConfronto, painelSemAdversario, playerDeVideos } from "./componen
 import { formaRecente, atualizarComEspn, situacaoComPlacar, temJogoRolando } from "./jogos-do-dia.js";
 import { chancesDoJogo } from "./simulacao.js";
 import { entradaValida, listaDoYouTube, playerDaEntrada } from "./videos.js";
+import { lerIngressos, enderecoDoIngresso, msAteOProximoInicio } from "./ingressos.js";
 
 const idCampeonato = document.body.dataset.campeonato;
 const formato = FORMATOS[idCampeonato];
@@ -269,7 +270,7 @@ function desenharMomento() {
     let tabela = tabelaDoGrupo(dados, momento, grupo, { conmebol: Boolean(formato.desempateConmebol), todasAsFases: Boolean(deFora) });
     if (deFora) tabela = tabela.map((linha) => ({ ...linha, posicao: "–", deFora: true }));
     const titulo = deFora ?? (formato.tituloGrupo ? formato.tituloGrupo(grupo) : `Grupo ${grupo}`);
-    if (grupos.length === 1 && tabela.length > 8) {
+    if (grupos.length === 1 && tabela.length > 8 && !deFora) {
       const metade = Math.ceil(tabela.length / 2);
       blocos.push({ titulo: `${titulo} · 1º ao ${metade}º`, linhas: tabela.slice(0, metade) });
       blocos.push({ titulo: `${titulo} · ${metade + 1}º ao ${tabela.length}º`, linhas: tabela.slice(metade) });
@@ -309,26 +310,40 @@ async function lerDoSite(caminho) {
   }
 }
 
-const disputa = { modelo: null, cores: {}, canais: {}, aoVivo: null, meuTime: null };
+const disputa = {
+  modelo: null, cores: {}, canais: {}, aoVivo: null, meuTime: null, ingressos: null,
+  relogio: null,       // busca o placar ao vivo a cada minuto, enquanto há jogo rolando
+  despertador: null,   // redesenha o painel na hora em que o próximo jogo começa
+};
 
 async function iniciarDisputa() {
   prepararPaginaDaDisputa();
-  const [modelos, cores, canais] = await Promise.all([
+  const [modelos, cores, canais, ingressos] = await Promise.all([
     baixarJson("modelos.json").catch(() => null), lerDoSite("data/cores-times.json"), lerDoSite("data/canais-youtube.json"),
+    lerIngressos(),
   ]);
   const ultimoModelo = modelos?.momentos[modelos.momentos.length - 1];
   disputa.modelo = ultimoModelo ? { times: ultimoModelo.times, fator_casa: ultimoModelo.fator_casa } : null;
   disputa.cores = cores?.times ?? {};
   disputa.canais = canais?.times ?? {};
-  // Placar ao vivo (só para os campeonatos que a ESPN cobre, como a Sul-Americana). Um jogo que a
+  disputa.ingressos = ingressos;
+  // Placar ao vivo (só para os campeonatos que a ESPN cobre, como as copas). Um jogo que a
   // ESPN já dá como encerrado passa a contar como disputado (o painel mostra o resultado).
   if (dados.liga_espn) ({ aoVivo: disputa.aoVivo } = await atualizarComEspn(dados));
   desenharDisputa();
+  acompanharAoVivo();
+}
 
-  // Enquanto houver jogo rolando, busca o placar de novo a cada minuto.
-  if (!dados.liga_espn) return;
-  const relogio = setInterval(async () => {
-    if (!temJogoRolando(dados.jogos)) { clearInterval(relogio); return; }
+// Enquanto houver jogo rolando, busca o placar de novo a cada minuto (direto da ESPN, pelo
+// navegador de quem está vendo a página). Sem jogo rolando, para; volta na hora do próximo jogo.
+function acompanharAoVivo() {
+  if (disputa.relogio || !dados.liga_espn || !temJogoRolando(dados.jogos)) return;
+  disputa.relogio = setInterval(async () => {
+    if (!temJogoRolando(dados.jogos)) {
+      clearInterval(disputa.relogio);
+      disputa.relogio = null;
+      return;
+    }
     ({ aoVivo: disputa.aoVivo } = await atualizarComEspn(dados));
     desenharDisputa();
   }, 60 * 1000);
@@ -418,6 +433,9 @@ function desenharDisputa() {
       estado: proximo ? situacaoComPlacar(proximo, disputa.aoVivo, agora) : null,
       dias: proximo ? diasAte(proximo.data, agora) : null,
       times: dados.times,
+      // O botão de ingressos segue a regra do site: a loja do mandante, até a hora do jogo.
+      // Em campo neutro (ex.: as finais em jogo único) não há mandante vendendo: sem botão.
+      ingresso: proximo && !proximo.neutro ? enderecoDoIngresso(proximo, disputa.ingressos, agora) : null,
     });
   });
   paineis.push(...semAdversario.map((id) => painelSemAdversario(lado(id, null), dados.times)));
@@ -429,5 +447,14 @@ function desenharDisputa() {
   for (const [id, html] of abertos) {
     const lugar = document.querySelector(`#disputa-confrontos [data-videos="${CSS.escape(id)}"]`);
     if (lugar) lugar.innerHTML = html;
+  }
+
+  // Na hora em que o próximo jogo começar: redesenha (o botão de ingressos some e aparece
+  // "Ao vivo") e passa a buscar o placar a cada minuto.
+  clearTimeout(disputa.despertador);
+  const proximos = confrontos.map((c) => c.proximo).filter(Boolean);
+  const espera = msAteOProximoInicio(proximos, agora);
+  if (espera !== null && espera < 24 * 60 * 60 * 1000) {
+    disputa.despertador = setTimeout(() => { desenharDisputa(); acompanharAoVivo(); }, espera + 1000);
   }
 }

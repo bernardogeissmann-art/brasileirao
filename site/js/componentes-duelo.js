@@ -7,12 +7,13 @@
 
 import {
   escudo, escaparHtml, formatarChance, anelChance, barraResultado, formaRecente as quadradinhos, apelidoDoCanal,
+  botaoIngresso,
 } from "./componentes.js";
 import { descreverFase } from "./estaduais/mata-mata.js";
 
 // O texto do anel "chance de passar desta fase".
 const ROTULO_AVANCAR = {
-  playoffs: "Passar dos playoffs", oitavas: "Passar das oitavas", quartas: "Passar das quartas", semifinal: "Chegar à final",
+  "quinta-fase": "Passar da 5ª fase", playoffs: "Passar dos playoffs", oitavas: "Passar das oitavas", quartas: "Passar das quartas", semifinal: "Chegar à final",
 };
 
 // Cor do texto que fica legível sobre uma cor de fundo: branco sobre cores escuras, quase preto
@@ -137,7 +138,8 @@ function linhaComparacao(rotulo, a, b, texto, melhor = "maior") {
 //   chancesJogo: chancesDoJogo() do próximo jogo (ou null)
 //   estado: situacaoComPlacar() do próximo jogo (ou null)
 //   dias: quantos dias faltam para o próximo jogo
-export function painelConfronto({ confronto, ladoA, ladoB, chancesJogo, estado, dias, times }) {
+//   ingresso: (opcional) a loja de ingressos do mandante do próximo jogo (some na hora do jogo)
+export function painelConfronto({ confronto, ladoA, ladoB, chancesJogo, estado, dias, times, ingresso }) {
   const { proximo, vencedor, placar, fase } = confronto;
   const [a, b] = [ladoA.time.nome, ladoB.time.nome];
   const referencia = proximo ?? confronto.jogos.at(-1);
@@ -168,7 +170,8 @@ export function painelConfronto({ confronto, ladoA, ladoB, chancesJogo, estado, 
       <p class="duelo__quando"><strong>${escaparHtml(quandoE(proximo.data))}</strong>${proximo.estadio ? ` · ${escaparHtml(proximo.estadio)}` : ""}</p>
       ${seloDoJogo(estado, dias, [a, b])}
       ${somado}${regra}
-      <div class="duelo__onde"><span class="duelo__onde-rotulo">Onde assistir</span><ul class="canais">${canais}</ul></div>`
+      <div class="duelo__onde"><span class="duelo__onde-rotulo">Onde assistir</span><ul class="canais">${canais}</ul></div>
+      ${ingresso ? botaoIngresso(ingresso, times[proximo.mandante].nome) : ""}`
       : `<p class="duelo__fase">${escaparHtml(nomeDaFase(referencia))}</p><p class="duelo__quando">Próximo jogo ainda sem data.</p>${somado}`;
   }
 
