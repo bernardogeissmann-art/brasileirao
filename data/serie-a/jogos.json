@@ -2,7 +2,7 @@
   "fonte": "football-data.org",
   "competicao": "Campeonato Brasileiro Série A",
   "temporada": 2026,
-  "baixado_em": "2026-11-06T05:11:19-03:00",
+  "baixado_em": "2026-11-06T22:34:46-03:00",
   "times": {
     "bahia": {
       "nome": "Bahia",
@@ -4579,16 +4579,12 @@
       "data": "2026-11-06T20:00:00-03:00",
       "mandante": "vitoria",
       "visitante": "fluminense",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "TIMED",
+      "disputado": true,
+      "gols_mandante": 0,
+      "gols_visitante": 3,
+      "status_fonte": "FINISHED",
       "estadio": "Estádio Manoel Barradas (Barradão)",
-      "transmissao": [
-        "sportv",
-        "Premiere",
-        "globoplay"
-      ]
+      "transmissao": null
     },
     {
       "id": 555085,

@@ -2,7 +2,7 @@
   "fonte": "ESPN",
   "competicao": "Campeonato Brasileiro Série B",
   "temporada": 2026,
-  "baixado_em": "2026-11-06T05:11:52-03:00",
+  "baixado_em": "2026-11-06T22:35:16-03:00",
   "times": {
     "america-mineiro": {
       "nome": "América Mineiro",
@@ -4865,15 +4865,12 @@
       "data": "2026-11-06T19:30:00-03:00",
       "mandante": "operario-pr",
       "visitante": "sport",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "SCHEDULED",
+      "disputado": true,
+      "gols_mandante": 3,
+      "gols_visitante": 2,
+      "status_fonte": "FINISHED",
       "estadio": "Germano Krüger",
-      "transmissao": [
-        "Disney+",
-        "SportyNet"
-      ]
+      "transmissao": null
     },
     {
       "id": 401860423,
@@ -4886,7 +4883,9 @@
       "gols_visitante": null,
       "status_fonte": "SCHEDULED",
       "estadio": "Estádio da Ressacada",
-      "transmissao": null
+      "transmissao": [
+        "Disney+"
+      ]
     },
     {
       "id": 401860427,
@@ -4944,7 +4943,10 @@
       "gols_visitante": null,
       "status_fonte": "SCHEDULED",
       "estadio": "Estádio dos Aflitos",
-      "transmissao": null
+      "transmissao": [
+        "Premiere",
+        "Ge TV"
+      ]
     },
     {
       "id": 401860422,
@@ -4993,6 +4995,19 @@
       ]
     },
     {
+      "id": 401860435,
+      "rodada": 38,
+      "data": "2026-11-11T19:00:00-03:00",
+      "mandante": "londrina",
+      "visitante": "nautico",
+      "disputado": false,
+      "gols_mandante": null,
+      "gols_visitante": null,
+      "status_fonte": "SCHEDULED",
+      "estadio": "Estadio VGD",
+      "transmissao": null
+    },
+    {
       "id": 401860432,
       "rodada": 38,
       "data": "2026-11-14T16:30:00-03:00",
@@ -5029,19 +5044,6 @@
       "gols_visitante": null,
       "status_fonte": "SCHEDULED",
       "estadio": "Moisés Lucarelli",
-      "transmissao": null
-    },
-    {
-      "id": 401860435,
-      "rodada": 38,
-      "data": "2026-11-14T16:30:00-03:00",
-      "mandante": "londrina",
-      "visitante": "nautico",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "SCHEDULED",
-      "estadio": "Estadio VGD",
       "transmissao": null
     },
     {
