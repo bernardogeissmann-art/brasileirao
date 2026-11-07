@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-06T20:43:37.838Z",
+ "gerado_em": "2026-11-07T00:21:58.058Z",
  "times": {
   "bahia": {
    "texto": "Nem lá, nem cá: o Bahia fez 7 dos últimos 15 pontos possíveis. No último jogo, perdeu para o Cruzeiro por 3 a 2 fora de casa. Em 6º lugar, com 53 pontos, a briga pela Libertadores está aberta: 43% de chance pelas nossas contas. Nos últimos 5 jogos, foram 7 gols marcados e 9 sofridos: tudo bem equilibrado. Nos bastidores, a notícia que mais chama atenção é “Willian José continua fora do Bahia depois de compartilhar vídeo com críticas ao Nordeste”, segundo o Globo Esporte. Agora o desafio é o Grêmio, fora de casa, quarta, 18/11. Jogo difícil: o modelo dá 37% de chance de vitória.",
@@ -161,7 +161,22 @@
     }
    ],
    "noticias_em": "2026-11-06T08:12:26.725Z",
-   "texto_em": "2026-11-06T05:11:54.874Z"
+   "texto_em": "2026-11-06T05:11:54.874Z",
+   "videos": {
+    "UULF0x9Ypk2Z1lUdR4a88jMC2Q": [
+     "jmT-YZFkeYQ",
+     "gV9H7PVR1cU",
+     "lJb5gGAyJ3c",
+     "fHFHUy3_mzM",
+     "DfxUDIhCuPs",
+     "CHaCAeEccwM",
+     "-RaBX0P5pWk",
+     "dP99hyqhg2g",
+     "ncCEkHsAVfs",
+     "g6Ie98IiSCA"
+    ]
+   },
+   "videos_em": "2026-11-07T00:21:57.846Z"
   },
   "chapecoense": {
    "texto": "A fase não é das melhores para a Chapecoense: só 3 pontos nos últimos cinco jogos. No último jogo, perdeu para o Mirassol por 2 a 1 em casa. Em 20º lugar, com 21 pontos, o rebaixamento já está confirmado, infelizmente. A defesa preocupa, com 11 gols sofridos. Fora de campo, o assunto da semana é: “Chapecoense é rebaixada pela terceira vez na era dos pontos corridos; compare as campanhas” (Globo Esporte). Agora o desafio é o Vasco, em casa, sábado, 14/11. Jogo difícil: o modelo dá 29% de chance de vitória.",
@@ -1198,7 +1213,34 @@
     }
    ],
    "noticias_em": "2026-11-06T08:12:54.870Z",
-   "texto_em": "2026-11-06T05:11:54.874Z"
+   "texto_em": "2026-11-06T05:11:54.874Z",
+   "videos": {
+    "UULFUzrTcQHWjvIF_XYTstdlbw": [
+     "fbABqomEW3Y",
+     "wdOSfC_Cad4",
+     "2HIIWpRdVr4",
+     "D5o0N_EOReg",
+     "3hIL-iAoTwM",
+     "Wcb8xyPcUP8",
+     "XwHbSSJqeSc",
+     "w4u8CumGf9Y",
+     "-3kQv0u1OBo",
+     "q0MfaQofAoI"
+    ],
+    "UULFZD5qcen7lbLPFTjfvdLFcw": [
+     "lzx9HSv9aM8",
+     "S2dSu69809U",
+     "VvapS1kV7FU",
+     "ang17l1PaKo",
+     "8WKjK4jdpco",
+     "-pry_UAhdG0",
+     "TGVe1KxBrHE",
+     "uIfjCOk1Wts",
+     "77DXY9kY1Gs",
+     "zNlzmgo-L8w"
+    ]
+   },
+   "videos_em": "2026-11-07T00:21:58.058Z"
   },
   "vitoria": {
    "texto": "A fase não é das melhores para o Vitória: só 5 pontos nos últimos cinco jogos. No último jogo, perdeu para o Coritiba por 2 a 0 fora de casa. Já são 4 jogos sem vencer. Em 15º lugar, com 38 pontos, o sinal de alerta está ligado: 29% de risco de cair. Nos últimos 5 jogos, foram 7 gols marcados e 6 sofridos: tudo bem equilibrado. Fora de campo, o assunto da semana é: “Escalação do Vitória contra o Fluminense: veja time provável, dúvidas e desfalques após treino” (Globo Esporte). Agora o desafio é o Fluminense, em casa, sexta, 06/11. Jogo difícil: o modelo dá 31% de chance de vitória.",
