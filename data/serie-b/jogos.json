@@ -2,7 +2,7 @@
   "fonte": "ESPN",
   "competicao": "Campeonato Brasileiro Série B",
   "temporada": 2026,
-  "baixado_em": "2026-11-07T04:53:45-03:00",
+  "baixado_em": "2026-11-07T18:34:34-03:00",
   "times": {
     "america-mineiro": {
       "nome": "América Mineiro",
@@ -4878,14 +4878,12 @@
       "data": "2026-11-07T16:00:00-03:00",
       "mandante": "avai",
       "visitante": "sao-bernardo",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "SCHEDULED",
+      "disputado": true,
+      "gols_mandante": 2,
+      "gols_visitante": 1,
+      "status_fonte": "FINISHED",
       "estadio": "Estádio da Ressacada",
-      "transmissao": [
-        "Disney+"
-      ]
+      "transmissao": null
     },
     {
       "id": 401860427,
@@ -4893,10 +4891,10 @@
       "data": "2026-11-07T16:10:00-03:00",
       "mandante": "novorizontino",
       "visitante": "fortaleza",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "SCHEDULED",
+      "disputado": true,
+      "gols_mandante": 2,
+      "gols_visitante": 1,
+      "status_fonte": "FINISHED",
       "estadio": "Estádio Dr. Jorge Ismael de Biasi",
       "transmissao": [
         "Disney+"
