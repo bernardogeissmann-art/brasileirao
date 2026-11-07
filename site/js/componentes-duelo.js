@@ -181,11 +181,12 @@ export function painelConfronto({ confronto, ladoA, ladoB, chancesJogo, estado, 
     const p = chancesJogo.placarMaisProvavel;
     previsao = `
       <h4 class="duelo__subtitulo">O próximo jogo, pelo modelo${estado && estado.situacao !== "antes" ? " (chances de antes do jogo)" : ""}</h4>
-      ${barraResultado({ nomeMandante: a, nomeVisitante: b, vitoriaM: chancesJogo.vitoriaM, empate: chancesJogo.empate, vitoriaV: chancesJogo.vitoriaV })}
+      ${barraResultado({ nomeMandante: times[proximo.mandante].nome, nomeVisitante: times[proximo.visitante].nome,
+        vitoriaM: chancesJogo.vitoriaM, empate: chancesJogo.empate, vitoriaV: chancesJogo.vitoriaV })}
       <ul class="duelo__legenda">
-        <li><span class="legenda__cor" style="--cor: var(--cor-mandante)"></span>${escaparHtml(proximo.mandante === ladoA.id ? a : b)}</li>
+        <li><span class="legenda__cor" style="--cor: var(--cor-mandante)"></span>${escaparHtml(times[proximo.mandante].nome)}</li>
         <li><span class="legenda__cor" style="--cor: var(--cor-empate)"></span>Empate nos 90 minutos</li>
-        <li><span class="legenda__cor" style="--cor: var(--cor-visitante)"></span>${escaparHtml(proximo.mandante === ladoA.id ? b : a)}</li>
+        <li><span class="legenda__cor" style="--cor: var(--cor-visitante)"></span>${escaparHtml(times[proximo.visitante].nome)}</li>
       </ul>
       <p class="duelo__previsao">
         <span>Placar mais provável <b>${p.gols_mandante} × ${p.gols_visitante}</b></span>

@@ -34,6 +34,11 @@ for (const id of COPAS) {
     }
   });
 
+  test(`${id}: o modelo também usa os jogos do Brasileirão (dos clubes brasileiros)`, () => {
+    assert.equal(modelos.parametros.inclui_brasileirao, true);
+    for (const momento of modelos.momentos) assert.ok(momento.jogos_do_brasileirao > 0, momento.id);
+  });
+
   test(`${id}: em todo momento, cada resultado soma o número certo de vagas`, () => {
     for (const momento of modelos.momentos) {
       const r = simularMomento(dados, momento, formato, { n: 300, semente: 9 });

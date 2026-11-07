@@ -62,6 +62,10 @@ O usuário nunca programou antes, então todo código e explicação devem ser p
     (as quatro primeiras ficam de fora); confrontos e mandos sorteados a cada fase (antes do sorteio, a simulação
     sorteia); pênaltis direto no empate; final em jogo único em Brasília (campo neutro, sem prorrogação). Enquanto os
     finalistas não são conhecidos, a ESPN mostra a final com times "TBD" e ela fica fora do arquivo.
+  - Modelo das copas (`estimar_estadual.py`, quando a pasta é `data/copas/`): além dos jogos da copa, entram os
+    jogos do Brasileirão (Séries A e B, só as que têm time na copa) até cada momento, numa estimação só (pedido do
+    usuário: com só 7 ou 8 jogos de copa, um time do Z4 parecia mais forte que o vice-líder). Os estrangeiros ficam
+    na mesma régua pelos jogos das copas. Jogos em campo neutro não têm fator casa.
   - Ordem para atualizar (a rotina diária do GitHub faz isso): `scripts/copas/baixar_<copa>.py` (ESPN; ferramentas
     comuns em `scripts/copas/comum_copas.py`) → `estimar_estadual.py <copa>-2026` → `calcular_chances.js <copa>-2026`.
     Na Libertadores e na Copa do Brasil os times saem sozinhos dos dados: clube brasileiro com o mesmo id, nome e
