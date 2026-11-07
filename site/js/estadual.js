@@ -1,8 +1,8 @@
 // estadual.js
-// O script das páginas dos campeonatos estaduais. O mesmo script serve para todos:
-// a página diz qual campeonato mostrar em <body data-campeonato="...">.
+// O script das páginas dos campeonatos estaduais (e da Copa Sul-Americana). O mesmo script
+// serve para todos: a página diz qual campeonato mostrar em <body data-campeonato="...">.
 //
-// Ele lê três coisas da pasta data/estaduais/<campeonato>/:
+// Ele lê duas coisas da pasta data/estaduais/<campeonato>/ (as copas ficam em data/copas/):
 //   jogos.json   (os jogos e os times)
 //   chances.json (as chances de cada time em cada momento, já calculadas)
 // e monta: os destaques, o gráfico da evolução das chances e a tabela de cada momento.
@@ -47,7 +47,8 @@ iniciar();
 // ---------------------------------------------------------------------------
 
 async function baixarJson(arquivo) {
-  const endereco = new URL(`../../data/estaduais/${idCampeonato}/${arquivo}`, import.meta.url);
+  const pasta = formato.pasta ?? `data/estaduais/${idCampeonato}`;
+  const endereco = new URL(`../../${pasta}/${arquivo}`, import.meta.url);
   const resposta = await fetch(endereco);
   if (!resposta.ok) throw new Error(`Não consegui ler ${endereco} (erro ${resposta.status})`);
   return resposta.json();
@@ -150,19 +151,22 @@ function montarAbertura(campeao) {
         complemento: `de risco de queda ${minuscula(rebaixados[0].momento.rotulo)}` },
     ];
   } else {
-    // Campeonato em andamento (o caso de 2027): mostra o momento atual.
+    // Campeonato em andamento: mostra o momento atual.
     const agora = chances.momentos.length - 1;
     const atual = chances.momentos[agora].times;
-    const ameacado = maisProvavel(agora, "rebaixamento");
+    const temQueda = formato.resultados.some((r) => r.campo === "rebaixamento");
+    const ameacado = temQueda ? maisProvavel(agora, "rebaixamento") : null;
     const disputado = Object.keys(atual).filter((id) => atual[id].quartas > 0 && atual[id].quartas < 1)
       .sort((a, b) => Math.abs(atual[a].quartas - 0.5) - Math.abs(atual[b].quartas - 0.5))[0];
     $("chapeu").textContent = `${dados.competicao} · ${dados.temporada} · em andamento`;
     $("resumo").textContent = `As chances de cada time, com ${n} simulações do que falta do campeonato.`;
-    const favorito = maisProvavel(agora, "titulo");
+    const [favorito, segundo] = Object.keys(atual).sort((a, b) => atual[b].titulo - atual[a].titulo);
     cartoes = [
       { rotulo: "Favorito ao título", id: favorito, valor: atual[favorito].titulo, complemento: "de chance de título" },
+      // Sem rebaixamento (ex.: a Sul-Americana), o segundo cartão é o 2º favorito.
+      !temQueda && atual[segundo].titulo > 0 && { rotulo: "Na cola", id: segundo, valor: atual[segundo].titulo, complemento: "de chance de título" },
       disputado && { rotulo: "Briga pelas quartas", id: disputado, valor: atual[disputado].quartas, complemento: "de chance de ir às quartas" },
-      { rotulo: "Mais perto da queda", id: ameacado, valor: atual[ameacado].rebaixamento, complemento: "de risco de queda" },
+      ameacado && { rotulo: "Mais perto da queda", id: ameacado, valor: atual[ameacado].rebaixamento, complemento: "de risco de queda" },
     ];
   }
 
@@ -244,8 +248,12 @@ function desenharMomento() {
   const grupos = [...new Set(Object.values(dados.times).map((t) => t.grupo))].sort();
   const blocos = [];
   for (const grupo of grupos) {
-    const tabela = tabelaDoGrupo(dados, momento, grupo);
-    const titulo = formato.tituloGrupo ? formato.tituloGrupo(grupo) : `Grupo ${grupo}`;
+    // "De fora": times que não jogaram a 1ª fase (ex.: os que vieram da Libertadores para a
+    // Sul-Americana). A tabela deles soma os jogos de todas as fases e não mostra posição.
+    const deFora = formato.gruposDeFora?.[grupo];
+    let tabela = tabelaDoGrupo(dados, momento, grupo, { conmebol: Boolean(formato.desempateConmebol), todasAsFases: Boolean(deFora) });
+    if (deFora) tabela = tabela.map((linha) => ({ ...linha, posicao: "–", deFora: true }));
+    const titulo = deFora ?? (formato.tituloGrupo ? formato.tituloGrupo(grupo) : `Grupo ${grupo}`);
     if (grupos.length === 1 && tabela.length > 8) {
       const metade = Math.ceil(tabela.length / 2);
       blocos.push({ titulo: `${titulo} · 1º ao ${metade}º`, linhas: tabela.slice(0, metade) });
@@ -261,7 +269,7 @@ function desenharMomento() {
       time: dados.times[linha.id],
       chances: momento.times[linha.id],
       categorias: formato.resultados,
-      zona: formato.zona(linha.posicao),
+      zona: linha.deFora ? "neutra" : formato.zona(linha.posicao),
     })).join("");
     return `
       <section class="grupo" aria-label="${escaparHtml(titulo)}">

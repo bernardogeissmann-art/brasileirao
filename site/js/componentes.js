@@ -454,7 +454,10 @@ function formaRecente(forma) {
 //              { situacao: "antes" | "andamento" | "intervalo" | "aguardando" | "encerrado",
 //                gols: [mandante, visitante] quando há placar, minuto: "67'" quando a bola rola }
 //   ingresso: (opcional) endereço para comprar ingressos; sem ele, não há botão
-export function cardConfronto({ jogo, times, tabela, forma, chances, estado, ingresso }) {
+//   descricao: (opcional) o texto embaixo do nome de cada time, no lugar de "posição · pontos"
+//              (ex.: o país, na Sul-Americana). Recebe o id do time e o lado ("mandante"/"visitante").
+//   fase:      (opcional) o texto do topo do cartão, no lugar de "Rodada 33" (ex.: "Final")
+export function cardConfronto({ jogo, times, tabela, forma, chances, estado, ingresso, descricao, fase }) {
   const { situacao, gols, minuto } = estado;
   const temPlacar = Array.isArray(gols);
   const hora = new Intl.DateTimeFormat("pt-BR", { timeZone: "America/Sao_Paulo", hour: "2-digit", minute: "2-digit" })
@@ -471,14 +474,17 @@ export function cardConfronto({ jogo, times, tabela, forma, chances, estado, ing
   const linhaTime = (lado) => {
     const id = jogo[lado];
     const time = times[id];
-    const linha = tabela.get(id);
+    const linha = tabela?.get(id);
+    const texto = descricao
+      ? descricao(id, lado)
+      : `${linha.posicao}º · ${linha.pontos} pts${lado === "mandante" ? " · em casa" : ""}`;
     const placar = temPlacar ? `<b class="confronto__placar">${Number(gols[lado === "mandante" ? 0 : 1])}</b>` : "";
     return `
       <div class="confronto__time">
         ${escudo(time, "confronto__escudo")}
         <span class="confronto__nome">
           <strong>${escaparHtml(time.nome)}</strong>
-          <small>${linha.posicao}º · ${linha.pontos} pts${lado === "mandante" ? " · em casa" : ""}</small>
+          <small>${escaparHtml(texto)}</small>
         </span>
         ${formaRecente(forma[lado])}
         ${placar}
@@ -511,7 +517,7 @@ export function cardConfronto({ jogo, times, tabela, forma, chances, estado, ing
     <li class="confronto">
       <p class="confronto__topo">
         ${selo}
-        <span class="confronto__info">${jogo.rodada ? `Rodada ${jogo.rodada}` : "Playoff"}${jogo.estadio ? ` · ${escaparHtml(jogo.estadio)}` : ""}</span>
+        <span class="confronto__info">${escaparHtml(fase ?? (jogo.rodada ? `Rodada ${jogo.rodada}` : "Playoff"))}${jogo.estadio ? ` · ${escaparHtml(jogo.estadio)}` : ""}</span>
       </p>
       ${linhaTime("mandante")}
       ${linhaTime("visitante")}

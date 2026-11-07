@@ -5,7 +5,8 @@
 //   3) roda as 10.000 simulações no navegador;
 //   4) monta os destaques e a lista de times com as chances;
 //   5) monta a seção "Jogos do dia", no fim da página: primeiro os da Série A e, abaixo,
-//      os da Série B (com um botão para a página da Série B).
+//      os da Série B (com um botão para a página da Série B). Nos dias de jogo da Copa
+//      Sul-Americana, ela vem primeiro; as Séries A e B só aparecem se jogarem no mesmo dia.
 
 import { carregarDados, simular, tabelaAtual, chancesDoJogo, N_SIMULACOES_PADRAO } from "./simulacao.js";
 import {
@@ -13,7 +14,9 @@ import {
   cardConfronto, legendaResultado,
 } from "./componentes.js";
 import { lerIngressos, enderecoDoIngresso, msAteOProximoInicio } from "./ingressos.js";
-import { escolherJogosDoDia, formaRecente, situacaoComPlacar, temJogoRolando, atualizarComEspn } from "./jogos-do-dia.js";
+import {
+  escolherJogosDoDia, formaRecente, situacaoComPlacar, temJogoRolando, atualizarComEspn, copaNoDia, carregarCopa,
+} from "./jogos-do-dia.js";
 
 // document.getElementById pega um elemento da página pelo seu id="...".
 const topo = document.getElementById("topo");
@@ -46,11 +49,20 @@ async function iniciar() {
 
   // Antes de simular: os jogos que já acabaram, mas ainda estão sem resultado no site,
   // ganham o placar final da ESPN. Assim a tabela já sai certa.
-  const [{ aoVivo }, lojas] = await Promise.all([atualizarComEspn(dados.jogos), lerIngressos()]);
+  // Junto, chegam os dados da Série B e da Sul-Americana (se algum falhar, só não aparece).
+  const [{ aoVivo }, lojas, dadosB, copa] = await Promise.all([
+    atualizarComEspn(dados.jogos), lerIngressos(), semFalhar(carregarDados("serie-b")), semFalhar(carregarCopa(SULA.pasta)),
+  ]);
   ingressos = lojas;
+
+  // Dia de jogo da Sul-Americana: ela aparece primeiro; as Séries A e B, só se jogarem no mesmo dia.
+  const outros = [todosOsJogos(dados.jogos), ...(dadosB ? [todosOsJogos(dadosB.jogos)] : [])];
+  diaDaCopa = (copa && copaNoDia(copa.jogos.jogos, outros))?.dia ?? null;
+  if (diaDaCopa) iniciarCopa(copa);           // sem "await": aparece quando o placar da ESPN chegar
   montarJogosDoDia(dados, aoVivo, SERIE_A);   // não depende da simulação: aparece logo
+  if (dadosB) iniciarSerieB(dadosB);          // sem "await": aparece quando o placar chegar
+  // Mesmo escondidos, os jogos da Série A são acompanhados: quando um acaba, a tabela muda.
   acompanharJogosDoDia(dados, SERIE_A, () => calcularEMostrar(dados));
-  iniciarSerieB();   // sem "await": a Série B aparece quando os dados dela chegarem
 
   // Dá um instante para o navegador desenhar a mensagem "Simulando..." antes da conta pesada.
   await new Promise((pronto) => setTimeout(pronto, 30));
@@ -118,20 +130,64 @@ let ingressos = null;
 const despertadores = new Map();
 
 // Onde fica a lista de jogos do dia de cada campeonato, e como ele é chamado nas frases.
-const SERIE_A = { lista: "jogos-do-dia", data: "jogos-do-dia-data", nome: "o Brasileirão", doNome: "do Brasileirão", notas: true };
-const SERIE_B = { lista: "jogos-serie-b-lista", data: "jogos-serie-b-data", nome: "a Série B", doNome: "da Série B", notas: false };
+//   bloco:     a parte da página com os jogos do campeonato (escondida quando não é o dia dele)
+//   quantos:   (Série A e Sul-Americana) onde vai a quantidade de jogos nos dias da Sul-Americana
+//   subtitulo: (Série A) o título que só aparece nos dias da Sul-Americana, para separar os dois
+//   copa:      (só na Sul-Americana) não há tabela de pontos; embaixo do nome do time vai o país.
+const SERIE_A = {
+  bloco: "jogos-serie-a", lista: "jogos-do-dia", data: "jogos-do-dia-data", quantos: "jogos-serie-a-quantos",
+  subtitulo: "titulo-jogos-serie-a", nome: "o Brasileirão", doNome: "do Brasileirão", notas: true,
+};
+const SERIE_B = {
+  bloco: "jogos-serie-b", lista: "jogos-serie-b-lista", data: "jogos-serie-b-data", nome: "a Série B", doNome: "da Série B",
+  notas: false,
+};
+const SULA = {
+  bloco: "jogos-sula", lista: "jogos-sula-lista", data: "jogos-do-dia-data", quantos: "jogos-sula-quantos",
+  nome: "a Sul-Americana", doNome: "da Sul-Americana", notas: true, copa: true, pasta: "data/copas/sulamericana-2026",
+};
 
-// Os jogos do dia da Série B. Se os dados dela não vierem, a parte da Série B só não aparece.
-async function iniciarSerieB() {
+// O dia que a Sul-Americana mostra ("2026-11-21") ou null quando não é dia dela.
+let diaDaCopa = null;
+
+// Espera um carregamento; se falhar, avisa no console e devolve null (a parte só não aparece).
+async function semFalhar(promessa) {
   try {
-    const dadosB = await carregarDados("serie-b");
-    const { aoVivo } = await atualizarComEspn(dadosB.jogos);
-    document.getElementById("jogos-serie-b").hidden = false;
-    montarJogosDoDia(dadosB, aoVivo, SERIE_B);
-    acompanharJogosDoDia(dadosB, SERIE_B);
+    return await promessa;
   } catch (erro) {
-    console.warn("Não consegui carregar os jogos da Série B.", erro);
+    console.warn("Não consegui carregar uma parte dos Jogos do dia.", erro);
+    return null;
   }
+}
+
+// Os jogos do dia da Série B (os dados já chegaram; falta o placar ao vivo).
+async function iniciarSerieB(dadosB) {
+  const { aoVivo } = await atualizarComEspn(dadosB.jogos);
+  document.getElementById("jogos-serie-b").hidden = false;
+  montarJogosDoDia(dadosB, aoVivo, SERIE_B);
+  acompanharJogosDoDia(dadosB, SERIE_B);
+}
+
+// Os jogos do dia da Sul-Americana, em cima dos das Séries A e B.
+async function iniciarCopa(copa) {
+  document.getElementById(SULA.bloco).hidden = false;
+  document.getElementById(SULA.lista).innerHTML = mensagem("Carregando…", "carregando");
+  const { aoVivo } = await atualizarComEspn(copa.jogos);
+  montarJogosDoDia(copa, aoVivo, SULA);
+  acompanharJogosDoDia(copa, SULA);
+}
+
+// O nome de cada fase da Sul-Americana, para o topo do cartão do jogo.
+const FASES_DA_COPA = {
+  "primeira-fase": "Fase de grupos", playoffs: "Playoffs", oitavas: "Oitavas de final",
+  quartas: "Quartas de final", semifinal: "Semifinal", final: "Final",
+};
+
+function faseDaCopa(jogo) {
+  const nome = FASES_DA_COPA[jogo.fase] ?? jogo.fase;
+  if (jogo.fase === "primeira-fase") return `${nome} · ${jogo.rodada}ª rodada`;
+  if (jogo.neutro) return `${nome} · jogo único em campo neutro`;
+  return `${nome} · ${jogo.perna === 1 ? "ida" : "volta"}`;
 }
 
 // Enquanto houver jogo rolando, busca o placar ao vivo de novo a cada minuto (direto da
@@ -164,6 +220,13 @@ function montarJogosDoDia({ jogos, modelo }, aoVivo, onde) {
   const titulo = document.getElementById(onde.data);
   const agora = new Date();
   const escolha = escolherJogosDoDia(todosOsJogos(jogos), agora);
+
+  // Dia da Sul-Americana: as Séries A e B só aparecem se também jogarem nesse dia.
+  if (diaDaCopa && onde !== SULA) {
+    const mesmoDia = escolha?.dia === diaDaCopa;
+    document.getElementById(onde.bloco).hidden = !mesmoDia;
+    if (!mesmoDia) return;
+  }
   if (!escolha) {
     titulo.textContent = "";
     lista.innerHTML = mensagem(`${onde.nome[0].toUpperCase()}${onde.nome.slice(1)} terminou: não há mais jogos.`, "carregando");
@@ -174,11 +237,23 @@ function montarJogosDoDia({ jogos, modelo }, aoVivo, onde) {
   const dataPorExtenso = new Intl.DateTimeFormat("pt-BR", { timeZone: "UTC", weekday: "long", day: "numeric", month: "long" })
     .format(new Date(`${escolha.dia}T12:00:00Z`));
   const quantos = escolha.jogos.length === 1 ? "1 jogo" : `${escolha.jogos.length} jogos`;
-  titulo.textContent = escolha.eHoje
-    ? `Hoje, ${dataPorExtenso} · ${quantos}`
-    : `Hoje não tem jogo ${onde.doNome}. Próximo dia de jogos: ${dataPorExtenso} · ${quantos}`;
+  if (diaDaCopa && onde.quantos) {
+    // Dia da Sul-Americana: a quantidade de jogos vai no título de cada campeonato, e a data
+    // lá em cima (a mesma para todos) é escrita pela Sul-Americana.
+    document.getElementById(onde.quantos).textContent = `· ${quantos}`;
+    if (onde.subtitulo) document.getElementById(onde.subtitulo).hidden = false;
+    if (onde === SULA) {
+      titulo.textContent = escolha.eHoje ? `Hoje, ${dataPorExtenso}` : `Hoje não tem jogo. Próximo dia de jogos: ${dataPorExtenso}`;
+    }
+  } else {
+    titulo.textContent = escolha.eHoje
+      ? `Hoje, ${dataPorExtenso} · ${quantos}`
+      : `Hoje não tem jogo ${onde.doNome}. Próximo dia de jogos: ${dataPorExtenso} · ${quantos}`;
+  }
 
-  const tabela = new Map(tabelaAtual(jogos).map((linha) => [linha.id, linha]));
+  // Na copa não há tabela de pontos: embaixo do nome vai o país (e "em casa" para o mandante,
+  // menos em campo neutro). No topo do cartão, a fase (ex.: "Final · jogo único em campo neutro").
+  const tabela = onde.copa ? null : new Map(tabelaAtual(jogos).map((linha) => [linha.id, linha]));
   lista.innerHTML = escolha.jogos.map((jogo) => cardConfronto({
     jogo,
     times: jogos.times,
@@ -186,7 +261,12 @@ function montarJogosDoDia({ jogos, modelo }, aoVivo, onde) {
     forma: { mandante: formaRecente(jogos.jogos, jogo.mandante), visitante: formaRecente(jogos.jogos, jogo.visitante) },
     chances: chancesDoJogo(jogo, modelo),
     estado: situacaoComPlacar(jogo, aoVivo, agora),
-    ingresso: enderecoDoIngresso(jogo, ingressos, agora),
+    // Em campo neutro não há "time da casa" vendendo ingressos: sem botão.
+    ingresso: jogo.neutro ? null : enderecoDoIngresso(jogo, ingressos, agora),
+    descricao: onde.copa
+      ? (id, lado) => [jogos.times[id].pais, !jogo.neutro && lado === "mandante" ? "em casa" : null].filter(Boolean).join(" · ")
+      : undefined,
+    fase: onde.copa ? faseDaCopa(jogo) : undefined,
   })).join("");
 
   // Na hora em que o próximo destes jogos começar, redesenha (o botão de ingressos some).
@@ -196,11 +276,14 @@ function montarJogosDoDia({ jogos, modelo }, aoVivo, onde) {
     despertadores.set(onde, setTimeout(() => montarJogosDoDia({ jogos, modelo }, aoVivo, onde), espera + 1000));
   }
 
-  if (!onde.notas) return;   // a legenda e a nota ficam só embaixo dos jogos da Série A
+  if (!onde.notas) return;   // a legenda e a nota ficam só embaixo da Série A (ou da Sul-Americana)
   document.getElementById("jogos-do-dia-legenda").innerHTML = legendaResultado("mandante", "visitante");
   document.getElementById("jogos-do-dia-nota").textContent =
-    "As chances de cada jogo vêm do mesmo modelo das simulações (ataque e defesa de cada time, mais o fator casa). " +
-    "Os quadradinhos mostram os últimos 5 jogos de cada time (V = vitória, E = empate, D = derrota), do mais antigo ao mais recente. " +
+    (diaDaCopa
+      ? "As chances de cada jogo vêm do modelo do seu campeonato (ataque e defesa de cada time, mais o fator casa; em campo neutro, sem fator casa). " +
+        "Os quadradinhos mostram os últimos 5 jogos de cada time no campeonato (V = vitória, E = empate, D = derrota; decisão por pênaltis conta como empate), do mais antigo ao mais recente. "
+      : "As chances de cada jogo vêm do mesmo modelo das simulações (ataque e defesa de cada time, mais o fator casa). " +
+        "Os quadradinhos mostram os últimos 5 jogos de cada time (V = vitória, E = empate, D = derrota), do mais antigo ao mais recente. ") +
     "Onde assistir: canais informados pelo ge.globo; podem mudar." +
     (aoVivo?.jogos && Object.keys(aoVivo.jogos).length
       ? ` Placar ao vivo da ESPN (último: ${new Intl.DateTimeFormat("pt-BR",

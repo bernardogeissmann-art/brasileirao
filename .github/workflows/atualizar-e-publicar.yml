@@ -90,6 +90,13 @@ jobs:
         # "npm ci" instala exatamente as versões anotadas no package-lock.json.
         run: npm ci
 
+      - name: Copa Sul-Americana (jogos da ESPN, sem chave)
+        # Baixa os jogos, estima o modelo e calcula as chances de cada momento. Se algo falhar,
+        # volta os arquivos da Sul-Americana para a versão anterior e segue (o resto é publicado).
+        continue-on-error: true
+        run: |
+          python scripts/copas/baixar_sulamericana.py             && python scripts/estaduais/estimar_estadual.py sulamericana-2026             && node scripts/estaduais/calcular_chances.js sulamericana-2026             || { git checkout -- data/copas; exit 1; }
+
       - name: Meu Time - notícias do dia (sem IA)
         run: node scripts/meu_time/atualizar_noticias.js
 
@@ -107,7 +114,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/serie-a data/serie-b data/meu-time.json data/radios.json assets/escudos
+          git add data/serie-a data/serie-b data/copas data/meu-time.json data/radios.json assets/escudos
           if git diff --cached --quiet; then
             echo "Nada mudou nos dados."
           else

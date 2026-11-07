@@ -48,16 +48,22 @@ export function prepararMomento(dados, momento) {
   ids.forEach((id, i) => (grupos[dados.times[id].grupo] ??= []).push(i));
 
   // "Roletas" de gols de cada mandante x visitante, calculadas só quando forem usadas.
-  const roletas = new Array(n * n);
+  // Há quatro tipos: jogo normal; jogo em campo neutro (sem fator casa, como a final da
+  // Sul-Americana); e a prorrogação (30 minutos = 1/3 das médias de gols) de cada um deles.
+  const roletas = [new Array(n * n), new Array(n * n), new Array(n * n), new Array(n * n)];
   const { fator_casa: h, times: forca } = momento;
-  function roleta(m, v) {
+  function roleta(m, v, neutro = false, prorrogacao = false) {
+    const tipo = (neutro ? 1 : 0) + (prorrogacao ? 2 : 0);
     const chave = m * n + v;
-    if (!roletas[chave]) {
+    if (!roletas[tipo][chave]) {
       const fm = forca[ids[m]];
       const fv = forca[ids[v]];
-      roletas[chave] = [chancesAcumuladas(fm.ataque * fv.defesa * h), chancesAcumuladas(fv.ataque * fm.defesa)];
+      const casa = neutro ? 1 : h;
+      const tempo = prorrogacao ? 1 / 3 : 1;
+      roletas[tipo][chave] = [chancesAcumuladas(fm.ataque * fv.defesa * casa * tempo),
+        chancesAcumuladas(fv.ataque * fm.defesa * tempo)];
     }
-    return roletas[chave];
+    return roletas[tipo][chave];
   }
 
   // O calendário de cada fase que tem tabela pronta (ex.: a 1ª fase), em números.
@@ -67,6 +73,8 @@ export function prepararMomento(dados, momento) {
 
   return {
     ids, n, numero, grupos, calendario, roleta,
+    // Já houve algum jogo real desta fase neste momento? (ex.: o sorteio do mata-mata já foi feito)
+    temJogosReais: (fase) => reais.has(fase),
     real: (fase, m, v) => reais.get(fase)?.[m * n + v],
     reaisDoConfronto: (fase, a, b) => reaisDoPar.get(fase)?.[Math.min(a, b) * n + Math.max(a, b)] ?? [],
   };
@@ -113,8 +121,9 @@ export function criarSimulador(camp, sorteioGols, sorteioDesempate) {
   // Joga uma partida: placar real se já aconteceu no momento; senão, sorteado pelo modelo.
   // Os dois lados são sempre sorteados (mesmo num jogo real) para que a sequência de
   // sorteios dos outros jogos não dependa de quais jogos já aconteceram.
-  function jogar(fase, m, v) {
-    const [roletaM, roletaV] = camp.roleta(m, v);
+  // "neutro": jogo em campo neutro (sem fator casa).
+  function jogar(fase, m, v, neutro = false) {
+    const [roletaM, roletaV] = camp.roleta(m, v, neutro);
     let gm = sortearGols(roletaM, sorteioGols);
     let gv = sortearGols(roletaV, sorteioGols);
     const real = camp.real(fase, m, v);
@@ -187,19 +196,96 @@ export function criarSimulador(camp, sorteioGols, sorteioDesempate) {
     return ordenarPor(campanha, times, null, null);
   }
 
+  // Tabela de um grupo pelas regras da CONMEBOL (Libertadores e Sul-Americana 2026): pontos;
+  // entre os empatados, os jogos entre eles (pontos, saldo e gols); depois saldo e gols no
+  // grupo todo; por fim, sorteio (no lugar dos cartões, que não dá para prever).
+  function classificarConmebol(times, fase) {
+    const p = daFase(fase).placar;
+    const ordem = [...times].sort((a, b) => p.pontos[b] - p.pontos[a]);
+    for (let i = 0; i < ordem.length; ) {
+      let fim = i + 1;
+      while (fim < ordem.length && p.pontos[ordem[fim]] === p.pontos[ordem[i]]) fim++;
+      if (fim - i > 1) desempatarConmebol(fase, ordem, i, fim);
+      i = fim;
+    }
+    return ordem;
+  }
+
+  // Desempata o trecho [inicio, fim) da lista (times com os mesmos pontos).
+  function desempatarConmebol(fase, ordem, inicio, fim) {
+    const empatados = ordem.slice(inicio, fim);
+    // Mini tabela só com os jogos entre os empatados: [pontos, saldo, gols].
+    const mini = new Map(empatados.map((t) => [t, [0, 0, 0]]));
+    const r = daFase(fase).resultados;
+    for (let k = 0; k < r.length; k += 4) {
+      const [m, v, gm, gv] = [r[k], r[k + 1], r[k + 2], r[k + 3]];
+      if (!mini.has(m) || !mini.has(v)) continue;
+      for (const [eu, gp, gc] of [[m, gm, gv], [v, gv, gm]]) {
+        const linha = mini.get(eu);
+        linha[0] += gp > gc ? 3 : gp === gc ? 1 : 0;
+        linha[1] += gp - gc;
+        linha[2] += gp;
+      }
+    }
+    const p = daFase(fase).placar;
+    const criterios = (t) => [...mini.get(t), p.saldo[t], p.golsPro[t]];
+    const comparar = (a, b) => {
+      const ca = criterios(a);
+      const cb = criterios(b);
+      for (let i = 0; i < ca.length; i++) if (ca[i] !== cb[i]) return cb[i] - ca[i];
+      return 0;
+    };
+    empatados.sort(comparar);
+    // Quem continua empatado em tudo vai para o sorteio.
+    for (let i = 0; i < empatados.length; ) {
+      let j = i + 1;
+      while (j < empatados.length && comparar(empatados[i], empatados[j]) === 0) j++;
+      if (j - i > 1) embaralhar(empatados, i, j);
+      i = j;
+    }
+    ordem.splice(inicio, empatados.length, ...empatados);
+  }
+
+  // Ordena times de grupos diferentes (ex.: os 8 primeiros colocados) pela campanha numa fase:
+  // pontos, saldo e gols; empate em tudo, sorteio. É a "numeração" da CONMEBOL, que decide quem
+  // joga a volta em casa no mata-mata.
+  function ordenarEntreGrupos(times, fase) {
+    const p = daFase(fase).placar;
+    const comparar = (a, b) => (p.pontos[b] - p.pontos[a]) || (p.saldo[b] - p.saldo[a]) || (p.golsPro[b] - p.golsPro[a]);
+    const ordem = [...times].sort(comparar);
+    for (let i = 0; i < ordem.length; ) {
+      let fim = i + 1;
+      while (fim < ordem.length && comparar(ordem[i], ordem[fim]) === 0) fim++;
+      if (fim - i > 1) embaralhar(ordem, i, fim);
+      i = fim;
+    }
+    return ordem;
+  }
+
+  // Embaralha uma lista inteira (usado para imitar um sorteio de chaves). Devolve uma cópia.
+  function sortear(lista) {
+    const copia = [...lista];
+    embaralhar(copia, 0, copia.length);
+    return copia;
+  }
+
   // Confronto de mata-mata entre "a" e "b".
   //   pernas: 1 (jogo único) ou 2 (ida e volta)
   //   mandante: em jogo único, quem joga em casa. Em ida e volta, a melhor campanha
   //             joga a volta em casa (como nos regulamentos de 2026).
+  //   casaDaVolta: (opcional) em ida e volta, quem joga a volta em casa, quando o regulamento
+  //                usa outra regra (ex.: a "numeração" da CONMEBOL).
+  //   neutro: jogo único em campo neutro (sem fator casa), como a final da Sul-Americana.
+  //   prorrogacao: em jogo único, empate leva a 30 minutos de prorrogação antes dos pênaltis.
   // Empate (no jogo único ou no agregado) vai para os pênaltis: 50% para cada lado.
-  function confronto(fase, a, b, { pernas = 2, mandante = null } = {}) {
+  function confronto(fase, a, b, { pernas = 2, mandante = null, casaDaVolta = null, neutro = false, prorrogacao = false } = {}) {
     const reaisDoConfronto = camp.reaisDoConfronto(fase, a, b);
     let jogos;
     if (pernas === 1) {
-      const casa = reaisDoConfronto[0]?.m ?? mandante;
-      jogos = [jogar(fase, casa, casa === a ? b : a)];
+      const casa = reaisDoConfronto[0]?.m ?? mandante ?? a;
+      jogos = [jogar(fase, casa, casa === a ? b : a, neutro)];
     } else {
-      const melhor = ordenarPorCampanha([a, b])[0];
+      const melhor = casaDaVolta ?? ordenarPorCampanha([a, b])[0];
       let casaVolta = melhor;
       if (reaisDoConfronto.length > 0) {
         // Se o confronto já começou de verdade, vale o mando real.
@@ -217,6 +303,16 @@ export function criarSimulador(camp, sorteioGols, sorteioDesempate) {
     for (const j of jogos) {
       golsA += j.m === a ? j.gm : j.gv;
       golsB += j.m === a ? j.gv : j.gm;
+    }
+    // Prorrogação (só em jogo único e só se o jogo ainda não aconteceu: o placar real já
+    // inclui os gols da prorrogação).
+    const unico = jogos[0];
+    if (prorrogacao && pernas === 1 && golsA === golsB && !unico.real) {
+      const [roletaM, roletaV] = camp.roleta(unico.m, unico.v, neutro, true);
+      const extraM = sortearGols(roletaM, sorteioGols);
+      const extraV = sortearGols(roletaV, sorteioGols);
+      golsA += unico.m === a ? extraM : extraV;
+      golsB += unico.m === a ? extraV : extraM;
     }
     let vencedor;
     if (golsA !== golsB) {
@@ -246,7 +342,10 @@ export function criarSimulador(camp, sorteioGols, sorteioDesempate) {
     }
   }
 
-  return { reiniciar, jogar, jogarCalendario, classificar, ordenarPorCampanha, confronto, todosContraTodos, avisos };
+  return {
+    reiniciar, jogar, jogarCalendario, classificar, ordenarPorCampanha, confronto, todosContraTodos, avisos,
+    classificarConmebol, ordenarEntreGrupos, sortear,
+  };
 }
 
 
@@ -283,12 +382,17 @@ export function simularMomento(dados, momento, formato, { n = N_SIMULACOES_ESTAD
 }
 
 // Tabela real de um grupo da 1ª fase num momento (só para mostrar na tela).
-export function tabelaDoGrupo(dados, momento, grupo) {
+//   conmebol: desempatar pelas regras da CONMEBOL (primeiro os jogos entre os empatados)
+//   todasAsFases: somar os jogos de todas as fases (ex.: os times que vieram da Libertadores,
+//                 que não jogaram a fase de grupos da Sul-Americana)
+export function tabelaDoGrupo(dados, momento, grupo, { conmebol = false, todasAsFases = false } = {}) {
   const ate = momento.ate;
   const ids = Object.keys(dados.times).filter((id) => dados.times[id].grupo === grupo);
   const linhas = new Map(ids.map((id) => [id, { id, pontos: 0, jogos: 0, vitorias: 0, saldo: 0, golsPro: 0 }]));
+  const jogosDaTabela = [];
   for (const j of dados.jogos) {
-    if (j.fase !== "primeira-fase" || !j.disputado || ate === null || j.data > ate) continue;
+    if ((!todasAsFases && j.fase !== "primeira-fase") || !j.disputado || ate === null || j.data > ate) continue;
+    jogosDaTabela.push(j);
     for (const [eu, gp, gc] of [[j.mandante, j.gols_mandante, j.gols_visitante],
                                 [j.visitante, j.gols_visitante, j.gols_mandante]]) {
       const l = linhas.get(eu);
@@ -300,8 +404,34 @@ export function tabelaDoGrupo(dados, momento, grupo) {
     }
   }
   // Sem sorteio aqui: empates totais ficam em ordem alfabética, para a tela não "pular".
+  const comparar = conmebol
+    ? (a, b) => (b.pontos - a.pontos) || compararConfrontoDireto(a, b) || (b.saldo - a.saldo)
+      || (b.golsPro - a.golsPro) || a.id.localeCompare(b.id)
+    : (a, b) => (b.pontos - a.pontos) || (b.vitorias - a.vitorias) || (b.saldo - a.saldo)
+      || (b.golsPro - a.golsPro) || a.id.localeCompare(b.id);
+
+  // Regra da CONMEBOL: entre os times com os mesmos pontos, valem primeiro os jogos entre eles
+  // (pontos, saldo e gols nesses jogos).
+  function compararConfrontoDireto(a, b) {
+    const empatados = new Set([...linhas.values()].filter((l) => l.pontos === a.pontos).map((l) => l.id));
+    const mini = (id) => {
+      const conta = [0, 0, 0];
+      for (const j of jogosDaTabela) {
+        if (!empatados.has(j.mandante) || !empatados.has(j.visitante)) continue;
+        if (j.mandante !== id && j.visitante !== id) continue;
+        const gp = j.mandante === id ? j.gols_mandante : j.gols_visitante;
+        const gc = j.mandante === id ? j.gols_visitante : j.gols_mandante;
+        conta[0] += gp > gc ? 3 : gp === gc ? 1 : 0;
+        conta[1] += gp - gc;
+        conta[2] += gp;
+      }
+      return conta;
+    };
+    const [ma, mb] = [mini(a.id), mini(b.id)];
+    return (mb[0] - ma[0]) || (mb[1] - ma[1]) || (mb[2] - ma[2]);
+  }
+
   return [...linhas.values()]
-    .sort((a, b) => (b.pontos - a.pontos) || (b.vitorias - a.vitorias) || (b.saldo - a.saldo)
-      || (b.golsPro - a.golsPro) || a.id.localeCompare(b.id))
+    .sort(comparar)
     .map((l, i) => ({ ...l, posicao: i + 1 }));
 }

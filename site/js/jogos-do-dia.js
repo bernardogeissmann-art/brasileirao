@@ -37,6 +37,34 @@ export function escolherJogosDoDia(jogos, agora = new Date()) {
   return { dia: proximoDia, eHoje: false, jogos: futuros.filter((jogo) => diaDoJogo(jogo) === proximoDia).sort(porHorario) };
 }
 
+// Nos dias de jogo de uma copa (ex.: a Sul-Americana), os "Jogos do dia" mostram a copa
+// primeiro, e os outros campeonatos só se jogarem no mesmo dia. A copa "toma conta" quando o
+// dia que ela mostraria (hoje ou o próximo dia com jogo dela) vem antes ou junto do dia que
+// cada um dos outros campeonatos mostraria.
+//   jogosDaCopa: a lista de jogos da copa
+//   outros:      as listas de jogos dos outros campeonatos (ex.: Série A e Série B)
+// Devolve a escolha da copa ({ dia, eHoje, jogos }) ou null (não é dia da copa: vale o normal).
+export function copaNoDia(jogosDaCopa, outros, agora = new Date()) {
+  const daCopa = escolherJogosDoDia(jogosDaCopa, agora);
+  if (!daCopa) return null;   // a copa acabou
+  const diasDosOutros = outros.map((jogos) => escolherJogosDoDia(jogos, agora)?.dia).filter(Boolean);
+  return diasDosOutros.every((dia) => daCopa.dia <= dia) ? daCopa : null;
+}
+
+// Lê os dados de uma copa que usa o motor dos estaduais (ex.: data/copas/sulamericana-2026):
+// os jogos e o modelo mais recente (o último "momento" do modelos.json).
+// Devolve { jogos, modelo }, no mesmo jeito que o carregarDados() do Brasileirão.
+export async function carregarCopa(pasta) {
+  const ler = async (arquivo) => {
+    const resposta = await fetch(new URL(`../../${pasta}/${arquivo}`, import.meta.url));
+    if (!resposta.ok) throw new Error(`Não consegui ler ${pasta}/${arquivo} (erro ${resposta.status})`);
+    return resposta.json();
+  };
+  const [jogos, modelos] = await Promise.all([ler("jogos.json"), ler("modelos.json")]);
+  const atual = modelos.momentos[modelos.momentos.length - 1];
+  return { jogos, modelo: { times: atual.times, fator_casa: atual.fator_casa } };
+}
+
 // Os últimos resultados de um time, do mais antigo para o mais recente: ["V", "E", "D", ...].
 export function formaRecente(jogos, idTime, quantos = 5) {
   return jogos

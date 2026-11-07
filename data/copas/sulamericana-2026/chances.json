@@ -1,0 +1,4329 @@
+{
+ "competicao": "Copa Sul-Americana",
+ "temporada": 2026,
+ "dados_baixados_em": "2026-11-06T21:36:24-03:00",
+ "calculado_em": "2026-11-07T00:38:51.688Z",
+ "simulacoes": 10000,
+ "momentos": [
+  {
+   "id": "inicio",
+   "rotulo": "Antes do 1º jogo",
+   "curto": "Início",
+   "ate": null,
+   "times": {
+    "academia-puerto-cabello": {
+     "oitavas": 0.377,
+     "quartas": 0.1929,
+     "semifinal": 0.0959,
+     "final": 0.047,
+     "titulo": 0.0247
+    },
+    "alianza-atletico": {
+     "oitavas": 0.3726,
+     "quartas": 0.1841,
+     "semifinal": 0.0912,
+     "final": 0.0491,
+     "titulo": 0.0238
+    },
+    "america-de-cali": {
+     "oitavas": 0.3737,
+     "quartas": 0.189,
+     "semifinal": 0.0951,
+     "final": 0.0479,
+     "titulo": 0.0261
+    },
+    "audax-italiano": {
+     "oitavas": 0.3753,
+     "quartas": 0.1866,
+     "semifinal": 0.0921,
+     "final": 0.0495,
+     "titulo": 0.0241
+    },
+    "barracas-central": {
+     "oitavas": 0.3684,
+     "quartas": 0.1851,
+     "semifinal": 0.0895,
+     "final": 0.045,
+     "titulo": 0.0239
+    },
+    "blooming": {
+     "oitavas": 0.3725,
+     "quartas": 0.1831,
+     "semifinal": 0.0906,
+     "final": 0.0432,
+     "titulo": 0.022
+    },
+    "boca-juniors": {
+     "oitavas": 0.5074,
+     "quartas": 0.2616,
+     "semifinal": 0.1226,
+     "final": 0.0601,
+     "titulo": 0.0317
+    },
+    "bolivar": {
+     "oitavas": 0.4966,
+     "quartas": 0.2544,
+     "semifinal": 0.1281,
+     "final": 0.0615,
+     "titulo": 0.0319
+    },
+    "boston-river": {
+     "oitavas": 0.3746,
+     "quartas": 0.1843,
+     "semifinal": 0.0914,
+     "final": 0.047,
+     "titulo": 0.0218
+    },
+    "botafogo": {
+     "oitavas": 0.3686,
+     "quartas": 0.1798,
+     "semifinal": 0.091,
+     "final": 0.0451,
+     "titulo": 0.0213
+    },
+    "bragantino": {
+     "oitavas": 0.3788,
+     "quartas": 0.1886,
+     "semifinal": 0.0948,
+     "final": 0.0494,
+     "titulo": 0.0255
+    },
+    "carabobo": {
+     "oitavas": 0.3723,
+     "quartas": 0.1826,
+     "semifinal": 0.0918,
+     "final": 0.0451,
+     "titulo": 0.0228
+    },
+    "caracas": {
+     "oitavas": 0.3709,
+     "quartas": 0.1868,
+     "semifinal": 0.0924,
+     "final": 0.048,
+     "titulo": 0.0225
+    },
+    "cienciano": {
+     "oitavas": 0.3795,
+     "quartas": 0.1941,
+     "semifinal": 0.094,
+     "final": 0.0492,
+     "titulo": 0.0261
+    },
+    "deportivo-cuenca": {
+     "oitavas": 0.3622,
+     "quartas": 0.1793,
+     "semifinal": 0.0889,
+     "final": 0.0463,
+     "titulo": 0.0253
+    },
+    "deportivo-recoleta": {
+     "oitavas": 0.3794,
+     "quartas": 0.1905,
+     "semifinal": 0.0962,
+     "final": 0.044,
+     "titulo": 0.0206
+    },
+    "deportivo-riestra": {
+     "oitavas": 0.3833,
+     "quartas": 0.1945,
+     "semifinal": 0.0976,
+     "final": 0.0488,
+     "titulo": 0.0247
+    },
+    "gremio": {
+     "oitavas": 0.3693,
+     "quartas": 0.185,
+     "semifinal": 0.0883,
+     "final": 0.0443,
+     "titulo": 0.0232
+    },
+    "independiente-medellin": {
+     "oitavas": 0.4931,
+     "quartas": 0.2426,
+     "semifinal": 0.1233,
+     "final": 0.0607,
+     "titulo": 0.0291
+    },
+    "independiente-petrolero": {
+     "oitavas": 0.3835,
+     "quartas": 0.1935,
+     "semifinal": 0.0935,
+     "final": 0.0486,
+     "titulo": 0.0237
+    },
+    "juventud": {
+     "oitavas": 0.3709,
+     "quartas": 0.1827,
+     "semifinal": 0.0954,
+     "final": 0.0494,
+     "titulo": 0.0242
+    },
+    "lanus": {
+     "oitavas": 0.4965,
+     "quartas": 0.2481,
+     "semifinal": 0.124,
+     "final": 0.0586,
+     "titulo": 0.0275
+    },
+    "macara": {
+     "oitavas": 0.3822,
+     "quartas": 0.1942,
+     "semifinal": 0.0941,
+     "final": 0.0479,
+     "titulo": 0.0239
+    },
+    "millonarios": {
+     "oitavas": 0.3733,
+     "quartas": 0.1871,
+     "semifinal": 0.092,
+     "final": 0.0443,
+     "titulo": 0.0235
+    },
+    "mineiro": {
+     "oitavas": 0.3752,
+     "quartas": 0.1871,
+     "semifinal": 0.098,
+     "final": 0.0506,
+     "titulo": 0.0254
+    },
+    "montevideo-city-torque": {
+     "oitavas": 0.3798,
+     "quartas": 0.1894,
+     "semifinal": 0.0988,
+     "final": 0.0504,
+     "titulo": 0.0247
+    },
+    "nacional": {
+     "oitavas": 0.4937,
+     "quartas": 0.2491,
+     "semifinal": 0.127,
+     "final": 0.0657,
+     "titulo": 0.0327
+    },
+    "ohiggins": {
+     "oitavas": 0.386,
+     "quartas": 0.1934,
+     "semifinal": 0.098,
+     "final": 0.0495,
+     "titulo": 0.0248
+    },
+    "olimpia": {
+     "oitavas": 0.3753,
+     "quartas": 0.1833,
+     "semifinal": 0.0927,
+     "final": 0.0456,
+     "titulo": 0.0242
+    },
+    "palestino": {
+     "oitavas": 0.3744,
+     "quartas": 0.188,
+     "semifinal": 0.1002,
+     "final": 0.0506,
+     "titulo": 0.0252
+    },
+    "racing": {
+     "oitavas": 0.3762,
+     "quartas": 0.1875,
+     "semifinal": 0.0915,
+     "final": 0.0454,
+     "titulo": 0.022
+    },
+    "river-plate": {
+     "oitavas": 0.3762,
+     "quartas": 0.1838,
+     "semifinal": 0.0909,
+     "final": 0.0441,
+     "titulo": 0.0202
+    },
+    "san-lorenzo": {
+     "oitavas": 0.3684,
+     "quartas": 0.1892,
+     "semifinal": 0.0969,
+     "final": 0.0467,
+     "titulo": 0.0254
+    },
+    "santa-fe": {
+     "oitavas": 0.4948,
+     "quartas": 0.2439,
+     "semifinal": 0.1245,
+     "final": 0.0612,
+     "titulo": 0.0301
+    },
+    "santos": {
+     "oitavas": 0.3866,
+     "quartas": 0.1922,
+     "semifinal": 0.101,
+     "final": 0.0497,
+     "titulo": 0.0248
+    },
+    "sao-paulo": {
+     "oitavas": 0.3809,
+     "quartas": 0.1912,
+     "semifinal": 0.0942,
+     "final": 0.0451,
+     "titulo": 0.0224
+    },
+    "sporting-cristal": {
+     "oitavas": 0.4982,
+     "quartas": 0.2471,
+     "semifinal": 0.1209,
+     "final": 0.0604,
+     "titulo": 0.0289
+    },
+    "tigre": {
+     "oitavas": 0.3744,
+     "quartas": 0.1871,
+     "semifinal": 0.0924,
+     "final": 0.0452,
+     "titulo": 0.0215
+    },
+    "ucv": {
+     "oitavas": 0.5003,
+     "quartas": 0.2476,
+     "semifinal": 0.1232,
+     "final": 0.0593,
+     "titulo": 0.0297
+    },
+    "vasco-da-gama": {
+     "oitavas": 0.3777,
+     "quartas": 0.1896,
+     "semifinal": 0.096,
+     "final": 0.0505,
+     "titulo": 0.0241
+    }
+   }
+  },
+  {
+   "id": "rodada-1",
+   "rotulo": "Após a 1ª rodada",
+   "curto": "R1",
+   "ate": "2026-04-09T21:30:00-03:00",
+   "times": {
+    "academia-puerto-cabello": {
+     "oitavas": 0.6646,
+     "quartas": 0.3544,
+     "semifinal": 0.1914,
+     "final": 0.0927,
+     "titulo": 0.0442
+    },
+    "alianza-atletico": {
+     "oitavas": 0.3381,
+     "quartas": 0.1541,
+     "semifinal": 0.0756,
+     "final": 0.0292,
+     "titulo": 0.013
+    },
+    "america-de-cali": {
+     "oitavas": 0.4127,
+     "quartas": 0.1945,
+     "semifinal": 0.0931,
+     "final": 0.0446,
+     "titulo": 0.0203
+    },
+    "audax-italiano": {
+     "oitavas": 0.0534,
+     "quartas": 0.0178,
+     "semifinal": 0.0039,
+     "final": 0.0003,
+     "titulo": 0.0003
+    },
+    "barracas-central": {
+     "oitavas": 0.2796,
+     "quartas": 0.1249,
+     "semifinal": 0.0579,
+     "final": 0.0258,
+     "titulo": 0.0091
+    },
+    "blooming": {
+     "oitavas": 0.2938,
+     "quartas": 0.1317,
+     "semifinal": 0.057,
+     "final": 0.0238,
+     "titulo": 0.01
+    },
+    "boca-juniors": {
+     "oitavas": 0.4821,
+     "quartas": 0.2127,
+     "semifinal": 0.0967,
+     "final": 0.0443,
+     "titulo": 0.0202
+    },
+    "bolivar": {
+     "oitavas": 0.481,
+     "quartas": 0.2158,
+     "semifinal": 0.0956,
+     "final": 0.0408,
+     "titulo": 0.0197
+    },
+    "boston-river": {
+     "oitavas": 0.0724,
+     "quartas": 0.0261,
+     "semifinal": 0.0101,
+     "final": 0.0038,
+     "titulo": 0.0019
+    },
+    "botafogo": {
+     "oitavas": 0.2755,
+     "quartas": 0.1199,
+     "semifinal": 0.0528,
+     "final": 0.0229,
+     "titulo": 0.01
+    },
+    "bragantino": {
+     "oitavas": 0.1305,
+     "quartas": 0.0462,
+     "semifinal": 0.0162,
+     "final": 0.0055,
+     "titulo": 0.0023
+    },
+    "carabobo": {
+     "oitavas": 0.7023,
+     "quartas": 0.3908,
+     "semifinal": 0.2007,
+     "final": 0.1067,
+     "titulo": 0.0543
+    },
+    "caracas": {
+     "oitavas": 0.3449,
+     "quartas": 0.1617,
+     "semifinal": 0.0756,
+     "final": 0.0347,
+     "titulo": 0.0147
+    },
+    "cienciano": {
+     "oitavas": 0.3794,
+     "quartas": 0.1822,
+     "semifinal": 0.0894,
+     "final": 0.0418,
+     "titulo": 0.0177
+    },
+    "deportivo-cuenca": {
+     "oitavas": 0.7003,
+     "quartas": 0.3912,
+     "semifinal": 0.1978,
+     "final": 0.1118,
+     "titulo": 0.0563
+    },
+    "deportivo-recoleta": {
+     "oitavas": 0.3019,
+     "quartas": 0.1365,
+     "semifinal": 0.0564,
+     "final": 0.0253,
+     "titulo": 0.0106
+    },
+    "deportivo-riestra": {
+     "oitavas": 0.3046,
+     "quartas": 0.1406,
+     "semifinal": 0.059,
+     "final": 0.0258,
+     "titulo": 0.0112
+    },
+    "gremio": {
+     "oitavas": 0.1464,
+     "quartas": 0.0584,
+     "semifinal": 0.0205,
+     "final": 0.0061,
+     "titulo": 0.0028
+    },
+    "independiente-medellin": {
+     "oitavas": 0.4924,
+     "quartas": 0.2171,
+     "semifinal": 0.0955,
+     "final": 0.0404,
+     "titulo": 0.0186
+    },
+    "independiente-petrolero": {
+     "oitavas": 0.0693,
+     "quartas": 0.0214,
+     "semifinal": 0.0076,
+     "final": 0.0023,
+     "titulo": 0.0007
+    },
+    "juventud": {
+     "oitavas": 0.2905,
+     "quartas": 0.1349,
+     "semifinal": 0.0635,
+     "final": 0.0254,
+     "titulo": 0.0103
+    },
+    "lanus": {
+     "oitavas": 0.4977,
+     "quartas": 0.2169,
+     "semifinal": 0.0997,
+     "final": 0.0462,
+     "titulo": 0.0222
+    },
+    "macara": {
+     "oitavas": 0.3375,
+     "quartas": 0.1547,
+     "semifinal": 0.071,
+     "final": 0.0291,
+     "titulo": 0.0134
+    },
+    "millonarios": {
+     "oitavas": 0.0505,
+     "quartas": 0.0172,
+     "semifinal": 0.0053,
+     "final": 0.0014,
+     "titulo": 0.0008
+    },
+    "mineiro": {
+     "oitavas": 0.1737,
+     "quartas": 0.0673,
+     "semifinal": 0.0301,
+     "final": 0.0112,
+     "titulo": 0.0046
+    },
+    "montevideo-city-torque": {
+     "oitavas": 0.7075,
+     "quartas": 0.3962,
+     "semifinal": 0.2077,
+     "final": 0.1049,
+     "titulo": 0.054
+    },
+    "nacional": {
+     "oitavas": 0.4764,
+     "quartas": 0.2112,
+     "semifinal": 0.0934,
+     "final": 0.041,
+     "titulo": 0.019
+    },
+    "ohiggins": {
+     "oitavas": 0.7619,
+     "quartas": 0.4791,
+     "semifinal": 0.2839,
+     "final": 0.1801,
+     "titulo": 0.1002
+    },
+    "olimpia": {
+     "oitavas": 0.8418,
+     "quartas": 0.5515,
+     "semifinal": 0.3523,
+     "final": 0.2189,
+     "titulo": 0.1293
+    },
+    "palestino": {
+     "oitavas": 0.3546,
+     "quartas": 0.1692,
+     "semifinal": 0.0769,
+     "final": 0.0346,
+     "titulo": 0.0172
+    },
+    "racing": {
+     "oitavas": 0.8216,
+     "quartas": 0.522,
+     "semifinal": 0.3164,
+     "final": 0.1774,
+     "titulo": 0.1016
+    },
+    "river-plate": {
+     "oitavas": 0.3724,
+     "quartas": 0.1772,
+     "semifinal": 0.0791,
+     "final": 0.0362,
+     "titulo": 0.0173
+    },
+    "san-lorenzo": {
+     "oitavas": 0.3709,
+     "quartas": 0.1788,
+     "semifinal": 0.0784,
+     "final": 0.0371,
+     "titulo": 0.0169
+    },
+    "santa-fe": {
+     "oitavas": 0.4849,
+     "quartas": 0.2106,
+     "semifinal": 0.0912,
+     "final": 0.0412,
+     "titulo": 0.0169
+    },
+    "santos": {
+     "oitavas": 0.1308,
+     "quartas": 0.0496,
+     "semifinal": 0.0193,
+     "final": 0.0065,
+     "titulo": 0.0022
+    },
+    "sao-paulo": {
+     "oitavas": 0.6917,
+     "quartas": 0.3912,
+     "semifinal": 0.2263,
+     "final": 0.1226,
+     "titulo": 0.062
+    },
+    "sporting-cristal": {
+     "oitavas": 0.4813,
+     "quartas": 0.2116,
+     "semifinal": 0.0933,
+     "final": 0.0405,
+     "titulo": 0.0201
+    },
+    "tigre": {
+     "oitavas": 0.4063,
+     "quartas": 0.1926,
+     "semifinal": 0.0927,
+     "final": 0.0406,
+     "titulo": 0.0173
+    },
+    "ucv": {
+     "oitavas": 0.4854,
+     "quartas": 0.2104,
+     "semifinal": 0.0946,
+     "final": 0.0422,
+     "titulo": 0.0197
+    },
+    "vasco-da-gama": {
+     "oitavas": 0.3374,
+     "quartas": 0.1598,
+     "semifinal": 0.0721,
+     "final": 0.0343,
+     "titulo": 0.0171
+    }
+   }
+  },
+  {
+   "id": "rodada-2",
+   "rotulo": "Após a 2ª rodada",
+   "curto": "R2",
+   "ate": "2026-04-16T23:00:00-03:00",
+   "times": {
+    "academia-puerto-cabello": {
+     "oitavas": 0.2805,
+     "quartas": 0.1049,
+     "semifinal": 0.0424,
+     "final": 0.0133,
+     "titulo": 0.0051
+    },
+    "alianza-atletico": {
+     "oitavas": 0.1058,
+     "quartas": 0.0399,
+     "semifinal": 0.0144,
+     "final": 0.0045,
+     "titulo": 0.002
+    },
+    "america-de-cali": {
+     "oitavas": 0.6689,
+     "quartas": 0.3492,
+     "semifinal": 0.177,
+     "final": 0.0779,
+     "titulo": 0.0335
+    },
+    "audax-italiano": {
+     "oitavas": 0.2921,
+     "quartas": 0.1061,
+     "semifinal": 0.0401,
+     "final": 0.0128,
+     "titulo": 0.0043
+    },
+    "barracas-central": {
+     "oitavas": 0.2849,
+     "quartas": 0.129,
+     "semifinal": 0.0586,
+     "final": 0.026,
+     "titulo": 0.0114
+    },
+    "blooming": {
+     "oitavas": 0.1419,
+     "quartas": 0.0521,
+     "semifinal": 0.0185,
+     "final": 0.005,
+     "titulo": 0.0024
+    },
+    "boca-juniors": {
+     "oitavas": 0.4792,
+     "quartas": 0.1936,
+     "semifinal": 0.0806,
+     "final": 0.0318,
+     "titulo": 0.0138
+    },
+    "bolivar": {
+     "oitavas": 0.4717,
+     "quartas": 0.1884,
+     "semifinal": 0.0777,
+     "final": 0.0307,
+     "titulo": 0.0129
+    },
+    "boston-river": {
+     "oitavas": 0.0237,
+     "quartas": 0.0063,
+     "semifinal": 0.0017,
+     "final": 0.0004,
+     "titulo": 0
+    },
+    "botafogo": {
+     "oitavas": 0.6947,
+     "quartas": 0.3909,
+     "semifinal": 0.175,
+     "final": 0.0866,
+     "titulo": 0.0401
+    },
+    "bragantino": {
+     "oitavas": 0.3166,
+     "quartas": 0.1323,
+     "semifinal": 0.0487,
+     "final": 0.0156,
+     "titulo": 0.0069
+    },
+    "carabobo": {
+     "oitavas": 0.3766,
+     "quartas": 0.166,
+     "semifinal": 0.0738,
+     "final": 0.0295,
+     "titulo": 0.0104
+    },
+    "caracas": {
+     "oitavas": 0.5416,
+     "quartas": 0.2831,
+     "semifinal": 0.1182,
+     "final": 0.0599,
+     "titulo": 0.0296
+    },
+    "cienciano": {
+     "oitavas": 0.7692,
+     "quartas": 0.4625,
+     "semifinal": 0.2706,
+     "final": 0.1393,
+     "titulo": 0.0732
+    },
+    "deportivo-cuenca": {
+     "oitavas": 0.2772,
+     "quartas": 0.1033,
+     "semifinal": 0.0348,
+     "final": 0.0133,
+     "titulo": 0.0043
+    },
+    "deportivo-recoleta": {
+     "oitavas": 0.3282,
+     "quartas": 0.1468,
+     "semifinal": 0.0563,
+     "final": 0.0211,
+     "titulo": 0.007
+    },
+    "deportivo-riestra": {
+     "oitavas": 0.0481,
+     "quartas": 0.0172,
+     "semifinal": 0.0058,
+     "final": 0.002,
+     "titulo": 0.0008
+    },
+    "gremio": {
+     "oitavas": 0.4534,
+     "quartas": 0.2027,
+     "semifinal": 0.0955,
+     "final": 0.0412,
+     "titulo": 0.0179
+    },
+    "independiente-medellin": {
+     "oitavas": 0.4761,
+     "quartas": 0.1819,
+     "semifinal": 0.0785,
+     "final": 0.0307,
+     "titulo": 0.0125
+    },
+    "independiente-petrolero": {
+     "oitavas": 0.0105,
+     "quartas": 0.0026,
+     "semifinal": 0.0006,
+     "final": 0.0001,
+     "titulo": 0
+    },
+    "juventud": {
+     "oitavas": 0.1492,
+     "quartas": 0.0562,
+     "semifinal": 0.0225,
+     "final": 0.0068,
+     "titulo": 0.0031
+    },
+    "lanus": {
+     "oitavas": 0.4826,
+     "quartas": 0.1962,
+     "semifinal": 0.0801,
+     "final": 0.0306,
+     "titulo": 0.0144
+    },
+    "macara": {
+     "oitavas": 0.6612,
+     "quartas": 0.3524,
+     "semifinal": 0.1805,
+     "final": 0.0824,
+     "titulo": 0.0379
+    },
+    "millonarios": {
+     "oitavas": 0.1344,
+     "quartas": 0.0438,
+     "semifinal": 0.0151,
+     "final": 0.0045,
+     "titulo": 0.0013
+    },
+    "mineiro": {
+     "oitavas": 0.3025,
+     "quartas": 0.1278,
+     "semifinal": 0.0534,
+     "final": 0.0175,
+     "titulo": 0.0068
+    },
+    "montevideo-city-torque": {
+     "oitavas": 0.9569,
+     "quartas": 0.6698,
+     "semifinal": 0.4578,
+     "final": 0.2947,
+     "titulo": 0.1713
+    },
+    "nacional": {
+     "oitavas": 0.4769,
+     "quartas": 0.1939,
+     "semifinal": 0.0775,
+     "final": 0.03,
+     "titulo": 0.0121
+    },
+    "ohiggins": {
+     "oitavas": 0.404,
+     "quartas": 0.168,
+     "semifinal": 0.0748,
+     "final": 0.033,
+     "titulo": 0.0136
+    },
+    "olimpia": {
+     "oitavas": 0.8551,
+     "quartas": 0.5578,
+     "semifinal": 0.3601,
+     "final": 0.2028,
+     "titulo": 0.1155
+    },
+    "palestino": {
+     "oitavas": 0.0527,
+     "quartas": 0.0137,
+     "semifinal": 0.0029,
+     "final": 0.0011,
+     "titulo": 0.0002
+    },
+    "racing": {
+     "oitavas": 0.327,
+     "quartas": 0.1555,
+     "semifinal": 0.0578,
+     "final": 0.0241,
+     "titulo": 0.011
+    },
+    "river-plate": {
+     "oitavas": 0.6811,
+     "quartas": 0.3675,
+     "semifinal": 0.1804,
+     "final": 0.0835,
+     "titulo": 0.0384
+    },
+    "san-lorenzo": {
+     "oitavas": 0.8193,
+     "quartas": 0.5058,
+     "semifinal": 0.26,
+     "final": 0.145,
+     "titulo": 0.0748
+    },
+    "santa-fe": {
+     "oitavas": 0.4895,
+     "quartas": 0.1974,
+     "semifinal": 0.0811,
+     "final": 0.0346,
+     "titulo": 0.0136
+    },
+    "santos": {
+     "oitavas": 0.0875,
+     "quartas": 0.0301,
+     "semifinal": 0.0086,
+     "final": 0.004,
+     "titulo": 0.0015
+    },
+    "sao-paulo": {
+     "oitavas": 0.9431,
+     "quartas": 0.656,
+     "semifinal": 0.4285,
+     "final": 0.2887,
+     "titulo": 0.1669
+    },
+    "sporting-cristal": {
+     "oitavas": 0.4771,
+     "quartas": 0.1925,
+     "semifinal": 0.0843,
+     "final": 0.0344,
+     "titulo": 0.0148
+    },
+    "tigre": {
+     "oitavas": 0.1002,
+     "quartas": 0.0354,
+     "semifinal": 0.0119,
+     "final": 0.0034,
+     "titulo": 0.0012
+    },
+    "ucv": {
+     "oitavas": 0.4854,
+     "quartas": 0.1963,
+     "semifinal": 0.0855,
+     "final": 0.0348,
+     "titulo": 0.0129
+    },
+    "vasco-da-gama": {
+     "oitavas": 0.0734,
+     "quartas": 0.0251,
+     "semifinal": 0.0084,
+     "final": 0.0024,
+     "titulo": 0.0006
+    }
+   }
+  },
+  {
+   "id": "rodada-3",
+   "rotulo": "Após a 3ª rodada",
+   "curto": "R3",
+   "ate": "2026-04-30T23:00:00-03:00",
+   "times": {
+    "academia-puerto-cabello": {
+     "oitavas": 0.0428,
+     "quartas": 0.0093,
+     "semifinal": 0.0017,
+     "final": 0.0001,
+     "titulo": 0.0001
+    },
+    "alianza-atletico": {
+     "oitavas": 0.0123,
+     "quartas": 0.0028,
+     "semifinal": 0.0009,
+     "final": 0.0002,
+     "titulo": 0
+    },
+    "america-de-cali": {
+     "oitavas": 0.2679,
+     "quartas": 0.1048,
+     "semifinal": 0.0366,
+     "final": 0.0122,
+     "titulo": 0.0046
+    },
+    "audax-italiano": {
+     "oitavas": 0.3958,
+     "quartas": 0.1552,
+     "semifinal": 0.0579,
+     "final": 0.0185,
+     "titulo": 0.0073
+    },
+    "barracas-central": {
+     "oitavas": 0.1856,
+     "quartas": 0.0793,
+     "semifinal": 0.0314,
+     "final": 0.0135,
+     "titulo": 0.0058
+    },
+    "blooming": {
+     "oitavas": 0.0215,
+     "quartas": 0.0064,
+     "semifinal": 0.0021,
+     "final": 0.001,
+     "titulo": 0.0005
+    },
+    "boca-juniors": {
+     "oitavas": 0.4521,
+     "quartas": 0.1794,
+     "semifinal": 0.0736,
+     "final": 0.0263,
+     "titulo": 0.0113
+    },
+    "bolivar": {
+     "oitavas": 0.4548,
+     "quartas": 0.1821,
+     "semifinal": 0.074,
+     "final": 0.031,
+     "titulo": 0.0131
+    },
+    "boston-river": {
+     "oitavas": 0.0016,
+     "quartas": 0.0005,
+     "semifinal": 0.0001,
+     "final": 0,
+     "titulo": 0
+    },
+    "botafogo": {
+     "oitavas": 0.8653,
+     "quartas": 0.5484,
+     "semifinal": 0.3189,
+     "final": 0.1864,
+     "titulo": 0.1006
+    },
+    "bragantino": {
+     "oitavas": 0.0487,
+     "quartas": 0.0155,
+     "semifinal": 0.0059,
+     "final": 0.0017,
+     "titulo": 0.0005
+    },
+    "carabobo": {
+     "oitavas": 0.6135,
+     "quartas": 0.3135,
+     "semifinal": 0.167,
+     "final": 0.0823,
+     "titulo": 0.0375
+    },
+    "caracas": {
+     "oitavas": 0.3372,
+     "quartas": 0.1517,
+     "semifinal": 0.0683,
+     "final": 0.0318,
+     "titulo": 0.0127
+    },
+    "cienciano": {
+     "oitavas": 0.8685,
+     "quartas": 0.5288,
+     "semifinal": 0.2818,
+     "final": 0.1556,
+     "titulo": 0.0819
+    },
+    "deportivo-cuenca": {
+     "oitavas": 0.3821,
+     "quartas": 0.1572,
+     "semifinal": 0.0587,
+     "final": 0.0217,
+     "titulo": 0.0084
+    },
+    "deportivo-recoleta": {
+     "oitavas": 0.2273,
+     "quartas": 0.0933,
+     "semifinal": 0.0345,
+     "final": 0.0132,
+     "titulo": 0.0055
+    },
+    "deportivo-riestra": {
+     "oitavas": 0.2375,
+     "quartas": 0.0937,
+     "semifinal": 0.0375,
+     "final": 0.0128,
+     "titulo": 0.005
+    },
+    "gremio": {
+     "oitavas": 0.3897,
+     "quartas": 0.1713,
+     "semifinal": 0.0767,
+     "final": 0.0346,
+     "titulo": 0.0155
+    },
+    "independiente-medellin": {
+     "oitavas": 0.456,
+     "quartas": 0.1758,
+     "semifinal": 0.0732,
+     "final": 0.0309,
+     "titulo": 0.0127
+    },
+    "independiente-petrolero": {
+     "oitavas": 0.0012,
+     "quartas": 0.0004,
+     "semifinal": 0.0001,
+     "final": 0,
+     "titulo": 0
+    },
+    "juventud": {
+     "oitavas": 0.4753,
+     "quartas": 0.2518,
+     "semifinal": 0.1268,
+     "final": 0.0618,
+     "titulo": 0.0298
+    },
+    "lanus": {
+     "oitavas": 0.4559,
+     "quartas": 0.1804,
+     "semifinal": 0.0743,
+     "final": 0.0298,
+     "titulo": 0.0119
+    },
+    "macara": {
+     "oitavas": 0.9333,
+     "quartas": 0.6212,
+     "semifinal": 0.3724,
+     "final": 0.2183,
+     "titulo": 0.1213
+    },
+    "millonarios": {
+     "oitavas": 0.0885,
+     "quartas": 0.0309,
+     "semifinal": 0.0126,
+     "final": 0.0042,
+     "titulo": 0.0017
+    },
+    "mineiro": {
+     "oitavas": 0.1651,
+     "quartas": 0.0639,
+     "semifinal": 0.0244,
+     "final": 0.0088,
+     "titulo": 0.0033
+    },
+    "montevideo-city-torque": {
+     "oitavas": 0.8621,
+     "quartas": 0.5117,
+     "semifinal": 0.2687,
+     "final": 0.1498,
+     "titulo": 0.0754
+    },
+    "nacional": {
+     "oitavas": 0.4573,
+     "quartas": 0.1795,
+     "semifinal": 0.0755,
+     "final": 0.028,
+     "titulo": 0.0093
+    },
+    "ohiggins": {
+     "oitavas": 0.5837,
+     "quartas": 0.2844,
+     "semifinal": 0.1476,
+     "final": 0.071,
+     "titulo": 0.033
+    },
+    "olimpia": {
+     "oitavas": 0.4538,
+     "quartas": 0.1919,
+     "semifinal": 0.0728,
+     "final": 0.0254,
+     "titulo": 0.0106
+    },
+    "palestino": {
+     "oitavas": 0.0265,
+     "quartas": 0.0067,
+     "semifinal": 0.0021,
+     "final": 0.0006,
+     "titulo": 0.0004
+    },
+    "racing": {
+     "oitavas": 0.3662,
+     "quartas": 0.1648,
+     "semifinal": 0.0758,
+     "final": 0.0307,
+     "titulo": 0.014
+    },
+    "river-plate": {
+     "oitavas": 0.8992,
+     "quartas": 0.5494,
+     "semifinal": 0.3403,
+     "final": 0.1929,
+     "titulo": 0.1027
+    },
+    "san-lorenzo": {
+     "oitavas": 0.6997,
+     "quartas": 0.3806,
+     "semifinal": 0.1682,
+     "final": 0.0751,
+     "titulo": 0.0355
+    },
+    "santa-fe": {
+     "oitavas": 0.4572,
+     "quartas": 0.1757,
+     "semifinal": 0.0733,
+     "final": 0.028,
+     "titulo": 0.0125
+    },
+    "santos": {
+     "oitavas": 0.196,
+     "quartas": 0.0755,
+     "semifinal": 0.0247,
+     "final": 0.0096,
+     "titulo": 0.0033
+    },
+    "sao-paulo": {
+     "oitavas": 0.9142,
+     "quartas": 0.6181,
+     "semifinal": 0.4159,
+     "final": 0.2547,
+     "titulo": 0.152
+    },
+    "sporting-cristal": {
+     "oitavas": 0.4561,
+     "quartas": 0.1789,
+     "semifinal": 0.0734,
+     "final": 0.0306,
+     "titulo": 0.0131
+    },
+    "tigre": {
+     "oitavas": 0.3233,
+     "quartas": 0.1426,
+     "semifinal": 0.0658,
+     "final": 0.0265,
+     "titulo": 0.0128
+    },
+    "ucv": {
+     "oitavas": 0.4525,
+     "quartas": 0.1788,
+     "semifinal": 0.0734,
+     "final": 0.0285,
+     "titulo": 0.0115
+    },
+    "vasco-da-gama": {
+     "oitavas": 0.4727,
+     "quartas": 0.2438,
+     "semifinal": 0.1111,
+     "final": 0.0519,
+     "titulo": 0.0229
+    }
+   }
+  },
+  {
+   "id": "rodada-4",
+   "rotulo": "Após a 4ª rodada",
+   "curto": "R4",
+   "ate": "2026-05-07T21:30:00-03:00",
+   "times": {
+    "academia-puerto-cabello": {
+     "oitavas": 0.3287,
+     "quartas": 0.116,
+     "semifinal": 0.0388,
+     "final": 0.0136,
+     "titulo": 0.0049
+    },
+    "alianza-atletico": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "america-de-cali": {
+     "oitavas": 0.4611,
+     "quartas": 0.2162,
+     "semifinal": 0.1049,
+     "final": 0.0432,
+     "titulo": 0.0184
+    },
+    "audax-italiano": {
+     "oitavas": 0.0761,
+     "quartas": 0.0249,
+     "semifinal": 0.0089,
+     "final": 0.0033,
+     "titulo": 0.0015
+    },
+    "barracas-central": {
+     "oitavas": 0.0215,
+     "quartas": 0.007,
+     "semifinal": 0.0013,
+     "final": 0.0005,
+     "titulo": 0.0001
+    },
+    "blooming": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "boca-juniors": {
+     "oitavas": 0.4381,
+     "quartas": 0.1727,
+     "semifinal": 0.0685,
+     "final": 0.0285,
+     "titulo": 0.0132
+    },
+    "bolivar": {
+     "oitavas": 0.4278,
+     "quartas": 0.1659,
+     "semifinal": 0.0679,
+     "final": 0.0262,
+     "titulo": 0.0106
+    },
+    "boston-river": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "botafogo": {
+     "oitavas": 0.9341,
+     "quartas": 0.5687,
+     "semifinal": 0.3198,
+     "final": 0.1746,
+     "titulo": 0.0938
+    },
+    "bragantino": {
+     "oitavas": 0.3571,
+     "quartas": 0.191,
+     "semifinal": 0.1042,
+     "final": 0.0544,
+     "titulo": 0.0278
+    },
+    "carabobo": {
+     "oitavas": 0.2587,
+     "quartas": 0.1188,
+     "semifinal": 0.0559,
+     "final": 0.0249,
+     "titulo": 0.0115
+    },
+    "caracas": {
+     "oitavas": 0.5202,
+     "quartas": 0.2375,
+     "semifinal": 0.1061,
+     "final": 0.0471,
+     "titulo": 0.0203
+    },
+    "cienciano": {
+     "oitavas": 0.5381,
+     "quartas": 0.2379,
+     "semifinal": 0.0942,
+     "final": 0.0364,
+     "titulo": 0.015
+    },
+    "deportivo-cuenca": {
+     "oitavas": 0.33,
+     "quartas": 0.126,
+     "semifinal": 0.0434,
+     "final": 0.0169,
+     "titulo": 0.0079
+    },
+    "deportivo-recoleta": {
+     "oitavas": 0.2099,
+     "quartas": 0.0842,
+     "semifinal": 0.0312,
+     "final": 0.0125,
+     "titulo": 0.0047
+    },
+    "deportivo-riestra": {
+     "oitavas": 0.0177,
+     "quartas": 0.0047,
+     "semifinal": 0.0011,
+     "final": 0.0003,
+     "titulo": 0.0002
+    },
+    "gremio": {
+     "oitavas": 0.7468,
+     "quartas": 0.4439,
+     "semifinal": 0.2588,
+     "final": 0.1469,
+     "titulo": 0.0807
+    },
+    "independiente-medellin": {
+     "oitavas": 0.4317,
+     "quartas": 0.17,
+     "semifinal": 0.0691,
+     "final": 0.0269,
+     "titulo": 0.0108
+    },
+    "independiente-petrolero": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "juventud": {
+     "oitavas": 0.3781,
+     "quartas": 0.1935,
+     "semifinal": 0.0965,
+     "final": 0.0452,
+     "titulo": 0.0195
+    },
+    "lanus": {
+     "oitavas": 0.438,
+     "quartas": 0.1704,
+     "semifinal": 0.0687,
+     "final": 0.0264,
+     "titulo": 0.0102
+    },
+    "macara": {
+     "oitavas": 0.8639,
+     "quartas": 0.5114,
+     "semifinal": 0.3049,
+     "final": 0.159,
+     "titulo": 0.082
+    },
+    "millonarios": {
+     "oitavas": 0.2198,
+     "quartas": 0.093,
+     "semifinal": 0.0418,
+     "final": 0.0151,
+     "titulo": 0.0068
+    },
+    "mineiro": {
+     "oitavas": 0.2465,
+     "quartas": 0.1029,
+     "semifinal": 0.0394,
+     "final": 0.0158,
+     "titulo": 0.0062
+    },
+    "montevideo-city-torque": {
+     "oitavas": 0.8682,
+     "quartas": 0.4987,
+     "semifinal": 0.2593,
+     "final": 0.1341,
+     "titulo": 0.0693
+    },
+    "nacional": {
+     "oitavas": 0.435,
+     "quartas": 0.1747,
+     "semifinal": 0.07,
+     "final": 0.027,
+     "titulo": 0.0109
+    },
+    "ohiggins": {
+     "oitavas": 0.5062,
+     "quartas": 0.2611,
+     "semifinal": 0.1323,
+     "final": 0.0656,
+     "titulo": 0.0324
+    },
+    "olimpia": {
+     "oitavas": 0.6317,
+     "quartas": 0.2764,
+     "semifinal": 0.1098,
+     "final": 0.0445,
+     "titulo": 0.0173
+    },
+    "palestino": {
+     "oitavas": 0.0057,
+     "quartas": 0.0015,
+     "semifinal": 0.0003,
+     "final": 0.0001,
+     "titulo": 0
+    },
+    "racing": {
+     "oitavas": 0.125,
+     "quartas": 0.0522,
+     "semifinal": 0.0241,
+     "final": 0.0111,
+     "titulo": 0.0041
+    },
+    "river-plate": {
+     "oitavas": 0.9867,
+     "quartas": 0.6191,
+     "semifinal": 0.3771,
+     "final": 0.2172,
+     "titulo": 0.1248
+    },
+    "san-lorenzo": {
+     "oitavas": 0.7572,
+     "quartas": 0.4143,
+     "semifinal": 0.1978,
+     "final": 0.1042,
+     "titulo": 0.0473
+    },
+    "santa-fe": {
+     "oitavas": 0.4428,
+     "quartas": 0.1728,
+     "semifinal": 0.0677,
+     "final": 0.0267,
+     "titulo": 0.0132
+    },
+    "santos": {
+     "oitavas": 0.1872,
+     "quartas": 0.0764,
+     "semifinal": 0.0251,
+     "final": 0.0094,
+     "titulo": 0.003
+    },
+    "sao-paulo": {
+     "oitavas": 0.8856,
+     "quartas": 0.5844,
+     "semifinal": 0.3849,
+     "final": 0.2457,
+     "titulo": 0.14
+    },
+    "sporting-cristal": {
+     "oitavas": 0.4361,
+     "quartas": 0.1734,
+     "semifinal": 0.0713,
+     "final": 0.0277,
+     "titulo": 0.0125
+    },
+    "tigre": {
+     "oitavas": 0.2501,
+     "quartas": 0.1193,
+     "semifinal": 0.0577,
+     "final": 0.0255,
+     "titulo": 0.0112
+    },
+    "ucv": {
+     "oitavas": 0.4363,
+     "quartas": 0.1707,
+     "semifinal": 0.0711,
+     "final": 0.0289,
+     "titulo": 0.0124
+    },
+    "vasco-da-gama": {
+     "oitavas": 0.8023,
+     "quartas": 0.4484,
+     "semifinal": 0.2261,
+     "final": 0.1146,
+     "titulo": 0.0555
+    }
+   }
+  },
+  {
+   "id": "rodada-5",
+   "rotulo": "Após a 5ª rodada",
+   "curto": "R5",
+   "ate": "2026-05-21T23:00:00-03:00",
+   "times": {
+    "academia-puerto-cabello": {
+     "oitavas": 0.3479,
+     "quartas": 0.1216,
+     "semifinal": 0.0457,
+     "final": 0.0159,
+     "titulo": 0.0057
+    },
+    "alianza-atletico": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "america-de-cali": {
+     "oitavas": 0.4988,
+     "quartas": 0.2324,
+     "semifinal": 0.1105,
+     "final": 0.0472,
+     "titulo": 0.0217
+    },
+    "audax-italiano": {
+     "oitavas": 0.1162,
+     "quartas": 0.0422,
+     "semifinal": 0.0153,
+     "final": 0.0059,
+     "titulo": 0.002
+    },
+    "barracas-central": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "blooming": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "boca-juniors": {
+     "oitavas": 0.4273,
+     "quartas": 0.1718,
+     "semifinal": 0.068,
+     "final": 0.026,
+     "titulo": 0.01
+    },
+    "bolivar": {
+     "oitavas": 0.4388,
+     "quartas": 0.1675,
+     "semifinal": 0.0697,
+     "final": 0.0276,
+     "titulo": 0.0115
+    },
+    "boston-river": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "botafogo": {
+     "oitavas": 1,
+     "quartas": 0.6784,
+     "semifinal": 0.3856,
+     "final": 0.236,
+     "titulo": 0.1403
+    },
+    "bragantino": {
+     "oitavas": 0.3004,
+     "quartas": 0.158,
+     "semifinal": 0.0818,
+     "final": 0.0441,
+     "titulo": 0.02
+    },
+    "carabobo": {
+     "oitavas": 0.3266,
+     "quartas": 0.1549,
+     "semifinal": 0.0805,
+     "final": 0.0385,
+     "titulo": 0.0195
+    },
+    "caracas": {
+     "oitavas": 0.5558,
+     "quartas": 0.2382,
+     "semifinal": 0.1099,
+     "final": 0.0464,
+     "titulo": 0.0206
+    },
+    "cienciano": {
+     "oitavas": 0.3048,
+     "quartas": 0.1071,
+     "semifinal": 0.0376,
+     "final": 0.0131,
+     "titulo": 0.0042
+    },
+    "deportivo-cuenca": {
+     "oitavas": 0.2961,
+     "quartas": 0.1135,
+     "semifinal": 0.039,
+     "final": 0.0154,
+     "titulo": 0.0061
+    },
+    "deportivo-recoleta": {
+     "oitavas": 0.1921,
+     "quartas": 0.0813,
+     "semifinal": 0.0317,
+     "final": 0.0128,
+     "titulo": 0.0044
+    },
+    "deportivo-riestra": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "gremio": {
+     "oitavas": 0.8443,
+     "quartas": 0.5304,
+     "semifinal": 0.3135,
+     "final": 0.1932,
+     "titulo": 0.1138
+    },
+    "independiente-medellin": {
+     "oitavas": 0.4294,
+     "quartas": 0.1655,
+     "semifinal": 0.0653,
+     "final": 0.0265,
+     "titulo": 0.0104
+    },
+    "independiente-petrolero": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "juventud": {
+     "oitavas": 0.2709,
+     "quartas": 0.1332,
+     "semifinal": 0.0657,
+     "final": 0.0294,
+     "titulo": 0.0139
+    },
+    "lanus": {
+     "oitavas": 0.4378,
+     "quartas": 0.168,
+     "semifinal": 0.0675,
+     "final": 0.0254,
+     "titulo": 0.0095
+    },
+    "macara": {
+     "oitavas": 0.8567,
+     "quartas": 0.4719,
+     "semifinal": 0.2584,
+     "final": 0.1297,
+     "titulo": 0.0613
+    },
+    "millonarios": {
+     "oitavas": 0.472,
+     "quartas": 0.2098,
+     "semifinal": 0.0988,
+     "final": 0.0421,
+     "titulo": 0.0172
+    },
+    "mineiro": {
+     "oitavas": 0.5578,
+     "quartas": 0.2847,
+     "semifinal": 0.1409,
+     "final": 0.0646,
+     "titulo": 0.0276
+    },
+    "montevideo-city-torque": {
+     "oitavas": 0.8591,
+     "quartas": 0.5116,
+     "semifinal": 0.27,
+     "final": 0.1528,
+     "titulo": 0.0801
+    },
+    "nacional": {
+     "oitavas": 0.4282,
+     "quartas": 0.1607,
+     "semifinal": 0.0616,
+     "final": 0.0231,
+     "titulo": 0.0086
+    },
+    "ohiggins": {
+     "oitavas": 0.1537,
+     "quartas": 0.0634,
+     "semifinal": 0.0264,
+     "final": 0.0115,
+     "titulo": 0.0049
+    },
+    "olimpia": {
+     "oitavas": 0.9056,
+     "quartas": 0.4839,
+     "semifinal": 0.2174,
+     "final": 0.0846,
+     "titulo": 0.0418
+    },
+    "palestino": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "racing": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "river-plate": {
+     "oitavas": 0.9936,
+     "quartas": 0.6233,
+     "semifinal": 0.3818,
+     "final": 0.1985,
+     "titulo": 0.1065
+    },
+    "san-lorenzo": {
+     "oitavas": 0.8192,
+     "quartas": 0.4397,
+     "semifinal": 0.2029,
+     "final": 0.1044,
+     "titulo": 0.0479
+    },
+    "santa-fe": {
+     "oitavas": 0.4332,
+     "quartas": 0.1673,
+     "semifinal": 0.0693,
+     "final": 0.0283,
+     "titulo": 0.0109
+    },
+    "santos": {
+     "oitavas": 0.1782,
+     "quartas": 0.0622,
+     "semifinal": 0.0261,
+     "final": 0.01,
+     "titulo": 0.0037
+    },
+    "sao-paulo": {
+     "oitavas": 0.9357,
+     "quartas": 0.5893,
+     "semifinal": 0.3696,
+     "final": 0.2257,
+     "titulo": 0.1213
+    },
+    "sporting-cristal": {
+     "oitavas": 0.4299,
+     "quartas": 0.1701,
+     "semifinal": 0.0693,
+     "final": 0.0271,
+     "titulo": 0.0111
+    },
+    "tigre": {
+     "oitavas": 0.2283,
+     "quartas": 0.0995,
+     "semifinal": 0.0478,
+     "final": 0.0224,
+     "titulo": 0.0114
+    },
+    "ucv": {
+     "oitavas": 0.4329,
+     "quartas": 0.165,
+     "semifinal": 0.0677,
+     "final": 0.0258,
+     "titulo": 0.0107
+    },
+    "vasco-da-gama": {
+     "oitavas": 0.5287,
+     "quartas": 0.2336,
+     "semifinal": 0.1047,
+     "final": 0.046,
+     "titulo": 0.0214
+    }
+   }
+  },
+  {
+   "id": "rodada-6",
+   "rotulo": "Após a 6ª rodada",
+   "curto": "R6",
+   "ate": "2026-05-28T21:30:00-03:00",
+   "times": {
+    "academia-puerto-cabello": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "alianza-atletico": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "america-de-cali": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "audax-italiano": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "barracas-central": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "blooming": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "boca-juniors": {
+     "oitavas": 0.4192,
+     "quartas": 0.1473,
+     "semifinal": 0.0522,
+     "final": 0.0187,
+     "titulo": 0.0072
+    },
+    "bolivar": {
+     "oitavas": 0.4186,
+     "quartas": 0.1521,
+     "semifinal": 0.0584,
+     "final": 0.0245,
+     "titulo": 0.0107
+    },
+    "boston-river": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "botafogo": {
+     "oitavas": 1,
+     "quartas": 0.706,
+     "semifinal": 0.4465,
+     "final": 0.2711,
+     "titulo": 0.1606
+    },
+    "bragantino": {
+     "oitavas": 0.6968,
+     "quartas": 0.377,
+     "semifinal": 0.2152,
+     "final": 0.1248,
+     "titulo": 0.0659
+    },
+    "carabobo": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "caracas": {
+     "oitavas": 0.4958,
+     "quartas": 0.1709,
+     "semifinal": 0.0644,
+     "final": 0.0224,
+     "titulo": 0.0086
+    },
+    "cienciano": {
+     "oitavas": 0.4241,
+     "quartas": 0.1281,
+     "semifinal": 0.042,
+     "final": 0.0139,
+     "titulo": 0.0055
+    },
+    "deportivo-cuenca": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "deportivo-recoleta": {
+     "oitavas": 1,
+     "quartas": 0.4887,
+     "semifinal": 0.1884,
+     "final": 0.0842,
+     "titulo": 0.0322
+    },
+    "deportivo-riestra": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "gremio": {
+     "oitavas": 0.6789,
+     "quartas": 0.3629,
+     "semifinal": 0.2045,
+     "final": 0.1136,
+     "titulo": 0.0603
+    },
+    "independiente-medellin": {
+     "oitavas": 0.422,
+     "quartas": 0.1467,
+     "semifinal": 0.0559,
+     "final": 0.0187,
+     "titulo": 0.007
+    },
+    "independiente-petrolero": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "juventud": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "lanus": {
+     "oitavas": 0.4229,
+     "quartas": 0.1485,
+     "semifinal": 0.0541,
+     "final": 0.0184,
+     "titulo": 0.0068
+    },
+    "macara": {
+     "oitavas": 1,
+     "quartas": 0.5692,
+     "semifinal": 0.3176,
+     "final": 0.1578,
+     "titulo": 0.0739
+    },
+    "millonarios": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "mineiro": {
+     "oitavas": 1,
+     "quartas": 0.5041,
+     "semifinal": 0.2423,
+     "final": 0.1005,
+     "titulo": 0.0415
+    },
+    "montevideo-city-torque": {
+     "oitavas": 1,
+     "quartas": 0.6355,
+     "semifinal": 0.2973,
+     "final": 0.1551,
+     "titulo": 0.0821
+    },
+    "nacional": {
+     "oitavas": 0.4195,
+     "quartas": 0.1466,
+     "semifinal": 0.0571,
+     "final": 0.0199,
+     "titulo": 0.008
+    },
+    "ohiggins": {
+     "oitavas": 0.5703,
+     "quartas": 0.2366,
+     "semifinal": 0.1029,
+     "final": 0.0453,
+     "titulo": 0.0193
+    },
+    "olimpia": {
+     "oitavas": 1,
+     "quartas": 0.5617,
+     "semifinal": 0.2472,
+     "final": 0.1056,
+     "titulo": 0.053
+    },
+    "palestino": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "racing": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "river-plate": {
+     "oitavas": 1,
+     "quartas": 0.6526,
+     "semifinal": 0.4091,
+     "final": 0.2174,
+     "titulo": 0.1215
+    },
+    "san-lorenzo": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "santa-fe": {
+     "oitavas": 0.4231,
+     "quartas": 0.1468,
+     "semifinal": 0.0576,
+     "final": 0.021,
+     "titulo": 0.0078
+    },
+    "santos": {
+     "oitavas": 0.5582,
+     "quartas": 0.226,
+     "semifinal": 0.0975,
+     "final": 0.0403,
+     "titulo": 0.0159
+    },
+    "sao-paulo": {
+     "oitavas": 1,
+     "quartas": 0.6561,
+     "semifinal": 0.4261,
+     "final": 0.2707,
+     "titulo": 0.1435
+    },
+    "sporting-cristal": {
+     "oitavas": 0.4203,
+     "quartas": 0.1534,
+     "semifinal": 0.0556,
+     "final": 0.0212,
+     "titulo": 0.0075
+    },
+    "tigre": {
+     "oitavas": 0.5997,
+     "quartas": 0.2591,
+     "semifinal": 0.1193,
+     "final": 0.0526,
+     "titulo": 0.0245
+    },
+    "ucv": {
+     "oitavas": 0.4122,
+     "quartas": 0.1441,
+     "semifinal": 0.055,
+     "final": 0.0199,
+     "titulo": 0.0067
+    },
+    "vasco-da-gama": {
+     "oitavas": 0.6184,
+     "quartas": 0.28,
+     "semifinal": 0.1338,
+     "final": 0.0624,
+     "titulo": 0.03
+    }
+   }
+  },
+  {
+   "id": "playoffs-1",
+   "rotulo": "Após a ida dos playoffs",
+   "curto": "PO ida",
+   "ate": "2026-07-23T21:30:00-03:00",
+   "times": {
+    "academia-puerto-cabello": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "alianza-atletico": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "america-de-cali": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "audax-italiano": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "barracas-central": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "blooming": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "boca-juniors": {
+     "oitavas": 0.7272,
+     "quartas": 0.3701,
+     "semifinal": 0.1569,
+     "final": 0.0687,
+     "titulo": 0.0293
+    },
+    "bolivar": {
+     "oitavas": 0.5982,
+     "quartas": 0.2033,
+     "semifinal": 0.101,
+     "final": 0.0404,
+     "titulo": 0.0165
+    },
+    "boston-river": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "botafogo": {
+     "oitavas": 1,
+     "quartas": 0.6215,
+     "semifinal": 0.3489,
+     "final": 0.205,
+     "titulo": 0.1127
+    },
+    "bragantino": {
+     "oitavas": 0.6786,
+     "quartas": 0.4559,
+     "semifinal": 0.2466,
+     "final": 0.1255,
+     "titulo": 0.0669
+    },
+    "carabobo": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "caracas": {
+     "oitavas": 0.0794,
+     "quartas": 0.0196,
+     "semifinal": 0.0067,
+     "final": 0.0027,
+     "titulo": 0.001
+    },
+    "cienciano": {
+     "oitavas": 0.05,
+     "quartas": 0.0075,
+     "semifinal": 0.0019,
+     "final": 0.0006,
+     "titulo": 0.0002
+    },
+    "deportivo-cuenca": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "deportivo-recoleta": {
+     "oitavas": 1,
+     "quartas": 0.5082,
+     "semifinal": 0.2138,
+     "final": 0.0932,
+     "titulo": 0.041
+    },
+    "deportivo-riestra": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "gremio": {
+     "oitavas": 0.4018,
+     "quartas": 0.1629,
+     "semifinal": 0.0901,
+     "final": 0.0412,
+     "titulo": 0.0174
+    },
+    "independiente-medellin": {
+     "oitavas": 0.3099,
+     "quartas": 0.1102,
+     "semifinal": 0.0359,
+     "final": 0.0133,
+     "titulo": 0.0051
+    },
+    "independiente-petrolero": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "juventud": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "lanus": {
+     "oitavas": 0.95,
+     "quartas": 0.371,
+     "semifinal": 0.1628,
+     "final": 0.0765,
+     "titulo": 0.038
+    },
+    "macara": {
+     "oitavas": 1,
+     "quartas": 0.5212,
+     "semifinal": 0.2876,
+     "final": 0.1401,
+     "titulo": 0.0743
+    },
+    "millonarios": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "mineiro": {
+     "oitavas": 1,
+     "quartas": 0.3879,
+     "semifinal": 0.1411,
+     "final": 0.0472,
+     "titulo": 0.0193
+    },
+    "montevideo-city-torque": {
+     "oitavas": 1,
+     "quartas": 0.4411,
+     "semifinal": 0.2007,
+     "final": 0.1013,
+     "titulo": 0.0514
+    },
+    "nacional": {
+     "oitavas": 0.0019,
+     "quartas": 0.0003,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "ohiggins": {
+     "oitavas": 0.2728,
+     "quartas": 0.1217,
+     "semifinal": 0.045,
+     "final": 0.0166,
+     "titulo": 0.0059
+    },
+    "olimpia": {
+     "oitavas": 1,
+     "quartas": 0.5468,
+     "semifinal": 0.2382,
+     "final": 0.1167,
+     "titulo": 0.0541
+    },
+    "palestino": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "racing": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "river-plate": {
+     "oitavas": 1,
+     "quartas": 0.5826,
+     "semifinal": 0.3598,
+     "final": 0.2086,
+     "titulo": 0.1091
+    },
+    "san-lorenzo": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "santa-fe": {
+     "oitavas": 0.9206,
+     "quartas": 0.3978,
+     "semifinal": 0.2094,
+     "final": 0.1077,
+     "titulo": 0.0501
+    },
+    "santos": {
+     "oitavas": 0.996,
+     "quartas": 0.4779,
+     "semifinal": 0.2684,
+     "final": 0.1246,
+     "titulo": 0.0628
+    },
+    "sao-paulo": {
+     "oitavas": 1,
+     "quartas": 0.6338,
+     "semifinal": 0.3932,
+     "final": 0.2224,
+     "titulo": 0.1203
+    },
+    "sporting-cristal": {
+     "oitavas": 0.3214,
+     "quartas": 0.1562,
+     "semifinal": 0.0561,
+     "final": 0.021,
+     "titulo": 0.0088
+    },
+    "tigre": {
+     "oitavas": 0.9981,
+     "quartas": 0.5586,
+     "semifinal": 0.2857,
+     "final": 0.1582,
+     "titulo": 0.0859
+    },
+    "ucv": {
+     "oitavas": 0.004,
+     "quartas": 0.0009,
+     "semifinal": 0.0002,
+     "final": 0,
+     "titulo": 0
+    },
+    "vasco-da-gama": {
+     "oitavas": 0.6901,
+     "quartas": 0.343,
+     "semifinal": 0.15,
+     "final": 0.0685,
+     "titulo": 0.0299
+    }
+   }
+  },
+  {
+   "id": "playoffs-2",
+   "rotulo": "Após os playoffs",
+   "curto": "PO",
+   "ate": "2026-07-30T21:30:00-03:00",
+   "times": {
+    "academia-puerto-cabello": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "alianza-atletico": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "america-de-cali": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "audax-italiano": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "barracas-central": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "blooming": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "boca-juniors": {
+     "oitavas": 1,
+     "quartas": 0.4555,
+     "semifinal": 0.166,
+     "final": 0.0585,
+     "titulo": 0.0249
+    },
+    "bolivar": {
+     "oitavas": 1,
+     "quartas": 0.4204,
+     "semifinal": 0.2508,
+     "final": 0.1076,
+     "titulo": 0.0526
+    },
+    "boston-river": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "botafogo": {
+     "oitavas": 1,
+     "quartas": 0.7127,
+     "semifinal": 0.4109,
+     "final": 0.2259,
+     "titulo": 0.1139
+    },
+    "bragantino": {
+     "oitavas": 1,
+     "quartas": 0.6361,
+     "semifinal": 0.368,
+     "final": 0.2128,
+     "titulo": 0.1075
+    },
+    "carabobo": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "caracas": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "cienciano": {
+     "oitavas": 1,
+     "quartas": 0.2873,
+     "semifinal": 0.1024,
+     "final": 0.0336,
+     "titulo": 0.0131
+    },
+    "deportivo-cuenca": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "deportivo-recoleta": {
+     "oitavas": 1,
+     "quartas": 0.5445,
+     "semifinal": 0.2178,
+     "final": 0.085,
+     "titulo": 0.0369
+    },
+    "deportivo-riestra": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "gremio": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "independiente-medellin": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "independiente-petrolero": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "juventud": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "lanus": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "macara": {
+     "oitavas": 1,
+     "quartas": 0.5039,
+     "semifinal": 0.2401,
+     "final": 0.1165,
+     "titulo": 0.0543
+    },
+    "millonarios": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "mineiro": {
+     "oitavas": 1,
+     "quartas": 0.3639,
+     "semifinal": 0.162,
+     "final": 0.0712,
+     "titulo": 0.028
+    },
+    "montevideo-city-torque": {
+     "oitavas": 1,
+     "quartas": 0.4934,
+     "semifinal": 0.2356,
+     "final": 0.1071,
+     "titulo": 0.0499
+    },
+    "nacional": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "ohiggins": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "olimpia": {
+     "oitavas": 1,
+     "quartas": 0.4969,
+     "semifinal": 0.1686,
+     "final": 0.0774,
+     "titulo": 0.0369
+    },
+    "palestino": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "racing": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "river-plate": {
+     "oitavas": 1,
+     "quartas": 0.4253,
+     "semifinal": 0.2607,
+     "final": 0.1412,
+     "titulo": 0.0747
+    },
+    "san-lorenzo": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "santa-fe": {
+     "oitavas": 1,
+     "quartas": 0.5747,
+     "semifinal": 0.3958,
+     "final": 0.2523,
+     "titulo": 0.154
+    },
+    "santos": {
+     "oitavas": 1,
+     "quartas": 0.4961,
+     "semifinal": 0.2299,
+     "final": 0.1172,
+     "titulo": 0.0554
+    },
+    "sao-paulo": {
+     "oitavas": 1,
+     "quartas": 0.5796,
+     "semifinal": 0.3654,
+     "final": 0.1963,
+     "titulo": 0.1065
+    },
+    "sporting-cristal": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "tigre": {
+     "oitavas": 1,
+     "quartas": 0.5066,
+     "semifinal": 0.2511,
+     "final": 0.1157,
+     "titulo": 0.0539
+    },
+    "ucv": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "vasco-da-gama": {
+     "oitavas": 1,
+     "quartas": 0.5031,
+     "semifinal": 0.1749,
+     "final": 0.0817,
+     "titulo": 0.0375
+    }
+   }
+  },
+  {
+   "id": "oitavas-1",
+   "rotulo": "Após a ida das oitavas",
+   "curto": "OF ida",
+   "ate": "2026-08-19T21:30:00-03:00",
+   "times": {
+    "academia-puerto-cabello": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "alianza-atletico": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "america-de-cali": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "audax-italiano": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "barracas-central": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "blooming": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "boca-juniors": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0.4925,
+     "final": 0.2883,
+     "titulo": 0.173
+    },
+    "bolivar": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "boston-river": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "botafogo": {
+     "oitavas": 1,
+     "quartas": 0.0041,
+     "semifinal": 0.0014,
+     "final": 0.0006,
+     "titulo": 0.0003
+    },
+    "bragantino": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "carabobo": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "caracas": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "cienciano": {
+     "oitavas": 1,
+     "quartas": 0.9959,
+     "semifinal": 0.4598,
+     "final": 0.2376,
+     "titulo": 0.1008
+    },
+    "deportivo-cuenca": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "deportivo-recoleta": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "deportivo-riestra": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "gremio": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "independiente-medellin": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "independiente-petrolero": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "juventud": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "lanus": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "macara": {
+     "oitavas": 1,
+     "quartas": 0.3095,
+     "semifinal": 0.1231,
+     "final": 0.0489,
+     "titulo": 0.019
+    },
+    "millonarios": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "mineiro": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0.6032,
+     "final": 0.3035,
+     "titulo": 0.1381
+    },
+    "montevideo-city-torque": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0.5388,
+     "final": 0.2995,
+     "titulo": 0.1329
+    },
+    "nacional": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "ohiggins": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "olimpia": {
+     "oitavas": 1,
+     "quartas": 0.5854,
+     "semifinal": 0.2251,
+     "final": 0.0763,
+     "titulo": 0.0339
+    },
+    "palestino": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "racing": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "river-plate": {
+     "oitavas": 1,
+     "quartas": 0.5371,
+     "semifinal": 0.3178,
+     "final": 0.1393,
+     "titulo": 0.0734
+    },
+    "san-lorenzo": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "santa-fe": {
+     "oitavas": 1,
+     "quartas": 0.4629,
+     "semifinal": 0.3017,
+     "final": 0.1525,
+     "titulo": 0.0909
+    },
+    "santos": {
+     "oitavas": 1,
+     "quartas": 0.6905,
+     "semifinal": 0.2737,
+     "final": 0.1099,
+     "titulo": 0.0386
+    },
+    "sao-paulo": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0.5075,
+     "final": 0.2917,
+     "titulo": 0.1741
+    },
+    "sporting-cristal": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "tigre": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "ucv": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "vasco-da-gama": {
+     "oitavas": 1,
+     "quartas": 0.4146,
+     "semifinal": 0.1554,
+     "final": 0.0519,
+     "titulo": 0.025
+    }
+   }
+  },
+  {
+   "id": "oitavas-2",
+   "rotulo": "Após as oitavas",
+   "curto": "OF",
+   "ate": "2026-08-26T21:30:00-03:00",
+   "times": {
+    "academia-puerto-cabello": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "alianza-atletico": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "america-de-cali": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "audax-italiano": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "barracas-central": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "blooming": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "boca-juniors": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0.497,
+     "final": 0.2753,
+     "titulo": 0.1633
+    },
+    "bolivar": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "boston-river": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "botafogo": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "bragantino": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "carabobo": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "caracas": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "cienciano": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0.4466,
+     "final": 0.2234,
+     "titulo": 0.0896
+    },
+    "deportivo-cuenca": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "deportivo-recoleta": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "deportivo-riestra": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "gremio": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "independiente-medellin": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "independiente-petrolero": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "juventud": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "lanus": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "macara": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "millonarios": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "mineiro": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0.5743,
+     "final": 0.2906,
+     "titulo": 0.127
+    },
+    "montevideo-city-torque": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0.5534,
+     "final": 0.3014,
+     "titulo": 0.1332
+    },
+    "nacional": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "ohiggins": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "olimpia": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "palestino": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "racing": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "river-plate": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "san-lorenzo": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "santa-fe": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0.6096,
+     "final": 0.2988,
+     "titulo": 0.1783
+    },
+    "santos": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0.4257,
+     "final": 0.1846,
+     "titulo": 0.0737
+    },
+    "sao-paulo": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0.503,
+     "final": 0.2772,
+     "titulo": 0.1602
+    },
+    "sporting-cristal": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "tigre": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "ucv": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "vasco-da-gama": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0.3904,
+     "final": 0.1487,
+     "titulo": 0.0747
+    }
+   }
+  },
+  {
+   "id": "quartas-1",
+   "rotulo": "Após a ida das quartas",
+   "curto": "QF ida",
+   "ate": "2026-09-10T21:30:00-03:00",
+   "times": {
+    "academia-puerto-cabello": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "alianza-atletico": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "america-de-cali": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "audax-italiano": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "barracas-central": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "blooming": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "boca-juniors": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0.7734,
+     "final": 0.4608,
+     "titulo": 0.2907
+    },
+    "bolivar": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "boston-river": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "botafogo": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "bragantino": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "carabobo": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "caracas": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "cienciano": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0.8691,
+     "final": 0.4339,
+     "titulo": 0.1782
+    },
+    "deportivo-cuenca": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "deportivo-recoleta": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "deportivo-riestra": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "gremio": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "independiente-medellin": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "independiente-petrolero": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "juventud": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "lanus": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "macara": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "millonarios": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "mineiro": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0.1387,
+     "final": 0.0677,
+     "titulo": 0.0282
+    },
+    "montevideo-city-torque": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0.1309,
+     "final": 0.0601,
+     "titulo": 0.0229
+    },
+    "nacional": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "ohiggins": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "olimpia": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "palestino": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "racing": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "river-plate": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "san-lorenzo": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "santa-fe": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0.4851,
+     "final": 0.2315,
+     "titulo": 0.1338
+    },
+    "santos": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0.8613,
+     "final": 0.4383,
+     "titulo": 0.1788
+    },
+    "sao-paulo": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0.2266,
+     "final": 0.1167,
+     "titulo": 0.0665
+    },
+    "sporting-cristal": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "tigre": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "ucv": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "vasco-da-gama": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0.5149,
+     "final": 0.191,
+     "titulo": 0.1009
+    }
+   }
+  },
+  {
+   "id": "quartas-2",
+   "rotulo": "Após as quartas",
+   "curto": "QF",
+   "ate": "2026-09-17T21:30:00-03:00",
+   "times": {
+    "academia-puerto-cabello": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "alianza-atletico": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "america-de-cali": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "audax-italiano": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "barracas-central": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "blooming": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "boca-juniors": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0.5833,
+     "titulo": 0.3549
+    },
+    "bolivar": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "boston-river": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "botafogo": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "bragantino": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "carabobo": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "caracas": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "cienciano": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "deportivo-cuenca": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "deportivo-recoleta": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "deportivo-riestra": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "gremio": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "independiente-medellin": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "independiente-petrolero": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "juventud": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "lanus": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "macara": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "millonarios": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "mineiro": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0.4405,
+     "titulo": 0.1765
+    },
+    "montevideo-city-torque": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0.5595,
+     "titulo": 0.246
+    },
+    "nacional": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "ohiggins": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "olimpia": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "palestino": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "racing": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "river-plate": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "san-lorenzo": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "santa-fe": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "santos": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "sao-paulo": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "sporting-cristal": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "tigre": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "ucv": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "vasco-da-gama": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0.4167,
+     "titulo": 0.2226
+    }
+   }
+  },
+  {
+   "id": "semifinal-1",
+   "rotulo": "Após a ida das semifinais",
+   "curto": "SF ida",
+   "ate": "2026-10-14T19:00:00-03:00",
+   "times": {
+    "academia-puerto-cabello": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "alianza-atletico": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "america-de-cali": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "audax-italiano": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "barracas-central": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "blooming": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "boca-juniors": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0.1663,
+     "titulo": 0.0912
+    },
+    "bolivar": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "boston-river": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "botafogo": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "bragantino": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "carabobo": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "caracas": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "cienciano": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "deportivo-cuenca": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "deportivo-recoleta": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "deportivo-riestra": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "gremio": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "independiente-medellin": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "independiente-petrolero": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "juventud": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "lanus": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "macara": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "millonarios": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "mineiro": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0.9556,
+     "titulo": 0.4189
+    },
+    "montevideo-city-torque": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0.0444,
+     "titulo": 0.0173
+    },
+    "nacional": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "ohiggins": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "olimpia": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "palestino": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "racing": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "river-plate": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "san-lorenzo": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "santa-fe": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "santos": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "sao-paulo": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "sporting-cristal": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "tigre": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "ucv": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "vasco-da-gama": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0.8337,
+     "titulo": 0.4726
+    }
+   }
+  },
+  {
+   "id": "semifinal-2",
+   "rotulo": "Após as semifinais",
+   "curto": "SF",
+   "ate": "2026-10-21T19:00:00-03:00",
+   "times": {
+    "academia-puerto-cabello": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "alianza-atletico": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "america-de-cali": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "audax-italiano": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "barracas-central": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "blooming": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "boca-juniors": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 1,
+     "titulo": 0.6233
+    },
+    "bolivar": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "boston-river": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "botafogo": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "bragantino": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "carabobo": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "caracas": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "cienciano": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "deportivo-cuenca": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "deportivo-recoleta": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "deportivo-riestra": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "gremio": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "independiente-medellin": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "independiente-petrolero": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "juventud": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "lanus": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "macara": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "millonarios": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "mineiro": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 1,
+     "titulo": 0.3767
+    },
+    "montevideo-city-torque": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0,
+     "titulo": 0
+    },
+    "nacional": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "ohiggins": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "olimpia": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "palestino": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "racing": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "river-plate": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "san-lorenzo": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "santa-fe": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "santos": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "sao-paulo": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "sporting-cristal": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "tigre": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "ucv": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "vasco-da-gama": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0,
+     "titulo": 0
+    }
+   }
+  }
+ ]
+}

@@ -1,7 +1,8 @@
 // calcular_chances.js
-// Calcula as chances de cada time em cada momento de um campeonato estadual e salva em
-// data/estaduais/<campeonato>/chances.json. Usa exatamente o mesmo motor de simulação
-// do site (site/js/estaduais/), só que rodando no computador, com o Node.js.
+// Calcula as chances de cada time em cada momento de um campeonato estadual (ou de uma copa,
+// como a Sul-Americana) e salva em data/estaduais/<campeonato>/chances.json (as copas ficam
+// em data/copas/). Usa exatamente o mesmo motor de simulação do site (site/js/estaduais/),
+// só que rodando no computador, com o Node.js.
 // Assim a página abre na hora, sem precisar simular nada no celular de quem visita.
 //
 // Como rodar (na pasta do projeto, depois do estimar_estadual.py):
@@ -19,7 +20,9 @@ if (!formato) {
   process.exit(1);
 }
 
-const pasta = new URL(`../../data/estaduais/${campeonato}/`, import.meta.url);
+// A pasta dos dados: a do formato (ex.: data/copas/... na Sul-Americana) ou a dos estaduais.
+const caminho = formato.pasta ?? `data/estaduais/${campeonato}`;
+const pasta = new URL(`../../${caminho}/`, import.meta.url);
 const ler = (arquivo) => JSON.parse(readFileSync(new URL(arquivo, pasta), "utf-8"));
 const dados = ler("jogos.json");
 const modelos = ler("modelos.json");
@@ -43,5 +46,5 @@ const saida = {
   momentos,
 };
 writeFileSync(new URL("chances.json", pasta), JSON.stringify(saida, null, 1), "utf-8");
-console.log(`Salvo: data/estaduais/${campeonato}/chances.json (${momentos.length} momentos, ` +
+console.log(`Salvo: ${caminho}/chances.json (${momentos.length} momentos, ` +
   `${((performance.now() - inicio) / 1000).toFixed(1)} s)`);

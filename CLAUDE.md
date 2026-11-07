@@ -47,10 +47,20 @@ O usuário nunca programou antes, então todo código e explicação devem ser p
       publicadas pela RadiosNet, em `data/radios.json` (só endereços https). O player da própria RadiosNet só funciona em
       http, por isso não serve. `scripts/meu_time/atualizar_radios.py` confere os endereços de madrugada.
     - Não escrever na página de quanto em quanto tempo cada parte é atualizada (pedido do usuário).
-  - **Campeonatos** (menu suspenso com duas seções): **Série B** (`site/serie-b.html`: a mesma página e o mesmo
+  - **Campeonatos** (menu suspenso com três seções): **Série B** (`site/serie-b.html`: a mesma página e o mesmo
     `simulador.js` do Simulador, com `<body data-campeonato="serie-b">`; a página inicial mostra os jogos do dia
-    da Série B abaixo dos da Série A, com o botão "Ver Série B") e **Estaduais** (Catarinense, Gaúcho, Paranaense e
-    Paulista). Para um novo estadual, acrescentar uma linha em `abas.js` (com o símbolo em `assets/simbolos/`).
+    da Série B abaixo dos da Série A, com o botão "Ver Série B"), **Copas** (Copa Sul-Americana, ver abaixo) e
+    **Estaduais** (Catarinense, Gaúcho, Paranaense e Paulista). Para um novo estadual, acrescentar uma linha em
+    `abas.js` (com o símbolo em `assets/simbolos/`).
+- **Copa Sul-Americana 2026** (`site/sulamericana.html`): usa o motor e a página dos estaduais (`estadual.js`), com o
+  formato em `site/js/copas/sulamericana-2026.js` (regras do Manual de Clubes 2026: desempate por confronto direto
+  primeiro, "numeração" da CONMEBOL para o mando, chaves sorteadas, final em campo neutro com prorrogação) e os dados
+  em `data/copas/sulamericana-2026/`. Ordem: `scripts/copas/baixar_sulamericana.py` (ESPN, liga
+  `conmebol.sudamericana`; escudos em `assets/escudos/sulamericana/`; onde assistir pelo ge.globo) →
+  `estimar_estadual.py sulamericana-2026` → `calcular_chances.js sulamericana-2026` (a rotina diária do GitHub faz
+  isso). A primeira fase (março) fica de fora; os 8 que vieram da Libertadores têm grupo `LIB`. Nos dias de jogo da
+  Sula (quando o dia dela vem antes ou junto do das Séries A e B), os Jogos do dia mostram a Sula primeiro; as
+  Séries A e B só aparecem se jogarem no mesmo dia (pedido do usuário). Lógica em `copaNoDia` (`jogos-do-dia.js`). Os times da Sula não entram no Meu Time (pedido do usuário).
   - **O Método**: explica o modelo para o grande público.
 - Botão "Comprar ingressos" (regras em `site/js/ingressos.js`): no Meu Time, só no primeiro próximo jogo; nos Jogos do
   dia, em cada jogo, e some na hora do início. Leva à loja oficial do mandante, em `data/ingressos.json` (só endereços
@@ -79,8 +89,8 @@ O usuário nunca programou antes, então todo código e explicação devem ser p
 ## Estrutura de pastas
 
 - `data/` — dados baixados ou gerados (ex.: resultados de jogos, tabelas). Brasileirão em `data/serie-a/` e
-  `data/serie-b/`; estaduais em `data/estaduais/`.
-- `scripts/` — scripts em Python (coleta de dados, estimação do modelo). Estaduais em `scripts/estaduais/`.
+  `data/serie-b/`; estaduais em `data/estaduais/`; copas (Sul-Americana) em `data/copas/`.
+- `scripts/` — scripts em Python (coleta de dados, estimação do modelo). Estaduais em `scripts/estaduais/`; copas em `scripts/copas/`.
 - `site/` — arquivos do site (HTML, CSS, JavaScript da simulação e das páginas).
 - `assets/escudos/` — imagens dos escudos dos times (Séries A e B, pelo mesmo identificador dos dados), com subpastas `catarinense/` e `gaucho/`.
 - `testes/` — testes automáticos (`npm test`; antes, uma vez, `npm install` para baixar as bibliotecas do Node).

@@ -61,7 +61,26 @@
           <h2 class="titulo-secao" id="titulo-jogos-do-dia">Jogos do dia</h2>
           <p class="jogos-do-dia__data" id="jogos-do-dia-data"></p>
         </div>
-        <ol class="lista-confrontos" id="jogos-do-dia"></ol>
+
+        <!-- Nos dias de jogo da Copa Sul-Americana, ela vem primeiro; as Séries A e B só
+             aparecem se também jogarem nesse dia. -->
+        <div class="jogos-do-dia__copa" id="jogos-sula" hidden>
+          <h3 class="titulo-secao jogos-do-dia__copa-titulo">
+            <img src="../assets/simbolos/sulamericana.png" alt="" width="28" height="28">
+            Copa Sul-Americana <span class="jogos-do-dia__quantos" id="jogos-sula-quantos"></span>
+          </h3>
+          <ol class="lista-confrontos" id="jogos-sula-lista"></ol>
+          <p class="jogos-do-dia__acao"><a class="botao" href="sulamericana.html">Ver Copa Sul-Americana</a></p>
+        </div>
+
+        <div id="jogos-serie-a">
+          <!-- Este título só aparece nos dias da Sul-Americana, para separar os dois campeonatos. -->
+          <h3 class="titulo-secao jogos-do-dia__subtitulo" id="titulo-jogos-serie-a" hidden>
+            Brasileirão Série A <span class="jogos-do-dia__quantos" id="jogos-serie-a-quantos"></span>
+          </h3>
+          <ol class="lista-confrontos" id="jogos-do-dia"></ol>
+        </div>
+
         <div id="jogos-do-dia-legenda"></div>
         <p class="nota" id="jogos-do-dia-nota"></p>
 

@@ -13,7 +13,7 @@ export const ABAS = [
   { id: "simulador", rotulo: "Simulador", endereco: "simulador.html" },
   { id: "meu-time", rotulo: "Meu Time", endereco: "meu-time.html" },
   {
-    // "Campeonatos": um menu suspenso com duas partes (seções): a Série B e os estaduais.
+    // "Campeonatos": um menu suspenso com três partes (seções): a Série B, as copas e os estaduais.
     id: "campeonatos",
     rotulo: "Campeonatos",
     secoes: [
@@ -21,6 +21,12 @@ export const ABAS = [
         rotulo: "Série B",
         itens: [
           { id: "serie-b", rotulo: "Brasileirão Série B", endereco: "serie-b.html", simbolo: "assets/simbolos/serie-b.svg" },
+        ],
+      },
+      {
+        rotulo: "Copas",
+        itens: [
+          { id: "sulamericana", rotulo: "Copa Sul-Americana", endereco: "sulamericana.html", simbolo: "assets/simbolos/sulamericana.png" },
         ],
       },
       {

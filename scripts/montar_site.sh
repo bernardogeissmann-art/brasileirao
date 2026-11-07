@@ -15,6 +15,7 @@ cp -r site assets _site/
 cp -r data/serie-a data/serie-b _site/data/
 cp data/meu-time.json data/ingressos.json data/cores-times.json data/canais-youtube.json data/radios.json _site/data/
 cp -r data/estaduais _site/data/
+cp -r data/copas _site/data/   # a Copa Sul-Americana
 # O placar ao vivo só existe se o placar_ao_vivo.py acabou de rodar.
 if [ -f data/ao-vivo.json ]; then
   cp data/ao-vivo.json _site/data/

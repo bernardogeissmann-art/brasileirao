@@ -125,8 +125,10 @@ export function sortearGols(acumuladas, sortear) {
 export function golsEsperados(jogo, modelo) {
   const mandante = modelo.times[jogo.mandante];
   const visitante = modelo.times[jogo.visitante];
+  // Jogo em campo neutro (ex.: a final da Sul-Americana): ninguém tem a vantagem de casa.
+  const h = jogo.neutro ? 1 : modelo.fator_casa;
   return [
-    mandante.ataque * visitante.defesa * modelo.fator_casa,   // α_m · β_v · h
+    mandante.ataque * visitante.defesa * h,                   // α_m · β_v · h
     visitante.ataque * mandante.defesa,                       // α_v · β_m
   ];
 }

@@ -7,6 +7,7 @@
 # Como rodar (na pasta do projeto):
 #     python scripts/estaduais/estimar_estadual.py catarinense-2026
 #     python scripts/estaduais/estimar_estadual.py gaucho-2026
+#     python scripts/estaduais/estimar_estadual.py sulamericana-2026   (a Copa Sul-Americana)
 #
 # O modelo é o mesmo do Brasileirão (Poisson com ataque, defesa e fator casa), com uma
 # diferença: como os estaduais têm poucos jogos, cada time começa com alguns "jogos
@@ -26,10 +27,12 @@ FORCA_PRIOR_CASA = 6       # quantos "jogos imaginários" seguram o fator casa
 TOLERANCIA = 1e-10
 MAX_VOLTAS = 10_000
 
-# Fases do caminho principal até o título, na ordem. Cada uma vira um ou dois momentos
+# Fases do caminho principal até o título, na ordem (playoffs e oitavas só existem na Sul-Americana). Cada uma vira um ou dois momentos
 # (ida e volta). Fases paralelas (quadrangular, Taça ACESC, Troféu Farroupilha) não criam
 # momentos próprios, mas os seus jogos entram no modelo quando já aconteceram.
-FASES_DO_CAMINHO = [("quartas", "das quartas", "as quartas", "QF"),
+FASES_DO_CAMINHO = [("playoffs", "dos playoffs", "os playoffs", "PO"),
+                    ("oitavas", "das oitavas", "as oitavas", "OF"),
+                    ("quartas", "das quartas", "as quartas", "QF"),
                     ("semifinal", "das semifinais", "as semifinais", "SF"),
                     ("final", "da final", "a final", "F")]
 
@@ -140,7 +143,10 @@ def montar_momentos(jogos):
 def main():
     if len(sys.argv) != 2:
         sys.exit("Uso: python scripts/estaduais/estimar_estadual.py <campeonato>  (ex.: catarinense-2026)")
+    # Os estaduais ficam em data/estaduais/; as copas (ex.: a Sul-Americana), em data/copas/.
     pasta = comum.PASTA_PROJETO / "data" / "estaduais" / sys.argv[1]
+    if not pasta.exists():
+        pasta = comum.PASTA_PROJETO / "data" / "copas" / sys.argv[1]
     arquivo_jogos = pasta / "jogos.json"
     if not arquivo_jogos.exists():
         sys.exit(f"Erro: {arquivo_jogos} não existe. Rode antes o script que baixa os jogos.")
