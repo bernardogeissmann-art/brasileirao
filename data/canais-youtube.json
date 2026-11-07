@@ -25,6 +25,9 @@
    {"nome": "A Dupla", "playlist": "PLPHfc2-RJLdyFGB6AGcYxWBNsso0qq4Zt", "titulo": "Os vídeos do Grêmio", "arroba": "@ADuplaYT", "tipo": "imprensa"},
    {"nome": "Grêmio FBPA", "canal": "UCHKbUAiKHsWCCZrkDY_PZ8Q", "arroba": "@Gremio", "tipo": "oficial"}
   ],
+  "bragantino": [
+   {"nome": "Massa Bruta TV", "canal": "UC0x9Ypk2Z1lUdR4a88jMC2Q", "arroba": "@MassaBrutaTV", "tipo": "oficial"}
+  ],
   "vasco-da-gama": [
    {"nome": "Mario Coelho Vasco", "canal": "UCUzrTcQHWjvIF_XYTstdlbw", "arroba": "@MarioCoelhoVasco", "tipo": "imprensa"},
    {"nome": "Vasco TV", "canal": "UCZD5qcen7lbLPFTjfvdLFcw", "arroba": "@vascodagama2108", "tipo": "oficial"}
