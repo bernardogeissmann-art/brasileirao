@@ -17,6 +17,7 @@ import { lerIngressos, enderecoDoIngresso, msAteOProximoInicio } from "./ingress
 import {
   escolherJogosDoDia, formaRecente, situacaoComPlacar, temJogoRolando, atualizarComEspn, copaNoDia, carregarCopa,
 } from "./jogos-do-dia.js";
+import { descreverFase } from "./estaduais/mata-mata.js";
 
 // document.getElementById pega um elemento da página pelo seu id="...".
 const topo = document.getElementById("topo");
@@ -177,18 +178,6 @@ async function iniciarCopa(copa) {
   acompanharJogosDoDia(copa, SULA);
 }
 
-// O nome de cada fase da Sul-Americana, para o topo do cartão do jogo.
-const FASES_DA_COPA = {
-  "primeira-fase": "Fase de grupos", playoffs: "Playoffs", oitavas: "Oitavas de final",
-  quartas: "Quartas de final", semifinal: "Semifinal", final: "Final",
-};
-
-function faseDaCopa(jogo) {
-  const nome = FASES_DA_COPA[jogo.fase] ?? jogo.fase;
-  if (jogo.fase === "primeira-fase") return `${nome} · ${jogo.rodada}ª rodada`;
-  if (jogo.neutro) return `${nome} · jogo único em campo neutro`;
-  return `${nome} · ${jogo.perna === 1 ? "ida" : "volta"}`;
-}
 
 // Enquanto houver jogo rolando, busca o placar ao vivo de novo a cada minuto (direto da
 // ESPN, pelo navegador de quem está vendo a página). Quando um jogo acaba, "aoAcabarUmJogo"
@@ -266,7 +255,7 @@ function montarJogosDoDia({ jogos, modelo }, aoVivo, onde) {
     descricao: onde.copa
       ? (id, lado) => [jogos.times[id].pais, !jogo.neutro && lado === "mandante" ? "em casa" : null].filter(Boolean).join(" · ")
       : undefined,
-    fase: onde.copa ? faseDaCopa(jogo) : undefined,
+    fase: onde.copa ? descreverFase(jogo) : undefined,
   })).join("");
 
   // Na hora em que o próximo destes jogos começar, redesenha (o botão de ingressos some).

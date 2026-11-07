@@ -1,8 +1,9 @@
 {
-  "_explicacao": "Cores de cada clube para a página Meu Time. principal e secundaria: as cores do clube. texto: versão da cor que dá para ler sobre o branco. grafico: cor usada em barras e anéis (visível sobre o branco).",
+  "_explicacao": "Cores de cada clube para a página Meu Time (e para os painéis da Copa Sul-Americana). principal e secundaria: as cores do clube. texto: versão da cor que dá para ler sobre o branco. grafico: cor usada em barras e anéis (visível sobre o branco).",
   "times": {
     "paranaense":          { "principal": "#C8102E", "secundaria": "#000000", "texto": "#B00E28", "grafico": "#C8102E" },
     "mineiro":             { "principal": "#000000", "secundaria": "#FFFFFF", "texto": "#000000", "grafico": "#1F1F1F" },
+    "boca-juniors":        { "principal": "#103F79", "secundaria": "#F3B229", "texto": "#103F79", "grafico": "#103F79" },
     "bahia":               { "principal": "#0055A4", "secundaria": "#E30613", "texto": "#0055A4", "grafico": "#0055A4" },
     "botafogo":            { "principal": "#000000", "secundaria": "#FFFFFF", "texto": "#000000", "grafico": "#1F1F1F" },
     "bragantino":          { "principal": "#D50032", "secundaria": "#1A2A4F", "texto": "#B8002B", "grafico": "#D50032" },

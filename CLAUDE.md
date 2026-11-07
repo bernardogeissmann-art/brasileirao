@@ -61,6 +61,14 @@ O usuário nunca programou antes, então todo código e explicação devem ser p
   isso). A primeira fase (março) fica de fora; os 8 que vieram da Libertadores têm grupo `LIB`. Nos dias de jogo da
   Sula (quando o dia dela vem antes ou junto do das Séries A e B), os Jogos do dia mostram a Sula primeiro; as
   Séries A e B só aparecem se jogarem no mesmo dia (pedido do usuário). Lógica em `copaNoDia` (`jogos-do-dia.js`). Os times da Sula não entram no Meu Time (pedido do usuário).
+- **Na disputa** (páginas de copa/estadual enquanto o mata-mata está rolando, ou seja, a 1ª fase acabou e ainda não
+  há campeão): no topo, só os times que ainda podem ser campeões (pedido do usuário). Um painel por confronto em
+  aberto, com um lado para cada time nas cores do clube (`data/cores-times.json`): chance de passar de fase e de
+  título, últimos jogos, caminho até aqui e vídeos do YouTube (canal oficial em `data/canais-youtube.json`; o player
+  só carrega no clique). No meio, o próximo jogo (data, contagem, onde assistir, placar ao vivo da ESPN), as chances
+  do jogo pelo modelo e a comparação das campanhas. O gráfico e as tabelas com todos os times ficam recolhidos em
+  "Como chegamos até aqui". Lógica em `site/js/estaduais/mata-mata.js`, HTML em `site/js/componentes-duelo.js`,
+  visual em `site/css/duelo.css`; o `estadual.js` liga tudo.
   - **O Método**: explica o modelo para o grande público.
 - Botão "Comprar ingressos" (regras em `site/js/ingressos.js`): no Meu Time, só no primeiro próximo jogo; nos Jogos do
   dia, em cada jogo, e some na hora do início. Leva à loja oficial do mandante, em `data/ingressos.json` (só endereços

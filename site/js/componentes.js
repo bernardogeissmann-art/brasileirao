@@ -109,7 +109,7 @@ function zonaDaPosicao(posicao) {
 // Imagem do escudo. O jogos.json guarda o caminho a partir da pasta do projeto
 // (ex.: "assets/escudos/flamengo.svg"); daqui (site/js/) subimos duas pastas.
 // alt="" porque o nome do time já aparece ao lado (o escudo é só decoração).
-function escudo(time, classe) {
+export function escudo(time, classe) {
   if (!time.escudo) {
     return `<span class="${classe} escudo-vazio" aria-hidden="true">${escaparHtml(time.sigla ?? "")}</span>`;
   }
@@ -430,13 +430,13 @@ export function legendaResultado(nomeMandante, nomeVisitante) {
 
 // "Apelido" de um canal, sem acentos, espaços nem símbolos: "Prime Video" vira "primevideo",
 // "CazéTV" vira "cazetv". Serve para dar a cada canal a sua cor (as cores ficam no componentes.css).
-function apelidoDoCanal(nome) {
+export function apelidoDoCanal(nome) {
   return nome.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9]/g, "");
 }
 
 // A sequência recente de um time em quadradinhos: V (verde), E (cinza), D (vermelho).
 // A letra vai escrita dentro, para não depender só da cor.
-function formaRecente(forma) {
+export function formaRecente(forma) {
   if (forma.length === 0) return "";
   const nomes = { V: "vitória", E: "empate", D: "derrota" };
   const itens = forma.map((r) => `<span class="forma__item forma__item--${r}" aria-hidden="true">${r}</span>`).join("");

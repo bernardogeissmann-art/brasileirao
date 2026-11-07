@@ -39,6 +39,8 @@ export const SULAMERICANA_2026 = {
   desempateConmebol: true,
   // Times que não jogaram a fase de grupos: aparecem num bloco à parte, com a campanha na copa.
   gruposDeFora: { LIB: "Vindos da Libertadores" },
+  // De onde veio cada time desses (aparece no "caminho até aqui" de quem ainda está na disputa).
+  origemDeFora: { LIB: "3º no grupo da Libertadores (caiu para a Sul-Americana)" },
 
   resultados: [
     { campo: "oitavas", rotulo: "Oitavas", classe: "avanco" },

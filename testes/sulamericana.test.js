@@ -10,6 +10,9 @@ import { readFileSync } from "node:fs";
 import { simularMomento, tabelaDoGrupo } from "../site/js/estaduais/motor.js";
 import { FORMATOS } from "../site/js/estaduais/formatos.js";
 import { copaNoDia } from "../site/js/jogos-do-dia.js";
+import {
+  mataMataEmAndamento, timesNaDisputa, confrontosAtuais, campanhaDoTime, caminhoDoTime, descreverFase, diasAte,
+} from "../site/js/estaduais/mata-mata.js";
 import { golsEsperados } from "../site/js/simulacao.js";
 
 const formato = FORMATOS["sulamericana-2026"];
@@ -115,4 +118,63 @@ test("Jogos do dia: sem jogo hoje, a Sul-Americana aparece se o próximo dia com
 test("Jogos do dia: depois da final, a Sul-Americana sai de cena", () => {
   const final = [{ ...SULA[0], disputado: true, gols_mandante: 1, gols_visitante: 0 }];
   assert.equal(copaNoDia(final, [SERIE_B], new Date("2026-11-22T10:00:00-03:00")), null);
+});
+
+// ---------------------------------------------------------------------------
+// "NA DISPUTA": a parte da página que aparece enquanto o mata-mata está rolando
+// ---------------------------------------------------------------------------
+
+const chances = ler("chances.json");
+const copia = (x) => JSON.parse(JSON.stringify(x));
+
+test("Na disputa: a Sul-Americana está no mata-mata; um estadual que acabou, não", () => {
+  assert.equal(mataMataEmAndamento(dados, chances), true);
+  const lerEstadual = (arquivo) =>
+    JSON.parse(readFileSync(new URL(`../data/estaduais/paulista-2026/${arquivo}`, import.meta.url), "utf-8"));
+  assert.equal(mataMataEmAndamento(lerEstadual("jogos.json"), lerEstadual("chances.json")), false);
+});
+
+test("Na disputa: só os finalistas, num confronto só (a final, ainda sem vencedor)", () => {
+  const naDisputa = timesNaDisputa(chances);
+  assert.deepEqual([...naDisputa].sort(), ["boca-juniors", "mineiro"]);
+  const { confrontos, semAdversario } = confrontosAtuais(dados, naDisputa);
+  assert.equal(confrontos.length, 1);
+  assert.deepEqual(semAdversario, []);
+  const final = confrontos[0];
+  assert.equal(final.fase, "final");
+  assert.deepEqual(final.times, ["mineiro", "boca-juniors"]);
+  if (!final.vencedor) assert.equal(final.proximo.fase, "final");
+});
+
+test("Na disputa: a final que acabou agora (antes de recalcular as chances) mostra o campeão", () => {
+  const depois = copia(dados);
+  const final = depois.jogos.find((j) => j.fase === "final");
+  Object.assign(final, { disputado: true, gols_mandante: 1, gols_visitante: 1, penaltis_mandante: 3, penaltis_visitante: 4 });
+  const { confrontos } = confrontosAtuais(depois, ["boca-juniors", "mineiro"]);
+  assert.equal(confrontos[0].vencedor, "boca-juniors");
+  assert.equal(confrontos[0].proximo, null);
+});
+
+test("Na disputa: o caminho de cada finalista até aqui", () => {
+  const galo = caminhoDoTime(dados, "mineiro", formato);
+  assert.deepEqual(galo.map((e) => e.fase), ["Fase de grupos", "Oitavas de final", "Quartas de final", "Semifinal"]);
+  assert.equal(galo[0].texto, "1º no Grupo B · 10 pts");
+  const quartas = galo[2];   // 0 x 2 e 4 x 2 contra o Santos: 4 x 4 no placar somado, 3 x 1 nos pênaltis
+  assert.deepEqual([quartas.adversario, quartas.golsPro, quartas.golsContra, quartas.penaltis], ["santos", 4, 4, "3 x 1"]);
+  const boca = caminhoDoTime(dados, "boca-juniors", formato);
+  assert.match(boca[0].texto, /Libertadores/);
+  assert.deepEqual(boca.slice(1).map((e) => e.fase), ["Playoffs", "Oitavas de final", "Quartas de final", "Semifinal"]);
+  assert.equal(boca[1].penaltis, "4 x 3");   // O'Higgins: 1 x 1 no placar somado
+  assert.ok(boca.slice(1).every((e) => e.venceu));
+});
+
+test("Na disputa: campanha, nome da fase e dias até o jogo", () => {
+  const boca = campanhaDoTime(dados, "boca-juniors");
+  assert.equal(boca.jogos, 8);
+  assert.equal(boca.vitorias + boca.empates + boca.derrotas, 8);
+  const final = dados.jogos.find((j) => j.fase === "final");
+  assert.equal(descreverFase(final), "Final · jogo único em campo neutro");
+  assert.equal(descreverFase({ fase: "quartas", perna: 2 }), "Quartas de final · volta");
+  assert.equal(diasAte("2026-11-21T19:30:00-03:00", new Date("2026-11-06T23:00:00-03:00")), 15);
+  assert.equal(diasAte("2026-11-21T19:30:00-03:00", new Date("2026-11-21T08:00:00-03:00")), 0);
 });

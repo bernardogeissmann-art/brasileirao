@@ -6,6 +6,11 @@
 //   jogos.json   (os jogos e os times)
 //   chances.json (as chances de cada time em cada momento, já calculadas)
 // e monta: os destaques, o gráfico da evolução das chances e a tabela de cada momento.
+//
+// Enquanto o mata-mata está rolando (ex.: a Sul-Americana antes da final), a página ganha a
+// parte "Na disputa", só com os times que ainda podem ser campeões: um painel por confronto,
+// com o próximo jogo, as chances, a campanha, o caminho até aqui e os vídeos de cada time.
+// O gráfico e as tabelas (com todos os times) ficam embaixo, recolhidos, em "Como chegamos até aqui".
 
 import {
   instalarCabecalho, montarRodape, cardTime, cartaoDestaque, legendaCategorias, mensagem, escaparHtml, formatarData,
@@ -13,6 +18,13 @@ import {
 import { tabelaDoGrupo } from "./estaduais/motor.js";
 import { FORMATOS } from "./estaduais/formatos.js";
 import { desenharGraficoLinhas } from "./grafico-linhas.js";
+import {
+  mataMataEmAndamento, timesNaDisputa, confrontosAtuais, campanhaDoTime, caminhoDoTime, diasAte, DEPOIS_DA_FASE,
+} from "./estaduais/mata-mata.js";
+import { painelConfronto, painelSemAdversario, playerDeVideos } from "./componentes-duelo.js";
+import { formaRecente, atualizarComEspn, situacaoComPlacar, temJogoRolando } from "./jogos-do-dia.js";
+import { chancesDoJogo } from "./simulacao.js";
+import { entradaValida, listaDoYouTube, playerDaEntrada } from "./videos.js";
 
 const idCampeonato = document.body.dataset.campeonato;
 const formato = FORMATOS[idCampeonato];
@@ -75,13 +87,16 @@ async function iniciar() {
   montarControles();
   trilho.max = String(ultimo);
   trilho.value = String(ultimo);
+  // Mata-mata rolando: monta a parte "Na disputa" (o gráfico vai para o histórico, antes de ser desenhado).
+  if (mataMataEmAndamento(dados, chances)) iniciarDisputa();   // sem "await": aparece quando os dados chegarem
   desenharGrafico();
   desenharMomento();
 
-  // Redesenha o gráfico quando a largura da tela muda (ex.: girar o celular).
+  // Redesenha o gráfico quando a largura da tela muda (ex.: girar o celular, ou abrir o
+  // "Como chegamos até aqui", onde ele fica recolhido durante o mata-mata).
   let larguraAnterior = grafico.clientWidth;
   new ResizeObserver(() => {
-    if (grafico.clientWidth !== larguraAnterior) {
+    if (grafico.clientWidth > 0 && grafico.clientWidth !== larguraAnterior) {
       larguraAnterior = grafico.clientWidth;
       desenharGrafico();
     }
@@ -277,4 +292,142 @@ function desenharMomento() {
         <div class="tabela-chances"><ol class="lista-times lista-times--varias">${cards}</ol></div>
       </section>`;
   }).join("");
+}
+
+
+// ---------------------------------------------------------------------------
+// NA DISPUTA (só enquanto o mata-mata está rolando)
+// ---------------------------------------------------------------------------
+
+// Lê um arquivo de data/ (ex.: as cores dos times); se falhar, devolve null e a página segue sem ele.
+async function lerDoSite(caminho) {
+  try {
+    const resposta = await fetch(new URL(`../../${caminho}`, import.meta.url));
+    return resposta.ok ? await resposta.json() : null;
+  } catch {
+    return null;
+  }
+}
+
+const disputa = { modelo: null, cores: {}, canais: {}, aoVivo: null, meuTime: null };
+
+async function iniciarDisputa() {
+  prepararPaginaDaDisputa();
+  const [modelos, cores, canais] = await Promise.all([
+    baixarJson("modelos.json").catch(() => null), lerDoSite("data/cores-times.json"), lerDoSite("data/canais-youtube.json"),
+  ]);
+  const ultimoModelo = modelos?.momentos[modelos.momentos.length - 1];
+  disputa.modelo = ultimoModelo ? { times: ultimoModelo.times, fator_casa: ultimoModelo.fator_casa } : null;
+  disputa.cores = cores?.times ?? {};
+  disputa.canais = canais?.times ?? {};
+  // Placar ao vivo (só para os campeonatos que a ESPN cobre, como a Sul-Americana). Um jogo que a
+  // ESPN já dá como encerrado passa a contar como disputado (o painel mostra o resultado).
+  if (dados.liga_espn) ({ aoVivo: disputa.aoVivo } = await atualizarComEspn(dados));
+  desenharDisputa();
+
+  // Enquanto houver jogo rolando, busca o placar de novo a cada minuto.
+  if (!dados.liga_espn) return;
+  const relogio = setInterval(async () => {
+    if (!temJogoRolando(dados.jogos)) { clearInterval(relogio); return; }
+    ({ aoVivo: disputa.aoVivo } = await atualizarComEspn(dados));
+    desenharDisputa();
+  }, 60 * 1000);
+}
+
+// Põe a parte "Na disputa" logo depois da abertura e guarda o gráfico e a tabela de cada
+// momento (que mostram todos os times) dentro de um "Como chegamos até aqui" recolhido.
+function prepararPaginaDaDisputa() {
+  const evolucao = $("titulo-evolucao").closest("section");
+  const momento = $("titulo-momento").closest("section");
+  const secao = document.createElement("section");
+  secao.className = "estadual__secao disputa";
+  secao.setAttribute("aria-labelledby", "titulo-disputa");
+  secao.innerHTML = `
+    <h2 class="titulo-secao" id="titulo-disputa">Na disputa</h2>
+    <p class="estadual__texto" id="disputa-texto">Carregando…</p>
+    <div class="disputa__confrontos" id="disputa-confrontos"></div>`;
+  const historico = document.createElement("details");
+  historico.className = "estadual__secao historico";
+  historico.innerHTML = `
+    <summary class="historico__resumo">
+      Como chegamos até aqui
+      <small>o gráfico das chances e os grupos em cada momento, com todos os times (também os que já caíram)</small>
+    </summary>`;
+  evolucao.before(secao);
+  secao.after(historico);
+  historico.append(evolucao, momento);
+
+  // Os botões "Ver os vídeos": o player só é carregado quando a pessoa pede (deixa a página leve).
+  $("disputa-confrontos").addEventListener("click", (evento) => {
+    const botao = evento.target.closest("[data-time]");
+    if (botao) mostrarVideos(botao.dataset.time, botao.closest("[data-videos]"));
+  });
+}
+
+// O canal do YouTube de um time (de data/canais-youtube.json): o oficial, se houver.
+function canalDoTime(id) {
+  const lista = (disputa.canais[id] ?? []).filter(entradaValida);
+  return lista.find((c) => c.tipo === "oficial") ?? lista[0] ?? null;
+}
+
+async function mostrarVideos(id, lugar) {
+  const canal = canalDoTime(id);
+  if (!canal || !lugar) return;
+  // Os vídeos guardados de cada time (os mesmos do Meu Time), lidos só na primeira vez.
+  disputa.meuTime ??= await lerDoSite("data/meu-time.json");
+  const guardados = disputa.meuTime?.times?.[id]?.videos ?? {};
+  lugar.innerHTML = `<h4 class="duelo__subtitulo">Vídeos · ${escaparHtml(canal.nome)}</h4>` +
+    playerDeVideos(playerDaEntrada(canal, guardados[listaDoYouTube(canal)] ?? []), dados.times[id].nome);
+}
+
+function desenharDisputa() {
+  const fim = chances.momentos[chances.momentos.length - 1].times;
+  const naDisputa = timesNaDisputa(chances);
+  const { confrontos, semAdversario } = confrontosAtuais(dados, naDisputa);
+  const agora = new Date();
+
+  const nomes = naDisputa.map(nome);
+  const lista = nomes.length > 1 ? `${nomes.slice(0, -1).join(", ")} e ${nomes.at(-1)}` : nomes[0];
+  $("disputa-texto").textContent = `Restam ${naDisputa.length} times: ${lista}. ` +
+    "Os que já caíram ficam em \"Como chegamos até aqui\", mais abaixo.";
+
+  const lado = (id, fase) => {
+    const campo = DEPOIS_DA_FASE[fase];
+    const temAvancar = campo && campo !== "titulo" && fim[id][campo] !== undefined;
+    return {
+      id,
+      time: dados.times[id],
+      cores: disputa.cores[id],
+      titulo: fim[id].titulo,
+      avancar: temAvancar ? { fase, valor: fim[id][campo] } : null,
+      forma: formaRecente(dados.jogos, id),
+      caminho: caminhoDoTime(dados, id, formato),
+      campanha: campanhaDoTime(dados, id),
+      temVideos: Boolean(canalDoTime(id)),
+    };
+  };
+
+  const paineis = confrontos.map((confronto) => {
+    const [a, b] = confronto.times;
+    const proximo = confronto.proximo;
+    return painelConfronto({
+      confronto,
+      ladoA: lado(a, confronto.fase),
+      ladoB: lado(b, confronto.fase),
+      chancesJogo: proximo && disputa.modelo ? chancesDoJogo(proximo, disputa.modelo) : null,
+      estado: proximo ? situacaoComPlacar(proximo, disputa.aoVivo, agora) : null,
+      dias: proximo ? diasAte(proximo.data, agora) : null,
+      times: dados.times,
+    });
+  });
+  paineis.push(...semAdversario.map((id) => painelSemAdversario(lado(id, null), dados.times)));
+
+  // Os vídeos já abertos continuam abertos quando o painel é redesenhado (placar ao vivo).
+  const abertos = new Map([...document.querySelectorAll("#disputa-confrontos [data-videos]")]
+    .filter((el) => el.querySelector("iframe")).map((el) => [el.dataset.videos, el.innerHTML]));
+  $("disputa-confrontos").innerHTML = paineis.join("");
+  for (const [id, html] of abertos) {
+    const lugar = document.querySelector(`#disputa-confrontos [data-videos="${CSS.escape(id)}"]`);
+    if (lugar) lugar.innerHTML = html;
+  }
 }
