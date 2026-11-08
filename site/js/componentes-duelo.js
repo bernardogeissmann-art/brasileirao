@@ -178,7 +178,7 @@ export function painelConfronto({ confronto, ladoA, ladoB, chancesJogo, estado, 
   // Meio: o próximo jogo pelo modelo e a comparação das campanhas.
   let previsao = "";
   if (chancesJogo && !vencedor) {
-    const p = chancesJogo.placarMaisProvavel;
+    // Sem o "placar mais provável" (pedido do usuário): sozinho, não é um número confiável.
     previsao = `
       <h4 class="duelo__subtitulo">O próximo jogo, pelo modelo${estado && estado.situacao !== "antes" ? " (chances de antes do jogo)" : ""}</h4>
       ${barraResultado({ nomeMandante: times[proximo.mandante].nome, nomeVisitante: times[proximo.visitante].nome,
@@ -189,7 +189,6 @@ export function painelConfronto({ confronto, ladoA, ladoB, chancesJogo, estado, 
         <li><span class="legenda__cor" style="--cor: var(--cor-visitante)"></span>${escaparHtml(times[proximo.visitante].nome)}</li>
       </ul>
       <p class="duelo__previsao">
-        <span>Placar mais provável <b>${p.gols_mandante} × ${p.gols_visitante}</b></span>
         <span>Gols esperados <b>${umaCasa(chancesJogo.mediaM)} × ${umaCasa(chancesJogo.mediaV)}</b></span>
       </p>`;
   }

@@ -496,22 +496,28 @@ export function cardConfronto({ jogo, times, tabela, forma, chances, estado, ing
   let previsao = "";
   if (situacao !== "encerrado") {
     const rotulo = situacao === "antes" ? "" : `<p class="confronto__aviso">Chances antes do jogo</p>`;
-    const { placarMaisProvavel: p } = chances;
     const umaCasa = (n) => n.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+    // O "placar mais provável" não aparece aqui (pedido do usuário): sozinho, ele não é um
+    // número confiável (mesmo o placar mais provável costuma ter só uns 10% de chance).
     previsao = `${rotulo}
       ${barraResultado({ nomeMandante: times[jogo.mandante].nome, nomeVisitante: times[jogo.visitante].nome,
         vitoriaM: chances.vitoriaM, empate: chances.empate, vitoriaV: chances.vitoriaV })}
       <p class="confronto__previsao">
-        <span>Placar mais provável <b>${p.gols_mandante} × ${p.gols_visitante}</b></span>
         <span>Gols esperados <b>${umaCasa(chances.mediaM)} × ${umaCasa(chances.mediaV)}</b></span>
       </p>`;
   }
 
-  // Onde assistir: os canais vêm do ge.globo (escapados, porque vêm de fora).
+  // Onde assistir: os canais vêm do ge.globo (escapados, porque vêm de fora). Depois que o
+  // jogo acaba, a parte some (não há mais o que assistir).
   const semInformacao = situacao === "antes" ? "ainda não divulgado" : "não informado";
   const canais = jogo.transmissao?.length
     ? jogo.transmissao.map((c) => `<li class="canal canal--${apelidoDoCanal(c)}">${escaparHtml(c)}</li>`).join("")
     : `<li class="canal canal--vazio">${semInformacao}</li>`;
+  const ondeAssistir = situacao === "encerrado" ? "" : `
+      <div class="confronto__onde">
+        <span class="confronto__onde-rotulo">Onde assistir</span>
+        <ul class="canais">${canais}</ul>
+      </div>`;
 
   return `
     <li class="confronto">
@@ -522,10 +528,7 @@ export function cardConfronto({ jogo, times, tabela, forma, chances, estado, ing
       ${linhaTime("mandante")}
       ${linhaTime("visitante")}
       ${previsao}
-      <div class="confronto__onde">
-        <span class="confronto__onde-rotulo">Onde assistir</span>
-        <ul class="canais">${canais}</ul>
-      </div>
+      ${ondeAssistir}
       ${ingresso ? botaoIngresso(ingresso, times[jogo.mandante].nome) : ""}
     </li>`;
 }
