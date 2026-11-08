@@ -2,7 +2,7 @@
   "fonte": "ESPN",
   "competicao": "Campeonato Brasileiro Série B",
   "temporada": 2026,
-  "baixado_em": "2026-11-07T18:34:34-03:00",
+  "baixado_em": "2026-11-07T23:00:16-03:00",
   "times": {
     "america-mineiro": {
       "nome": "América Mineiro",
@@ -4896,9 +4896,7 @@
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
       "estadio": "Estádio Dr. Jorge Ismael de Biasi",
-      "transmissao": [
-        "Disney+"
-      ]
+      "transmissao": null
     },
     {
       "id": 401860424,
@@ -4906,14 +4904,12 @@
       "data": "2026-11-07T20:00:00-03:00",
       "mandante": "vila-nova",
       "visitante": "criciuma",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "SCHEDULED",
+      "disputado": true,
+      "gols_mandante": 1,
+      "gols_visitante": 0,
+      "status_fonte": "FINISHED",
       "estadio": "Estádio Onésio Brasileiro Alvarenga",
-      "transmissao": [
-        "Disney+"
-      ]
+      "transmissao": null
     },
     {
       "id": 401860429,
@@ -4921,14 +4917,12 @@
       "data": "2026-11-07T20:00:00-03:00",
       "mandante": "cuiaba",
       "visitante": "juventude",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "SCHEDULED",
+      "disputado": true,
+      "gols_mandante": 1,
+      "gols_visitante": 2,
+      "status_fonte": "FINISHED",
       "estadio": "Arena Pantanal",
-      "transmissao": [
-        "Disney+"
-      ]
+      "transmissao": null
     },
     {
       "id": 401860426,
@@ -4939,7 +4933,7 @@
       "disputado": false,
       "gols_mandante": null,
       "gols_visitante": null,
-      "status_fonte": "SCHEDULED",
+      "status_fonte": "IN_PLAY",
       "estadio": "Estádio dos Aflitos",
       "transmissao": [
         "Premiere",
