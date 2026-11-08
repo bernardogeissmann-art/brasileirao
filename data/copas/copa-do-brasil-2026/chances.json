@@ -1,8 +1,8 @@
 {
  "competicao": "Copa do Brasil",
  "temporada": 2026,
- "dados_baixados_em": "2026-11-07T04:54:22-03:00",
- "calculado_em": "2026-11-07T07:54:29.948Z",
+ "dados_baixados_em": "2026-11-08T04:54:36-03:00",
+ "calculado_em": "2026-11-08T07:54:43.266Z",
  "simulacoes": 10000,
  "momentos": [
   {
@@ -1851,6 +1851,238 @@
      "semifinal": 1,
      "final": 0.1321,
      "titulo": 0.0627
+    },
+    "vitoria": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    }
+   }
+  },
+  {
+   "id": "agora",
+   "rotulo": "Agora",
+   "curto": "Agora",
+   "ate": "2026-11-07T18:00:00-03:00",
+   "times": {
+    "athletic": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "atletico-goianiense": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "bahia": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "barra-fc": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "botafogo": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "bragantino": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "ceara": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "chapecoense": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "clube-do-remo": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "confianca": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "corinthians": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "coritiba": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "crb": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "cruzeiro": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "flamengo": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "fluminense": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "fortaleza": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "goias": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "gremio": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 1,
+     "titulo": 0.3072
+    },
+    "internacional": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "jacuipense": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "juventude": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "mineiro": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0,
+     "titulo": 0
+    },
+    "mirassol": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "operario-pr": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "palmeiras": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0.8624,
+     "titulo": 0.6216
+    },
+    "paranaense": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "paysandu": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "santos": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "sao-paulo": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "vasco-da-gama": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0.1376,
+     "titulo": 0.0712
     },
     "vitoria": {
      "oitavas": 1,

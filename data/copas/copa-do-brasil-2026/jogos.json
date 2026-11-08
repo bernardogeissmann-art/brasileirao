@@ -2,7 +2,7 @@
   "competicao": "Copa do Brasil",
   "temporada": 2026,
   "fonte": "ESPN (site.api.espn.com)",
-  "baixado_em": "2026-11-07T04:54:22-03:00",
+  "baixado_em": "2026-11-08T04:54:36-03:00",
   "liga_espn": "bra.copa_do_brazil",
   "times": {
     "athletic": {
@@ -1433,20 +1433,15 @@
       "mandante": "mineiro",
       "visitante": "gremio",
       "neutro": false,
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
+      "disputado": true,
+      "gols_mandante": 1,
+      "gols_visitante": 1,
       "penaltis_mandante": null,
       "penaltis_visitante": null,
-      "status_fonte": "STATUS_SCHEDULED",
+      "status_fonte": "STATUS_FULL_TIME",
       "estadio": "Arena MRV",
       "perna": 2,
-      "transmissao": [
-        "sportv",
-        "Premiere",
-        "globoplay",
-        "Prime Video"
-      ]
+      "transmissao": null
     },
     {
       "id": "cdb2026-401913107",
