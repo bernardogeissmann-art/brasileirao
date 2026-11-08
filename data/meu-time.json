@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-08T08:01:16.789Z",
+ "gerado_em": "2026-11-08T15:31:37.002Z",
  "times": {
   "bahia": {
    "texto": "Nem lá, nem cá: o Bahia fez 7 dos últimos 15 pontos possíveis. No último jogo, perdeu para o Cruzeiro por 3 a 2 fora de casa. Em 6º lugar, com 53 pontos, a briga pela Libertadores está aberta: 43% de chance pelas nossas contas. Nos últimos 5 jogos, foram 7 gols marcados e 9 sofridos: tudo bem equilibrado. Nos bastidores, a notícia que mais chama atenção é “Willian José continua fora do Bahia depois de compartilhar vídeo com críticas ao Nordeste”, segundo o Globo Esporte. Agora o desafio é o Grêmio, fora de casa, quarta, 18/11. Jogo difícil: o modelo dá 37% de chance de vitória.",
@@ -1535,6 +1535,7 @@
    "texto_em": "2026-11-07T21:34:59.080Z",
    "videos": {
     "UULFBAsbVEfTrXSkkLy9Oe9UQg": [
+     "NveQhSIOLsQ",
      "ZRQy_kuScig",
      "_K3uLRRWF6w",
      "-gK0JlNYLy8",
@@ -1543,11 +1544,10 @@
      "GMBsCWxhai8",
      "duTVrPQKLZs",
      "5boRJeZoujs",
-     "u-aX9TEttsM",
-     "MyFTMQ9GA-M"
+     "u-aX9TEttsM"
     ]
    },
-   "videos_em": "2026-11-06T15:47:06.169Z"
+   "videos_em": "2026-11-08T15:31:35.827Z"
   },
   "botafogo-sp": {
    "noticias": [
@@ -1889,6 +1889,7 @@
    "texto_em": "2026-11-07T21:34:59.080Z",
    "videos": {
     "UULFV5UiFF5AlNKW4sLXcYMG_g": [
+     "71uK0cEowBE",
      "feEGVmVR8-s",
      "iBnR7OYAvP8",
      "EPhTF_HekgI",
@@ -1897,11 +1898,10 @@
      "9VXSg7EGYtU",
      "DdLgxWMq1iY",
      "89Z-RkY_MsQ",
-     "M9kGdHwEFck",
-     "eadj1g8OMWE"
+     "M9kGdHwEFck"
     ]
    },
-   "videos_em": "2026-11-06T15:47:08.255Z"
+   "videos_em": "2026-11-08T15:31:36.558Z"
   },
   "goias": {
    "noticias": [
@@ -2154,6 +2154,7 @@
    "texto_em": "2026-11-07T21:34:59.080Z",
    "videos": {
     "UULFUQG_P8Y_POiYW7LqAldQVg": [
+     "QUxghbBMeEs",
      "iuYjXMvAZv0",
      "DTSkW0fyz-I",
      "HQbY3ZC2LwU",
@@ -2162,11 +2163,10 @@
      "Onsg_92icWI",
      "kkcXMEGf0kk",
      "3E8WJr1aCLk",
-     "oSqBHKv_xms",
-     "pj9NAlg2erk"
+     "oSqBHKv_xms"
     ]
    },
-   "videos_em": "2026-11-06T15:47:09.097Z"
+   "videos_em": "2026-11-08T15:31:36.871Z"
   },
   "operario-pr": {
    "noticias": [
@@ -2322,7 +2322,7 @@
      "4kE03V5Zy-o"
     ]
    },
-   "videos_em": "2026-11-06T15:47:09.475Z"
+   "videos_em": "2026-11-08T15:31:37.002Z"
   },
   "sport": {
    "noticias": [
