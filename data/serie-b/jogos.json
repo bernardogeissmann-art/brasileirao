@@ -2,7 +2,7 @@
   "fonte": "ESPN",
   "competicao": "Campeonato Brasileiro Série B",
   "temporada": 2026,
-  "baixado_em": "2026-11-07T23:00:16-03:00",
+  "baixado_em": "2026-11-07T23:53:30-03:00",
   "times": {
     "america-mineiro": {
       "nome": "América Mineiro",
@@ -4930,15 +4930,12 @@
       "data": "2026-11-07T21:30:00-03:00",
       "mandante": "nautico",
       "visitante": "crb",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "IN_PLAY",
+      "disputado": true,
+      "gols_mandante": 0,
+      "gols_visitante": 3,
+      "status_fonte": "FINISHED",
       "estadio": "Estádio dos Aflitos",
-      "transmissao": [
-        "Premiere",
-        "Ge TV"
-      ]
+      "transmissao": null
     },
     {
       "id": 401860422,
