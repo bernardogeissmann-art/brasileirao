@@ -426,6 +426,7 @@ export function simular(dados, opcoes = {}) {
         roletaM: chancesAcumuladas(mediaM),
         roletaV: chancesAcumuladas(mediaV),
         fixado: fixadosPorId.get(jogo.id) ?? null,
+        id: jogo.id, data: jogo.data ?? "",
       });
     }
   }
@@ -458,32 +459,85 @@ export function simular(dados, opcoes = {}) {
     };
   }
 
+  // Reta final (só com playoff): o último jogo que falta de cada time e, para cada
+  // resultado dele (0 = vitória, 1 = empate, 2 = derrota), em que posição o time terminou
+  // e se subiu. Assim a página mostra "se vencer, X%; se empatar, Y%; se perder, Z%".
+  // Também conta quais duplas se enfrentaram em cada confronto do playoff e quem passou.
+  const ultimo = new Array(ids.length).fill(-1);          // time -> posição em "restantes"
+  restantes.forEach((jogo, i) => {
+    for (const t of [jogo.m, jogo.v]) {
+      if (ultimo[t] === -1 || jogo.data >= restantes[ultimo[t]].data) ultimo[t] = i;
+    }
+  });
+  const porResultado = ids.map(() => [0, 1, 2].map(() => ({ vezes: 0, posicoes: new Array(ids.length).fill(0), acesso: 0 })));
+  const duplas = (playoff?.confrontos ?? []).map(() => new Map());   // "melhor|pior" -> [vezes, passou o melhor]
+  const golsSorteados = restantes.map(() => [0, 0]);
+  const resultadoDe = (feitos, sofridos) => (feitos > sofridos ? 0 : feitos === sofridos ? 1 : 2);
+
   // 2) As simulações: cada volta é um "final de campeonato" possível.
   for (let s = 0; s < nSimulacoes; s++) {
     copiarEstatisticas(base, est);                       // volta ao ponto de partida
-    for (const jogo of restantes) {
+    for (let i = 0; i < restantes.length; i++) {
+      const jogo = restantes[i];
       // Sorteia sempre os dois lados, mesmo num jogo fixado (e descarta o sorteio).
       // Isso mantém a sequência de sorteios dos outros jogos igual com ou sem palpites.
       const golsM = sortearGols(jogo.roletaM, sorteioGols);
       const golsV = sortearGols(jogo.roletaV, sorteioGols);
-      if (jogo.fixado) {
-        registrarResultado(est, jogo.m, jogo.v, jogo.fixado.gols_mandante, jogo.fixado.gols_visitante);
-      } else {
-        registrarResultado(est, jogo.m, jogo.v, golsM, golsV);
-      }
+      const placar = jogo.fixado ? [jogo.fixado.gols_mandante, jogo.fixado.gols_visitante] : [golsM, golsV];
+      registrarResultado(est, jogo.m, jogo.v, placar[0], placar[1]);
+      golsSorteados[i] = placar;
     }
     const tabela = montarTabela(est, sorteioDesempate);  // tabela final desta simulação
     tabela.forEach((time, posicao) => { contagem[time][posicao]++; });
     for (let t = 0; t < ids.length; t++) somaPontos[t] += est.pontos[t];
     if (playoff) {
-      for (const [melhor, pior] of playoff.confrontos) {   // ex.: [3, 6] = 3º x 6º
-        venceuPlayoff[jogarPlayoff(tabela[melhor - 1], tabela[pior - 1], placarDoPlayoff)]++;
-      }
+      const subiu = new Set(tabela.slice(faixas[playoff.soma_com][0] - 1, faixas[playoff.soma_com][1]));
+      playoff.confrontos.forEach(([melhor, pior], k) => {   // ex.: [3, 6] = 3º x 6º
+        const a = tabela[melhor - 1], b = tabela[pior - 1];
+        const vencedor = jogarPlayoff(a, b, placarDoPlayoff);
+        venceuPlayoff[vencedor]++;
+        subiu.add(vencedor);
+        const chave = `${a}|${b}`;
+        const conta = duplas[k].get(chave) ?? [0, 0];
+        conta[0]++;
+        if (vencedor === a) conta[1]++;
+        duplas[k].set(chave, conta);
+      });
+      tabela.forEach((t, posicao) => {
+        if (ultimo[t] === -1) return;
+        const jogo = restantes[ultimo[t]];
+        const [gm, gv] = golsSorteados[ultimo[t]];
+        const r = porResultado[t][jogo.m === t ? resultadoDe(gm, gv) : resultadoDe(gv, gm)];
+        r.vezes++;
+        r.posicoes[posicao]++;
+        if (subiu.has(t)) r.acesso++;
+      });
     }
   }
 
   // 3) Transforma as contagens em probabilidades (de 0 a 1).
-  return resumir({ ids, times: jogos.times, contagem, somaPontos, nSimulacoes, faixas, playoff, venceuPlayoff });
+  const resumo = resumir({ ids, times: jogos.times, contagem, somaPontos, nSimulacoes, faixas, playoff, venceuPlayoff });
+  if (playoff) {
+    resumo.times.forEach((linha, t) => {
+      if (ultimo[t] === -1) return;
+      const jogo = restantes[ultimo[t]];
+      // Para cada resultado: em quantas simulações ele saiu e, dentre elas, as chances de cada posição.
+      const [vitoria, empate, derrota] = porResultado[t].map((r) => ({
+        vezes: r.vezes,
+        posicoes: r.posicoes.map((v) => (r.vezes ? v / r.vezes : 0)),
+        acesso: r.vezes ? r.acesso / r.vezes : 0,
+      }));
+      linha.ultimoJogo = { id: jogo.id, adversario: ids[jogo.m === t ? jogo.v : jogo.m], emCasa: jogo.m === t, vitoria, empate, derrota };
+    });
+    resumo.confrontosPlayoff = playoff.confrontos.map(([melhor, pior], k) => ({
+      melhor, pior,
+      duplas: [...duplas[k]].map(([chave, [vezes, passouMelhor]]) => {
+        const [a, b] = chave.split("|").map(Number);
+        return { melhor: ids[a], pior: ids[b], chance: vezes / nSimulacoes, passaMelhor: passouMelhor / vezes };
+      }).sort((x, y) => y.chance - x.chance),
+    }));
+  }
+  return resumo;
 }
 
 function resumir({ ids, times, contagem, somaPontos, nSimulacoes, faixas, playoff, venceuPlayoff }) {

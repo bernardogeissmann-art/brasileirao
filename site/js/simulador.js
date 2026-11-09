@@ -11,8 +11,10 @@ import { carregarDados, tabelaAtual } from "./simulacao.js";
 import { atualizarComEspn } from "./jogos-do-dia.js";
 import {
   instalarCabecalho, montarRodape, cardTime, mensagem, legendaCategorias, cabecalhoColunas, secaoRodada,
-  CATEGORIAS, CATEGORIAS_SERIE_B, zonaSerieB,
+  CATEGORIAS, CATEGORIAS_SERIE_B, zonaSerieB, formatarDataJogo,
 } from "./componentes.js";
+import { disputasEmAberto, quadroDoPlayoff, rodadasQueFaltam, ultimaRodada } from "./reta-final.js";
+import { blocoDisputas, blocoPlayoff } from "./componentes-reta-final.js";
 
 // Qual campeonato esta página mostra, e o que muda no visual de um para o outro.
 const campeonato = document.body.dataset.campeonato ?? "serie-a";
@@ -241,6 +243,36 @@ function desenharTabela() {
 
   // Enquanto as chances não correspondem aos palpites atuais, as barras ficam apagadas.
   lista.classList.toggle("recalculando", calculado.versao !== versao);
+  if (serieB) desenharRetaFinal(tabela);
+}
+
+
+// ---------------------------------------------------------------------------
+// RETA FINAL (só na Série B): as disputas da última rodada e o playoff
+// ---------------------------------------------------------------------------
+
+// Aparece quando faltam no máximo 2 rodadas (e continua depois, durante o playoff).
+const RODADAS_PARA_MOSTRAR = 2;
+
+function desenharRetaFinal(tabela) {
+  const secao = document.getElementById("reta-final");
+  const faltam = rodadasQueFaltam(dados.jogos.jogos);
+  if (faltam > RODADAS_PARA_MOSTRAR || !calculado.resultado.confrontosPlayoff) return;
+  secao.hidden = false;
+
+  const times = dados.jogos.times;
+  const ultima = ultimaRodada(dados.jogos.jogos);
+  document.getElementById("reta-final-intro").textContent = ultima === null
+    ? "A fase de pontos corridos acabou: agora é a vez do playoff."
+    : `Rodada ${ultima.numero}, a última: ${formatarDataJogo(ultima.data)}` +
+      `${ultima.jogosNoHorario > 1 ? `, com ${ultima.jogosNoHorario} jogos no mesmo horário` : ""}. Para cada time que ainda briga por ` +
+      "alguma coisa, a chance de agora e como ela fica com vitória, empate ou derrota no último jogo.";
+  document.getElementById("reta-final-aviso").hidden = palpites.size === 0;
+  document.getElementById("reta-final-disputas").innerHTML =
+    blocoDisputas(disputasEmAberto(calculado.resultado, tabela, dados.config.faixas), times);
+  document.getElementById("reta-final-playoff").innerHTML =
+    blocoPlayoff(quadroDoPlayoff(calculado.resultado, dados.jogos.playoff ?? []), times);
+  secao.classList.toggle("recalculando", calculado.versao !== versao);
 }
 
 

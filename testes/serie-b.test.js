@@ -142,3 +142,17 @@ test("Meu Time: o texto de um time da Série B fala de acesso e da Série B", as
   // E um time da Série A continua com as chances de Libertadores.
   assert.match(montarPedido(contexto.montarInfo("flamengo"), [], "sexta, 06/11"), /Libertadores/);
 });
+
+test("Série B (reta final): duplas do playoff somam 100% e o último jogo bate com o total", () => {
+  for (const { duplas } of resultado.confrontosPlayoff) {
+    quaseIgual(duplas.reduce((t, d) => t + d.chance, 0), 1, "soma das duplas de um confronto");
+  }
+  // Juntando vitória, empate e derrota (cada um com o seu peso), volta a chance total.
+  for (const time of resultado.times.filter((t) => t.ultimoJogo)) {
+    const { vitoria, empate, derrota } = time.ultimoJogo;
+    const total = vitoria.vezes + empate.vezes + derrota.vezes;
+    assert.equal(total, resultado.simulacoes, `simulações do ${time.nome}`);
+    const juntos = [vitoria, empate, derrota].reduce((t, r) => t + r.acesso * r.vezes, 0) / total;
+    quaseIgual(juntos, time.acesso, `acesso do ${time.nome}`);
+  }
+});

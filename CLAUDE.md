@@ -15,6 +15,10 @@ O usuário nunca programou antes, então todo código e explicação devem ser p
   (`scripts/fonte_espn_brasileirao.py`, liga `bra.2`, sem chave; o plano grátis do football-data não tem a Série B).
   O motor `site/js/simulacao.js` é o mesmo: lê as faixas da ficha e, na Série B, simula o playoff (REC 2026, Art. 13:
   3º x 6º e 4º x 5º, ida e volta; pontos, saldo, melhor campanha). "acesso" = 1º/2º + vencedores do playoff.
+  Na página da Série B, o painel "Reta final" (quando faltam até 2 rodadas) mostra cada disputa em aberto com a
+  chance se o time vencer, empatar ou perder o último jogo, e o quadro do playoff (candidatos a cada vaga, confrontos
+  mais prováveis, quem passa). Contas em `site/js/reta-final.js` (a partir do `ultimoJogo` e `confrontosPlayoff` que
+  o `simular` devolve na Série B), HTML em `componentes-reta-final.js`, visual em `css/reta-final.css`.
   A ESPN não informa a rodada da Série B: ela é calculada pela ordem dos jogos de cada time.
 - Páginas do site (o menu fica em `site/js/abas.js`):
   - **Início**: mostra as probabilidades calculadas (título, rebaixamento, etc). No fim, a seção **Jogos do dia**

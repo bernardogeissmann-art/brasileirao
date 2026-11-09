@@ -1,0 +1,347 @@
+/* reta-final.css
+   O painel "Reta final" da Série B (acima do simulador): as disputas da última rodada
+   e o quadro do playoff. */
+
+.reta-final {
+  padding-top: 24px;
+}
+
+.reta-final__intro {
+  margin-top: 6px;
+  max-width: 70ch;
+  color: var(--cor-tinta-suave);
+}
+
+.reta-final__aviso {
+  margin-top: 6px;
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--cor-libertadores);
+}
+
+/* Enquanto as chances são recalculadas, o painel fica apagado (como a tabela). */
+.reta-final.recalculando .disputas,
+.reta-final.recalculando .playoff {
+  opacity: 0.45;
+  transition: opacity 0.2s;
+}
+
+/* ---------- Disputas ---------- */
+
+.disputas {
+  display: grid;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+@media (min-width: 900px) {
+  .disputas {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
+.disputa {
+  --cor: var(--cor-tinta);
+  padding: 14px 14px 10px;
+  border-top: 5px solid var(--cor);
+  border-radius: var(--canto-m);
+  background: var(--cor-cartao);
+  box-shadow: var(--sombra-cartao);
+  min-width: 0;
+}
+
+/* No celular, menos respiro dentro do card e sem o escudo na tabela, para caber tudo. */
+@media (max-width: 480px) {
+  .disputa {
+    padding: 12px 8px 8px;
+  }
+  .disputa__time .rf-time__escudo {
+    display: none;
+  }
+  .disputa__tabela thead th {
+    font-size: 0.6rem;
+  }
+}
+
+.disputa[data-cor="titulo"] { --cor: var(--cor-titulo); }
+.disputa[data-cor="libertadores"] { --cor: var(--cor-libertadores); }
+.disputa[data-cor="sulamericana"] { --cor: var(--cor-sulamericana); }
+.disputa[data-cor="rebaixamento"] { --cor: var(--cor-rebaixamento); }
+
+.disputa__titulo {
+  font-size: 1.05rem;
+  font-weight: 800;
+  font-stretch: var(--largura-media);
+  text-transform: uppercase;
+}
+
+.disputa__titulo span {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: none;
+  color: var(--cor-tinta-suave);
+}
+
+.disputa__garantidos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 10px;
+  margin-top: 8px;
+  font-size: 0.84rem;
+  color: var(--cor-tinta-suave);
+}
+
+.disputa__tabela {
+  width: 100%;
+  table-layout: fixed;                  /* as colunas não crescem além da largura do card */
+  margin-top: 8px;
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;   /* números da mesma largura, alinhados */
+}
+
+.disputa__tabela thead th {
+  padding: 4px 2px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--cor-tinta-suave);
+  text-align: center;
+}
+
+.disputa__tabela tbody tr + tr {
+  border-top: 1px solid var(--cor-linha);
+}
+
+.disputa__time {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 4px 8px 0;
+  text-align: left;
+  font-weight: 400;
+}
+
+.disputa__posicao {
+  min-width: 2.2ch;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--cor-tinta-suave);
+}
+
+.disputa__nome {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  line-height: 1.2;
+}
+
+.disputa__nome b {
+  font-size: 0.92rem;
+}
+
+.disputa__detalhe {
+  font-size: 0.74rem;
+  color: var(--cor-tinta-suave);
+}
+
+.disputa__tabela thead th:not(:first-child) {
+  width: 15%;
+}
+
+.disputa__nome b {
+  overflow-wrap: anywhere;              /* nome comprido quebra a linha em vez de vazar */
+}
+
+.disputa__celula {
+  padding: 4px 2px;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  font-stretch: var(--largura-estreita);
+  /* Quanto maior a chance, mais forte a cor da disputa no fundo. */
+  background: color-mix(in srgb, var(--cor) calc(var(--forca) * 38%), transparent);
+  border-radius: 6px;
+}
+
+.disputa__celula--vazia {
+  color: var(--cor-tinta-apagada);
+  background: none;
+}
+
+/* A primeira coluna de chance ("Hoje") separada das outras por um respiro. */
+.disputa__tabela td:nth-child(2) {
+  border-right: 3px solid var(--cor-cartao);
+}
+
+.rf-time {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  min-width: 0;
+  font-weight: 600;
+  overflow-wrap: break-word;   /* só quebra no meio da palavra se ela não couber sozinha */
+}
+
+@media (max-width: 480px) {
+  .playoff {
+    padding: 16px 12px;
+  }
+  .chave {
+    padding: 12px 10px;
+  }
+}
+
+.rf-time__escudo {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  flex: none;
+}
+
+/* ---------- Playoff ---------- */
+
+.playoff {
+  margin-top: 22px;
+  padding: 18px 16px;
+  border-radius: var(--canto-g);
+  background: var(--cor-tinta);
+  color: var(--cor-papel);
+}
+
+.playoff__titulo {
+  font-size: 1.3rem;
+  font-weight: 900;
+  font-stretch: var(--largura-larga);
+  text-transform: uppercase;
+  color: var(--cor-limao);
+}
+
+.playoff__regra {
+  margin-top: 6px;
+  max-width: 75ch;
+  font-size: 0.88rem;
+  color: rgba(244, 241, 234, 0.78);
+}
+
+.playoff__chaves {
+  display: grid;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+@media (min-width: 900px) {
+  .playoff__chaves {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.chave {
+  padding: 14px;
+  border: 1px solid rgba(244, 241, 234, 0.16);
+  border-radius: var(--canto-m);
+  min-width: 0;
+}
+
+.chave__titulo {
+  font-size: 1.6rem;
+  font-weight: 900;
+  font-stretch: var(--largura-larga);
+}
+
+.chave__vagas {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);   /* minmax(0, ...): as colunas podem encolher */
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.chave__posicao {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(244, 241, 234, 0.6);
+}
+
+.chave__candidatos {
+  padding: 0;
+  list-style: none;
+  margin-top: 4px;
+}
+
+.chave__candidatos li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 0;
+  font-size: 0.88rem;
+}
+
+.chave__candidatos b {
+  font-variant-numeric: tabular-nums;
+  color: var(--cor-limao);
+}
+
+.chave__subtitulo {
+  margin-top: 14px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(244, 241, 234, 0.6);
+}
+
+.chave__duplas {
+  padding: 0;
+  list-style: none;
+}
+
+.dupla {
+  padding: 10px 0 4px;
+}
+
+.dupla + .dupla {
+  border-top: 1px solid rgba(244, 241, 234, 0.12);
+}
+
+.dupla__times {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 8px;
+}
+
+.dupla__x {
+  color: rgba(244, 241, 234, 0.55);
+  font-weight: 700;
+}
+
+.dupla__numeros {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3px;
+  font-size: 0.8rem;
+  color: rgba(244, 241, 234, 0.75);
+}
+
+.dupla__numeros b {
+  color: var(--cor-papel);
+}
+
+.dupla__jogos {
+  padding: 0;
+  list-style: none;
+  margin-top: 6px;
+  font-size: 0.82rem;
+}
+
+.dupla__jogos li {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}

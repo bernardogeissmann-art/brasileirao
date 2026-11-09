@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/componentes.css">
   <link rel="stylesheet" href="css/simulador.css">
+  <link rel="stylesheet" href="css/reta-final.css">
 
   <script type="module" src="js/simulador.js"></script>
 </head>
@@ -28,8 +29,18 @@
       <div class="largura">
         <p class="abertura__chapeu" id="chapeu">Brasileirão Série B 2026</p>
         <h1 class="abertura__titulo">Série <span class="leva">B</span></h1>
-        <p class="abertura__texto">Quem sobe e quem cai? O 1º e o 2º sobem direto; do 3º ao 6º, um playoff de ida e volta (3º x 6º e 4º x 5º) decide as outras duas vagas; os 4 últimos caem. Dê o seu palpite nos jogos que faltam: a tabela muda na hora, e as chances são recalculadas com 10.000 simulações.</p>
+        <p class="abertura__texto">Quem sobe e quem cai? O 1º e o 2º sobem direto; do 3º ao 6º, um playoff de ida e volta (3º x 6º e 4º x 5º) decide as outras duas vagas; os 4 últimos caem. Veja o que cada time precisa na reta final e dê o seu palpite nos jogos que faltam: tudo é recalculado na hora, com 10.000 simulações.</p>
       </div>
+    </section>
+
+    <!-- Reta final: as disputas da última rodada e o playoff. Só aparece quando faltam
+         poucas rodadas (o simulador.js decide e preenche). -->
+    <section class="largura reta-final" id="reta-final" aria-labelledby="titulo-reta-final" hidden>
+      <h2 class="titulo-secao" id="titulo-reta-final">Reta final</h2>
+      <p class="reta-final__intro" id="reta-final-intro"></p>
+      <p class="reta-final__aviso" id="reta-final-aviso" hidden>Com os seus palpites nos jogos lá embaixo.</p>
+      <div id="reta-final-disputas"></div>
+      <div id="reta-final-playoff"></div>
     </section>
 
     <!-- data-vista diz qual painel aparece no celular: "jogos" ou "tabela". Aqui começa pela tabela. -->
