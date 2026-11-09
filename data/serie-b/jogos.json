@@ -2,7 +2,7 @@
   "fonte": "ESPN",
   "competicao": "Campeonato Brasileiro Série B",
   "temporada": 2026,
-  "baixado_em": "2026-11-08T18:34:18-03:00",
+  "baixado_em": "2026-11-08T21:58:58-03:00",
   "times": {
     "america-mineiro": {
       "nome": "América Mineiro",
@@ -4956,10 +4956,10 @@
       "data": "2026-11-08T19:15:00-03:00",
       "mandante": "goias",
       "visitante": "ponte-preta",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "SCHEDULED",
+      "disputado": true,
+      "gols_mandante": 1,
+      "gols_visitante": 0,
+      "status_fonte": "FINISHED",
       "estadio": "Estádio da Serrinha",
       "transmissao": [
         "Disney+"
@@ -4971,15 +4971,12 @@
       "data": "2026-11-08T19:15:00-03:00",
       "mandante": "ceara",
       "visitante": "america-mineiro",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "SCHEDULED",
+      "disputado": true,
+      "gols_mandante": 0,
+      "gols_visitante": 1,
+      "status_fonte": "FINISHED",
       "estadio": "Arena Castelão",
-      "transmissao": [
-        "Disney+",
-        "SportyNet"
-      ]
+      "transmissao": null
     },
     {
       "id": 401860435,
