@@ -2,7 +2,7 @@
   "competicao": "Copa do Brasil",
   "temporada": 2026,
   "fonte": "ESPN (site.api.espn.com)",
-  "baixado_em": "2026-11-08T04:54:36-03:00",
+  "baixado_em": "2026-11-09T05:20:52-03:00",
   "liga_espn": "bra.copa_do_brazil",
   "times": {
     "athletic": {
@@ -1453,22 +1453,35 @@
       "mandante": "vasco-da-gama",
       "visitante": "palmeiras",
       "neutro": false,
+      "disputado": true,
+      "gols_mandante": 2,
+      "gols_visitante": 1,
+      "penaltis_mandante": 4,
+      "penaltis_visitante": 5,
+      "status_fonte": "STATUS_FINAL_PEN",
+      "estadio": "Estádio São Januário",
+      "perna": 2,
+      "transmissao": null
+    },
+    {
+      "id": "cdb2026-401913106",
+      "numero": 401913106,
+      "fase": "final",
+      "rodada": null,
+      "confronto": "final-gremio-palmeiras",
+      "data": "2026-12-06T17:00:00-03:00",
+      "mandante": "gremio",
+      "visitante": "palmeiras",
+      "neutro": true,
       "disputado": false,
       "gols_mandante": null,
       "gols_visitante": null,
       "penaltis_mandante": null,
       "penaltis_visitante": null,
       "status_fonte": "STATUS_SCHEDULED",
-      "estadio": "Estádio São Januário",
-      "perna": 2,
-      "transmissao": [
-        "sportv",
-        "Premiere",
-        "Globo",
-        "globoplay",
-        "Prime Video",
-        "Ge TV"
-      ]
+      "estadio": "Arena BRB Mané Garrincha",
+      "perna": 1,
+      "transmissao": null
     }
   ]
 }

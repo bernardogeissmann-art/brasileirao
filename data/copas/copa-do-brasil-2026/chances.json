@@ -1,8 +1,8 @@
 {
  "competicao": "Copa do Brasil",
  "temporada": 2026,
- "dados_baixados_em": "2026-11-08T04:54:36-03:00",
- "calculado_em": "2026-11-08T07:54:43.266Z",
+ "dados_baixados_em": "2026-11-09T05:20:52-03:00",
+ "calculado_em": "2026-11-09T08:20:55.958Z",
  "simulacoes": 10000,
  "momentos": [
   {
@@ -1862,10 +1862,10 @@
    }
   },
   {
-   "id": "agora",
-   "rotulo": "Agora",
-   "curto": "Agora",
-   "ate": "2026-11-07T18:00:00-03:00",
+   "id": "semifinal-2",
+   "rotulo": "Após as semifinais",
+   "curto": "SF",
+   "ate": "2026-11-08T17:00:00-03:00",
    "times": {
     "athletic": {
      "oitavas": 0,
@@ -1998,7 +1998,7 @@
      "quartas": 1,
      "semifinal": 1,
      "final": 1,
-     "titulo": 0.3072
+     "titulo": 0.2879
     },
     "internacional": {
      "oitavas": 1,
@@ -2046,8 +2046,8 @@
      "oitavas": 1,
      "quartas": 1,
      "semifinal": 1,
-     "final": 0.8624,
-     "titulo": 0.6216
+     "final": 1,
+     "titulo": 0.7121
     },
     "paranaense": {
      "oitavas": 1,
@@ -2081,8 +2081,8 @@
      "oitavas": 1,
      "quartas": 1,
      "semifinal": 1,
-     "final": 0.1376,
-     "titulo": 0.0712
+     "final": 0,
+     "titulo": 0
     },
     "vitoria": {
      "oitavas": 1,

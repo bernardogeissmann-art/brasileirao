@@ -2,7 +2,7 @@
   "fonte": "ESPN",
   "competicao": "Campeonato Brasileiro Série B",
   "temporada": 2026,
-  "baixado_em": "2026-11-08T21:58:58-03:00",
+  "baixado_em": "2026-11-09T05:20:34-03:00",
   "times": {
     "america-mineiro": {
       "nome": "América Mineiro",
@@ -4961,9 +4961,7 @@
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
       "estadio": "Estádio da Serrinha",
-      "transmissao": [
-        "Disney+"
-      ]
+      "transmissao": null
     },
     {
       "id": 401860430,
