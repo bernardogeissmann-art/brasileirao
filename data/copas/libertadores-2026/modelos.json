@@ -1,8 +1,8 @@
 {
   "competicao": "Copa Libertadores",
   "temporada": 2026,
-  "dados_baixados_em": "2026-11-09T05:20:44-03:00",
-  "estimado_em": "2026-11-09T05:20:46-03:00",
+  "dados_baixados_em": "2026-11-10T05:07:58-03:00",
+  "estimado_em": "2026-11-10T05:07:59-03:00",
   "parametros": {
     "forca_prior": 3,
     "gols_por_jogo_prior": 2.5,

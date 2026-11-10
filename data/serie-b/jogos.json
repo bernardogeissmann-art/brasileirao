@@ -2,7 +2,7 @@
   "fonte": "ESPN",
   "competicao": "Campeonato Brasileiro Série B",
   "temporada": 2026,
-  "baixado_em": "2026-11-09T22:32:27-03:00",
+  "baixado_em": "2026-11-10T05:07:48-03:00",
   "times": {
     "america-mineiro": {
       "nome": "América Mineiro",
@@ -4992,6 +4992,19 @@
       ]
     },
     {
+      "id": 401860434,
+      "rodada": 38,
+      "data": "2026-11-12T19:00:00-03:00",
+      "mandante": "ponte-preta",
+      "visitante": "operario-pr",
+      "disputado": false,
+      "gols_mandante": null,
+      "gols_visitante": null,
+      "status_fonte": "SCHEDULED",
+      "estadio": "Estádio Italo Mário Limongi",
+      "transmissao": null
+    },
+    {
       "id": 401860432,
       "rodada": 38,
       "data": "2026-11-14T16:30:00-03:00",
@@ -5015,19 +5028,6 @@
       "gols_visitante": null,
       "status_fonte": "SCHEDULED",
       "estadio": "Ilha do Retiro",
-      "transmissao": null
-    },
-    {
-      "id": 401860434,
-      "rodada": 38,
-      "data": "2026-11-14T16:30:00-03:00",
-      "mandante": "ponte-preta",
-      "visitante": "operario-pr",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "SCHEDULED",
-      "estadio": "Moisés Lucarelli",
       "transmissao": null
     },
     {
