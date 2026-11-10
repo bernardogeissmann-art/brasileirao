@@ -2,7 +2,7 @@
   "fonte": "ESPN",
   "competicao": "Campeonato Brasileiro Série B",
   "temporada": 2026,
-  "baixado_em": "2026-11-09T05:20:34-03:00",
+  "baixado_em": "2026-11-09T22:32:27-03:00",
   "times": {
     "america-mineiro": {
       "nome": "América Mineiro",
@@ -4987,7 +4987,9 @@
       "gols_visitante": null,
       "status_fonte": "SCHEDULED",
       "estadio": "Estadio VGD",
-      "transmissao": null
+      "transmissao": [
+        "Disney+"
+      ]
     },
     {
       "id": 401860432,
