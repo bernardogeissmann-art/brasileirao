@@ -58,9 +58,14 @@ export function escreverTexto(info, noticias, dia) {
   const time = nomeNoTexto(info.id, info.nome);
   const frases = [];
 
+  // 0) Reta final: se o time está numa briga, o texto começa por ela e gira em torno dela
+  //    (a fase geral, a frase da tabela e a dos gols saem para dar lugar à luta).
+  const briga = info.brigas?.[0] ?? null;
+  if (briga) frases.push(...frasesDaBriga(briga, info, a, time));
+
   // 1) A fase: pontos nos últimos 5 jogos.
   const u = info.ultimos;
-  if (u.length > 0) {
+  if (u.length > 0 && !briga) {
     const pontos = u.reduce((s, j) => s + (j.resultado === "V" ? 3 : j.resultado === "E" ? 1 : 0), 0);
     const vitorias = u.filter((j) => j.resultado === "V").length;
     const de = u.length === 5 ? "dos últimos 15" : `dos últimos ${u.length * 3}`;
@@ -109,7 +114,9 @@ export function escreverTexto(info, noticias, dia) {
   const serieB = info.campeonato === "serie-b";
   // Série B: a briga é pelo acesso (1º e 2º sobem direto; do 3º ao 6º, playoff).
   // Primeiro, o que já está decidido (100% em todas as simulações).
-  if (serieB) {
+  if (briga) {
+    // (já dito nas frases da briga)
+  } else if (serieB) {
     frases.push(fraseSerieB(c, onde, a, time));
   } else if (c.titulo === 1) {
     frases.push(`Em ${onde}, ${a.o} ${time} já tem o título garantido. É campeão!`);
@@ -138,7 +145,7 @@ export function escreverTexto(info, noticias, dia) {
   }
 
   // 4) Destaques positivos e negativos (ataque e defesa nos últimos jogos).
-  if (u.length >= 3) {
+  if (u.length >= 3 && !briga) {
     const gp = u.reduce((s, j) => s + j.golsPro, 0);
     const gc = u.reduce((s, j) => s + j.golsContra, 0);
     const n = u.length;
@@ -159,7 +166,12 @@ export function escreverTexto(info, noticias, dia) {
 
   // 5) A notícia da semana.
   if (noticias.length > 0) {
-    const n = noticias[0];
+    // Time numa briga: de preferência, uma manchete sobre a briga.
+    const sobreABriga = /rebaix|z-?4|zona|acesso|t[ií]tulo|secar|luta|briga|queda|playoff|degola/i;
+    // E, se der, nunca uma de serviço ("onde assistir", "escalações").
+    const deServico = /onde assistir|escala[çc][õo]es|hor[áa]rio|palpite/i;
+    const n = (briga && noticias.find((x) => sobreABriga.test(x.titulo)))
+      || noticias.find((x) => !deServico.test(x.titulo)) || noticias[0];
     const segundo = n.veiculo === "ESPN" ? "segundo a ESPN" : `segundo o ${n.veiculo}`;
     frases.push(escolher([
       `Fora de campo, o assunto da semana é: “${n.titulo}” (${n.veiculo}).`,
@@ -169,7 +181,9 @@ export function escreverTexto(info, noticias, dia) {
 
   // 6) O próximo jogo.
   const p = info.proximo;
-  if (p) {
+  if (briga) {
+    // (o próximo jogo já entra nas frases da briga, com o que muda em cada resultado)
+  } else if (p) {
     const adv = artigos(p.adversario);
     const nomeAdv = nomeNoTexto(p.adversario, p.nomeAdversario);
     const inicio = `Agora o desafio é ${adv.o} ${nomeAdv}, ${p.emCasa ? "em casa" : "fora de casa"}, ${p.dia}`;
@@ -180,8 +194,90 @@ export function escreverTexto(info, noticias, dia) {
   } else {
     frases.push(`A temporada ${a.do} ${time} ${serieB ? "na Série B" : "no Brasileirão"} já terminou.`);
   }
+  if (briga) {
+    const fecho = fraseDoProximoNaBriga(briga, info);
+    if (fecho) frases.push(fecho);
+  }
 
   return frases.join(" ");
+}
+
+// As frases de um time numa briga da reta final (título, acesso ou rebaixamento), com os
+// números de site/js/briga.js: a luta e a distância, os rivais e o que muda no próximo jogo.
+// Devolve { abertura, rivais, proximo }; "proximo" vai no fim do texto.
+function frasesDaBriga(briga, info, a, time) {
+  const nome = (id) => `${artigos(id).o} ${nomeNoTexto(id, briga.nomes?.[id] ?? id)}`;
+  const pontos = (n) => plural(n, "ponto", "pontos");
+  const faltam = briga.faltam === 1 ? "Na última rodada" : `A ${briga.faltam} jogos do fim`;
+  const luta = { titulo: "na briga pelo título", acesso: "na briga pelo acesso", rebaixamento: "na luta contra o rebaixamento" }[briga.tipo];
+  const frases = [];
+
+  // 1) A luta, a posição e a distância para a linha que importa.
+  let distancia = "";
+  const d = briga.distancia;
+  if (d) {
+    const quem = `${nome(d.id)}, ${d.posicao}º`;
+    const linha = {
+      titulo: d.dentro ? "" : "",
+      acesso: d.dentro ? ", o primeiro fora da zona do playoff" : ", o último dentro da zona do playoff",
+      rebaixamento: d.dentro ? ", o primeiro da zona de rebaixamento" : ", o primeiro fora da zona",
+    }[briga.tipo];
+    distancia = d.pontos === 0 ? `, empatado em pontos com ${quem}${linha}`
+      : d.dentro ? `, ${d.pontos === 1 ? "só 1 ponto" : pontos(d.pontos)} à frente d${quem}${linha}`
+        : `, ${pontos(d.pontos)} atrás d${quem}${linha}`;
+  }
+  frases.push(`${faltam}, ${a.o} ${time} está ${luta}: ${info.posicao}º lugar, com ${info.pontos} pontos${distancia}.`);
+  const chance = { titulo: "a chance de título é de", acesso: "a chance de acesso é de", rebaixamento: "o risco de cair é de" }[briga.tipo];
+  frases.push(`Pelas nossas simulações, ${chance} ${porcento(briga.chance)}.`);
+
+  // 2) Os rivais diretos (os três mais envolvidos).
+  const rivais = briga.rivais.slice(0, 3).map((r) => `${nome(r.id)} (${porcento(r.chance)})`);
+  if (rivais.length === 1) frases.push(`A disputa é direta com ${rivais[0]}.`);
+  else if (rivais.length > 1) {
+    frases.push(`A briga é embolada: ${rivais.slice(0, -1).join(", ")} e ${rivais.at(-1)} também estão nela.`);
+  }
+
+  // 3) O último jogo (curto).
+  const ultimo = info.ultimos[0];
+  if (ultimo) {
+    const adv = nome(ultimo.adversario === undefined ? "" : ultimo.adversario);
+    const placar = ultimo.resultado === "D" ? `${ultimo.golsContra} a ${ultimo.golsPro}` : `${ultimo.golsPro} a ${ultimo.golsContra}`;
+    const verbo = { V: `venceu ${adv} por ${placar}`, E: `empatou em ${placar} com ${adv}`, D: `perdeu para ${adv} por ${placar}` }[ultimo.resultado];
+    frases.push(`No último jogo, ${verbo}${ultimo.emCasa ? " em casa" : " fora de casa"}.`);
+  }
+  return frases;
+}
+
+// O que muda no próximo jogo de um time numa briga (vai no fim do texto).
+function fraseDoProximoNaBriga(briga, info) {
+  const p = briga.proximo;
+  if (!p || p.vitoria === null || p.empate === null || p.derrota === null) return null;
+  const adv = `${artigos(p.adversario).o} ${nomeNoTexto(p.adversario, briga.nomes?.[p.adversario] ?? p.adversario)}`;
+  const dia = info.proximo ? `, ${info.proximo.dia}` : "";
+  const oQue = { titulo: "a chance de título", acesso: "a chance de acesso", rebaixamento: "o risco de cair" }[briga.tipo];
+  // 100% e 0% viram palavras ("cai", "está salvo"), como pede o resto do site.
+  const certo = { titulo: "é campeão", acesso: "garante o acesso", rebaixamento: "cai" }[briga.tipo];
+  const impossivel = { titulo: "perde a chance de título", acesso: "fica sem o acesso", rebaixamento: "está salvo" }[briga.tipo];
+  // O primeiro número leva a frase inteira ("o risco de cair vai a 11%"); os seguintes, só "a 34%".
+  let jaDisse = false;
+  const efeito = (v) => {
+    if (v === 1) return `${artigos(info.id).o} ${nomeNoTexto(info.id, info.nome)} ${certo}`;
+    if (v === 0) return `${artigos(info.id).o} ${nomeNoTexto(info.id, info.nome)} ${impossivel}`;
+    const texto = jaDisse ? `a ${porcento(v)}` : `${oQue} vai a ${porcento(v)}`;
+    jaDisse = true;
+    return texto;
+  };
+  // Junta os resultados que dão no mesmo ("com empate ou derrota, cai").
+  const casos = [["vitória", p.vitoria], ["empate", p.empate], ["derrota", p.derrota]];
+  const partes = [];
+  for (const [nome, valor] of casos) {
+    const texto = efeito(valor);
+    const anterior = partes.at(-1);
+    if (anterior && anterior.texto === texto) anterior.nomes.push(nome);
+    else partes.push({ nomes: [nome], texto });
+  }
+  const clausulas = partes.map((x) => `com ${x.nomes.join(" ou ")}, ${x.texto}`).join("; ");
+  return `Agora vem ${adv}, ${p.emCasa ? "em casa" : "fora de casa"}${dia}, e o jogo pesa: ${clausulas}.`;
 }
 
 // A frase da tabela e das chances na Série B.

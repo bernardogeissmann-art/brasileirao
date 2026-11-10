@@ -6,6 +6,7 @@
 
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { simular, tabelaAtual, chancesDoJogo } from "../../site/js/simulacao.js";
+import { brigasDoTime } from "../../site/js/briga.js";
 
 export const RAIZ = new URL("../../", import.meta.url);
 const ARQUIVO_MEU_TIME = new URL("data/meu-time.json", RAIZ);
@@ -36,11 +37,13 @@ function carregarCampeonato(campeonato) {
   const jogos = lerJson(`${pasta}jogos.json`);
   const modelo = lerJson(`${pasta}modelo.json`);
   const config = lerJson(`${pasta}configuracao.json`);
-  const resultado = simular({ jogos, modelo, config }, { n: 10_000, semente: 7 });
+  // "condicionais": também as chances conforme o resultado do próximo jogo (para as brigas da reta final).
+  const resultado = simular({ jogos, modelo, config }, { n: 10_000, semente: 7, condicionais: true });
+  const lista = tabelaAtual(jogos);
   return {
-    campeonato, jogos, modelo,
+    campeonato, jogos, modelo, config, resultado, lista,
     chances: new Map(resultado.times.map((t) => [t.id, t])),
-    tabela: new Map(tabelaAtual(jogos).map((linha) => [linha.id, linha])),
+    tabela: new Map(lista.map((linha) => [linha.id, linha])),
   };
 }
 
@@ -64,7 +67,7 @@ export function carregarContexto() {
 
   // Tudo o que o texto precisa saber de um time.
   function montarInfo(id) {
-    const { campeonato, jogos, modelo, chances, tabela } = campeonatoDe(id);
+    const { campeonato, jogos, modelo, config, resultado, lista, chances, tabela } = campeonatoDe(id);
     const doTime = jogos.jogos.filter((j) => j.mandante === id || j.visitante === id);
     const disputados = doTime.filter((j) => j.disputado).sort((a, b) => b.data.localeCompare(a.data));
 
@@ -108,9 +111,13 @@ export function carregarContexto() {
     const empates = linha.pontos - 3 * linha.vitorias;   // cada vitória vale 3 pontos e cada empate, 1
     const campanha = { jogos: linha.jogos, vitorias: linha.vitorias, empates, derrotas: linha.jogos - linha.vitorias - empates,
       golsPro: linha.golsPro, golsContra: linha.golsContra };
+    // Brigas da reta final (título, acesso, rebaixamento): o texto passa a girar em torno delas.
+    const nomes = Object.fromEntries(Object.entries(jogos.times).map(([outro, t]) => [outro, t.nome]));
+    const brigas = brigasDoTime({ id, campeonato, faixas: config.faixas, resultado, tabela: lista, jogos: jogos.jogos })
+      .map((briga) => ({ ...briga, nomes }));   // os nomes dos times citados, para escrever o texto
     return {
       id, nome: times[id].nome, campeonato, posicao: linha.posicao, pontos: linha.pontos, campanha,
-      ultimos: todos.slice(0, 5), sequencia, chances: chances.get(id), proximo,
+      ultimos: todos.slice(0, 5), sequencia, chances: chances.get(id), proximo, brigas,
     };
   }
 

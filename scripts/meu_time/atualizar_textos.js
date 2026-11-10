@@ -12,6 +12,8 @@
 //     node scripts/meu_time/atualizar_textos.js --depois-dos-jogos
 //         todo time que jogou depois do último texto (a "rede de segurança" da madrugada);
 //     node scripts/meu_time/atualizar_textos.js --todos
+//     node scripts/meu_time/atualizar_textos.js --times briga
+//         todos os times numa briga da reta final (título, acesso ou rebaixamento; veja site/js/briga.js)
 
 import { fileURLToPath } from "node:url";
 import { carregarContexto, lerMeuTime, salvarMeuTime, RAIZ } from "./contexto.js";
@@ -100,6 +102,12 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   };
   const contexto = carregarContexto();
   const conteudo = lerMeuTime();
+  // "briga" na lista vira todos os times que estão numa briga da reta final.
+  if (pedido.times?.includes("briga")) {
+    const naBriga = Object.keys(contexto.times).filter((id) => contexto.montarInfo(id).brigas.length > 0);
+    pedido.times = [...pedido.times.filter((id) => id !== "briga"), ...naBriga];
+    console.log(`Times numa briga da reta final: ${naBriga.join(", ")}`);
+  }
   const escolhidos = escolherTimes(pedido, contexto.jogos.jogos, conteudo, Object.keys(contexto.times));
   const n = await atualizarTextos(escolhidos, contexto, conteudo);
   console.log(n ? `Textos escritos: ${n}` : "Nenhum texto para escrever agora.");

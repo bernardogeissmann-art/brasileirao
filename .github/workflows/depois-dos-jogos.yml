@@ -20,7 +20,14 @@ on:
     # A cada 15 minutos, das 15h às 5h45 UTC = das 12h às 2h45 de Brasília.
     - cron: "*/15 15-23,0-5 * * *"
   # Botão "Run workflow" na aba Actions, para rodar na hora.
+  # Em "times" dá para pedir o texto novo de times escolhidos (ex.: gremio,avai), ou escrever
+  # "briga" para todos os que estão numa briga da reta final (título, acesso, rebaixamento).
   workflow_dispatch:
+    inputs:
+      times:
+        description: "Textos novos agora: lista de times (gremio,avai) ou 'briga'. Vazio = o normal."
+        required: false
+        default: ""
 
 jobs:
   # -------------------------------------------------------------------------
@@ -49,7 +56,14 @@ jobs:
         env:
           CHAVE_FOOTBALL: ${{ secrets.FOOTBALL_DATA_API_KEY }}
           CHAVE_YOUTUBE: ${{ secrets.YOUTUBE_API_KEY }}
+          PEDIDO: ${{ github.event.inputs.times }}
         run: |
+          # Pedido feito à mão (botão "Run workflow"): esses times, sem olhar quem jogou.
+          if [ -n "$PEDIDO" ]; then
+            echo "times=$PEDIDO" >> "$GITHUB_OUTPUT"
+            echo "videos=" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
           OPCOES=""
           if [ -z "$CHAVE_FOOTBALL" ]; then
             echo "Falta cadastrar a chave FOOTBALL_DATA_API_KEY nos secrets: textos ficam de fora."

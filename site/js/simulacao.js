@@ -382,6 +382,8 @@ export function jogarPlayoff(melhor, pior, placarDe) {
 //          configuracao.json; sem config, valem as faixas da Série A)
 //   opcoes.n: quantas simulações (padrão 10.000)
 //   opcoes.fixados: lista de { id, gols_mandante, gols_visitante } definidos pelo usuário
+//   opcoes.condicionais: true para devolver também, por time, as chances conforme o resultado do
+//                   próximo e do último jogo (proximoJogo, ultimoJogo; na Série B, sempre)
 //   opcoes.semente: número que fixa os sorteios (mesma semente = mesmos sorteios)
 //   opcoes.sortear: um sorteador pronto (usado nos testes); sem semente nem sorteador,
 //                   usa Math.random, o sorteio do próprio navegador
@@ -459,17 +461,25 @@ export function simular(dados, opcoes = {}) {
     };
   }
 
-  // Reta final (só com playoff): o último jogo que falta de cada time e, para cada
-  // resultado dele (0 = vitória, 1 = empate, 2 = derrota), em que posição o time terminou
-  // e se subiu. Assim a página mostra "se vencer, X%; se empatar, Y%; se perder, Z%".
+  // Jogos que decidem (na Série B, ou quando opcoes.condicionais pede): o PRÓXIMO e o ÚLTIMO
+  // jogo que faltam de cada time. Para cada resultado deles (0 = vitória, 1 = empate,
+  // 2 = derrota), em que posição o time terminou e se subiu. Assim a página mostra
+  // "se vencer, X%; se empatar, Y%; se perder, Z%".
   // Também conta quais duplas se enfrentaram em cada confronto do playoff e quem passou.
-  const ultimo = new Array(ids.length).fill(-1);          // time -> posição em "restantes"
+  const rastrear = Boolean(playoff || opcoes.condicionais);
+  const proximo = new Array(ids.length).fill(-1);         // time -> posição em "restantes"
+  const ultimo = new Array(ids.length).fill(-1);
   restantes.forEach((jogo, i) => {
     for (const t of [jogo.m, jogo.v]) {
       if (ultimo[t] === -1 || jogo.data >= restantes[ultimo[t]].data) ultimo[t] = i;
+      if (proximo[t] === -1 || jogo.data < restantes[proximo[t]].data) proximo[t] = i;
     }
   });
-  const porResultado = ids.map(() => [0, 1, 2].map(() => ({ vezes: 0, posicoes: new Array(ids.length).fill(0), acesso: 0 })));
+  const novoContador = () => ids.map(() => [0, 1, 2].map(() => ({ vezes: 0, posicoes: new Array(ids.length).fill(0), acesso: 0 })));
+  const alvos = rastrear ? [
+    { nome: "proximoJogo", jogoDe: proximo, contas: novoContador() },
+    { nome: "ultimoJogo", jogoDe: ultimo, contas: novoContador() },
+  ] : [];
   const duplas = (playoff?.confrontos ?? []).map(() => new Map());   // "melhor|pior" -> [vezes, passou o melhor]
   const golsSorteados = restantes.map(() => [0, 0]);
   const resultadoDe = (feitos, sofridos) => (feitos > sofridos ? 0 : feitos === sofridos ? 1 : 2);
@@ -490,8 +500,9 @@ export function simular(dados, opcoes = {}) {
     const tabela = montarTabela(est, sorteioDesempate);  // tabela final desta simulação
     tabela.forEach((time, posicao) => { contagem[time][posicao]++; });
     for (let t = 0; t < ids.length; t++) somaPontos[t] += est.pontos[t];
+    let subiu = null;   // quem subiu nesta simulação (só na Série B)
     if (playoff) {
-      const subiu = new Set(tabela.slice(faixas[playoff.soma_com][0] - 1, faixas[playoff.soma_com][1]));
+      subiu = new Set(tabela.slice(faixas[playoff.soma_com][0] - 1, faixas[playoff.soma_com][1]));
       playoff.confrontos.forEach(([melhor, pior], k) => {   // ex.: [3, 6] = 3º x 6º
         const a = tabela[melhor - 1], b = tabela[pior - 1];
         const vencedor = jogarPlayoff(a, b, placarDoPlayoff);
@@ -503,32 +514,36 @@ export function simular(dados, opcoes = {}) {
         if (vencedor === a) conta[1]++;
         duplas[k].set(chave, conta);
       });
+    }
+    for (const { jogoDe, contas } of alvos) {
       tabela.forEach((t, posicao) => {
-        if (ultimo[t] === -1) return;
-        const jogo = restantes[ultimo[t]];
-        const [gm, gv] = golsSorteados[ultimo[t]];
-        const r = porResultado[t][jogo.m === t ? resultadoDe(gm, gv) : resultadoDe(gv, gm)];
+        const i = jogoDe[t];
+        if (i === -1) return;
+        const [gm, gv] = golsSorteados[i];
+        const r = contas[t][restantes[i].m === t ? resultadoDe(gm, gv) : resultadoDe(gv, gm)];
         r.vezes++;
         r.posicoes[posicao]++;
-        if (subiu.has(t)) r.acesso++;
+        if (subiu?.has(t)) r.acesso++;
       });
     }
   }
 
   // 3) Transforma as contagens em probabilidades (de 0 a 1).
   const resumo = resumir({ ids, times: jogos.times, contagem, somaPontos, nSimulacoes, faixas, playoff, venceuPlayoff });
-  if (playoff) {
+  for (const { nome, jogoDe, contas } of alvos) {
     resumo.times.forEach((linha, t) => {
-      if (ultimo[t] === -1) return;
-      const jogo = restantes[ultimo[t]];
+      if (jogoDe[t] === -1) return;
+      const jogo = restantes[jogoDe[t]];
       // Para cada resultado: em quantas simulações ele saiu e, dentre elas, as chances de cada posição.
-      const [vitoria, empate, derrota] = porResultado[t].map((r) => ({
+      const [vitoria, empate, derrota] = contas[t].map((r) => ({
         vezes: r.vezes,
         posicoes: r.posicoes.map((v) => (r.vezes ? v / r.vezes : 0)),
         acesso: r.vezes ? r.acesso / r.vezes : 0,
       }));
-      linha.ultimoJogo = { id: jogo.id, adversario: ids[jogo.m === t ? jogo.v : jogo.m], emCasa: jogo.m === t, vitoria, empate, derrota };
+      linha[nome] = { id: jogo.id, data: jogo.data, adversario: ids[jogo.m === t ? jogo.v : jogo.m], emCasa: jogo.m === t, vitoria, empate, derrota };
     });
+  }
+  if (playoff) {
     resumo.confrontosPlayoff = playoff.confrontos.map(([melhor, pior], k) => ({
       melhor, pior,
       duplas: [...duplas[k]].map(([chave, [vezes, passouMelhor]]) => {

@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/componentes.css">
   <link rel="stylesheet" href="css/meu-time.css">
+  <link rel="stylesheet" href="css/briga.css">
 
   <script type="module" src="js/meu-time.js"></script>
 </head>
@@ -59,6 +60,9 @@
           <p class="situacao" id="situacao-texto"></p>
           <p class="bloco__nota" id="situacao-data"></p>
         </section>
+
+        <!-- Reta final: só para os times numa briga (título, acesso ou rebaixamento). -->
+        <section class="briga-bloco" id="briga" aria-label="Reta final" hidden></section>
 
         <section class="bloco" aria-labelledby="titulo-numeros">
           <h2 class="bloco__titulo" id="titulo-numeros">Estatísticas e desempenho</h2>

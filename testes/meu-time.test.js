@@ -277,3 +277,19 @@ test("o player toca os vídeos guardados; sem eles, a lista do próprio YouTube"
     "https://www.youtube-nocookie.com/embed/aaaaaaaaaaa?playlist=bbbbbbbbbbb,ccccccccccc");
   assert.equal(listaDoYouTube({ tipo: "destaque", video: "Rrr110vATC4" }), null);
 });
+
+test("Reta final: times numa briga ganham o bloco especial e o texto foca na luta", async () => {
+  const { carregarContexto } = await import("../scripts/meu_time/contexto.js");
+  const contexto = carregarContexto();
+  for (const id of Object.keys(contexto.times)) {
+    const info = contexto.montarInfo(id);
+    for (const briga of info.brigas) {
+      // Só entra quem ainda tem algo em jogo (entre 5% e 95%).
+      assert.ok(briga.chance >= 0.05 && briga.chance <= 0.95, `${id}: chance ${briga.chance}`);
+      assert.ok(!briga.rivais.some((r) => r.id === id), `${id} é rival de si mesmo`);
+      const pedido = montarPedido(info, [], "2026-11-08");
+      assert.match(pedido, /Momento decisivo/);
+      assert.doesNotMatch(pedido, /undefined|NaN/);
+    }
+  }
+});

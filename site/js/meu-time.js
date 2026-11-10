@@ -12,6 +12,8 @@
 import { lerIngressos, enderecoDoIngresso } from "./ingressos.js";
 import { carregarDados, simular, tabelaAtual, chancesDoJogo } from "./simulacao.js";
 import { atualizarComEspn } from "./jogos-do-dia.js";
+import { brigasDoTime } from "./briga.js";
+import { blocoBrigas } from "./componentes-briga.js";
 import { entradaValida, listaDoYouTube, playerDaEntrada } from "./videos.js";
 import {
   instalarCabecalho, montarRodape, anelChance, escaparHtml, formatarChance, formatarData, formatarDataJogo, botaoIngresso,
@@ -190,6 +192,7 @@ function mostrarTime(id) {
 
   // As chances levam um instante para calcular: primeiro a página aparece, depois os anéis.
   $("chances").innerHTML = `<p class="bloco__nota">Calculando as chances…</p>`;
+  $("briga").hidden = true;
   setTimeout(() => montarChances(id), 30);
 }
 
@@ -225,8 +228,12 @@ function montarSituacao(id) {
 // B) As chances (anéis).
 function montarChances(id) {
   const doCampeonato = campeonatos[campeonato];
-  doCampeonato.chances ??= new Map(simular(dados).times.map((t) => [t.id, t]));   // calcula só na primeira vez
+  // Calcula só na primeira vez. "condicionais" pede também as chances conforme o resultado
+  // do próximo jogo de cada time (usadas no bloco da reta final).
+  doCampeonato.resultado ??= simular(dados, { condicionais: true });
+  doCampeonato.chances ??= new Map(doCampeonato.resultado.times.map((t) => [t.id, t]));
   const c = doCampeonato.chances.get(id);
+  montarBriga(id, doCampeonato.resultado);
   const cor = "var(--time-grafico)";
   if (campeonato === "serie-b") {
     // Série B: acesso (1º e 2º sobem direto; do 3º ao 6º, o playoff decide mais duas vagas).
@@ -245,6 +252,18 @@ function montarChances(id) {
     // Rebaixamento sempre em vermelho, para não ser confundido com uma coisa boa.
     anelChance({ rotulo: "Rebaixamento", valor: c.rebaixamento, cor: "var(--cor-rebaixamento)" }),
   ].join("");
+}
+
+// Reta final: um bloco especial para os times numa briga (título, acesso ou rebaixamento),
+// com um caminho para a página do campeonato. Os outros times não veem nada.
+function montarBriga(id, resultado) {
+  const brigas = brigasDoTime({
+    id, campeonato, faixas: dados.config.faixas, resultado, tabela, jogos: dados.jogos.jogos,
+  });
+  $("briga").hidden = brigas.length === 0;
+  if (brigas.length > 0) {
+    $("briga").innerHTML = blocoBrigas(brigas, campeonato, dados.jogos.times, (rival) => escudo(rival, "", 24));
+  }
 }
 
 // B) Posição: número grande e os times em volta na tabela.

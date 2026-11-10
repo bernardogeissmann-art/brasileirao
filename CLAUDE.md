@@ -51,6 +51,12 @@ O usuário nunca programou antes, então todo código e explicação devem ser p
       publicadas pela RadiosNet, em `data/radios.json` (só endereços https). O player da própria RadiosNet só funciona em
       http, por isso não serve. `scripts/meu_time/atualizar_radios.py` confere os endereços de madrugada.
     - Não escrever na página de quanto em quanto tempo cada parte é atualizada (pedido do usuário).
+    - Reta final: time numa briga (título, acesso na Série B ou rebaixamento, com 5% a 95% de chance e até 5 jogos
+      por fazer) ganha, logo depois da "Situação atual" (pedido do usuário), um cartão claro com a chance, a distância
+      para a linha, o que muda com vitória/empate/derrota no próximo jogo, os rivais e o link para a página do
+      campeonato. Regra em `site/js/briga.js` (usada também pelo texto da IA, que passa a girar em torno da briga),
+      HTML em `componentes-briga.js`, visual em `css/briga.css`. A rotina "Depois dos jogos" tem o campo `times`
+      no "Run workflow": uma lista de times ou `briga` (todos os que estão numa briga) para reescrever os textos na hora.
   - **Campeonatos** (menu suspenso com três seções): **Série B** (`site/serie-b.html`: a mesma página e o mesmo
     `simulador.js` do Simulador, com `<body data-campeonato="serie-b">`; a página inicial mostra os jogos do dia
     da Série B abaixo dos da Série A, com o botão "Ver Série B"), **Copas** (Copa Sul-Americana, ver abaixo) e

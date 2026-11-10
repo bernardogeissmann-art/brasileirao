@@ -1,0 +1,198 @@
+/* briga.css
+   O bloco "Reta final" da página Meu Time, para times numa briga (título, acesso ou
+   rebaixamento). Usa as cores do clube (--time-1, --time-2...) postas pelo meu-time.js. */
+
+.briga-bloco {
+  margin-top: 26px;
+}
+
+.briga {
+  --cor-briga: var(--cor-titulo);
+  position: relative;
+  overflow: hidden;
+  padding: 22px 18px 18px;
+  border: 1px solid var(--cor-linha);
+  border-radius: var(--canto-g);
+  background: #ffffff;
+  box-shadow: var(--sombra-cartao);
+}
+
+.briga + .briga {
+  margin-top: 14px;
+}
+
+.briga[data-tipo="acesso"] { --cor-briga: var(--cor-libertadores); }
+.briga[data-tipo="rebaixamento"] { --cor-briga: var(--cor-rebaixamento); }
+
+/* Faixa nas cores do clube no topo do cartão, como na capa. */
+.briga::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 8px;
+  background: repeating-linear-gradient(-45deg, var(--time-1) 0 14px, var(--time-2) 14px 28px);
+}
+
+.briga__chapeu {
+  margin-top: 4px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cor-tinta-suave);
+}
+
+.briga__titulo {
+  margin-top: 4px;
+  font-size: clamp(1.5rem, 6vw, 2.3rem);
+  font-weight: 900;
+  font-stretch: var(--largura-larga);
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--cor-briga);
+}
+
+.briga__chance {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 10px;
+}
+
+.briga__chance b {
+  color: var(--time-texto);
+  font-size: clamp(2.6rem, 11vw, 3.6rem);
+  font-weight: 900;
+  font-stretch: var(--largura-estreita);
+  line-height: 1;
+}
+
+.briga__chance span {
+  color: var(--cor-tinta-suave);
+}
+
+.briga__distancia {
+  margin-top: 6px;
+  font-weight: 600;
+}
+
+.briga__colunas {
+  display: grid;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+@media (min-width: 820px) {
+  .briga__colunas {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+}
+
+.briga__subtitulo {
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--cor-tinta-suave);
+}
+
+/* Os três cenários do próximo jogo, lado a lado. */
+.briga__cenarios {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 8px;
+  padding: 0;
+  list-style: none;
+}
+
+.briga__cenario {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 8px;
+  border-radius: var(--canto-m);
+  background: var(--time-claro);
+  border-top: 4px solid var(--cor-empate);
+  text-align: center;
+}
+
+.briga__cenario--vitoria { border-top-color: #3fb06b; }
+.briga__cenario--derrota { border-top-color: #e2584e; }
+
+.briga__cenario span {
+  font-size: 0.78rem;
+  color: var(--cor-tinta-suave);
+}
+
+.briga__cenario b {
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-stretch: var(--largura-estreita);
+}
+
+/* Os rivais. */
+.briga__rivais ol {
+  margin-top: 6px;
+  padding: 0;
+  list-style: none;
+}
+
+.briga__rivais li {
+  display: grid;
+  grid-template-columns: 2.4ch 24px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+}
+
+.briga__rivais li + li {
+  border-top: 1px solid var(--cor-linha);
+}
+
+.briga__rivais img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.briga__rival-pos {
+  font-size: 0.82rem;
+  color: var(--cor-tinta-suave);
+}
+
+.briga__rival-nome {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  line-height: 1.2;
+}
+
+.briga__rival-nome small {
+  font-size: 0.74rem;
+  color: var(--cor-tinta-suave);
+}
+
+.briga__rival-chance {
+  font-variant-numeric: tabular-nums;
+  color: var(--cor-briga);
+}
+
+.briga__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.briga__links .botao {
+  background: var(--time-texto);   /* a versão da cor do clube que se lê bem com letra branca */
+  color: #ffffff;
+}
+
+.briga__links .botao--claro {
+  border-color: var(--time-texto);
+  background: transparent;
+  color: var(--time-texto);
+}
