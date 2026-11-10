@@ -69,6 +69,13 @@ def anotar_transmissoes(dados, ge):
     Devolve (quantos jogos ganharam transmissão, lista de avisos)."""
     for jogo in dados["jogos"]:
         jogo["transmissao"] = None
+    # Canais anotados à mão na ficha (ge.canais_a_mais), que o ge não mostra ou mostra tarde
+    # (ex.: um jogo adiado, que fica fora da rodada atual). Entram antes e somam-se aos do ge.
+    a_mais = ge.get("canais_a_mais", {})
+    for jogo in dados["jogos"]:
+        extras = a_mais.get(f'{jogo["mandante"]} x {jogo["visitante"]}')
+        if extras and not jogo.get("disputado"):
+            jogo["transmissao"] = list(extras)
     try:
         rodada = jogos_da_rodada(baixar_pagina(ge["endereco"]))
     except OSError as erro:
@@ -102,6 +109,6 @@ def anotar_transmissoes(dados, ge):
             avisos.append(f"não consegui ler a página de {nomes[0]} x {nomes[1]} ({erro})")
             continue
         if canais:
-            jogo["transmissao"] = canais
+            jogo["transmissao"] = (jogo["transmissao"] or []) + [c for c in canais if c not in (jogo["transmissao"] or [])]
             anotados += 1
     return anotados, avisos

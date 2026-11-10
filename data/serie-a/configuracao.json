@@ -12,6 +12,8 @@
     "Paranaense": "Athletico Paranaense"
   },
   "ge": {
+    "sobre_canais_a_mais": "Canais anotados à mão (mandante x visitante), somados aos que o ge mostra.",
+    "canais_a_mais": { "chapecoense x vasco-da-gama": ["NSCTV (Globo)"] },
     "endereco": "https://ge.globo.com/futebol/brasileirao-serie-a/",
     "nomes": {
       "Athletico-PR": "paranaense", "Atlético-MG": "mineiro", "Bahia": "bahia", "Botafogo": "botafogo",

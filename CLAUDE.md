@@ -24,7 +24,8 @@ O usuário nunca programou antes, então todo código e explicação devem ser p
   - **Início**: mostra as probabilidades calculadas (título, rebaixamento, etc). No fim, a seção **Jogos do dia**
     (lógica em `site/js/jogos-do-dia.js`, cartão em `componentes.js`): os jogos de hoje (ou do próximo dia com jogo),
     com chances do modelo, posição, sequência recente e onde assistir. Os canais vêm do ge.globo, lidos por
-    `scripts/transmissoes.py` (chamado pelo `baixar_jogos.py`) e guardados no campo `transmissao` do `jogos.json`.
+    `scripts/transmissoes.py` (chamado pelo `baixar_jogos.py`) e guardados no campo `transmissao` do `jogos.json`. Canais que o ge não mostra (ex.: jogo adiado, TV local) entram à mão em `ge.canais_a_mais`
+    da ficha (`"mandante x visitante": [canais]`); a cor de cada canal fica em `componentes.css` (`.canal--<apelido>`).
     Placar ao vivo: a própria página lê a ESPN a cada minuto enquanto há jogo (a ESPN permite leitura pelo navegador;
     cada time do `jogos.json` guarda o `nome_espn`). Os jogos que a ESPN já dá como encerrados entram na tabela e nas chances na hora, sem esperar o GitHub (`atualizarComEspn`, usado no Início, no Simulador e no Meu Time). Reserva: `scripts/placar_ao_vivo.py` grava `data/ao-vivo.json` a cada
     publicação (não vai para o git). As rotinas agendadas do GitHub atrasam muito (rodam a cada ~45 min mesmo pedindo

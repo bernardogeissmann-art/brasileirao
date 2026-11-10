@@ -2894,7 +2894,9 @@
       "gols_visitante": null,
       "status_fonte": "TIMED",
       "estadio": "Arena Condá",
-      "transmissao": null
+      "transmissao": [
+        "NSCTV (Globo)"
+      ]
     },
     {
       "id": 554956,
