@@ -2,7 +2,7 @@
   "fonte": "ESPN",
   "competicao": "Campeonato Brasileiro Série B",
   "temporada": 2026,
-  "baixado_em": "2026-11-11T05:13:55-03:00",
+  "baixado_em": "2026-11-11T21:37:58-03:00",
   "times": {
     "america-mineiro": {
       "nome": "América Mineiro",
@@ -4982,14 +4982,12 @@
       "data": "2026-11-11T19:00:00-03:00",
       "mandante": "londrina",
       "visitante": "nautico",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "SCHEDULED",
+      "disputado": true,
+      "gols_mandante": 2,
+      "gols_visitante": 1,
+      "status_fonte": "FINISHED",
       "estadio": "Estadio VGD",
-      "transmissao": [
-        "Disney+"
-      ]
+      "transmissao": null
     },
     {
       "id": 401860434,
@@ -5001,8 +4999,10 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "SCHEDULED",
-      "estadio": "Moisés Lucarelli",
-      "transmissao": null
+      "estadio": "Estádio Italo Mário Limongi",
+      "transmissao": [
+        "Disney+"
+      ]
     },
     {
       "id": 401860436,
@@ -5100,7 +5100,9 @@
       "gols_visitante": null,
       "status_fonte": "SCHEDULED",
       "estadio": "Estádio Antônio Accioly",
-      "transmissao": null
+      "transmissao": [
+        "Disney+"
+      ]
     },
     {
       "id": 401860441,
