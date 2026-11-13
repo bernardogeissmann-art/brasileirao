@@ -2,7 +2,7 @@
   "fonte": "football-data.org",
   "competicao": "Campeonato Brasileiro Série A",
   "temporada": 2026,
-  "baixado_em": "2026-11-12T21:16:55-03:00",
+  "baixado_em": "2026-11-12T22:44:36-03:00",
   "times": {
     "bahia": {
       "nome": "Bahia",
@@ -4614,7 +4614,9 @@
       "gols_visitante": null,
       "status_fonte": "TIMED",
       "estadio": "Estádio Couto Pereira",
-      "transmissao": null
+      "transmissao": [
+        "Premiere"
+      ]
     },
     {
       "id": 555086,

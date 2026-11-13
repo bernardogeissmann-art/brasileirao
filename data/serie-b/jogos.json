@@ -2,7 +2,7 @@
   "fonte": "ESPN",
   "competicao": "Campeonato Brasileiro Série B",
   "temporada": 2026,
-  "baixado_em": "2026-11-12T21:17:28-03:00",
+  "baixado_em": "2026-11-12T22:45:16-03:00",
   "times": {
     "america-mineiro": {
       "nome": "América Mineiro",
@@ -5008,15 +5008,12 @@
       "data": "2026-11-12T20:00:00-03:00",
       "mandante": "sao-bernardo",
       "visitante": "athletic",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "IN_PLAY",
+      "disputado": true,
+      "gols_mandante": 2,
+      "gols_visitante": 2,
+      "status_fonte": "FINISHED",
       "estadio": "Estádio Primeiro de Maio",
-      "transmissao": [
-        "Premiere",
-        "Ge TV"
-      ]
+      "transmissao": null
     },
     {
       "id": 401860432,
