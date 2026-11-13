@@ -1,132 +1,132 @@
 {
   "descricao": "gols_mandante ~ Poisson(ataque_mandante * defesa_visitante * fator_casa); gols_visitante ~ Poisson(ataque_visitante * defesa_mandante). Média dos ataques = 1. Defesa maior = sofre mais gols.",
   "temporada": 2026,
-  "dados_baixados_em": "2026-11-12T05:16:06-03:00",
-  "estimado_em": "2026-11-12T05:16:19-03:00",
-  "jogos_usados": 371,
-  "fator_casa": 1.3154147757501344,
-  "log_verossimilhanca": -973.5490568037469,
-  "empates_esperados": 98.02651129320323,
+  "dados_baixados_em": "2026-11-12T21:17:28-03:00",
+  "estimado_em": "2026-11-12T21:17:44-03:00",
+  "jogos_usados": 372,
+  "fator_casa": 1.3136052857093816,
+  "log_verossimilhanca": -975.614926901895,
+  "empates_esperados": 98.1870580139932,
   "times": {
     "america-mineiro": {
       "nome": "América Mineiro",
-      "ataque": 0.6323070912668112,
-      "defesa": 1.2489982527146581,
-      "forca": 0.506251381771361
+      "ataque": 0.6329743737615277,
+      "defesa": 1.2500618016482203,
+      "forca": 0.5063544641768463
     },
     "athletic": {
       "nome": "Athletic",
-      "ataque": 1.0087156375410486,
-      "defesa": 1.037855384964379,
-      "forca": 0.971923113908273
+      "ataque": 1.0097954477029067,
+      "defesa": 1.0387456249727236,
+      "forca": 0.972129675857285
     },
     "atletico-goianiense": {
       "nome": "Atlético Goianiense",
-      "ataque": 1.0190312270320363,
-      "defesa": 0.8104757604359363,
-      "forca": 1.2573247427954204
+      "ataque": 1.020075807002825,
+      "defesa": 0.8111812967207672,
+      "forca": 1.2575188938977295
     },
     "avai": {
       "nome": "Avaí",
-      "ataque": 0.8089525461516194,
-      "defesa": 1.0778954013299542,
-      "forca": 0.750492622153781
+      "ataque": 0.809828166603618,
+      "defesa": 1.0787980614221935,
+      "forca": 0.7506763272599981
     },
     "botafogo-sp": {
       "nome": "Botafogo-SP",
-      "ataque": 1.0163141706154843,
-      "defesa": 0.9175769975462699,
-      "forca": 1.1076064170453832
+      "ataque": 1.0173773802688446,
+      "defesa": 0.9183610603680962,
+      "forca": 1.1078185086169277
     },
     "ceara": {
       "nome": "Ceará",
-      "ataque": 0.878677000864248,
-      "defesa": 1.1053455522823852,
-      "forca": 0.7949342167704044
+      "ataque": 0.8796297624749412,
+      "defesa": 1.1062884940119033,
+      "forca": 0.7951178804047804
     },
     "crb": {
       "nome": "CRB",
-      "ataque": 1.3327766347213998,
-      "defesa": 1.2044298135017188,
-      "forca": 1.1065623083893363
+      "ataque": 1.3341848431046985,
+      "defesa": 1.2055113469777794,
+      "forca": 1.1067376897359813
     },
     "criciuma": {
       "nome": "Criciúma",
-      "ataque": 0.857268156889797,
-      "defesa": 0.7236122378815155,
-      "forca": 1.1847065486338089
+      "ataque": 0.8581444288333726,
+      "defesa": 0.7242582638834513,
+      "forca": 1.184859699400636
     },
     "cuiaba": {
       "nome": "Cuiabá",
-      "ataque": 0.7643038032402372,
-      "defesa": 0.7407721813483382,
-      "forca": 1.0317663412374196
+      "ataque": 0.7651015170953416,
+      "defesa": 0.7413931353433448,
+      "forca": 1.0319781511613502
     },
     "fortaleza": {
       "nome": "Fortaleza",
-      "ataque": 0.9990679032359358,
-      "defesa": 0.7711230150567573,
-      "forca": 1.2956011994563552
+      "ataque": 1.0000935028477367,
+      "defesa": 0.7718086839843077,
+      "forca": 1.2957790234815114
     },
     "goias": {
       "nome": "Goiás",
-      "ataque": 0.8902727591456241,
-      "defesa": 0.9594218201713077,
-      "forca": 0.9279263202359346
+      "ataque": 0.8912207689080288,
+      "defesa": 0.9602366217917306,
+      "forca": 0.9281262021074312
     },
     "juventude": {
       "nome": "Juventude",
-      "ataque": 1.103729120399835,
-      "defesa": 0.6083808112277451,
-      "forca": 1.8142076476285476
+      "ataque": 1.1048514156584275,
+      "defesa": 0.6089201424921618,
+      "forca": 1.8144438630926871
     },
     "londrina": {
       "nome": "Londrina",
-      "ataque": 1.0707680467723497,
-      "defesa": 1.3461399657408681,
-      "forca": 0.7954358937579248
+      "ataque": 1.071885588778307,
+      "defesa": 1.3472723331835101,
+      "forca": 0.7955968235802159
     },
     "nautico": {
       "nome": "Náutico",
-      "ataque": 0.9247359767823217,
-      "defesa": 1.1547043926041956,
-      "forca": 0.8008421745904786
+      "ataque": 0.9256903988105433,
+      "defesa": 1.1556653197431113,
+      "forca": 0.8010021439566186
     },
     "novorizontino": {
       "nome": "Novorizontino",
-      "ataque": 1.4827398868101433,
-      "defesa": 0.766513433579802,
-      "forca": 1.9343951741137684
+      "ataque": 1.4842870620891884,
+      "defesa": 0.7671876109878071,
+      "forca": 1.9347119802652524
     },
     "operario-pr": {
       "nome": "Operário-PR",
-      "ataque": 1.1523943728606216,
-      "defesa": 1.1635617077208316,
-      "forca": 0.990402455850765
+      "ataque": 1.1509201516164318,
+      "defesa": 1.1465436208448048,
+      "forca": 1.0038171515606202
     },
     "ponte-preta": {
       "nome": "Ponte Preta",
-      "ataque": 0.5082181121332192,
-      "defesa": 1.7963051198246296,
-      "forca": 0.28292415721825465
+      "ataque": 0.49050297912305446,
+      "defesa": 1.7945256826482305,
+      "forca": 0.2733329390968681
     },
     "sao-bernardo": {
       "nome": "São Bernardo",
-      "ataque": 1.1993052750462354,
-      "defesa": 0.9877079574967351,
-      "forca": 1.2142306498023732
+      "ataque": 1.2005547982795162,
+      "defesa": 0.9885911790743542,
+      "forca": 1.2144097820128534
     },
     "sport": {
       "nome": "Sport",
-      "ataque": 1.1501117598419148,
-      "defesa": 0.9823403967066703,
-      "forca": 1.1707874008823254
+      "ataque": 1.1513074091746878,
+      "defesa": 0.9832101869716159,
+      "forca": 1.170967738567506
     },
     "vila-nova": {
       "nome": "Vila Nova",
-      "ataque": 1.2003105186491188,
-      "defesa": 0.9001563166599719,
-      "forca": 1.333446754118072
+      "ataque": 1.2015741978660006,
+      "defesa": 0.9009348795554882,
+      "forca": 1.3336970575041391
     }
   }
 }
