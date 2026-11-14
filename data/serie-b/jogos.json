@@ -2,7 +2,7 @@
   "fonte": "ESPN",
   "competicao": "Campeonato Brasileiro Série B",
   "temporada": 2026,
-  "baixado_em": "2026-11-14T04:54:55-03:00",
+  "baixado_em": "2026-11-14T18:35:46-03:00",
   "times": {
     "america-mineiro": {
       "nome": "América Mineiro",
@@ -5021,10 +5021,10 @@
       "data": "2026-11-14T16:30:00-03:00",
       "mandante": "america-mineiro",
       "visitante": "avai",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "SCHEDULED",
+      "disputado": true,
+      "gols_mandante": 0,
+      "gols_visitante": 2,
+      "status_fonte": "FINISHED",
       "estadio": "Estádio Raimundo Sampaio (Independência)",
       "transmissao": [
         "Disney+"
@@ -5039,7 +5039,7 @@
       "disputado": false,
       "gols_mandante": null,
       "gols_visitante": null,
-      "status_fonte": "SCHEDULED",
+      "status_fonte": "IN_PLAY",
       "estadio": "Ilha do Retiro",
       "transmissao": [
         "Disney+"
@@ -5054,7 +5054,7 @@
       "disputado": false,
       "gols_mandante": null,
       "gols_visitante": null,
-      "status_fonte": "SCHEDULED",
+      "status_fonte": "IN_PLAY",
       "estadio": "Arena Castelão",
       "transmissao": [
         "Disney+"
@@ -5069,7 +5069,7 @@
       "disputado": false,
       "gols_mandante": null,
       "gols_visitante": null,
-      "status_fonte": "SCHEDULED",
+      "status_fonte": "IN_PLAY",
       "estadio": "Heriberto Hülse",
       "transmissao": [
         "Disney+"
@@ -5084,7 +5084,7 @@
       "disputado": false,
       "gols_mandante": null,
       "gols_visitante": null,
-      "status_fonte": "SCHEDULED",
+      "status_fonte": "STATUS_IN_PROGRESS",
       "estadio": "Estádio Rei Pelé",
       "transmissao": [
         "Disney+"
@@ -5096,10 +5096,10 @@
       "data": "2026-11-14T16:30:00-03:00",
       "mandante": "atletico-goianiense",
       "visitante": "cuiaba",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "SCHEDULED",
+      "disputado": true,
+      "gols_mandante": 1,
+      "gols_visitante": 0,
+      "status_fonte": "FINISHED",
       "estadio": "Estádio Antônio Accioly",
       "transmissao": [
         "Disney+"
@@ -5114,7 +5114,7 @@
       "disputado": false,
       "gols_mandante": null,
       "gols_visitante": null,
-      "status_fonte": "SCHEDULED",
+      "status_fonte": "IN_PLAY",
       "estadio": "Alfredo Jaconi",
       "transmissao": [
         "Disney+"
