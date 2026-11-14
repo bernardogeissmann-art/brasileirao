@@ -2,7 +2,7 @@
   "fonte": "ESPN",
   "competicao": "Campeonato Brasileiro Série B",
   "temporada": 2026,
-  "baixado_em": "2026-11-14T18:35:46-03:00",
+  "baixado_em": "2026-11-14T19:20:12-03:00",
   "times": {
     "america-mineiro": {
       "nome": "América Mineiro",
@@ -5026,9 +5026,7 @@
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
       "estadio": "Estádio Raimundo Sampaio (Independência)",
-      "transmissao": [
-        "Disney+"
-      ]
+      "transmissao": null
     },
     {
       "id": 401860433,
@@ -5036,14 +5034,12 @@
       "data": "2026-11-14T16:30:00-03:00",
       "mandante": "sport",
       "visitante": "goias",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "IN_PLAY",
+      "disputado": true,
+      "gols_mandante": 3,
+      "gols_visitante": 0,
+      "status_fonte": "FINISHED",
       "estadio": "Ilha do Retiro",
-      "transmissao": [
-        "Disney+"
-      ]
+      "transmissao": null
     },
     {
       "id": 401860437,
@@ -5051,14 +5047,12 @@
       "data": "2026-11-14T16:30:00-03:00",
       "mandante": "fortaleza",
       "visitante": "vila-nova",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "IN_PLAY",
+      "disputado": true,
+      "gols_mandante": 1,
+      "gols_visitante": 0,
+      "status_fonte": "FINISHED",
       "estadio": "Arena Castelão",
-      "transmissao": [
-        "Disney+"
-      ]
+      "transmissao": null
     },
     {
       "id": 401860438,
@@ -5066,14 +5060,12 @@
       "data": "2026-11-14T16:30:00-03:00",
       "mandante": "criciuma",
       "visitante": "novorizontino",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "IN_PLAY",
+      "disputado": true,
+      "gols_mandante": 0,
+      "gols_visitante": 1,
+      "status_fonte": "FINISHED",
       "estadio": "Heriberto Hülse",
-      "transmissao": [
-        "Disney+"
-      ]
+      "transmissao": null
     },
     {
       "id": 401860439,
@@ -5081,14 +5073,12 @@
       "data": "2026-11-14T16:30:00-03:00",
       "mandante": "crb",
       "visitante": "ceara",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "STATUS_IN_PROGRESS",
+      "disputado": true,
+      "gols_mandante": 1,
+      "gols_visitante": 1,
+      "status_fonte": "FINISHED",
       "estadio": "Estádio Rei Pelé",
-      "transmissao": [
-        "Disney+"
-      ]
+      "transmissao": null
     },
     {
       "id": 401860440,
@@ -5101,9 +5091,7 @@
       "gols_visitante": 0,
       "status_fonte": "FINISHED",
       "estadio": "Estádio Antônio Accioly",
-      "transmissao": [
-        "Disney+"
-      ]
+      "transmissao": null
     },
     {
       "id": 401860441,
@@ -5111,16 +5099,63 @@
       "data": "2026-11-14T16:30:00-03:00",
       "mandante": "juventude",
       "visitante": "botafogo-sp",
+      "disputado": true,
+      "gols_mandante": 2,
+      "gols_visitante": 0,
+      "status_fonte": "FINISHED",
+      "estadio": "Alfredo Jaconi",
+      "transmissao": null
+    }
+  ],
+  "playoff": [
+    {
+      "id": 401912682,
+      "data": "2026-11-21T17:00:00-03:00",
+      "mandante": "criciuma",
+      "visitante": "fortaleza",
       "disputado": false,
       "gols_mandante": null,
       "gols_visitante": null,
-      "status_fonte": "IN_PLAY",
-      "estadio": "Alfredo Jaconi",
-      "transmissao": [
-        "Disney+"
-      ]
+      "status_fonte": "SCHEDULED",
+      "estadio": null,
+      "transmissao": null
+    },
+    {
+      "id": 401912708,
+      "data": "2026-11-21T17:00:00-03:00",
+      "mandante": "atletico-goianiense",
+      "visitante": "vila-nova",
+      "disputado": false,
+      "gols_mandante": null,
+      "gols_visitante": null,
+      "status_fonte": "SCHEDULED",
+      "estadio": null,
+      "transmissao": null
+    },
+    {
+      "id": 401912683,
+      "data": "2026-11-28T17:00:00-03:00",
+      "mandante": "vila-nova",
+      "visitante": "atletico-goianiense",
+      "disputado": false,
+      "gols_mandante": null,
+      "gols_visitante": null,
+      "status_fonte": "SCHEDULED",
+      "estadio": null,
+      "transmissao": null
+    },
+    {
+      "id": 401912709,
+      "data": "2026-11-28T17:00:00-03:00",
+      "mandante": "fortaleza",
+      "visitante": "criciuma",
+      "disputado": false,
+      "gols_mandante": null,
+      "gols_visitante": null,
+      "status_fonte": "SCHEDULED",
+      "estadio": null,
+      "transmissao": null
     }
   ],
-  "playoff": [],
   "liga_espn": "bra.2"
 }
