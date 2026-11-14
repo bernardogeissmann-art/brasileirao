@@ -2,7 +2,7 @@
   "fonte": "ESPN",
   "competicao": "Campeonato Brasileiro Série B",
   "temporada": 2026,
-  "baixado_em": "2026-11-14T19:20:12-03:00",
+  "baixado_em": "2026-11-14T20:50:18-03:00",
   "times": {
     "america-mineiro": {
       "nome": "América Mineiro",
@@ -5117,7 +5117,7 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "SCHEDULED",
-      "estadio": null,
+      "estadio": "Heriberto Hülse",
       "transmissao": null
     },
     {
@@ -5129,7 +5129,7 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "SCHEDULED",
-      "estadio": null,
+      "estadio": "Estádio Antônio Accioly",
       "transmissao": null
     },
     {
@@ -5141,7 +5141,7 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "SCHEDULED",
-      "estadio": null,
+      "estadio": "Estádio Onésio Brasileiro Alvarenga",
       "transmissao": null
     },
     {
@@ -5153,7 +5153,7 @@
       "gols_mandante": null,
       "gols_visitante": null,
       "status_fonte": "SCHEDULED",
-      "estadio": null,
+      "estadio": "Arena Castelão",
       "transmissao": null
     }
   ],

@@ -2,7 +2,7 @@
   "fonte": "football-data.org",
   "competicao": "Campeonato Brasileiro Série A",
   "temporada": 2026,
-  "baixado_em": "2026-11-14T19:19:43-03:00",
+  "baixado_em": "2026-11-14T20:49:49-03:00",
   "times": {
     "bahia": {
       "nome": "Bahia",
@@ -4597,11 +4597,9 @@
       "disputado": false,
       "gols_mandante": null,
       "gols_visitante": null,
-      "status_fonte": "IN_PLAY",
+      "status_fonte": "TIMED",
       "estadio": "Estádio José Maria de Campos Maia (Maião)",
-      "transmissao": [
-        "Prime Video"
-      ]
+      "transmissao": null
     },
     {
       "id": 555081,
