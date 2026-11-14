@@ -2,7 +2,7 @@
   "fonte": "ESPN",
   "competicao": "Campeonato Brasileiro Série B",
   "temporada": 2026,
-  "baixado_em": "2026-11-13T05:15:05-03:00",
+  "baixado_em": "2026-11-14T04:54:55-03:00",
   "times": {
     "america-mineiro": {
       "nome": "América Mineiro",
@@ -5041,7 +5041,9 @@
       "gols_visitante": null,
       "status_fonte": "SCHEDULED",
       "estadio": "Ilha do Retiro",
-      "transmissao": null
+      "transmissao": [
+        "Disney+"
+      ]
     },
     {
       "id": 401860437,
@@ -5054,7 +5056,9 @@
       "gols_visitante": null,
       "status_fonte": "SCHEDULED",
       "estadio": "Arena Castelão",
-      "transmissao": null
+      "transmissao": [
+        "Disney+"
+      ]
     },
     {
       "id": 401860438,
@@ -5082,7 +5086,9 @@
       "gols_visitante": null,
       "status_fonte": "SCHEDULED",
       "estadio": "Estádio Rei Pelé",
-      "transmissao": null
+      "transmissao": [
+        "Disney+"
+      ]
     },
     {
       "id": 401860440,
