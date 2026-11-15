@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-15T00:58:17.200Z",
+ "gerado_em": "2026-11-15T02:04:56.961Z",
  "times": {
   "bahia": {
    "texto": "Nem lá, nem cá: o Bahia fez 7 dos últimos 15 pontos possíveis. No último jogo, perdeu para o Cruzeiro por 3 a 2 fora de casa. Em 6º lugar, com 53 pontos, a briga pela Libertadores está aberta: 43% de chance pelas nossas contas. Nos últimos 5 jogos, foram 7 gols marcados e 9 sofridos: tudo bem equilibrado. Nos bastidores, a notícia que mais chama atenção é “Willian José continua fora do Bahia depois de compartilhar vídeo com críticas ao Nordeste”, segundo o Globo Esporte. Agora o desafio é o Grêmio, fora de casa, quarta, 18/11. Jogo difícil: o modelo dá 37% de chance de vitória.",
@@ -179,7 +179,7 @@
    "videos_em": "2026-11-07T00:21:57.846Z"
   },
   "chapecoense": {
-   "texto": "A fase não é das melhores para a Chapecoense: só 3 pontos nos últimos cinco jogos. No último jogo, perdeu para o Mirassol por 2 a 1 em casa. Em 20º lugar, com 21 pontos, o rebaixamento já está confirmado, infelizmente. A defesa preocupa, com 11 gols sofridos. Fora de campo, o assunto da semana é: “Chapecoense é rebaixada pela terceira vez na era dos pontos corridos; compare as campanhas” (Globo Esporte). Agora o desafio é o Vasco, em casa, sábado, 14/11. Jogo difícil: o modelo dá 29% de chance de vitória.",
+   "texto": "A fase não é das melhores para a Chapecoense: só 3 pontos nos últimos cinco jogos. No último jogo, perdeu para o Vasco por 2 a 0 em casa. São 3 derrotas seguidas. Em 20º lugar, com 21 pontos, o rebaixamento já está confirmado, infelizmente. O ataque anda travado, com só 3 gols em 5 jogos. Fora de campo, o assunto da semana é: “Chapecoense anuncia Vinícius Bergantin, ex-auxiliar de Tite, como novo técnico” (Globo Esporte). Agora o desafio é o Remo, fora de casa, quarta, 18/11. Pedreira: o modelo dá só 19% de chance de vitória.",
    "autor": "frases",
    "noticias": [
     {
@@ -220,7 +220,7 @@
     }
    ],
    "noticias_em": "2026-11-14T07:55:57.031Z",
-   "texto_em": "2026-11-06T05:11:54.874Z",
+   "texto_em": "2026-11-15T02:04:56.956Z",
    "videos": {
     "UULF5of5voGUqec9K9JqL9al4Q": [
      "74aSWQwAaLU",
@@ -1172,7 +1172,7 @@
    "videos_em": "2026-11-06T05:44:49.861Z"
   },
   "vasco-da-gama": {
-   "texto": "Nem lá, nem cá: o Vasco fez 7 dos últimos 15 pontos possíveis. No último jogo, venceu o Athletico por 3 a 1 fora de casa. Em 13º lugar, com 41 pontos, a vaga na Sul-Americana é o objetivo mais realista: 54% de chance. Nos últimos 5 jogos, foram 7 gols marcados e 8 sofridos: tudo bem equilibrado. Nos bastidores, a notícia que mais chama atenção é “Athletico-PR é denunciado no STJD por gesto racista de torcedor contra atletas do Vasco”, segundo o Globo Esporte. Agora o desafio é a Chapecoense, fora de casa, sábado, 14/11, num jogo equilibrado: 47% de chance de vitória pelo modelo.",
+   "texto": "O momento do Vasco é bom, com 9 pontos conquistados nos últimos cinco jogos. No último jogo, venceu a Chapecoense por 2 a 0 fora de casa. Em 11º lugar, com 44 pontos, a vaga na Sul-Americana é o objetivo mais realista: 75% de chance. Nos últimos 5 jogos, foram 9 gols marcados e 8 sofridos: tudo bem equilibrado. Nos bastidores, a notícia que mais chama atenção é “Eleição do Vasco: veja propostas dos candidatos, formato e cenário para decidir novo presidente”, segundo o Globo Esporte. Agora o desafio é o Internacional, em casa, quinta, 19/11, num jogo equilibrado: 45% de chance de vitória pelo modelo.",
    "autor": "frases",
    "noticias": [
     {
@@ -1213,7 +1213,7 @@
     }
    ],
    "noticias_em": "2026-11-14T07:56:23.613Z",
-   "texto_em": "2026-11-06T05:11:54.874Z",
+   "texto_em": "2026-11-15T02:04:56.956Z",
    "videos": {
     "UULFUzrTcQHWjvIF_XYTstdlbw": [
      "fbABqomEW3Y",

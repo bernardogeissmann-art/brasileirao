@@ -2,7 +2,7 @@
   "fonte": "football-data.org",
   "competicao": "Campeonato Brasileiro Série A",
   "temporada": 2026,
-  "baixado_em": "2026-11-14T21:57:42-03:00",
+  "baixado_em": "2026-11-14T23:04:18-03:00",
   "times": {
     "bahia": {
       "nome": "Bahia",
@@ -2889,14 +2889,12 @@
       "data": "2026-11-14T20:30:00-03:00",
       "mandante": "chapecoense",
       "visitante": "vasco-da-gama",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "IN_PLAY",
+      "disputado": true,
+      "gols_mandante": 0,
+      "gols_visitante": 2,
+      "status_fonte": "FINISHED",
       "estadio": "Arena Condá",
-      "transmissao": [
-        "NSCTV (Globo)"
-      ]
+      "transmissao": null
     },
     {
       "id": 554956,
