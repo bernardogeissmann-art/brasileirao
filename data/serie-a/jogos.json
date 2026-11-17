@@ -2,7 +2,7 @@
   "fonte": "football-data.org",
   "competicao": "Campeonato Brasileiro Série A",
   "temporada": 2026,
-  "baixado_em": "2026-11-16T06:33:27-03:00",
+  "baixado_em": "2026-11-17T05:16:37-03:00",
   "times": {
     "bahia": {
       "nome": "Bahia",
@@ -4703,7 +4703,9 @@
       "gols_visitante": null,
       "status_fonte": "TIMED",
       "estadio": "Estádio Manoel Barradas (Barradão)",
-      "transmissao": null
+      "transmissao": [
+        "Premiere"
+      ]
     },
     {
       "id": 555087,

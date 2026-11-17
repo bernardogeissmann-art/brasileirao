@@ -1,10 +1,16 @@
 {
- "gerado_em": "2026-11-16T09:35:27.241Z",
+ "gerado_em": "2026-11-17T08:18:55.503Z",
  "times": {
   "bahia": {
    "texto": "Nem lá, nem cá: o Bahia fez 7 dos últimos 15 pontos possíveis. No último jogo, perdeu para o Cruzeiro por 3 a 2 fora de casa. Em 6º lugar, com 53 pontos, a briga pela Libertadores está aberta: 43% de chance pelas nossas contas. Nos últimos 5 jogos, foram 7 gols marcados e 9 sofridos: tudo bem equilibrado. Nos bastidores, a notícia que mais chama atenção é “Willian José continua fora do Bahia depois de compartilhar vídeo com críticas ao Nordeste”, segundo o Globo Esporte. Agora o desafio é o Grêmio, fora de casa, quarta, 18/11. Jogo difícil: o modelo dá 37% de chance de vitória.",
    "autor": "frases",
    "noticias": [
+    {
+     "titulo": "Quarto melhor visitante da Série A, Bahia está a um empate de recorde de pontos fora de casa",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/ba/futebol/times/bahia/noticia/2026/11/17/quarto-melhor-visitante-da-serie-a-bahia-esta-a-um-empate-de-recorde-de-pontos-fora-de-casa.ghtml",
+     "data": "2026-11-17T07:00:00.000Z"
+    },
     {
      "titulo": "Com presença em 90% dos jogos do Bahia na Série A, Jean Lucas se aproxima de marca centenária",
      "veiculo": "Globo Esporte",
@@ -34,16 +40,10 @@
      "veiculo": "UOL Esporte",
      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNMlFqd25RN1VxckNBU3lPN0E4am85MlVXQWhqRkNPTGhfdGxuOGRnOWpVcE9rQ0w5UHE5SjVBR1dWMm12aVRMVTVRVUpMRGhGWndaVmFoQVkzdmJMM3Qwa0l2LTl2RUtrVVpUU3RWRkJKTTJDMVk1Tk9qdlFxSzJOSF92QTAtVzlpbTRzTWQtRWk4YW1MNFVwd0JpT0Nhb0oxY1lJUXI2ZFNzbS1fLXl1X2FFWEkxRExEcnR5RW9yU3VFVEE2aTBtVTI4MExkV28tbE8ydkZxYnVTVWhmX0E?oc=5",
      "data": "2026-11-12T22:35:00.000Z"
-    },
-    {
-     "titulo": "Guardiola vai acompanhar partida entre Bahia e Coritiba em Salvador",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/ba/futebol/noticia/2026/11/12/guardiola-vai-acompanhar-partida-entre-bahia-e-coritiba-em-salvador.ghtml",
-     "data": "2026-11-12T20:11:38.000Z"
     }
    ],
    "texto_em": "2026-11-06T04:55:53.105Z",
-   "noticias_em": "2026-11-16T09:34:23.251Z",
+   "noticias_em": "2026-11-17T08:17:47.738Z",
    "videos": {
     "UULFcqRCjHozEb9CQHwf_cffdQ": [
      "yzxeudVKY74",
@@ -65,6 +65,24 @@
    "autor": "frases",
    "noticias": [
     {
+     "titulo": "Contrato de Medina com Botafogo prevê possibilidades de compra e rescisão antecipada; entenda",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/futebol/times/botafogo/noticia/2026/11/17/contrato-de-medina-com-botafogo-preve-possibilidades-de-compra-e-rescisao-antecipada-entenda.ghtml",
+     "data": "2026-11-17T07:00:00.000Z"
+    },
+    {
+     "titulo": "Edenilson elogia Tite e projeta reta final do Botafogo: \"Terminar de cabeça erguida\"",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/futebol/times/botafogo/noticia/2026/11/16/edenilson-elogia-tite-e-projeta-reta-final-do-botafogo-terminar-de-cabeca-erguida.ghtml",
+     "data": "2026-11-16T18:55:18.000Z"
+    },
+    {
+     "titulo": "STJD mantém pena, e Yuri Alberto desfalca o Corinthians contra Botafogo e Atlético-MG",
+     "veiculo": "ESPN",
+     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPYk5xSWJYQjNybjI3T3VzcFhPVmhKLWNGQTY0REl1MkFXcTdlT3A5bW9VLTRPM2NxZ1psYUJNM1UydWhOd0NfQ2RUTjY3dVdwcU1MMjhHR1dOM1pqZktyVmt1dXEzWFFOYUdUODNaRzNCdEhYbklIZVBJYUFacFpEa0xRdGhzX0tURkt3Z0drQUxwMWFtU1BQWFRHM3k1NDJiT0lLSjh1djVlZ1RuYnQ5Uw?oc=5",
+     "data": "2026-11-16T14:48:00.000Z"
+    },
+    {
      "titulo": "Arthur Cabral beira um turno sem marcar pelo Botafogo e reencontra última vítima",
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/futebol/times/botafogo/noticia/2026/11/16/arthur-cabral-beira-um-turno-sem-marcar-pelo-botafogo-e-reencontra-ultima-vitima.ghtml",
@@ -81,27 +99,9 @@
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/futebol/times/botafogo/noticia/2026/11/15/60-dias-de-tite-no-botafogo-veja-mudancas-numeros-e-desafios-para-a-reta-final-de-2026.ghtml",
      "data": "2026-11-15T07:00:00.000Z"
-    },
-    {
-     "titulo": "Subiu! Juventude domina o Botafogo-SP e garante acesso direto para a Série A",
-     "veiculo": "ESPN",
-     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9Oek84cTZCQWUtd3RPRWxGMkM4NVFIZ3NONnVtTFVBaTVXYU9fQ3RuOUR3NlJyYldPTE80aUR2bFdyZUxjZXN0RU9GajREclpJQmFMaGN6MXdhTFZwSnc?oc=5",
-     "data": "2026-11-14T22:26:32.000Z"
-    },
-    {
-     "titulo": "Rola a bola no Alfredo Jaconi! O Juventude recebe o Botafogo-SP em busca do acesso direto à Série A",
-     "veiculo": "ESPN",
-     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBtTDRyZ0d0NUZzcVJycHdHcFVaWGVnWnJWTGtfMzRreTBTWk5PLVpNNWFWeEJGUy1TYzFVal9nV1FMNGVNS0tEaU9QOFQ0T2xNRjZmNDBVQlcxWDJWT3c?oc=5",
-     "data": "2026-11-14T19:36:00.000Z"
-    },
-    {
-     "titulo": "Juventude 2-0 Botafogo-SP (14 de nov, 2026) Estatísticas dos times",
-     "veiculo": "ESPN",
-     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPV1Nscl9kQVJVc1IyTGZsdjVuQmx4NnQyOHh3YnlXNmlkVHNyTkZzWXl2NWZnQTBFa1JEOGwtcGVrT0RHekx4S3Y0VGgyWVZwbG55bi0xd0ZJMUFkanI0cUVidzh6eUZJTHN6RGc2TGMwZ2Z3X1dkbzdDYk1panVQZl9rRnozWVB6Rmc?oc=5",
-     "data": "2026-11-14T19:32:31.000Z"
     }
    ],
-   "noticias_em": "2026-11-16T09:34:24.898Z",
+   "noticias_em": "2026-11-17T08:17:49.449Z",
    "texto_em": "2026-11-06T05:11:54.874Z",
    "videos": {
     "UULFFxjZDrLCOCHkUCu632AmMQ": [
@@ -160,7 +160,7 @@
      "data": "2026-11-10T19:29:28.000Z"
     }
    ],
-   "noticias_em": "2026-11-16T09:34:25.626Z",
+   "noticias_em": "2026-11-17T08:17:53.808Z",
    "texto_em": "2026-11-06T05:11:54.874Z",
    "videos": {
     "UULF0x9Ypk2Z1lUdR4a88jMC2Q": [
@@ -219,7 +219,7 @@
      "data": "2026-11-14T23:32:28.000Z"
     }
    ],
-   "noticias_em": "2026-11-16T09:34:27.855Z",
+   "noticias_em": "2026-11-17T08:17:57.068Z",
    "texto_em": "2026-11-15T02:04:56.956Z",
    "videos": {
     "UULF5of5voGUqec9K9JqL9al4Q": [
@@ -278,7 +278,7 @@
      "data": "2026-11-09T15:39:04.000Z"
     }
    ],
-   "noticias_em": "2026-11-16T09:34:29.447Z",
+   "noticias_em": "2026-11-17T08:17:58.765Z",
    "texto_em": "2026-11-06T05:11:54.874Z",
    "videos": {
     "UULFsLGx5V5iv-JHbG10oDZOcw": [
@@ -301,43 +301,43 @@
    "autor": "frases",
    "noticias": [
     {
-     "titulo": "Com futuro indefinido, Angileri pode alcançar maior sequência pelo Corinthians em 18 meses",
+     "titulo": "Corinthians tenta engatar sequência de jogos sem ser vazado enquanto lida com baixas na zaga",
      "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/futebol/times/corinthians/noticia/2026/11/16/com-futuro-indefinido-angileri-pode-alcancar-maior-sequencia-pelo-corinthians-em-18-meses.ghtml",
-     "data": "2026-11-16T07:00:00.000Z"
+     "link": "https://ge.globo.com/futebol/times/corinthians/noticia/2026/11/17/corinthians-tenta-engatar-sequencia-de-jogos-sem-ser-vazado-enquanto-lida-com-baixas-na-zaga.ghtml",
+     "data": "2026-11-17T07:00:00.000Z"
     },
     {
-     "titulo": "Eleição do Corinthians: onde assistir ao vivo, horário, candidatos e regras do último debate",
+     "titulo": "André Castro: todas as respostas do candidato à presidência do Corinthians no debate da ESPN",
      "veiculo": "ESPN",
-     "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQMGhsYXVuOHZLTEFWYUxXOXNQZ3h0anl6NklmRjZibG04TXl6bmZSQmRMTnpFbGl1bGRZOE1abEJ4MlhTclRJX2ZXdWEyblVaNXRXWHg1V2c2ZGoxZUJRQXQ4dW9ZeExLWXJ2QmhDbTkxSUs2ZWxKS19KQWZvSFducW5XXy1UWEhCakotYkQxUE9mSGtEVEU4ZkRjaGU2WE1rZzBMdGFoVVNoanhxbHpCZGFSOWZXR2dSQ0dMbWMyck52a2dtNnVMZUpIb2g4bHA3R05OclFKeDhNdkdTWGxz?oc=5",
-     "data": "2026-11-15T23:47:00.000Z"
+     "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOQlZSQkFqdU1jMHJpYmlNVTF6azVyazY2UnA3NUpYUjdyRE16MTBDQmF6UkM4T3Iwb2locnF5M2RhXzQtM3VIVjh1NkFxWDJHUjc2bW1fajlfQWNkQjJaNTd1NFpOMHpVT1NPUlZ5V0NSSE5mc19vTTZEcDJVTWRPZ2czdW5LZWQ1cXJJa2JybVF6WWdiTFIxUkR4UjlTM1hSNEVyYmVpMzBoMFZsUnhzMFBrV1YtaTVFQjlCcGY5SV9kTm1XMThUVnlzU2RPMXNVWnc1UGN3?oc=5",
+     "data": "2026-11-17T02:55:00.000Z"
     },
     {
-     "titulo": "Final entre Ferroviária e Corinthians é marcada por confusão generalizada; VEJA análise de Milla Garcia",
+     "titulo": "José Augusto Mendes: todas as respostas do candidato à presidência do Corinthians no debate da ESPN",
      "veiculo": "ESPN",
-     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1lczh6b3hKb3c5bk1UbE1YMzN5STVRY1JPSnRzdnBDaTBsc19VdUhkRUNBMnhEMlk0X0d1dHg3X296WDNIcl9sZEZ3Z3YwdFd1SnN2RC1ReTZHWEhsZUE?oc=5",
-     "data": "2026-11-15T19:22:21.000Z"
+     "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxONHY3TS1qRnVFdVFXZUJnbUhKYi1SeEN5VXBhNGhWMV9vTkxXR09nYjlOR1VqR0FkRmZtZ1EyN0owZFJya0VjXzVRdmVIY29peV9wUTMzM25mTTZqR3VQaDFkN2JCd3QzeDJpeEpING9kcjV6WGhpbzlleUpzS2Z1R0dBM1hNVWs5MDBmU09IdkRwZy1jMjYtazdXRlBmT1ZPekE3ZjhtNFV0eHBpTDNjbXRHaG1rZm4zNmJJdTRqSlVUVGt4M0RwaVFIMnVJX1FYUXRzYjRsaC15eVhDYU5F?oc=5",
+     "data": "2026-11-17T02:42:00.000Z"
     },
     {
-     "titulo": "Treino do Corinthians: ainda sem Garro, elenco se reapresenta no CT de olho no Botafogo",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/futebol/times/corinthians/noticia/2026/11/15/treino-do-corinthians-ainda-sem-garro-elenco-se-reapresenta-no-ct-de-olho-no-botafogo.ghtml",
-     "data": "2026-11-15T17:44:19.000Z"
-    },
-    {
-     "titulo": "Mesmo com desfalque, Corinthians se anima por André na seleção brasileira",
+     "titulo": "Corinthians: candidatos usam debate para se descolar de Andrés e Augusto Melo",
      "veiculo": "UOL Esporte",
-     "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQemFkaFdnT2tJTmUyMEZhNDN6cHo5UlJ0empzY2FIR1FPQVV6dXlhcFNNdmZyQ3hualVMREZzT3UtX1FGMmM2WUh0YjdRX1l2RnotLVJ2T0xGRV8zV0xWLUozM25QTVFHWTgxU183a25iakkwbnEtODVQV3c4QkNLSFhvMXFUZmVYeWZNODlwWDlXd21pMDF0QUN1SWZ5UHlTMklzU0Iwd1VPRHB0Nzh5T3dVVTlJbzhiOEZITHc0aG85VEhkM0taUDY3eEpPMVVHck5kZjRUWFA2Vl9xV2ZV?oc=5",
-     "data": "2026-11-15T13:30:00.000Z"
+     "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOZ0dDX3lKNzRfdmZWTFZnRldrenU2Wk0ybDgya1RUMjlfdVlhVUthSDBpbk9PcnJIaXJ3SmZ3cVdYM0tmY1NuTGh5dHZ6LW1IbmlQZFZNRnRVMGI3S3Y4aHRGSjVReFRnVi1VQzBYcHd1Zl80RF9aMEk0Qm1zQVF0eWpiS2NzQVVzMFJCcUJSc0NBMWg0aTMtdXFkYWdqdk5PNUVrUTRwbU5scTJQQkExQWhCTks0YWdLQzBkdkVvZ0FkNHFEbjhOTEU5S3NBTWFLaXRNNWtsNVRQUFc2RkV4UlRuUWRzajlCSDB4TFFqVmF6MDlPMzFv?oc=5",
+     "data": "2026-11-17T01:57:00.000Z"
     },
     {
-     "titulo": "Corinthians pode ter apenas dois zagueiros à disposição de Seedorf contra o Botafogo",
+     "titulo": "'Se Corinthians é favorecido, imagina se fosse prejudicado', diz Raniele",
+     "veiculo": "UOL Esporte",
+     "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNcHpDaGlwWGdQLVUwZENYVnNMSExFdTRFRWZoWjAzeVplNE81Q1g4M1Uxd3o2RjVUQTRGNE5obS1ndUJEeXQzR0JTcHVPVFFrVUFRSTBzZGM4ZDNyMXd6NGltRHdsLU1WVjZnVVRtWGJsNGFmZEhCVVY3SmVWbm14eWcxVV9lODRjLWNfbXFuMnRqVkZHQ0E2QW1LUnZfdHQtRU1wT1UxRS1KMWJhem9aTG9uRzNCNmw4RktXeExqTERpS1NXOUtFTDdiajVRR05wdU5Hb1NYMA?oc=5",
+     "data": "2026-11-16T22:12:26.000Z"
+    },
+    {
+     "titulo": "Agressões e expulsões: o que diz a súmula de Ferroviária x Corinthians sobre confusão",
      "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/futebol/times/corinthians/noticia/2026/11/15/corinthians-pode-ter-apenas-dois-zagueiros-a-disposicao-de-seedorf-contra-o-botafogo.ghtml",
-     "data": "2026-11-15T07:00:00.000Z"
+     "link": "https://ge.globo.com/sp/ribeirao-preto-e-regiao/futebol/futebol-feminino/noticia/2026/11/16/agressoes-e-expulsoes-o-que-diz-a-sumula-de-ferroviaria-x-corinthians-sobre-confusao.ghtml",
+     "data": "2026-11-16T18:33:57.000Z"
     }
    ],
-   "noticias_em": "2026-11-16T09:34:31.239Z",
+   "noticias_em": "2026-11-17T08:18:00.503Z",
    "texto_em": "2026-11-10T01:32:39.654Z",
    "videos": {
     "UULFwpyuvmJ_mOrebYbUPXtaBQ": [
@@ -372,6 +372,18 @@
    "autor": "frases",
    "noticias": [
     {
+     "titulo": "Coritiba x Santos: além da permanência, entenda o que está em jogo no duelo no Couto Pereira",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/pr/futebol/times/coritiba/noticia/2026/11/17/coritiba-x-santos-alem-da-permanencia-entenda-o-que-esta-em-jogo-no-duelo-no-couto-pereira.ghtml",
+     "data": "2026-11-17T07:00:01.000Z"
+    },
+    {
+     "titulo": "Escalação: com Morisco na Seleção, Coritiba muda o gol contra o Santos; veja provável time",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/pr/futebol/times/coritiba/noticia/2026/11/16/escalacao-com-morisco-na-selecao-coritiba-muda-o-gol-contra-o-santos-veja-provavel-time.ghtml",
+     "data": "2026-11-16T21:02:35.000Z"
+    },
+    {
      "titulo": "Coritiba busca melhorar retrospecto contra o Santos no Couto Pereira; veja números",
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/pr/futebol/times/coritiba/noticia/2026/11/16/coritiba-busca-melhorar-retrospecto-contra-o-santos-no-couto-pereira-veja-numeros.ghtml",
@@ -394,21 +406,9 @@
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/pr/futebol/times/coritiba/noticia/2026/11/14/volante-do-coritiba-ganha-espaco-na-reta-final-e-convoca-torcida-para-o-jogo-contra-o-santos.ghtml",
      "data": "2026-11-14T07:00:00.000Z"
-    },
-    {
-     "titulo": "Coritiba homenageia pioneira da engenharia em nova camisa da Consciência Negra; veja",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/pr/futebol/times/coritiba/noticia/2026/11/13/coritiba-homenageia-pioneira-da-engenharia-em-nova-camisa-da-consciencia-negra-veja.ghtml",
-     "data": "2026-11-13T14:17:50.000Z"
-    },
-    {
-     "titulo": "Filho do dono do Del Valle assume cadeira, e Coritiba troca metade do conselho da SAF; veja como fica",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/pr/futebol/times/coritiba/noticia/2026/11/13/filho-do-dono-do-del-valle-assume-cadeira-e-coritiba-troca-metade-do-conselho-da-saf-veja-como-fica.ghtml",
-     "data": "2026-11-13T07:00:01.000Z"
     }
    ],
-   "noticias_em": "2026-11-16T09:34:32.861Z",
+   "noticias_em": "2026-11-17T08:18:02.142Z",
    "texto_em": "2026-11-10T01:32:39.654Z",
    "videos": {
     "UULFbCD35_3aBxTYcpm8M2LviA": [
@@ -430,6 +430,18 @@
    "texto": "O Cruzeiro está embalado: fez 12 dos últimos 15 pontos possíveis. No último jogo, venceu o Bahia por 3 a 2 em casa. São 4 vitórias seguidas. Em 3º lugar, com 60 pontos, a vaga na Libertadores está bem encaminhada: mais de 99% de chance. O ataque está afiado, com 11 gols em 5 jogos. Nos bastidores, a notícia que mais chama atenção é “Escalação do Cruzeiro: Artur Jorge terá quatro mudanças para duelo direto com Bahia; veja provável time”, segundo o Globo Esporte. Agora o desafio é o Palmeiras, em casa, quarta, 18/11. Pedreira: o modelo dá só 23% de chance de vitória.",
    "autor": "frases",
    "noticias": [
+    {
+     "titulo": "Como Cruzeiro escalou tabela com Artur Jorge e mudou realidade desde último duelo com Palmeiras",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/futebol/times/cruzeiro/noticia/2026/11/17/como-cruzeiro-escalou-tabela-com-artur-jorge-e-mudou-realidade-desde-ultimo-duelo-com-palmeiras.ghtml",
+     "data": "2026-11-17T07:00:00.000Z"
+    },
+    {
+     "titulo": "Rodada pode garantir Cruzeiro na fase de grupos da Libertadores; veja combinação necessária",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/futebol/times/cruzeiro/noticia/2026/11/16/rodada-pode-garantir-cruzeiro-na-fase-de-grupos-da-libertadores-veja-combinacao-necessaria.ghtml",
+     "data": "2026-11-16T21:32:59.000Z"
+    },
     {
      "titulo": "Gabigol ou Kaio Jorge? Cruzeiro pode ter disputa no ataque em 2027; compare números",
      "veiculo": "Globo Esporte",
@@ -453,22 +465,10 @@
      "veiculo": "UOL Esporte",
      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPa1JJNmQwRGRFUmd3UTFZb3F3WlEwTEpya3NtOU5kYnFQcTRPZFdEQzhBb2ZWbE9acDc4bXk2cW9pdnk3TmY5M2VacW9aOGdLdGFwWGtFcG0wZ0lvMkdFTWlibWJEam1qUzlmbUF5NzhpOHhlbHpEVE9ya1NWeDB3S0V4eF83UmR1aTZqbmZndUU3TE1xRklfSkdiYnItMU42RDZJVm1PU2ZKclBXdEZpaVh3aVpTanhMYWsyTzZwZzJrdEhRU3kzd1VR?oc=5",
      "data": "2026-11-15T01:40:29.000Z"
-    },
-    {
-     "titulo": "Cruzeiro se junta a Flamengo e Palmeiras e garante presença na Libertadores de 2027",
-     "veiculo": "ESPN",
-     "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNSDdCVUJfVzFPWDJ5OTkxOUlraTFxc0REMktZMGc5UVBCaG4tb1BhLUVUaUJEUEZNZHU0NEZIOVNkV1RsTnRqSUw0c3kybDFibU1GSjg3YV9rUmRRbnd1c1NUakp6U2xoS2JNRGFzcmsxZE1XM0JwaHk1YU9wSVc1Q3Eya0dfLU0yRDZHeVZNVV9LdmE0MGhhVmExU3ZHY1JkcXZPT3ZNRmZUODZxa2xMOUhxSjFwU01fY3Zsb0JPQ2wtZWNhbVVnS3dn?oc=5",
-     "data": "2026-11-15T01:08:00.000Z"
-    },
-    {
-     "titulo": "Entenda perfil de contratações buscadas pelo Cruzeiro para 2027",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/futebol/times/cruzeiro/noticia/2026/11/14/entenda-perfil-de-contratacoes-buscadas-pelo-cruzeiro-para-2027.ghtml",
-     "data": "2026-11-14T07:00:00.000Z"
     }
    ],
    "texto_em": "2026-11-06T04:55:53.105Z",
-   "noticias_em": "2026-11-16T09:34:34.493Z",
+   "noticias_em": "2026-11-17T08:18:03.844Z",
    "videos": {
     "UULFy7aeNy60EVhMwBziYsET-A": [
      "-Z9BJpTxku0",
@@ -502,43 +502,43 @@
    "autor": "frases",
    "noticias": [
     {
-     "titulo": "Após busto, Bruno Henrique mira o 19º título pelo Flamengo no fim do Brasileiro: \"Dar a vida nesses jogos\"",
+     "titulo": "Jardim vai completar 50 jogos no Flamengo com aproveitamento alto, mas desconfiança da torcida",
      "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/futebol/times/flamengo/noticia/2026/11/16/apos-busto-bruno-henrique-mira-o-19o-titulo-pelo-flamengo-no-fim-do-brasileiro-dar-a-vida-nesses-jogos.ghtml",
-     "data": "2026-11-16T06:00:00.000Z"
+     "link": "https://ge.globo.com/futebol/times/flamengo/noticia/2026/11/17/jardim-vai-completar-50-jogos-no-flamengo-com-aproveitamento-alto-mas-desconfianca-da-torcida.ghtml",
+     "data": "2026-11-17T06:00:00.000Z"
     },
     {
-     "titulo": "Flamengo fará mais dois bustos em 2027 com votação popular para escolher homenageados",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/futebol/times/flamengo/noticia/2026/11/15/flamengo-fara-mais-dois-bustos-em-2027-com-votacao-popular-para-escolher-homenageados.ghtml",
-     "data": "2026-11-16T01:25:13.000Z"
-    },
-    {
-     "titulo": "Flamengo impõe virada ao Boca Juniors e garante classificação ao Final Four da Liga Sul-Americana",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/basquete/noticia/2026/11/15/flamengo-impoe-virada-ao-boca-juniors-e-garante-classificacao-para-o-final-four-da-liga-sul-americana.ghtml",
-     "data": "2026-11-15T23:15:19.000Z"
-    },
-    {
-     "titulo": "Flamengo eterniza Arrascaeta e Bruno Henrique na história com bustos no dia do aniversário do clube; veja resultado",
+     "titulo": "Flamengo divulga orçamento para 2027 e prevê 'buraco' de R$ 90 milhões sem patrocínio máster",
      "veiculo": "ESPN",
-     "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNam5iTzlvaDJLMjZtakhrSWttWU1uSUI4SDU2UkVHZHhCcXIwRVF3VkQ0czctVjNXUS1ycFpNMmhDYjN2VXo3WDNJeDYwdkp4T0ZzRmdWRGRlS3BZMnlkSDlzUk9nRzhPUTV3STFXeTBwblRqNHlXRWhkRmx1RGJhT1pYQ0JjbnNBak5GcjEycU9tMjRGX29mQ2VmN2l0cl9KencxQTU2NTlyd2Zwb3pwckp3MUszcHZHdTR0aFgtSkJOZktBS0dLNFItV0F2TThValE5SGJfM19zTTBxOEhneHB3SENKeXpIajM0?oc=5",
-     "data": "2026-11-15T21:07:00.000Z"
+     "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOS2l4TUZoVEtQY0dZMmxmSmxKcDdINjRkV1p2ejNWWHpJZzMtaVQ5UG1yQkZpT2NGa1ZkSlZRQ0dnU0RZbnpQTGVycjRFcnRCS1RabFF1YjlYNWFrVl9VNnV4eFk1RExrVVZ5OHpTV0dOTzRFRkhSRWJrX2FpcWFscm40bElfYWVfdUJwNXF3UXI1ZndDemFGUGpOZnFzd20wY0JqQWdLOFZrX1NpYVVVYUExbWc3eUdNMzBkcFRtSEpnckpzem96TWpTSlM5SzlXeDVFX1Z3MHlhdzJt?oc=5",
+     "data": "2026-11-17T03:49:00.000Z"
     },
     {
-     "titulo": "O post de Filipe Luís para o Flamengo que agitou torcedores nas redes sociais, e a resposta do clube",
-     "veiculo": "ESPN",
-     "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQTGlmZHFHdTJoTTVzY2Y5Mlk4dkpOODFXWkhucU9Rdlp4blh0dWdYcnBIeVg4RlRvSEpKdGlXc1kwUHNlNVJBNkljM2YwWHZ5dFJGMkk3Vy1mTi1KQVFqZ1JxWE1DdENYOWJPVDM0TndyaEpvVkRuRVNkRjV0M1RDNk9uMUN2cFNoWGNZT3FLb1JLd3N5NlN6UWlqWWZKeGhfRU1HdHllWGthTzduY2tPS1lkWFJtNHc3TFk2S1p3YWU0MVdEMWU0NWpubWtiVDZ5SEJJWUliTmFuZlRVUUdKMkJ2aV9aUWRQT1RUcHNiZjFPSnpnZFZNUg?oc=5",
-     "data": "2026-11-15T19:27:00.000Z"
-    },
-    {
-     "titulo": "Inter x Flamengo na Copa do Brasil: onde assistir e prováveis escalações",
+     "titulo": "Flamengo tem contrato com bet suspenso e faz orçamento para 2027: R$ 1,5 bi",
      "veiculo": "UOL Esporte",
-     "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQRWxRdzNwY2prUU85TFpTRFJGeEtCNVc2NWZuQjE1cmxjUkhjTThNQ1JTS29Cdm9BS3VOQjFwY0JjdGFuXzdBbjItbDg4ZG9vNjBhemE1blRmX2FNM0ZRRUc2a0tfbWFGbjhvYzFuTXFjYWFzdnhoelVYck05NGlmNl9WTHo3ZnpBQUczVV96REZ1RzVMU21mTWx0M1RxLXRGQVVIQmJBRGk0b2lyNk5kU0oxSjNkbGtETTl1bV83U0taWkI1eGZlalZYaldzSG1LaXJkNkxXNTZLQVk?oc=5",
-     "data": "2026-11-15T07:00:00.000Z"
+     "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNaXFVemtaZGlnVXFRZnpzZk12Z0lOUUhiQUpBWWZOVVBnbTdFOHFOWlpqOXd0VmJUZHhCLXhxVHhJYkZoNnY3RnZ4bFZYRmFmdHBabXFyUDB3bDBkc2g1UThpMEZsREZlRTZaTHlyaGktbmI3Umd0THFtSXg3aV9SVm9GbWYxYUJMT1lSMWdiZGpkUm5jbjlQRjNCWFZMRkNNdDBQOUdOZ2h6U29TLVZ5anlPdEN4WHZOXzM3VmNWaGxiZVo5Vy1FM3FZMVlmeTNGeEZCUVd5cUFCWUN5?oc=5",
+     "data": "2026-11-17T01:10:13.000Z"
+    },
+    {
+     "titulo": "Betano suspende patrocínio ao Flamengo, que apresenta orçamento de 2027; veja detalhes",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/futebol/times/flamengo/noticia/2026/11/16/betano-suspende-patrocinio-ao-flamengo-que-apresenta-orcamento-de-2027-veja-detalhes.ghtml",
+     "data": "2026-11-17T00:00:54.000Z"
+    },
+    {
+     "titulo": "Título brasileiro pelo Flamengo seria suficiente para ampliar futuro de Leonardo Jardim? André Donke analisa",
+     "veiculo": "ESPN",
+     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE95Y2F0Z2lOVkNIRTQ1d2NRSjA2NzZmWU1URWowMzRpNS1EeGlOSGNfSFdXcWZwbDhUX3lncXNLQ0NnX3JYdkxPYXFZU3Izc1lVNzJ4cmJYMmU4QTI3QVE?oc=5",
+     "data": "2026-11-16T23:46:38.000Z"
+    },
+    {
+     "titulo": "Gonzalo Plata, do Flamengo, é cortado da seleção do Equador antes de amistoso contra Bolívia - UOL Notícias",
+     "veiculo": "UOL Esporte",
+     "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOWXpfOWFmRVJhajdQMzFXMmlvZXVnRk1iR2Z3SG5NaE5pcVRrSFdfUjZYREQ3UkhxZ3BNeWMwZ3YyVjJCTk1hbXZReU5WWWxnRzJJcGZSSzFqNFpkcmVYSG1NaG1jcXZiXzE0QnZBU01keU1qZ0hvV3dNZnVuc20tSnVneVdWRmdBMEZXZjBTX3lQZWNfSzlhaEdQUlJrVG9hRWJLLUFjY3JjeVY1MlJqZUFqV0NfWFowa1R0Y3dHRmZoaVB6MlA5U0Z6dWxlRm02dEVhd2dwamxDemItamRPbTNDR0Z4bEJsY1E?oc=5",
+     "data": "2026-11-16T19:32:17.000Z"
     }
    ],
-   "noticias_em": "2026-11-16T09:34:36.107Z",
+   "noticias_em": "2026-11-17T08:18:05.635Z",
    "texto_em": "2026-11-10T01:32:39.654Z",
    "videos": {
     "UULF084Mraf1n0rUIhz0V3sZfg": [
@@ -573,6 +573,30 @@
    "autor": "frases",
    "noticias": [
     {
+     "titulo": "Entenda como é a divisão do pagamento do Fluminense por Castillo",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/futebol/times/fluminense/noticia/2026/11/17/entenda-como-e-a-divisao-do-pagamento-do-fluminense-por-castillo.ghtml",
+     "data": "2026-11-17T07:00:00.000Z"
+    },
+    {
+     "titulo": "Fluminense atrasa parcela da compra de Rodrigo Castillo; Lanús faz cobrança pública",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/futebol/times/fluminense/noticia/2026/11/16/fluminense-atrasa-parcela-da-compra-de-rodrigo-castillo-lanus-faz-cobranca-publica.ghtml",
+     "data": "2026-11-16T20:26:12.000Z"
+    },
+    {
+     "titulo": "Martinelli e Wesley Natã voltam a treinar com elenco principal do Fluminense",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/futebol/times/fluminense/noticia/2026/11/16/martinelli-e-wesley-nata-voltam-a-treinar-com-elenco-principal-do-fluminense.ghtml",
+     "data": "2026-11-16T17:23:57.000Z"
+    },
+    {
+     "titulo": "Dois titulares e um golaço: como estão os convocados do Fluminense na Data Fifa",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/futebol/times/fluminense/noticia/2026/11/16/dois-titulares-e-um-golaco-como-estao-os-convocados-do-fluminense-na-data-fifa.ghtml",
+     "data": "2026-11-16T11:00:01.000Z"
+    },
+    {
      "titulo": "Cano recusou saída do Fluminense para o Lanús e mantém expectativa por seguir no Brasil",
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/futebol/times/fluminense/noticia/2026/11/16/cano-recusou-saida-do-fluminense-para-o-lanus-e-mantem-expectativa-por-seguir-no-brasil.ghtml",
@@ -583,33 +607,9 @@
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/futebol/times/fluminense/noticia/2026/11/15/riquelme-brilha-pela-selecao-e-tecnico-explica-poucas-chances-no-fluminense-nao-e-facil.ghtml",
      "data": "2026-11-15T16:43:40.000Z"
-    },
-    {
-     "titulo": "Fora contra o São Paulo, Alisson volta a treinar Fluminense e comenta lesão: \"Dias difíceis\"",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/futebol/times/fluminense/noticia/2026/11/15/fora-contra-o-sao-paulo-alisson-volta-a-treinar-fluminense-e-comenta-lesao-dias-dificeis.ghtml",
-     "data": "2026-11-15T15:33:23.000Z"
-    },
-    {
-     "titulo": "Fluminense vai bem ou mal após períodos sem jogos? Checamos",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/futebol/times/fluminense/noticia/2026/11/15/fluminense-vai-bem-ou-mal-apos-periodos-sem-jogos-checamos.ghtml",
-     "data": "2026-11-15T07:00:00.000Z"
-    },
-    {
-     "titulo": "Fred destaca impacto de Cristiano Ronaldo na nova geração de jogadores do Fluminense: \"Influência absurda\"",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/futebol/times/fluminense/noticia/2026/11/14/fred-destaca-impacto-de-cristiano-ronaldo-na-nova-geracao-de-jogadores-do-fluminense-influencia-absurda.ghtml",
-     "data": "2026-11-14T12:00:00.000Z"
-    },
-    {
-     "titulo": "Fluminense pode garantir vaga na Libertadores 2027 na próxima rodada; veja cenários",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/futebol/times/fluminense/noticia/2026/11/14/fluminense-pode-garantir-vaga-na-libertadores-2027-na-proxima-rodada-veja-cenarios.ghtml",
-     "data": "2026-11-14T07:00:00.000Z"
     }
    ],
-   "noticias_em": "2026-11-16T09:34:38.360Z",
+   "noticias_em": "2026-11-17T08:18:07.247Z",
    "texto_em": "2026-11-07T01:35:52.128Z",
    "videos": {
     "UULFccH-KOg311lpEtTCy-3TTA": [
@@ -644,6 +644,30 @@
    "autor": "frases",
    "noticias": [
     {
+     "titulo": "Renato contraria gosto pessoal e redefine Grêmio na luta contra o rebaixamento; entenda",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/rs/futebol/times/gremio/noticia/2026/11/17/renato-contraria-gosto-pessoal-e-redefine-gremio-na-luta-contra-o-rebaixamento-entenda.ghtml",
+     "data": "2026-11-17T08:00:00.000Z"
+    },
+    {
+     "titulo": "Conselho do Grêmio aprova acordo para troca de chaves entre Arena e Olímpico; saiba detalhes",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/rs/futebol/times/gremio/noticia/2026/11/16/conselho-do-gremio-aprova-acordo-para-troca-de-chaves-entre-arena-e-olimpico-saiba-detalhes.ghtml",
+     "data": "2026-11-17T00:30:04.000Z"
+    },
+    {
+     "titulo": "Renato Gaúcho diz que críticas ao Grêmio foram estratégia: 'Deu certo'",
+     "veiculo": "UOL Esporte",
+     "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQMVNkZVhqZHUyYzRhZHB1UzJIamJnZFdxMkFaTmFIbldhUjE4N3FGY2t6QjRnZ2FUaGQxQllkNjNWRDBMdVhiTEdkdHpnMjF3X2o5UU9OWXRUTFhLUlpLaC1oV3k3OVczX0xIT0laTk91dWNabTNvRTAxUmduS1pIcEI1ZU9PR0tuME5xbG9HQ19Hdy1wbmo0Y25LYVM3eVVmdVZNWTFvbHY0Y0VwQ2g4MWt3bUF0MElBUU9IR1RESUhQQXBNSTZGWXV0OXlLa0xnSHkwQQ?oc=5",
+     "data": "2026-11-16T18:57:29.000Z"
+    },
+    {
+     "titulo": "Clube diz à Justiça que ficou endividado e precisou fazer empréstimos após levar calote de R$ 7 milhões do Grêmio",
+     "veiculo": "ESPN",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOaTZiUGg5dDhVbHRGZ0dIRm1hdVpJOWlLWjFZU1ZnNWNmN0U3RVU0aVBfTzJ4dWItWUpURWtOZDQzNnhOcEpWZ2pBRUlQa1p5Sk5Kc3NDbkp4RkVzOXAtcXlVcmFsTXdfZ2RCbXA3Wlh2VnBGQTNqVEJtZWFnRzZ3NVhYakt6bU9kLVNDVGo3dUFRdHNuVVFKUlh1WTdFSmpPRTB6TFVvTUdfdFJBRHJV?oc=5",
+     "data": "2026-11-16T14:49:00.000Z"
+    },
+    {
      "titulo": "Por que votação no Conselho do Grêmio pode destravar o que ocorrerá com o Olímpico",
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/rs/futebol/times/gremio/noticia/2026/11/16/por-que-votacao-no-conselho-do-gremio-pode-destravar-o-que-ocorrera-com-o-olimpico.ghtml",
@@ -654,33 +678,9 @@
      "veiculo": "ESPN",
      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQb19wUERSSzBtN1RPYWR3MHRGaC1MQl9CaGVlN3g3a0lGN2tueGJqeFlCa2c0WlhJU2ZFc3JZaTFyWnNjVG1uWU5EaVhhQnNRU3JjYWpoSTVtYkNYdDVrbWgtd2xUVG4zdFpjLXY3c3ZweERGampoM3NCOVFUTm1nRlhBYnZrQUVRb3ROaXlJNTB4Qmt6Z2o0YTA4dnVQZ0ZKWHR4czdTV3pNc0RxbnZjU2IySlZPWlhNSzRNaEVNcThyMGVwekFMaUxVTDV5TDYxZFFBd1VCNHA?oc=5",
      "data": "2026-11-15T15:37:00.000Z"
-    },
-    {
-     "titulo": "Grêmio vira centro das atenções no Brasileirão com briga contra o Z-4 e vagas na próxima Libertadores",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/rs/futebol/times/gremio/noticia/2026/11/15/gremio-vira-centro-das-atencoes-no-brasileirao-com-briga-contra-o-z-4-e-vagas-na-proxima-libertadores.ghtml",
-     "data": "2026-11-15T08:00:02.000Z"
-    },
-    {
-     "titulo": "Mandaca se despede do Juventude e confirma acerto com o Grêmio para 2027: \"Agora posso falar\"",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/rs/futebol/noticia/2026/11/14/mandaca-se-despede-do-juventude-e-confirma-acerto-com-o-gremio-para-2027-agora-posso-falar.ghtml",
-     "data": "2026-11-14T23:04:48.000Z"
-    },
-    {
-     "titulo": "Krovinovic curte passagem no Grêmio e se considera sul-americano: \"Tenho energia de vocês\"",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/rs/futebol/times/gremio/noticia/2026/11/14/krovinovic-curte-passagem-no-gremio-e-se-considera-sul-americano-tenho-energia-de-voces.ghtml",
-     "data": "2026-11-14T13:00:00.000Z"
-    },
-    {
-     "titulo": "Transfer ban do Grêmio: o que diz Código Disciplinar da Fifa que pode até tirar pontos do Imortal no Brasileirão",
-     "veiculo": "ESPN",
-     "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNSk56d0RmMkUxY3ZWZ0wzMG9BendJZ1RXa2lhSHN3YjZOVE1HYVdVT29Rcmh0ZEZHWkNhVnBYakx1Ym1ja25SUTdMU2t2MmJwSXBzYmkxX0lrTTFKaFFLZHNYQlZxclA5aVBnVzRjQWtBZUNCWkowbVZfTEduR3VlMnpsWnA3TkpBR2EzU2lwbktqU052VGRxQWVFZVBNUlhWRnhGbFJkS0dES0JLVkVwZWlMUExwSENFeHJFenRScUsxV01SYm42LVBVdkpaUV9RYmRpbmlGSUVQVHM5T1VFb0ltbw?oc=5",
-     "data": "2026-11-13T22:26:00.000Z"
     }
    ],
-   "noticias_em": "2026-11-16T09:34:39.983Z",
+   "noticias_em": "2026-11-17T08:18:08.977Z",
    "texto_em": "2026-11-10T01:32:39.654Z",
    "videos": {
     "UULFBOGYcnvM-9iI-8d-DUEeMw": [
@@ -727,6 +727,30 @@
    "autor": "frases",
    "noticias": [
     {
+     "titulo": "As novidades do Inter que Eduardo Baptista prepara para a reta final do Brasileirão",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/rs/futebol/times/internacional/noticia/2026/11/17/as-novidades-do-inter-que-eduardo-baptista-prepara-para-a-reta-final-do-brasileirao.ghtml",
+     "data": "2026-11-17T08:00:00.000Z"
+    },
+    {
+     "titulo": "Taça e TCC: Zagueira campeã pelo Inter concilia futebol com faculdade",
+     "veiculo": "UOL Esporte",
+     "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNb1ZFTjdGR2FodHAzMjBTQVhwOGd2Y0gxS2VKbWtGSkJpOWNDdFlVTkpWNU1pYnRndG9ZdU11T1VUS2UzNUhZRVlGOXBRamlXNHhVMTdmeXR2ZmFYNUxXSVc0cEpwOU9sb0NOb29mQnNUTWRPcEhGbU43NnBtU3AzMDJRNXZuQ3RaeURXWkZNb1ZLLU9sbEdjTF9JT1RKOWtUVUhEZl9LRFphSW1wVUFvYkw1a1BOV19TM3RiSzhCY3Q3WjlNQXctd3VUSEFEQnRnRVBuTm0tTQ?oc=5",
+     "data": "2026-11-16T22:25:55.000Z"
+    },
+    {
+     "titulo": "Confira a situação dos goleiros do Inter depois de aparição de Rochet em treino",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/rs/futebol/times/internacional/noticia/2026/11/16/confira-a-situacao-dos-goleiros-do-inter-depois-de-aparicao-de-rochet-em-treino.ghtml",
+     "data": "2026-11-16T19:30:40.000Z"
+    },
+    {
+     "titulo": "Inter sofre o quarto transfer ban da Fifa; saiba detalhes",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/rs/futebol/times/internacional/noticia/2026/11/16/inter-sofre-o-quarto-transfer-ban-da-fifa-saiba-detalhes.ghtml",
+     "data": "2026-11-16T16:39:26.000Z"
+    },
+    {
      "titulo": "Técnico campeão pelo Inter valoriza força do Beira-Rio: \"Este estádio tem algo especial\"",
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/rs/futebol/times/internacional/noticia/2026/11/15/tecnico-campeao-pelo-inter-valoriza-forca-do-beira-rio-este-estadio-tem-algo-especial.ghtml",
@@ -737,33 +761,9 @@
      "veiculo": "UOL Esporte",
      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOZ29ReTNFM3J6N0UwdXlnMDAtdWVxU2tGcjZ0SDZGLU14RnBrVEgySWl4M3duY1RsVVFwNnYySHFnQjVHQmV2ZXBIWENhV3pGOFJDQ0xmVnl6QWJHZzl3UVA0dHhlcVhqdjdmeUFTX2NvYmFoVVpJRTNKamFmdlhYUDZWWHU0ZjJEc1RaRDBVRTBWTC1Qb1d3R05ndnZvdWlReXVydkE4QVVtZmpqaGVFVGZIM0JFUnNSR2Y2NGtsaVB3Y3hNRGgzNl9UOWFFejA?oc=5",
      "data": "2026-11-15T22:20:58.000Z"
-    },
-    {
-     "titulo": "Campeãs do Inter prometem festa em lugarzinho bom e vibram: \"Patinho feio\"",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/rs/futebol/times/internacional/noticia/2026/11/15/campeas-do-inter-prometem-festa-em-lugarzinho-bom-e-vibram-patinho-feio.ghtml",
-     "data": "2026-11-15T22:04:03.000Z"
-    },
-    {
-     "titulo": "Inter x Flamengo na Copa do Brasil: onde assistir e prováveis escalações",
-     "veiculo": "UOL Esporte",
-     "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQRWxRdzNwY2prUU85TFpTRFJGeEtCNVc2NWZuQjE1cmxjUkhjTThNQ1JTS29Cdm9BS3VOQjFwY0JjdGFuXzdBbjItbDg4ZG9vNjBhemE1blRmX2FNM0ZRRUc2a0tfbWFGbjhvYzFuTXFjYWFzdnhoelVYck05NGlmNl9WTHo3ZnpBQUczVV96REZ1RzVMU21mTWx0M1RxLXRGQVVIQmJBRGk0b2lyNk5kU0oxSjNkbGtETTl1bV83U0taWkI1eGZlalZYaldzSG1LaXJkNkxXNTZLQVk?oc=5",
-     "data": "2026-11-15T07:00:00.000Z"
-    },
-    {
-     "titulo": "Inter goleia o Sindicato dos Atletas em jogo-treino no CT Parque Gigante",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/rs/futebol/times/internacional/noticia/2026/11/14/inter-goleia-o-sindicato-dos-atletas-em-jogo-treino-no-ct-parque-gigante.ghtml",
-     "data": "2026-11-14T20:33:26.000Z"
-    },
-    {
-     "titulo": "Inter Delas: grupo de apoio às Gurias sonha com título da Copa do Brasil",
-     "veiculo": "UOL Esporte",
-     "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNVXhjeXQtNk1DakE3QzFiRUxJeUxDYlpDUFNxeHJ5aUxhOWNINllGX3cyajZqSGJHTVo4TDdFQXp1TUR2Y013MHJXX3Zhd3ZLZGNLenZyNEwwUFhFV0lSeW54ZlI5WlRrbFZMWkNpMldOcXBINzU5bWRJMFFEOUtxRjRUTDVKcnpzak5ycmEyV091Nm9fdC1HN1VMZEEtMzI5aXdBNTZETGJ5WUFORTI3T1BtSG85cDY5Nno5NGo1UWoyYWxJdjEwblpMQzZfOU53RW9GUGI5ejFPUQ?oc=5",
-     "data": "2026-11-14T14:00:00.000Z"
     }
    ],
-   "noticias_em": "2026-11-16T09:34:41.981Z",
+   "noticias_em": "2026-11-17T08:18:10.534Z",
    "texto_em": "2026-11-10T01:32:39.654Z",
    "videos": {
     "UULFBgSy_cNIoGYnyLjmKHQOAg": [
@@ -798,6 +798,24 @@
    "autor": "frases",
    "noticias": [
     {
+     "titulo": "A batalha do bebedouro: como foi o último encontro entre Atlético-MG e Boca Juniors",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/futebol/times/atletico-mg/noticia/2026/11/17/a-batalha-do-bebedouro-como-foi-o-ultimo-encontro-entre-atletico-mg-e-boca-juniors.ghtml",
+     "data": "2026-11-17T07:00:01.000Z"
+    },
+    {
+     "titulo": "Atlético-MG anuncia patrocínio pontual para final da Sul-Americana",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/futebol/times/atletico-mg/noticia/2026/11/16/atletico-mg-anuncia-patrocinio-pontual-para-final-da-sul-americana.ghtml",
+     "data": "2026-11-16T17:48:40.000Z"
+    },
+    {
+     "titulo": "STJD mantém pena, e Yuri Alberto desfalca o Corinthians contra Botafogo e Atlético-MG",
+     "veiculo": "ESPN",
+     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPYk5xSWJYQjNybjI3T3VzcFhPVmhKLWNGQTY0REl1MkFXcTdlT3A5bW9VLTRPM2NxZ1psYUJNM1UydWhOd0NfQ2RUTjY3dVdwcU1MMjhHR1dOM1pqZktyVmt1dXEzWFFOYUdUODNaRzNCdEhYbklIZVBJYUFacFpEa0xRdGhzX0tURkt3Z0drQUxwMWFtU1BQWFRHM3k1NDJiT0lLSjh1djVlZ1RuYnQ5Uw?oc=5",
+     "data": "2026-11-16T14:48:00.000Z"
+    },
+    {
      "titulo": "Atlético-MG busca protagonismo brasileiro que sobra na Libertadores e falta na Sul-Americana",
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/futebol/times/atletico-mg/noticia/2026/11/16/atletico-mg-busca-protagonismo-brasileiro-que-sobra-na-libertadores-e-falta-na-sul-americana.ghtml",
@@ -814,27 +832,9 @@
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/futebol/times/atletico-mg/noticia/2026/11/15/analise-atletico-mg-nao-entrega-pontos-mas-precisa-de-superacao-na-final-da-sul-americana.ghtml",
      "data": "2026-11-15T07:00:00.000Z"
-    },
-    {
-     "titulo": "Empate do Atlético-MG põe Cruzeiro na Libertadores de 2027",
-     "veiculo": "UOL Esporte",
-     "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPa1JJNmQwRGRFUmd3UTFZb3F3WlEwTEpya3NtOU5kYnFQcTRPZFdEQzhBb2ZWbE9acDc4bXk2cW9pdnk3TmY5M2VacW9aOGdLdGFwWGtFcG0wZ0lvMkdFTWlibWJEam1qUzlmbUF5NzhpOHhlbHpEVE9ya1NWeDB3S0V4eF83UmR1aTZqbmZndUU3TE1xRklfSkdiYnItMU42RDZJVm1PU2ZKclBXdEZpaVh3aVpTanhMYWsyTzZwZzJrdEhRU3kzd1VR?oc=5",
-     "data": "2026-11-15T01:40:29.000Z"
-    },
-    {
-     "titulo": "Bernard faz alerta e aposta em volta por cima do Atlético-MG para final",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/futebol/times/atletico-mg/noticia/2026/11/14/bernard-faz-alerta-e-aposta-em-volta-por-cima-do-atletico-mg-para-final.ghtml",
-     "data": "2026-11-15T01:29:28.000Z"
-    },
-    {
-     "titulo": "Mirassol e Atlético-MG não saem do empate em jogo adiantado do Brasileirão",
-     "veiculo": "ESPN",
-     "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPX2JjdUNvWDJ0Q0ZhUXRUNmRfZWthanZMcExQbVl6dXJOaFFkSFNiZWttY0M3R2IwdTk3eHpPNkpQOXotOUUtMjJZTklTcXpvM016R3ZyZ05yVEptZHRESVhlZW4ybDJMMUxzeTQ2cFMwenYwNFNlaEV3b0pWejdoSVo4VDZLYUdjMEFzZHF2NTJQVXJDU2hvUFVDWlNxaTR0NmdxS3NfUXZVM1htNDhRdkdmVUNkOGZSbVRPYUVNbkJxU3Q3bkE3QlZlQ3dydw?oc=5",
-     "data": "2026-11-15T01:26:00.000Z"
     }
    ],
-   "noticias_em": "2026-11-16T09:34:43.605Z",
+   "noticias_em": "2026-11-17T08:18:12.182Z",
    "texto_em": "2026-11-15T00:58:17.196Z",
    "videos": {
     "UULF0BhAOfmm1tJaJkPyTM9D_g": [
@@ -856,6 +856,12 @@
    "texto": "A 3 jogos do fim, o Mirassol está na luta contra o rebaixamento: 14º lugar, com 41 pontos, 4 pontos à frente do Corinthians, 17º, o primeiro da zona de rebaixamento. Pelas nossas simulações, o risco de cair é de 22%. A briga é embolada: o Grêmio (54%), o Vitória (44%) e o Corinthians (41%) também estão nela. No último jogo, empatou em 0 a 0 com o Atlético Mineiro em casa. Fora de campo, o assunto da semana é: “Ao vivo: Mirassol x Atlético-MG | Rodada 35 | Campeonato Brasileiro” (Globo Esporte). Agora vem o Fluminense, fora de casa, domingo, 22/11, e o jogo pesa: com vitória, o risco de cair vai a 1%; com empate, a 17%; com derrota, a 29%.",
    "autor": "frases",
    "noticias": [
+    {
+     "titulo": "Mirassol tem histórico positivo contra últimos adversários no Brasileirão; veja retrospecto",
+     "veiculo": "Globo Esporte",
+     "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQZkZJNm0wQ2x0TVlnR0Vobm5GTHJkR3lHZFJNN3lnQmpRa2VhYTY0Q09sMzltZUFfeU1qUDlVTGpmMjFxZ096Mzl3NXd6SVFrUTlCVDJKcUF0TkltQTMwb2JOS3czT19kTkJUdDAzdGdxRlI2V29Zb1pvZnpXSW9zU255MjhwRFhmbEZpT1ZwZXJQaHB1V3pDOUlGdkxaM01kbzB6WkpKaTBYRWlXT1BaZkxCeGJJN2lTTTl2N1p6dmNuNkZhazMxeHlaM2NKNG5qQ19MQmgwNDRpakZVZEw1MUJvUjM2cGtENWlqTThURkpuZEhBVUcxa2dSZl9UOEhoMElRdNIBkwJBVV95cUxNVnk2N0c2RktwTjBrSlZ4UFdJc25YZ0xjQi1yWHVJdV8yQklMRHp5NTJyRzlVS191eE5nZnVtLTdGUXFfazRIOUtjVGxxS2FMRjFManVSd3dGV3pvaTNubGhuNmZVbnVHWmgzVDhKYXpkMDFYSVhuRW92QUJWcS1EV2pIbGVjQU5rWWV3SkNnQ1l2a1M1TVI4UHc5am5RWTh4WFEtSlktZkV5LUZpQzZzTUNRcG9GSEhwR2N2SklNVmszdUFrd3Q1dm5PRW5wbHJXTHc2Wl92TVBPTDZhS3BOUVU3bUVuQkdyVHRsQ2pqTFhMOEE1bklidkpXWi12RjhlVmJBRW82QmdoMDRFUW9GbTlxTQ?oc=5",
+     "data": "2026-11-16T12:32:00.000Z"
+    },
     {
      "titulo": "Guanaes analisa empate e evita projetar reta final do Mirassol no Brasileirão: \"Ansiedade atrapalha\"",
      "veiculo": "Globo Esporte",
@@ -885,15 +891,9 @@
      "veiculo": "Globo Esporte",
      "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQcHBoZXZvdGhiS1FXWkFSZXdxR1ZVZ1RsR0VvQ3NLV1pMTHc1VXNnX3pvUE5uaUZxVTdyQ0JtZGVCT3p5XzZfOEhKbzlkSWFwWllwajNqRnRBVk81WkNlM25RNlN2eVRNOXp6eDY0bzNrUGt5blByMVhxSk5DRFlqNnZHZEpqeDN3WV9HVk1TQWpiMkhXZW9aZ2N0MHYxUnlINko5X3RtNjBzamJrcDFMcVlUbXdjVHhIOExuVUFkMjE0UEQ1SFVibGxKS1h4RFl5QlV4SnVyc0VXRDFiN1RSRF9od3lVclRiSFFUUzJvZlJ0RW5CN1ctOUpvMEhIZW1zMWNTUlNWa9IBlgJBVV95cUxPWGdnQlJjY2VacXVMTTU5SjVDRUZoZjNxZzNEVG45dFNKTlFFQk1UNUxrTmdmbUFmaTNUZmphaE50aDhVLVg0bmFBb2RNRkFwdGNGWE4zdnBlTFpZV3l2RDhhV3VBWHJRN2NOWkt2UnJ1T2VXTFl3Nm96Y294S2ZDOXU5MF85MmlDNmxCeVRnZUE4MDkwZkVncVdvMnN6U0ZJOHdMQnBMSnFNbFFuYUxBY1VOVk5IQ3d4OEFlVU53OTFnR0NjMjJfc2VfanNxeWtJVWdubDNHSGt6WWRFaHJpQ3NMSHdEMTZBeHhfRVV6NGZSYXBDMjhpWEdyblM3S1g0elJ0SWxaNUNYMDR5dGt6eTRNbmcxQQ?oc=5",
      "data": "2026-11-15T00:08:12.000Z"
-    },
-    {
-     "titulo": "Ruim para os dois: Mirassol e Atlético-MG empatam e se complicam na tabela",
-     "veiculo": "ESPN",
-     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBvdndVa29PdWk4R28weTB4UFlSazY5Y0hQTDFiQkRpWm4wMFBNcnNPY0ZFeVFuS3ZUNW1EdC1KTGZWRUMzcEs0SlZGOWw3SzZpNVhUdmQydmtkZUZPSUE?oc=5",
-     "data": "2026-11-15T00:01:39.000Z"
     }
    ],
-   "noticias_em": "2026-11-16T09:34:44.430Z",
+   "noticias_em": "2026-11-17T08:18:12.983Z",
    "texto_em": "2026-11-15T00:58:17.196Z",
    "videos": {
     "UULFiz7EFM1alBWxE2hM8k4f4Q": [
@@ -916,43 +916,43 @@
    "autor": "frases",
    "noticias": [
     {
-     "titulo": "DM do Palmeiras vira refúgio para ex-jogadores do clube",
-     "veiculo": "UOL Esporte",
-     "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQelRnXzhGZFlYbjFlQXpheFd3X3hHdl9pRTZqSWpNR1JEZThnSGw5c053QWNaQWhkQUJ6dzNNTTV5MEx3M2h0dEZNV214X2xnRDIySTRwN1ZDX0NwTE1Gb2lnblR3eDJzSGtpU0R3ZENUdGVPZFJoekhJNUdUWVBSWnVsTk1fTXI3Q25fX0RmdHdsaEpweFdPbG1HcmNjOWM4b3ZXTVBOTG1BQzhPSDNYWnVtRzZCVXNRb0pMakNlRTlBVERRMGVpVkxhdF90VDN3S3c?oc=5",
-     "data": "2026-11-16T08:36:19.000Z"
-    },
-    {
-     "titulo": "Palmeiras renova contratos de Giay e Mauricio; Lucas Evangelista deve ser o próximo",
+     "titulo": "Palmeiras prepara volta de Raphael Veiga e aguarda América por \"primeiro reforço\" de 2027",
      "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/futebol/times/palmeiras/noticia/2026/11/16/palmeiras-renova-contratos-de-giay-e-mauricio-lucas-evangelista-deve-ser-o-proximo.ghtml",
-     "data": "2026-11-16T07:00:00.000Z"
+     "link": "https://ge.globo.com/futebol/times/palmeiras/noticia/2026/11/17/palmeiras-prepara-volta-de-raphael-veiga-e-aguarda-america-por-primeiro-reforco-de-2027.ghtml",
+     "data": "2026-11-17T07:00:00.000Z"
     },
     {
-     "titulo": "Piquerez se machuca em amistoso do Uruguai e vira preocupação no Palmeiras antes de finais",
-     "veiculo": "ESPN",
-     "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOeF83ZXEyQkQwQzNBYlRxOUVOcTgwSGtQV0t2S2pyR0NoY1RwUkJIYVNmY0RHZXFqMG1VZXVYQmZmbXRURklOOXpCbkNYdXltUU5HUHY4RW1MRlgwS09OUnRHU2pWX3UzTE1lTlZmUmtRRXZJX0hFeExXT3lRaGhXYWQ3VDB5R0xYLTdPSnhSWEZLcGZqVjg1ZlJVbjNSeE5VSzVuZ1lENTd2eGx1dDVWVWgzNkQ0dHA5ekhwck9zZnZMVC1faWc1ekQ0T0g1ZVpqQnc?oc=5",
-     "data": "2026-11-15T17:01:00.000Z"
-    },
-    {
-     "titulo": "Piquerez sofre lesão em jogo do Uruguai e vira preocupação no Palmeiras",
+     "titulo": "Palmeiras terá voos fretados para contar com três convocados contra o Cruzeiro",
      "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/futebol/times/palmeiras/noticia/2026/11/15/piquerez-sofre-lesao-em-jogo-do-uruguai-e-vira-preocupacao-no-palmeiras.ghtml",
-     "data": "2026-11-15T16:20:08.000Z"
+     "link": "https://ge.globo.com/futebol/times/palmeiras/noticia/2026/11/16/palmeiras-tera-voos-fretados-para-contar-com-tres-convocados-contra-o-cruzeiro.ghtml",
+     "data": "2026-11-16T19:08:52.000Z"
     },
     {
-     "titulo": "Piquerez é liberado pelo Uruguai, mas volta ao Palmeiras com lesão na coxa",
-     "veiculo": "UOL Esporte",
-     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQVi11MVZRZS1DVTNuSHVKQnQtek5lZTMwMzRuN2lkU2tSaWdzTGpRSHJYWG1OQkRpNkpEelkwY1lEaE9veUV1T0NLRmstZ21qbFFtMkdwMEVfb1AxU1czTERVc1FwLUlGd3V4R1BGYkM1TUpRZ1dSYUVPU29oTVNEalAwRzRtV3ZQb1F5MmlkVzZJVmNlYnZidDJ3THNSTGtIMmduSDQ1T1lTekJrYk80SEtR?oc=5",
-     "data": "2026-11-15T16:07:36.000Z"
-    },
-    {
-     "titulo": "Cruzeiro se junta a Flamengo e Palmeiras e garante presença na Libertadores de 2027",
+     "titulo": "Palmeiras e Giay têm acordo por renovação até 2031; veja os bastidores",
      "veiculo": "ESPN",
-     "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNSDdCVUJfVzFPWDJ5OTkxOUlraTFxc0REMktZMGc5UVBCaG4tb1BhLUVUaUJEUEZNZHU0NEZIOVNkV1RsTnRqSUw0c3kybDFibU1GSjg3YV9rUmRRbnd1c1NUakp6U2xoS2JNRGFzcmsxZE1XM0JwaHk1YU9wSVc1Q3Eya0dfLU0yRDZHeVZNVV9LdmE0MGhhVmExU3ZHY1JkcXZPT3ZNRmZUODZxa2xMOUhxSjFwU01fY3Zsb0JPQ2wtZWNhbVVnS3dn?oc=5",
-     "data": "2026-11-15T01:08:00.000Z"
+     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQVHpiaEdJVjR4dy1yWk5RSG9jc3NfdFpqNlpkeFRGWGpSTC1TbFhaaGZqTjJ3elphUlNiQm11QVFCXzNWdEhmcmtHZHA1VVl0MEVFX25XYjNRVHZ0NHQ1YXlEV0dxMzhUbzRmM205SzdfekVab2E1RXlFYnNkeHBwd3U5UU0zTnVSWHkxbmVrX1hxYVJ0M1VXSGNTem9DSHo0T0NJcEctOElRc1VJZHl0SjEzcWNOVHpXQ1NkblNlRkR0ZXQ5TkhPakZXc2o?oc=5",
+     "data": "2026-11-16T18:31:00.000Z"
+    },
+    {
+     "titulo": "Joanna de Assis: Palmeiras tem voos fretados para Giay, Flaco e Arias",
+     "veiculo": "UOL Esporte",
+     "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQclE2TGNyVGhFc2VJZ3JqQ2t4a2xqVEIxamZsUmVielZLR28wWTYwZFFwVE5ZRGhGYzBDZTBTanE1RUdDOG9uUVdhREdlXzBaT25KUDdLUmxVUllsTnptbXFHc003NVoyV0xHSEp2STZSYm5pMVRqWVhNWnFWaHdjR0h3cHZabGJTaUVtZTdFNlZBSG0xRDFNZDl4a0hidEpHWll5eHI0OVF4bnJoS2RmUndzeWlPZV9vanlybk4tSjFTaGFueUZmSWYxdXJiWklRejg3bkpn?oc=5",
+     "data": "2026-11-16T18:14:14.000Z"
+    },
+    {
+     "titulo": "Palmeiras tem alento em meio ao pessimismo por presença de Piquerez na final da Libertadores",
+     "veiculo": "ESPN",
+     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNSVFpMlNndUJEQTRxRTAyWlBiTV9YdzUyUUlPaVZoQXN2N1BCX3hNVGFOendIMnhpRUZTQkE4Q3drX3FxVGNQWVp2V216WHZxb1d2bDZZSG1yU01xbFJYTThFcEJtY3hJMEpPdml1VDlQdXZlU0N4cHZrY3hmOWhROW9rQmJaV0dSUE4xbFl1bGE5RXVnYmlsVjdvWFFYTXJpNFRYSnFsWjRCSGNQWW9mMUNCY0RBS3NScmZJM3RVWmk?oc=5",
+     "data": "2026-11-16T17:39:00.000Z"
+    },
+    {
+     "titulo": "'Palmeiras não tem condição de suportar três frentes', diz Arnaldo Ribeiro",
+     "veiculo": "UOL Esporte",
+     "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQUU9aZnd1cjlSdlhLWDNRelRSR0Qwbno4M2o3amhzV09yUDh1bWRRZ3NxWnEzQWZ5WXN4cVVkY2kzNEJHOUdZWFoyaGw4OG5CVThjWVFwVkhiUmdENUtTN1BGdWJyYU1pYVczSWZZcXM3OFppMXUtZzJGR3Z1VVJBSkFha1JpTzhSenY5bEZZbTdaTmdTellRS2plSFZTcExQeHd0US1MeDJDbnVFbEgyU0oxZ3BneUVSbDVJNmJjQXAzMnIzMk9mcTlwdU44MVk2MzIySnhSaHVZQk0?oc=5",
+     "data": "2026-11-16T14:27:03.000Z"
     }
    ],
-   "noticias_em": "2026-11-16T09:34:46.058Z",
+   "noticias_em": "2026-11-17T08:18:14.698Z",
    "texto_em": "2026-11-10T01:32:39.654Z",
    "videos": {
     "UULFBKc-rPDivvwFiWdG-81wxw": [
@@ -975,43 +975,43 @@
    "autor": "frases",
    "noticias": [
     {
+     "titulo": "Entenda o impacto da ausência de Viveros para o Athletico na reta decisiva do Brasileirão",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/pr/futebol/times/athletico-pr/noticia/2026/11/17/entenda-o-impacto-da-ausencia-de-viveros-para-o-athletico-na-reta-decisiva-do-brasileirao.ghtml",
+     "data": "2026-11-17T07:00:00.000Z"
+    },
+    {
+     "titulo": "Paquetá volta aos treinamentos e deve reforçar o meio-campo do Flamengo contra o Athletico-PR",
+     "veiculo": "UOL Esporte",
+     "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxONHd5cGt3Y3RPTFZtTW5QaXhNczd5UXd1Y3B3WHU2TnlFLXNJTGxXWDBOdDlNaUkycGxtY1R5bWZZbEVRUE9xNWpYZHU4UEJaM1JmNnExSG15RG9mT093Sk5Cand4bVpqbzI1OGJfenVFbnhVQS16a2NIQzFhZjJZTlEyWTRPMGxsbzR4U29TdGFoSUZCLXV5RkVpVUw0d085OE9TVFF0MWk2VDc2LVpWbHY3YVpudlpjbjUyT3pqejN2TjU1Z01rMGxBMDZEajBlRUxudmtjU3hBMk4yNFJmb0pyY0xMbFJrZXdiT20wREpRRXV3TXpZ?oc=5",
+     "data": "2026-11-16T17:43:00.000Z"
+    },
+    {
+     "titulo": "Paquetá volta aos treinos e tem chance de reforçar o Flamengo contra o Athletico-PR",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/futebol/times/flamengo/noticia/2026/11/16/paqueta-volta-aos-treinos-e-tem-chance-de-reforcar-o-flamengo-contra-o-athletico-pr.ghtml",
+     "data": "2026-11-16T16:17:51.000Z"
+    },
+    {
+     "titulo": "STJD aumenta pena de Viveros, e atacante do Athletico volta na última rodada; veja detalhes",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/pr/futebol/times/athletico-pr/noticia/2026/11/16/stjd-aumenta-pena-de-viveros-e-atacante-do-athletico-volta-na-ultima-rodada-veja-detalhes.ghtml",
+     "data": "2026-11-16T14:44:40.000Z"
+    },
+    {
+     "titulo": "Flamengo x Athletico-PR ao vivo: onde assistir, horário e informações do Brasileirão 2026 - JC",
+     "veiculo": "UOL Esporte",
+     "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQbXZsTy0zVWRoS0tCMEZuajdMRXFCQS02ZnNRaDN3U1NiSmJlUzJZMzNZaUVYTTBLSmNmTjNVc3VwRDFVQ3ZoNnREVFJrNDdVeXU0UkU5V0NFOWJQN1NtaWdfcVJsNUZkRUk5ZDczaEdObm11WWxjUWxvSzlTN2RxNFF3a3F2Sm84YzJsRE5GVlhfenh6MUUtcnhyTkxZeldwZFEzWklNV3VsWFdUYTlHbkg3TklRMVlnVzktSVhtRlZkamR2TkpTRmFrSEF1TXBLdVRhQVFVa1ZROS1vWlo3OGlLUFBiZ0VsM0Fibg?oc=5",
+     "data": "2026-11-16T08:48:39.000Z"
+    },
+    {
      "titulo": "Athletico x Paraná Clube pela final da Copa Paraná: onde assistir ao vivo, horário e escalações",
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/pr/futebol/noticia/2026/11/16/athletico-x-parana-clube-pela-final-da-copa-parana-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
      "data": "2026-11-16T07:00:00.000Z"
-    },
-    {
-     "titulo": "Sem Viveros e mais dois: veja as opções no Athletico para encarar o Flamengo",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/pr/futebol/times/athletico-pr/noticia/2026/11/15/sem-viveros-e-mais-dois-veja-as-opcoes-no-athletico-para-encarar-o-flamengo.ghtml",
-     "data": "2026-11-15T07:00:00.000Z"
-    },
-    {
-     "titulo": "Jadson valoriza renovação no Athletico e avalia exigência para 2027: \"Torcedor não espera menos\"",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/pr/futebol/times/athletico-pr/noticia/2026/11/14/jadson-valoriza-renovacao-no-athletico-e-avalia-exigencia-para-2027-torcedor-nao-espera-menos.ghtml",
-     "data": "2026-11-14T07:00:00.000Z"
-    },
-    {
-     "titulo": "Athletico decide não disputar a Copa São Paulo de 2027; entenda o motivo",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/pr/futebol/times/athletico-pr/noticia/2026/11/13/athletico-decide-nao-disputar-a-copa-sao-paulo-de-2027-entenda-o-motivo.ghtml",
-     "data": "2026-11-13T15:41:37.000Z"
-    },
-    {
-     "titulo": "Athletico x Paraná Clube: última final foi há 24 anos, teve 12 gols e quatro expulsões; veja",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/pr/noticia/2026/11/13/athletico-x-parana-clube-ultima-final-foi-ha-24-anos-teve-12-gols-e-quatro-expulsoes-veja.ghtml",
-     "data": "2026-11-13T07:00:00.000Z"
-    },
-    {
-     "titulo": "Procuradoria do STJD recorre, e Viveros e Athletico serão julgados novamente",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/pr/futebol/times/athletico-pr/noticia/2026/11/12/procuradoria-do-stjd-recorre-e-viveros-e-athletico-serao-julgados-novamente.ghtml",
-     "data": "2026-11-13T00:29:46.000Z"
     }
    ],
-   "noticias_em": "2026-11-16T09:34:47.685Z",
+   "noticias_em": "2026-11-17T08:18:16.244Z",
    "texto_em": "2026-11-06T05:11:54.874Z",
    "videos": {
     "UULF1MwZRE5_wAu1Pe8pWcZtyQ": [
@@ -1046,6 +1046,30 @@
    "autor": "frases",
    "noticias": [
     {
+     "titulo": "Santos regulariza salários, mas convive com dívidas e cobranças na Justiça; veja panorama",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/sp/santos-e-regiao/futebol/times/santos/noticia/2026/11/17/santos-regulariza-salarios-mas-convive-com-dividas-e-cobrancas-na-justica-veja-panorama.ghtml",
+     "data": "2026-11-17T07:00:00.000Z"
+    },
+    {
+     "titulo": "Santos: Rony se reapresenta e volta a treinar após o assassinato de seu pai",
+     "veiculo": "UOL Esporte",
+     "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNUW8tU002OVU4b09JbHM4Y3owd3NHd0JFemtSYjZzX3BwNFBHUFRPR04tQTNjYlRnLW5zb0xvQnVmVWFTZWZiSndNU0liZGtkM2Z0R2FkdzZZZWNnN0piOGZuT21HVmhZcW4tTDRKbUtLLXAta0t4bTIyMmNvZ3ZqalNRSW5WY29MNFVZNWx6MVdHWUotX2Mwd0Z2ZDdobXk3WmxaXzd1MC1QMUNFOHJXQ0F3M3RCWXpCNDdVTXZYT3kxcVV2S1UyRkRreGp6Zk1xMlUyY04yVkZMODVEMkE?oc=5",
+     "data": "2026-11-16T22:19:50.000Z"
+    },
+    {
+     "titulo": "Eleições no Santos: Quaresma abre mão de candidatura à presidência e será vice de Maruca",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/sp/santos-e-regiao/futebol/times/santos/noticia/2026/11/16/eleicoes-no-santos-quaresma-abre-mao-de-candidatura-a-presidencia-e-sera-vice-de-maruca.ghtml",
+     "data": "2026-11-16T22:14:52.000Z"
+    },
+    {
+     "titulo": "Rodrygo pode voltar ao Santos? O que sabemos de procura e os planos do Real Madrid com brasileiro",
+     "veiculo": "ESPN",
+     "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNc29BeUZMOWlZdGotbFVRandsa0VMSWgyMWFiRVlXRXBXblE0LUtsa2pUbi1vVFJ5T05SeW5NQi1UNjJUek15VTZHY2dsWXQybS1lWVFIZHM3bHAwUVd0MmhxTmVncUVjcDFPdFlhUW9KcjZsOFJUdHRFNThxNUYxMDV1UEIzUkp6VE9uaFZKQTFOWnlKQUxucVhfejA1SExfTF9CeGZGTGwyNDFGcV9jSTdmRVVTbzJ2ZHFmLVc3M0R6YUctRUpJRmxrTGRQX0dmNlAwMzJB?oc=5",
+     "data": "2026-11-16T15:35:00.000Z"
+    },
+    {
      "titulo": "Neymar deve repetir \"maratona\" de 2025 pelo Santos, mas sem lesão e em busca da Libertadores",
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/sp/santos-e-regiao/futebol/times/santos/noticia/2026/11/16/neymar-deve-repetir-maratona-de-2025-pelo-santos-mas-sem-lesao-e-em-busca-da-libertadores.ghtml",
@@ -1056,33 +1080,9 @@
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/sp/santos-e-regiao/futebol/times/santos/noticia/2026/11/15/veja-quanto-neymar-investiu-em-fim-de-semana-de-poquer-durante-folga-do-santos.ghtml",
      "data": "2026-11-15T18:56:40.000Z"
-    },
-    {
-     "titulo": "Busca por vaga na Libertadores e definições políticas: Santos vive final de ano decisivo",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/sp/santos-e-regiao/futebol/times/santos/noticia/2026/11/15/busca-por-vaga-na-libertadores-e-definicoes-politicas-santos-vive-final-de-ano-decisivo.ghtml",
-     "data": "2026-11-15T07:00:00.000Z"
-    },
-    {
-     "titulo": "Santos é condenado pela CNRD a pagar quase R$ 30 milhões a Tiquinho Soares",
-     "veiculo": "ESPN",
-     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQYklWclJPcUtCRjZVaDctNklUajg1NmdDUmxWRHU4aVpQOHpnVXdyaGVjb1VyMXdYVk9UTy1Ka3lVUHQxZm9fSEdzSVgyckJCMHNLOVZmUG9OS2tQN1JISExIbGNPTVFDUURhNGZfLTdUUDEtdThoY1M2THhEQm8xSWFmcDY2RUtPa21nWTdtdUQ3QzBWZ0xSMTMxYWpYV2piSks0TlpwcE1EWlprcFNGbDhxakVRa28?oc=5",
-     "data": "2026-11-14T18:37:00.000Z"
-    },
-    {
-     "titulo": "Liberado para jogar pelo Santos, Neymar pode voltar a atingir marca dos tempos de PSG",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/sp/santos-e-regiao/futebol/times/santos/noticia/2026/11/14/liberado-para-jogar-pelo-santos-neymar-pode-voltar-a-atingir-marca-dos-tempos-de-psg.ghtml",
-     "data": "2026-11-14T07:00:00.000Z"
-    },
-    {
-     "titulo": "Neymar sem crédito? Craque brinca em campeonato de pôquer: 'Quebrei, gastei tudo no Santos'",
-     "veiculo": "ESPN",
-     "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPb0N3T29mN1NGc29wZk1qNHRLbGtvT3JRVGlmd1l1cHpyS24xNDBHUTdlT01qM2t1blVNcnhJM0trLXVLZm1wZ3BuTU9KUTJEcHQwUzBici1weWZsRUk0U2VzQTI1TUJPUEF2SWRIMFdCbUtOcjJJRVJrR2JhWGoxR0QzaDRtYmszTGNWdERCbS1wOE15aGRCcWNvUkFJcENxQlI1V21PTm5uUXNyc21OTUJ5MDhoa2FaaU9xRVVraldNNlRMS055U3hR?oc=5",
-     "data": "2026-11-14T00:54:00.000Z"
     }
    ],
-   "noticias_em": "2026-11-16T09:34:49.319Z",
+   "noticias_em": "2026-11-17T08:18:17.955Z",
    "texto_em": "2026-11-06T05:11:54.874Z",
    "videos": {
     "UULF-6BRAVobi7q0paklYjgW3Q": [
@@ -1117,6 +1117,24 @@
    "autor": "frases",
    "noticias": [
     {
+     "titulo": "O futuro de Dorival: veja o que os candidatos à presidência do São Paulo pensam sobre o treinador",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/futebol/times/sao-paulo/noticia/2026/11/17/o-futuro-de-dorival-veja-o-que-os-candidatos-a-presidencia-do-sao-paulo-pensam-sobre-o-treinador.ghtml",
+     "data": "2026-11-17T07:00:00.000Z"
+    },
+    {
+     "titulo": "Vinicius de Medeiros oficializa candidatura à presidência do São Paulo: \"Não é de continuísmo\"",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/futebol/times/sao-paulo/noticia/2026/11/16/vinicius-de-medeiros-oficializa-candidatura-a-presidencia-do-sao-paulo-nao-e-de-continuismo.ghtml",
+     "data": "2026-11-17T00:36:16.000Z"
+    },
+    {
+     "titulo": "Thiago Viana projeta São Paulo em 2027: 'Uma equipe muito forte'",
+     "veiculo": "UOL Esporte",
+     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNTW14OXlndzBJdmpBNG5CNnJrV0M4Qk01NlF4eGRsa1g5SFRHMEhqbjhPa0VGWjJTREQzSWVmakFjOU16cVNFMWtHMDJpdWxHUjk2Mmt0Nm5BOTZrQWlNQW1SQU8tcXJXOW5kM1otckZGVTJ6enhZeXdyYkVGVDhsMzYxcGgxZVVDMVAtbUJFUnpNSUluR3c2S19yMG5TY3NITnZ2ZTA5ZUl2RklEM3d6MnA0d0FMc2ZIck9hVkU2c1J0RmowV3c1NnVqVEU?oc=5",
+     "data": "2026-11-16T19:24:01.000Z"
+    },
+    {
      "titulo": "São Paulo inicia semana que pode deixar o clube mais perto da Libertadores",
      "veiculo": "UOL Esporte",
      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOZV9SUXVQNEVpVDVnem1BcU94aU1hclR3MXJiVzc1dExVRnp2Rm9sNnJsT2ZhU19TZWprZmxybjhXaDEwaDN2WkxoNnpQQnMzNE5zNzBwemxGaU1ieG51cTFkaDJISTVRYTRBRzVJUFE2cGwzYUI2SnA4TG93S1RiaXhFREd5MjlubXcxWlBwSkFWX3JwcFRrM2hfX0JUd29jNXJFckFaZGZzRFRXcTBETnVPQlZqZw?oc=5",
@@ -1133,27 +1151,9 @@
      "veiculo": "UOL Esporte",
      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNSElPWG1leUVSM19rc0xNR214bkJ4OHM4RENuMEdSQzYyRmNXWjNjZlRjM19KSkdzcXpjQU9ERmozVHVYT3JUbzBUSUNNMkZOeW5HSTcyX2pJM0pCUzZha0Y2WU1sR0M1MVk5R29xaEhkckpDYXQtY0h1OTRUcGwtLWphancyWUY1MXF3WWJMUlBCNVFRRXhnS1lBY1hkdTl0SEZXeWZRR2pzeHNiZnlBNXg0LV85Zw?oc=5",
      "data": "2026-11-15T18:47:23.000Z"
-    },
-    {
-     "titulo": "Veja cinco garotos do São Paulo que perderam espaço em 2026 e precisam recuperar prestígio",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/futebol/times/sao-paulo/noticia/2026/11/15/veja-cinco-garotos-do-sao-paulo-que-perderam-espaco-em-2026-e-precisam-recuperar-prestigio.ghtml",
-     "data": "2026-11-15T07:00:00.000Z"
-    },
-    {
-     "titulo": "São Paulo marca eleição do Conselho para o dia 29 de novembro",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/futebol/times/sao-paulo/noticia/2026/11/14/sao-paulo-marca-eleicao-do-conselho-para-o-dia-29-de-novembro.ghtml",
-     "data": "2026-11-14T16:33:15.000Z"
-    },
-    {
-     "titulo": "São Paulo 'foge' de Corinthians e Palmeiras e surpreende em data de eleição",
-     "veiculo": "UOL Esporte",
-     "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQZGdlaUJ1VDg4UzdUaWduSjlDVUwxV1BwUC0xT24zbDJPcmVtOEhoNmEyUUlfZHZwekdsV1Y3ZkpGcVp4T2dNdXB3cnBrQnJHWDdMY19raXh0NTc4am5GNkVJYV9sV2I2SUFzZnFvZWpub1FVOWtKOHAyeFRQbGFHTEhNWExzYV83bm9KOWRZTmc0N1gxNkVKUk00R05yX2VIQndkdi0xYXJGRTlWZGxpWm4wSWNLV2ROdUFkVVNGVFB2dnZWRm52WXoxN2JyUUlYM1FGR3lXZw?oc=5",
-     "data": "2026-11-14T08:30:00.000Z"
     }
    ],
-   "noticias_em": "2026-11-16T09:34:50.903Z",
+   "noticias_em": "2026-11-17T08:18:19.658Z",
    "texto_em": "2026-11-06T05:11:54.874Z",
    "videos": {
     "UULFX3zTAsEoZ61rQMYb_08Tow": [
@@ -1176,6 +1176,24 @@
    "autor": "frases",
    "noticias": [
     {
+     "titulo": "Pedro Emanuel chega a 30 jogos pelo Vasco com desempenho melhor que o de Diniz; compare",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/futebol/times/vasco/noticia/2026/11/17/pedro-emanuel-chega-a-30-jogos-pelo-vasco-com-desempenho-melhor-que-o-de-diniz-compare.ghtml",
+     "data": "2026-11-17T07:00:00.000Z"
+    },
+    {
+     "titulo": "Thiago Mendes e Sosa treinam no campo e devem retornar ao time do Vasco contra o Internacional",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/futebol/times/vasco/noticia/2026/11/16/thiago-mendes-e-sosa-treinam-no-campo-e-devem-retornar-ao-time-do-vasco-contra-o-internacional.ghtml",
+     "data": "2026-11-16T19:47:03.000Z"
+    },
+    {
+     "titulo": "Vasco planeja investimento de R$ 125 milhões em reforços",
+     "veiculo": "ESPN",
+     "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPYTFFRmJjbUdPaEdNSG94aDFxYmJCVFppTmozWkgxU2Z0NFZUWFpIMVVFeWQ5dkI3bm9KN0pQLXFJcGE2ZXBxOEtFZHAwdkxGTXFWSER5X2RGSkdKaldOTWlhbzd5TXVHRE1yc2U0QWhVdG0zRDllNjIzbGNaUk5SbnJJX3NsLWlDVDJ6VXRoekV3V0tYMkpIamRIQjFOeHJ4ZVp0MVpCOU5HdlRjSUdXYnZGRFNyMEgwUWtsSmtRbmtaME5oYkdIMHJiWVIwY1pqdmhPN3N3?oc=5",
+     "data": "2026-11-16T14:50:00.000Z"
+    },
+    {
      "titulo": "Com reeleição e confiança de Lamacchia, Pedrinho deve seguir no futebol do Vasco",
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/futebol/times/vasco/noticia/2026/11/16/com-reeleicao-e-confianca-de-lamacchia-pedrinho-deve-seguir-no-futebol-do-vasco.ghtml",
@@ -1192,27 +1210,9 @@
      "veiculo": "ESPN",
      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNNFJRSkhQZkYxVVJNcGJSVmFJMEN6MmIyYVo4YVVBa1kwd0g0Z1JxNGl2WlBCaXlKQ3hoOXNPdjZNcGhES1o2YmRZVllHOS13bjNoVENNdDJDSjJfcmE0T1JZZTJFN3VCb1ZkT3F2OXpvb2VfLVV0M1dOR2VaTmR5TS1zak0yc0lZRTd3eWNtVzVDSm1PbmhURHNxb1ZIRDBaTFJQcEJSSURuMEtGcnVTcWxNMzJBZUJndENJeVBLSVVOYXdjeGJn?oc=5",
      "data": "2026-11-15T18:04:00.000Z"
-    },
-    {
-     "titulo": "Vasco praticamente zera risco de queda no Brasileirão; veja as chances",
-     "veiculo": "UOL Esporte",
-     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPMDBpVUJUVW9SOG94RVF0dXJmNmJWY1BkME96WmxILWtZWmhFZ0RrWFFWanJ2REZEOFFBX1BrRlBiRjBia1g1WjFFakNULXd5cndKQ3pUNXBvNDJOdEdRQ2xLUHQtcDVNTVN3QlFReWdidVFDUXUyYjBuVzVyNy1LOFVILUpZU1lCZlgwZWZQVFdFSlZMT2pJYnp5a25ZbnBPLWV3TWRJbXc?oc=5",
-     "data": "2026-11-15T13:45:36.000Z"
-    },
-    {
-     "titulo": "Vasco vence a Chapecoense fora de casa no Brasileirão e sonha com vaga na Libertadores; melhores momentos",
-     "veiculo": "ESPN",
-     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBDczhvZjNQU0VEaWQ4TlZmaE9mZmIyQ2xOMmpUWjZFQVVlNHhqMVJxRlI3QUh6bG1yOURzQ1BfcjBKODVrTEZjbE1ITXlBODYzZHBYQU5SRG51ME9wMWc?oc=5",
-     "data": "2026-11-15T13:06:51.000Z"
-    },
-    {
-     "titulo": "Admar Lopes renova com o Vasco até o fim de 2027",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/futebol/times/vasco/noticia/2026/11/15/admar-lopes-renova-com-o-vasco-ate-o-fim-de-2027.ghtml",
-     "data": "2026-11-15T05:00:00.000Z"
     }
    ],
-   "noticias_em": "2026-11-16T09:34:52.502Z",
+   "noticias_em": "2026-11-17T08:18:21.424Z",
    "texto_em": "2026-11-15T02:04:56.956Z",
    "videos": {
     "UULFUzrTcQHWjvIF_XYTstdlbw": [
@@ -1247,6 +1247,12 @@
    "autor": "frases",
    "noticias": [
     {
+     "titulo": "Em maior sequência fora da zona de rebaixamento desde 2013, Vitória volta a correr risco de entrar no Z-4",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/ba/futebol/times/vitoria/noticia/2026/11/17/em-maior-sequencia-fora-da-zona-de-rebaixamento-desde-2013-vitoria-volta-a-correr-risco-de-entrar-no-z-4.ghtml",
+     "data": "2026-11-17T07:00:00.000Z"
+    },
+    {
      "titulo": "Reforços do Vitória na segunda janela têm participação discreta",
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/ba/futebol/times/vitoria/noticia/2026/11/16/reforcos-do-vitoria-na-segunda-janela-tem-participacao-discreta.ghtml",
@@ -1275,15 +1281,9 @@
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/ba/futebol/times/vitoria/noticia/2026/11/13/fora-ha-mais-de-dois-meses-ramon-se-aproxima-de-retorno-ao-vitoria-para-reta-final-da-temporada.ghtml",
      "data": "2026-11-13T07:00:01.000Z"
-    },
-    {
-     "titulo": "Título nacional, pulso firme e fama de retranqueiro: conheça Rafael Lacerda, novo técnico do Vitória",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/ba/futebol/times/vitoria/noticia/2026/11/12/titulo-nacional-pulso-firme-e-fama-de-retranqueiro-conheca-rafael-lacerda-novo-tecnico-do-vitoria.ghtml",
-     "data": "2026-11-12T07:00:00.000Z"
     }
    ],
-   "noticias_em": "2026-11-16T09:34:54.112Z",
+   "noticias_em": "2026-11-17T08:18:23.067Z",
    "texto_em": "2026-11-10T01:32:39.654Z",
    "videos": {
     "UULFJrrx7FDDj1n4srLwoAK0WA": [
@@ -1316,6 +1316,18 @@
   "america-mineiro": {
    "noticias": [
     {
+     "titulo": "Relembre a última vez em que América-MG disputou a Série C",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/futebol/times/america-mg/noticia/2026/11/17/relembre-a-ultima-vez-em-que-america-mg-disputou-a-serie-c.ghtml",
+     "data": "2026-11-17T07:00:00.000Z"
+    },
+    {
+     "titulo": "América-MG renova com Moacir Júnior para Série C",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/futebol/times/america-mg/noticia/2026/11/16/america-mg-renova-com-moacir-junior-para-serie-c.ghtml",
+     "data": "2026-11-16T22:12:36.000Z"
+    },
+    {
      "titulo": "América-MG 0-2 Avaí (14 de nov, 2026) Estatísticas dos times",
      "veiculo": "ESPN",
      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5BcFYzS19IZEczeVR5ZVpzTzh0Z0h4eFg2MTgxRHZYeDhZekVOaEYzakFOUnFiajd1MlJjN1FNTlVicEx2WmY5QWU5aTFEeWEwUWU3VU1pV1BLLUZ4NE9oYlBuTUllWnFpU0VfQw?oc=5",
@@ -1328,31 +1340,19 @@
      "data": "2026-11-14T22:45:00.000Z"
     },
     {
+     "titulo": "Avaí vence o América-MG, mas não evita rebaixamento e volta à Série C após 28 anos",
+     "veiculo": "UOL Esporte",
+     "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQOGQ1QU0wTXhnTnozcnM5V3o1N29TZUxyN2ZjYkFXMkhZOFNFX3RoZTF4MGRxMEltMVFSQS1LNURRc2ZCRGlYQThCSkdaejVhMHZTTk5nOFVfenVuTXhRUHotY2xsaml1WUtLSmNoSmpUSzBEZkFoWDFjbWhONVdTZ3JCU0xXSEZ0WjhvdnZuNkkyQXVMSG9yTkZ2NG4xMVlYbVBhRHdobjZXRl9JTE9RNXJnUGRtWnlWb3h2UnVSNGtoSVIxXzFDUldqQVl1bHRHbkNIM0FDS0J5MkFzLXpuZWhGVXh4aGs?oc=5",
+     "data": "2026-11-14T21:56:00.000Z"
+    },
+    {
      "titulo": "Transmissão ao vivo de América-MG x Avaí pela Série B: veja onde assistir",
      "veiculo": "UOL Esporte",
      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNRnRIWDNoNm9ocnJMMEpHSDRrMW5BbGNEakU5N2NTVkhWaHNvZ1dBeWdMbnExZXh1T2VTdEtteGQwWW1VcUR3cjBHY1Y2b1lMaTVmSTQ2Vm9TVWVOUmdhWDFITXUyRlZNU0JsaHpsa2ZkYVlPSVFSOWxJYlpERVZvUURjYnNyaGNUajk5LTJPR3c0Sm43c01xaW02VFRWbXZvbThZcl92cjc2OXgxYXJlRTE1cFBEc0t5Z2g1LVY1ektHQ0hNSXRUcGVWSVpCQ3VYY0E?oc=5",
      "data": "2026-11-14T18:00:00.000Z"
-    },
-    {
-     "titulo": "América-MG x Avaí: onde assistir ao vivo, horário e escalações",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/mg/zona-da-mata-centro-oeste/futebol/brasileirao-serie-b/noticia/2026/11/14/america-mg-x-avai-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
-     "data": "2026-11-14T03:01:00.000Z"
-    },
-    {
-     "titulo": "América-MG x Avaí: onde assistir ao vivo, horário, palpite e prováveis escalações do jogo da Série B",
-     "veiculo": "ESPN",
-     "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOZnhRZXh3SE0zdnB6dkNsXzVPS09HUkV2bHE3bU1YLThtNnEwQWlucmZzZENhbk1heC1KT3cyOWU5ZzNPSE1ZeGJuY1RnSDN2N1VMcV90TnplcmduTzhFUDhJTUs0TjBUNGFvQk1KVXMyZ2ZjcWNUbGtsUzVKQ2ZCX3ozdUt3Q2hPbmlGTHpmWUU0djFJMFVXbXFGSGF4NUJyT0JmWE5pT3dXOGoyZ2xYR1R6RWtCX1VyTlpEUEJkclY4NmpUcFpmZHhaTi10YTVfTTNCS3JEVnQ3Q1RleGZCeUkybktUTUdVZTVzdFM0QVk5Nllw?oc=5",
-     "data": "2026-11-13T12:47:00.000Z"
-    },
-    {
-     "titulo": "TCE mantém suspensão de patrocínio de R$ 32 milhões para América-MG, Atlético-MG e Cruzeiro",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/mg/futebol/noticia/2026/11/10/tce-mantem-suspensao-de-patrocinio-de-r-32-milhoes-para-america-mg-atletico-mg-e-cruzeiro.ghtml",
-     "data": "2026-11-10T22:39:29.000Z"
     }
    ],
-   "noticias_em": "2026-11-16T09:34:55.603Z",
+   "noticias_em": "2026-11-17T08:18:24.651Z",
    "texto": "Fase de ouro para o América-MG, que venceu 4 dos últimos cinco jogos. No último jogo, perdeu para o Avaí por 2 a 0 em casa. Em 19º lugar, com 29 pontos, a queda para a Série C já está confirmada, infelizmente. A defesa vem segura, com só 3 gols sofridos. Nos bastidores, a notícia que mais chama atenção é “TCE mantém suspensão de patrocínio de R$ 32 milhões para América-MG, Atlético-MG e Cruzeiro”, segundo o Globo Esporte. A temporada do América-MG na Série B já terminou.",
    "autor": "frases",
    "texto_em": "2026-11-14T21:36:10.988Z",
@@ -1399,19 +1399,19 @@
      "data": "2026-11-08T11:50:16.000Z"
     },
     {
+     "titulo": "Atlético-GO vence Athletic de virada e segue na disputa pelo G6 da Série B",
+     "veiculo": "UOL Esporte",
+     "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPRm9iaGg2eUlvM1VpWUtMR0wzMTZVUlV4V2NNbmdpdWxsN3V4b1Y5bXI0Y19zRElMRkdPYUotUUZ6bTBOakQ1TjExamlvOEdEVHVyWFZSV0NUWHNmamRWTGJJRUtxRjE2a0swZTYxUjEtVmJBeE1KY19yaVhNU3M5OHJFSDJpeFZ1QmZ2Y3cwWWZDQXliSWkzeVF5alZIZWM1cVBXby1NbnRYU0dDNUM0R3NZdDRQem5DYUExZ19leThfc1RXVTJZ?oc=5",
+     "data": "2026-11-08T08:00:00.000Z"
+    },
+    {
      "titulo": "Athletic x Atlético-GO: onde assistir ao vivo, horário e escalações",
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/mg/zona-da-mata-centro-oeste/futebol/brasileirao-serie-b/noticia/2026/11/08/athletic-x-atletico-go-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
      "data": "2026-11-08T03:01:00.000Z"
-    },
-    {
-     "titulo": "Luan Polli se despede e não joga mais pelo Athletic",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/mg/zona-da-mata-centro-oeste/futebol/times/athletic-club/noticia/2026/11/06/luan-polli-se-despede-e-nao-joga-mais-pelo-athletic.ghtml",
-     "data": "2026-11-06T10:41:41.000Z"
     }
    ],
-   "noticias_em": "2026-11-16T09:34:57.581Z",
+   "noticias_em": "2026-11-17T08:18:26.665Z",
    "texto": "A fase não é das melhores para o Athletic: só 5 pontos nos últimos cinco jogos. No último jogo, ficou no 2 a 2 com o São Bernardo fora de casa. Em 13º lugar, com 48 pontos, o Athletic já não briga pelo acesso nem corre risco de cair: a temporada é de transição. Nos últimos 5 jogos, foram 6 gols marcados e 7 sofridos: tudo bem equilibrado. Fora de campo, o assunto da semana é: “Zeca, Kauan Lindes e mais dois anunciam saída do Athletic” (Globo Esporte). A temporada do Athletic na Série B já terminou.",
    "autor": "frases",
    "texto_em": "2026-11-13T01:45:35.642Z",
@@ -1433,6 +1433,18 @@
   },
   "atletico-goianiense": {
    "noticias": [
+    {
+     "titulo": "Atlético-GO x Vila Nova: veja detalhes da venda de ingressos para partida de ida dos playoffs da Série B",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/go/futebol/times/atletico-go/noticia/2026/11/16/atletico-go-x-vila-nova-veja-detalhes-da-venda-de-ingressos-para-partida-de-ida-dos-playoffs-da-serie-b.ghtml",
+     "data": "2026-11-16T22:15:37.000Z"
+    },
+    {
+     "titulo": "Presidente do Atlético-GO diz que não gostaria de enfrentar o Vila Nova nos playoffs da Série B",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/go/futebol/times/atletico-go/noticia/2026/11/16/presidente-do-atletico-go-diz-que-nao-gostaria-de-enfrentar-o-vila-nova-nos-playoffs-da-serie-b.ghtml",
+     "data": "2026-11-16T19:26:35.000Z"
+    },
     {
      "titulo": "Após classificação do Atlético-GO, Roger projeta clássico com o Vila e mostra confiança",
      "veiculo": "Globo Esporte",
@@ -1456,21 +1468,9 @@
      "veiculo": "ESPN",
      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFAwRkd1M0szNVprc2ZzbTh1dmw3MTd4Y0Zzc2NRVEdiRjkxeGw0eXVQMXJHb1hmMXNlZXdFclZ6Q05yeHBBM0doanJYSjNMa1J0SzAyZm03TkxkbjI1Wmc?oc=5",
      "data": "2026-11-14T22:43:33.000Z"
-    },
-    {
-     "titulo": "Atlético-GO vence o Cuiabá, conta com tropeços de rivais e vai aos playoffs da Série B",
-     "veiculo": "UOL Esporte",
-     "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQMHdXd09PVDJkc0p5YWhpWTJJVng4NDNtM3NvaXVEbTBWcE1jYUFEMjVKcmZCSndkWTltSGdXSWROWlNjeXdMNVJZYy1DYktSWjhIZzFkOVZkdHdwQ2tMaGtGcnl0MmF0LUh6M2xTTW41emJrb1FKSGR6Zms4cWlHTXRqSEpSaG5UMlBGaTNWMWI4Wm5ydFBZVGZSZ1A3cEhiSml4TWhPTURiOEhsWV8wc1RGMGY0OGhLWXRfVjdRUzZJVEJudV8tYnZ0RHpHU3BPcUJ1QmJyZ05hZHBTVzZfclE1UWlCWnBFdVRxQw?oc=5",
-     "data": "2026-11-14T22:12:00.000Z"
-    },
-    {
-     "titulo": "Goiás perde para o Sport e vê Atlético-GO ficar com última vaga nos playoffs da Série B",
-     "veiculo": "UOL Esporte",
-     "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNRzk3TnRkZnQyQWxIUUQzQkxFVElucUI4bS1IYmNmSzVfcFJpd0dBaEJ6cEdVaGplSHdnMHRpbkQ5cU9PdlN0cmZTdFpveVlrRG5Qd0NLd1ZxeDNCYmtkTXdYeDVRdXRTSUE0NXFQVG5SVGpVNzVLa3FxLWpRMTJxdHdxS1huMC03U1dSTHRkdlZqWGpqbE41bmFuR1N5OWRReVJ5aGF2a3pKWVZSVnhBTThSdkw5a2M0QTZfaXN0RjlhMHNXZTZTS1hyNUx1elNETTZWX1JneVFaUDZ0QWkyTkhrQ1R6U0FHczJQQk5hNA?oc=5",
-     "data": "2026-11-14T21:52:00.000Z"
     }
    ],
-   "noticias_em": "2026-11-16T09:34:59.094Z",
+   "noticias_em": "2026-11-17T08:18:28.298Z",
    "texto": "Nem lá, nem cá: o Atlético-GO fez 8 dos últimos 15 pontos possíveis. No último jogo, venceu o Cuiabá por 1 a 0 em casa. Já são 3 jogos sem perder. Em 6º lugar, com 61 pontos, a meta realista é o playoff: 33% de chance de terminar entre o 3º e o 6º. Nos últimos 5 jogos, foram 5 gols marcados e 4 sofridos: tudo bem equilibrado. Nos bastidores, a notícia que mais chama atenção é “Atlético-GO tem combo de novidades para enfrentar o Cuiabá; veja provável escalação”, segundo o Globo Esporte. A temporada do Atlético-GO na Série B já terminou.",
    "autor": "frases",
    "texto_em": "2026-11-14T21:36:10.988Z",
@@ -1493,6 +1493,24 @@
   "avai": {
    "noticias": [
     {
+     "titulo": "O milagre não foi consumado, e o Avaí retorna à Serie C depois de 30 anos",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/sc/blogs/chico-lins-na-rede/post/2026/11/16/o-milagre-nao-foi-consumado-e-o-avai-retorna-a-serie-c-depois-de-30-anos.ghtml",
+     "data": "2026-11-16T19:18:08.000Z"
+    },
+    {
+     "titulo": "Avaí inicia reforma administrativa, e Lucas Pedrozo se despede do clube",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/sc/futebol/times/avai/noticia/2026/11/16/avai-inicia-reforma-administrativa-demitindo-lucas-pedrozo.ghtml",
+     "data": "2026-11-16T18:56:40.000Z"
+    },
+    {
+     "titulo": "Após duelos nas Séries A e B, Avaí e Figueirense se reencontram na C",
+     "veiculo": "UOL Esporte",
+     "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPNGZWb2tDZGcxSUlPZlNkQWw0c0EwTFN4Ui14OUppT0pndi1wMzhscnlZTThUM0g2OXAxckczd0pyOW16M2xtOExSalJ6elU3VGJucWUxUXpPZTduemdqUlZET2RXWjRuYlFwX1JvVmwwX2hRTndvUzdxNUdzQ0NLcHNPbUx0c1BKRGx6TjdrVnBTWGVIZXpQNlJMZ1djN1Y5ajl2bXNBLUxxYXpuVXZldHp6NU9PLVVtTlYzVVl3ZjBaVVlhNVRaOEVRSUw4OF9hMk5qSTBR?oc=5",
+     "data": "2026-11-16T08:30:00.000Z"
+    },
+    {
      "titulo": "Análise: Avaí vence no fim, mas rebaixamento foi construído muito antes da última rodada",
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/sc/futebol/times/avai/noticia/2026/11/15/analise-avai-vence-no-fim-mas-rebaixamento-foi-construido-muito-antes-da-ultima-rodada.ghtml",
@@ -1509,27 +1527,9 @@
      "veiculo": "UOL Esporte",
      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1jVjYxSVFqUTVLd1VFWGxFZDVvWlAzcGVkb015VXROSUpJV3Y0amVZeWlmRGtpU194bGlmNElVbldGTlJZUGlFTmxFamJjYmdyYXV0eUxnU2oyc1YycGVFalF2aW81Um8?oc=5",
      "data": "2026-11-15T01:17:32.000Z"
-    },
-    {
-     "titulo": "VÍDEO: Torcedores do Figueirense comemoram com fogos de artifício o rebaixamento do Avaí da Série B",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/sc/futebol/noticia/2026/11/14/video-torcedores-do-figueirense-comemoram-com-fogos-de-artificio-o-rebaixamento-do-avai-da-serie-b.ghtml",
-     "data": "2026-11-14T23:50:30.000Z"
-    },
-    {
-     "titulo": "Atuações do Avaí: Gaspar volta a ter estrela e Igor Bohn salva de novo; dê suas notas",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/sc/futebol/times/avai/noticia/2026/11/14/atuacoes-do-avai-gaspar-volta-a-ter-estrela-e-igor-bohn-salva-de-novo-de-suas-notas.ghtml",
-     "data": "2026-11-14T23:02:36.000Z"
-    },
-    {
-     "titulo": "Avaí vence na última rodada da Série B, mas é rebaixado e se junta a Londrina, América-MG e Ponte Preta",
-     "veiculo": "ESPN",
-     "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPMWpMbHVrUFlLN0tkUjd4Q3dQUGFpSGJ3TV91MzFXdWRIVGN2NHZrOVhfa0VUSlpLcHRhV00zeVRhTFdBeVk1TnVaUDdoX0hkOEo4WE5uQTB5UC1sYVZ2M3dabUhIc2xwNWVnR25RaDlRdUcxTWxUVjZzbVRPazJGUnBGY0dsX2YxSk80aEJVVG5wUXhxV3VTbmdfU1BrXzdUNFdEWFF1a1dDSlBlNmh3Z25jVG8zU2ZEcHVhZTlHejRmMWFldFg2U3RJMnBkd3FLbXBodkpUV0ZLSHpkVlpz?oc=5",
-     "data": "2026-11-14T22:45:00.000Z"
     }
    ],
-   "noticias_em": "2026-11-16T09:35:00.734Z",
+   "noticias_em": "2026-11-17T08:18:30.151Z",
    "texto": "O Avaí vive uma fase de altos e baixos: 7 pontos nos últimos cinco jogos. No último jogo, venceu o América-MG por 2 a 0 fora de casa. Em 16º lugar, com 43 pontos, o sinal de alerta está ligado: 43% de risco de cair. Nos últimos 5 jogos, foram 4 gols marcados e 4 sofridos: tudo bem equilibrado. Fora de campo, o assunto da semana é: “Daniel Penha retorna ao Avaí titular; veja o provável time para o último jogo da temporada” (Globo Esporte). A temporada do Avaí na Série B já terminou.",
    "autor": "frases",
    "texto_em": "2026-11-14T21:36:10.988Z",
@@ -1551,6 +1551,18 @@
   },
   "botafogo-sp": {
    "noticias": [
+    {
+     "titulo": "Botafogo-SP contrata volante Gustavo Barreto, ex-América-MG",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/sp/ribeirao-preto-e-regiao/futebol/times/botafogo-sp/noticia/2026/11/16/botafogo-sp-contrata-volante-gustavo-barreto-ex-america-mg.ghtml",
+     "data": "2026-11-16T20:46:57.000Z"
+    },
+    {
+     "titulo": "Botafogo-SP anuncia lateral-esquerdo Heron, primeiro reforço para 2027",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/sp/ribeirao-preto-e-regiao/futebol/times/botafogo-sp/noticia/2026/11/16/botafogo-sp-anuncia-lateral-esquerdo-heron-primeiro-reforco-para-2027.ghtml",
+     "data": "2026-11-16T18:23:18.000Z"
+    },
     {
      "titulo": "Botafogo-SP tem 25 jogadores com contrato para 2027; veja lista",
      "veiculo": "Globo Esporte",
@@ -1574,21 +1586,9 @@
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/sp/ribeirao-preto-e-regiao/futebol/times/botafogo-sp/noticia/2026/11/14/tencati-mira-ate-oito-reforcos-no-botafogo-sp-e-define-inicio-da-pre-temporada.ghtml",
      "data": "2026-11-14T22:09:31.000Z"
-    },
-    {
-     "titulo": "Atuações do Botafogo-SP: Pedrinho deixa boa impressão em derrota; dê suas notas",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/sp/ribeirao-preto-e-regiao/futebol/times/botafogo-sp/noticia/2026/11/14/atuacoes-do-botafogo-sp-pedrinho-deixa-boa-impressao-apesar-de-derrota-de-suas-notas.ghtml",
-     "data": "2026-11-14T21:35:14.000Z"
-    },
-    {
-     "titulo": "Juventude 2-0 Botafogo-SP (14 de nov, 2026) Estatísticas dos times",
-     "veiculo": "ESPN",
-     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPV1Nscl9kQVJVc1IyTGZsdjVuQmx4NnQyOHh3YnlXNmlkVHNyTkZzWXl2NWZnQTBFa1JEOGwtcGVrT0RHekx4S3Y0VGgyWVZwbG55bi0xd0ZJMUFkanI0cUVidzh6eUZJTHN6RGc2TGMwZ2Z3X1dkbzdDYk1panVQZl9rRnozWVB6Rmc?oc=5",
-     "data": "2026-11-14T19:32:31.000Z"
     }
    ],
-   "noticias_em": "2026-11-16T09:35:02.231Z",
+   "noticias_em": "2026-11-17T08:18:31.753Z",
    "texto": "O Botafogo-SP atravessa uma boa fase: somou 10 dos últimos 15 pontos possíveis. No último jogo, perdeu para o Juventude por 2 a 0 fora de casa. Em 12º lugar, com 51 pontos, o Botafogo-SP já não briga pelo acesso nem corre risco de cair: a temporada é de transição. A defesa vem segura, com só 3 gols sofridos. Fora de campo, o assunto da semana é: “Botafogo-SP fecha patrocínio máster pontual para última rodada da Série B” (Globo Esporte). A temporada do Botafogo-SP na Série B já terminou.",
    "autor": "frases",
    "texto_em": "2026-11-14T22:20:19.306Z",
@@ -1611,6 +1611,30 @@
   "ceara": {
    "noticias": [
     {
+     "titulo": "Em 2026, Ceará fez pior campanha da história do clube na Série B",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/ce/futebol/times/ceara/noticia/2026/11/17/em-2026-ceara-fez-pior-campanha-da-historia-do-clube-na-serie-b.ghtml",
+     "data": "2026-11-17T07:00:01.000Z"
+    },
+    {
+     "titulo": "Ceará cumpre apenas uma das quatro metas de 2026",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/ce/futebol/times/ceara/noticia/2026/11/16/ceara-cumpre-apenas-uma-das-quatro-metas-de-2026.ghtml",
+     "data": "2026-11-16T20:00:00.000Z"
+    },
+    {
+     "titulo": "Presidente do Ceará deve deixar cargo, e vice assumirá planejamento",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/ce/futebol/times/ceara/noticia/2026/11/16/presidente-do-ceara-promete-deixar-o-cargo-e-vice-assume-planejamento-do-futebol.ghtml",
+     "data": "2026-11-16T15:45:09.000Z"
+    },
+    {
+     "titulo": "Ceará se apresenta no dia 15 de dezembro para pré-temporada de 2027",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/ce/futebol/times/ceara/noticia/2026/11/16/ceara-se-reapresenta-no-dia-15-de-dezembro-para-pre-temporada-de-2027.ghtml",
+     "data": "2026-11-16T12:47:28.000Z"
+    },
+    {
      "titulo": "Batatais elogia Richard e líderes do Ceará em permanência na Série B",
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/ce/futebol/times/ceara/noticia/2026/11/15/batatais-elogia-richard-e-lideres-do-ceara-em-permanencia-na-serie-b.ghtml",
@@ -1621,33 +1645,9 @@
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/ce/futebol/times/ceara/noticia/2026/11/15/analise-ceara-sobrevive-a-propria-incompetencia-mas-nao-pode-comemorar-o-fracasso.ghtml",
      "data": "2026-11-15T07:00:01.000Z"
-    },
-    {
-     "titulo": "'Bota dinheiro que os cabra joga': presidente do Ceará brinca com Adson Batista",
-     "veiculo": "ESPN",
-     "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQaVNQNjd0YlliMzN6SktBRHhPR3lyd2d5S2hFM3UwSXRCcjRHbUhTeGUxUWVoSXozalpsVlV5TFZsaVZOYnhaZFJpQWIyQ25OdVZfb3lSc0FvVkFPcFFsbTdkWU9qVWJBU0dISGdpN1dMb0JFVlZmVkl3XzUtVmhnZmxaYXdLeFF5MWVwTnBtZjg2dTZMYXRxdktKZzZTeXJ5SHNWZzNBdTRmOGJKbFlWdkZQdE50Z291bWV5QkRMMV84YzZWc2lTcHJRc3hRczY5aHpUeEg2LXJqdHRMLTdPNzNITGhXQTZSOGpJaThqWTNiWS1rang3N0hJeVVRdVdTNFE?oc=5",
-     "data": "2026-11-15T01:55:00.000Z"
-    },
-    {
-     "titulo": "Mala branca? Presidente do Ceará diz em ligação: \"Te falei... Bota dinheiro que os cabra joga\"",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/go/futebol/brasileirao-serie-b/noticia/2026/11/14/mala-branca-presidente-do-ceara-diz-em-ligacao-te-falei-bota-dinheiro-que-os-cabra-joga.ghtml",
-     "data": "2026-11-14T23:57:02.000Z"
-    },
-    {
-     "titulo": "CRB x Ceará: onde assistir ao vivo, horário e escalações",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/al/futebol/brasileirao-serie-b/noticia/2026/11/14/crb-x-ceara-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
-     "data": "2026-11-14T03:30:00.000Z"
-    },
-    {
-     "titulo": "Escalação: Ceará enfrenta CRB em jogo decisivo, sob comando interino e com mudanças no time",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/ce/futebol/times/ceara/noticia/2026/11/13/escalacao-ceara-enfrenta-crb-em-jogo-decisivo-sob-comando-interino-e-com-mudancas-no-time.ghtml",
-     "data": "2026-11-13T20:00:00.000Z"
     }
    ],
-   "noticias_em": "2026-11-16T09:35:03.800Z",
+   "noticias_em": "2026-11-17T08:18:33.425Z",
    "texto": "A fase é ruim para o Ceará, que fez só 2 pontos dos últimos 15 possíveis. No último jogo, ficou no 1 a 1 com o CRB fora de casa. Já são 6 jogos sem vencer. Em 16º lugar, com 44 pontos, o Ceará já não briga pelo acesso nem corre risco de cair: a temporada é de transição. Nos últimos 5 jogos, foram 4 gols marcados e 8 sofridos: tudo bem equilibrado. Nos bastidores, a notícia que mais chama atenção é “Escalação: Ceará enfrenta CRB em jogo decisivo, sob comando interino e com mudanças no time”, segundo o Globo Esporte. A temporada do Ceará na Série B já terminou.",
    "autor": "frases",
    "texto_em": "2026-11-14T22:20:19.306Z",
@@ -1669,6 +1669,12 @@
   },
   "crb": {
    "noticias": [
+    {
+     "titulo": "CRB adia lançamento do documentário sobre o pentacampeonato alagoano",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/al/futebol/times/crb/noticia/2026/11/16/crb-adia-lancamento-do-documentario-sobre-o-pentacampeonato-alagoano.ghtml",
+     "data": "2026-11-16T21:27:03.000Z"
+    },
     {
      "titulo": "Técnico Fábio Matias planeja comandar o CRB em 2027",
      "veiculo": "Globo Esporte",
@@ -1698,15 +1704,9 @@
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/al/futebol/times/crb/noticia/2026/11/14/frustrado-fabio-matias-pede-desculpas-ao-torcedor-do-crb-depois-do-empate-com-ceara-o-futebol-nos-pune.ghtml",
      "data": "2026-11-14T23:22:42.000Z"
-    },
-    {
-     "titulo": "Transmissão ao vivo de CRB x Ceará pela Série B: veja onde assistir",
-     "veiculo": "UOL Esporte",
-     "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOWjdCNnVZME1DWU9NeV84SjFXaC1zVFRucmtsLXdZODQ2VzQwSmctWU5WbldSMklxWTZUZWJvQUxpbHRRcENTRlF0cVJ4NlAtRzU5YTR0UnRXdXVVVWxLN1M2LXIxS2hpSEc1STYzSk1QZFRSeW1kQ2hrREdGUzRHT0o5Q1lHRHhZR0NPUW1ZZVQtdmtaZkROVkNWdnh0ZjhLY08xZzhTbHVjTGRuRkZiaGhRQ3Q0NmdRdFdoS05BMjlpbFpuYk16RjFBTGRGQQ?oc=5",
-     "data": "2026-11-14T18:00:00.000Z"
     }
    ],
-   "noticias_em": "2026-11-16T09:35:05.320Z",
+   "noticias_em": "2026-11-17T08:18:35.074Z",
    "texto": "O CRB vive uma fase de altos e baixos: 7 pontos nos últimos cinco jogos. No último jogo, ficou no 1 a 1 com o Ceará em casa. Em 7º lugar, com 59 pontos, o CRB já não briga pelo acesso nem corre risco de cair: a temporada é de transição. Nos últimos 5 jogos, foram 7 gols marcados e 5 sofridos: tudo bem equilibrado. Fora de campo, o assunto da semana é: “Com Fábio Matias, CRB tem oito vitórias como mandante em 11 jogos” (Globo Esporte). A temporada do CRB na Série B já terminou.",
    "autor": "frases",
    "texto_em": "2026-11-14T22:20:19.306Z",
@@ -1728,6 +1728,12 @@
   },
   "criciuma": {
    "noticias": [
+    {
+     "titulo": "Criciúma terá treino aberto antes de enfrentar o Fortaleza pelos playoffs de acesso",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/sc/futebol/times/criciuma/noticia/2026/11/16/criciuma-tera-treino-aberto-antes-de-enfrentar-o-fortaleza-pelos-playoffs-de-acesso.ghtml",
+     "data": "2026-11-16T15:25:14.000Z"
+    },
     {
      "titulo": "Análise: queda de rendimento do Criciúma pode custar o acesso à Série A",
      "veiculo": "Globo Esporte",
@@ -1757,15 +1763,9 @@
      "veiculo": "UOL Esporte",
      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNRlZGYUFRT2FDVm82bW42VmxjdmM3TmNoUTVyZkJjd2w0X0JMN1ZVQ2xKalJpM0xRUUowVGRqbmRNYXdiZ1d6RXRWd2o1NFk3MHNxQUpyaDZHbFBTU0RfaGRXbzIzR1kzRlU2U2NpWHVaTW9qaVlkVEE2NXFWXzNjY1JhWnJNU2ZfRkhnRUd5S1lIYkx1ZElzQmsyMjI3RGZud0dPeXJaQ3ZBcFYxbk5MQWN1bzBtZExOc0YwaURmWmdsOU84YXh4US1LbU5QSGM?oc=5",
      "data": "2026-11-14T08:30:00.000Z"
-    },
-    {
-     "titulo": "Criciúma x Novorizontino: onde assistir ao vivo, horário e escalações",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/sc/futebol/brasileirao-serie-b/noticia/2026/11/14/criciuma-x-novorizontino-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
-     "data": "2026-11-14T07:00:00.000Z"
     }
    ],
-   "noticias_em": "2026-11-16T09:35:06.870Z",
+   "noticias_em": "2026-11-17T08:18:36.681Z",
    "texto": "O Criciúma vive uma fase de altos e baixos: 6 pontos nos últimos cinco jogos. No último jogo, perdeu para o Novorizontino por 1 a 0 em casa. Em 5º lugar, com 62 pontos, a briga pelo acesso está aberta: 34% de chance pelas nossas contas, quase sempre passando pelo playoff (100% de chance de ficar entre o 3º e o 6º). Nos últimos 5 jogos, foram 4 gols marcados e 4 sofridos: tudo bem equilibrado. Fora de campo, o assunto da semana é: “Criciúma deve ter mudança no esquema contra o Novorizontino; veja provável escalação” (Globo Esporte). A temporada do Criciúma na Série B já terminou.",
    "autor": "frases",
    "texto_em": "2026-11-14T22:20:19.306Z",
@@ -1788,16 +1788,22 @@
   "cuiaba": {
    "noticias": [
     {
+     "titulo": "Com a 5ª melhor defesa da Série B, Cuiabá tem Kauan Cristtyan, João Basso, Raul e Calebe como destaques",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/mt/futebol/times/cuiaba/noticia/2026/11/16/com-a-5a-melhor-defesa-da-serie-b-cuiaba-tem-kauan-cristtyan-joao-basso-raul-e-calebe-como-destaques.ghtml",
+     "data": "2026-11-16T21:38:28.000Z"
+    },
+    {
+     "titulo": "Sinop anuncia dois reforços e retorno de ex-Cuiabá e Brasiliense para a temporada 2027",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/mt/futebol/times/sinop/noticia/2026/11/16/sinop-anuncia-dois-reforcos-e-retorno-de-ex-cuiaba-e-brasiliense-para-a-temporada-2027.ghtml",
+     "data": "2026-11-16T12:00:01.000Z"
+    },
+    {
      "titulo": "Cuiabá termina 2026 com sua pior campanha na história da Série B",
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/mt/futebol/brasileirao-serie-b/noticia/2026/11/14/cuiaba-termina-2026-com-sua-pior-campanha-na-historia-da-serie-b.ghtml",
      "data": "2026-11-14T22:02:45.000Z"
-    },
-    {
-     "titulo": "Atlético-GO 1-0 Cuiabá (14 de nov, 2026) Placar Final",
-     "veiculo": "ESPN",
-     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5aOXJXeG10a3NGcDdmUlRQUXdVRDg0ZVBCcnlrcUNLMXdiS2tUOFRnTWVyQVdjenNMUVRDU08tQlFjMWt2OXc2aEk1NVp3R2UyWVl1NmdrUWxXS2NZb3N2UVZDeklKZmFGZnc?oc=5",
-     "data": "2026-11-14T19:32:31.000Z"
     },
     {
      "titulo": "Atlético-GO 1-0 Cuiabá (14 de nov, 2026) Estatísticas dos times",
@@ -1806,25 +1812,19 @@
      "data": "2026-11-14T19:32:31.000Z"
     },
     {
+     "titulo": "Atlético-GO 1-0 Cuiabá (14 de nov, 2026) Placar Final",
+     "veiculo": "ESPN",
+     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5aOXJXeG10a3NGcDdmUlRQUXdVRDg0ZVBCcnlrcUNLMXdiS2tUOFRnTWVyQVdjenNMUVRDU08tQlFjMWt2OXc2aEk1NVp3R2UyWVl1NmdrUWxXS2NZb3N2UVZDeklKZmFGZnc?oc=5",
+     "data": "2026-11-14T19:32:31.000Z"
+    },
+    {
      "titulo": "Atlético-GO x Cuiabá: onde assistir ao vivo, horário e escalações",
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/go/futebol/brasileirao-serie-b/noticia/2026/11/14/atletico-go-x-cuiaba-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
      "data": "2026-11-14T07:00:00.000Z"
-    },
-    {
-     "titulo": "Ex-atacante de Cuiabá, Confiança e Atlético-GO, Tito é campeão como técnico do Mixto",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/mt/futebol/times/mixto/noticia/2026/11/13/ex-atacante-de-cuiaba-confianca-e-atletico-go-tito-e-campeao-como-tecnico-do-mixto.ghtml",
-     "data": "2026-11-13T18:42:47.000Z"
-    },
-    {
-     "titulo": "Titulares do Cuiabá, David e Igor Inocêncio celebram título da Copa FMF: “Primeiro de muitos”",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/mt/futebol/times/cuiaba/noticia/2026/11/13/titulares-do-cuiaba-david-e-igor-inocencio-celebram-titulo-da-copa-fmf-primeiro-de-muitos.ghtml",
-     "data": "2026-11-13T16:59:38.000Z"
     }
    ],
-   "noticias_em": "2026-11-16T09:35:08.560Z",
+   "noticias_em": "2026-11-17T08:18:38.360Z",
    "texto": "Momento difícil para o Cuiabá: 0 pontos nos últimos cinco jogos. No último jogo, perdeu para o Atlético-GO por 1 a 0 fora de casa. São 6 derrotas seguidas. Em 14º lugar, com 47 pontos, o Cuiabá já não briga pelo acesso nem corre risco de cair: a temporada é de transição. O ataque anda travado, com só 2 gols em 5 jogos. Fora de campo, o assunto da semana é: “Ex-atacante de Cuiabá, Confiança e Atlético-GO, Tito é campeão como técnico do Mixto” (Globo Esporte). A temporada do Cuiabá na Série B já terminou.",
    "autor": "frases",
    "texto_em": "2026-11-14T21:36:10.988Z",
@@ -1846,6 +1846,12 @@
   },
   "fortaleza": {
    "noticias": [
+    {
+     "titulo": "Vojvoda traz torcida de volta e tem desafio inédito com Fortaleza na Série B",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/ce/futebol/times/fortaleza/noticia/2026/11/16/vojvoda-traz-torcida-de-volta-e-tem-desafio-inedito-com-fortaleza-na-serie-b.ghtml",
+     "data": "2026-11-16T20:22:05.000Z"
+    },
     {
      "titulo": "Análise: sem brilho, mas com alma, Fortaleza resgata conexão com a torcida e ganha com Vojvoda",
      "veiculo": "Globo Esporte",
@@ -1875,15 +1881,9 @@
      "veiculo": "UOL Esporte",
      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPYm91WlozWThjTGVZX1AyN3R2YTFQcmliTks5OGNvSklWeWFsY0lkZ09UeDc3VV90OG9VeUZTaWszUGsxbXJkV2ZuSlI5NVlYSzNQZFBldldSTlFwbzVFWkVtUktaWHYwUDFQVXdrS2g2Z1FoR2NucllXVXJkOVV2NXhyRmJUQjJSVFE4dnoyWmQ2TFRkcTctb2RqNnZPUEUtSFY0ZGQzOU1JZWo1TW1yXzNSMXhwaTVaR2pYSTZWQmozYnBaXzln?oc=5",
      "data": "2026-11-14T08:30:00.000Z"
-    },
-    {
-     "titulo": "Fortaleza x Vila Nova: onde assistir ao vivo, horário, palpite e prováveis escalações do jogo da Série B",
-     "veiculo": "ESPN",
-     "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOWTlxRVpjdTdsZUtiT294eVVUZlRhbTgwX1Byc0QxVTZpUjNDVjE1Yzg2UG1MaEpSdFBMQWpGS2gzWC1NTmhmOXVXMTdJM2dmMkZiOXJWS3lNak9Hb2dSMGc3ODNQZkZBRTZEbGwwYlA5UExmN3lsbWRYblhiM2F2UDUtbWk0c2d1akdYS2gyT0VTRUhFTW11MmJwMlJLUndfbllHUVFOdU56bzVrM1BPWS0yMXJ5SlVmaGJuZVJOWWVRazVLNEZPeEozcURFd05KX2dBSHFveUdvZG11cFVZZHEtclBoQVdWUi1ISjU2SDZtZUhwS2dqMTl3?oc=5",
-     "data": "2026-11-13T12:46:00.000Z"
     }
    ],
-   "noticias_em": "2026-11-16T09:35:10.306Z",
+   "noticias_em": "2026-11-17T08:18:39.925Z",
    "texto": "Nem lá, nem cá: o Fortaleza fez 8 dos últimos 15 pontos possíveis. No último jogo, venceu o Vila Nova por 1 a 0 em casa. Em 4º lugar, com 65 pontos, o acesso está bem encaminhado: 67% de chance pelas nossas simulações. Nos últimos 5 jogos, foram 6 gols marcados e 4 sofridos: tudo bem equilibrado. Nos bastidores, a notícia que mais chama atenção é “Apresentado no Fortaleza, Vojvoda lembra privilégio de treinar Neymar no Santos”, segundo o Globo Esporte. A temporada do Fortaleza na Série B já terminou.",
    "autor": "frases",
    "texto_em": "2026-11-14T22:20:19.306Z",
@@ -1905,6 +1905,18 @@
   },
   "goias": {
    "noticias": [
+    {
+     "titulo": "Michel Alves lamenta percalços na campanha do Goiás e diz que clube precisa mudar de rota",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/go/futebol/times/goias/noticia/2026/11/16/michel-alves-lamentar-percalcos-na-campanha-do-goias-e-diz-que-clube-precisa-mudar-de-rota.ghtml",
+     "data": "2026-11-16T19:27:05.000Z"
+    },
+    {
+     "titulo": "Tadeu desabafa após Goiás perder vaga nos playoffs: \"Consciência de ir além do que o corpo e a perna podiam\"",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/go/futebol/times/goias/noticia/2026/11/16/tadeu-desabafa-apos-goias-perder-vaga-nos-playoffs-consciencia-de-ir-alem-do-que-o-corpo-e-a-perna-podiam.ghtml",
+     "data": "2026-11-16T17:52:51.000Z"
+    },
     {
      "titulo": "Goiás entra de férias com dois meses de salários atrasados e indefinição sobre Mozart",
      "veiculo": "Globo Esporte",
@@ -1928,21 +1940,9 @@
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/go/futebol/times/goias/noticia/2026/11/13/goias-consegue-emprestimo-e-paga-parte-dos-atrasados-com-elenco-e-funcionarios.ghtml",
      "data": "2026-11-13T21:29:33.000Z"
-    },
-    {
-     "titulo": "Veja a provável escalação do Goiás para enfrentar o Sport pela última rodada da Série B",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/go/futebol/times/goias/noticia/2026/11/13/veja-a-provavel-escalacao-do-goias-para-enfrentar-o-sport-pela-ultima-rodada-da-serie-b.ghtml",
-     "data": "2026-11-13T21:02:45.000Z"
-    },
-    {
-     "titulo": "Sport x Goiás: onde assistir ao vivo, horário, palpite e prováveis escalações do jogo da Série B",
-     "veiculo": "ESPN",
-     "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNSE53MTE1SG51a3NpN0NaVDc4VWFlR0JwNlZTYUw1aUR6eFc0NFNRWElpVTR5bUhVVnZMSUdHWDhNNlJaNjc2aG1fSFBLY2xqVEE2WmZWN2o0Z1JoS0paWUNsLVJBM3VlWlh3eDNNRjFNbGJJMWxQNi0zNDA3X2tESjlQM050WmI2T2p1U2pVS0lhZV9vWXZXYWNFZWlVVndHOGg2UVVFNFMxMXozSFllRUF4dmhYOU9yOFRxMFNMaW1QbUhxVEFrcDFMTWdFY2RYVVZ2RGp2c09Ceklm?oc=5",
-     "data": "2026-11-13T12:54:00.000Z"
     }
    ],
-   "noticias_em": "2026-11-16T09:35:11.877Z",
+   "noticias_em": "2026-11-17T08:18:41.532Z",
    "texto": "O Goiás atravessa uma boa fase: somou 10 dos últimos 15 pontos possíveis. No último jogo, perdeu para o Sport por 3 a 0 fora de casa. Em 8º lugar, com 58 pontos, o Goiás já não briga pelo acesso nem corre risco de cair: a temporada é de transição. Nos últimos 5 jogos, foram 5 gols marcados e 4 sofridos: tudo bem equilibrado. Fora de campo, o assunto da semana é: “Goiás consegue empréstimo e paga parte dos atrasados com elenco e funcionários” (Globo Esporte). A temporada do Goiás na Série B já terminou.",
    "autor": "frases",
    "texto_em": "2026-11-14T22:20:19.306Z",
@@ -1964,6 +1964,18 @@
   },
   "juventude": {
    "noticias": [
+    {
+     "titulo": "Barbieri revela forte desabafo de Alan Ruschel em conversa que adiou despedida no Juventude",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/rs/futebol/times/juventude/noticia/2026/11/16/barbieri-revela-conversa-que-adiou-despedida-de-ruschel-no-juventude-nao-aguento-de-dor.ghtml",
+     "data": "2026-11-16T21:40:04.000Z"
+    },
+    {
+     "titulo": "Barbieri devolve Juventude para a Série A e alcança melhores marcas individuais desde o Flamengo",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/rs/futebol/times/juventude/noticia/2026/11/16/barbieri-devolve-juventude-para-a-serie-a-e-alcanca-melhores-marcas-individuais-desde-o-flamengo.ghtml",
+     "data": "2026-11-16T16:04:17.000Z"
+    },
     {
      "titulo": "Juventude tem renovação com Maurício Barbieri encaminhada: \"Últimos detalhes\"",
      "veiculo": "Globo Esporte",
@@ -1987,27 +1999,21 @@
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/rs/futebol/noticia/2026/11/14/mandaca-se-despede-do-juventude-e-confirma-acerto-com-o-gremio-para-2027-agora-posso-falar.ghtml",
      "data": "2026-11-14T23:04:48.000Z"
-    },
-    {
-     "titulo": "Alan Ruschel se despede dos gramados com segundo acesso seguido pelo Juventude",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/rs/futebol/times/juventude/noticia/2026/11/14/alan-ruschel-se-despede-dos-gramados-com-segundo-acesso-seguido-pelo-juventude.ghtml",
-     "data": "2026-11-14T22:38:21.000Z"
-    },
-    {
-     "titulo": "Novorizontino campeão, Juventude sobe, e Avaí cai; veja tudo da Série B",
-     "veiculo": "UOL Esporte",
-     "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQLWItWjkyYnlHcHJiVl9fU3J6WFlrU0NzbHZKUWFtU2c5aUxwQndvZG5QMEU1RHhaSE5CVWtFNU5ZSC1maGJ0enZtQV85U0J4dFNJdjhxQWE4OTM5Z1gyQVBVRHIxWldiR3VrRWUtc2NqLVlBSFBoT3IySG94SFFrb3FEa1hCVkYtdnExSXR0MDhfX29LQVdtLW4xTnM1MzhiVXZOMzJNbFZtWTM1WktMUG5Kc3I5azhWcDN4Y3QwVmRWcG50d2xkbjJ6MzBCTl9ONU03Q004QQ?oc=5",
-     "data": "2026-11-14T21:42:23.000Z"
     }
    ],
-   "noticias_em": "2026-11-16T09:35:13.517Z",
+   "noticias_em": "2026-11-17T08:18:43.235Z",
    "texto": "O momento do Juventude é bom, com 11 pontos conquistados nos últimos cinco jogos. No último jogo, venceu o Botafogo-SP por 2 a 0 em casa. Já são 9 jogos sem perder. Em 2º lugar, com 71 pontos, o Juventude já garantiu o acesso à Série A. O ataque está afiado, com 12 gols em 5 jogos. Nos bastidores, a notícia que mais chama atenção é “Novorizontino ou Juventude: o que é preciso para título da Série B? Entenda”, segundo o UOL Esporte. A temporada do Juventude na Série B já terminou.",
    "autor": "frases",
    "texto_em": "2026-11-14T22:20:19.306Z"
   },
   "londrina": {
    "noticias": [
+    {
+     "titulo": "Londrina anuncia barca com mais de 20 saídas após rebaixamento à Série C; veja a lista",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/pr/futebol/times/londrina/noticia/2026/11/16/londrina-anuncia-barca-com-mais-de-20-saidas-apos-rebaixamento-a-serie-c-veja-a-lista.ghtml",
+     "data": "2026-11-16T18:18:10.000Z"
+    },
     {
      "titulo": "Avaí vence na última rodada da Série B, mas é rebaixado e se junta a Londrina, América-MG e Ponte Preta",
      "veiculo": "ESPN",
@@ -2037,15 +2043,9 @@
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/pr/futebol/brasileirao-serie-b/noticia/2026/11/11/londrina-x-nautico-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
      "data": "2026-11-11T07:00:00.000Z"
-    },
-    {
-     "titulo": "Londrina x Náutico: onde assistir ao vivo, horário, palpite e prováveis escalações do jogo da Série B do Brasileirão",
-     "veiculo": "ESPN",
-     "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOZnY2MG1McWFXblNjaFJ3aXFUYUZ2TmhMZm9OT0k4a0Z0TzNKVUZSN2Q1R3IyT2ZLTERuYlphV0MwX0ItMmhGMVgyMWs5UzFiemVVRVBycDRTZTZSdGZwQzJtNDY4Skkyc3VQb3g0a2t3a1NacEg1QlA5RWV5bHd5aW41cnN6R1Bta09lWGc2Z2d2anBUaV84UXp5SWJ4eFlISWhFazVCSGZreHgtUnBVTTgyT2FfMmNIVlNvaS00TUtSVEsyZG9sTEpxQ241N2JBS1QzMG1DSFk3Qjh3U2NsMjBsSHh3S2xWSVNsX1Z2V0VxcmhYd1BJNW42b1RlUQ?oc=5",
-     "data": "2026-11-10T23:19:00.000Z"
     }
    ],
-   "noticias_em": "2026-11-16T09:35:15.472Z",
+   "noticias_em": "2026-11-17T08:18:44.926Z",
    "texto": "O Londrina vive uma fase de altos e baixos: 6 pontos nos últimos cinco jogos. No último jogo, venceu o Náutico por 2 a 1 em casa. Em 18º lugar, com 35 pontos, a queda para a Série C já está confirmada, infelizmente. A defesa preocupa, com 10 gols sofridos. Fora de campo, o assunto da semana é: “Londrina x Náutico: jogo da última rodada da Série B é antecipado e terá portões fechados” (Globo Esporte). A temporada do Londrina na Série B já terminou.",
    "autor": "frases",
    "texto_em": "2026-11-12T00:38:16.278Z"
@@ -2053,7 +2053,13 @@
   "nautico": {
    "noticias": [
     {
-     "titulo": "Para 2027, Náutico reduz número de remanescentes para a metade em comparação à atual temporada",
+     "titulo": "Vinícius e Jean Carlos foram responsáveis por um terço dos gols do Náutico em 2026",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/pe/futebol/times/nautico/noticia/2026/11/17/vinicius-e-jean-carlos-foram-responsaveis-por-um-terco-dos-gols-do-nautico-em-2026.ghtml",
+     "data": "2026-11-17T07:00:00.000Z"
+    },
+    {
+     "titulo": "Para 2027, Náutico deve reduzir número de remanescentes em comparação à atual temporada",
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/pe/futebol/times/nautico/noticia/2026/11/16/para-2027-nautico-reduz-numero-de-remanescentes-para-a-metade-em-comparacao-a-atual-temporada.ghtml",
      "data": "2026-11-16T07:00:01.000Z"
@@ -2081,15 +2087,9 @@
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/pe/futebol/times/nautico/noticia/2026/11/14/vice-presidente-de-futebol-revela-seis-pilares-da-gestao-no-nautico.ghtml",
      "data": "2026-11-14T07:00:00.000Z"
-    },
-    {
-     "titulo": "Novo VP de futebol do Náutico fala em readequação salarial do elenco para a próxima temporada",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/pe/futebol/times/nautico/noticia/2026/11/13/novo-vp-de-futebol-do-nautico-fala-em-readequacao-salarial-do-elenco-para-a-proxima-temporada.ghtml",
-     "data": "2026-11-13T07:00:00.000Z"
     }
    ],
-   "noticias_em": "2026-11-16T09:35:17.468Z",
+   "noticias_em": "2026-11-17T08:18:46.720Z",
    "texto": "A fase não é das melhores para o Náutico: só 4 pontos nos últimos cinco jogos. No último jogo, perdeu para o Londrina por 2 a 1 fora de casa. Em 15º lugar, com 46 pontos, o Náutico já não briga pelo acesso nem corre risco de cair: a temporada é de transição. O ataque anda travado, com só 2 gols em 5 jogos. Fora de campo, o assunto da semana é: “Apenas cinco jogadores que disputaram a Série B pelo Náutico possuem contrato para 2027” (Globo Esporte). A temporada do Náutico na Série B já terminou.",
    "autor": "frases",
    "texto_em": "2026-11-12T00:38:16.278Z",
@@ -2111,6 +2111,18 @@
   },
   "novorizontino": {
    "noticias": [
+    {
+     "titulo": "Novorizontino é campeão e Juventude garante vaga na elite",
+     "veiculo": "Globo Esporte",
+     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNamc3WncxbDFVTFREbzBQVUlsR0g3MWxXd19GZWJucHNNbThFSlREczJvQ3RXQy1jY3o1SV9JX3ZTWUItREI1Y1RlVm9CZDdwek8yNk9nbDViOUdGdl9LaTI2UWIzWkdEdG9EOTdwaGNwXzdzZ1I5TzFXOW92aHgxZDNENEk3Q3lDVkpjd01jeUVWMktPamQ3aVVMdWt5dm1X0gGvAUFVX3lxTE5ydUNyajJPSHhLSkw2MmJDaVlISnFYc2VOeF96cmZGNHd1elB2UWhONk9hRG9WRnpGbHFicmhJaHQzamdYWW9oeFBsMFo2eHJGbE90bEdYQ1pNaVhxZ0FQSUZ6a2ZYdmFQN3JwNzJZVjRTLTYwalhOOXU4QzQ1dU4yNW1MRjNRNTEzd29kZEg1VUMwM2R5WlVoZGRkQjFUMzFuVUhFby0zLUF0UGFLTjg?oc=5",
+     "data": "2026-11-16T16:22:35.000Z"
+    },
+    {
+     "titulo": "Da quebra de jejum à conquista: cinco jogos que explicam o acesso e o título do Novorizontino na Série B",
+     "veiculo": "Globo Esporte",
+     "link": "https://news.google.com/rss/articles/CBMinAJBVV95cUxOU1ZidkluNklDaEViendNM0s0Zy1FQkp2UXU2aEYwVkVVUVl6OVVkdWoyNENKYjBHYjJpcVV5NXFCa0RNbVBCdkNuS2dBTUZJWm56eXUzYUlmTDNCR3dwTmFpYlN4SmczZlFKNjRTeURIX29oTnFVdURQYWFQSnh0emdWNmYtZzFEQVBINUNIbkhxdjkwUTNjclVkMEVRN2JyMEZIbnZndHN5X0FDcFdZVzA2SHpQT1hzZlQ1OHVzUFQwT3VqU0VUNURWaWVYc1dxbUFlYXdXUF9GdGJUM2ZmdEVDeERCOXlLTGxJQ1ZXb3RZVnVaakplOWdpaC0zd2d2TlFNenMyVldMMG1mNjlrWVpkMVk3Q2g1eDVyNtIBqwJBVV95cUxNbmxTeFJybFpIU3lXQmRid1BxTmtHQmJzQWR2MXJVWm5NaDQxdXYwMENmejBhT2VRTXVud2VyTnpSWVFMdVNXWFY2a2RtVTVwdHk4OTJCWkh6d2M2TWR0dm9XdWF3NmZNdm1kMFdYV1RvNDRaWEVSZ0FIVkZsV1Bmd0RldGxHUVhQNWtZa0ZLdC1EaENub3RlWV94TkJFWUJHajlwcTVEWkJZVDBoNlI4eEZFM1ExNTI3TWdIY1YwVmdSa3hUeWFMT0llc29TcnRXb190NFRnVEJKY3dITlEzZlFPTkQtWWVBZmI1TUN6dUtMYkx4Z3gxdmZycS1fNWtQYTF0OW5OU2hKVWlLcWxBUlcyZUJSZXZCQXhjck9EMmg1NnF5Mjl5MmlhSQ?oc=5",
+     "data": "2026-11-16T12:00:00.000Z"
+    },
     {
      "titulo": "Novorizontino supera gigantes e termina a Série B com o melhor ataque dos últimos 13 anos",
      "veiculo": "Globo Esporte",
@@ -2134,21 +2146,9 @@
      "veiculo": "UOL Esporte",
      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQZ3JPVlNpT0ZoN0VlSG1ONG5VZTZHYVZsSnNSempnTjR6UzM5WXlhaGhrQ1lWd1h2ZkgwY2prSUtGdldmMnV2NUZYbTdwZlZNclZoN2VhQWN2cXgyejJKeDJZQlVJNmE1YVI0UTAtRkFzVmFEdk9idHJpVDVobDR0ZVc2ZWZBZHhVRENSOUFUd3NhUmU1WGY3MWJ4WlgwczVPa2RQQ1RsSXBFSDg?oc=5",
      "data": "2026-11-15T12:05:52.000Z"
-    },
-    {
-     "titulo": "Criciúma 0 x 1 Novorizontino | Campeonato Brasileiro Série B: melhores momentos",
-     "veiculo": "Globo Esporte",
-     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPc05ZWk9ZV3pmQngyanN3Tzl4ZVRMS0ZHMy1VV3hHc21nTV9BbGJvV0NLNGpzS0JCalQxUzNBb21kMkpsN0tjNjBzdVh3RHpPN1hlN2tQZ3Y2LWlaN2IxcFV0blRZNG04MEh5NURNQ3FIblQxLTZiWDI3MUNKVl9pdFg3WlhEdUUxRWNZMTh1V00tdG5MRXd6RlpyX0E?oc=5",
-     "data": "2026-11-15T06:53:35.000Z"
-    },
-    {
-     "titulo": "Criciúma 0 x 1 Novorizontino | Melhores momentos | 38ª rodada | Brasileirão Série B",
-     "veiculo": "Globo Esporte",
-     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNSXBrdFl6LW1PS3c4Q2NBU3ZjNGZZeERxNF9NNElzUmpoR3VlZjkxcENQTWw2Sy1pb2dOTUhoMmJHRXNvMHVsRnhMWU9wV1hHOUZienR4cXBjdGNERHFhUlZVN0RNRGpGV25vWjg3bllRS1lmSkNEcUwwRmFSdDc4MTFvbU9XSTd3ZWhEQ3ZYQzZDSkxrOFRwSDQ1V3U3eVdudjRCa2lTWXhhMFh5UjZYYlo1MFdvVHdwdUpJ0gHKAUFVX3lxTE03UFpBX29iVGdEXzd4Y2dtRHVjZ0J0YUU1eHEyNjlNMk9SSHhLY1FSdDhzS0pSRXAyNk1nMVU2QUE0UURMV2RfQXVYWHFqN1VNa0RlczFaN09oNTVubi1vbDYxMU5hR2Z1bHlxcVFGSUdaWmR6bFJNdXBOck8xUnRWQ0ZheWpPTmpTRjJWMWNQTW16VFpDbV9DUUN3UWFTRVB6UC14Vk5Gejl3YktjWGNxb0praXFqa2hiMUY4SEhVb0k2dTU0T3o3OEE?oc=5",
-     "data": "2026-11-14T23:19:32.000Z"
     }
    ],
-   "noticias_em": "2026-11-16T09:35:18.217Z",
+   "noticias_em": "2026-11-17T08:18:47.523Z",
    "texto": "Fase de ouro para o Novorizontino, que venceu 4 dos últimos cinco jogos. No último jogo, venceu o Criciúma por 1 a 0 fora de casa. São 4 vitórias seguidas. Em 1º lugar, com 73 pontos, o Novorizontino já é campeão da Série B e está de volta à Série A! Nos últimos 5 jogos, foram 8 gols marcados e 4 sofridos: tudo bem equilibrado. Nos bastidores, a notícia que mais chama atenção é “Ao vivo: Criciúma x Novorizontino | Rodada 38 | Campeonato Brasileiro Série B”, segundo o Globo Esporte. A temporada do Novorizontino na Série B já terminou.",
    "autor": "frases",
    "texto_em": "2026-11-14T22:20:19.306Z",
@@ -2207,7 +2207,7 @@
      "data": "2026-11-11T15:29:14.000Z"
     }
    ],
-   "noticias_em": "2026-11-16T09:35:19.771Z",
+   "noticias_em": "2026-11-17T08:18:49.184Z",
    "texto": "O Operário atravessa uma boa fase: somou 9 dos últimos 15 pontos possíveis. No último jogo, venceu a Ponte Preta por 2 a 0 fora de casa. Em 9º lugar, com 57 pontos, o Operário já não briga pelo acesso nem corre risco de cair: a temporada é de transição. Nos últimos 5 jogos, foram 7 gols marcados e 5 sofridos: tudo bem equilibrado. Fora de campo, o assunto da semana é: “Ponte Preta x Operário-PR: jogo da última rodada da Série B é antecipado pela CBF” (Globo Esporte). A temporada do Operário na Série B já terminou.",
    "autor": "frases",
    "texto_em": "2026-11-13T00:17:48.181Z"
@@ -2245,13 +2245,13 @@
      "data": "2026-11-13T00:02:25.000Z"
     },
     {
-     "titulo": "Gol do Operário! Nicolas Schulz aproveita 'presente' do goleiro e marca contra a Ponte Preta na Série B; VEJA",
-     "veiculo": "ESPN",
-     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE10d2FBaXprc2plVmtHRFhVLUpiNHppQWpFRFF2V093Y0ZTcjFTUFhvMXJFSG1kbWZCS0tBMjF6U2JxQVRNZVlUTXJuMjFOSnAtMkhrOVJSdlg4bDhCcmc?oc=5",
-     "data": "2026-11-12T23:43:23.000Z"
+     "titulo": "Ponte Preta é superada pelo Operário-PR e termina Série B com pior campanha da história",
+     "veiculo": "UOL Esporte",
+     "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPQWZVYWZfcGNrQmNFblBxdm1vUkRtV19tVTZELVdHQkhxd0kydnl4Z0ZIUWlJMXFyUkFkcERnRWNyX3RwOTYyRVB2d3JXc3lGRFFBQmxFNWZhR3EwaGgzdXJhOU1qUTdCSldrLTRCU0dwcEZDdFRNaHBCY0NUNVZfOFh1NVBDS3N0V0dkOGtYc19IVE9vazktaFFwbWl3eGE1V2FwRjd3am1nYjFYemN5V0hlOHl6Mk5iaTVFWG1xTUppSTNlUFNieU1ScDl6cC0zSm83NTJ4Z1c2R200QkcwZnhyS2tPdlR6Y0hvb2hISQ?oc=5",
+     "data": "2026-11-13T00:02:00.000Z"
     }
    ],
-   "noticias_em": "2026-11-16T09:35:22.059Z",
+   "noticias_em": "2026-11-17T08:18:50.697Z",
    "texto": "A fase é ruim para a Ponte Preta, que fez só 2 pontos dos últimos 15 possíveis. No último jogo, perdeu para o Operário por 2 a 0 em casa. São 3 derrotas seguidas. Em 20º lugar, com 15 pontos, a queda para a Série C já está confirmada, infelizmente. O ataque anda travado, com só 3 gols em 5 jogos. Nos bastidores, a notícia que mais chama atenção é “Morre Julio José Pepicelli, ex-lateral revelado na Ponte Preta e campeão pelo Athletico”, segundo o Globo Esporte. A temporada da Ponte Preta na Série B já terminou.",
    "autor": "frases",
    "texto_em": "2026-11-13T00:17:48.181Z",
@@ -2302,15 +2302,9 @@
      "veiculo": "ESPN",
      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSGlLLVdqWE15eFBkTWdZVVh2d1lCV3dQQW5HOGxLdnlHMGx6OWNjenZvdGg0d2lrYnFHQVp0ZGRTWHFoQjZCTy1oem42dmkzM2czMUZPOHRORjdIaTFTdXpFR216YVJlODhpTjZJOGM1TExBeUxFRnhyVjR0SXZHeGtsUmltY1ZPM0E?oc=5",
      "data": "2026-11-07T19:02:27.000Z"
-    },
-    {
-     "titulo": "Avaí x São Bernardo: onde assistir ao vivo, horário e escalações",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/sc/futebol/brasileirao-serie-b/noticia/2026/11/07/avai-x-sao-bernardo-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
-     "data": "2026-11-07T07:00:00.000Z"
     }
    ],
-   "noticias_em": "2026-11-16T09:35:23.583Z",
+   "noticias_em": "2026-11-17T08:18:52.212Z",
    "texto": "Nem lá, nem cá: o São Bernardo fez 7 dos últimos 15 pontos possíveis. No último jogo, ficou no 2 a 2 com o Athletic em casa. Em 11º lugar, com 53 pontos, o São Bernardo já não briga pelo acesso nem corre risco de cair: a temporada é de transição. Nos últimos 5 jogos, foram 8 gols marcados e 8 sofridos: tudo bem equilibrado. Nos bastidores, a notícia que mais chama atenção é “Chapecoense encaminha a contratação do técnico Vinícius Bergantin, do São Bernardo”, segundo o Globo Esporte. A temporada do São Bernardo na Série B já terminou.",
    "autor": "frases",
    "texto_em": "2026-11-13T01:45:35.642Z",
@@ -2326,6 +2320,18 @@
   },
   "sport": {
    "noticias": [
+    {
+     "titulo": "Sport avalia contraproposta de Perotti por renovação de dois anos",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/pe/futebol/times/sport/noticia/2026/11/17/sport-avalia-contraproposta-de-perotti-por-renovacao-de-dois-anos.ghtml",
+     "data": "2026-11-17T07:00:00.000Z"
+    },
+    {
+     "titulo": "Sport cria comitê de transição para definir renovações e saídas para 2027",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/pe/futebol/times/sport/noticia/2026/11/16/sport-cria-comite-de-transicao-para-definir-renovacoes-e-saidas-para-2027.ghtml",
+     "data": "2026-11-16T17:51:31.000Z"
+    },
     {
      "titulo": "Mesmo sem acesso, Sport volta a ter dupla de ataque entre os principais goleadores da Série B",
      "veiculo": "Globo Esporte",
@@ -2349,27 +2355,27 @@
      "veiculo": "Globo Esporte",
      "link": "https://ge.globo.com/pe/futebol/times/sport/noticia/2026/11/14/atuacoes-do-sport-de-pena-perotti-e-barletta-sao-destaques-em-vitoria-diante-do-goias-de-suas-notas.ghtml",
      "data": "2026-11-14T21:41:13.000Z"
-    },
-    {
-     "titulo": "Dois reforços do Sport chegam à última rodada da Série B ainda sem estrear",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/pe/futebol/times/sport/noticia/2026/11/14/dois-reforcos-do-sport-chegam-a-ultima-rodada-da-serie-b-ainda-sem-estrear.ghtml",
-     "data": "2026-11-14T07:00:00.000Z"
-    },
-    {
-     "titulo": "Sport x Goiás: onde assistir ao vivo, horário e escalações",
-     "veiculo": "Globo Esporte",
-     "link": "https://ge.globo.com/pe/futebol/brasileirao-serie-b/noticia/2026/11/14/sport-x-goias-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
-     "data": "2026-11-14T07:00:00.000Z"
     }
    ],
-   "noticias_em": "2026-11-16T09:35:25.676Z",
+   "noticias_em": "2026-11-17T08:18:53.918Z",
    "texto": "Nem lá, nem cá: o Sport fez 7 dos últimos 15 pontos possíveis. No último jogo, venceu o Goiás por 3 a 0 em casa. Em 9º lugar, com 58 pontos, o Sport já não briga pelo acesso nem corre risco de cair: a temporada é de transição. Nos últimos 5 jogos, foram 8 gols marcados e 7 sofridos: tudo bem equilibrado. Nos bastidores, a notícia que mais chama atenção é “Dois reforços do Sport chegam à última rodada da Série B ainda sem estrear”, segundo o Globo Esporte. A temporada do Sport na Série B já terminou.",
    "autor": "frases",
    "texto_em": "2026-11-14T22:20:19.306Z"
   },
   "vila-nova": {
    "noticias": [
+    {
+     "titulo": "Vila Nova x Atlético-GO: veja detalhes da venda de ingressos para jogo que vale vaga na Série A",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/go/futebol/times/vila-nova/noticia/2026/11/16/vila-nova-x-atletico-go-veja-detalhes-da-venda-de-ingressos-para-jogo-que-vale-vaga-na-serie-a.ghtml",
+     "data": "2026-11-16T15:04:08.000Z"
+    },
+    {
+     "titulo": "Vila Nova x Atlético-GO: veja datas e horários dos clássicos que definem vaga na Série A",
+     "veiculo": "Globo Esporte",
+     "link": "https://ge.globo.com/go/futebol/brasileirao-serie-b/noticia/2026/11/16/vila-nova-x-atletico-go-veja-datas-e-horarios-dos-classicos-que-definem-vaga-na-serie-a.ghtml",
+     "data": "2026-11-16T13:43:57.000Z"
+    },
     {
      "titulo": "Vila Nova terá vantagens no playoff contra o Atlético-GO; veja quais",
      "veiculo": "Globo Esporte",
@@ -2393,21 +2399,9 @@
      "veiculo": "ESPN",
      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1MREpJQk1taENSdlNQMVpfWW5sQTFZY0d4a3Jqb1pmaHhaMFJEMjlOZUl0c0o2UGxzamJCdkxZWEhJVFR2UmF4ZUxpdklIalFUeGhiUzRwaU9ZMVpveUE?oc=5",
      "data": "2026-11-14T21:51:48.000Z"
-    },
-    {
-     "titulo": "Transmissão ao vivo de Fortaleza x Vila Nova pela Série B: veja onde assistir",
-     "veiculo": "UOL Esporte",
-     "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPQVZRVVBFS29BUTBzc3JMbjdwZVFvSXp1X0VtWkgyUmNZalNia0w5eDVFdGlSWHY5ckJ6d3daeFJSMUhTY3RSSlA0Wm5ja0J6MVFzUjJadFpjVEJ5WHNwTWd6WTFVM3N2cUVMUmstVDlIY2dMNTAyLW5HdkhTQXBkVUdtczMtUUYxZU5LaWFzazIxWlowRldXdDdWNEZUZHR2LThpUm95c00zdHZ4NW9aTHdYM2JJZ1o0Rnk4emFIMXgtY25rc0NLVWUtVWN4TDhQMEo1Wm9JOA?oc=5",
-     "data": "2026-11-14T18:00:00.000Z"
-    },
-    {
-     "titulo": "Fortaleza x Vila Nova: horário e onde assistir ao jogo da Série B",
-     "veiculo": "UOL Esporte",
-     "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPYm91WlozWThjTGVZX1AyN3R2YTFQcmliTks5OGNvSklWeWFsY0lkZ09UeDc3VV90OG9VeUZTaWszUGsxbXJkV2ZuSlI5NVlYSzNQZFBldldSTlFwbzVFWkVtUktaWHYwUDFQVXdrS2g2Z1FoR2NucllXVXJkOVV2NXhyRmJUQjJSVFE4dnoyWmQ2TFRkcTctb2RqNnZPUEUtSFY0ZGQzOU1JZWo1TW1yXzNSMXhwaTVaR2pYSTZWQmozYnBaXzln?oc=5",
-     "data": "2026-11-14T08:30:00.000Z"
     }
    ],
-   "noticias_em": "2026-11-16T09:35:27.241Z",
+   "noticias_em": "2026-11-17T08:18:55.502Z",
    "texto": "A fase não é das melhores para o Vila Nova: só 5 pontos nos últimos cinco jogos. No último jogo, perdeu para o Fortaleza por 1 a 0 fora de casa. Em 3º lugar, com 66 pontos, o acesso está bem encaminhado: 61% de chance pelas nossas simulações. Nos últimos 5 jogos, foram 7 gols marcados e 8 sofridos: tudo bem equilibrado. Fora de campo, o assunto da semana é: “Janderson diz que elenco do Vila Nova está focado para tentar acesso direto na Série B” (Globo Esporte). A temporada do Vila Nova na Série B já terminou.",
    "autor": "frases",
    "texto_em": "2026-11-14T22:20:19.306Z"
