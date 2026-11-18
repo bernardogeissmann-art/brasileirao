@@ -2,7 +2,7 @@
   "fonte": "football-data.org",
   "competicao": "Campeonato Brasileiro Série A",
   "temporada": 2026,
-  "baixado_em": "2026-11-17T05:16:37-03:00",
+  "baixado_em": "2026-11-18T05:14:10-03:00",
   "times": {
     "bahia": {
       "nome": "Bahia",
@@ -4625,7 +4625,9 @@
       "gols_visitante": null,
       "status_fonte": "TIMED",
       "estadio": "Estádio Jornalista Edgar Proença (Mangueirão)",
-      "transmissao": null
+      "transmissao": [
+        "Premiere"
+      ]
     },
     {
       "id": 555082,
@@ -4638,7 +4640,9 @@
       "gols_visitante": null,
       "status_fonte": "TIMED",
       "estadio": "Estádio Governador Magalhães Pinto (Mineirão)",
-      "transmissao": null
+      "transmissao": [
+        "Premiere"
+      ]
     },
     {
       "id": 555083,
@@ -4651,7 +4655,11 @@
       "gols_visitante": null,
       "status_fonte": "TIMED",
       "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
-      "transmissao": null
+      "transmissao": [
+        "sportv",
+        "Premiere",
+        "globoplay"
+      ]
     },
     {
       "id": 555080,
@@ -4664,7 +4672,9 @@
       "gols_visitante": null,
       "status_fonte": "TIMED",
       "estadio": "Neo Química Arena (Itaquerão)",
-      "transmissao": null
+      "transmissao": [
+        "Premiere"
+      ]
     },
     {
       "id": 555084,
@@ -4677,7 +4687,9 @@
       "gols_visitante": null,
       "status_fonte": "TIMED",
       "estadio": "Arena do Grêmio",
-      "transmissao": null
+      "transmissao": [
+        "Premiere"
+      ]
     },
     {
       "id": 555088,

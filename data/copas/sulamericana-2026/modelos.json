@@ -1,8 +1,8 @@
 {
   "competicao": "Copa Sul-Americana",
   "temporada": 2026,
-  "dados_baixados_em": "2026-11-17T05:17:38-03:00",
-  "estimado_em": "2026-11-17T05:17:40-03:00",
+  "dados_baixados_em": "2026-11-18T05:15:05-03:00",
+  "estimado_em": "2026-11-18T05:15:07-03:00",
   "parametros": {
     "forca_prior": 3,
     "gols_por_jogo_prior": 2.5,
