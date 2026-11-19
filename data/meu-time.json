@@ -1,8 +1,8 @@
 {
- "gerado_em": "2026-11-19T01:51:24.033Z",
+ "gerado_em": "2026-11-19T02:51:13.838Z",
  "times": {
   "bahia": {
-   "texto": "Nem lá, nem cá: o Bahia fez 7 dos últimos 15 pontos possíveis. No último jogo, perdeu para o Cruzeiro por 3 a 2 fora de casa. Em 6º lugar, com 53 pontos, a briga pela Libertadores está aberta: 43% de chance pelas nossas contas. Nos últimos 5 jogos, foram 7 gols marcados e 9 sofridos: tudo bem equilibrado. Nos bastidores, a notícia que mais chama atenção é “Willian José continua fora do Bahia depois de compartilhar vídeo com críticas ao Nordeste”, segundo o Globo Esporte. Agora o desafio é o Grêmio, fora de casa, quarta, 18/11. Jogo difícil: o modelo dá 37% de chance de vitória.",
+   "texto": "O Bahia anda devendo, com apenas 5 dos últimos 15 pontos possíveis. No último jogo, ficou no 0 a 0 com o Grêmio fora de casa. Em 6º lugar, com 54 pontos, a briga pela Libertadores está aberta: 37% de chance pelas nossas contas. Nos últimos 5 jogos, foram 6 gols marcados e 9 sofridos: tudo bem equilibrado. Nos bastidores, a notícia que mais chama atenção é “Grêmio x Bahia: com histórico equilibrado, Renato Portaluppi e Rogério Ceni fazem tira-teima”, segundo o Globo Esporte. Agora o desafio é o Coritiba, em casa, sábado, 21/11, e o Bahia chega como favorito: 61% de chance de vitória.",
    "autor": "frases",
    "noticias": [
     {
@@ -42,7 +42,7 @@
      "data": "2026-11-17T07:00:00.000Z"
     }
    ],
-   "texto_em": "2026-11-06T04:55:53.105Z",
+   "texto_em": "2026-11-19T02:51:13.833Z",
    "noticias_em": "2026-11-18T08:15:14.121Z",
    "videos": {
     "UULFcqRCjHozEb9CQHwf_cffdQ": [
@@ -61,7 +61,7 @@
    "videos_em": "2026-11-06T20:43:36.515Z"
   },
   "botafogo": {
-   "texto": "Nem lá, nem cá: o Botafogo fez 7 dos últimos 15 pontos possíveis. No último jogo, venceu o Atlético Mineiro por 1 a 0 em casa. Em 11º lugar, com 42 pontos, o Botafogo está numa zona tranquila da tabela, longe das brigas de cima e de baixo. Nos últimos 5 jogos, foram 4 gols marcados e 6 sofridos: tudo bem equilibrado. Nos bastidores, a notícia que mais chama atenção é “Entenda a fala enigmática de Tite e o motivo da irritação do treinador do Botafogo durante a semana”, segundo o Globo Esporte. Agora o desafio é o Corinthians, fora de casa, quarta, 18/11. Jogo difícil: o modelo dá 27% de chance de vitória.",
+   "texto": "Nem lá, nem cá: o Botafogo fez 6 dos últimos 15 pontos possíveis. No último jogo, perdeu para o Corinthians por 4 a 0 fora de casa. Em 12º lugar, com 42 pontos, o Botafogo está numa zona tranquila da tabela, longe das brigas de cima e de baixo. O ataque anda travado, com só 3 gols em 5 jogos. Nos bastidores, a notícia que mais chama atenção é “Tite vai reencontrar o Corinthians! Veja o desempenho do treinador, agora no Botafogo, contra o ex-clube”, segundo a ESPN. Agora o desafio é o São Paulo, em casa, segunda, 23/11. Jogo difícil: o modelo dá 40% de chance de vitória.",
    "autor": "frases",
    "noticias": [
     {
@@ -102,7 +102,7 @@
     }
    ],
    "noticias_em": "2026-11-18T08:15:15.738Z",
-   "texto_em": "2026-11-06T05:11:54.874Z",
+   "texto_em": "2026-11-19T02:51:13.833Z",
    "videos": {
     "UULFFxjZDrLCOCHkUCu632AmMQ": [
      "V-MqjpKK04o",
@@ -297,7 +297,7 @@
    "videos_em": "2026-11-06T18:48:11.099Z"
   },
   "corinthians": {
-   "texto": "A 4 jogos do fim, o Corinthians está na luta contra o rebaixamento: 17º lugar, com 37 pontos, 1 ponto atrás do Internacional, 16º, o primeiro fora da zona. Pelas nossas simulações, o risco de cair é de 41%. A briga é embolada: o Grêmio (55%), o Vitória (44%) e o Internacional (33%) também estão nela. No último jogo, empatou em 0 a 0 com o São Paulo fora de casa. Nos bastidores, a notícia que mais chama atenção é “Corinthians tenta antecipar verba para quitar R$ 33,5 milhões em transfer bans”, segundo o Globo Esporte. Agora vem o Botafogo, em casa, quarta, 18/11, e o jogo pesa: com vitória, o risco de cair vai a 22%; com empate, a 51%; com derrota, a 62%.",
+   "texto": "A 3 jogos do fim, o Corinthians está na luta contra o rebaixamento: 15º lugar, com 40 pontos, 2 pontos à frente do Internacional, 17º, o primeiro da zona de rebaixamento. Pelas nossas simulações, o risco de cair é de 16%. A briga é embolada: o Grêmio (66%), o Vitória (46%) e o Internacional (36%) também estão nela. No último jogo, venceu o Botafogo por 4 a 0 em casa. Fora de campo, o assunto da semana é: “Red Bull Bragantino vence Corinthians e abre vantagem no Paulistão F” (UOL Esporte). Agora vem o Atlético Mineiro, fora de casa, quarta, 25/11, e o jogo pesa: com vitória, o risco de cair vai a 1%; com empate, a 14%; com derrota, a 25%.",
    "autor": "frases",
    "noticias": [
     {
@@ -338,7 +338,7 @@
     }
    ],
    "noticias_em": "2026-11-18T08:15:21.333Z",
-   "texto_em": "2026-11-10T01:32:39.654Z",
+   "texto_em": "2026-11-19T02:51:13.833Z",
    "videos": {
     "UULFwpyuvmJ_mOrebYbUPXtaBQ": [
      "TYwF_o_BpsY",
@@ -640,7 +640,7 @@
    "videos_em": "2026-11-07T19:27:09.621Z"
   },
   "gremio": {
-   "texto": "A 4 jogos do fim, o Grêmio está na luta contra o rebaixamento: 18º lugar, com 37 pontos, 1 ponto atrás do Internacional, 16º, o primeiro fora da zona. Pelas nossas simulações, o risco de cair é de 55%. A briga é embolada: o Vitória (44%), o Corinthians (41%) e o Internacional (33%) também estão nela. No último jogo, perdeu para o Flamengo por 3 a 1 fora de casa. Fora de campo, o assunto da semana é: “Com Palmeiras na final, Grêmio terá vaga na fase de grupos da Libertadores se não for rebaixado” (Globo Esporte). Agora vem o Bahia, em casa, quarta, 18/11, e o jogo pesa: com vitória, o risco de cair vai a 31%; com empate, a 62%; com derrota, a 73%.",
+   "texto": "A 3 jogos do fim, o Grêmio está na luta contra o rebaixamento: 18º lugar, com 38 pontos, empatado em pontos com o Vitória, 16º, o primeiro fora da zona. Pelas nossas simulações, o risco de cair é de 66%. A briga é embolada: o Vitória (46%), o Internacional (36%) e o Mirassol (24%) também estão nela. No último jogo, empatou em 0 a 0 com o Bahia em casa. Nos bastidores, a notícia que mais chama atenção é “Do que Grêmio e Inter precisam para escapar do Z-4 na 35ª rodada? Veja e simule”, segundo o Globo Esporte. Agora vem o Santos, fora de casa, segunda, 23/11, e o jogo pesa: com vitória, o risco de cair vai a 34%; com empate, a 66%; com derrota, a 79%.",
    "autor": "frases",
    "noticias": [
     {
@@ -681,7 +681,7 @@
     }
    ],
    "noticias_em": "2026-11-18T08:15:29.733Z",
-   "texto_em": "2026-11-10T01:32:39.654Z",
+   "texto_em": "2026-11-19T02:51:13.833Z",
    "videos": {
     "UULFBOGYcnvM-9iI-8d-DUEeMw": [
      "LeC5YLCYg-M",

@@ -2,7 +2,7 @@
   "fonte": "football-data.org",
   "competicao": "Campeonato Brasileiro Série A",
   "temporada": 2026,
-  "baixado_em": "2026-11-18T22:50:27-03:00",
+  "baixado_em": "2026-11-18T23:50:16-03:00",
   "times": {
     "bahia": {
       "nome": "Bahia",
@@ -4657,14 +4657,12 @@
       "data": "2026-11-18T21:30:00-03:00",
       "mandante": "corinthians",
       "visitante": "botafogo",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "IN_PLAY",
+      "disputado": true,
+      "gols_mandante": 4,
+      "gols_visitante": 0,
+      "status_fonte": "FINISHED",
       "estadio": "Neo Química Arena (Itaquerão)",
-      "transmissao": [
-        "Premiere"
-      ]
+      "transmissao": null
     },
     {
       "id": 555084,
@@ -4672,14 +4670,12 @@
       "data": "2026-11-18T21:30:00-03:00",
       "mandante": "gremio",
       "visitante": "bahia",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "IN_PLAY",
+      "disputado": true,
+      "gols_mandante": 0,
+      "gols_visitante": 0,
+      "status_fonte": "FINISHED",
       "estadio": "Arena do Grêmio",
-      "transmissao": [
-        "Premiere"
-      ]
+      "transmissao": null
     },
     {
       "id": 555088,
