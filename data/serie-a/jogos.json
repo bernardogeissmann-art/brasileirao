@@ -2,7 +2,7 @@
   "fonte": "football-data.org",
   "competicao": "Campeonato Brasileiro Série A",
   "temporada": 2026,
-  "baixado_em": "2026-11-18T05:14:10-03:00",
+  "baixado_em": "2026-11-18T22:50:27-03:00",
   "times": {
     "bahia": {
       "nome": "Bahia",
@@ -4605,14 +4605,12 @@
       "data": "2026-11-18T19:30:00-03:00",
       "mandante": "coritiba",
       "visitante": "santos",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "TIMED",
+      "disputado": true,
+      "gols_mandante": 0,
+      "gols_visitante": 1,
+      "status_fonte": "FINISHED",
       "estadio": "Estádio Couto Pereira",
-      "transmissao": [
-        "Premiere"
-      ]
+      "transmissao": null
     },
     {
       "id": 555086,
@@ -4620,14 +4618,12 @@
       "data": "2026-11-18T20:00:00-03:00",
       "mandante": "clube-do-remo",
       "visitante": "chapecoense",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "TIMED",
+      "disputado": true,
+      "gols_mandante": 2,
+      "gols_visitante": 0,
+      "status_fonte": "FINISHED",
       "estadio": "Estádio Jornalista Edgar Proença (Mangueirão)",
-      "transmissao": [
-        "Premiere"
-      ]
+      "transmissao": null
     },
     {
       "id": 555082,
@@ -4635,14 +4631,12 @@
       "data": "2026-11-18T20:30:00-03:00",
       "mandante": "cruzeiro",
       "visitante": "palmeiras",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "TIMED",
+      "disputado": true,
+      "gols_mandante": 2,
+      "gols_visitante": 1,
+      "status_fonte": "FINISHED",
       "estadio": "Estádio Governador Magalhães Pinto (Mineirão)",
-      "transmissao": [
-        "Premiere"
-      ]
+      "transmissao": null
     },
     {
       "id": 555083,
@@ -4650,16 +4644,12 @@
       "data": "2026-11-18T20:30:00-03:00",
       "mandante": "flamengo",
       "visitante": "paranaense",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "TIMED",
+      "disputado": true,
+      "gols_mandante": 2,
+      "gols_visitante": 1,
+      "status_fonte": "FINISHED",
       "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
-      "transmissao": [
-        "sportv",
-        "Premiere",
-        "globoplay"
-      ]
+      "transmissao": null
     },
     {
       "id": 555080,
@@ -4670,7 +4660,7 @@
       "disputado": false,
       "gols_mandante": null,
       "gols_visitante": null,
-      "status_fonte": "TIMED",
+      "status_fonte": "IN_PLAY",
       "estadio": "Neo Química Arena (Itaquerão)",
       "transmissao": [
         "Premiere"
@@ -4685,7 +4675,7 @@
       "disputado": false,
       "gols_mandante": null,
       "gols_visitante": null,
-      "status_fonte": "TIMED",
+      "status_fonte": "IN_PLAY",
       "estadio": "Arena do Grêmio",
       "transmissao": [
         "Premiere"
@@ -4702,7 +4692,11 @@
       "gols_visitante": null,
       "status_fonte": "TIMED",
       "estadio": "Estádio São Januário",
-      "transmissao": null
+      "transmissao": [
+        "sportv",
+        "Premiere",
+        "globoplay"
+      ]
     },
     {
       "id": 555089,
@@ -4730,7 +4724,12 @@
       "gols_visitante": null,
       "status_fonte": "TIMED",
       "estadio": "Estádio Cícero Pompeu de Toledo (Morumbi)",
-      "transmissao": null
+      "transmissao": [
+        "Premiere",
+        "Globo",
+        "globoplay",
+        "Ge TV"
+      ]
     },
     {
       "id": 555098,
