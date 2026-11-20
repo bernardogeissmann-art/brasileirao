@@ -2,7 +2,7 @@
   "fonte": "football-data.org",
   "competicao": "Campeonato Brasileiro Série A",
   "temporada": 2026,
-  "baixado_em": "2026-11-19T22:46:50-03:00",
+  "baixado_em": "2026-11-19T23:49:52-03:00",
   "times": {
     "bahia": {
       "nome": "Bahia",
@@ -4709,17 +4709,12 @@
       "data": "2026-11-19T21:30:00-03:00",
       "mandante": "sao-paulo",
       "visitante": "fluminense",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "IN_PLAY",
+      "disputado": true,
+      "gols_mandante": 0,
+      "gols_visitante": 1,
+      "status_fonte": "FINISHED",
       "estadio": "Estádio Cícero Pompeu de Toledo (Morumbi)",
-      "transmissao": [
-        "Premiere",
-        "Globo",
-        "globoplay",
-        "Ge TV"
-      ]
+      "transmissao": null
     },
     {
       "id": 555098,
