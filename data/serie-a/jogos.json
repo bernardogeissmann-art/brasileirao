@@ -2,7 +2,7 @@
   "fonte": "football-data.org",
   "competicao": "Campeonato Brasileiro Série A",
   "temporada": 2026,
-  "baixado_em": "2026-11-19T05:19:17-03:00",
+  "baixado_em": "2026-11-19T22:46:50-03:00",
   "times": {
     "bahia": {
       "nome": "Bahia",
@@ -4683,16 +4683,12 @@
       "data": "2026-11-19T19:30:00-03:00",
       "mandante": "vasco-da-gama",
       "visitante": "internacional",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "TIMED",
+      "disputado": true,
+      "gols_mandante": 2,
+      "gols_visitante": 1,
+      "status_fonte": "FINISHED",
       "estadio": "Estádio São Januário",
-      "transmissao": [
-        "sportv",
-        "Premiere",
-        "globoplay"
-      ]
+      "transmissao": null
     },
     {
       "id": 555089,
@@ -4700,14 +4696,12 @@
       "data": "2026-11-19T19:30:00-03:00",
       "mandante": "vitoria",
       "visitante": "bragantino",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "TIMED",
+      "disputado": true,
+      "gols_mandante": 2,
+      "gols_visitante": 1,
+      "status_fonte": "FINISHED",
       "estadio": "Estádio Manoel Barradas (Barradão)",
-      "transmissao": [
-        "Premiere"
-      ]
+      "transmissao": null
     },
     {
       "id": 555087,
@@ -4718,7 +4712,7 @@
       "disputado": false,
       "gols_mandante": null,
       "gols_visitante": null,
-      "status_fonte": "TIMED",
+      "status_fonte": "IN_PLAY",
       "estadio": "Estádio Cícero Pompeu de Toledo (Morumbi)",
       "transmissao": [
         "Premiere",

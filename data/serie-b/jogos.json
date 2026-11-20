@@ -2,7 +2,7 @@
   "fonte": "ESPN",
   "competicao": "Campeonato Brasileiro Série B",
   "temporada": 2026,
-  "baixado_em": "2026-11-19T05:19:58-03:00",
+  "baixado_em": "2026-11-19T22:47:22-03:00",
   "times": {
     "america-mineiro": {
       "nome": "América Mineiro",
@@ -2972,7 +2972,9 @@
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
       "estadio": "Estádio Antônio Accioly",
-      "transmissao": null
+      "transmissao": [
+        "Disney+"
+      ]
     },
     {
       "id": 401860276,
@@ -3232,7 +3234,10 @@
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
       "estadio": "Heriberto Hülse",
-      "transmissao": null
+      "transmissao": [
+        "Disney+",
+        "SportyNet"
+      ]
     },
     {
       "id": 401860294,
