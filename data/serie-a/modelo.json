@@ -1,8 +1,8 @@
 {
   "descricao": "gols_mandante ~ Poisson(ataque_mandante * defesa_visitante * fator_casa); gols_visitante ~ Poisson(ataque_visitante * defesa_mandante). Média dos ataques = 1. Defesa maior = sofre mais gols.",
   "temporada": 2026,
-  "dados_baixados_em": "2026-11-20T05:16:39-03:00",
-  "estimado_em": "2026-11-20T05:17:13-03:00",
+  "dados_baixados_em": "2026-11-21T05:06:00-03:00",
+  "estimado_em": "2026-11-21T05:06:36-03:00",
   "jogos_usados": 350,
   "fator_casa": 1.3713801875469347,
   "log_verossimilhanca": -953.4562779786726,

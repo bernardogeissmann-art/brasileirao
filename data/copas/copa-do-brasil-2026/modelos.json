@@ -1,8 +1,8 @@
 {
   "competicao": "Copa do Brasil",
   "temporada": 2026,
-  "dados_baixados_em": "2026-11-20T05:17:42-03:00",
-  "estimado_em": "2026-11-20T05:17:45-03:00",
+  "dados_baixados_em": "2026-11-21T05:06:59-03:00",
+  "estimado_em": "2026-11-21T05:07:01-03:00",
   "parametros": {
     "forca_prior": 3,
     "gols_por_jogo_prior": 2.5,

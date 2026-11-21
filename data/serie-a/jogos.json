@@ -2,7 +2,7 @@
   "fonte": "football-data.org",
   "competicao": "Campeonato Brasileiro Série A",
   "temporada": 2026,
-  "baixado_em": "2026-11-20T05:16:39-03:00",
+  "baixado_em": "2026-11-21T05:06:00-03:00",
   "times": {
     "bahia": {
       "nome": "Bahia",
@@ -4727,7 +4727,12 @@
       "gols_visitante": null,
       "status_fonte": "TIMED",
       "estadio": "Nubank Parque",
-      "transmissao": null
+      "transmissao": [
+        "Premiere",
+        "Globo",
+        "globoplay",
+        "Ge TV"
+      ]
     },
     {
       "id": 555092,
@@ -4740,7 +4745,9 @@
       "gols_visitante": null,
       "status_fonte": "TIMED",
       "estadio": "Arena Fonte Nova",
-      "transmissao": null
+      "transmissao": [
+        "Premiere"
+      ]
     },
     {
       "id": 555095,
@@ -4753,7 +4760,9 @@
       "gols_visitante": null,
       "status_fonte": "TIMED",
       "estadio": "Arena Condá",
-      "transmissao": null
+      "transmissao": [
+        "Premiere"
+      ]
     },
     {
       "id": 555090,
@@ -4766,7 +4775,9 @@
       "gols_visitante": null,
       "status_fonte": "TIMED",
       "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)",
-      "transmissao": null
+      "transmissao": [
+        "Premiere"
+      ]
     },
     {
       "id": 555096,
@@ -4792,7 +4803,9 @@
       "gols_visitante": null,
       "status_fonte": "TIMED",
       "estadio": "Estádio Cícero de Souza Marques",
-      "transmissao": null
+      "transmissao": [
+        "Premiere"
+      ]
     },
     {
       "id": 555097,
@@ -4805,7 +4818,9 @@
       "gols_visitante": null,
       "status_fonte": "TIMED",
       "estadio": "Estádio José Pinheiro Borda (Beira-Rio)",
-      "transmissao": null
+      "transmissao": [
+        "Premiere"
+      ]
     },
     {
       "id": 555093,
