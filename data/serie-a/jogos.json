@@ -2,7 +2,7 @@
   "fonte": "football-data.org",
   "competicao": "Campeonato Brasileiro Série A",
   "temporada": 2026,
-  "baixado_em": "2026-11-21T05:06:00-03:00",
+  "baixado_em": "2026-11-21T19:13:58-03:00",
   "times": {
     "bahia": {
       "nome": "Bahia",
@@ -4722,17 +4722,12 @@
       "data": "2026-11-21T16:30:00-03:00",
       "mandante": "palmeiras",
       "visitante": "flamengo",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "TIMED",
+      "disputado": true,
+      "gols_mandante": 1,
+      "gols_visitante": 1,
+      "status_fonte": "FINISHED",
       "estadio": "Nubank Parque",
-      "transmissao": [
-        "Premiere",
-        "Globo",
-        "globoplay",
-        "Ge TV"
-      ]
+      "transmissao": null
     },
     {
       "id": 555092,
@@ -4743,7 +4738,7 @@
       "disputado": false,
       "gols_mandante": null,
       "gols_visitante": null,
-      "status_fonte": "TIMED",
+      "status_fonte": "IN_PLAY",
       "estadio": "Arena Fonte Nova",
       "transmissao": [
         "Premiere"
@@ -4790,7 +4785,9 @@
       "gols_visitante": null,
       "status_fonte": "TIMED",
       "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
-      "transmissao": null
+      "transmissao": [
+        "Premiere"
+      ]
     },
     {
       "id": 555094,
@@ -4833,7 +4830,9 @@
       "gols_visitante": null,
       "status_fonte": "TIMED",
       "estadio": "Estádio Nilton Santos (Engenhão)",
-      "transmissao": null
+      "transmissao": [
+        "Prime Video"
+      ]
     },
     {
       "id": 555099,
@@ -4846,7 +4845,11 @@
       "gols_visitante": null,
       "status_fonte": "TIMED",
       "estadio": "Estádio Cícero Pompeu de Toledo (Morumbi)",
-      "transmissao": null
+      "transmissao": [
+        "sportv",
+        "Premiere",
+        "globoplay"
+      ]
     },
     {
       "id": 555091,
