@@ -2,7 +2,7 @@
   "competicao": "Copa Sul-Americana",
   "temporada": 2026,
   "fonte": "ESPN (site.api.espn.com)",
-  "baixado_em": "2026-11-21T05:07:03-03:00",
+  "baixado_em": "2026-11-22T05:09:12-03:00",
   "liga_espn": "conmebol.sudamericana",
   "times": {
     "academia-puerto-cabello": {
@@ -3041,18 +3041,15 @@
       "mandante": "mineiro",
       "visitante": "boca-juniors",
       "neutro": true,
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
+      "disputado": true,
+      "gols_mandante": 0,
+      "gols_visitante": 2,
       "penaltis_mandante": null,
       "penaltis_visitante": null,
-      "status_fonte": "STATUS_SCHEDULED",
+      "status_fonte": "STATUS_FULL_TIME",
       "estadio": "Metropolitano Roberto Meléndez",
       "perna": 1,
-      "transmissao": [
-        "Disney+",
-        "Paramount+"
-      ]
+      "transmissao": null
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
  "competicao": "Copa Sul-Americana",
  "temporada": 2026,
- "dados_baixados_em": "2026-11-21T05:07:03-03:00",
- "calculado_em": "2026-11-21T08:07:12.175Z",
+ "dados_baixados_em": "2026-11-22T05:09:12-03:00",
+ "calculado_em": "2026-11-22T08:09:19.941Z",
  "simulacoes": 10000,
  "momentos": [
   {
@@ -4217,6 +4217,294 @@
      "semifinal": 1,
      "final": 1,
      "titulo": 0.4071
+    },
+    "montevideo-city-torque": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0,
+     "titulo": 0
+    },
+    "nacional": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "ohiggins": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "olimpia": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "palestino": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "racing": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "river-plate": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "san-lorenzo": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "santa-fe": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "santos": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "sao-paulo": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "sporting-cristal": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "tigre": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "ucv": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "vasco-da-gama": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 0,
+     "titulo": 0
+    }
+   }
+  },
+  {
+   "id": "final-1",
+   "rotulo": "Fim do campeonato",
+   "curto": "Fim",
+   "ate": "2026-11-21T19:30:00-03:00",
+   "times": {
+    "academia-puerto-cabello": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "alianza-atletico": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "america-de-cali": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "audax-italiano": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "barracas-central": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "blooming": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "boca-juniors": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 1,
+     "titulo": 1
+    },
+    "bolivar": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "boston-river": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "botafogo": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "bragantino": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "carabobo": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "caracas": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "cienciano": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "deportivo-cuenca": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "deportivo-recoleta": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "deportivo-riestra": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "gremio": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "independiente-medellin": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "independiente-petrolero": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "juventud": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "lanus": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "macara": {
+     "oitavas": 1,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "millonarios": {
+     "oitavas": 0,
+     "quartas": 0,
+     "semifinal": 0,
+     "final": 0,
+     "titulo": 0
+    },
+    "mineiro": {
+     "oitavas": 1,
+     "quartas": 1,
+     "semifinal": 1,
+     "final": 1,
+     "titulo": 0
     },
     "montevideo-city-torque": {
      "oitavas": 1,

@@ -1,8 +1,8 @@
 {
   "competicao": "Copa Sul-Americana",
   "temporada": 2026,
-  "dados_baixados_em": "2026-11-21T05:07:03-03:00",
-  "estimado_em": "2026-11-21T05:07:07-03:00",
+  "dados_baixados_em": "2026-11-22T05:09:12-03:00",
+  "estimado_em": "2026-11-22T05:09:14-03:00",
   "parametros": {
     "forca_prior": 3,
     "gols_por_jogo_prior": 2.5,
@@ -2573,6 +2573,177 @@
         "vasco-da-gama": {
           "ataque": 1.1016667101256863,
           "defesa": 0.9722391545589119
+        }
+      }
+    },
+    {
+      "id": "final-1",
+      "rotulo": "Fim do campeonato",
+      "curto": "Fim",
+      "ate": "2026-11-21T19:30:00-03:00",
+      "jogos_usados": 141,
+      "jogos_do_brasileirao": 352,
+      "fator_casa": 1.3715790427450227,
+      "times": {
+        "academia-puerto-cabello": {
+          "ataque": 0.9583929982178614,
+          "defesa": 1.0568286492740122
+        },
+        "alianza-atletico": {
+          "ataque": 0.581281456154585,
+          "defesa": 1.2572591068252121
+        },
+        "america-de-cali": {
+          "ataque": 0.9164004687103213,
+          "defesa": 0.9355194262710711
+        },
+        "audax-italiano": {
+          "ataque": 0.9641177983760001,
+          "defesa": 1.263710081235475
+        },
+        "barracas-central": {
+          "ataque": 0.49202238544708815,
+          "defesa": 1.0478936029140005
+        },
+        "blooming": {
+          "ataque": 0.7244681216678553,
+          "defesa": 1.968984494013351
+        },
+        "boca-juniors": {
+          "ataque": 1.4031852314578503,
+          "defesa": 0.6132464191265734
+        },
+        "bolivar": {
+          "ataque": 1.2507221501294041,
+          "defesa": 1.2039439219278327
+        },
+        "boston-river": {
+          "ataque": 0.8837838376456039,
+          "defesa": 1.5026225189384612
+        },
+        "botafogo": {
+          "ataque": 1.1883802178087675,
+          "defesa": 1.201057638661897
+        },
+        "bragantino": {
+          "ataque": 1.1379326557373357,
+          "defesa": 0.8531489138840765
+        },
+        "carabobo": {
+          "ataque": 0.8140856743701468,
+          "defesa": 0.846022218901151
+        },
+        "caracas": {
+          "ataque": 0.8300626757351899,
+          "defesa": 1.4602802630877911
+        },
+        "cienciano": {
+          "ataque": 1.1235383014883666,
+          "defesa": 0.8953451055000656
+        },
+        "deportivo-cuenca": {
+          "ataque": 0.6139530942953776,
+          "defesa": 0.9872366342011132
+        },
+        "deportivo-recoleta": {
+          "ataque": 0.8943144267195063,
+          "defesa": 1.1625264482726203
+        },
+        "deportivo-riestra": {
+          "ataque": 0.7510637370896213,
+          "defesa": 1.4006464713433013
+        },
+        "gremio": {
+          "ataque": 0.950295957267341,
+          "defesa": 0.9536825302868724
+        },
+        "independiente-medellin": {
+          "ataque": 0.9429576624077889,
+          "defesa": 1.0523814443778086
+        },
+        "independiente-petrolero": {
+          "ataque": 0.5096473933376684,
+          "defesa": 1.7316845032003445
+        },
+        "juventud": {
+          "ataque": 1.3225080282540977,
+          "defesa": 0.959544269809525
+        },
+        "lanus": {
+          "ataque": 0.9789044938397381,
+          "defesa": 1.2416306914224535
+        },
+        "macara": {
+          "ataque": 0.7845814774128784,
+          "defesa": 0.6827000497409558
+        },
+        "millonarios": {
+          "ataque": 0.9793038302847182,
+          "defesa": 1.0475263347292847
+        },
+        "mineiro": {
+          "ataque": 1.1311869933476975,
+          "defesa": 0.8530992102362461
+        },
+        "montevideo-city-torque": {
+          "ataque": 1.2683197377457907,
+          "defesa": 0.8951603891548889
+        },
+        "nacional": {
+          "ataque": 0.9523540072084624,
+          "defesa": 1.2690537691802803
+        },
+        "ohiggins": {
+          "ataque": 0.9776473304075567,
+          "defesa": 0.7903466721746462
+        },
+        "olimpia": {
+          "ataque": 1.0593635373571475,
+          "defesa": 1.0826822548621948
+        },
+        "palestino": {
+          "ataque": 0.4133517537520946,
+          "defesa": 0.917467510008233
+        },
+        "racing": {
+          "ataque": 1.041120682769346,
+          "defesa": 1.3320867340946134
+        },
+        "river-plate": {
+          "ataque": 0.9863333160763129,
+          "defesa": 0.644330924510422
+        },
+        "san-lorenzo": {
+          "ataque": 0.8620463827712305,
+          "defesa": 0.8491295427546369
+        },
+        "santa-fe": {
+          "ataque": 0.8790922133731495,
+          "defesa": 0.6286351524511964
+        },
+        "santos": {
+          "ataque": 1.324552716569786,
+          "defesa": 1.0364471898631915
+        },
+        "sao-paulo": {
+          "ataque": 0.9558308435058069,
+          "defesa": 0.7542260987596942
+        },
+        "sporting-cristal": {
+          "ataque": 0.6480371921857818,
+          "defesa": 0.755320912053121
+        },
+        "tigre": {
+          "ataque": 1.0668460662264798,
+          "defesa": 0.9640989876908818
+        },
+        "ucv": {
+          "ataque": 1.0876520391107758,
+          "defesa": 1.7504030333576563
+        },
+        "vasco-da-gama": {
+          "ataque": 1.1946557243784013,
+          "defesa": 0.9893588985105929
         }
       }
     }
