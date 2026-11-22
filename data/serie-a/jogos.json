@@ -2,7 +2,7 @@
   "fonte": "football-data.org",
   "competicao": "Campeonato Brasileiro Série A",
   "temporada": 2026,
-  "baixado_em": "2026-11-22T05:07:57-03:00",
+  "baixado_em": "2026-11-22T18:43:01-03:00",
   "times": {
     "bahia": {
       "nome": "Bahia",
@@ -4761,14 +4761,12 @@
       "data": "2026-11-22T16:00:00-03:00",
       "mandante": "paranaense",
       "visitante": "clube-do-remo",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "TIMED",
+      "disputado": true,
+      "gols_mandante": 4,
+      "gols_visitante": 2,
+      "status_fonte": "FINISHED",
       "estadio": "Estádio Joaquim Américo Guimarães (Arena da Baixada)",
-      "transmissao": [
-        "Premiere"
-      ]
+      "transmissao": null
     },
     {
       "id": 555096,
@@ -4779,7 +4777,7 @@
       "disputado": false,
       "gols_mandante": null,
       "gols_visitante": null,
-      "status_fonte": "TIMED",
+      "status_fonte": "IN_PLAY",
       "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
       "transmissao": [
         "Premiere"
