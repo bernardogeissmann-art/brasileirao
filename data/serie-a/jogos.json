@@ -2,7 +2,7 @@
   "fonte": "football-data.org",
   "competicao": "Campeonato Brasileiro Série A",
   "temporada": 2026,
-  "baixado_em": "2026-11-21T19:59:13-03:00",
+  "baixado_em": "2026-11-21T23:51:38-03:00",
   "times": {
     "bahia": {
       "nome": "Bahia",
@@ -4748,14 +4748,12 @@
       "data": "2026-11-21T21:00:00-03:00",
       "mandante": "chapecoense",
       "visitante": "cruzeiro",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "TIMED",
+      "disputado": true,
+      "gols_mandante": 1,
+      "gols_visitante": 2,
+      "status_fonte": "FINISHED",
       "estadio": "Arena Condá",
-      "transmissao": [
-        "Premiere"
-      ]
+      "transmissao": null
     },
     {
       "id": 555090,
