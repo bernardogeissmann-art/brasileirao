@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-23T08:31:29.585Z",
+ "gerado_em": "2026-11-23T16:01:30.227Z",
  "times": {
   "bahia": {
    "texto": "A fase não é das melhores para o Bahia: só 5 pontos nos últimos cinco jogos. No último jogo, perdeu para o Coritiba por 1 a 0 em casa. Já são 3 jogos sem vencer. Em 6º lugar, com 54 pontos, a vaga na Sul-Americana é o objetivo mais realista: 87% de chance. Nos últimos 5 jogos, foram 6 gols marcados e 7 sofridos: tudo bem equilibrado. Fora de campo, o assunto da semana é: “Recado motivacional, elogios a Ceni e pré-temporada: veja interações de Pep Guardiola com o Bahia” (Globo Esporte). Agora o desafio é o Botafogo, fora de casa, sábado, 28/11. Jogo difícil: o modelo dá 37% de chance de vitória.",
@@ -282,19 +282,19 @@
    "texto_em": "2026-11-22T21:43:44.851Z",
    "videos": {
     "UULFsLGx5V5iv-JHbG10oDZOcw": [
+     "cGZRR_5j7BU",
+     "9eTMrtEH8kQ",
+     "m0AiSnwNPyE",
+     "EIazEp9VGeg",
      "JFm-rI1WAEs",
      "S8o5-7wOTqg",
      "XlkGNJ_MddQ",
      "S_GUD4hv6W4",
      "8p0PZ-K4oSE",
-     "ERKYHHdir40",
-     "GvgCjN2Huso",
-     "cINsc1VjwEk",
-     "shBB1WjMQwQ",
-     "ddwY_D_VtF0"
+     "ERKYHHdir40"
     ]
    },
-   "videos_em": "2026-11-19T19:16:28.680Z"
+   "videos_em": "2026-11-23T16:01:27.651Z"
   },
   "corinthians": {
    "texto": "A 3 jogos do fim, o Corinthians está na luta contra o rebaixamento: 15º lugar, com 40 pontos, 2 pontos à frente do Internacional, 17º, o primeiro da zona de rebaixamento. Pelas nossas simulações, o risco de cair é de 16%. A briga é embolada: o Grêmio (66%), o Vitória (46%) e o Internacional (36%) também estão nela. No último jogo, venceu o Botafogo por 4 a 0 em casa. Fora de campo, o assunto da semana é: “Red Bull Bragantino vence Corinthians e abre vantagem no Paulistão F” (UOL Esporte). Agora vem o Atlético Mineiro, fora de casa, quarta, 25/11, e o jogo pesa: com vitória, o risco de cair vai a 1%; com empate, a 14%; com derrota, a 25%.",
@@ -1015,31 +1015,31 @@
    "texto_em": "2026-11-22T21:43:44.851Z",
    "videos": {
     "UULF1MwZRE5_wAu1Pe8pWcZtyQ": [
-     "9_ux7kcj8mY",
-     "nva1jaePJMY",
-     "BjGUe6Edtj4",
-     "G9OmbOBTD8A",
-     "pLVduJu_-Lc",
-     "1eqWqc4UIgM",
-     "xaP-H82VzRk",
-     "zByGo9-4O_Y",
-     "BhwtMDYcC9M",
-     "-piCwYA6Ql8"
+     "kGU1wJvl-E0",
+     "e4MSNMy9POw",
+     "mkklNxhY_fk",
+     "_swmD17utT8",
+     "A12LTVsEisw",
+     "_FMVdV2H2cw",
+     "xpNizMkv9No",
+     "sfue2d8F-NY",
+     "PZPnM-YbiVE",
+     "QHsT1NLAI9Y"
     ],
     "UULFUN1ASH969TSwnuUUU56TmA": [
-     "E9HTeyn4P1o",
-     "KWMPq_ShnTE",
-     "PY4nmBpyJVo",
-     "ZjCD0KyFkAs",
-     "9syFJpro34k",
-     "75d4W5Q1DXk",
-     "4rNfWwtS_w0",
-     "27eb7Ol9IcI",
-     "ZoWPW0SeyjU",
-     "gP014r1mw38"
+     "adHP6WVTe2c",
+     "mV1omRqWuSY",
+     "Qq2G8AUhvZg",
+     "uOJPRNtLIDU",
+     "eGgUFDIQaHg",
+     "BB7rLcs_KRw",
+     "LNy1D_MVb14",
+     "ppz0dvmnZ_8",
+     "_a0TEgguwVo",
+     "H_HiPH5qcFs"
     ]
    },
-   "videos_em": "2026-11-19T20:26:51.459Z"
+   "videos_em": "2026-11-23T16:01:30.227Z"
   },
   "santos": {
    "texto": "O Santos vive uma fase de altos e baixos: 8 pontos nos últimos cinco jogos. No último jogo, venceu o Coritiba por 1 a 0 fora de casa. Em 8º lugar, com 50 pontos, a vaga na Sul-Americana é o objetivo mais realista: 97% de chance. Nos últimos 5 jogos, foram 5 gols marcados e 4 sofridos: tudo bem equilibrado. Fora de campo, o assunto da semana é: “São Paulo vence Santos no Pacaembu e se aproxima da semi do Paulistão F” (UOL Esporte). Agora o desafio é o Grêmio, em casa, segunda, 23/11, e o Santos chega como favorito: 55% de chance de vitória.",
@@ -1753,6 +1753,8 @@
    "texto_em": "2026-11-22T21:43:44.851Z",
    "videos": {
     "UULF_ofom_8UQrjQJ28VqzitpQ": [
+     "6TtZy0SRmJw",
+     "aBtsoHSRv58",
      "7h7PRxOQ-j0",
      "-NSgpKfaZ2k",
      "XjAVHBqn2WQ",
@@ -1760,12 +1762,10 @@
      "rrss-4O0mJU",
      "cOrcpiwkDM0",
      "UO3qPI91JW8",
-     "ubPJDWtpBnE",
-     "kx63Np-1lbE",
-     "6x4Z18o4zU0"
+     "ubPJDWtpBnE"
     ]
    },
-   "videos_em": "2026-11-15T15:36:56.108Z"
+   "videos_em": "2026-11-23T16:01:27.842Z"
   },
   "cuiaba": {
    "noticias": [
@@ -1871,19 +1871,19 @@
    "texto_em": "2026-11-22T21:43:44.851Z",
    "videos": {
     "UULFV5UiFF5AlNKW4sLXcYMG_g": [
+     "Lui8QEYj2ss",
+     "EPQ36QbUayw",
+     "cWdLKEY8pJA",
+     "m5_635VSe2c",
+     "IUbRcAk6efo",
+     "9WbD7kMH9mI",
+     "MoWLckDG_Pg",
+     "w-8Jt0H541A",
      "jtvBUgCvKHE",
-     "VwNo0Dzip2g",
-     "u4NO_UkQVGU",
-     "pE3ej4A3V7A",
-     "1DATD4-HREg",
-     "71uK0cEowBE",
-     "feEGVmVR8-s",
-     "iBnR7OYAvP8",
-     "EPhTF_HekgI",
-     "z8txzZcpxRE"
+     "VwNo0Dzip2g"
     ]
    },
-   "videos_em": "2026-11-15T15:36:56.980Z"
+   "videos_em": "2026-11-23T16:01:28.427Z"
   },
   "goias": {
    "noticias": [
