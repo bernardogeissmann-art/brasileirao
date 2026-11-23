@@ -2,7 +2,7 @@
   "fonte": "football-data.org",
   "competicao": "Campeonato Brasileiro Série A",
   "temporada": 2026,
-  "baixado_em": "2026-11-22T21:15:45-03:00",
+  "baixado_em": "2026-11-22T22:53:03-03:00",
   "times": {
     "bahia": {
       "nome": "Bahia",
@@ -4787,14 +4787,12 @@
       "data": "2026-11-22T19:30:00-03:00",
       "mandante": "bragantino",
       "visitante": "vasco-da-gama",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "IN_PLAY",
+      "disputado": true,
+      "gols_mandante": 1,
+      "gols_visitante": 0,
+      "status_fonte": "FINISHED",
       "estadio": "Estádio Cícero de Souza Marques",
-      "transmissao": [
-        "Premiere"
-      ]
+      "transmissao": null
     },
     {
       "id": 555097,
