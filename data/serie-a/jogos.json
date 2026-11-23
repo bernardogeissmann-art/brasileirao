@@ -2,7 +2,7 @@
   "fonte": "football-data.org",
   "competicao": "Campeonato Brasileiro Série A",
   "temporada": 2026,
-  "baixado_em": "2026-11-22T18:43:01-03:00",
+  "baixado_em": "2026-11-22T21:15:45-03:00",
   "times": {
     "bahia": {
       "nome": "Bahia",
@@ -4774,14 +4774,12 @@
       "data": "2026-11-22T18:30:00-03:00",
       "mandante": "fluminense",
       "visitante": "mirassol",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "IN_PLAY",
+      "disputado": true,
+      "gols_mandante": 1,
+      "gols_visitante": 0,
+      "status_fonte": "FINISHED",
       "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
-      "transmissao": [
-        "Premiere"
-      ]
+      "transmissao": null
     },
     {
       "id": 555094,
@@ -4792,7 +4790,7 @@
       "disputado": false,
       "gols_mandante": null,
       "gols_visitante": null,
-      "status_fonte": "TIMED",
+      "status_fonte": "IN_PLAY",
       "estadio": "Estádio Cícero de Souza Marques",
       "transmissao": [
         "Premiere"

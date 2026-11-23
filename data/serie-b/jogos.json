@@ -2,7 +2,7 @@
   "fonte": "ESPN",
   "competicao": "Campeonato Brasileiro Série B",
   "temporada": 2026,
-  "baixado_em": "2026-11-22T18:43:36-03:00",
+  "baixado_em": "2026-11-22T21:16:23-03:00",
   "times": {
     "america-mineiro": {
       "nome": "América Mineiro",
@@ -2972,9 +2972,7 @@
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
       "estadio": "Estádio Antônio Accioly",
-      "transmissao": [
-        "Disney+"
-      ]
+      "transmissao": null
     },
     {
       "id": 401860276,
@@ -5127,10 +5125,10 @@
       "data": "2026-11-22T18:30:00-03:00",
       "mandante": "atletico-goianiense",
       "visitante": "vila-nova",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "IN_PLAY",
+      "disputado": true,
+      "gols_mandante": 1,
+      "gols_visitante": 1,
+      "status_fonte": "FINISHED",
       "estadio": "Estádio Antônio Accioly",
       "transmissao": null
     },
