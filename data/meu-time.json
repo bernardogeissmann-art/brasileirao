@@ -1,5 +1,5 @@
 {
- "gerado_em": "2026-11-23T19:34:30.093Z",
+ "gerado_em": "2026-11-24T02:00:31.812Z",
  "times": {
   "bahia": {
    "texto": "A fase não é das melhores para o Bahia: só 5 pontos nos últimos cinco jogos. No último jogo, perdeu para o Coritiba por 1 a 0 em casa. Já são 3 jogos sem vencer. Em 6º lugar, com 54 pontos, a vaga na Sul-Americana é o objetivo mais realista: 87% de chance. Nos últimos 5 jogos, foram 6 gols marcados e 7 sofridos: tudo bem equilibrado. Fora de campo, o assunto da semana é: “Recado motivacional, elogios a Ceni e pré-temporada: veja interações de Pep Guardiola com o Bahia” (Globo Esporte). Agora o desafio é o Botafogo, fora de casa, sábado, 28/11. Jogo difícil: o modelo dá 37% de chance de vitória.",
@@ -61,7 +61,7 @@
    "videos_em": "2026-11-22T17:22:28.174Z"
   },
   "botafogo": {
-   "texto": "Nem lá, nem cá: o Botafogo fez 6 dos últimos 15 pontos possíveis. No último jogo, perdeu para o Corinthians por 4 a 0 fora de casa. Em 12º lugar, com 42 pontos, o Botafogo está numa zona tranquila da tabela, longe das brigas de cima e de baixo. O ataque anda travado, com só 3 gols em 5 jogos. Nos bastidores, a notícia que mais chama atenção é “Tite vai reencontrar o Corinthians! Veja o desempenho do treinador, agora no Botafogo, contra o ex-clube”, segundo a ESPN. Agora o desafio é o São Paulo, em casa, segunda, 23/11. Jogo difícil: o modelo dá 40% de chance de vitória.",
+   "texto": "O Botafogo anda devendo, com apenas 4 dos últimos 15 pontos possíveis. No último jogo, ficou no 1 a 1 com o São Paulo em casa. Em 14º lugar, com 43 pontos, o Botafogo está numa zona tranquila da tabela, longe das brigas de cima e de baixo. O ataque anda travado, com só 3 gols em 5 jogos, e a defesa preocupa, com 10 gols sofridos. Nos bastidores, a notícia que mais chama atenção é “River Plate bate Lanús com dois gols de Almada, ex-Botafogo, nas oitavas do Campeonato Argentino”, segundo a ESPN. Agora o desafio é o Bahia, em casa, sábado, 28/11. Jogo difícil: o modelo dá 38% de chance de vitória.",
    "autor": "frases",
    "noticias": [
     {
@@ -102,7 +102,7 @@
     }
    ],
    "noticias_em": "2026-11-23T08:30:31.588Z",
-   "texto_em": "2026-11-19T02:51:13.833Z",
+   "texto_em": "2026-11-24T02:00:31.806Z",
    "videos": {
     "UULFFxjZDrLCOCHkUCu632AmMQ": [
      "wkCHLhykil8",
@@ -723,7 +723,7 @@
    "videos_em": "2026-11-19T21:23:38.521Z"
   },
   "internacional": {
-   "texto": "A 3 jogos do fim, o Internacional está na luta contra o rebaixamento: 17º lugar, com 38 pontos, 2 pontos atrás do Corinthians, 16º, o primeiro fora da zona. Pelas nossas simulações, o risco de cair é de 57%. A briga é embolada: o Grêmio (70%), o Mirassol (26%) e o Corinthians (18%) também estão nela. No último jogo, perdeu para o Vasco por 2 a 1 fora de casa. Nos bastidores, a notícia que mais chama atenção é “Veja o que falta para o Inter ser obrigado a comprar Villagra”, segundo o Globo Esporte. Agora vem o Vitória, em casa, segunda, 23/11, e o jogo pesa: com vitória, o risco de cair vai a 35%; com empate, a 74%; com derrota, a 87%.",
+   "texto": "A 2 jogos do fim, o Internacional está na luta contra o rebaixamento: 17º lugar, com 38 pontos, 2 pontos atrás do Corinthians, 16º, o primeiro fora da zona. Pelas nossas simulações, o risco de cair é de 87%. A briga é embolada: o Grêmio (63%), o Mirassol (33%) e o Corinthians (14%) também estão nela. No último jogo, perdeu para o Vitória por 5 a 2 em casa. Nos bastidores, a notícia que mais chama atenção é “Da Série D à elite: bombeiros, Eduardo Baptista e Rafael Lacerda se reencontram em Inter x Vitória”, segundo o Globo Esporte. Agora vem o Bragantino, em casa, domingo, 29/11, e o jogo pesa: com vitória, o risco de cair vai a 71%; com empate, a 92%; com derrota, a 99%.",
    "autor": "frases",
    "noticias": [
     {
@@ -764,7 +764,7 @@
     }
    ],
    "noticias_em": "2026-11-23T08:30:46.918Z",
-   "texto_em": "2026-11-20T01:47:34.899Z",
+   "texto_em": "2026-11-24T02:00:31.806Z",
    "videos": {
     "UULFBgSy_cNIoGYnyLjmKHQOAg": [
      "B0cQJ6GmnyM",
@@ -1113,7 +1113,7 @@
    "videos_em": "2026-11-19T19:16:30.671Z"
   },
   "sao-paulo": {
-   "texto": "O São Paulo anda devendo, com apenas 5 dos últimos 15 pontos possíveis. No último jogo, perdeu para o Fluminense por 1 a 0 em casa. Já são 4 jogos sem vencer. Em 11º lugar, com 44 pontos, a vaga na Sul-Americana é o objetivo mais realista: 69% de chance. Nos últimos 5 jogos, foram 4 gols marcados e 5 sofridos: tudo bem equilibrado. Nos bastidores, a notícia que mais chama atenção é “Escalação do São Paulo: Dorival não terá Bobadilla contra o Fluminense”, segundo o Globo Esporte. Agora o desafio é o Botafogo, fora de casa, segunda, 23/11. Jogo difícil: o modelo dá 32% de chance de vitória.",
+   "texto": "O São Paulo anda devendo, com apenas 3 dos últimos 15 pontos possíveis. No último jogo, ficou no 1 a 1 com o Botafogo fora de casa. Já são 5 jogos sem vencer. Em 11º lugar, com 45 pontos, a vaga na Sul-Americana é o objetivo mais realista: 65% de chance. Nos últimos 5 jogos, foram 4 gols marcados e 6 sofridos: tudo bem equilibrado. Nos bastidores, a notícia que mais chama atenção é “Escalação do São Paulo: contrato veta, e Artur é desfalque contra o Botafogo”, segundo o Globo Esporte. Agora o desafio é o Remo, em casa, quinta, 26/11, e o São Paulo chega como favorito: 56% de chance de vitória.",
    "autor": "frases",
    "noticias": [
     {
@@ -1154,7 +1154,7 @@
     }
    ],
    "noticias_em": "2026-11-23T08:30:55.761Z",
-   "texto_em": "2026-11-20T02:50:35.217Z",
+   "texto_em": "2026-11-24T02:00:31.806Z",
    "videos": {
     "UULFX3zTAsEoZ61rQMYb_08Tow": [
      "hJeqBdmJQW8",
@@ -1243,7 +1243,7 @@
    "videos_em": "2026-11-23T19:34:30.093Z"
   },
   "vitoria": {
-   "texto": "A 3 jogos do fim, o Vitória está na luta contra o rebaixamento: 14º lugar, com 41 pontos, 3 pontos à frente do Internacional, 17º, o primeiro da zona de rebaixamento. Pelas nossas simulações, o risco de cair é de 16%. A briga é embolada: o Grêmio (70%), o Internacional (57%) e o Mirassol (26%) também estão nela. No último jogo, venceu o Bragantino por 2 a 1 em casa. Fora de campo, o assunto da semana é: “Escalação do Vitória contra o Bragantino: veja time provável, desfalques e dúvidas após treino” (Globo Esporte). Agora vem o Internacional, fora de casa, segunda, 23/11, e o jogo pesa: com vitória, o Vitória está salvo; com empate, o risco de cair vai a 5%; com derrota, a 28%.",
+   "texto": "O Vitória vive uma fase de altos e baixos: 7 pontos nos últimos cinco jogos. No último jogo, venceu o Internacional por 5 a 2 fora de casa. Em 13º lugar, com 44 pontos, o Vitória está numa zona tranquila da tabela, longe das brigas de cima e de baixo. Nos últimos 5 jogos, foram 8 gols marcados e 9 sofridos: tudo bem equilibrado. Fora de campo, o assunto da semana é: “Da Série D à elite: bombeiros, Eduardo Baptista e Rafael Lacerda se reencontram em Inter x Vitória” (Globo Esporte). Agora o desafio é o Santos, em casa, domingo, 29/11. Jogo difícil: o modelo dá 38% de chance de vitória.",
    "autor": "frases",
    "noticias": [
     {
@@ -1284,7 +1284,7 @@
     }
    ],
    "noticias_em": "2026-11-23T08:30:59.113Z",
-   "texto_em": "2026-11-20T01:47:34.899Z",
+   "texto_em": "2026-11-24T02:00:31.806Z",
    "videos": {
     "UULFJrrx7FDDj1n4srLwoAK0WA": [
      "E_7IEemrX8M",

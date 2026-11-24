@@ -2,7 +2,7 @@
   "fonte": "football-data.org",
   "competicao": "Campeonato Brasileiro Série A",
   "temporada": 2026,
-  "baixado_em": "2026-11-23T21:34:26-03:00",
+  "baixado_em": "2026-11-23T22:59:46-03:00",
   "times": {
     "bahia": {
       "nome": "Bahia",
@@ -4800,14 +4800,12 @@
       "data": "2026-11-23T19:30:00-03:00",
       "mandante": "internacional",
       "visitante": "vitoria",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "TIMED",
+      "disputado": true,
+      "gols_mandante": 2,
+      "gols_visitante": 5,
+      "status_fonte": "FINISHED",
       "estadio": "Estádio José Pinheiro Borda (Beira-Rio)",
-      "transmissao": [
-        "Premiere"
-      ]
+      "transmissao": null
     },
     {
       "id": 555093,
@@ -4815,14 +4813,12 @@
       "data": "2026-11-23T20:00:00-03:00",
       "mandante": "botafogo",
       "visitante": "sao-paulo",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "TIMED",
+      "disputado": true,
+      "gols_mandante": 1,
+      "gols_visitante": 1,
+      "status_fonte": "FINISHED",
       "estadio": "Estádio Nilton Santos (Engenhão)",
-      "transmissao": [
-        "Prime Video"
-      ]
+      "transmissao": null
     },
     {
       "id": 555099,
@@ -4833,7 +4829,7 @@
       "disputado": false,
       "gols_mandante": null,
       "gols_visitante": null,
-      "status_fonte": "TIMED",
+      "status_fonte": "PAUSED",
       "estadio": "Estádio Cícero Pompeu de Toledo (Morumbi)",
       "transmissao": [
         "sportv",
