@@ -2,7 +2,7 @@
   "fonte": "football-data.org",
   "competicao": "Campeonato Brasileiro Série A",
   "temporada": 2026,
-  "baixado_em": "2026-11-23T22:59:46-03:00",
+  "baixado_em": "2026-11-23T23:55:42-03:00",
   "times": {
     "bahia": {
       "nome": "Bahia",
@@ -4831,11 +4831,7 @@
       "gols_visitante": null,
       "status_fonte": "PAUSED",
       "estadio": "Estádio Cícero Pompeu de Toledo (Morumbi)",
-      "transmissao": [
-        "sportv",
-        "Premiere",
-        "globoplay"
-      ]
+      "transmissao": null
     },
     {
       "id": 555091,
