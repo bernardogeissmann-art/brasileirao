@@ -2,7 +2,7 @@
   "fonte": "football-data.org",
   "competicao": "Campeonato Brasileiro Série A",
   "temporada": 2026,
-  "baixado_em": "2026-11-24T05:25:15-03:00",
+  "baixado_em": "2026-11-24T20:35:15-03:00",
   "times": {
     "bahia": {
       "nome": "Bahia",
@@ -4826,10 +4826,10 @@
       "data": "2026-11-23T21:00:00-03:00",
       "mandante": "santos",
       "visitante": "gremio",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "PAUSED",
+      "disputado": true,
+      "gols_mandante": 0,
+      "gols_visitante": 2,
+      "status_fonte": "FINISHED",
       "estadio": "Estádio Cícero Pompeu de Toledo (Morumbi)",
       "transmissao": null
     },
@@ -4854,10 +4854,10 @@
       "data": "2026-11-24T18:00:00-03:00",
       "mandante": "chapecoense",
       "visitante": "palmeiras",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "TIMED",
+      "disputado": true,
+      "gols_mandante": 3,
+      "gols_visitante": 0,
+      "status_fonte": "FINISHED",
       "estadio": "Arena Condá",
       "transmissao": null
     },

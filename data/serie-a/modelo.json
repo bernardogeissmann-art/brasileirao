@@ -1,132 +1,132 @@
 {
   "descricao": "gols_mandante ~ Poisson(ataque_mandante * defesa_visitante * fator_casa); gols_visitante ~ Poisson(ataque_visitante * defesa_mandante). Média dos ataques = 1. Defesa maior = sofre mais gols.",
   "temporada": 2026,
-  "dados_baixados_em": "2026-11-24T05:25:15-03:00",
-  "estimado_em": "2026-11-24T05:25:39-03:00",
-  "jogos_usados": 358,
-  "fator_casa": 1.3559533925430867,
-  "log_verossimilhanca": -978.4039382455957,
-  "empates_esperados": 86.84039517035463,
+  "dados_baixados_em": "2026-11-24T20:35:15-03:00",
+  "estimado_em": "2026-11-24T20:35:41-03:00",
+  "jogos_usados": 360,
+  "fator_casa": 1.3613012285774522,
+  "log_verossimilhanca": -987.7746385336491,
+  "empates_esperados": 87.80174766747919,
   "times": {
     "bahia": {
       "nome": "Bahia",
-      "ataque": 1.0448062751104858,
-      "defesa": 1.085784640542027,
-      "forca": 0.9622592143032299
+      "ataque": 1.045403201470959,
+      "defesa": 1.0834170911941594,
+      "forca": 0.964912968392163
     },
     "botafogo": {
       "nome": "Botafogo",
-      "ataque": 0.9957726318143778,
-      "defesa": 1.3739741143471795,
-      "forca": 0.7247390044808102
+      "ataque": 0.996792249602279,
+      "defesa": 1.3694509013027913,
+      "forca": 0.7278773183134982
     },
     "bragantino": {
       "nome": "Bragantino",
-      "ataque": 0.9523220284393917,
-      "defesa": 0.9640288427889441,
-      "forca": 0.9878563650484934
+      "ataque": 0.9529018435696043,
+      "defesa": 0.9618926057593284,
+      "forca": 0.9906530498977828
     },
     "chapecoense": {
       "nome": "Chapecoense",
-      "ataque": 0.7179388933330156,
-      "defesa": 1.7620742657595099,
-      "forca": 0.40743963366581554
+      "ataque": 0.7663368886960252,
+      "defesa": 1.7087609657285308,
+      "forca": 0.4484751841046985
     },
     "clube-do-remo": {
       "nome": "Clube do Remo",
-      "ataque": 0.8643538866805369,
-      "defesa": 1.4155193759310545,
-      "forca": 0.61062667270945
+      "ataque": 0.8649099727213131,
+      "defesa": 1.4123645982486663,
+      "forca": 0.6123843473518116
     },
     "corinthians": {
       "nome": "Corinthians",
-      "ataque": 0.8543062403481487,
-      "defesa": 1.0037319847081123,
-      "forca": 0.8511298368125462
+      "ataque": 0.8538687533604721,
+      "defesa": 1.0020213978752952,
+      "forca": 0.8521462267882016
     },
     "coritiba": {
       "nome": "Coritiba",
-      "ataque": 0.8448232743747777,
-      "defesa": 1.24471959272269,
-      "forca": 0.6787257783311804
+      "ataque": 0.8462330835724924,
+      "defesa": 1.2402233808398406,
+      "forca": 0.682323117468927
     },
     "cruzeiro": {
       "nome": "Cruzeiro",
-      "ataque": 1.236918457340004,
-      "defesa": 1.1978133944815037,
-      "forca": 1.0326470408818793
+      "ataque": 1.2377032571576512,
+      "defesa": 1.1952188172661298,
+      "forca": 1.0355453238166863
     },
     "flamengo": {
       "nome": "Flamengo",
-      "ataque": 1.5513399791133031,
-      "defesa": 0.7451797097735624,
-      "forca": 2.0818333601497394
+      "ataque": 1.5501636195096808,
+      "defesa": 0.7443458596588384,
+      "forca": 2.0825851308156387
     },
     "fluminense": {
       "nome": "Fluminense",
-      "ataque": 1.184171015980503,
-      "defesa": 1.004760810670789,
-      "forca": 1.1785601144116458
+      "ataque": 1.1849174778561669,
+      "defesa": 1.0025496325080845,
+      "forca": 1.1819040568513817
     },
     "gremio": {
       "nome": "Grêmio",
-      "ataque": 0.8136575720613368,
-      "defesa": 1.1267632335397857,
-      "forca": 0.7221193839500681
+      "ataque": 0.8343230430581937,
+      "defesa": 1.0860194490934822,
+      "forca": 0.7682395041402035
     },
     "internacional": {
       "nome": "Internacional",
-      "ataque": 0.8565358392560176,
-      "defesa": 1.1537125751281185,
-      "forca": 0.7424170089858821
+      "ataque": 0.8570606783594255,
+      "defesa": 1.1511952242401242,
+      "forca": 0.7444963810765896
     },
     "mineiro": {
       "nome": "Atlético Mineiro",
-      "ataque": 0.9416559472843319,
-      "defesa": 0.9605958764582517,
-      "forca": 0.9802831454536823
+      "ataque": 0.9423223886521452,
+      "defesa": 0.9584373978568544,
+      "forca": 0.983186164019952
     },
     "mirassol": {
       "nome": "Mirassol",
-      "ataque": 0.8163737500903115,
-      "defesa": 1.1414811473722486,
-      "forca": 0.7151881149939692
+      "ataque": 0.8162542963041621,
+      "defesa": 1.1396317524284572,
+      "forca": 0.7162439047216739
     },
     "palmeiras": {
       "nome": "Palmeiras",
-      "ataque": 1.3281327873606925,
-      "defesa": 0.6165267008022866,
-      "forca": 2.154217790782447
+      "ataque": 1.285328306093866,
+      "defesa": 0.6690545889630838,
+      "forca": 1.9211112625143152
     },
     "paranaense": {
       "nome": "Athletico Paranaense",
-      "ataque": 1.1657640409327499,
-      "defesa": 1.107737672983358,
-      "forca": 1.0523827701852149
+      "ataque": 1.1664923144007624,
+      "defesa": 1.1052820100740552,
+      "forca": 1.05537980693507
     },
     "santos": {
       "nome": "Santos",
-      "ataque": 1.1172612528505725,
-      "defesa": 1.181494806867826,
-      "forca": 0.9456336552273655
+      "ataque": 1.0829000141768113,
+      "defesa": 1.2010903541566205,
+      "forca": 0.9015974613643452
     },
     "sao-paulo": {
       "nome": "São Paulo",
-      "ataque": 0.8367994537271997,
-      "defesa": 0.9601304261049906,
-      "forca": 0.8715476887050504
+      "ataque": 0.8373326399415492,
+      "defesa": 0.9580340747744207,
+      "forca": 0.874011334240599
     },
     "vasco-da-gama": {
       "nome": "Vasco da Gama",
-      "ataque": 0.9887354561318626,
-      "defesa": 1.2199562201790486,
-      "forca": 0.810467982192631
+      "ataque": 0.9893416267924646,
+      "defesa": 1.2172942301816254,
+      "forca": 0.8127382864903998
     },
     "vitoria": {
       "nome": "Vitória",
-      "ataque": 0.8883312177703827,
-      "defesa": 1.268550779932876,
-      "forca": 0.7002724934806219
+      "ataque": 0.8894143447039748,
+      "defesa": 1.2647508180897784,
+      "forca": 0.7032328676784771
     }
   }
 }

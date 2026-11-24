@@ -2,7 +2,7 @@
   "fonte": "ESPN",
   "competicao": "Campeonato Brasileiro Série B",
   "temporada": 2026,
-  "baixado_em": "2026-11-24T05:25:40-03:00",
+  "baixado_em": "2026-11-24T20:35:42-03:00",
   "times": {
     "america-mineiro": {
       "nome": "América Mineiro",
@@ -476,7 +476,9 @@
       "gols_visitante": 1,
       "status_fonte": "FINISHED",
       "estadio": "Estádio Onésio Brasileiro Alvarenga",
-      "transmissao": null
+      "transmissao": [
+        "Disney+"
+      ]
     },
     {
       "id": 401860084,
