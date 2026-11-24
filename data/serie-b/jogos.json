@@ -2,7 +2,7 @@
   "fonte": "ESPN",
   "competicao": "Campeonato Brasileiro Série B",
   "temporada": 2026,
-  "baixado_em": "2026-11-23T05:29:56-03:00",
+  "baixado_em": "2026-11-23T21:35:09-03:00",
   "times": {
     "america-mineiro": {
       "nome": "América Mineiro",
@@ -814,7 +814,9 @@
       "gols_visitante": 2,
       "status_fonte": "FINISHED",
       "estadio": "Estádio Presidente Vargas",
-      "transmissao": null
+      "transmissao": [
+        "Disney+"
+      ]
     },
     {
       "id": 401860117,
