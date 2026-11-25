@@ -2,7 +2,7 @@
   "competicao": "Copa Libertadores",
   "temporada": 2026,
   "fonte": "ESPN (site.api.espn.com)",
-  "baixado_em": "2026-11-24T05:25:50-03:00",
+  "baixado_em": "2026-11-25T05:30:32-03:00",
   "liga_espn": "conmebol.libertadores",
   "times": {
     "always-ready": {
@@ -2665,7 +2665,13 @@
       "status_fonte": "STATUS_SCHEDULED",
       "estadio": "Estadio Centenario",
       "perna": 1,
-      "transmissao": null
+      "transmissao": [
+        "Disney+",
+        "Globo",
+        "globoplay",
+        "Paramount+",
+        "Ge TV"
+      ]
     }
   ]
 }
