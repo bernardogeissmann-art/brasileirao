@@ -2,7 +2,7 @@
   "fonte": "ESPN",
   "competicao": "Campeonato Brasileiro Série B",
   "temporada": 2026,
-  "baixado_em": "2026-11-25T23:04:53-03:00",
+  "baixado_em": "2026-11-26T05:27:54-03:00",
   "times": {
     "america-mineiro": {
       "nome": "América Mineiro",
@@ -817,7 +817,8 @@
       "status_fonte": "FINISHED",
       "estadio": "Estádio Presidente Vargas",
       "transmissao": [
-        "Disney+"
+        "Disney+",
+        "SportyNet"
       ]
     },
     {
