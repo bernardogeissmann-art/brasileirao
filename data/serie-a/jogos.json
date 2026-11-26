@@ -2,7 +2,7 @@
   "fonte": "football-data.org",
   "competicao": "Campeonato Brasileiro Série A",
   "temporada": 2026,
-  "baixado_em": "2026-11-25T05:29:43-03:00",
+  "baixado_em": "2026-11-25T23:04:25-03:00",
   "times": {
     "bahia": {
       "nome": "Bahia",
@@ -4839,14 +4839,12 @@
       "data": "2026-11-25T20:00:00-03:00",
       "mandante": "mineiro",
       "visitante": "corinthians",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "TIMED",
+      "disputado": true,
+      "gols_mandante": 1,
+      "gols_visitante": 1,
+      "status_fonte": "FINISHED",
       "estadio": "Arena MRV",
-      "transmissao": [
-        "Premiere"
-      ]
+      "transmissao": null
     },
     {
       "id": 555102,
