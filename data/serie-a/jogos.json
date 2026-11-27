@@ -2,7 +2,7 @@
   "fonte": "football-data.org",
   "competicao": "Campeonato Brasileiro Série A",
   "temporada": 2026,
-  "baixado_em": "2026-11-26T05:27:23-03:00",
+  "baixado_em": "2026-11-26T23:07:07-03:00",
   "times": {
     "bahia": {
       "nome": "Bahia",
@@ -4865,10 +4865,10 @@
       "data": "2026-11-26T20:00:00-03:00",
       "mandante": "sao-paulo",
       "visitante": "clube-do-remo",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "TIMED",
+      "disputado": true,
+      "gols_mandante": 3,
+      "gols_visitante": 1,
+      "status_fonte": "FINISHED",
       "estadio": "Estádio Cícero Pompeu de Toledo (Morumbi)",
       "transmissao": null
     },
@@ -4883,7 +4883,11 @@
       "gols_visitante": null,
       "status_fonte": "TIMED",
       "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
-      "transmissao": null
+      "transmissao": [
+        "sportv",
+        "Premiere",
+        "globoplay"
+      ]
     },
     {
       "id": 555101,
@@ -4896,7 +4900,11 @@
       "gols_visitante": null,
       "status_fonte": "TIMED",
       "estadio": "Estádio Nilton Santos (Engenhão)",
-      "transmissao": null
+      "transmissao": [
+        "sportv",
+        "Premiere",
+        "globoplay"
+      ]
     },
     {
       "id": 555104,
@@ -4909,7 +4917,11 @@
       "gols_visitante": null,
       "status_fonte": "TIMED",
       "estadio": "Estádio Couto Pereira",
-      "transmissao": null
+      "transmissao": [
+        "Premiere",
+        "Globo",
+        "globoplay"
+      ]
     },
     {
       "id": 555109,
@@ -4922,7 +4934,12 @@
       "gols_visitante": null,
       "status_fonte": "TIMED",
       "estadio": "Estádio Manoel Barradas (Barradão)",
-      "transmissao": null
+      "transmissao": [
+        "Premiere",
+        "Globo",
+        "globoplay",
+        "Ge TV"
+      ]
     },
     {
       "id": 555103,
@@ -4935,7 +4952,9 @@
       "gols_visitante": null,
       "status_fonte": "TIMED",
       "estadio": "Neo Química Arena (Itaquerão)",
-      "transmissao": null
+      "transmissao": [
+        "Prime Video"
+      ]
     },
     {
       "id": 555106,
@@ -4961,7 +4980,9 @@
       "gols_visitante": null,
       "status_fonte": "TIMED",
       "estadio": "Estádio José Maria de Campos Maia (Maião)",
-      "transmissao": null
+      "transmissao": [
+        "Premiere"
+      ]
     },
     {
       "id": 555100,
