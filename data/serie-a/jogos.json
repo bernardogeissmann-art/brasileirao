@@ -2,7 +2,7 @@
   "fonte": "football-data.org",
   "competicao": "Campeonato Brasileiro Série A",
   "temporada": 2026,
-  "baixado_em": "2026-11-27T05:26:24-03:00",
+  "baixado_em": "2026-11-27T22:52:32-03:00",
   "times": {
     "bahia": {
       "nome": "Bahia",
@@ -4878,16 +4878,12 @@
       "data": "2026-11-27T20:00:00-03:00",
       "mandante": "fluminense",
       "visitante": "cruzeiro",
-      "disputado": false,
-      "gols_mandante": null,
-      "gols_visitante": null,
-      "status_fonte": "TIMED",
+      "disputado": true,
+      "gols_mandante": 0,
+      "gols_visitante": 1,
+      "status_fonte": "FINISHED",
       "estadio": "Estádio Jornalista Mário Filho (Maracanã)",
-      "transmissao": [
-        "sportv",
-        "Premiere",
-        "globoplay"
-      ]
+      "transmissao": null
     },
     {
       "id": 555101,
@@ -4967,7 +4963,11 @@
       "gols_visitante": null,
       "status_fonte": "TIMED",
       "estadio": "Estádio José Pinheiro Borda (Beira-Rio)",
-      "transmissao": null
+      "transmissao": [
+        "sportv",
+        "Premiere",
+        "globoplay"
+      ]
     },
     {
       "id": 555107,
@@ -4995,7 +4995,9 @@
       "gols_visitante": null,
       "status_fonte": "TIMED",
       "estadio": "Arena MRV",
-      "transmissao": null
+      "transmissao": [
+        "Premiere"
+      ]
     },
     {
       "id": 555110,
